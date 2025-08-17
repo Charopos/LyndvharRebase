@@ -601,6 +601,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["ooc_extra"]			>> ooc_extra
 	S["ooc_extra_link"]		>> ooc_extra_link
 	S["is_legacy"]			>> is_legacy
+	S["nsfw_headshot_link"]		>> nsfw_headshot_link
+	if(!valid_nsfw_headshot_link(null, nsfw_headshot_link, TRUE))
+		nsfw_headshot_link = null
 	S["rumour"]			>> rumour
 	S["noble_gossip"]			>> noble_gossip
 	S["averse_chosen_faction"] >> averse_chosen_faction
@@ -772,6 +775,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["dnr"] , dnr_pref)
 	WRITE_FILE(S["update_mutant_colors"] , update_mutant_colors)
 	WRITE_FILE(S["headshot_link"] , headshot_link)
+	WRITE_FILE(S["nsfw_headshot_link"] , nsfw_headshot_link)
 	WRITE_FILE(S["vampire_headshot_link"] , vampire_headshot_link)
 	WRITE_FILE(S["werewolf_headshot_link"] , werewolf_headshot_link)
 	WRITE_FILE(S["lich_headshot_link"] , lich_headshot_link)

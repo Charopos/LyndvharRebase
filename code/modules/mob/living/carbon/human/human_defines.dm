@@ -117,6 +117,7 @@
 	var/ooc_notes = null
 	var/ooc_notes_display = null
 	var/ooc_extra
+	var/nsfw_headshot_link = null
 	var/ooc_extra_link
 	var/rumour = null
 	var/noble_gossip = null
