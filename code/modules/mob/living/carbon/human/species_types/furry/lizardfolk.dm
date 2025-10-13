@@ -2,20 +2,11 @@
 	race = /datum/species/lizardfolk
 
 /datum/species/lizardfolk
-	name = "Zardman"
+	name = "Eskallian"
 	id = "lizardfolk"
-	origin_default = /datum/virtue/origin/calmirixia
-	origin = "Calmirixia"
-	base_name = "Zard"
-	desc = "<b>Zardman</b><br>\
-	Zardmen are semi-aquatic reptilian humanoids. \
-	Their flesh is covered in scales varying in color from dark green to shades of brown and gray. \
-	Taller than humans and powerfully built, zardmen are often between 6 and 7 feet tall. \
-	Zardmen have non-prehensile muscular tails that grow to three or four feet in length, and these are used for balance. \
-	They also have sharp claws and teeth.<br>\
-	"
-	skin_tone_wording = "Skin Colors"
-	use_skin_tone_wording_for_examine = FALSE
+	desc = "<b>Eskallian</b><br>\
+	The Eskallian are incredibly distinct from the many other races dotted across Beowricke. This race hailing from the swamps of Calmirixia consists of many different shapes and sizes of scaled hides- which many could refer to smaller depictions of drakes, or Dragons- as they were much more well known in the Gilded Era. What position exactly they served- whether it be as servants or as their chosen beings- is a wildly debated topic amongst Eskallian society. Divided into two castes, the Eskallian consist of the Dracaena and the Caiman- who split during a heavy disagreement that resulted in brutal suppression and open revolt for years after the Dragons mysteriously vanished near the end of the Gilded Era. The Dracaena believed themselves to be the chosen of the Dragons, while the Caiman believed they had never been anything more than slaves. This resulting schism would uproot and destroy Eskallian society- much so to the point that both Dracaena and Caiman have formed a brutal hatred for one another, and something that to this day long after Naexidor’s conquest of Calmirixia has still not been mended.<br>"
+	skin_tone_wording = "Tribe"
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	possible_ages = ALL_AGES_LIST
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
@@ -73,10 +64,11 @@
 		/datum/customizer/bodypart_feature/piercing,
 		/datum/customizer/organ/tail/lizard,
 		/datum/customizer/organ/tail_feature/lizard_spines,
+		/datum/customizer/organ/wings/dracon,
 		/datum/customizer/organ/snout/lizard,
 		/datum/customizer/organ/ears/lizard,
 		/datum/customizer/organ/frills/lizard,
-		/datum/customizer/organ/horns/humanoid/zardman,
+		/datum/customizer/organ/horns/humanoid/eskallian,
 		/datum/customizer/organ/testicles/anthro,
 		/datum/customizer/organ/penis/anthro,
 		/datum/customizer/organ/breasts/animal,
@@ -172,3 +164,23 @@
 	returned["mcolor2"] = second_color
 	returned["mcolor3"] = second_color
 	return returned
+
+/datum/species/lizardfolk/random_name(gender,unique,lastname)
+	var/randname
+	if(unique)
+		if(gender == MALE)
+			for(var/i in 1 to 10)
+				randname = pick( world.file2list("strings/names/roguetown/lizardm.txt") )
+				if(!findname(randname))
+					break
+		if(gender == FEMALE)
+			for(var/i in 1 to 10)
+				randname = pick( world.file2list("strings/names/roguetown/lizardf.txt") )
+				if(!findname(randname))
+					break
+	else
+		if(gender == MALE)
+			randname = pick( world.file2list("strings/rt/names/human/humnorm.txt") )
+		if(gender == FEMALE)
+			randname = pick( world.file2list("strings/rt/names/human/humnorf.txt") )
+	return randname

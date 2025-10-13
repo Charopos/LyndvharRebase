@@ -62,6 +62,8 @@
 		/datum/customizer/bodypart_feature/accessory,
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
+		/datum/customizer/bodypart_feature/legwear,
+		/datum/customizer/bodypart_feature/piercing,
 		/datum/customizer/organ/tail/capridae,
 		/datum/customizer/organ/snout/capridae,
 		/datum/customizer/organ/ears/capridae,
@@ -107,28 +109,27 @@
 		/datum/body_marking/gradient,
 	)
 	descriptor_choices = list(
+		/datum/descriptor_choice/trait,
+		/datum/descriptor_choice/stature,
 		/datum/descriptor_choice/height,
 		/datum/descriptor_choice/body,
-		/datum/descriptor_choice/stature,
 		/datum/descriptor_choice/face,
 		/datum/descriptor_choice/face_exp,
-		/datum/descriptor_choice/fur,
+		/datum/descriptor_choice/skin_all,
 		/datum/descriptor_choice/voice,
-		/datum/descriptor_choice/prominent_one,
-		/datum/descriptor_choice/prominent_two,
-		/datum/descriptor_choice/prominent_three,
-		/datum/descriptor_choice/prominent_four,
+		/datum/descriptor_choice/prominent_one_wild,
+		/datum/descriptor_choice/prominent_two_wild,
+		/datum/descriptor_choice/prominent_three_wild,
+		/datum/descriptor_choice/prominent_four_wild,
 	)
 
 /datum/species/capridae/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
-	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech), override = TRUE)
-	C.verbs += EMOTES_LIVESTOCK
+	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
 /datum/species/capridae/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
-	C.verbs -= EMOTES_LIVESTOCK
 
 /datum/species/capridae/check_roundstart_eligible()
 	return TRUE
