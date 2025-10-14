@@ -321,7 +321,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/outdoors/exposed/town/keep
 	name = "Keep"
 	icon_state = "manor"
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/newgarri.ogg'
 	keep_area = TRUE
 	town_area = TRUE
 
@@ -337,7 +337,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 /area/rogue/outdoors/exposed/manorgarri
 	icon_state = "manorgarri"
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/newgarri.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	keep_area = TRUE
@@ -397,7 +397,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/indoors/town/garrison
 	name = "Garrison"
 	icon_state = "garrison"
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/newgarri.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	droning_sound_dusk = null
@@ -410,7 +410,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	icon_state = "cell"
 	spookysounds = SPOOKY_DUNGEON
 	spookynight = SPOOKY_DUNGEON
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/newgarri.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
