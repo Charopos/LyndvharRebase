@@ -89,10 +89,13 @@ Balloon Alert / Floating Text defines
 	/datum/species/halforc,\
 	/datum/species/tieberian,\
 	/datum/species/elf/dark,\
+	/datum/species/golem/porcelain,\
 
 #define RACES_DESPISED \
 	/datum/species/goblinp,\
 	/datum/species/kobold,\
+
+#define RACES_VILLIFIED \
 	/datum/species/dullahan,\
 
 #define RACES_RESPECTED_UP list(RACES_RESPECTED, RACES_ESTEEMED)
@@ -147,6 +150,7 @@ Balloon Alert / Floating Text defines
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/orc,\
+	/datum/species/golem/porcelain,\
 	/datum/species/kobold,\
 	/datum/species/goblinp,\
 	/datum/species/dullahan,\
@@ -166,6 +170,7 @@ Balloon Alert / Floating Text defines
 	/datum/species/rhaeteian,\
 	/datum/species/cervaline,\
 	/datum/species/vulpkanin,\
+	/datum/species/golem/porcelain,\
 	/datum/species/akula,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
@@ -184,6 +189,7 @@ Balloon Alert / Floating Text defines
 	/datum/species/rhaeteian,\
 	/datum/species/cervaline,\
 	/datum/species/vulpkanin,\
+	/datum/species/golem/porcelain,\
 	/datum/species/akula,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
