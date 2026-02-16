@@ -1,8 +1,6 @@
-# AZURE PEAK
+# LYNDVHAR REBASE FORK OF AZURE PEAK
 
 | Website                   | Link                                           |
-|---------------------------|------------------------------------------------|
-| Discord | [https://discord.gg/NCFXUAgCPT](https://discord.gg/NCFXUAgCPT)
 | Code    | [https://github.com/Azure-Peak/Azure-Peak](https://github.com/GeneralPantsuIsBadAtCoding/Azure-Peak)    |
 | Wiki    | [https://azurepeak.miraheze.org/wiki/Main_Page](https://azurepeak.miraheze.org/wiki/Main_Page) |
 

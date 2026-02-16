@@ -92,6 +92,10 @@
 	head = /obj/item/clothing/head/roguetown/chaperon/noble/hand
 	armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hand
 	pants = /obj/item/clothing/under/roguetown/tights/black
+	if(should_wear_femme_clothes(H))
+		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/hand_f
+	else if(should_wear_masc_clothes(H))
+		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/hand_m
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/dtace = 1,
 		/obj/item/rogueweapon/scabbard/sheath/royal = 1,

@@ -322,8 +322,8 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		SSticker.set_ruler_mob(HU)
 		SSticker.regentmob = null
 		var/dispjob = mind.assigned_role
-		var/realm = SSticker.realm_name || "Azure Peak"
-		var/ruler_title = SSticker.rulertype || "Grand Duke"
+		var/realm = SSticker.realm_name || "Lyndvhar"
+		var/ruler_title = SSticker.rulertype || "Viscount"
 		removeomen(OMEN_NOLORD)
 		say("By the authority of the gods, I pronounce you [ruler_title] of [realm]!")
 		priority_announce("[real_name] the [dispjob] has named [HU.real_name] the [ruler_title] of [realm]!", title = "Long Live [HU.real_name]!", sound = 'sound/misc/bell.ogg')

@@ -53,7 +53,6 @@
 		/datum/language/etruscan,
 		/datum/language/gronnic,
 		/datum/language/kazengunese,
-		/datum/language/lingyuese,
 		/datum/language/draconic,
 		/datum/language/aavnic, // All but beast, which is associated with werewolves.
 	)

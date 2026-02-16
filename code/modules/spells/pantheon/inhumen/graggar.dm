@@ -41,7 +41,7 @@
 	chargetime = 15
 	recharge_time = 40 SECONDS // no running, super slow. this FUCKS people. lower it if 40 is too much.
 	invocation_type = "shout"
-	invocations = list("TURN AND FACE THE BLOOD GOD!!") // VERY loud. do NOT add other invocations, this projectile can FUUUCK people up and needs to be telegraphed.
+	invocations = list("TURN AND FACE ME, SWINE!!") // VERY loud. do NOT add other invocations, this projectile can FUUUCK people up and needs to be telegraphed.
 	sound = 'sound/magic/soulsteal.ogg'
 
 /obj/projectile/magic/unholy_grasp

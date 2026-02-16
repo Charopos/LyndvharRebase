@@ -615,8 +615,6 @@
   - bugfix: priest and guildmasters should have less lowercase announcements
   FreeStylaLT:
   - rscadd: Added Origins & Subraces.
-  - rscadd: Added Old Azurian language, available exclusively to Azurian origin.
-  - bugfix: Added missing Kazengun Origins. Credit to @kodiaksnowleaf on Discord.
   Lamasmaster:
   - rscdel: Outlaw Marauder Wretch
   - balance: Outlaw Wretch
