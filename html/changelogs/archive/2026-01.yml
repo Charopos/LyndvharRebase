@@ -407,7 +407,7 @@
   - rscadd: Allows the Mechanized Ore Bag to now be worn on the back slot, as well.
   hazelrat:
   - rscadd: Ambushes may now occur on all coastal beaches on the map with the exception
-      of Azure Peak's harbour.
+      of Lyndvhar's harbour.
   mumblemancer:
   - bugfix: eora's t0 actually accounts for skill now
   - bugfix: eora's t0 tells you it restores hunger
