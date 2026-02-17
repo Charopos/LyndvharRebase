@@ -67,11 +67,11 @@ SUBSYSTEM_DEF(ticker)
 	var/list/royals_readied = list()
 
 	/// Realm name, the location name of the current map
-	var/realm_name = "Azure Peak"
+	var/realm_name = "Lyndvhar"
 	/// Formal realm type (e.g. "Grand Duchy", "Most Serene Republic"). Changed by usurpation rites.
-	var/realm_type = "Grand Duchy"
+	var/realm_type = "Viscounty"
 	/// Short form for casual references (e.g. "Duchy", "Republic"). Changed by usurpation rites.
-	var/realm_type_short = "Duchy"
+	var/realm_type_short = "Port"
 	/// Reports the current ruler's display name
 	var/rulertype = "Grand Duke"
 	/// The current ruling mob
