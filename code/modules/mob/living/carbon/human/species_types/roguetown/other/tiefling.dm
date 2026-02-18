@@ -5,7 +5,7 @@
 	name = "Tiefling"
 	id = "tiefling"
 	origin_default = /datum/virtue/origin/unknown
-	origin = "Etrusca"
+	origin = "Darkness"
 	base_name = "Godtouched"
 	is_subrace = TRUE
 	desc = "<b>Tiefling</b><br>\

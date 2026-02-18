@@ -5,7 +5,7 @@
 	name = "Zardman"
 	id = "lizardfolk"
 	origin_default = /datum/virtue/origin/calmirixia
-	origin = "Etrusca"
+	origin = "Calmirixia"
 	base_name = "Zard"
 	desc = "<b>Zardman</b><br>\
 	Zardmen are semi-aquatic reptilian humanoids. \

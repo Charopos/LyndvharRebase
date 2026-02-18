@@ -6,7 +6,7 @@
 	id = "akula"
 	is_subrace = TRUE
 	origin_default = /datum/virtue/origin/unknown
-	origin = "Etrusca"
+	origin = "The Oceans"
 	base_name = "Beastvolk"
 	desc = "<b>Axian</b><br>\
 	Axians are a proud, shark-like people that have a heritage founded in maritime trade, \

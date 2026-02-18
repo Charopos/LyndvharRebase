@@ -37,7 +37,7 @@
 		var/weapon_choice = input(H, "Draw a sword.", "As presented to me by Master Oktawiusz...") as anything in weapons
 		switch(weapon_choice)
 			if("Calmirixian Longsword")		//A longsword with a compound ricasso. Accompanied by a traditional flip knife.
-				r_hand = /obj/item/rogueweapon/sword/long/ecalmirixia
+				r_hand = /obj/item/rogueweapon/sword/long/calmirixia
 				beltr = /obj/item/rogueweapon/huntingknife/idagger/navaja/freifechter
 			if("Valorian Longsword")
 				r_hand = /obj/item/rogueweapon/sword/long/calmirixia/freifechter

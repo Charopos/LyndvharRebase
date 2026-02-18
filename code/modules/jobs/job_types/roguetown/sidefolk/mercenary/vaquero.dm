@@ -1,8 +1,8 @@
 /datum/advclass/mercenary/vaquero
 	name = "Vaquero"
-	tutorial = "Originating in the vibrant Kingdom of Etrusca, a 'vaquero' had originally been a mere cattle-driver... Now, though, it has become a title for roaming swashbucklers. Whether they set out as a defender of the commonfolk or a pilferer of purses, the Vaquero is defined by the tale they carve across continents - and more frequently - by their story's violent end."
+	tutorial = "Originating in the deadly swamps of the Calmirixia Province, the term 'vaquero' had merely stood for those who took up cattle-driving in the habitable parts of the swamp. Now, though, it has become a title for roaming swashbucklers after the Ruby War's fallout. Whether they set out as a defender of the commonfolk or a pilferer of purses, the Vaquero is defined by the tale they carve across Lewyn - and more frequently - by their story's violent end."
 	outfit = /datum/outfit/job/roguetown/mercenary/vaquero
-	class_select_category = CLASS_CAT_ETRUSCA
+	class_select_category = CLASS_CAT_CALMIRIXIA
 	cmode_music = 'sound/music/combat_vaquero.ogg'
 	category_tags = list(CTAG_MERCENARY)
 	subclass_languages = list(/datum/language/calmirixian)
