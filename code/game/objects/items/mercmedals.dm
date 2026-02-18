@@ -64,7 +64,7 @@
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/condottiero
 	name = "condottiero's hilt"
-	desc = "A beautiful silver necklace with pea-sized rontz inlays. Each is a work of art in itself; handcrafted by a master jeweler of Etrusca. This is the blade to which the \
+	desc = "A beautiful silver necklace with pea-sized rontz inlays. Each is a work of art in itself; handcrafted by a master jeweler in Calmirixia. This is the blade to which the \
 	condottiero has sworn their lyfe."
 	icon_state = "condo_blade"
 

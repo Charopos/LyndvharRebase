@@ -1858,7 +1858,7 @@
 #include "code\modules\jobs\job_types\roguetown\sidefolk\mercenary\anthrax.dm"
 #include "code\modules\jobs\job_types\roguetown\sidefolk\mercenary\atgervi.dm"
 #include "code\modules\jobs\job_types\roguetown\sidefolk\mercenary\blackoak.dm"
-#include "code\modules\jobs\job_types\roguetown\sidefolk\mercenary\etrusca.dm"
+#include "code\modules\jobs\job_types\roguetown\sidefolk\mercenary\calmirixia.dm"
 #include "code\modules\jobs\job_types\roguetown\sidefolk\mercenary\desertrider.dm"
 #include "code\modules\jobs\job_types\roguetown\sidefolk\mercenary\forlorn.dm"
 #include "code\modules\jobs\job_types\roguetown\sidefolk\mercenary\freifechter.dm"
