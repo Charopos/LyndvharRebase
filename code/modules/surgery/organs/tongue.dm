@@ -22,7 +22,7 @@
 		/datum/language/grenzelhoftian,
 		/datum/language/kazengunese,
 		/datum/language/otavan,
-		/datum/language/etruscan,
+		/datum/language/calmirixian,
 		/datum/language/gronnic,
 		/datum/language/aavnic,
 		/datum/language/undead,

@@ -39,18 +39,18 @@
 	. = ..()
 	var/client/player = H?.client
 	if(player.prefs)
-		if(!istype(player.prefs.virtue_origin, /datum/virtue/origin/azuria) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/grenzelhoft) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/otava) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/etrusca))
-			var/list/new_origins = list("Azuria" = /datum/virtue/origin/azuria, 
+		if(!istype(player.prefs.virtue_origin, /datum/virtue/origin/lyndhardt) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/grenzelhoft) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/valoria) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/calmirixian))
+			var/list/new_origins = list("Lyndhardt" = /datum/virtue/origin/lyndhardt, 
 			"Grenzelhoft" = /datum/virtue/origin/grenzelhoft,
-			"Otava" = /datum/virtue/origin/otava,
-			"Etrusca" = /datum/virtue/origin/etrusca)
+			"Valoria" = /datum/virtue/origin/valoria,
+			"Calmirixia" = /datum/virtue/origin/calmirixia)
 			var/new_origin
-			var/choice = input(player, "Your origins are not compatible with the Duchy. Where do you hail from?", "ANCESTRY") as anything in new_origins
+			var/choice = input(player, "Your origins are not compatible with the city. Where do you hail from?", "ANCESTRY") as anything in new_origins
 			if(choice)
 				new_origin = new_origins[choice]
 			else
 				to_chat(player, span_notice("No choice detected. Picking a random compatible origin."))
-				new_origin = pick(/datum/virtue/origin/grenzelhoft, /datum/virtue/origin/otava, /datum/virtue/origin/etrusca)
+				new_origin = pick(/datum/virtue/origin/grenzelhoft, /datum/virtue/origin/valoria, /datum/virtue/origin/calmirixia)
 			change_origin(H, new_origin, "Royal line")
 
 /datum/advclass/heir/daring

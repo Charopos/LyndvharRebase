@@ -1,7 +1,7 @@
 /datum/species/orc
 	name = "Orc"
 	id = "orc"
-	origin_default = /datum/virtue/origin/gronn
+	origin_default = /datum/virtue/origin/unknown
 	origin = "Gronn"
 	base_name = "Ogroid"
 	desc = "<b>Orcs</b><br>\
