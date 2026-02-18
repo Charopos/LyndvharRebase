@@ -111,7 +111,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	. = ..()
 	var/client/player = H?.client
 	if(player.prefs)
-		if(!istype(player.prefs.virtue_origin, /datum/virtue/origin/lyndhardt) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/grenzelhoft) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/valoria) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/calmirixian))
+		if(!istype(player.prefs.virtue_origin, /datum/virtue/origin/lyndhardt) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/grenzelhoft) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/valoria) && !istype(player.prefs.virtue_origin, /datum/virtue/origin/calmirixia))
 			var/list/new_origins = list("Lyndhardt" = /datum/virtue/origin/lyndhardt, 
 			"Grenzelhoft" = /datum/virtue/origin/grenzelhoft,
 			"Valoria" = /datum/virtue/origin/valoria,
