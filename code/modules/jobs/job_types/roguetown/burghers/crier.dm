@@ -39,7 +39,7 @@
 		/datum/language/hellspeak,
 		/datum/language/orcish,
 		/datum/language/grenzelhoftian,
-		/datum/language/otavan,
+		/datum/language/valorian,
 		/datum/language/calmirixian,
 		/datum/language/gronnic,
 		/datum/language/kazengunese,

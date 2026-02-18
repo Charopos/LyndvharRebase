@@ -5,7 +5,7 @@
 	name = "Aasimar"
 	id = "aasimar"
 	origin_default = /datum/virtue/origin/unknown
-	origin = "Otava"
+	origin = "The Gods"
 	base_name = "Godtouched"
 	desc = "<b>Aasimar</b><br>\
 	Aasimar are born of a rare union between Humens and Angels. \

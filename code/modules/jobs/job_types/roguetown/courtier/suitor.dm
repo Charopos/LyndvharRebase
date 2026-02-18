@@ -174,7 +174,7 @@
 	mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-	armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan
+	armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/valorian
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
 	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes/gold

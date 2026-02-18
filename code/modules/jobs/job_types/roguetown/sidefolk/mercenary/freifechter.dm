@@ -54,7 +54,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/sash
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	shirt = /obj/item/clothing/suit/roguetown/shirt/freifechter
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/generic
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
 	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves/freifechter
 	backr = /obj/item/storage/backpack/rogue/satchel/short
@@ -114,7 +114,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/sash
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	shirt = /obj/item/clothing/suit/roguetown/shirt/freifechter
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/generic
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
 	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves/freifechter
 	backr = /obj/item/storage/backpack/rogue/satchel/short
@@ -172,7 +172,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/sash
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	shirt = /obj/item/clothing/suit/roguetown/shirt/freifechter
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/generic
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
 	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves/freifechter
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain	//Obsessed with arms-hands. Keeping them protected on-spawn.

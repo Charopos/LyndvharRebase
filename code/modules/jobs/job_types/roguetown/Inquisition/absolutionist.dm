@@ -37,7 +37,7 @@
 	name = "Absolver"
 	tutorial = "Once, you were alone in this monastery; a chapel of stone, protecting a shard of Psydon's divinity. Now, you've a whole sect to shepherd - and their propensity for violence oft-clashes with your own vows of pacifism. Temper the floch with your wisdom, siphon away their wounds with your blessings, and guide the wayard towards absolution."
 	outfit = /datum/outfit/job/roguetown/absolver/basic
-	subclass_languages = list(/datum/language/otavan)
+	subclass_languages = list(/datum/language/valorian)
 	category_tags = list(CTAG_ABSOLVER)
 	subclass_stats = list(
 		STATKEY_CON = 7,
@@ -82,14 +82,14 @@
 	job_bitflag = BITFLAG_HOLY_WARRIOR
 	H.adjust_blindness(-3)
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/psythorns
-	gloves = /obj/item/clothing/gloves/roguetown/otavan/psygloves
+	gloves = /obj/item/clothing/gloves/roguetown/valorian/psygloves
 	beltr = /obj/item/flashlight/flare/torch/lantern/psycenser
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
 	neck = /obj/item/clothing/neck/roguetown/psicross/silver
 	cloak = /obj/item/clothing/cloak/absolutionistrobe
-	backr = /obj/item/storage/backpack/rogue/satchel/otavan
+	backr = /obj/item/storage/backpack/rogue/satchel/valorian
 	belt = /obj/item/storage/belt/rogue/leather
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fencer/psydon
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq
 	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots

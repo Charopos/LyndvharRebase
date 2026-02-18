@@ -296,7 +296,7 @@
 
 /obj/item/ingot/silverblessed/bullion
 	name = "blessed silver bullion"
-	desc = "This bar radiates with blessed purity. It is marked with the sigil of the Holy Psydonic Inquisition, and appears to've been shipped straight from Otava's treasury."
+	desc = "This bar radiates with blessed purity. It is marked with the sigil of the Valorian Inquisition, and appears to've been shipped straight from Valoria's treasury."
 	icon_state = "ingotsilvblessed_psy"
 	smeltresult = /obj/item/ingot/silverblessed //Minor failsafe to ensure bullion can always be used for blessed silver recipes, in case of a filepath conflict.
 	sellprice = 100

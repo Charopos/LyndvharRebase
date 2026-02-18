@@ -89,7 +89,7 @@
 		"Hammerhold" = SKIN_COLOR_HAMMERHOLD,
 		"Avar" = SKIN_COLOR_AVAR,
 		"Rockhill" = SKIN_COLOR_ROCKHILL,
-		"Otava" = SKIN_COLOR_OTAVA,
+		"Valoria" = SKIN_COLOR_VALORIAN,
 		"Calmirixia" = SKIN_COLOR_CALMIRIXIAN,
 		"Gronn" = SKIN_COLOR_GRONN,
 		"North Raneshen (Chorodiaki)" = SKIN_COLOR_GIZA,

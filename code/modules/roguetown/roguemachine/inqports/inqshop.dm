@@ -79,7 +79,7 @@
 	marquescost = 12
 
 /datum/inqports/supplies/psybuns
-	name = "The 'Otavan Bakery Special' Crate"
+	name = "The 'Valorian Bakery Special' Crate"
 	item_type = /obj/structure/closet/crate/chest/inqcrate/supplies/psybuns
 	marquescost = 8
 
@@ -393,7 +393,7 @@
 	color = "#8b1414"
 	detail_color = "#99b2b1"
 
-/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan/inq
+/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/valorian/inq
 	color = "#8b1414"
 	detail_color = "#99b2b1"
 
@@ -408,9 +408,9 @@
 	maximum = 3
 	marquescost = 12
 
-/datum/inqports/wardrobe/otavansatchel
-	name = "1 Satchel, Otavan Leather"
-	item_type = /obj/item/storage/backpack/rogue/satchel/otavan
+/datum/inqports/wardrobe/valoriansatchel
+	name = "1 Satchel, Valorian Leather"
+	item_type = /obj/item/storage/backpack/rogue/satchel/valorian
 	marquescost = 3
 
 /datum/inqports/wardrobe/satchelbelted
@@ -448,28 +448,28 @@
 	new /obj/item/clothing/head/roguetown/helmet/heavy/absolver(src)
 
 /datum/inqports/wardrobe/fencerset
-	name = "The 'Otavan Fencer's Padded Wardrobe' Crate"
+	name = "The 'Valorian Fencer's Padded Wardrobe' Crate"
 	item_type = /obj/structure/closet/crate/chest/inqcrate/wardrobe/fencerset
 	marquescost = 12
 
 /obj/structure/closet/crate/chest/inqcrate/wardrobe/fencerset/Initialize()
 	. = ..()
-	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan/inq(src)
+	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/valorian/inq(src)
 	new /obj/item/clothing/neck/roguetown/fencerguard/inq(src)
-	new /obj/item/clothing/gloves/roguetown/otavan(src)
-	new /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan(src)
-	new /obj/item/clothing/shoes/roguetown/boots/otavan(src)
+	new /obj/item/clothing/gloves/roguetown/valorian(src)
+	new /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian(src)
+	new /obj/item/clothing/shoes/roguetown/boots/valorian(src)
 
 /datum/inqports/wardrobe/fencersthree
-	name = "The 'Otavan Fencer's Triple Gambeson' Crate"
+	name = "The 'Valorian Fencer's Triple Gambeson' Crate"
 	item_type = /obj/structure/closet/crate/chest/inqcrate/wardrobe/fencersthree
 	marquescost = 12
 
 /obj/structure/closet/crate/chest/inqcrate/wardrobe/fencersthree/Initialize()
 	. = ..()
-	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan/inq(src)
-	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan/inq(src)
-	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan/inq(src)
+	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/valorian/inq(src)
+	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/valorian/inq(src)
+	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/valorian/inq(src)
 
 /datum/inqports/wardrobe/confessionalcombo
 	name = "The 'Confessional Combination' Crate"
@@ -502,8 +502,8 @@
 	. = ..()
 	new /obj/item/clothing/head/roguetown/inqhat(src)
 	new /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat(src)
-	new /obj/item/clothing/gloves/roguetown/otavan/inqgloves(src)
-	new /obj/item/clothing/shoes/roguetown/boots/otavan/inqboots(src)
+	new /obj/item/clothing/gloves/roguetown/valorian/inqgloves(src)
+	new /obj/item/clothing/shoes/roguetown/boots/valorian/inqboots(src)
 
 /datum/inqports/wardrobe/psydonianstandard
 	name = "The 'Inquisitorial Standard' Crate"
@@ -512,9 +512,9 @@
 
 /obj/structure/closet/crate/chest/inqcrate/wardrobe/psydonian/Initialize()
 	. = ..()
-	new /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan(src)
+	new /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian(src)
 	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq(src)
-	new /obj/item/clothing/gloves/roguetown/otavan/psygloves(src)
+	new /obj/item/clothing/gloves/roguetown/valorian/psygloves(src)
 	new /obj/item/clothing/shoes/roguetown/boots/psydonboots(src)
 
 /datum/inqports/wardrobe/nobledressup

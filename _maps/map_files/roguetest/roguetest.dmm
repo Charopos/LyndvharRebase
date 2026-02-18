@@ -998,9 +998,9 @@
 	dir = 1;
 	icon_state = "longtable"
 	},
-/obj/item/clothing/gloves/roguetown/otavan,
-/obj/item/clothing/gloves/roguetown/otavan,
-/obj/item/clothing/gloves/roguetown/otavan,
+/obj/item/clothing/gloves/roguetown/valoria,
+/obj/item/clothing/gloves/roguetown/valoria,
+/obj/item/clothing/gloves/roguetown/valoria,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors)
 "GG" = (

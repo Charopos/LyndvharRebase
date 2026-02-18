@@ -4,7 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/disciple
-	subclass_languages = list(/datum/language/otavan)
+	subclass_languages = list(/datum/language/valorian)
 	category_tags = list(CTAG_ORTHODOXIST)
 	traits_applied = list(
 		TRAIT_CIVILIZEDBARBARIAN,
@@ -62,24 +62,24 @@
 				gloves = /obj/item/clothing/gloves/roguetown/bandages/weighted
 				H.change_stat(STATKEY_PER, 1)
 				H.change_stat(STATKEY_INT, 1) //Changes statblock from 3/3/3/-2/-1/0 to 3/3/3/-1/-1/1. Note that this comes at the cost of losing the 'critical resistance' trait, and retaining the unarmorable status.
-		var/armors = list("Otavan - Heavyweight, Blacksteel Thorns", "Naledian - Lightweight, Arcyne-Martiality")
+		var/armors = list("Valorian - Heavyweight, Blacksteel Thorns", "Sojourner - Lightweight, Arcyne-Martiality")
 		var/armor_choice = input(H, "Choose your ARCHETYPE.", "TAKE UP PSYDON'S DUTY.") as anything in armors
 		switch(armor_choice)
-			if("Otavan - Heavyweight, Blacksteel Thorns")
+			if("Valorian - Heavyweight, Blacksteel Thorns")
 				head = /obj/item/clothing/head/roguetown/roguehood/psydon
 				mask = /obj/item/clothing/head/roguetown/helmet/blacksteel/psythorns
-				backl = /obj/item/storage/backpack/rogue/satchel/otavan
-				pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
+				backl = /obj/item/storage/backpack/rogue/satchel/valorian
+				pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
 				wrists = /obj/item/clothing/wrists/roguetown/bracers/psythorns
 				neck = /obj/item/clothing/neck/roguetown/psicross/silver
 				id = /obj/item/clothing/ring/signet/silver
-			if("Naledian - Lightweight, Arcyne-Martiality")
+			if("Sojourner - Lightweight, Arcyne-Martiality")
 				head = /obj/item/clothing/head/roguetown/headband/naledi
 				mask = /obj/item/clothing/mask/rogue/lordmask/naledi/sojourner
 				wrists = /obj/item/clothing/wrists/roguetown/bracers/cloth/naledi
 				backl = /obj/item/storage/backpack/rogue/satchel/black
 				pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
-				neck = /obj/item/clothing/neck/roguetown/psicross/g //Naledians covet gold far more than the Orthodoxists cover silver. Emphasizes their nature as 'visitors', more-so than anything else.
+				neck = /obj/item/clothing/neck/roguetown/psicross/g
 				id = /obj/item/clothing/ring/signet
 				l_hand = /obj/item/spellbook_unfinished/pre_arcyne
 				ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC) //Sojourners are magyck-inclined lightweights, relying on evasive maneuvers and unorthodox techniques - compared to the Disciple, who simply Kills People With Rocks.
@@ -87,7 +87,7 @@
 				ADD_TRAIT(H, TRAIT_NALEDI, TRAIT_GENERIC)
 				REMOVE_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
 				H.adjust_skillrank_up_to(/datum/skill/magic/arcane, 3, TRUE)
-				H.grant_language(/datum/language/celestial) //They're from Naledi, they should speak Sama'glos
+				H.grant_language(/datum/language/celestial) //They're from the Khaliphate, they should speak Sama'glos
 				H.mind.adjust_spellpoints(6)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/fetch) //Pre-set spell list. Same as before. 
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/forcewall) //Weak, destroyable forcewall.

@@ -184,19 +184,19 @@
 	new /obj/item/clothing/shoes/roguetown/grenzelhoft(src)
 	new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/grenzelhoft(src)
 
-/datum/supply_pack/rogue/Sellsword/Otavancrate
-	name = "Otavan Equipment Crate"
+/datum/supply_pack/rogue/Sellsword/Valoriancrate
+	name = "Valorian Equipment Crate"
 	cost = 260
-	contains = list(/obj/structure/closet/crate/chest/bandit/otavan)
+	contains = list(/obj/structure/closet/crate/chest/bandit/valorian)
 
-/obj/structure/closet/crate/chest/bandit/otavan/Initialize()
+/obj/structure/closet/crate/chest/bandit/valorian/Initialize()
 	. = ..()
-	new /obj/item/clothing/head/roguetown/helmet/otavan(src)
-	new /obj/item/clothing/suit/roguetown/armor/plate/otavan(src)
-	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan(src)
-	new /obj/item/clothing/gloves/roguetown/otavan(src)
-	new /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan(src)
-	new /obj/item/clothing/shoes/roguetown/boots/otavan(src)
+	new /obj/item/clothing/head/roguetown/helmet/valorian(src)
+	new /obj/item/clothing/suit/roguetown/armor/plate/valorian(src)
+	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/valorian(src)
+	new /obj/item/clothing/gloves/roguetown/valorian(src)
+	new /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian(src)
+	new /obj/item/clothing/shoes/roguetown/boots/valorian(src)
 	new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/routier(src)
 
 /datum/supply_pack/rogue/Sellsword/calmirixiancrate

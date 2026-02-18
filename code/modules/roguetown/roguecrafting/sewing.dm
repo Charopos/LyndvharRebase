@@ -1720,10 +1720,10 @@
 	craftdiff = 4
 	sellprice = 17
 
-/datum/crafting_recipe/roguetown/sewing/tailor/otavangambeson
-	name = "otavan gambeson"
+/datum/crafting_recipe/roguetown/sewing/tailor/valoriangambeson
+	name = "valorian gambeson"
 	category = "Gambesons"
-	result = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan)
+	result = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/valorian)
 	reqs = list(/obj/item/natural/cloth = 6,
 	            /obj/item/natural/fibers = 5)
 	tools = list(/obj/item/needle)

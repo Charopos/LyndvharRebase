@@ -1023,13 +1023,13 @@
 	if(!HAS_TRAIT(examiner, TRAIT_INQUISITION)) //If the person doing the examining doesn't have the trait, we don't need to do the other four ifs
 		return null
 	if(HAS_TRAIT(src, TRAIT_INQUISITION) && HAS_TRAIT(examiner, TRAIT_INQUISITION))
-		inquisition_text = "A fellow adherent to the Holy Otavan Inquisition's missives."
+		inquisition_text = "A fellow adherent to the Valorian Inquisition's missives."
 	if(HAS_TRAIT(src, TRAIT_PURITAN) && HAS_TRAIT(examiner, TRAIT_INQUISITION))
-		inquisition_text = "My superior, sent by the Holy Otavan Inquisition to lead our sect."
+		inquisition_text = "My superior, sent by the Valorian Inquisition to lead our sect."
 	if(HAS_TRAIT(src, TRAIT_INQUISITION) && HAS_TRAIT(examiner, TRAIT_PURITAN))
-		inquisition_text = "A subordinate to my authority, as willed by the Holy Otavan Inquisition."
+		inquisition_text = "A subordinate to my authority, as willed by the Valorian Inquisition."
 	if(HAS_TRAIT(src, TRAIT_PURITAN) && HAS_TRAIT(examiner, TRAIT_PURITAN))
-		inquisition_text = "Myself. I lead this sect of the Holy Otavan Inquisition."
+		inquisition_text = "Myself. I lead this sect of the Valorian Inquisition."
 
 	return inquisition_text
 

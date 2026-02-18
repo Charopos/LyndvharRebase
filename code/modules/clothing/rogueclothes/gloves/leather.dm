@@ -67,9 +67,9 @@
 	sewrepair = TRUE
 	salvage_result = /obj/item/natural/hide/cured
 
-/obj/item/clothing/gloves/roguetown/otavan
-	name = "otavan leather gloves"
-	desc = "A pair of heavy Otavan leather gloves, commonly used by fencers and renowned for their quality."
+/obj/item/clothing/gloves/roguetown/valorian
+	name = "valorian leather gloves"
+	desc = "A pair of heavy Valorian leather gloves, commonly used by fencers and renowned for their quality."
 	icon_state = "fencergloves"
 	item_state = "fencergloves"
 	armor = ARMOR_MAILLE
@@ -83,14 +83,14 @@
 	sewrepair = TRUE
 	allowed_race = NON_DWARVEN_RACE_TYPES
 
-/obj/item/clothing/gloves/roguetown/otavan/inqgloves
+/obj/item/clothing/gloves/roguetown/valorian/inqgloves
 	name = "inquisitorial leather gloves"
 	desc = "Masterworked leather gloves, reinforced with a light weave of maille. Hanging from the left glove's cuff is a small rosary necklace; a warm reminder that even the Inquisitors are beholden to His authority."
 	icon_state = "inqgloves"
 	item_state = "inqgloves"
 	salvage_result = /obj/item/natural/hide/cured
 
-/obj/item/clothing/gloves/roguetown/otavan/psygloves
+/obj/item/clothing/gloves/roguetown/valorian/psygloves
 	name = "psydonic leather gloves"
 	desc = "Thick leather mittens, stitched and cuffed to guard His children's palms from perforation."
 	armor = ARMOR_LEATHER_GOOD
