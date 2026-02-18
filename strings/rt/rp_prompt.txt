@@ -204,7 +204,7 @@ It is the only kingdom of notable size that worships Psydon, and - as a theocrat
 		<br><br>
 		Khazumia is a nation in Yoheon dominated by shifting desert sands, northern mountains that border Grenzelhoft, and lush savannas and oasis that cling to the coast. Governed by the magocratic elite known as the Vaktasi, they retain a relatively neutral stance to other realms in Yoheon. With an emphasis on meritocratic strength, Khazumia is most renowned for some of the best swordsmen in Beowricke, and many powerful mages. There are rumours abound about the Vaktasi, and some claim that the most powerful of their cabal can see the future, though this is still debated by outsiders.
 <br><br> 
-Decades of invasion from Forvheiapl, a destabilization of northern land by a skirmish with Grenzelhoft, and the exodus of its talent in search for more opportunities outside of the Khaliphate has put Khazumia in a gradual state of decline.
+Decades of invasion from Forvheipal, a destabilization of northern land by a skirmish with Grenzelhoft, and the exodus of its talent in search for more opportunities outside of the Khaliphate has put Khazumia in a gradual state of decline.
 		<br>
 	</details>
 
@@ -307,6 +307,17 @@ This has not spared them the dangers rising amongst their territories, however. 
 		Naexidoria, as the name implies, was the northern city of which Naexidor based his northern conquests: hence, the name. It has seen better daes with the civil war, however. 
 <br><br>
 Outside of its famous namesake, its connection to Lyndvhar was lost when the northern roads were overgrown from poor management, and its line of communication gone dark. Little is known about its current situation.
+		<br>
+	</details>
+
+	<details>
+		<summary><strong> CALMIRIXIA </strong></summary>
+		<br>
+		<em>Homeland of the Eskallian</em>
+		<br><br>
+		The swamps and marshes that the lizard Eskallian call home. Once a thriving kingdom before the conquest, now relegated to a conquered province in the southwest.
+<br><br>
+After it was annexed and organized into a province, there was a large schism between both the Dracanae and the Caiman that has since never fully been solved, causing immense distrust between the two cultural parties.
 		<br>
 	</details>
 

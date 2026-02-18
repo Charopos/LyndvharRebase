@@ -4,7 +4,7 @@
 /datum/species/lizardfolk
 	name = "Zardman"
 	id = "lizardfolk"
-	origin_default = /datum/virtue/origin/etrusca
+	origin_default = /datum/virtue/origin/calmirixia
 	origin = "Etrusca"
 	base_name = "Zard"
 	desc = "<b>Zardman</b><br>\

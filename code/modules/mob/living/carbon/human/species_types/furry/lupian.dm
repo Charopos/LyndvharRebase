@@ -5,7 +5,7 @@
 	name = "Lupian"
 	id = "lupian"
 	is_subrace = TRUE
-	origin_default = /datum/virtue/origin/hammerhold
+	origin_default = /datum/virtue/origin/forvheipal
 	origin = "Hammerhold"
 	base_name = "Beastvolk"
 	desc = "<b>Lupian</b><br>\

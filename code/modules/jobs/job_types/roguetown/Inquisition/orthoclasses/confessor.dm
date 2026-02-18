@@ -111,4 +111,4 @@
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
 	
-	change_origin(H, /datum/virtue/origin/otava, "Holy order")
+	change_origin(H, /datum/virtue/origin/valoria, "Holy order")

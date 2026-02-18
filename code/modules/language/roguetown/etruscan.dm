@@ -1,4 +1,4 @@
-/datum/language/etruscan
+/datum/language/calmirixian
 	name = "Etrusco"
 	desc = "The language of the inhabitants of the Isles of Etrusca. Fast-paced, for those unused to its emotiveness."
 	speech_verb = "remarks"

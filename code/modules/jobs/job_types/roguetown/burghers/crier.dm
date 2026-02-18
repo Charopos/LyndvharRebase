@@ -40,7 +40,7 @@
 		/datum/language/orcish,
 		/datum/language/grenzelhoftian,
 		/datum/language/otavan,
-		/datum/language/etruscan,
+		/datum/language/calmirixian,
 		/datum/language/gronnic,
 		/datum/language/kazengunese,
 		/datum/language/draconic,
