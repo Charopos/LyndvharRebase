@@ -30,17 +30,17 @@
 
 /datum/outfit/job/roguetown/mercenary/freelancer/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("You are a master in the arts of the longsword. Wielder of Psydonia's most versatile and noble weapon, you needn't anything else. Your professionally made longsword facilitates moves from fechtbuchs the likes of The Etruscan Flower and Grenzelhoft's Wiedenhauer."))
+	to_chat(H, span_warning("You are a master in the arts of the longsword. Wielder of Psydonia's most versatile and noble weapon, you needn't anything else."))
 	l_hand = /obj/item/rogueweapon/scabbard/sword
-	var/weapons = list("Etruscan Longsword", "Reformist Longsword")
+	var/weapons = list("Calmirixian Longsword", "Valorian Longsword")
 	if(H.mind)
 		var/weapon_choice = input(H, "Draw a sword.", "As presented to me by Master Oktawiusz...") as anything in weapons
 		switch(weapon_choice)
-			if("Etruscan Longsword")		//A longsword with a compound ricasso. Accompanied by a traditional flip knife.
-				r_hand = /obj/item/rogueweapon/sword/long/etruscan
+			if("Calmirixian Longsword")		//A longsword with a compound ricasso. Accompanied by a traditional flip knife.
+				r_hand = /obj/item/rogueweapon/sword/long/ecalmirixia
 				beltr = /obj/item/rogueweapon/huntingknife/idagger/navaja/freifechter
-			if("Reformist Longsword")
-				r_hand = /obj/item/rogueweapon/sword/long/etruscan/freifechter
+			if("Valorian Longsword")
+				r_hand = /obj/item/rogueweapon/sword/long/calmirixia/freifechter
 				beltr = /obj/item/rogueweapon/huntingknife/idagger/navaja/freifechter
 
 		if(H.mind)

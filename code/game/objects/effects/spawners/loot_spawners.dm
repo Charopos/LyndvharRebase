@@ -427,7 +427,7 @@
 		/obj/item/clothing/head/roguetown/helmet/bascinet = 1,
 		/obj/item/clothing/head/roguetown/helmet/bascinet/pigface = 1,
 		/obj/item/clothing/head/roguetown/helmet/heavy/frogmouth = 1,
-		/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan = 1,
+		/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia = 1,
 		//food
 		/obj/item/reagent_containers/food/snacks/fat/salo = 1,
 		/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette = 1,

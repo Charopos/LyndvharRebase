@@ -38,8 +38,8 @@
 	cloak = /obj/item/clothing/cloak/tabard/blkknight //Aura farming
 	gloves = /obj/item/clothing/gloves/roguetown/plate
 	belt = /obj/item/storage/belt/rogue/leather/battleskirt
-	head = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan //Literally Etruscan. You don't get a choice, you're wearing this, sire. 
-	armor = /obj/item/clothing/suit/roguetown/armor/brigandine //It's THE Etruscan armor, come on!
+	head = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine
 	backl = /obj/item/storage/backpack/rogue/satchel
 	shirt = /obj/item/clothing/suit/roguetown/shirt/shadowshirt //padded is too strong I guess.
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
