@@ -20,13 +20,13 @@
 	base_icon_state = "chest3"
 
 /obj/structure/closet/crate/chest/inqreliquary
-	name = "otavan reliquary"
+	name = "valorian reliquary"
 	desc = "A foreboding red chest with a intricate lock design. It seems to only fit a very specific key. Choose wisely."
 	icon_state = "chestweird1"
 	base_icon_state = "chestweird1"
 
 /obj/structure/closet/crate/chest/inqcrate
-	name = "otavan chest"
+	name = "valorian chest"
 	desc = "A foreboding red chest with black dye-washed silver embellishments."
 	icon_state = "chestweird2"
 	base_icon_state = "chestweird2"	

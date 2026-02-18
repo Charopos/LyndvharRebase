@@ -111,7 +111,7 @@
 	name = "cuir-bouilli armor"
 	desc = "A padded vest that's been reinforced with 'cuir-bouilli' - leather that's been treated, water-boiled, and composite-layered together. The \
 	thickness makes it an excellent alternative to lighter cuirasses, at the cost of being unfittable beneath most dedicated suits of armor. If the \
-	blacksteel-studded reinforcements and psystitchings're anything to go by, this particular vest was likely fashioned to vestume Otava's finest. "
+	blacksteel-studded reinforcements and psystitchings're anything to go by, this particular vest was likely fashioned to vestume Valoria's finest. "
 	icon_state = "cuirbouilli"
 	item_state = "cuirbouilli"
 	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER + 30

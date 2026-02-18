@@ -5,7 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/confessor
 	category_tags = list(CTAG_ORTHODOXIST)
-	subclass_languages = list(/datum/language/otavan)
+	subclass_languages = list(/datum/language/valorian)
 	cmode_music = 'sound/music/cmode/antag/combat_deadlyshadows.ogg'
 	traits_applied = list(
 		TRAIT_DODGEEXPERT,
@@ -90,12 +90,12 @@
 
 	cloak = /obj/item/storage/backpack/rogue/satchel/beltpack
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
-	gloves = /obj/item/clothing/gloves/roguetown/otavan/psygloves
+	gloves = /obj/item/clothing/gloves/roguetown/valorian/psygloves
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	backr = /obj/item/storage/backpack/rogue/satchel/otavan
+	backr = /obj/item/storage/backpack/rogue/satchel/valorian
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/psydon
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
 	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots
 	mask = /obj/item/clothing/mask/rogue/facemask/steel/confessor
 	id = /obj/item/clothing/ring/signet/silver

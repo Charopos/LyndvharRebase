@@ -1,7 +1,7 @@
 GLOBAL_LIST_INIT(bounty_posters, list(
-	"AZURIA" = "The Justiciary of Azuria",
-	"GRENZELHOFT" = "The Grenzelhoftian Holy See",
-	"OTAVAN" = "The Otavan Orthodoxy"
+	"LYNDVHAR" = "The Justiciary of Lyndvhar",
+	"MOTHER CHURCH" = "The Holy Mother Church",
+	"VALORIA" = "The Valorian Orthodoxy"
 ))
 
 GLOBAL_LIST_INIT(wretch_severities, list(
@@ -13,7 +13,7 @@ GLOBAL_LIST_INIT(wretch_severities, list(
 GLOBAL_LIST_INIT(bandit_severities, list(
 	"FISH" = "Small Fish",
 	"BUTCHER" = "Bay Butcher",
-	"BOOGEYMAN" = "Azurean Boogeyman"
+	"BOOGEYMAN" = "Lyndhardtian Boogeyman"
 ))
 
 GLOBAL_LIST_INIT(wretch_bounty_severities, list(
@@ -46,7 +46,7 @@ GLOBAL_LIST_INIT(bandit_bounty_severities, list(
 		"max" = 500
 	),
 	"BOOGEYMAN" = list(
-		"name" = "Azurean Boogeyman",
+		"name" = "Lyndhardtian Boogeyman",
 		"min" = 500,
 		"max" = 600
 	)

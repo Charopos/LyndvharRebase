@@ -203,7 +203,7 @@
 /area/rogue/indoors/inq
 	name = "The Inquisition"
 	icon_state = "chapel"
-	first_time_text = "THE OTAVAN INQUISITION"
+	first_time_text = "THE VALORIAN INQUISITION"
 	detail_text = DETAIL_TEXT_INQUISITION_HQ
 
 /area/rogue/indoors/inq/office

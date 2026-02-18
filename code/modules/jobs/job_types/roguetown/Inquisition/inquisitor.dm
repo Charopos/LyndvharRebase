@@ -8,7 +8,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_NO_CONSTRUCT		//Would you trust a machine to handle a role that requires non-logical intuition and commanding? Maybe. Could undo this if the community likes it. Purpose-built supermachines sound cool, too.
 	allowed_patrons = list(/datum/patron/old_god) //Requires your character's patron to be Psydon. This role is explicitly designed to be played by Psydonites, only, and almost everything they have - down to the equipment and statblock - is rooted in Psydonism. Do NOT make this accessable to other faiths, unless you go through the efforts of redesigning it from the ground up.
-	tutorial = "You are a puritan of unmatched aptitude, adherent to the Psydonic doctrine and entrusted with the authority to lead a local sect. Otava - the largest Psydonic kingdom left on this world - has seen it fit to treat you like a silver-tipped olive branch, gifted to Azuria to ward off the encroaching darkness. Tread carefully when pursuing your missives, lest the faithless strap you to the pyre as well."
+	tutorial = "You are a puritan of unmatched aptitude, adherent to the Psydonic doctrine and entrusted with the authority to lead a local sect. Valoria - the largest Psydonic realm in Beowricke - has seen it fit to treat you like a silver-tipped olive branch, gifted to Azuria to ward off the encroaching darkness. Tread carefully when pursuing your missives, lest the faithless strap you to the pyre as well."
 	whitelist_req = TRUE
 	cmode_music = 'sound/music/inquisitorcombat.ogg'
 	selection_color = JCOLOR_INQUISITION
@@ -37,7 +37,7 @@
 	name = "Inquisitor"
 	tutorial = "Investigators and diplomats, oft-selected from Confessors who've shown their aptitude in a variety of skills. A precise strike is all that's needed to forward the Orthodoxy's missive; whether it's struck with a diplomat's charm or a rapier's tip, however, is up to you."
 	outfit = /datum/outfit/job/roguetown/inquisitor/inspector
-	subclass_languages = list(/datum/language/otavan)
+	subclass_languages = list(/datum/language/valorian)
 	category_tags = list(CTAG_INQUSITOR)
 	traits_applied = list(
 		TRAIT_STEELHEARTED,
@@ -85,14 +85,14 @@
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/psydon
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
-	shoes = /obj/item/clothing/shoes/roguetown/boots/otavan/inqboots
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
-	backr =  /obj/item/storage/backpack/rogue/satchel/otavan
+	shoes = /obj/item/clothing/shoes/roguetown/boots/valorian/inqboots
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
+	backr =  /obj/item/storage/backpack/rogue/satchel/valorian
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 	beltr = /obj/item/quiver/bolts
 	head = /obj/item/clothing/head/roguetown/inqhat
 	mask = /obj/item/clothing/mask/rogue/spectacles/inq/spawnpair
-	gloves = /obj/item/clothing/gloves/roguetown/otavan/psygloves
+	gloves = /obj/item/clothing/gloves/roguetown/valorian/psygloves
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
 	id = /obj/item/clothing/ring/signet/silver
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat
@@ -141,7 +141,7 @@
 	name = "Ordinator"
 	tutorial = "Adjudicator-Sergeants, hailing from the neighboring Psydonic Orders. Oft-mistaken for golems due to the lethargy imposed by their blessed plate armor, these holy knights have forsaken every other pursuit for a singular purpose: to break the inhumen against their knee."
 	outfit = /datum/outfit/job/roguetown/inquisitor/ordinator
-	subclass_languages = list(/datum/language/otavan)
+	subclass_languages = list(/datum/language/valorian)
 	cmode_music = 'sound/music/combat_inqordinator.ogg'
 
 	category_tags = list(CTAG_INQUSITOR)
@@ -185,15 +185,15 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/fluted/ornate/ordinator
 	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
-	shoes = /obj/item/clothing/shoes/roguetown/boots/otavan/inqboots
-	backl = /obj/item/storage/backpack/rogue/satchel/otavan
+	shoes = /obj/item/clothing/shoes/roguetown/boots/valorian/inqboots
+	backl = /obj/item/storage/backpack/rogue/satchel/valorian
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
 	id = /obj/item/clothing/ring/signet/silver
 	pants = /obj/item/clothing/under/roguetown/platelegs
 	cloak = /obj/item/clothing/cloak/ordinatorcape
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/ordinatorhelm
-	gloves = /obj/item/clothing/gloves/roguetown/otavan/psygloves
+	gloves = /obj/item/clothing/gloves/roguetown/valorian/psygloves
 	backpack_contents = list(
 		/obj/item/storage/keyring/inquisitor = 1,
 		/obj/item/paper/inqslip/arrival/inq = 1

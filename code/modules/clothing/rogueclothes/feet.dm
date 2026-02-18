@@ -212,8 +212,8 @@
 	icon_state = "albootsb"
 	item_state = "albootsb"
 
-/obj/item/clothing/shoes/roguetown/boots/otavan
-	name = "otavan leather boots"
+/obj/item/clothing/shoes/roguetown/boots/valorian
+	name = "valorian leather boots"
 	desc = "Boots of outstanding craft, your fragile feet have never felt so protected and comfortable before."
 	body_parts_covered = FEET
 	icon_state = "fencerboots"
@@ -226,7 +226,7 @@
 	salvage_result = /obj/item/natural/hide/cured
 	sewrepair = TRUE
 
-/obj/item/clothing/shoes/roguetown/boots/otavan/ComponentInitialize()
+/obj/item/clothing/shoes/roguetown/boots/valorian/ComponentInitialize()
 	AddComponent(/datum/component/armour_filtering/positive, TRAIT_FENCERDEXTERITY)
 	AddComponent(/datum/component/armour_filtering/negative, TRAIT_HONORBOUND)
 
@@ -478,7 +478,7 @@
 	sewrepair = TRUE
 	armor = ARMOR_CLOTHING
 
-/obj/item/clothing/shoes/roguetown/boots/otavan/inqboots
+/obj/item/clothing/shoes/roguetown/boots/valorian/inqboots
 	name = "inquisitorial boots"
 	desc = "Finely crafted boots, made to stomp out darkness."
 	icon_state = "inqboots"

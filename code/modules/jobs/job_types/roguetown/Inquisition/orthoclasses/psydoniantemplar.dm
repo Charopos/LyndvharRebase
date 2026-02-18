@@ -5,7 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/psydoniantemplar
 	category_tags = list(CTAG_ORTHODOXIST)
-	subclass_languages = list(/datum/language/otavan)
+	subclass_languages = list(/datum/language/valorian)
 	cmode_music = 'sound/music/templarofpsydonia.ogg'
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	subclass_stats = list(
@@ -46,7 +46,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/chain/psydon
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	pants = /obj/item/clothing/under/roguetown/chainlegs
-	backl = /obj/item/storage/backpack/rogue/satchel/otavan
+	backl = /obj/item/storage/backpack/rogue/satchel/valorian
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq
 	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots
 	belt = /obj/item/storage/belt/rogue/leather/black

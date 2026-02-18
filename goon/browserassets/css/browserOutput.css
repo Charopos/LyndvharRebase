@@ -88,7 +88,7 @@ body {
 
 @font-face {
 	font-family: "Notredame";
-	src: url("otavan.ttf");
+	src: url("valorian.ttf");
 }
 
 @font-face {
@@ -867,7 +867,7 @@ h2.alert {
 	font-family: "Kingthings Petrock", "Pterra";
 	font-size: 120%;
 }
-.otavan {
+.valorian {
 	font-family: "ArkansasDB", "Pterra";
 	font-size: 120%;
 }

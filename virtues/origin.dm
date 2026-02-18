@@ -30,7 +30,7 @@
 /datum/virtue/origin/valoria
 	name = "Valorian"
 	origin_name = "Valoria"
-	added_languages = list(/datum/language/otavan)
+	added_languages = list(/datum/language/valorian)
 	desc = "I originate from the gently rolling hills of Valoria, a mercantile union of traders and faithful who answer to the Patriarch of the Valorian Archbisphoric.<br>"
 	origin_desc = "PLACEHOLDER TO BE DONE FOR LATER"
 
@@ -78,7 +78,7 @@
 
 /datum/virtue/origin/racial/underdark
 	name = "Underdweller"
-	added_languages = list(/datum/language/otavan)
+	added_languages = list(/datum/language/dwarvish)
 	origin_name = "the Underdark"
 	desc = "I originate from the treacherous Underdark, a cavernous region beneath all of Beowricke. This unforgiving land is dominated by the prosperous and cruel dark elves and their pets. Most surfacedwellers only come here in chains.<br>"
 	races = list(/datum/species/elf/dark,

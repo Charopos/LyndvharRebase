@@ -1281,7 +1281,7 @@
 
 /obj/item/rogueweapon/sword/short/falchion
 	name = "falchion"
-	desc = "A single-edged sword that is similar to a messer in appearance, its origins trace back to Otava. An implement of commoners and knights alike. It's good for cutting and thrusting."
+	desc = "A single-edged sword that is similar to a messer in appearance, its origins trace back to Valoria. An implement of commoners and knights alike. It's good for cutting and thrusting."
 	force = 20
 	icon_state = "falchion"
 	wdefense = 6
@@ -1346,7 +1346,7 @@
 
 /obj/item/rogueweapon/sword/short/psy
 	name = "psydonic shortsword"
-	desc = "Otavan smiths worked with Grenzelhoftian artificers, and an esoteric sidearm was born: a shortsword with an unique design, dismissing a crossguard in favor of a hollow beak to hook and draw harm away from its user. Short in length, yet lethally light in weight."
+	desc = "Valorian smiths worked with Dwarven artificers, and an esoteric sidearm was born: a shortsword with an unique design, dismissing a crossguard in favor of a hollow beak to hook and draw harm away from its user. Short in length, yet lethally light in weight."
 	icon_state = "psyswordshort"
 	sheathe_icon = "psyswordshort"
 	force = 20
@@ -1782,7 +1782,7 @@
 
 /obj/item/rogueweapon/sword/rapier/psy
 	name = "psydonic rapier"
-	desc = "A basket-hilted rapier, fitted with a thin blade of pure silver. Such a resplendent weapon not only pierces the gaps within a heathen's maille, but also serves as the symbol of an Otavan diplomat's authority."
+	desc = "A basket-hilted rapier, fitted with a thin blade of pure silver. Such a resplendent weapon not only pierces the gaps within a heathen's maille, but also serves as the symbol of a Valorian diplomat's authority."
 	icon_state = "silverrapier"
 	sheathe_icon = "rapier"
 	max_integrity = 225

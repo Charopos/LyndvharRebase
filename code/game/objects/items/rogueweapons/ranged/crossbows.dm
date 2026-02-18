@@ -299,7 +299,7 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow
 	name = "slurbow"
-	desc = "A lighter weight crossbow with a distinct barrel shroud holding the bolt in place. While its reduced draw-weight does hamper the power of its bolts, it's consequently much easier to rearm and aim than the common crossbow; doubly-so, while on the move. </br>They're popular among among highwaymen and the patrolling lamplighters of Otava."
+	desc = "A lighter weight crossbow with a distinct barrel shroud holding the bolt in place. While its reduced draw-weight does hamper the power of its bolts, it's consequently much easier to rearm and aim than the common crossbow; doubly-so, while on the move. </br>They're popular among among highwaymen and the patrolling lamplighters of Valoria."
 	icon = 'icons/roguetown/weapons/misc32.dmi'
 	icon_state = "slurbow0"
 	item_state = "slurbow"

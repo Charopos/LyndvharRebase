@@ -181,9 +181,9 @@
 		/obj/item/paper,
 	)
 
-/obj/item/storage/backpack/rogue/satchel/otavan
-	name = "otavan leather satchel"
-	desc = "A sleek, stylish, and surprisingly sturdy satchel that hails straight from the Sovereignty of Otava. It is made to endure, first and foremost."
+/obj/item/storage/backpack/rogue/satchel/valorian
+	name = "valorian leather satchel"
+	desc = "A made to last leather bag from the Psydonian heart of Valoria."
 	icon_state = "osatchel"
 	item_state = "osatchel"
 

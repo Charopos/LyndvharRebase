@@ -74,8 +74,8 @@
 		/datum/crafting_recipe/roguetown/leather/armor/heavy_leather_armor/coat,
 		/datum/crafting_recipe/roguetown/leather/armor/heavy_leather_armor/jacket,
 		/datum/crafting_recipe/roguetown/leather/hidebikini,
-		/datum/crafting_recipe/roguetown/leather/unique/otavanleatherpants,
-		/datum/crafting_recipe/roguetown/leather/unique/otavanboots,
+		/datum/crafting_recipe/roguetown/leather/unique/valorianleatherpants,
+		/datum/crafting_recipe/roguetown/leather/unique/valorianboots,
 		)
 
 	AddElement(
@@ -91,7 +91,7 @@
 /obj/item/reagent_containers/food/snacks/tallow/red
 	name = "redtallow"
 	desc = "Fatty tissue is harvested from slain creachurs and rendered of its membraneous sinew to produce a hard shelf-stable \
-	grease. It has then been soaked in blood or something blood adjacent to make for an easily sourced and rather grim wax substitute. As they say in Otava, Bon Appetit."
+	grease. It has then been soaked in blood or something blood adjacent to make for an easily sourced and rather grim wax substitute. As they say in Valoria, Buon Appetito."
 	icon_state = "redtallow"
 	tastes = list("grease" = 1, "oil" = 1, "regret" =1, "blood"=1,)
 

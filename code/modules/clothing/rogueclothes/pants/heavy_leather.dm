@@ -31,18 +31,18 @@
 	salvage_result = /obj/item/natural/hide/cured
 	salvage_amount = 1
 
-/obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
-	name = "otavan leather trousers"
-	desc = "padded leather armor made by Otavan tailors, its quality is remarkable."
+/obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
+	name = "valorian leather trousers"
+	desc = "padded leather armor made by Valorian tailors, its quality is remarkable."
 	icon_state = "fencerpants"
 
-/obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/shepherd
+/obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/shepherd
 	name = "shepherd's pants"
 	desc = "A pair of white pants decorated with red stripes and traditional patterning."
 	icon_state = "shepherdpants"
 	color = "#FFFFFF"
 
-/obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/generic
+/obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic
 	name = "fencing breeches"
 	desc = "A pair of loose breeches with leather reinforcements on the waist and legs. Worn with a cup."
 	icon_state = "fencingbreeches"
@@ -51,7 +51,7 @@
 	detail_color = "#5E4440"
 	allowed_race = NON_DWARVEN_RACE_TYPES
 
-/obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/generic/update_icon()
+/obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic/update_icon()
 	cut_overlays()
 	if(get_detail_tag())
 		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
@@ -60,7 +60,7 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
-/obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/generic/Initialize()
+/obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic/Initialize()
 	..()
 	update_icon()
 
