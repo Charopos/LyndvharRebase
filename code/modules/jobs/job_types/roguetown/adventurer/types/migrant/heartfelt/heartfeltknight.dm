@@ -163,7 +163,7 @@
 			r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_EXPERT, TRUE)
 
-	var/helmet = list("Pigface Bascinet","Guard Helmet","Barred Helmet","Bucket Helmet","Knight's Helmet","Knight's Armet","Volf Plate Helmet" ,"Visored Sallet","Armet","Hounskull Bascinet", "Etruscan Bascinet", "Slitted Kettle")
+	var/helmet = list("Pigface Bascinet","Guard Helmet","Barred Helmet","Bucket Helmet","Knight's Helmet","Knight's Armet","Volf Plate Helmet" ,"Visored Sallet","Armet","Hounskull Bascinet", "Calmirixian Bascinet", "Slitted Kettle")
 	var/helmet_choice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmet
 	switch(helmet_choice)
 		if("Pigface Bascinet") 
@@ -186,7 +186,7 @@
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet
 		if("Hounskull Bascinet")
 			head = /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull
-		if("Etruscan Bascinet")
-			head = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan
+		if("Calmirixian Bascinet")
+			head = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia
 		if("Slitted Kettle") 
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle

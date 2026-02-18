@@ -60,15 +60,15 @@
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 		H.set_blindness(0)
 		switch(weapon_choice)
-			if("Kriegmesser & Buckler") //Grenzel
+			if("Kriegmesser & Buckler")
 				r_hand = /obj/item/rogueweapon/sword/long/kriegmesser
 				backl= /obj/item/rogueweapon/shield/buckler
 				beltr = /obj/item/rogueweapon/scabbard/sword
-			if("Falchion & Kite Shield") //Otavan
+			if("Falchion & Kite Shield")
 				r_hand = /obj/item/rogueweapon/sword/short/falchion
 				backl= /obj/item/rogueweapon/shield/tower/metal
 				beltr = /obj/item/rogueweapon/scabbard/sword
-			if("Sword & Crossbow") //Etruscan
+			if("Sword & Crossbow")
 				backl= /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 				beltr = /obj/item/quiver/bolts
 				r_hand = /obj/item/rogueweapon/sword

@@ -619,7 +619,7 @@
 	name = "sail dagger"
 	force = 15
 	throwforce = 15
-	desc = "An exceptionally protective parrying dagger popular in the Etruscan Isles, this dagger features a plain metal guard in the shape of a ship's sail."
+	desc = "An exceptionally protective parrying dagger popular in the Calmirixian swamps, this dagger features a plain metal guard in the shape of a ship's sail."
 	max_integrity = 200
 	wdefense = 9		//This way with expert dagger skill you'd have ~13 defense. 2 higher than a kiteshield, but no arrow protection.
 	icon_state = "sail_dagger"
@@ -892,7 +892,7 @@
 /obj/item/rogueweapon/huntingknife/idagger/navaja
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,  /datum/intent/dagger/thrust/pick)
 	name = "navaja"
-	desc = "A folding Etruscan knife valued by merchants, mercenaries and peasants for its convenience. It possesses a long hilt, allowing for a sizeable blade with good reach."
+	desc = "A folding Zybantine knife valued by merchants, mercenaries and peasants for its convenience. It possesses a long hilt, allowing for a sizeable blade with good reach."
 	force = 5
 	icon_state = "navaja_c"
 	item_state = "elfdag"
@@ -935,7 +935,7 @@
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut, /datum/intent/dagger/chop, /datum/intent/dagger/thrust/pick)
 	name = "mountaineer's navaja"
 	icon = 'icons/roguetown/weapons/special/freifechter32.dmi'
-	desc = "A folding Etruscan knife valued by merchants, mercenaries and peasants for its convenience. This specific kind of ornate navaja is endemic to Szöréndnížina."
+	desc = "A folding Zybantine knife valued by merchants, mercenaries and peasants for its convenience. This specific kind of ornate navaja is endemic to the Khaliphate."
 	force = 5
 	icon_state = "mtnavaja_c"
 	item_state = "elfdag"

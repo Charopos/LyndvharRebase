@@ -152,7 +152,7 @@
 		"Avar" = SKIN_COLOR_AVAR,
 		"Rockhill" = SKIN_COLOR_ROCKHILL,
 		"Otava" = SKIN_COLOR_OTAVA,
-		"Etrusca" = SKIN_COLOR_ETRUSCA,
+		"Calmirixia" = SKIN_COLOR_CALMIRIXIAN,
 		"Gronn" = SKIN_COLOR_GRONN,
 		"North Raneshen (Chorodiaki)" = SKIN_COLOR_GIZA,
 		"West Raneshen (Vrdaqnan)" = SKIN_COLOR_SHALVISTINE,

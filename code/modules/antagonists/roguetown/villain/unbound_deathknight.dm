@@ -177,7 +177,7 @@
 		"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored/black,
 		"Armet"				= /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet/black,
 		"Hounskull Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull/black,
-		"Etruscan Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/black,
+		"Calmirixian Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia/black,
 		"Slitted Kettle"	= /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle/black,
 	)
 	var/helmchoice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmets
@@ -230,7 +230,7 @@
 /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull/black
 	color = CLOTHING_BLACK
 
-/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/black
+/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia/black
 	color = CLOTHING_BLACK
 
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle/black

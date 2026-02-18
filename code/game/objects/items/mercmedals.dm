@@ -64,7 +64,7 @@
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/condottiero
 	name = "condottiero's hilt"
-	desc = "A beautiful silver necklace with pea-sized rontz inlays. Each is a work of art in itself; handcrafted by a master jeweler of Etrusca. This is the blade to which the \
+	desc = "A beautiful silver necklace with pea-sized rontz inlays. Each is a work of art in itself; handcrafted by a master jeweler in Calmirixia. This is the blade to which the \
 	condottiero has sworn their lyfe."
 	icon_state = "condo_blade"
 
@@ -106,9 +106,9 @@
 	// NOT CURRENTLY IMPLEMENTED
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/routier
-	name = "otavan silvered halo"
-	desc = "A fragment of blessed Otavan steel, carefully wrought into an unusual halo-pattern. While it won't do any good against verevolfs or demons, it will remind a distant routier of what they're fighting for: \
-	home, blessed Otava, and their Weeping God, PSYDON."
+	name = "valorian silvered halo"
+	desc = "A fragment of blessed Valorian steel, carefully wrought into an unusual halo-pattern. While it won't do any good against verevolfs or demons, it will remind a distant routier of what they're fighting for: \
+	home, blessed Valoria, and their Weeping God, Psydon."
 	icon_state = "routier_halo"
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/steppesman
@@ -118,7 +118,7 @@
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/vaquero
 	name = "vaquero's ring"
-	desc = "A beautiful gold-and-rontz ring, a masterwork of Etruscan jeweling. This does more than prove you a true vaquero; it shows you are as beautiful as you are dangerous, a crimson stone set against gold. Lyve dangerously, \
+	desc = "A beautiful gold-and-rontz ring, a masterwork of Calmirixian jeweling. This does more than prove you a true vaquero; it shows you are as beautiful as you are dangerous, a crimson stone set against gold. Lyve dangerously, \
 	but lyve all the same."
 	icon_state = "vaquero_ring"
 

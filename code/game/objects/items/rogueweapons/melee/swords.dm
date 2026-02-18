@@ -413,8 +413,8 @@
 	name = "longsword"
 	desc = "A lethal and perfectly balanced weapon. The longsword is the protagonist of endless tales and myths \
 	all across Psydonia, seen in the hands of noblemen and an ever-decreasing quantity of master duelists. \
-	It has great cultural significance in the empires of Grenzelhoft and Etrusca, where legendary swordsmen \
-	have created and perfected many fighting techniques of todae."
+	It has great cultural significance in the empires of today, where legendary swordsmen \
+	have created and perfected many fighting techniques.."
 	force = 25
 	force_wielded = 30
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust/long, /datum/intent/sword/strike, /datum/intent/sword/peel)
@@ -803,7 +803,7 @@
 			if("onbelt") return list("shrink" = 0.4, "sx" = -4, "sy" = -6, "nx" = 5, "ny" = -6, "wx" = 0, "wy" = -6, "ex" = -1, "ey" = -6, "nturn" = 100, "sturn" = 156, "wturn" = 90, "eturn" = 180, "nflip" = 0, "sflip" = 0, "wflip" = 0, "eflip" = 0, "northabove" = 0, "southabove" = 1, "eastabove" = 1, "westabove" = 0)
 			if("altgrip") return list("shrink" = 0.6,"sx" = 2,"sy" = 3,"nx" = -7,"ny" = 1,"wx" = -8,"wy" = 0,"ex" = 8,"ey" = -1,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = -135,"sturn" = -35,"wturn" = 45,"eturn" = 145,"nflip" = 8,"sflip" = 8,"wflip" = 1,"eflip" = 0)
 
-/obj/item/rogueweapon/sword/long/etruscan
+/obj/item/rogueweapon/sword/long/calmirixia
 	name = "basket-hilted longsword"
 	desc = "An uncommon and elaborate type of longsword with a compound hilt like those seen on rapiers and smallswords. It has a marked unsharpened section for safe unarmoured half-swording. The quality of the steel speaks for itself; this is a weapon made by masters, for masters."
 	icon_state = "elongsword"
@@ -815,9 +815,9 @@
 	max_blade_int = 300
 	max_integrity = 225
 
-/obj/item/rogueweapon/sword/long/etruscan/freifechter
-	name = "psydonic reformist longsword"
-	desc = "A newly-smithed longsword with a reverse hilt in the shape of a reformist psydonian cross. It has the same kind of hand protection of an Etruscan longsword. The cross is upright when the weapon is sheathed, bronze pommel reflecting sunlight directly - and it becomes inverted when drawn, a symbol of distress. Ad pacem servandam."
+/obj/item/rogueweapon/sword/long/calmirixia/freifechter
+	name = "valorian longsword"
+	desc = "A newly-smithed longsword from Valoria with a reverse hilt in the shape of a psydonian cross. It has the same kind of hand protection of a longsword from Calmirixia. The cross is upright when the weapon is sheathed, bronze pommel reflecting sunlight directly - and it becomes inverted when drawn, a symbol of distress. Ad pacem servandam."
 	sheathe_icon = "reform"
 	icon_state = "reformistsword"
 
@@ -1581,7 +1581,7 @@
 /obj/item/rogueweapon/sword/rapier
 	name = "rapier"
 	desc = "A practically brand new sword type with a straight, slender and sharply pointed blade meant to be wielded in one hand. \
-		Originating in the islands of Etrusca, its name comes from the term \"spada ropera\" (Literally \"dress sword\") due to its primary function being that of an accessory. \
+		Originating as an unorthodox weapon in Valoria, its name comes from the term \"spada ropera\" (Literally \"dress sword\") due to its primary function being that of an accessory. \
 		A very young type of fighting technique for this weapon is emerging in the island, aptly named \"Destreza\" for dexterity."
 	icon = 'icons/roguetown/weapons/swords64.dmi'
 	icon_state = "rapier"
@@ -1607,7 +1607,7 @@
 
 /obj/item/rogueweapon/sword/rapier/vaquero
 	name = "cup-hilt rapier"
-	desc = "A special variant of an Etruscan rapier. The cup hilt of this weapon is both simpler to produce and more protective than the type of traditional design of current rapiers."
+	desc = "A special variant of a rapier, made exclusively in Calmirixia. The cup hilt of this weapon is both simpler to produce and more protective than the type of traditional design of current rapiers."
 	icon_state = "cup_hilt_rapier"
 	wdefense = 8
 	force = 25
@@ -1765,7 +1765,7 @@
 
 /obj/item/rogueweapon/sword/rapier/psy/relic
 	name = "Eucharist"
-	desc = "Etruscan shape falling prey to Otavan craftsmanship. Saint Malum's smiths created an uniquely thin blade, capable of swiftly skewering the unholy and the miscreants through gaps that most claim to have never existed in the first place. <b> Silver-dipped steel crowned upon a basket hilt that keeps righteous hands safe from harm."
+	desc = "Crestborne shape falling prey to Valorian craftsmanship. Dwarven smiths created a uniquely thin blade, capable of swiftly skewering the unholy and the miscreants through gaps that most claim to have never existed in the first place. <b> Silver-dipped steel crowned upon a basket hilt that keeps righteous hands safe from harm."
 	icon_state = "psyrapier"
 	sheathe_icon = "psyrapier"
 	max_integrity = 300
@@ -1810,7 +1810,7 @@
 	grid_height = 64
 	dropshrink = 0
 	bigboy = FALSE
-	force = 25 // Same statline as the cup hilted etruscan rapier
+	force = 25 // Same statline as the cup hilted calmirixia rapier
 	wdefense = 8
 
 /obj/item/rogueweapon/sword/rapier/courtphysician

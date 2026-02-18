@@ -344,7 +344,7 @@
 
 /obj/item/clothing/head/roguetown/bucklehat //lifeweb sprite
 	name = "folded hat"
-	desc = "A plain leather hat with decorative buckle. Made popular by the ne'er-do-wells of Etrusca."
+	desc = "A plain leather hat with decorative buckle. Made popular by the ne'er-do-wells in the swamps of Calmirixia."
 	icon_state = "bucklehat"
 	sewrepair = TRUE
 
