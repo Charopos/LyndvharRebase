@@ -28,8 +28,8 @@
 /obj/structure/globe
 	name = "globe"
 	desc = "A wooden globe representing the world. Key landmarks are indicated by adjacent \
-	annotations; at a glance you can pick out 'Otava', 'Grenzelhoft', 'Kazengun', 'Naledi', \
-	and on the northern half of the western continent, a modest peninsula marked as 'Azuria'."
+	annotations; at a glance you can pick out 'Valoria', 'Grenzelhoft', 'Rhaenval', 'Greencrest', \
+	and on the eastern coast of Lewyn, a modest peninsula marked as 'Draguippe', and there upon that peninsula is the city of Lyndvhar."
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "globe"
 	density = TRUE
@@ -40,5 +40,5 @@
 		return
 
 	var/mob/living/carbon/human/H = user
-	var/random_message = pick("you spin the globe!", "You land on Azure Peak!", "You land on Raneshen!", "You land on port Ice cube!.", "You land on port Thornvale!", "You land on grenzelhoft!")
+	var/random_message = pick("You spin the globe!", "You land on the Draguippe!", "You land on Zybantu!", "You land on Rhaenval!", "You land on Greencrest!", "You land on Lyndhardtia!")
 	to_chat(H, span_notice("[random_message]"))

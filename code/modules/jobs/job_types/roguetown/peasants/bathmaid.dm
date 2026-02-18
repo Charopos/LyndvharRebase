@@ -213,7 +213,7 @@
 		shoes = /obj/item/clothing/shoes/roguetown/anklets
 	else
 		shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/random
-		pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
+		pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
 		belt = /obj/item/storage/belt/rogue/leather/black
 		shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
 

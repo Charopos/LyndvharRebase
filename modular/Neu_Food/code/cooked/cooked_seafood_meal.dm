@@ -16,10 +16,10 @@
 	drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
 
 
-/* salmon st dendor*/
+/* salmon of psydon*/
 /obj/item/reagent_containers/food/snacks/rogue/dendorsalmon
-	name = "saint dendor's salmon"
-	desc = "A dish invented in Otava, of a green sauce of fat and herbs atop salmon."
+	name = "holy psydonic salmon"
+	desc = "A dish invented in valorian, of a green sauce of fat and herbs atop salmon."
 	icon = 'modular/Neu_Food/icons/cooked/cooked_seafood_meal.dmi'
 	icon_state = "salmon_st_columbia"
 	tastes = list("warm fish" = 1, "fatty herbaceousness" = 1)

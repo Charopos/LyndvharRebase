@@ -169,9 +169,9 @@ UNDER NO CIRCUMSTANCE SHOULD ANY OF THE BOOKS BE GIVEN OUT INTO SPAWNERS OR TO B
 		/datum/crafting_recipe/roguetown/leather/unique/monkleather,
 		/datum/crafting_recipe/roguetown/sewing/tailor/desertgown,
 		/datum/crafting_recipe/roguetown/leather/unique/baggyleatherpants,
-		/datum/crafting_recipe/roguetown/sewing/tailor/otavangambeson,
-		/datum/crafting_recipe/roguetown/leather/unique/otavanleatherpants,
-		/datum/crafting_recipe/roguetown/leather/unique/otavanboots,
+		/datum/crafting_recipe/roguetown/sewing/tailor/valoriangambeson,
+		/datum/crafting_recipe/roguetown/leather/unique/valorianleatherpants,
+		/datum/crafting_recipe/roguetown/leather/unique/valorianboots,
 		/datum/crafting_recipe/roguetown/sewing/tailor/hgambeson/fencer,
 		/datum/crafting_recipe/roguetown/leather/unique/fencingbreeches,
 		/datum/crafting_recipe/roguetown/sewing/tailor/grenzelhat,
@@ -191,15 +191,15 @@ UNDER NO CIRCUMSTANCE SHOULD ANY OF THE BOOKS BE GIVEN OUT INTO SPAWNERS OR TO B
 	name = "Grand Codex of Classic Tailoring"
 	desc = "A thick book containing details on how to outfit an army of mammon-seeking scoundrels in style. Something tells you the author mislead you with the title."
 	crafting_recipe_types = list(
-		/datum/crafting_recipe/roguetown/sewing/tailor/otavangambeson,
-		/datum/crafting_recipe/roguetown/leather/unique/otavanleathergloves,
-		/datum/crafting_recipe/roguetown/leather/unique/otavanleatherpants,
-		/datum/crafting_recipe/roguetown/leather/unique/otavanboots,//Otavan
+		/datum/crafting_recipe/roguetown/sewing/tailor/valoriangambeson,
+		/datum/crafting_recipe/roguetown/leather/unique/valorianleathergloves,
+		/datum/crafting_recipe/roguetown/leather/unique/valorianleatherpants,
+		/datum/crafting_recipe/roguetown/leather/unique/valorianboots,
 		/datum/crafting_recipe/roguetown/sewing/tailor/grenzelhat,
 		/datum/crafting_recipe/roguetown/sewing/tailor/grenzelshirt,
 		/datum/crafting_recipe/roguetown/leather/unique/grenzelgloves,
 		/datum/crafting_recipe/roguetown/sewing/tailor/grenzelpants,
-		/datum/crafting_recipe/roguetown/leather/unique/grenzelboots//Grenzel
+		/datum/crafting_recipe/roguetown/leather/unique/grenzelboots
 	)
 
 /obj/item/book/granter/crafting_recipe/tailor/eastern

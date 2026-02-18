@@ -175,25 +175,25 @@
 	desc = "A bottle that contains a Grenzelhoftian classic with a black ink cork-seal.. An extremely sour wine that is watered down with mineral water."
 
 /obj/item/reagent_containers/glass/bottle/rogue/redwine
-	name = "bottle of Otavan Red"
+	name = "bottle of Valorian Red"
 	icon = 'icons/obj/alcohol.dmi'
-	icon_state = "otavan_red"
+	icon_state = "valorian_red"
 	list_reagents = list(/datum/reagent/consumable/ethanol/redwine = 50)
-	desc = "A bottle with the Otavan Merchant Guild cork-seal. This one appears to be labelled as a relatively young red-wine from the coinlord state."
+	desc = "A bottle with the Valorian Merchant Guild cork-seal. This one appears to be labelled as a relatively young red-wine from the coinlord state."
 
 /obj/item/reagent_containers/glass/bottle/rogue/whitewine
-	name = "bottle of Otavan White"
+	name = "bottle of Valorian White"
 	icon = 'icons/obj/alcohol.dmi'
 	icon_state = "white_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/whitewine = 50)
-	desc = "A bottle with the Otavan Merchant Guild cork-seal. This one appears to be labelled as a sweet wine from the colder northern regions."
+	desc = "A bottle with the Valorian Merchant Guild cork-seal. This one appears to be labelled as a sweet wine from the colder northern regions."
 
 /obj/item/reagent_containers/glass/bottle/rogue/elfred
 	name = "bottle of Elven Red"
 	icon = 'icons/obj/alcohol.dmi'
 	icon_state = "elven_red"
 	list_reagents = list(/datum/reagent/consumable/ethanol/elfred = 50)
-	desc = "A bottle gilded with a silver cork-seal. It appears to be labelled as an elvish red wine from Otava. Likely worth more than what an entire village makes!"
+	desc = "A bottle gilded with a silver cork-seal. It appears to be labelled as an elvish red wine from Greencrest. Likely worth more than what an entire village makes!"
 
 /obj/item/reagent_containers/glass/bottle/rogue/elfblue
 	name = "bottle of Valmora Blue"
@@ -350,7 +350,7 @@
 
 /obj/item/reagent_containers/glass/bottle/claybottle/whitewine
 	list_reagents = list(/datum/reagent/consumable/ethanol/whitewine = 75)
-	desc = "A bottle with the Otavan Merchant Guild cork-seal. This one appears to be labelled as a sweet wine from the colder northern regions."
+	desc = "A bottle with the Valorian Merchant Guild cork-seal. This one appears to be labelled as a sweet wine from the colder northern regions."
 
 
 		///////////////////////////

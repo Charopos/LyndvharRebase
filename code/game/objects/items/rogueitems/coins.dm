@@ -199,14 +199,14 @@
 		return
 	return ..()
 
-//OTAVAN MARQUE - WORTHLESS TO ANYONE BUT INQ.
+//VALORIAN MARQUE - WORTHLESS TO ANYONE BUT INQ.
 /obj/item/roguecoin/inqcoin
-	name = "otavan marque"
-	desc = "A blessed silver coin finished with a unique wash of black dye, bearing the post-kingdom Psycross. Kingsfield has denied the existence of such a coin when queried, as such coinage is rumoured to be used internally by Otava's inquisitorial sects."
+	name = "valorian marque"
+	desc = "A blessed silver coin finished with a unique wash of black dye, bearing the Psycross. The Valorian Archbishop has denied the existence of such a coin when queried, as such coinage is rumoured to be used internally by Valoria's inquisitorial sects."
 	icon_state = "i1"
 	sellprice = 0
 	base_type = CTYPE_ICOIN
-	plural_name = "otavan marques"	
+	plural_name = "valorian marques"	
 
 /obj/item/roguecoin/inqcoin/get_mechanics_examine(mob/user)
     . = ..()

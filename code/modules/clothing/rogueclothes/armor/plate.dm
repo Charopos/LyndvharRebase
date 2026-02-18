@@ -349,7 +349,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/fluted/ornate/ordinator
 	name = "inquisitorial ordinator's plate"
-	desc = "A relic that is said to have survived the Grenzelhoft-Otavan war, refurbished and repurposed to slay the arch-enemy in the name of Psydon. <br> A fluted cuirass that has been reinforced with thick padding and an additional shoulder piece. You will endure."
+	desc = "A relic that is said to have survived the brief war between Grenzelhoft and Valoria some decades ago, refurbished and repurposed to slay the arch-enemy in the name of Psydon. <br> A fluted cuirass that has been reinforced with thick padding and an additional shoulder piece. You will endure."
 	icon_state = "ordinatorplate"	
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/matthios
@@ -427,9 +427,9 @@
 	item_state = "heartfelt_hand"
 
 
-/obj/item/clothing/suit/roguetown/armor/plate/otavan
-	name = "otavan half-plate"
-	desc = "A gilded steel cuirass, flanked with curved pauldrons and veiled in expensive silks. Like most articles of Otavan armorsmithery, it is both remarkably opulent and protective."
+/obj/item/clothing/suit/roguetown/armor/plate/valorian
+	name = "valorian half-plate"
+	desc = "A gilded steel cuirass, flanked with curved pauldrons and veiled in expensive silks. Like most articles of Valorian armorsmithery, it is both remarkably opulent and protective."
 	armor = ARMOR_PLATE
 	body_parts_covered = COVERAGE_TORSO
 	icon_state = "corsethalfplate"
@@ -442,7 +442,7 @@
 	armor_class = ARMOR_CLASS_HEAVY
 	var/swapped_color // holder for corset colour when the corset is toggled off.
 
-/obj/item/clothing/suit/roguetown/armor/plate/otavan/update_icon()
+/obj/item/clothing/suit/roguetown/armor/plate/valorian/update_icon()
 	cut_overlays()
 	if(get_detail_tag())
 		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
@@ -451,7 +451,7 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
-/obj/item/clothing/suit/roguetown/armor/plate/otavan/AdjustClothes(mob/user)
+/obj/item/clothing/suit/roguetown/armor/plate/valorian/AdjustClothes(mob/user)
 	if(loc == user)
 		playsound(user, "sound/foley/dropsound/cloth_drop.ogg", 100, TRUE, -1)
 		if(adjustable == CAN_CADJUST)
@@ -699,7 +699,7 @@
 	slot_flags = ITEM_SLOT_ARMOR
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "inquisitorial duster"
-	desc = "A heavy longcoat with layers of maille hidden beneath the leather, donned by the Holy Otavan Inquisition's finest. </br>A Psydonic Cuirass can be fitted with this longcoat, in order to ward off deadlier blows without compromising one's fashion sense."
+	desc = "A heavy longcoat with layers of maille hidden beneath the leather, donned by the Valorian Inquisition's finest. </br>A Psydonic Cuirass can be fitted with this longcoat, in order to ward off deadlier blows without compromising one's fashion sense."
 	body_parts_covered = COVERAGE_ALL_BUT_HANDFEET
 	allowed_sex = list(MALE, FEMALE)
 	allowed_sex = list(MALE, FEMALE)
@@ -738,7 +738,7 @@
 /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat/armored
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "armored inquisitorial duster"
-	desc = "A heavy longcoat with layers of maille hidden beneath the leather, donned by the Holy Otavan Inquisition's finest. Where the longcoat parts, a surprise awaits; an ornate steel cuirass, worn beneath the leathers to ward off crippling blows."
+	desc = "A heavy longcoat with layers of maille hidden beneath the leather, donned by the Valorian Inquisition's finest. Where the longcoat parts, a surprise awaits; an ornate steel cuirass, worn beneath the leathers to ward off crippling blows."
 	smeltresult = /obj/item/ingot/steel 
 	icon_state = "inqcoata"
 	item_state = "inqcoata"

@@ -109,7 +109,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/studded/psyaltrist
 	name = "cuir-bouilli armor"
-	desc = "Treated, water-boiled and composite-layered leather armor of fine Otavan make."
+	desc = "Treated, water-boiled and composite-layered leather armor of fine Valorian make."
 	icon_state = "cuirbouilli"
 	item_state = "cuirbouilli"
 

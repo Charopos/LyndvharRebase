@@ -334,7 +334,7 @@
 /obj/item/clothing/neck/roguetown/fencerguard/attack_right(mob/user)
 	..()
 	if(!picked)
-		var/choice = input(user, "Choose a color.", "Otavan colors") as anything in COLOR_MAP
+		var/choice = input(user, "Choose a color.", "Valorian colors") as anything in COLOR_MAP
 		var/playerchoice = COLOR_MAP[choice]
 		picked = TRUE
 		detail_color = playerchoice

@@ -4,7 +4,7 @@
 	outfit = /datum/outfit/job/roguetown/psyaltrist
 	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_EMPATH)
 	category_tags = list(CTAG_ORTHODOXIST)
-	subclass_languages = list(/datum/language/otavan)
+	subclass_languages = list(/datum/language/valorian)
 	subclass_stats = list(
 		STATKEY_STR = 1,
 		STATKEY_WIL = 1,
@@ -33,12 +33,12 @@
 	head = /obj/item/clothing/head/roguetown/helmet/leather/chapeau
 	neck = /obj/item/clothing/neck/roguetown/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/psyaltrist
-	backl = /obj/item/storage/backpack/rogue/satchel/otavan
+	backl = /obj/item/storage/backpack/rogue/satchel/valorian
 	cloak = /obj/item/clothing/cloak/psyaltrist
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq
-	gloves = /obj/item/clothing/gloves/roguetown/otavan/psygloves
+	gloves = /obj/item/clothing/gloves/roguetown/valorian/psygloves
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
 	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/psydon
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid

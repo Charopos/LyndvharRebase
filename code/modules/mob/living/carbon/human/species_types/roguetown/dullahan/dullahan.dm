@@ -198,7 +198,7 @@
 		"Aavnic"	= SKIN_COLOR_AVAR_BORNE,
 		"Shalvine Roamer" = SKIN_COLOR_SHALVINE_AZURE,
 		"Lalve-Steppes" = SKIN_COLOR_LALVE_NALEDI,
-		"Naledi-Otava" = SKIN_COLOR_NALEDI_OTAVA,
+		"Naledi-Valorian" = SKIN_COLOR_NALEDI_VALORIAN,
 		"Grezel-Aavnic" = SKIN_COLOR_GRENZEL_AVAR,
 		"Hammer-Gronn" = SKIN_COLOR_HAMMER_GRONN,
 		"Commorah" = SKIN_COLOR_COMMORAH,
