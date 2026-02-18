@@ -199,14 +199,14 @@
 	new /obj/item/clothing/shoes/roguetown/boots/otavan(src)
 	new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/routier(src)
 
-/datum/supply_pack/rogue/Sellsword/Etruscancrate
-	name = "Etruscan Equipment Crate"
+/datum/supply_pack/rogue/Sellsword/calmirixiancrate
+	name = "Calmirixian Equipment Crate"
 	cost = 260
-	contains = list(/obj/structure/closet/crate/chest/bandit/etruscan)
+	contains = list(/obj/structure/closet/crate/chest/bandit/calmirixia)
 
-/obj/structure/closet/crate/chest/bandit/etruscan/Initialize()
+/obj/structure/closet/crate/chest/bandit/calmirixia/Initialize()
 	. = ..()
-	new /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan(src)
+	new /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia(src)
 	new /obj/item/clothing/suit/roguetown/armor/brigandine(src)
 	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy(src)
 	new /obj/item/clothing/gloves/roguetown/plate(src)

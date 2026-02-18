@@ -81,11 +81,11 @@
 	)
 	H.verbs |= /mob/proc/haltyell
 
-	var/helmet = list("Etruscan Bascinet","Volf Plate Helmet","Visored Sallet","Slitted Kettle","Simple Helmet","Kettle Helmet","Sallet Helmet","Winged Helmet",)
+	var/helmet = list("Calmirixian Bascinet","Volf Plate Helmet","Visored Sallet","Slitted Kettle","Simple Helmet","Kettle Helmet","Sallet Helmet","Winged Helmet",)
 	var/helmet_choice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmet
 	switch(helmet_choice)
-		if("Etruscan Bascinet")
-			head = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan
+		if("Calmirixia Bascinet")
+			head = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia
 		if("Volf Plate Helmet") 
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
 		if("Visored Sallet")	
@@ -101,7 +101,7 @@
 		if("Winged Helmet") 
 			head = /obj/item/clothing/head/roguetown/helmet/winged
 		else //In case they DC or don't choose close the panel, etc
-			head = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan
+			head = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia
 
 
 // Ranged weapons
@@ -184,11 +184,11 @@
 	)
 	H.verbs |= /mob/proc/haltyell
 
-	var/helmet = list("Etruscan Bascinet","Volf Plate Helmet","Visored Sallet","Slitted Kettle","Simple Helmet","Kettle Helmet","Sallet Helmet","Winged Helmet",)
+	var/helmet = list("Calmirixian Bascinet","Volf Plate Helmet","Visored Sallet","Slitted Kettle","Simple Helmet","Kettle Helmet","Sallet Helmet","Winged Helmet",)
 	var/helmet_choice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmet
 	switch(helmet_choice)
-		if("Etruscan Bascinet")
-			head = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan
+		if("Calmirixian Bascinet")
+			head = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia
 		if("Volf Plate Helmet") 
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
 		if("Visored Sallet")	
@@ -204,7 +204,7 @@
 		if("Winged Helmet") 
 			head = /obj/item/clothing/head/roguetown/helmet/winged
 		else //In case they DC or don't choose close the panel, etc
-			head = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan
+			head = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia
 
 // No Cavalry Option.
 
@@ -300,11 +300,11 @@
 			beltr = /obj/item/rogueweapon/sword
 			backl = /obj/item/rogueweapon/shield/iron
 
-	var/helmet = list("Etruscan Bascinet","Volf Plate Helmet","Visored Sallet","Slitted Kettle","Simple Helmet","Kettle Helmet","Sallet Helmet","Winged Helmet",)
+	var/helmet = list("Calmirixian Bascinet","Volf Plate Helmet","Visored Sallet","Slitted Kettle","Simple Helmet","Kettle Helmet","Sallet Helmet","Winged Helmet",)
 	var/helmet_choice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmet
 	switch(helmet_choice)
-		if("Etruscan Bascinet")
-			head = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan
+		if("Calmirixian Bascinet")
+			head = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia
 		if("Volf Plate Helmet") 
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
 		if("Visored Sallet")	
@@ -320,4 +320,4 @@
 		if("Winged Helmet") 
 			head = /obj/item/clothing/head/roguetown/helmet/winged
 		else //In case they DC or don't choose close the panel, etc
-			head = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan
+			head = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia

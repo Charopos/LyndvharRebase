@@ -35,9 +35,9 @@
 			pic2.color = get_altdetail_color()
 		add_overlay(pic2)
 
-/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/grenzelhoft
-	name = "etruscan bascinet w/plume hat"
-	desc = "A Grenzelhoftian plume hat placed atop an Etruscan bascinet, staying fashionable while protecting the wearer's head to a better degree."
+/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia/grenzelhoft
+	name = "Calmirixia bascinet w/plume hat"
+	desc = "A Grenzelhoftian plume hat placed atop a Calmirixian bascinet, staying fashionable while protecting the wearer's head to a better degree."
 	icon_state = "grenzelheavy"
 	item_state = "grenzelheavy"
 	icon = 'icons/roguetown/clothing/special/grenzelhats.dmi'
@@ -51,7 +51,7 @@
 	altdetail_color = "#FFFFFF"
 	max_integrity = ARMOR_INT_HELMET_STEEL + 10
 
-/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/grenzelhoft/update_icon()
+/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia/grenzelhoft/update_icon()
 	cut_overlays()
 	if(get_detail_tag())
 		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
@@ -131,9 +131,9 @@
 			pic2.color = get_altdetail_color()
 		add_overlay(pic2)
 
-/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/grenzelhoft/triumph
-	name = "etruscan bascinet w/plumed beret"
-	desc = "A Grenzelhoftian 'tellerbarret' placed atop an Etruscan bascinet, staying fashionable while protecting the wearer's head to a better degree."
+/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia/grenzelhoft/triumph
+	name = "calmirixian bascinet w/plumed beret"
+	desc = "A Grenzelhoftian 'tellerbarret' placed atop a Calmirixian bascinet, staying fashionable while protecting the wearer's head to a better degree."
 	icon_state = "grenzelheavy"
 	item_state = "grenzelheavy"
 	icon = 'icons/roguetown/clothing/special/grenzelhats.dmi'
@@ -146,7 +146,7 @@
 	altdetail_color = "#FFFFFF"
 	max_integrity = ARMOR_INT_HELMET_STEEL + 10
 
-/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/grenzelhoft/triumph/update_icon()
+/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia/grenzelhoft/triumph/update_icon()
 	cut_overlays()
 	if(get_detail_tag())
 		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
@@ -209,16 +209,16 @@
 
 /datum/crafting_recipe/roguetown/sewing/grenzelklapper
 	name = "grenzelhoftian hat with klappvisier"
-	result = list(/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/grenzelhoft)
+	result = list(/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia/grenzelhoft)
 	reqs = list(/obj/item/clothing/head/roguetown/grenzelhofthat = 1,
-	            /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan = 1)
+	            /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia = 1)
 	bypass_dupe_test = TRUE
 	craftdiff = 0
 
 /datum/crafting_recipe/roguetown/sewing/grenzelklapper/off
-	name = "take hat off etruscan bascinet"
-	result = list(/obj/item/clothing/head/roguetown/grenzelhofthat = 1, /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan = 1)
-	reqs = list(/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/grenzelhoft = 1)
+	name = "take hat off calmirixian bascinet"
+	result = list(/obj/item/clothing/head/roguetown/grenzelhofthat = 1, /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia = 1)
+	reqs = list(/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia/grenzelhoft = 1)
 	bypass_dupe_test = TRUE
 	craftdiff = 0
 
@@ -248,16 +248,16 @@
 
 /datum/crafting_recipe/roguetown/sewing/grenzelklapper/triumph
 	name = "grenzelhoftian beret with klappvisier"
-	result = list(/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/grenzelhoft/triumph)
+	result = list(/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia/grenzelhoft/triumph)
 	reqs = list(/obj/item/clothing/head/roguetown/grenzelhofthat/triumph = 1,
-	            /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan = 1)
+	            /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia = 1)
 	bypass_dupe_test = TRUE
 	craftdiff = 0
 
 /datum/crafting_recipe/roguetown/sewing/grenzelklapper/triumph/off
-	name = "take beret off etruscan bascinet"
-	result = list(/obj/item/clothing/head/roguetown/grenzelhofthat/triumph = 1, /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan = 1)
-	reqs = list(/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/grenzelhoft/triumph = 1)
+	name = "take beret off calmirixian bascinet"
+	result = list(/obj/item/clothing/head/roguetown/grenzelhofthat/triumph = 1, /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia = 1)
+	reqs = list(/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia/grenzelhoft/triumph = 1)
 	bypass_dupe_test = TRUE
 	craftdiff = 0
 

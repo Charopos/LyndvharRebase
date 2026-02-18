@@ -171,10 +171,10 @@
 	cost = 90 // 2 Steel
 	contains = list(/obj/item/clothing/head/roguetown/helmet/bascinet)
 
-/datum/supply_pack/rogue/armor_steel/helmet_etruscan_bascinet
-	name = "Helmet, Etruscan Bascinet"
+/datum/supply_pack/rogue/armor_steel/helmet_calmirixian_bascinet
+	name = "Helmet, Calmirixian Bascinet"
 	cost = 90 // 2 Steel
-	contains = list(/obj/item/clothing/head/roguetown/helmet/bascinet/etruscan)
+	contains = list(/obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia)
 
 /datum/supply_pack/rogue/armor_steel/helmet_knight_armet
 	name = "Helmet, Armet, Knight's"

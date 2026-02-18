@@ -122,7 +122,7 @@
 		"Timberborn" = SKIN_COLOR_TIMBERBORN,
 		"Lotus Coast" = SKIN_COLOR_LOTUS_COAST,
 		"Grenzel Woods" = SKIN_COLOR_GRENZEL_WOODS,
-		"Etruscan Swamps" = SKIN_COLOR_ETRUSCAN_SWAMPS,
+		"Calmirixian Swamps" = SKIN_COLOR_CALMIRIXIAN_SWAMPS,
 		"Shalvine Forests" = SKIN_COLOR_SHALVINE_FORESTS,
 		"Lalvestine Thickets" = SKIN_COLOR_LALVE_STEPPES,
 		"Naledi Coverts"	= SKIN_COLOR_NALEDI_COAST

@@ -15,14 +15,14 @@
 	contains = list(/obj/item/rogueweapon/huntingknife/idagger/steel/parrying/vaquero)
 
 /datum/supply_pack/rogue/merc_weapons/erapier
-	name = "Etruscan Rapier"
+	name = "Calmirixian Rapier"
 	cost = 120
 	contains = list(/obj/item/rogueweapon/sword/rapier/vaquero)
 
-/datum/supply_pack/rogue/merc_weapons/etruscanlongsword
-	name = "Etruscan Longsword"
-	cost = 409 // 409 because the Flos Duellatorum was written between 1400-1409 & Fiore is part of the reason frei gets an etruscan class
-	contains = list(/obj/item/rogueweapon/sword/long/etruscan)
+/datum/supply_pack/rogue/merc_weapons/calmirixialongsword
+	name = "Calmirixian Longsword"
+	cost = 400
+	contains = list(/obj/item/rogueweapon/sword/long/calmirixia)
 
 /datum/supply_pack/rogue/merc_weapons/shamshir
 	name = "Shamshir"

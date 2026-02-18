@@ -903,12 +903,12 @@
 	additional_items = list(/obj/item/ingot/steel)
 	created_item = /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull
 
-/datum/anvil_recipe/armor/steel/etruscanbascinet
+/datum/anvil_recipe/armor/steel/calmirixiabascinet
 	name = "Bascinet, Klappvisier, Steel (+1 Steel)"
 	req_bar = /obj/item/ingot/steel
 	req_blade = /obj/item/blade/steel_plate
 	additional_items = list(/obj/item/ingot/steel)
-	created_item = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan
+	created_item = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia
 
 /datum/anvil_recipe/armor/steel/helmetknightarmet//This won't confuse anyone I promise
 	name = "Knight's Armet, Steel (+1 Steel)"

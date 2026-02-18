@@ -199,7 +199,7 @@
 
 /datum/virtue/combat/dualwielder
 	name = "Dual Wielder"
-	desc = "Whether it was by the Naledi scholars, Etruscan privateers or even the Kazengan senseis. I've been graced with the knowledge of how to wield two weapons at once."
+	desc = "Whether in battle with enemies abroad or within, my skills with both hands have excelled. I've been graced with the knowledge of how to wield two weapons at once."
 	added_traits = list(TRAIT_DUALWIELDER)
 
 /datum/virtue/combat/sharp
