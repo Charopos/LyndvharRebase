@@ -40,7 +40,7 @@
 /datum/virtue/origin/rhaenval
 	name = "Rhaenish"
 	origin_name = "Rhaenval"
-	added_languages = list(/datum/language/gronnic)
+	added_languages = list(/datum/language/rhaenish)
 	desc = "I originate from the expansive lands of the Rhaenish, a confederation of multiple different tribes and identities nestled in the northwest of Lewyn. The assaults of Lyndhardt upon their way of lyfe have brought the warring clans together under a single banner.<br>"
 	origin_desc = "PLACEHOLDER TO BE DONE FOR LATER"
 

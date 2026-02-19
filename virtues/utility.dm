@@ -134,7 +134,7 @@
 		/datum/language/kazengunese,
 		/datum/language/valorian,
 		/datum/language/calmirixian,
-		/datum/language/gronnic,
+		/datum/language/rhaenish,
 		/datum/language/aavnic
 	)
 

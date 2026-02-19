@@ -65,7 +65,7 @@
 		)
 	languages = list(
 		/datum/language/common,
-		/datum/language/gronnic,
+		/datum/language/rhaenish,
 		/datum/language/beast,
 	)
 	var/gnoll_armor_icon = "beserker"

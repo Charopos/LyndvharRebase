@@ -1,13 +1,13 @@
-/datum/advclass/mercenary/gronn
-	name = "Gronnic Privateer"
-	tutorial = "You are one of many upstarts from Gronn, who sailed from the coastal capital of Danheim to the southern beaches of Azuria in search of a more... honest means of profit than the Sea Raiders of infamy."
+/datum/advclass/mercenary/rhaenval
+	name = "Rhaenish Privateer"
+	tutorial = "You are one of many upstarts from Rhaenval, who sailed from the coastal capital of Miklanborh to the eastern beaches of Lyndhardtia in search of a more... honest means of profit than the vikings of infamy."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	outfit = /datum/outfit/job/roguetown/mercenary/gronn
-	class_select_category = CLASS_CAT_GRONN
+	outfit = /datum/outfit/job/roguetown/mercenary/rhaenval
+	class_select_category = CLASS_CAT_RHAENVAL
 	category_tags = list(CTAG_MERCENARY)
 	cmode_music = 'sound/music/combat_vagarian.ogg'
-	subclass_languages = list(/datum/language/gronnic)
+	subclass_languages = list(/datum/language/rhaenish)
 	extra_context = "This subclass has 2 loadouts with various stats, skills & equipment."
 	subclass_skills = list(
 	//Universal skills
@@ -21,10 +21,9 @@
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
 	)
 
-/datum/outfit/job/roguetown/mercenary/gronn
-	allowed_patrons = ALL_GRONNIC_PATRONS //Subvariant of the 'ALL_INHUMEN_PATRONS' tag, with Abyssor and Dendor as situational additions. Do not add any more to this, no matter what.
+/datum/outfit/job/roguetown/mercenary/rhaenval
 
-/datum/outfit/job/roguetown/mercenary/gronn/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/rhaenval/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	//Universal gear
@@ -38,22 +37,6 @@
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
 
-	switch(H.patron?.type)
-		if(/datum/patron/inhumen/zizo)
-			id = /obj/item/clothing/neck/roguetown/psicross/inhumen/gronn
-		if(/datum/patron/inhumen/graggar)
-			id = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar/gronn
-		if(/datum/patron/inhumen/matthios)
-			id = /obj/item/clothing/neck/roguetown/psicross/inhumen/matthios/gronn
-		if(/datum/patron/inhumen/baotha)
-			id = /obj/item/clothing/neck/roguetown/psicross/inhumen/baothagronn
-		if(/datum/patron/divine/abyssor)
-			id = /obj/item/clothing/neck/roguetown/psicross/abyssor/gronn
-		if(/datum/patron/divine/dendor)
-			id = /obj/item/clothing/neck/roguetown/psicross/dendor/gronn
-		else
-			id = /obj/item/clothing/neck/roguetown/psicross/inhumen/gronn/special //Failsafe. Gives a specially-fluffed version of Zizo's talisman, which can be reinterpreted as needed.
-
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
 	if(H.mind)
@@ -65,14 +48,14 @@
 				H.set_blindness(0)
 				to_chat(H, span_warning("Clad in their unique leatherbound chainmaille and shortsword, The Danheim Leðurháls - roughly translated in Imperial to 'Leatherneck' due to their choice of leather gorgets over forged metal - are known for their harsh dogmatisms and steady personalities."))
 				shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
-				head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/gronn/ownel
-				gloves = /obj/item/clothing/gloves/roguetown/chain/gronn
-				armor = /obj/item/clothing/suit/roguetown/armor/brigandine/gronn
-				pants = /obj/item/clothing/under/roguetown/splintlegs/gronn
+				head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/rhaenval/ownel
+				gloves = /obj/item/clothing/gloves/roguetown/chain/rhaenval
+				armor = /obj/item/clothing/suit/roguetown/armor/brigandine/rhaenval
+				pants = /obj/item/clothing/under/roguetown/splintlegs/rhaenval
 				wrists = /obj/item/clothing/wrists/roguetown/bracers/splint
 				backr = /obj/item/rogueweapon/shield/iron
 				beltr = /obj/item/rogueweapon/scabbard/sword
-				l_hand = /obj/item/rogueweapon/sword/short/gronn //New heavy shortsword.
+				l_hand = /obj/item/rogueweapon/sword/short/rhaenval
 				neck = /obj/item/clothing/neck/roguetown/leather
 				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/shields, 4, TRUE)
@@ -95,11 +78,11 @@
 				H.set_blindness(0)
 				to_chat(H, span_warning("The Skemmdarvargur are famously known to hail from the northern city of Skugge, the first line of defense for the Northern Empty. Although highly superstitious with their various carved armaments, they lack the mystical miracles of the Iskarn Shamans."))
 				shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
-				head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/gronn
-				gloves = /obj/item/clothing/gloves/roguetown/angle/gronnfur
-				armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/gronn
+				head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/rhaenval
+				gloves = /obj/item/clothing/gloves/roguetown/angle/rhaenvalfur
+				armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/rhaenval
 				wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-				pants = /obj/item/clothing/under/roguetown/trou/leather/gronn
+				pants = /obj/item/clothing/under/roguetown/trou/leather/rhaenval
 				neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
 				H.adjust_skillrank_up_to(/datum/skill/combat/axes, 2, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 3, TRUE)

@@ -216,7 +216,7 @@
 
 /obj/structure/closet/crate/chest/steward/alcoholset/Initialize()
 	. = ..()
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/beer/rhaenvalmead(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/beer/nred(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/beer/voddena(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/whitewine(src)

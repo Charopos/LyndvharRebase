@@ -914,8 +914,8 @@
 	name = "Zoey"
 	icon_state = "zoey"
 
-/datum/sprite_accessory/hair/head/gronnbraid
-	name = "Gronn Braid"
+/datum/sprite_accessory/hair/head/rhaenvalbraid
+	name = "Rhaenval Braid"
 	icon_state = "gronnbraid"
 
 /datum/sprite_accessory/hair/head/grenzelcut

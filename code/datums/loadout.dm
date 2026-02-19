@@ -631,29 +631,29 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Amulet of Graggar"
 	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar
 
-/datum/loadout_item/psicross/gronnzizo
+/datum/loadout_item/psicross/rhaenvalzizo
 	name = "Wolf Talisman"
-	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/gronn
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/rhaenval
 
-/datum/loadout_item/psicross/gronnbaotha
+/datum/loadout_item/psicross/rhaenvalbaotha
 	name = "Leopard Talisman"
-	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/baothagronn
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/baotharhaenval
 
-/datum/loadout_item/psicross/gronnmatthios
+/datum/loadout_item/psicross/rhaenvalmatthios
 	name = "Bear Talisman"
-	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/matthios/gronn
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/matthios/rhaenval
 
-/datum/loadout_item/psicross/gronngraggar
+/datum/loadout_item/psicross/rhaenvalgraggar
 	name = "Moose Talisman"
-	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar/gronn
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar/rhaenval
 
-/datum/loadout_item/psicross/gronndendor
+/datum/loadout_item/psicross/rhaenvaldendor
 	name = "Volfskinned Talisman"
-	path = /obj/item/clothing/neck/roguetown/psicross/dendor/gronn
+	path = /obj/item/clothing/neck/roguetown/psicross/dendor/rhaenval
 
-/datum/loadout_item/psicross/gronnabyssor
+/datum/loadout_item/psicross/rhaenvalabyssor
 	name = "Hadal Talisman"
-	path = /obj/item/clothing/neck/roguetown/psicross/abyssor/gronn
+	path = /obj/item/clothing/neck/roguetown/psicross/abyssor/rhaenval
 
 /datum/loadout_item/wedding_band
 	name = "silver wedding band"

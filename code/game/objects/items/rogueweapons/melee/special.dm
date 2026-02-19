@@ -804,7 +804,7 @@
 	slot_flags = ITEM_SLOT_HIP
 	name = "Iron Hound Claws"
 	desc = "A pair of heavily curved claws, styled after beasts of the wilds for rending bare flesh, \
-			A show of the continual worship and veneration of beasts of strength in Gronn."
+			A show of the continual worship and veneration of beasts of strength in Rhaenval."
 	icon_state = "ironclaws"
 	icon = 'icons/roguetown/weapons/unarmed32.dmi'
 	wdefense = 5
@@ -830,7 +830,7 @@
 
 /obj/item/rogueweapon/handclaw/steel
 	name = "Steel Mantis Claws"
-	desc = "A pair of steel claws, An uncommon sight in Gronn as they do not forge their own steel, \
+	desc = "A pair of steel claws, An uncommon sight in Rhaenval as they do not forge their own steel, \
 			Their longer blades offer a superior defence option but their added weight slows them down."
 	icon_state = "steelclaws"
 	icon = 'icons/roguetown/weapons/unarmed32.dmi'
@@ -843,16 +843,16 @@
 	smeltresult = /obj/item/ingot/steel
 	sharpness_mod = 2
 
-/obj/item/rogueweapon/handclaw/gronn
-	name = "Gronn Beast Claws"
-	desc = "A pair of uniquely reinforced iron claws forged with the addition of bone by the Iskarn shamans of the Northern Empty. \
+/obj/item/rogueweapon/handclaw/rhaenval
+	name = "Rhaenish Beast Claws"
+	desc = "A pair of uniquely reinforced iron claws forged with the addition of bone by the Vruirid Shamans of the Steppe. \
 			Their unique design aids them in slipping between the plates in armor and their light weight supports rapid aggressive slashes. \
 			'To see the claws of the four, Is to see the true danger of the north. Not man, Not land but beast. We are all prey in their eyes.'"
 	icon_state = "gronnclaws"
 	icon = 'icons/roguetown/weapons/unarmed32.dmi'
 	wdefense = 3
 	force = 25
-	possible_item_intents = list(/datum/intent/claw/cut/gronn, /datum/intent/claw/lunge/gronn, /datum/intent/claw/rend)
+	possible_item_intents = list(/datum/intent/claw/cut/rhaenval, /datum/intent/claw/lunge/rhaenval, /datum/intent/claw/rend)
 	wbalance = WBALANCE_SWIFT
 	max_blade_int = 200
 	max_integrity = 200
@@ -887,7 +887,7 @@
 	clickcd = CLICK_CD_HEAVY
 	penfactor = 35
 
-/datum/intent/claw/lunge/gronn
+/datum/intent/claw/lunge/rhaenval
 	damfactor = 1.1
 	swingdelay = 5
 	clickcd = 10
@@ -914,7 +914,7 @@
 	damfactor = 1.3
 	clickcd = CLICK_CD_HEAVY
 
-/datum/intent/claw/cut/gronn
+/datum/intent/claw/cut/rhaenval
 	penfactor = 30
 	swingdelay = 0
 	damfactor = 1.1

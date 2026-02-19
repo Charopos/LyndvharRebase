@@ -41,7 +41,7 @@
 		/datum/language/grenzelhoftian,
 		/datum/language/valorian,
 		/datum/language/calmirixian,
-		/datum/language/gronnic,
+		/datum/language/rhaenish,
 		/datum/language/kazengunese,
 		/datum/language/draconic,
 		/datum/language/aavnic, // All but beast, which is associated with werewolves.

@@ -1,7 +1,7 @@
 // LIGHT ARMORS
 
-/obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/gronn
-	name = "gronnic ravager helm"
+/obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/rhaenval
+	name = "rhaenish ravager helm"
 	desc = "A helmet of hardened leather with a carved animal skull to appear similar to a human; a unique design of The Northern Empty. \
 			Its visage is said in Iskarn to scare the spirits of those defeated in the battlefield \
 			and preventing those of Necra and 'The Moose' from haunting them."
@@ -15,29 +15,29 @@
 	worn_y_dimension = 32
 
 
-/obj/item/clothing/suit/roguetown/armor/leather/heavy/gronn
-	name = "gronnic ravager mantle"
+/obj/item/clothing/suit/roguetown/armor/leather/heavy/rhaenval
+	name = "rhaenish ravager mantle"
 	desc = "A carefully created mantle of bone and hardened leather. It offers superior protection against the threats of the wild while remaining light, \
 			A popular design in Iskarn is to adorn a shoulder with a wolf pelt and skull. So that a great beast is always with you."
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 	icon_state = "gronnleatherarmor"
 	item_state = "gronnleatherarmor"
-	armor = ARMOR_GRONN_LIGHT
+	armor = ARMOR_RHAENVAL_LIGHT
 
-/obj/item/clothing/under/roguetown/trou/leather/gronn
-	name = "gronnic fur pants"
+/obj/item/clothing/under/roguetown/trou/leather/rhaenval
+	name = "rhaenish fur pants"
 	desc = "A pair of hardened leather pants with bone reinforcements along the legs; \
-			Those of Gronn adopt a design that offers superior protection against the blunted hits and slashing claws of beasts."
+			Those of Rhaenval adopt a design that offers superior protection against the blunted hits and slashing claws of beasts."
 	icon_state = "gronnleatherpants"
 	item_state = "gronnleatherpants"
-	armor = ARMOR_GRONN_LIGHT
+	armor = ARMOR_RHAENVAL_LIGHT
 	max_integrity = ARMOR_INT_LEG_HARDLEATHER
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 	
-/obj/item/clothing/gloves/roguetown/angle/gronn
-	name = "gronnic fur-lined leather gloves"
+/obj/item/clothing/gloves/roguetown/angle/rhaenval
+	name = "rhaenish fur-lined leather gloves"
 	desc = "Thick, padded gloves made for the harshest of climates and the wildest of beasts encountered in the untamed north."
 	icon_state = "gronnleathergloves"
 	item_state = "gronnleathergloves"
@@ -45,8 +45,8 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 	color = "#ffffff"
 
-/obj/item/clothing/gloves/roguetown/angle/gronnfur
-	name = "gronnic fur-lined bone gloves"
+/obj/item/clothing/gloves/roguetown/angle/rhaenvalfur
+	name = "rhaenish fur-lined bone gloves"
 	desc = "A pair of hardened leather gloves with bone reinforcements across the wrists\
 			and the back of the hand, offering superior protection against\
 			the claws of beasts and plants alike. Commonly worn by gatherers."
@@ -61,7 +61,7 @@
 /obj/item/clothing/head/roguetown/helmet/leather/shaman_hood
 	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP
 	name = "moose hood"
-	desc = "A deceptively strong moosehide hood with a pair of large heavy antlers. It is the reward of the fourth trial of the Iskarn Shamans: To slay a Grinning Moose in the final hunt alone - and fashion a hood from its head."
+	desc = "A deceptively strong moosehide hood with a pair of large heavy antlers."
 	body_parts_covered = HEAD|HAIR|EARS|NOSE
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/32x48/gronn.dmi'
@@ -190,16 +190,16 @@
 
 // MEDIUM ARMOR -- Iron reskins
 
-/obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/gronn/ownel
-	name = "gronnic ownel helmet"
+/obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/rhaenval/ownel
+	name = "rhaenish ownel helmet"
 	desc = "A full helmet that adequately protect the eyes and head; \
-			The slits are decorated with a harsh gold dye - it is rumoured in Gronn to grant one the ability to see as keenly as an owl."
+			The slits are decorated with a harsh gold dye - it is rumoured in Rhaenval to grant one the ability to see as keenly as an owl."
 	icon_state = "gronnhelm"
 	item_state = "gronnhelm"
 
-/obj/item/clothing/suit/roguetown/armor/brigandine/gronn
-	name = "gronn byrine hauberk"
-	desc = "A chain shirt of Gronnic design with a leather coat layered over, \
+/obj/item/clothing/suit/roguetown/armor/brigandine/rhaenval
+	name = "rhaenish byrine hauberk"
+	desc = "A chain shirt of Rhaenish design with a leather coat layered over, \
 			offering additional protection and superior movement. It is often used by sea raiders."
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
@@ -207,16 +207,16 @@
 	item_state = "gronnchain"
 	smeltresult = /obj/item/ingot/iron
 
-/obj/item/clothing/gloves/roguetown/chain/gronn
-	name = "gronn byrine gloves"
+/obj/item/clothing/gloves/roguetown/chain/rhaenval
+	name = "rhaenish byrine gloves"
 	desc = "A pair of leather gloves with chain to protects the wrists and back of the hand."
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 	icon_state = "gronnchaingloves"
 	item_state = "gronnchaingloves"
 
-/obj/item/clothing/under/roguetown/splintlegs/gronn
-	name = "gronn byrine chausses"
+/obj/item/clothing/under/roguetown/splintlegs/rhaenval
+	name = "rhaenish byrine chausses"
 	desc = "A pair of chain-wrapped pants with a leather subligar, ensuring both protection and comfort."
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
@@ -226,9 +226,9 @@
 
 // HEAVY ARMOR -- ditto
 
-/obj/item/clothing/head/roguetown/helmet/heavy/bucket/gronn
-	name = "gronn norsii horned helmet"
-	desc = "One of Gronn's infamous horned helms of solid iron. \
+/obj/item/clothing/head/roguetown/helmet/heavy/bucket/rhaenval
+	name = "rhaenish norsii horned helmet"
+	desc = "One of Rhaenval's infamous horned helms of solid iron. \
 		Styled after the appearance of invading knights of legend from the Northern Empty, \
 		brutal and bare, it is a reminder of a time before there was snow."
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
@@ -244,10 +244,10 @@
 	worn_x_dimension = 64
 	worn_y_dimension = 64
 
-/obj/item/clothing/suit/roguetown/armor/plate/iron/gronn
-	name = "gronn norsii iron plate"
+/obj/item/clothing/suit/roguetown/armor/plate/iron/rhaenval
+	name = "rhaenish norsii iron plate"
 	desc = "A suit of solid iron plate, adorned with tassets and roundels. \
-			The Northmen of Gronn rarely used plate, but when they did, \
+			The Northmen of Rhaenval rarely used plate, but when they did, \
 			it is said that whole armies would quake and shake in fear of what would ravage them."
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
@@ -258,26 +258,26 @@
 	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL
 	smeltresult = /obj/item/ingot/iron
 
-/obj/item/clothing/gloves/roguetown/plate/iron/gronn
-	name = "gronn norsii iron gauntlets"
+/obj/item/clothing/gloves/roguetown/plate/iron/rhaenval
+	name = "rhaenish norsii iron gauntlets"
 	desc = "Tough iron gauntlets, simple and protective in design. A single punch is said to leave a dozen bruises."
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 	icon_state = "gronnplategloves"
 	item_state = "gronnplategloves"
 
-/obj/item/clothing/under/roguetown/platelegs/iron/gronn
-	name = "gronn norsii iron chausses"
+/obj/item/clothing/under/roguetown/platelegs/iron/rhaenval
+	name = "rhaenish norsii iron chausses"
 	desc = "Iron chausses with an added layer of leather for comfort and padding. The knees are adorned with a skull-like shape, reminscent of the moon."
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 	icon_state = "gronnplatepants"
 	item_state = "gronnplatepants"
 
-/obj/item/clothing/shoes/roguetown/boots/armor/iron/gronn
-	name = "gronn norsii iron boots"
+/obj/item/clothing/shoes/roguetown/boots/armor/iron/rhaenval
+	name = "rhaenish norsii iron boots"
 	desc = "Thick iron boots, tied with a leather cord; protective and sturdy. \
-			Gronnic legend tells of a great warrior who fought for aeons until a hero speared him through the foot. \
+			Rhaenish legend tells of a great warrior who fought for aeons until a hero speared him through the foot. \
 			The Northmen have since followed through by protecting their feet heavily."
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
