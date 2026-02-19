@@ -8,17 +8,7 @@
 	is_subrace = TRUE
 	base_name = "Humen"
 	desc = "<b>Half Elf</b><br>\
-	The child of an Elf and Humen, Half-Elves are generally frowned \
-	upon by the more conservatively minded. However, as racial tensions lower, \
-	the rate of Half-Elf births has continues to increase. So common has it become that some scholars \
-	worry that someday it may be impossible to distinguish the Humens and Elves from one another. \
-	From physical to cultural characteristics, Half-Elves are an incredibly diverse people, \
-	thanks in no small part to the incredibly varied nature of their Humen halves. Indeed, no other race \
-	embodies the term \"melting pot\" quite like the Half-Elves. Due to their half-breed nature, their physical \
-	characteristics can be either more Elvish or more Humen, depending on which of their parents' genes \
-	are more predominant. In terms of cultural identity, a Half-Elf will typically choose to lean more \
-	towards either their Humen or Elvish heritages.<br>\
-	(+1 Constitution, +1 Perception)" 
+	The children of an Elf and a Humen, most conservative minds frown upon such a union. Half-Elves are distinguishable by their elf-ears yet humen appearance and features. However with the lack of a true cultural identity and pillar, they are often found either acting more as an elf or more as a humen. They are the embodiment of a “melting pot” of cultures, where the identity of humen and elf is blended into one.<br>" 
 
 	skin_tone_wording = "Ancestry"
 	max_age = 250
@@ -50,7 +40,6 @@
 		OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-1), \
 		)
-	race_bonus = list(STAT_PERCEPTION = 1, STAT_CONSTITUTION = 1)
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
@@ -98,6 +87,18 @@
 		/datum/language/elvish
 	)
 
+/datum/species/human/halfelf/on_species_gain(mob/living/carbon/literally_him, datum/species/old_species)
+	..()
+	languages(literally_him)
+
+/datum/species/human/halfelf/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+	..()
+	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
+
+/datum/species/human/halfelf/on_species_loss(mob/living/carbon/C)
+	. = ..()
+	UnregisterSignal(C, COMSIG_MOB_SAY)	
+
 /datum/species/human/halfelf/get_skin_list()
 	return list(
 		"Timber-Rhaenish" = SKIN_COLOR_TIMBER_RHAENVAL,
@@ -124,6 +125,10 @@
 		"Tafravma-kin" = SKIN_COLOR_TAFRAVMA,
 		"Yuethindrynn-kin" = SKIN_COLOR_YUETHINDRYNN
 	)
+
+/datum/species/human/halfelf/proc/languages(mob/living/carbon/human/literally_him)
+	if(literally_him.skin_tone == SKIN_COLOR_AVAR_BORNE)
+		literally_him.grant_language(/datum/language/celestial)
 
 /datum/species/human/halfelf/get_hairc_list()
 	return sortList(list(
