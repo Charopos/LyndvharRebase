@@ -2501,11 +2501,11 @@
 	wdefense = 7
 	sellprice = 250
 
-/obj/item/rogueweapon/sword/short/gronn
-	name = "gronnic hinterblade"
-	desc = "Due to the shortage of forged steel in Gronn, their iron blades have become hardier and thicker than what one may see elsewhere. The favoured weapon of choice for any able-bodied northman of Gronn, the hinterblade is the heftier, unwieldy cousin of the arming sword."
+/obj/item/rogueweapon/sword/short/rhaenval
+	name = "rhaenish hinterblade"
+	desc = "Due to the shortage of forged steel in Rhaenval, their iron blades have become hardier and thicker than what one may see elsewhere. The favoured weapon of choice for any able-bodied northman of Rhaenval, the hinterblade is the heftier, unwieldy cousin of the arming sword."
 	possible_item_intents = list(/datum/intent/sword/cut/militia, /datum/intent/sword/chop/militia, /datum/intent/sword/thrust/short, /datum/intent/sword/peel)
-	icon_state = "gronnsword"
+	icon_state = "rhaenishsword"
 	sheathe_icon = "swordshort"
 	gripped_intents = null
 	minstr = 10 //NO TWINKS!!

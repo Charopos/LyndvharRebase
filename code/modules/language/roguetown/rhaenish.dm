@@ -1,6 +1,6 @@
-/datum/language/gronnic
-	name = "Gronnic"
-	desc = "The harsh tongue of the Northern Highlands."
+/datum/language/rhaenish
+	name = "Rhaenish"
+	desc = ""
 	speech_verb = "remarks"
 	ask_verb = "inquires"
 	exclaim_verb = "asserts"
@@ -8,7 +8,7 @@
 	space_chance = 45
 	default_priority = 90
 	icon_state = "zalad"
-	spans = list(SPAN_GRONNIC)
+	spans = list(SPAN_RHAENISH)
 	syllables = list(
 		"to", "ost", "no", "na", "ni", "ko", "ne", "en", "po", "ra", "li",
 		"on", "ro", "er", "go", "ol", "al", "ot", "ov", "re", "vo", "ka",

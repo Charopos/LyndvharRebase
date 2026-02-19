@@ -134,5 +134,5 @@
 #define ARMOR_HANDGAMB list("blunt" = 30, "slash" = 90, "stab" = 90, "piercing" = 40, "fire" = 30, "acid" = 0)
 #define ARMOR_BLACKOAK list("blunt" = 100, "slash" = 20, "stab" = 120, "piercing" = 40, "fire" = 0, "acid" = 0)
 // Blocks every hit, at least once
-#define ARMOR_GRONN_LIGHT list("blunt" = 80, "slash" = 80, "stab" = 30, "piercing" = 30, "fire" = 0, "acid" = 0)
+#define ARMOR_RHAENVAL_LIGHT list("blunt" = 80, "slash" = 80, "stab" = 30, "piercing" = 30, "fire" = 0, "acid" = 0)
 #define ARMOR_GOLD list("blunt" = 200, "slash" = 200, "stab" = 200, "piercing" = 200, "fire" = 200, "acid" = 200) // Effective invulnerability on the covered limb(s). Can only be damaged through attacks with an integrity damage modifier.

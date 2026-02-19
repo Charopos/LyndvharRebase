@@ -2,7 +2,7 @@
 	name = "Orc"
 	id = "orc"
 	origin_default = /datum/virtue/origin/unknown
-	origin = "Gronn"
+	origin = "Graggar"
 	base_name = "Ogroid"
 	desc = "<b>Orcs</b><br>\
 	This is made for events. You shouldn't be able to use this as a normal person, \
@@ -107,7 +107,7 @@
 	return list(
 		"Shellcrest" = SKIN_COLOR_SHELLCREST,
 		"Bloodaxe" = SKIN_COLOR_BLOOD_AXE,
-		"Splitjaw" = SKIN_COLOR_GROONN, //Changed name from Gronn, which no longer aligned with lore here or elsewhere.
+		"Splitjaw" = SKIN_COLOR_GROONN,
 		"Blackhammer" = SKIN_COLOR_BLACK_HAMMER,
 		"Skullseeker" = SKIN_COLOR_SKULL_SEEKER,
 		"Crescent Fang" = SKIN_COLOR_CRESCENT_FANG,

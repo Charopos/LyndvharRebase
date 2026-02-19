@@ -88,9 +88,9 @@
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/sewing/tailor/hgambeson/fencer)
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/fencingbreeches)//Forvheipan
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/openrobes)
-		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/gronngloves)
-		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/gronnpants)
-		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/gronnboots)//Rhaenish
+		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/rhaenvalgloves)
+		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/rhaenvalpants)
+		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/rhaenvalboots)//Rhaenish
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/furlinedjacket)
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/artipants)//Artificer
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/buckleshoes)

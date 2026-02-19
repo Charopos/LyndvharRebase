@@ -185,7 +185,7 @@
 
 /datum/species/dullahan/get_skin_list()
 	return list(
-		"Timber-Gronn" = SKIN_COLOR_TIMBER_GRONN,
+		"Timber-Rhaenish" = SKIN_COLOR_TIMBER_RHAENVAL,
 		"Giza-Azure" = SKIN_COLOR_GIZA_AZURE,
 		"Walnut-Stine" = SKIN_COLOR_WALNUT_STINE,
 		"Etrustcan-Dandelion" = SKIN_COLOR_ETRUSTCAN_DANDELION,
@@ -200,7 +200,7 @@
 		"Lalve-Steppes" = SKIN_COLOR_LALVE_NALEDI,
 		"Naledi-Valorian" = SKIN_COLOR_NALEDI_VALORIAN,
 		"Grezel-Aavnic" = SKIN_COLOR_GRENZEL_AVAR,
-		"Hammer-Gronn" = SKIN_COLOR_HAMMER_GRONN,
+		"Hammer-Rhaenish" = SKIN_COLOR_HAMMER_RHAENVAL,
 		"Commorah" = SKIN_COLOR_COMMORAH,
 		"Gloomhaven" = SKIN_COLOR_GLOOMHAVEN,
 		"Darkpila" = SKIN_COLOR_DARKPILA,
