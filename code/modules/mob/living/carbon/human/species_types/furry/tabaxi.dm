@@ -6,7 +6,7 @@
 	id = "tabaxi"
 	is_subrace = TRUE
 	origin_default = /datum/virtue/origin/zybantu
-	origin = "Raneshen"
+	origin = "Zybantu"
 	base_name = "Beastvolk"
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | SLIME_EXTRACT
 	desc = "<b>Tabaxi</b><br>\

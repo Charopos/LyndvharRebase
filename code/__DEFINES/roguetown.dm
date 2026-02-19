@@ -385,9 +385,9 @@ GLOBAL_LIST_EMPTY(round_join_times)
 //Mercenary categories
 #define CLASS_CAT_CALMIRIXIA "Calmirixia"
 #define CLASS_CAT_GRENZELHOFT "Grenzelhoft"
-#define CLASS_CAT_NALEDI "Khazumia"
-#define CLASS_CAT_RANESHENI "Zybantu"
-#define CLASS_CAT_AAVNR "Forvheipal"
+#define CLASS_CAT_KHAZUMIA "Khazumia"
+#define CLASS_CAT_ZYBANTU "Zybantu"
+#define CLASS_CAT_FORVHEIPAL "Forvheipal"
 #define CLASS_CAT_RHAENVAL "Rhaenval"
 #define CLASS_CAT_VALORIA "Valoria"
 #define CLASS_CAT_YANSHEN "Yanshen"
