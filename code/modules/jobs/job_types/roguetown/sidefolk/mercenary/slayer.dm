@@ -122,7 +122,7 @@
 	name = "rough skin"
 	desc = ""
 	icon_state = null
-	armor = ARMOR_RUMACLAN
+	armor = ARMOR_XUEFENGCLAN
 	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP

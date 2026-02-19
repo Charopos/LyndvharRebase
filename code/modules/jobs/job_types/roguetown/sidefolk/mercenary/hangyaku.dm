@@ -1,15 +1,15 @@
 /datum/advclass/mercenary/hangyaku
 	name = "Hangyaku-Kounen"
-	tutorial = "Rebel. Outlaw. Failure. Once, you served the upper echelons of Kazengun society as more than just a 'knight'- you were a champion, a beacon of virtue, a legend in the making. Now you wander distant Psydonia, seeking a fresh start... or fresh coin, at least."
+	tutorial = "Rebel. Outlaw. Failure. Once, you served the upper echelons of Yansheneze society as more than just a 'knight'- you were a champion, a beacon of virtue, a legend in the making. Now you wander distant Psydonia, seeking a fresh start... or fresh coin, at least."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_NO_CONSTRUCT //do they have constructs in kazengun?
+	allowed_races = RACES_NO_CONSTRUCT
 	outfit = /datum/outfit/job/roguetown/mercenary/hangyaku
-	subclass_languages = list(/datum/language/kazengunese)
-	class_select_category = CLASS_CAT_KAZENGUN
+	subclass_languages = list(/datum/language/yansheneze)
+	class_select_category = CLASS_CAT_YANSHEN
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_NOBLE) //i hate nobles but it's thematic
 	cmode_music = 'sound/music/combat_kazengite.ogg'
-	maximum_possible_slots = 3
+	maximum_possible_slots = 1
 	subclass_stats = list(  // mounted knight, but slower.
 		STATKEY_STR = 2,
 		STATKEY_INT = 1,
@@ -38,21 +38,21 @@
 	..()
 	H.adjust_blindness(-3)
 	has_loadout = TRUE
-	to_chat(H, span_warning("Rebel. Outlaw. Failure. Once, you served the upper echelons of Kazengun society as more than just a 'knight'- you were a champion, a beacon of virtue, a legend in the making. Now you wander distant Psydonia, seeking a fresh start... or fresh coin, at least."))
+	to_chat(H, span_warning("Rebel. Outlaw. Failure. Once, you served the upper echelons of Yansheneze society as more than just a 'knight'- you were a champion, a beacon of virtue, a legend in the making. Now you wander distant Psydonia, seeking a fresh start... or fresh coin, at least."))
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/kabuto
 	belt = /obj/item/storage/belt/rogue/leather/cloth
-	neck = /obj/item/clothing/neck/roguetown/gorget/steel/kazengun
-	cloak = /obj/item/clothing/cloak/kazengun
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/kazengun
+	neck = /obj/item/clothing/neck/roguetown/gorget/steel/yanshen
+	cloak = /obj/item/clothing/cloak/yanshen
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/yanshen
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	gloves = /obj/item/clothing/gloves/roguetown/plate/kote
-	beltr = /obj/item/rogueweapon/huntingknife/idagger/steel/kazengun
+	beltr = /obj/item/rogueweapon/huntingknife/idagger/steel/yanshen
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary,
 		/obj/item/flashlight/flare/torch/lantern,
 		/obj/item/storage/belt/rogue/pouch/coins/poor,
-		/obj/item/rogueweapon/scabbard/sheath/kazengun
+		/obj/item/rogueweapon/scabbard/sheath/yanshen
 		)
 	H.merctype = 9
 
@@ -64,7 +64,7 @@
 		if("Sword")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_EXPERT, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/sword/long/kriegmesser/ssangsudo)
-			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sword/kazengun/noparry, SLOT_BELT_L, TRUE)	
+			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sword/yanshen/noparry, SLOT_BELT_L, TRUE)	
 		if("Great Mace")
 			H.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_EXPERT, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/mace/goden/kanabo)
@@ -89,24 +89,24 @@
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/brigandine/haraate, SLOT_ARMOR, TRUE)
 			H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy, SLOT_SHIRT, TRUE)
-			H.equip_to_slot_or_del(new /obj/item/clothing/under/roguetown/heavy_leather_pants/kazengun, SLOT_PANTS, TRUE)
+			H.equip_to_slot_or_del(new /obj/item/clothing/under/roguetown/heavy_leather_pants/yanshen, SLOT_PANTS, TRUE)
 			H.change_stat(STATKEY_SPD, 1) //+1 speed for taking the worse armor, which is identical to mounted knight, but with worse armor
 	var/masks = list("Full Mask","Half-Mask")
 	var/mask_choice = input(H, "Choose your mask.", "GREET THE SUN?") as anything in masks
 	switch(mask_choice)
 		if("Full Mask")
-			H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/kazengun/full, SLOT_WEAR_MASK, TRUE)
+			H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/yanshen/full, SLOT_WEAR_MASK, TRUE)
 		if("Half-Mask")
-			H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/kazengun, SLOT_WEAR_MASK, TRUE)
+			H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/yanshen, SLOT_WEAR_MASK, TRUE)
 
 /datum/advclass/mercenary/chonin
 	name = "Hangyaku-Chonin"
 	tutorial = "Once, you were a farmer, a miner, a seamstress, a commoner. Now the sword is your plow and war your field. You’ve hammered your scythes into spears and recast your knives into swords. Past the door, your daimyo is calling - and destiny awaits."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = ALL //do they have constructs in kazengun?
+	allowed_races = ALL
 	outfit = /datum/outfit/job/roguetown/mercenary/chonin
-	subclass_languages = list(/datum/language/kazengunese)
-	class_select_category = CLASS_CAT_KAZENGUN
+	subclass_languages = list(/datum/language/yansheneze)
+	class_select_category = CLASS_CAT_YANSHEN
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_DECEIVING_MEEKNESS, TRAIT_MEDIUMARMOR) //peasant levy turned mercenary. the underdog.
 	cmode_music = 'sound/music/combat_kazengite.ogg'
@@ -134,12 +134,12 @@
 	has_loadout = TRUE
 	to_chat(H, span_warning("Once, you were a farmer, a miner, a seamstress, a commoner. Now the sword is your plow and war your field. You’ve hammered your scythes into spears and recast your knives into swords. Past the door, your daimyo is calling - and destiny awaits."))
 	belt = /obj/item/storage/belt/rogue/leather
-	neck = /obj/item/clothing/neck/roguetown/gorget/steel/kazengun
+	neck = /obj/item/clothing/neck/roguetown/gorget/steel/yanshen
 	head = /obj/item/clothing/head/roguetown/helmet/kettle/jingasa
 	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/haraate
 	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/random
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/kazengun
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/kazengun
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/yanshen
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/yanshen
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	gloves = /obj/item/clothing/gloves/roguetown/plate/kote
 	backl = /obj/item/storage/backpack/rogue/satchel
@@ -195,12 +195,12 @@
 			H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			H.adjust_skillrank_up_to(/datum/skill/misc/sneaking, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			H.equip_to_slot_or_del(new /obj/item/storage/belt/rogue/pouch/coins/mid, SLOT_BELT_L, TRUE) 
-			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sheath/kazengun, SLOT_BELT_R, TRUE)
-			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/kazengun)
+			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sheath/yanshen, SLOT_BELT_R, TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/yanshen)
 		if("Levy") //straight-up fighter. gets a naginata AND a tanto.
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_EXPERT, TRUE)
 			H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/spear/naginata)
-			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/kazengun)
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/yanshen)
 			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/gwstrap, SLOT_BACK_R, TRUE)
-			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sheath/kazengun, SLOT_BELT_R, TRUE)
+			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sheath/yanshen, SLOT_BELT_R, TRUE)

@@ -91,7 +91,7 @@
 				beltr = /obj/item/rogueweapon/scabbard/sword
 			if("Ssangsudo")
 				r_hand = /obj/item/rogueweapon/sword/long/kriegmesser/ssangsudo
-				beltr = /obj/item/rogueweapon/scabbard/sword/kazengun/noparry
+				beltr = /obj/item/rogueweapon/scabbard/sword/yanshen/noparry
 			if("Shashka + Shield")
 				r_hand = /obj/item/rogueweapon/sword/sabre/steppesman
 				beltr = /obj/item/rogueweapon/scabbard/sword
