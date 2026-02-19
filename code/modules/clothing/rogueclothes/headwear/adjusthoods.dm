@@ -103,7 +103,7 @@
 	flags_inv = HIDEEARS|HIDEHAIR|HIDEFACIALHAIR	//Does not hide face.
 	block2add = null
 
-/obj/item/clothing/head/roguetown/roguehood/shalal/hijab/raneshen
+/obj/item/clothing/head/roguetown/roguehood/shalal/hijab/zybantu
 	name = "padded headscarf"
 	desc = "A common sight amongst those travelling the long desert routes, it offers protection from the heat and a modicum of it against the beasts that prowl its more comfortable nites."
 	slot_flags = ITEM_SLOT_HEAD
