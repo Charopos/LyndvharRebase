@@ -35,6 +35,10 @@
 			return strings("feline_replacement.json", type)
 		if("Slopes accent")
 			return strings("welsh_replacement.json", type)
+		if("Forvheipan accent")
+			return strings("polish_replacement.json", type)
+		if("Zybanti accent")
+			return strings("arabic_replacement.json", type)
 
 /datum/species/proc/get_accent(mob/living/carbon/human/H)
 	return get_accent_list(H,"full")
