@@ -80,7 +80,7 @@
 
 /atom/movable/screen/alert/status_effect/buff/alch/tripot
 	name = "Triumphance"
-	desc = "My latest triumph has empowered me! I am a true champion of Azuria!"
+	desc = "My latest triumph has empowered me! I am a true champion of Beowricke!"
 	icon_state = "triumph"
 
 //////////////////////

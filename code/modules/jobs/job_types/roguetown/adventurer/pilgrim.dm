@@ -4,9 +4,9 @@
 	department_flag = WANDERERS
 	faction = "Station"
 	total_positions = 0
-	spawn_positions = 0 //disables round-start spawn of pilgrims but allows migrant waves
+	spawn_positions = 0
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Fleeing misfortune you head your way towards Azure Peak, you're not a soldier or an explorer, but a humble migrant trying to look for a better life, if you get to survive the trip that is."
+	tutorial = "Someone either fleeing misfortune or simply avoiding the civil war- you head your way towards Lyndvhar- one of the last bastions on this continent not wrought with battle. You're not a soldier or an explorer, but a humble migrant trying to look for a better life, if you get to survive the trip that is."
 
 	outfit = null
 	outfit_female = null

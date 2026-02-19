@@ -57,17 +57,17 @@
 	keep_area = TRUE
 
 /area/rogue/indoors/town/magician
-	name = "University of Azuria"
+	name = "University of Lyndvhar"
 	icon_state = "magician"
 	spookysounds = SPOOKY_MYSTICAL
 	spookynight = SPOOKY_MYSTICAL
 	droning_sound = 'sound/music/area/magiciantower.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "THE UNIVERSITY OF AZURIA"
+	first_time_text = "THE UNIVERSITY OF LYNDVHAR"
 	converted_type = /area/rogue/outdoors/exposed/magiciantower
 	keep_area = TRUE
-	detail_text = DETAIL_TEXT_UNIVERSITY_OF_AZURIA
+	detail_text = DETAIL_TEXT_UNIVERSITY_OF_LYNDVHAR
 
 /area/rogue/outdoors/exposed/magiciantower
 	icon_state = "magiciantower"
@@ -75,7 +75,7 @@
 	droning_sound_dusk = null
 	droning_sound_night = null
 	keep_area = TRUE
-	detail_text = DETAIL_TEXT_UNIVERSITY_OF_AZURIA
+	detail_text = DETAIL_TEXT_UNIVERSITY_OF_LYNDVHAR
 
 /area/rogue/indoors/town/shop
 	name = "Shop"

@@ -11,8 +11,8 @@
 
 	allowed_races = ACCEPTED_RACES
 
-	tutorial = "You are a member of the Azure Peak Guild of Crafts, a massive guild formed to represent the interests of all craftsmen in the township of Azure Peak.\
-	As a Guildsman, you hail from the three most important constituent guilds: The Smith's Guild, the Artificer's Guild, and the Architect's Guild. The Guildsmaster has sway over you, but it is not absolute."
+	tutorial = "You studied for many yils under your master with a few other apprentices to become a member of the Maker's Guild--a trade that certainly has seen a boom in recent times, with many a bannerlord keenly aware of the importance in maintaining a well-equipped army..\
+	As a Guildsman, you hail from the three most important constituent sub-guilds: the Smiths, the Artificers, and the Architects. Obey instruction from your Guildmaster, and you will see your business prosper."
 	job_traits = list(TRAIT_TRAINED_SMITH, TRAIT_SMITHING_EXPERT)
 
 	outfit = /datum/outfit/job/roguetown/guildsman

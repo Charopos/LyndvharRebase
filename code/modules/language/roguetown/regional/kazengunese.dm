@@ -1,6 +1,6 @@
 /datum/language/kazengunese
 	name = "Kazengunese"
-	desc = "The language of the islands of Kazengun. Spoken occasionally on the Mainland as a prestige language. With intricate honorifics and complex grammar."
+	desc = ""
 	speech_verb = "says"
 	whisper_verb = "whispers"
 	exclaim_verb = "yells"

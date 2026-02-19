@@ -10,7 +10,7 @@
 	origin_name = "Lyndhardt"
 	desc = "I originate from the lands of Lyndhardtia, once the most prosperous empire in the realm.<br>"
 	restricted = FALSE
-	added_languages = list(/datum/language/oldazurian)
+	added_languages = list(/datum/language/lyndhardtian)
 	origin_desc = "PLACEHOLDER TO BE DONE FOR LATER"
 
 /datum/virtue/origin/grenzelhoft

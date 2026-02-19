@@ -3,9 +3,9 @@
     var/static/list/theme_names = list(
         "azure_default" = "Ascendant",
         "azure_green" = "Undivided",
-		"azure_lane" = "Azuria",
+		"azure_lane" = "Azure",
 		// "azure_gold" = "Lirvas",
-		"azure_purple" = "Raneshen",
+		"azure_purple" = "Zybantu",
 		// "azure_gilbranze" = "Gilbranze", - Coming soon :tm:
 		"trey_liam" = "Trey Liam"
     )

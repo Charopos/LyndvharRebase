@@ -1052,13 +1052,13 @@
 	if(!HAS_TRAIT(examiner, TRAIT_CLERGY)) //If the person doing the examining doesn't have the trait, we don't need to do the other four ifs
 		return null
 	if(HAS_TRAIT(src, TRAIT_CLERGY) && HAS_TRAIT(examiner, TRAIT_CLERGY))
-		clergy_text = "A fellow member of the Azurian Church of the Ten."
+		clergy_text = "A fellow member of the Church clergy."
 	if(HAS_TRAIT(src, TRAIT_CHOSEN) && HAS_TRAIT(examiner, TRAIT_CLERGY))
-		clergy_text = "The Bishop, the leader of my Church and Chosen of the Ten."
+		clergy_text = "The Bishop of the Mother Church, ordained under Astrata."
 	if(HAS_TRAIT(src, TRAIT_CLERGY) && HAS_TRAIT(examiner, TRAIT_CHOSEN))
 		clergy_text = "A member of the clergy under my leadership, as willed by the Ten."
 	if(HAS_TRAIT(src, TRAIT_CHOSEN) && HAS_TRAIT(examiner, TRAIT_CHOSEN))
-		clergy_text = "Myself. I am the Bishop of Azuria, voice of the Ten in these lands."
+		clergy_text = "Myself. I am the Bishop of Lyndvhar, voice of the Ten in this unkempt city."
 
 	return clergy_text
 
