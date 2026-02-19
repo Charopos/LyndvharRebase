@@ -106,6 +106,16 @@ body {
 	src: url("aavnic.ttf");
 }
 
+@font-face {
+	font-family: "Caslame";
+	src: url('forvheipan.ttf');
+}
+
+@font-face {
+	font-family: "Persian";
+	src: url('zybanti.otf');
+}
+
 /* */
 
 em {
@@ -882,6 +892,15 @@ h2.alert {
 .aavnic {
 	font-family: "Romeodn", "Pterra";
 	font-size: 100%;
+}
+
+.forvheipan {
+	font-family: "Caslame", "Pterra";
+	font-size: 100%;
+}
+.zybanti {
+	font-family: "Persian", "Pterra";
+	font-size: 120%;
 }
 
 .torture {
