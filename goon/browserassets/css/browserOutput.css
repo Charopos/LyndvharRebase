@@ -98,7 +98,7 @@ body {
 
 @font-face {
 	font-family: "Jorvik Informal";
-	src: url("gronnic.ttf");
+	src: url("rhaenish.ttf");
 }
 
 @font-face {
@@ -875,7 +875,7 @@ h2.alert {
 	font-family: "Feronia", "Pterra";
 	font-size: 100%;
 }
-.gronnic {
+.rhaenish {
 	font-family: "Jorvik Informal", "Pterra";
 	font-size: 100%;
 }

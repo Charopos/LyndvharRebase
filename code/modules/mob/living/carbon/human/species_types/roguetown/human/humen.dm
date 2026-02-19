@@ -91,7 +91,7 @@
 		"Rockhill" = SKIN_COLOR_ROCKHILL,
 		"Valoria" = SKIN_COLOR_VALORIAN,
 		"Calmirixia" = SKIN_COLOR_CALMIRIXIAN,
-		"Gronn" = SKIN_COLOR_GRONN,
+		"Rhaenval" = SKIN_COLOR_RHAENVAL,
 		"North Raneshen (Chorodiaki)" = SKIN_COLOR_GIZA,
 		"West Raneshen (Vrdaqnan)" = SKIN_COLOR_SHALVISTINE,
 		"East Raneshen (Nshkormh)" = SKIN_COLOR_LALVESTINE,

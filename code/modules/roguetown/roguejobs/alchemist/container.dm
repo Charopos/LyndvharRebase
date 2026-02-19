@@ -227,11 +227,11 @@
 	list_reagents = list(/datum/reagent/consumable/ethanol/nred = 50)
 	desc = "A bottle with the City of Norwandine cork-seal. A red ale brewed to perfection in the lands of Hammerhold."
 
-/obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead
+/obj/item/reagent_containers/glass/bottle/rogue/beer/rhaenvalmead
 	name = "bottle of Shieldmaiden Mead"
 	icon_state = "red_wine"
-	list_reagents = list(/datum/reagent/consumable/ethanol/gronnmead = 50)
-	desc = "A bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to Gronns highlands."
+	list_reagents = list(/datum/reagent/consumable/ethanol/rhaenvalmead = 50)
+	desc = "A bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to Rhaenish highlands."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/avarmead
 	name = "bottle of Golden Mead"
@@ -344,9 +344,9 @@
 	list_reagents = list(/datum/reagent/consumable/ethanol/nred = 75)
 	desc = "A clay bottle with the City of Norwandine cork-seal. A red ale brewed to perfection in the lands of Hammerhold."
 
-/obj/item/reagent_containers/glass/bottle/claybottle/gronnmead
-	list_reagents = list(/datum/reagent/consumable/ethanol/gronnmead = 75)
-	desc = "A clay bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to Gronns highlands."
+/obj/item/reagent_containers/glass/bottle/claybottle/rhaenvalmead
+	list_reagents = list(/datum/reagent/consumable/ethanol/rhaenvalmead = 75)
+	desc = "A clay bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to Rhaenish highlands."
 
 /obj/item/reagent_containers/glass/bottle/claybottle/whitewine
 	list_reagents = list(/datum/reagent/consumable/ethanol/whitewine = 75)

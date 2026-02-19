@@ -5,7 +5,7 @@
 	name = "Goblin"
 	id = "goblinp"
 	origin_default = /datum/virtue/origin/unknown
-	origin = "Gronn"
+	origin = "Graggar"
 	base_name = "Godtouched"
 	is_subrace = TRUE
 	desc = "<b>Goblin</b><br>\

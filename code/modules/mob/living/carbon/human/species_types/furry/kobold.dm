@@ -6,7 +6,7 @@
 	id = "kobold"
 	is_subrace = TRUE
 	origin_default = /datum/virtue/origin/calmirixia
-	origin = "Gronn"
+	origin = "Calmirixia"
 	base_name = "Zard"
 	desc = "<b>Kobold</b><br>\
 	Short in stature and typically scrawny, these little lizards make up for it in their natural agility. People typically stereotype them as thieves, though...<br>\

@@ -1,15 +1,15 @@
-/datum/advclass/mercenary/gronnheavy
-	name = "Fjall Járnklæddur"
-	tutorial = "Even within Fjall, few bear witness to the Horned Visages of the Járnklæddur; Ironclad warriors who stand against the undead armies that rise out of the 'Red Blizzard'. Those who do not have the blessing of the Iskarn Shamans within the Northern Empty oft-seek the protection of the Járnklæddur, despite their steep costs."
+/datum/advclass/mercenary/rhaenvalheavy
+	name = "Rhaenish Járnklæddur"
+	tutorial = "Even within Rhaenval, few ever bear witness to the Horned Visages of the Járnklæddur; Ironclad warriors who stood against the Lyndhardtian armies that came from the east in its many conflicts against the Ruby. Those who do not have the blessing of the Khanate within the north of Rhaenval oft-seek the protection of the Járnklæddur, despite their steep costs."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	maximum_possible_slots = 1 //Hopefully this works.
-	outfit = /datum/outfit/job/roguetown/mercenary/gronnheavy
-	class_select_category = CLASS_CAT_GRONN
+	outfit = /datum/outfit/job/roguetown/mercenary/rhaenvalheavy
+	class_select_category = CLASS_CAT_RHAENVAL
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	cmode_music = 'sound/music/combat_vagarian.ogg'
-	subclass_languages = list(/datum/language/gronnic)
+	subclass_languages = list(/datum/language/rhaenish)
 	subclass_stats = list(
 		STATKEY_WIL = 3, //People see big numbers and start shitting their pants, but their weighted stats are 7 and it's limited to one, singular slot. This is fine. 
 		STATKEY_STR = 3, //TO WIELD THE MAUL. THEY CAN'T USE ANY OTHER WEAPON TYPE BUT MACES ANYWAY.
@@ -34,40 +34,23 @@
 		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 	)
 
-/datum/outfit/job/roguetown/mercenary/gronnheavy
-	allowed_patrons = ALL_GRONNIC_PATRONS //Subvariant of the 'ALL_INHUMEN_PATRONS' tag, with Abyssor and Dendor as situational additions. Do not add any more to this, no matter what.
+/datum/outfit/job/roguetown/mercenary/rhaenvalheavy
 
-/datum/outfit/job/roguetown/mercenary/gronnheavy/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/rhaenvalheavy/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.dna.species.soundpack_m = new /datum/voicepack/male/evil() //It's fucking cool okay
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron/gronn
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gronn
-	gloves = /obj/item/clothing/gloves/roguetown/plate/iron/gronn
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron/gronn
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron/rhaenval
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/rhaenval
+	gloves = /obj/item/clothing/gloves/roguetown/plate/iron/rhaenval
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron/rhaenval
 	cloak = /obj/item/clothing/cloak/volfmantle			//Aura farming.
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron //Weakspot.
-	pants = /obj/item/clothing/under/roguetown/platelegs/iron/gronn
+	pants = /obj/item/clothing/under/roguetown/platelegs/iron/rhaenval
 	r_hand = /obj/item/rogueweapon/mace/maul //this is literally the only weapon type they'll get to use. No alternatives.
 	neck = /obj/item/clothing/neck/roguetown/bevor/iron //Their weakspot. Go replace it if you're a chud I guess
 	backl = /obj/item/storage/backpack/rogue/satchel/black
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-
-	switch(H.patron?.type)
-		if(/datum/patron/inhumen/zizo)
-			id = /obj/item/clothing/neck/roguetown/psicross/inhumen/gronn
-		if(/datum/patron/inhumen/graggar)
-			id = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar/gronn
-		if(/datum/patron/inhumen/matthios)
-			id = /obj/item/clothing/neck/roguetown/psicross/inhumen/matthios/gronn
-		if(/datum/patron/inhumen/baotha)
-			id = /obj/item/clothing/neck/roguetown/psicross/inhumen/baothagronn
-		if(/datum/patron/divine/abyssor)
-			id = /obj/item/clothing/neck/roguetown/psicross/abyssor/gronn
-		if(/datum/patron/divine/dendor)
-			id = /obj/item/clothing/neck/roguetown/psicross/dendor/gronn
-		else
-			id = /obj/item/clothing/neck/roguetown/psicross/inhumen/gronn/special //Failsafe. Gives a specially-fluffed version of Zizo's talisman, which can be reinterpreted as needed.
 
 	backpack_contents = list(
 		/obj/item/flashlight/flare/torch/metal = 1,

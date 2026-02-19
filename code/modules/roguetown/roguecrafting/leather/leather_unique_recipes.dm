@@ -146,7 +146,7 @@
 	craftdiff = 5
 	sellprice = 20
 
-/datum/crafting_recipe/roguetown/leather/unique/gronnpants
+/datum/crafting_recipe/roguetown/leather/unique/rhaenvalpants
 	name = "fur pants"
 	result = list(/obj/item/clothing/under/roguetown/trou/leather/atgervi)
 	reqs = list(/obj/item/natural/hide/cured = 2,
@@ -156,7 +156,7 @@
 	craftdiff = 5
 	sellprice = 20
 
-/datum/crafting_recipe/roguetown/leather/unique/gronngloves
+/datum/crafting_recipe/roguetown/leather/unique/rhaenvalgloves
 	name = "fur-lined leather gloves"
 	result = list(/obj/item/clothing/gloves/roguetown/angle/atgervi)
 	reqs = list(/obj/item/natural/hide/cured = 2,
@@ -166,7 +166,7 @@
 	craftdiff = 5
 	sellprice = 20
 
-/datum/crafting_recipe/roguetown/leather/unique/gronnboots
+/datum/crafting_recipe/roguetown/leather/unique/rhaenvalboots
 	name = "atgervi leather boots"
 	result = list(/obj/item/clothing/shoes/roguetown/boots/leather/atgervi)
 	reqs = list(/obj/item/natural/hide/cured = 2,

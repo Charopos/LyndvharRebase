@@ -23,7 +23,7 @@
 		/datum/language/kazengunese,
 		/datum/language/valorian,
 		/datum/language/calmirixian,
-		/datum/language/gronnic,
+		/datum/language/rhaenish,
 		/datum/language/aavnic,
 		/datum/language/undead,
 		/datum/language/abyssal,
