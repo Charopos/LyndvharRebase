@@ -535,8 +535,8 @@
 
 //
 
-/obj/item/rogueweapon/scabbard/sword/kazengun
-	name = "simple kazengun scabbard"
+/obj/item/rogueweapon/scabbard/sword/yanshen
+	name = "simple yanshen scabbard"
 	desc = "A piece of steel lined with wood. Great for batting away blows."
 	icon_state = "kazscab"
 	item_state = "kazscab"
@@ -549,44 +549,44 @@
 
 	max_integrity = 0
 
-/obj/item/rogueweapon/scabbard/sword/kazengun/noparry
-	name = "ceremonial kazengun scabbard"
+/obj/item/rogueweapon/scabbard/sword/yanshen/noparry
+	name = "ceremonial yanshen scabbard"
 	desc = "A simple wooden scabbard, trimmed with bronze. Unlike its steel cousins, this one cannot parry."
 
 	valid_blade = /obj/item/rogueweapon/sword/long/kriegmesser/ssangsudo
 	can_parry = FALSE
 
 
-/obj/item/rogueweapon/scabbard/sword/kazengun/steel
-	name = "hwang scabbard"
+/obj/item/rogueweapon/scabbard/sword/yanshen/steel
+	name = "yun scabbard"
 	desc = "A cloud-patterned scabbard with a cloth sash. Used for blocking."
 	icon_state = "kazscab_steel"
 	item_state = "kazscab_steel"
-	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
+	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/xuefenghench
 
 
-/obj/item/rogueweapon/scabbard/sword/kazengun/gold
-	name = "gold-stained Xinyi scabbard"
+/obj/item/rogueweapon/scabbard/sword/yanshen/gold
+	name = "gold-stained Xuefeng scabbard"
 	desc = "An ornate, wooden scabbard with a sash. Great for parrying."
 	icon_state = "kazscab_gold"
 	item_state = "kazscab_gold"
-	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/rumacaptain
+	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/xuefengcaptain
 	sellprice = 10
 
-/obj/item/rogueweapon/scabbard/sword/kazengun/kodachi
+/obj/item/rogueweapon/scabbard/sword/yanshen/kodachi
 	name = "plain lacquer scabbard"
 	desc = "A plain lacquered scabbard with simple steel hardware. A plain dark cloth serves to hang it from a belt."
 	icon_state = "kazscabyuruku"
 	item_state = "kazscabyuruku"
-	valid_blade = /obj/item/rogueweapon/sword/short/kazengun
+	valid_blade = /obj/item/rogueweapon/sword/short/yanshen
 	wdefense = 4
 
-/obj/item/rogueweapon/scabbard/sheath/kazengun
+/obj/item/rogueweapon/scabbard/sheath/yanshen
 	name = "plain lacquer sheath"
-	desc = "A simple lacquered sheath, for shorter eastern-styled blades."
+	desc = "A simple lacquered sheath, for shorter Yansheneze-styled blades."
 	icon_state = "kazscabdagger"
 	item_state = "kazscabdagger"
-	valid_blade = /obj/item/rogueweapon/huntingknife/idagger/steel/kazengun
+	valid_blade = /obj/item/rogueweapon/huntingknife/idagger/steel/yanshen
 	associated_skill = /datum/skill/combat/shields
 	possible_item_intents = list(SHIELD_BASH, SHIELD_BLOCK)
 	can_parry = TRUE

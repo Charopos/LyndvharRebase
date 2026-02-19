@@ -61,7 +61,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/basiceast/captainrobe
 	name = "foreign robes"
-	desc = "Flower-styled robes, said to have been infused with magical protection. The Merchant Guild says that this is from the southern Kazengite region."
+	desc = "Flower-styled robes, said to have been infused with magical protection. Guilds would tell you that this is likely from Yanshen, given its flowery portrayal."
 	icon_state = "eastsuit4"
 	item_state = "eastsuit4"
 	armor = ARMOR_LEATHER_STUDDED

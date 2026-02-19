@@ -195,7 +195,7 @@
 
 /obj/machinery/light/rogue/torchholder/hotspring
 	name = "stone lantern"
-	desc = "A stone lantern, built in Kazengunese style. It is believed these lanterns attracts spirits and guide their way."
+	desc = "A stone lantern, built in Yansheneze style. It is believed these lanterns attracts spirits and guide their way."
 	icon = 'icons/obj/structures/hotspring.dmi'
 	icon_state = "stonelantern1"
 	torch_off_state = "stonelantern"
@@ -238,7 +238,7 @@
 /obj/structure/flora/sakura
 	name = "cherry blossom tree"
 	desc = "A tree that has been introduced from the far east. A symbol of the transience of life. \
-	In the islands of Kazengun, it is strongly associated with both romance and death. On the mainland, \
+	In the lands of Yanshen, it is strongly associated with both romance and death. In Lyndhardtia, \
 	it is known as a representation of brotherhood.\ "
 	icon = 'icons/obj/structures/sakura_tree.dmi'
 	icon_state = "sakura_tree"

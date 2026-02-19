@@ -58,8 +58,8 @@
 	cost = 30
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/sazdistal)
 
-/datum/supply_pack/rogue/alcohol/wineraneshen
-	name = "Ranesheni Wine"
+/datum/supply_pack/rogue/alcohol/winezybantu
+	name = "Zybantine Wine"
 	cost = 15
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/wine)
 
@@ -130,12 +130,12 @@
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/saigamilk)
 
 /datum/supply_pack/rogue/alcohol/kgunlager
-	name = "Yamaguchi Pale (Kazengun Pale Lager)"
+	name = "Yamaguchi Pale (Yansheneze Pale Lager)"
 	cost = 20
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/kgunlager)
 
 /datum/supply_pack/rogue/alcohol/kgunplum
-	name = "Umeshu (Kazengun Plum Wine)"
+	name = "Umeshu (Yansheneze Plum Wine)"
 	cost = 40
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/kgunplum)
 

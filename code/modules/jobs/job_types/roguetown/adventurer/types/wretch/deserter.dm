@@ -91,7 +91,7 @@
 				beltr = /obj/item/rogueweapon/scabbard/sword
 			if("Ssangsudo")
 				r_hand = /obj/item/rogueweapon/sword/long/kriegmesser/ssangsudo
-				beltr = /obj/item/rogueweapon/scabbard/sword/kazengun/noparry
+				beltr = /obj/item/rogueweapon/scabbard/sword/yanshen/noparry
 			if("Shashka + Shield")
 				r_hand = /obj/item/rogueweapon/sword/sabre/steppesman
 				beltr = /obj/item/rogueweapon/scabbard/sword
@@ -108,7 +108,7 @@
 			"Hounskull Bascinet" 		= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull,
 			"Calmirixian Bascinet" 		= /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia,
 			"Slitted Kettle"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
-			"Kulah Khud"	= /obj/item/clothing/head/roguetown/helmet/sallet/raneshen,
+			"Kulah Khud"	= /obj/item/clothing/head/roguetown/helmet/sallet/zybantu,
 			"Kabuto"	= /obj/item/clothing/head/roguetown/helmet/heavy/kabuto, //No mask, fuck you
 			"Shishak"	= /obj/item/clothing/head/roguetown/helmet/sallet/shishak,
 			"None"

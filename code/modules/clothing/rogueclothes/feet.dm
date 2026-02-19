@@ -374,7 +374,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 
-/obj/item/clothing/shoes/roguetown/boots/leather/reinforced/kazengun
+/obj/item/clothing/shoes/roguetown/boots/leather/reinforced/yanshen
 	name = "armored sandals"
 	desc = "Leather sandals, with steel ankle-protectors and socks of sturdy cloth."
 	icon_state = "kazengunboots"
@@ -384,7 +384,7 @@
 	detail_color = "#FFFFFF"
 	var/picked = FALSE
 
-/obj/item/clothing/shoes/roguetown/boots/leather/reinforced/kazengun/attack_right(mob/user)
+/obj/item/clothing/shoes/roguetown/boots/leather/reinforced/yanshen/attack_right(mob/user)
 	..()
 	if(!picked)
 		var/choice = input(user, "Choose a color.", "Uniform colors") as anything in COLOR_MAP
@@ -398,7 +398,7 @@
 			H.update_inv_armor()
 			H.update_icon()
 
-/obj/item/clothing/shoes/roguetown/boots/leather/reinforced/kazengun/update_icon()
+/obj/item/clothing/shoes/roguetown/boots/leather/reinforced/yanshen/update_icon()
 	cut_overlays()
 	if(get_detail_tag())
 		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
@@ -537,8 +537,8 @@
 	sewrepair = TRUE
 	armor = ARMOR_CLOTHING
 
-//kazen update
-/obj/item/clothing/shoes/roguetown/armor/rumaclan
+//yanshen update
+/obj/item/clothing/shoes/roguetown/armor/xuefengclan
 	name = "raised sandals"
 	desc = "A pair of strange sandals that push you off the ground."
 	icon_state = "eastsandals"
@@ -546,7 +546,7 @@
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/stonekeep_merc.dmi'
 	armor = ARMOR_LEATHER_GOOD
 
-/obj/item/clothing/shoes/roguetown/armor/rumaclan/shitty
+/obj/item/clothing/shoes/roguetown/armor/xuefengclan/shitty
 	armor = ARMOR_CLOTHING
 
 // horseshoes!

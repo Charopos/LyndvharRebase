@@ -61,7 +61,7 @@
 /datum/virtue/origin/yanshen
 	name = "Yansheneze"
 	origin_name = "Yanshen"
-	added_languages = list(/datum/language/kazengunese)
+	added_languages = list(/datum/language/yansheneze)
 	desc = "I originate from the idyllic plains and waterways of Yanshen, a region poorly known to Lewynians. Its people worship a syncretic variation of the Pantheon, often percieved as heretical.<br>"
 	origin_desc = "PLACEHOLDER TO BE DONE FOR LATER"
 

@@ -118,6 +118,14 @@
 /datum/species/demihuman/qualifies_for_rank(rank, list/features)
 	return TRUE
 
+/datum/species/demihuman/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+	..()
+	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
+
+/datum/species/demihuman/on_species_loss(mob/living/carbon/C)
+	. = ..()
+	UnregisterSignal(C, COMSIG_MOB_SAY)	
+
 /datum/species/demihuman/get_random_features()
 	var/list/returned = MANDATORY_FEATURE_LIST
 	var/main_color
@@ -154,10 +162,10 @@
 		"Valoria" = SKIN_COLOR_VALORIAN,
 		"Calmirixia" = SKIN_COLOR_CALMIRIXIAN,
 		"Rhaenval" = SKIN_COLOR_RHAENVAL,
-		"North Raneshen (Chorodiaki)" = SKIN_COLOR_GIZA,
-		"West Raneshen (Vrdaqnan)" = SKIN_COLOR_SHALVISTINE,
-		"East Raneshen (Nshkormh)" = SKIN_COLOR_LALVESTINE,
+		"North Zybantu (Chorodiaki)" = SKIN_COLOR_GIZA,
+		"West Zybantu (Vrdaqnan)" = SKIN_COLOR_SHALVISTINE,
+		"East Zybantu (Nshkormh)" = SKIN_COLOR_LALVESTINE,
 		"Naledi" = SKIN_COLOR_NALEDI,
 		"Naledi South" = SKIN_COLOR_NALEDI_LIGHT,
-		"Kazengun" = SKIN_COLOR_KAZENGUN,
+		"Yanshen" = SKIN_COLOR_YANSHEN,
 	)

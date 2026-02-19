@@ -166,7 +166,7 @@
 	icon = 'icons/obj/alcohol.dmi'
 	icon_state = "red_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/wine = 50)
-	desc = "A bottle that contains a generic red-wine, likely from Raneshen. It has a red-clay cork-seal."
+	desc = "A bottle that contains a generic red-wine, likely from Zybantu. It has a red-clay cork-seal."
 
 /obj/item/reagent_containers/glass/bottle/rogue/wine/sourwine
 	name = "bottle of Grenzelhoft Sour"
@@ -255,25 +255,25 @@
 	name = "bottle of Yamaguchi Tea Lager"
 	icon_state = "beer"
 	list_reagents = list(/datum/reagent/consumable/ethanol/kgunlager = 50)
-	desc = "A bottle with a Yamaguchi Brewery cork-seal. A pale lager brewed in the far-away lands of Kazengun, refined with green tea for an unique flavour-profile. Even lighter than elven-brew!"
+	desc = "A bottle with a Yamaguchi Brewery cork-seal. A pale lager brewed in the far-away lands of Yanshen, refined with green tea for an unique flavour-profile. Even lighter than elven-brew!"
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/kgunsake
 	name = "bottle of Golden Swan Sake"
 	icon_state = "white_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/kgunsake = 50)
-	desc = "A bottle with a Golden Swan cork-seal. A translucient, pale-blue liquid made from rice. A favourite drink of the warlords and nobles of Kazengun."
+	desc = "A bottle with a Golden Swan cork-seal. A translucient, pale-blue liquid made from rice. A favourite drink of the warlords and nobles of Yanshen."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/kgunplum
 	name = "bottle of Golden Swan Plum Wine"
 	icon_state = "plum_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/kgunplum = 50)
-	desc = "A bottle with a Golden Swan cork-seal. A reddish-golden alcohol made from a fruit commonly found on the Kazengun-isles. A favourite of the commoners."
+	desc = "A bottle with a Golden Swan cork-seal. A reddish-golden alcohol made from a fruit commonly found in Yanshen. A favourite of the commoners."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/kgunshochu
-	name = "bottle of Kazengun Shochu"
+	name = "bottle of Yanshen Shochu"
 	icon_state = "rice_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/kgunshochu = 50)
-	desc = "A bottle with a Golden Swan cork-seal. A clean alcohol made by distilling rice. With a dry and clean finish. Popular amongst the warrior caste of Kazengun."
+	desc = "A bottle with a Golden Swan cork-seal. A clean alcohol made by distilling rice. With a dry and clean finish. Popular amongst the warrior caste of Yanshen."
 
 // Zhongese Drinks
 /obj/item/reagent_containers/glass/bottle/rogue/beer/huangjiu
@@ -330,7 +330,7 @@
 
 /obj/item/reagent_containers/glass/bottle/claybottle/wine
 	list_reagents = list(/datum/reagent/consumable/ethanol/wine = 75)
-	desc = "A clay bottle that contains a generic red-wine, likely from Raneshen. It has a red-clay cork-seal."
+	desc = "A clay bottle that contains a generic red-wine, likely from Zybantu. It has a red-clay cork-seal."
 
 /obj/item/reagent_containers/glass/bottle/claybottle/water
 	list_reagents = list(/datum/reagent/water = 75)

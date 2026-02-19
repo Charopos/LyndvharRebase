@@ -4,7 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/mercenary/forlorn
-	class_select_category = CLASS_CAT_RANESHENI
+	class_select_category = CLASS_CAT_FORVHEIPAL
 	min_pq = 2
 	cmode_music = 'sound/music/combat_blackstar.ogg'
 	subclass_languages = list(/datum/language/celestial)

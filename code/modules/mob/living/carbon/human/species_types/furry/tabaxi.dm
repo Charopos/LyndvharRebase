@@ -6,7 +6,7 @@
 	id = "tabaxi"
 	is_subrace = TRUE
 	origin_default = /datum/virtue/origin/zybantu
-	origin = "Raneshen"
+	origin = "Zybantu"
 	base_name = "Beastvolk"
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | SLIME_EXTRACT
 	desc = "<b>Tabaxi</b><br>\
@@ -187,3 +187,23 @@
 /datum/species/tabaxi/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
+
+/datum/species/tabaxi/random_name(gender,unique,lastname)
+	var/randname
+	if(unique)
+		if(gender == MALE)
+			for(var/i in 1 to 10)
+				randname = pick( world.file2list("strings/names/roguetown/tabaxim.txt") )
+				if(!findname(randname))
+					break
+		if(gender == FEMALE)
+			for(var/i in 1 to 10)
+				randname = pick( world.file2list("strings/names/roguetown/tabaxif.txt") )
+				if(!findname(randname))
+					break
+	else
+		if(gender == MALE)
+			randname = pick( world.file2list("strings/rt/names/human/humnorm.txt") )
+		if(gender == FEMALE)
+			randname = pick( world.file2list("strings/rt/names/human/humnorf.txt") )
+	return randname

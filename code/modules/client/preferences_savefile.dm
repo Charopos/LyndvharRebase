@@ -88,12 +88,15 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 			var/newtype = GLOB.species_list[species_name]
 			if(!newtype)
 				switch(species_name)
-					if("Sissean")
+					if("Draconae")
 
-						species_name = "Zardman"
+						species_name = "Eskallian"
 					if("Vulpkian")
 
 						species_name = "Venardine"
+					if("Zardman")
+
+						species_name= "Eskallian"
 		_load_species(S, species_name)
 
 /datum/preferences/proc/load_path(ckey,filename="preferences.sav")

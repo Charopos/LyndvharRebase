@@ -395,9 +395,9 @@
 	sellprice = 300
 	unenchantable = TRUE
 
-/obj/item/clothing/neck/roguetown/gorget/steel/kazengun
-	name = "kazengunite gorget"
-	desc = "A series of interlocking rings of metal set around the throat. Used by the kouken of Kazengun for precisely the same reason as the knights of Psydonia."
+/obj/item/clothing/neck/roguetown/gorget/steel/yanshen
+	name = "yansheneze gorget"
+	desc = "A series of interlocking rings of metal set around the throat. Used by the zhanshi of Yanshen for precisely the same reason as knights across Beowricke."
 	icon_state = "kazengunneckguard"
 
 /obj/item/clothing/neck/roguetown/gorget/paalloy
@@ -786,7 +786,7 @@
 
 /obj/item/clothing/neck/roguetown/shalal
 	name = "desert rider medal"
-	desc = "Made out of the silver from the Ranesheni mercenaries' first pay. A tradition is kept between these hired blades: to give this one away to someone is to symbolize a debt in their favor - to be redeemed by any other mercenary in times of need."
+	desc = "Made out of the silver from the Zybantine mercenaries' first pay. A tradition is kept between these hired blades: to give this one away to someone is to symbolize a debt in their favor - to be redeemed by any other mercenary in times of need."
 	icon_state = "shalal"
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HIP|ITEM_SLOT_WRISTS|ITEM_SLOT_RING		//Hey I guess you could pretend it is wrapped around your hand? Just keep it on, don't be a hoe.
 	//dropshrink = 0.75

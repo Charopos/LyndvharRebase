@@ -117,7 +117,7 @@
 
 /obj/item/roguegem/jade
 	name = "jade"
-	desc = "A dull green gem prized in Lingyue and Kazengun alike. Lingyuese tradition holds that jade is the essence of Psydon, protecting both soul and flesh from decay and corruption."
+	desc = "A dull green gem prized in Yanshen. Yansheneze tradition holds that jade is the essence of the celestial lux, protecting both soul and flesh from decay and corruption."
 	icon = 'icons/roguetown/gems/gem_jade.dmi'
 	icon_state = "raw_jade"
 	sellprice = 50

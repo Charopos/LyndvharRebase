@@ -1,19 +1,22 @@
-/mob/living/carbon/human/species/dracon
-	race = /datum/species/dracon
+/mob/living/carbon/human/species/cervaline
+	race = /datum/species/cervaline
 
-/datum/species/dracon
-	name = "Drakian"
-	id = "dracon"
-	is_subrace = TRUE
-	origin_default = /datum/virtue/origin/grenzelhoft
-	origin = "Grenzelhoft"
-	base_name = "Zard"
-	desc = "<b>Drakian</b><br>\
-	Mighty scaled individuals who claim to be descendants of the dragons of yore.<br>\
-	(+1 Strength)"
-	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
-	possible_ages = ALL_AGES_LIST
+/datum/species/cervaline
+	name = "Cervaline"
+	id = "cervaline"
+	desc = "<b>Cervaline</b><br>\
+	A rather populous and movement-prone race, the Cervaline originate from the Great Plains of western Rhaenval, in the Vruirid homelands. Sprouting different sets of antlers, large ears, and an assortment of different shades of darker fur colors, they are a large bulk of the remaining nomadic peoples of the continent. Having spread far and wide across the lands in old times, they can be found in many different regions- well known for their adaptability and resourcefulness. It is not often unlikely to encounter trade caravans solely operated by the Cervaline peoples. Back in their homelands of Vruirid they were one of the founding members of the Rhaenvali Confederation- which was birthed as a direct counterforce to the growing mass of the Lyndhardtian Empire.<br>"
+	default_color = "444"
+	species_traits = list(
+		MUTCOLORS,
+		EYECOLOR,
+		LIPS,
+		HAIR,
+	)
+	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
+	attack_verb = "slash"
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
+	possible_ages = ALL_AGES_LIST
 	limbs_icon_m = 'icons/roguetown/mob/bodies/m/mta.dmi'
 	limbs_icon_f = 'icons/roguetown/mob/bodies/f/fma.dmi'
 	dam_icon = 'icons/roguetown/mob/bodies/dam/dam_male.dmi'
@@ -32,32 +35,26 @@
 		OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-1), \
 		)
-	race_bonus = list(STAT_STRENGTH = 1)
 	enflamed_icon = "widefire"
-	attack_verb = "slash"
-	attack_sound = 'sound/blank.ogg'
-	miss_sound = 'sound/blank.ogg'
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
 		ORGAN_SLOT_HEART = /obj/item/organ/heart,
 		ORGAN_SLOT_LUNGS = /obj/item/organ/lungs,
 		ORGAN_SLOT_EYES = /obj/item/organ/eyes,
 		ORGAN_SLOT_EARS = /obj/item/organ/ears,
-		ORGAN_SLOT_TONGUE = /obj/item/organ/tongue/lizard,
+		ORGAN_SLOT_TONGUE = /obj/item/organ/tongue/wild_tongue,
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
 		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
-		ORGAN_SLOT_TAIL = /obj/item/organ/tail/lizard,
-		ORGAN_SLOT_SNOUT = /obj/item/organ/snout/lizard,
-		ORGAN_SLOT_TAIL_FEATURE = /obj/item/organ/tail_feature/lizard_spines,
-		ORGAN_SLOT_FRILLS = /obj/item/organ/frills/lizard,
-		ORGAN_SLOT_HORNS = /obj/item/organ/horns,
-		//ORGAN_SLOT_WINGS = /obj/item/organ/wings/dracon,
 		//ORGAN_SLOT_TESTICLES = /obj/item/organ/testicles,
-		//ORGAN_SLOT_PENIS = /obj/item/organ/penis/tapered,
+		//ORGAN_SLOT_PENIS = /obj/item/organ/penis/knotted,
 		//ORGAN_SLOT_BREASTS = /obj/item/organ/breasts,
 		//ORGAN_SLOT_VAGINA = /obj/item/organ/vagina,
 		)
+	bodypart_features = list(
+		/datum/bodypart_feature/hair/head,
+		/datum/bodypart_feature/hair/facial,
+	)
 	customizers = list(
 		/datum/customizer/organ/eyes/humanoid,
 		/datum/customizer/bodypart_feature/hair/head/humanoid,
@@ -65,24 +62,21 @@
 		/datum/customizer/bodypart_feature/accessory,
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
-		/datum/customizer/bodypart_feature/legwear,
-		/datum/customizer/bodypart_feature/piercing,
-		/datum/customizer/organ/wings/dracon,
-		/datum/customizer/organ/tail/lizard,
-		/datum/customizer/organ/tail_feature/lizard_spines,
-		/datum/customizer/organ/snout/lizard,
-		/datum/customizer/organ/ears/lizard,
-		/datum/customizer/organ/frills/lizard,
-		/datum/customizer/organ/horns/humanoid,
+		/datum/customizer/organ/tail/cervaline,
+		/datum/customizer/organ/snout/cervaline,
+		/datum/customizer/organ/ears/cervaline,
+		/datum/customizer/organ/horns/cervaline,
+		/datum/customizer/organ/neck_feature/anthro,
 		/datum/customizer/organ/testicles/anthro,
-		/datum/customizer/organ/penis/anthro,
+		/datum/customizer/organ/penis/cervaline,
 		/datum/customizer/organ/breasts/animal,
-		/datum/customizer/organ/vagina/animal,
-		/datum/customizer/organ/ears/anthro,
-		)
+		/datum/customizer/organ/vagina/cervaline,
+	)
+
 	body_marking_sets = list(
 		/datum/body_marking_set/none,
-		/datum/body_marking_set/bellyscale,
+		/datum/body_marking_set/belly,
+		/datum/body_marking_set/bellysocks,
 		/datum/body_marking_set/tiger,
 		/datum/body_marking_set/tiger_dark,
 		/datum/body_marking_set/gradient,
@@ -108,85 +102,96 @@
 		/datum/body_marking/tiesmall,
 		/datum/body_marking/backspots,
 		/datum/body_marking/front,
-		/datum/body_marking/drake_eyes,
 		/datum/body_marking/tonage,
 		/datum/body_marking/spotted,
 		/datum/body_marking/nose,
+		/datum/body_marking/harlequin,
+		/datum/body_marking/harlequinreversed,
 		/datum/body_marking/bangs,
 		/datum/body_marking/bun,
 		/datum/body_marking/gradient,
 	)
-	languages = list(
-		/datum/language/common,
-		/datum/language/draconic
-	)
 	descriptor_choices = list(
-		/datum/descriptor_choice/trait,
-		/datum/descriptor_choice/stature,
 		/datum/descriptor_choice/height,
 		/datum/descriptor_choice/body,
+		/datum/descriptor_choice/stature,
 		/datum/descriptor_choice/face,
 		/datum/descriptor_choice/face_exp,
-		/datum/descriptor_choice/scales,
+		/datum/descriptor_choice/skin_all,
 		/datum/descriptor_choice/voice,
-		/datum/descriptor_choice/prominent_one,
-		/datum/descriptor_choice/prominent_two,
-		/datum/descriptor_choice/prominent_three,
-		/datum/descriptor_choice/prominent_four,
+		/datum/descriptor_choice/prominent_one_wild,
+		/datum/descriptor_choice/prominent_two_wild,
+		/datum/descriptor_choice/prominent_three_wild,
+		/datum/descriptor_choice/prominent_four_wild,
 	)
 
-/datum/species/dracon/check_roundstart_eligible()
-	return TRUE
 
-/datum/species/dracon/qualifies_for_rank(rank, list/features)
-	return TRUE
-
-/datum/species/dracon/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+/datum/species/cervaline/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
 
-/datum/species/dracon/on_species_loss(mob/living/carbon/C)
+/datum/species/cervaline/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
 
-/datum/species/dracon/get_random_body_markings(list/passed_features)
-	return assemble_body_markings_from_set(GLOB.body_marking_sets_by_type[/datum/body_marking_set/bellyscale], passed_features, src)
+/datum/species/cervaline/check_roundstart_eligible()
+	return TRUE
 
-/datum/species/dracon/get_random_features()
+/datum/species/cervaline/qualifies_for_rank(rank, list/features)
+	return TRUE
+
+/datum/species/cervaline/get_random_features()
 	var/list/returned = MANDATORY_FEATURE_LIST
 	var/main_color
 	var/second_color
-	var/random = rand(1,9)
-	//Choose from a variety of draconic colors
+	var/third_color
+	var/random = rand(1,6)
 	switch(random)
 		if(1)
-			main_color = "e43900"
-			second_color = "ea673c"
+			main_color = "FFFFFF"
+			second_color = "333333"
+			third_color = "333333"
 		if(2)
-			main_color = "ea6f01"
-			second_color = "ea8e3c"
+			main_color = "FFFFDD"
+			second_color = "DD6611"
+			third_color = "AA5522"
 		if(3)
-			main_color = "eaa501"
-			second_color = "e7b43a"
+			main_color = "DD6611"
+			second_color = "FFFFFF"
+			third_color = "DD6611"
 		if(4)
-			main_color = "63d100"
-			second_color = "89d248"
+			main_color = "CCCCCC"
+			second_color = "FFFFFF"
+			third_color = "FFFFFF"
 		if(5)
-			main_color = "51aa01"
-			second_color = "70ae39"
+			main_color = "AA5522"
+			second_color = "CC8833"
+			third_color = "FFFFFF"
 		if(6)
-			main_color = "00b302"
-			second_color = "2eb62f"
-		if(7)
-			main_color = "02c33c"
-			second_color = "3ac664"
-		if(8)
-			main_color = "00c170"
-			second_color = "3fbf89"
-		if(9)
-			main_color = "00bc94"
-			second_color = "3cbea2"
+			main_color = "FFFFDD"
+			second_color = "FFEECC"
+			third_color = "FFDDBB"
 	returned["mcolor"] = main_color
 	returned["mcolor2"] = second_color
-	returned["mcolor3"] = second_color
+	returned["mcolor3"] = third_color
 	return returned
+
+/datum/species/cervaline/random_name(gender,unique,lastname)
+	var/randname
+	if(unique)
+		if(gender == MALE)
+			for(var/i in 1 to 10)
+				randname = pick( world.file2list("strings/names/roguetown/cervalinem.txt") )
+				if(!findname(randname))
+					break
+		if(gender == FEMALE)
+			for(var/i in 1 to 10)
+				randname = pick( world.file2list("strings/names/roguetown/cervalinef.txt") )
+				if(!findname(randname))
+					break
+	else
+		if(gender == MALE)
+			randname = pick( world.file2list("strings/rt/names/human/humnorm.txt") )
+		if(gender == FEMALE)
+			randname = pick( world.file2list("strings/rt/names/human/humnorf.txt") )
+	return randname
