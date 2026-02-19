@@ -74,15 +74,6 @@ Balloon Alert / Floating Text defines
 	/datum/species/aasimar,\
 
 #define RACES_TOLERATED \
-	/datum/species/tabaxi,\
-	/datum/species/human/halfelf,\
-	/datum/species/lupian,\
-	/datum/species/vulpkanin,\
-	/datum/species/moth,\
-	/datum/species/dracon,\
-	/datum/species/dwarf/gnome\
-
-#define RACES_TOLERATED \
 	/datum/species/elf/dark,\
 	/datum/species/tieberian,\
 	/datum/species/lizardfolk,\

@@ -9,7 +9,6 @@
 		/datum/species/elf/dark,
 		/datum/species/kobold,
 		/datum/species/goblinp,				//Might be a little weird but goblins do reside in caves, and they could use a unique merc class type.
-		/datum/species/anthromorphsmall,	//Basically all under-ground races. Perfect for cave-clearing.
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/underdweller
 	class_select_category = CLASS_CAT_RACIAL
