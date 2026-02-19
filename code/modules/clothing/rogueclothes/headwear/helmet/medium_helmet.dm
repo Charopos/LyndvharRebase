@@ -254,7 +254,7 @@
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = ARMOR_INT_HELMET_IRON
 
-/obj/item/clothing/head/roguetown/helmet/sallet/raneshen
+/obj/item/clothing/head/roguetown/helmet/sallet/zybantu
 	name = "kulah khud"
 	desc = "A sturdy, conical helm that has served the Empire well throughout its many campaigns. It's a sight to see, thousands of these bobbing as an army marches. The only greater humiliation than losing it is losing one's medallion."
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'

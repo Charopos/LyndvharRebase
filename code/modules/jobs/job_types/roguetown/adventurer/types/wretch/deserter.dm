@@ -108,7 +108,7 @@
 			"Hounskull Bascinet" 		= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull,
 			"Calmirixian Bascinet" 		= /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia,
 			"Slitted Kettle"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
-			"Kulah Khud"	= /obj/item/clothing/head/roguetown/helmet/sallet/raneshen,
+			"Kulah Khud"	= /obj/item/clothing/head/roguetown/helmet/sallet/zybantu,
 			"Kabuto"	= /obj/item/clothing/head/roguetown/helmet/heavy/kabuto, //No mask, fuck you
 			"Shishak"	= /obj/item/clothing/head/roguetown/helmet/sallet/shishak,
 			"None"
