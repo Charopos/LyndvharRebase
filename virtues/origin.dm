@@ -47,7 +47,7 @@
 /datum/virtue/origin/zybantu
 	name = "Zybantine"
 	origin_name = "Zybantu"
-	added_languages = list(/datum/language/celestial)
+	added_languages = list(/datum/language/zybanti)
 	desc = "I originate from the sand valleys and harsh badlands of Zybantu. Home to the spice traders, sun elves, and more. The region sits as most peoples gateways between the two continents.<br>"
 	origin_desc = "PLACEHOLDER TO BE DONE FOR LATER"
 
@@ -68,7 +68,7 @@
 /datum/virtue/origin/forvheipal
 	name = "Forvheipan"
 	origin_name = "Forvheipal"
-	added_languages = list(/datum/language/dwarvish) //to be changed to forvheipan when the language is ported in
+	added_languages = list(/datum/language/forvheipan) //to be changed to forvheipan when the language is ported in
 	desc = "I originate from mountainous Forvheipal, a frigid and sparse land in the far south of Yoheon. The region is considered one of the most hostile, and home to the most infamous slaver guilds.<br>"
 	origin_desc = "PLACEHOLDER TO BE DONE FOR LATER"
 

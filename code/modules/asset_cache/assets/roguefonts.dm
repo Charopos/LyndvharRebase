@@ -22,4 +22,6 @@
 		"calmirixia.ttf" = 'interface/fonts/languages/calmirixia.ttf',
 		"rhaenish.ttf" = 'interface/fonts/languages/rhaenish.ttf',
 		"aavnic.ttf" = 'interface/fonts/languages/aavnic.ttf',
+		"forvheipan.ttf" = 'interface/fonts/languages/forvheipan.ttf',
+		"zybanti.otf" = 'interface/fonts/languages/zybanti.otf',
 	)

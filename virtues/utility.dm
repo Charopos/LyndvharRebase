@@ -135,7 +135,9 @@
 		/datum/language/valorian,
 		/datum/language/calmirixian,
 		/datum/language/rhaenish,
-		/datum/language/aavnic
+		/datum/language/aavnic,
+		/datum/language/forvheipan,
+		/datum/language/zybanti,
 	)
 
 	var/list/choices = list()
