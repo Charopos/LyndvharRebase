@@ -130,12 +130,12 @@
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/saigamilk)
 
 /datum/supply_pack/rogue/alcohol/kgunlager
-	name = "Yamaguchi Pale (Kazengun Pale Lager)"
+	name = "Yamaguchi Pale (Yansheneze Pale Lager)"
 	cost = 20
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/kgunlager)
 
 /datum/supply_pack/rogue/alcohol/kgunplum
-	name = "Umeshu (Kazengun Plum Wine)"
+	name = "Umeshu (Yansheneze Plum Wine)"
 	cost = 40
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/kgunplum)
 

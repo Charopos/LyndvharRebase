@@ -83,7 +83,7 @@ body {
 
 @font-face {
 	font-family: "Yuji Boku";
-	src: url("kazengunese.ttf");
+	src: url("yansheneze.ttf");
 }
 
 @font-face {
@@ -854,7 +854,7 @@ h2.alert {
 	font-family: "Emperialisme", "Pterra";
 	font-size: 120%;
 }
-.kazengunese {
+.yansheneze {
 	font-family: "Yuji Boku", Pterra;
 }
 .orc {

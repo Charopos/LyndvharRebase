@@ -1,11 +1,11 @@
 /datum/advclass/mercenary/seonjang //shitcode approved by free
 	name = "Seonjang"
-	tutorial = "The respected leader and singular representative of the Ruma clan, you're an experienced swordsman. It matters not where the coin comes from, so long as you can make enough to support the clan in its survival from the Xinyi Dynasty and its conflicts, now in strange lands."
+	tutorial = "The respected leader and singular representative of the Xuefeng Family, you're an experienced swordsman. It matters not where the coin comes from, so long as you can make enough to support the clan in its survival from the Xinyi Dynasty and its conflicts, now in strange lands."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = NON_DWARVEN_RACE_TYPES
 	outfit = /datum/outfit/job/roguetown/mercenary/seonjang
-	subclass_languages = list(/datum/language/kazengunese)
-	class_select_category = CLASS_CAT_KAZENGUN
+	subclass_languages = list(/datum/language/yansheneze)
+	class_select_category = CLASS_CAT_YANSHEN
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_CRITICAL_RESISTANCE, TRAIT_HARDDISMEMBER, TRAIT_NOPAINSTUN, TRAIT_HONORBOUND)
 	cmode_music = 'sound/music/combat_kazengite.ogg'
@@ -32,10 +32,10 @@
 
 /datum/outfit/job/roguetown/mercenary/seonjang/pre_equip(mob/living/carbon/human/H)
 	..()
-	shoes = /obj/item/clothing/shoes/roguetown/armor/rumaclan
+	shoes = /obj/item/clothing/shoes/roguetown/armor/xuefengclan
 	belt = /obj/item/storage/belt/rogue/leather
-	beltr = /obj/item/rogueweapon/sword/sabre/mulyeog/rumacaptain
-	beltl = /obj/item/rogueweapon/scabbard/sword/kazengun/gold
+	beltr = /obj/item/rogueweapon/sword/sabre/mulyeog/xuefengcaptain
+	beltl = /obj/item/rogueweapon/scabbard/sword/yanshen/gold
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary,

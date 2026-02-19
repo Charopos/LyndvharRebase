@@ -1054,7 +1054,7 @@
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
 	color = CLOTHING_ORANGE
 
-/obj/item/clothing/cloak/thief_cloak/yoruku
+/obj/item/clothing/cloak/thief_cloak/jiandie
 	color = CLOTHING_BLACK
 
 /obj/item/clothing/cloak/volfmantle
@@ -1493,7 +1493,7 @@
 
 /obj/item/clothing/cloak/eastcloak1
 	name = "cloud-cutter's cloak"
-	desc = "A brown cloak with white swirls. Some Kazengites may recognize it as an old militaristic symbol."
+	desc = "A brown cloak with white swirls. Some Yansheni may recognize it as the symbol of the Xuefeng Family."
 	color = null
 	alternate_worn_layer = CLOAK_BEHIND_LAYER
 	icon_state = "eastcloak1"
@@ -1637,7 +1637,7 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/maids.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/maids.dmi'
 
-/obj/item/clothing/cloak/kazengun
+/obj/item/clothing/cloak/yanshen
 	name = "jinbaori"
 	desc = "A simple kind of Yansheneze surcoat, worn here in the distant battlefields of what was Lyndhardtia as a sign of heritage."
 	icon_state = "kazenguncoat"

@@ -64,7 +64,7 @@ GLOBAL_VAR_INIT(adventurer_hugbox_duration_still, 3 MINUTES)
 		/datum/advclass/noble/knighte,
 		/datum/advclass/noble/squire,
 		/datum/advclass/foreigner,
-		/datum/advclass/foreigner/yoruku,
+		/datum/advclass/foreigner/jiandie,
 		/datum/advclass/foreigner/repentant,
 		/datum/advclass/foreigner/refugee,
 		/datum/advclass/foreigner/slaver,

@@ -121,7 +121,7 @@
 	icon_state = "heavyhood"
 	hidesnoutADJ = FALSE
 
-/obj/item/clothing/head/roguetown/roguehood/shalal/hijab/yoruku
+/obj/item/clothing/head/roguetown/roguehood/shalal/hijab/jiandie
 	name = "shadowed hood"
 	desc = "It sits just so, obscuring the face just enough to spoil recognition."
 	color = CLOTHING_BLACK

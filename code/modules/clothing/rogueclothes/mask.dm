@@ -435,19 +435,19 @@
 	sellprice = 100
 	smeltresult = /obj/item/ingot/gold
 
-/obj/item/clothing/mask/rogue/facemask/yoruku_oni
+/obj/item/clothing/mask/rogue/facemask/jiandie_oni
 	name = "oni mask"
-	desc = "A wood mask carved in the visage of demons said to stalk the mountains of Kazengun."
+	desc = "A wood mask carved in the visage of demons said to stalk the western mountains of Yanshen."
 	icon_state = "oni"
 	stack_fovs = FALSE
 
-/obj/item/clothing/mask/rogue/facemask/yoruku_kitsune
+/obj/item/clothing/mask/rogue/facemask/jiandie_kitsune
 	name = "kitsune mask"
-	desc = "A wood mask carved in the visage of the fox spirits said to ply their tricks in the forests of Kazengun."
+	desc = "A wood mask carved in the visage of the fox spirits said to ply their tricks in the forests of Yanshen."
 	icon_state = "kitsune"
 	stack_fovs = FALSE
 
-/obj/item/clothing/mask/rogue/facemask/steel/kazengun
+/obj/item/clothing/mask/rogue/facemask/steel/yanshen
 	name = "soldier's half-mask"
 	desc = "\"The first lesson of war is that it would be better to live in peace.\""
 	block2add = null
@@ -455,7 +455,7 @@
 	icon_state = "kazengunmouthguard"
 	item_state = "kazengunmouthguard"
 
-/obj/item/clothing/mask/rogue/facemask/steel/kazengun/full
+/obj/item/clothing/mask/rogue/facemask/steel/yanshen/full
 	name = "ogre mask"
 	desc = "\"The second lesson: Rich men have dreams. Poor men die to make them come true.\""
 	icon_state = "kazengunfaceguard"

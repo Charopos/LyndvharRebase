@@ -395,9 +395,9 @@
 	sellprice = 300
 	unenchantable = TRUE
 
-/obj/item/clothing/neck/roguetown/gorget/steel/kazengun
-	name = "kazengunite gorget"
-	desc = "A series of interlocking rings of metal set around the throat. Used by the kouken of Kazengun for precisely the same reason as the knights of Psydonia."
+/obj/item/clothing/neck/roguetown/gorget/steel/yanshen
+	name = "yansheneze gorget"
+	desc = "A series of interlocking rings of metal set around the throat. Used by the zhanshi of Yanshen for precisely the same reason as knights across Beowricke."
 	icon_state = "kazengunneckguard"
 
 /obj/item/clothing/neck/roguetown/gorget/paalloy
