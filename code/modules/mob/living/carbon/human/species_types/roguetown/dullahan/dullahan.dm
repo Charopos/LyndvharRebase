@@ -192,7 +192,7 @@
 		"Naledi-Born" = SKIN_COLOR_NALEDI_BORN,
 		"Naledi-Southerner" = SKIN_COLOR_NALEDI_LIGHT,
 		"Kaze-Lotus" = SKIN_COLOR_KAZE_LOTUS,
-		"Grenzel-Azuria" = SKIN_COLOR_GRENZEL_WOODS,
+		"Grenzel-Lyndvhar" = SKIN_COLOR_GRENZEL_WOODS,
 		"Calmirixian-Lirvas" = SKIN_COLOR_CALMIRIXIAN_LIRVAS,
 		"Free Roamers" = SKIN_COLOR_FREE_FOLK,
 		"Aavnic"	= SKIN_COLOR_AVAR_BORNE,

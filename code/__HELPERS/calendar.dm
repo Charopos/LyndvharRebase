@@ -1,6 +1,6 @@
 /*
 	Helper for the CALENDAR System. This will be where I document the design decisions.
-	Azure Peak's canonical calendar system, known as the Azurian Calendar ICly, is a solar calendar. It is based on the "Grenzelhoftian Calendar", a tennite calendar system. 
+	Lyndvhar's canonical calendar system, known as the Luminary Calendar ICly, is a solar calendar. Created as an organized and centralized calendar by the Lyndhardtian Empire. It is based on the movement of stars across the sky. 
 	But actually, because we're in a fictional video game, it is a perfect calendar with no leap years or irregularities.
 	It consists of 12 months, each with exactly 28 days dividing into 4 weeks. And it starts from Monday and ends on Sunday with a 7 days week.
 	Each week = 1 round IC (regardless of how much time actually passed in game)
@@ -45,7 +45,7 @@
 		if(5)
 			weekday = "Feast's Dae"
 		if(6)
-			weekday = "Psydon's Dae"
+			weekday = "Naexidor's Dae"
 		if(7)
 			weekday = "Sun's Dae"
 	return  "[weekday] ᛉ [capitalize(GLOB.tod)] ᛉ [station_time_timestamp("hh:mm")]"
@@ -54,7 +54,7 @@
 /proc/get_month_number_to_text(month_number)
 	switch(month_number)
 		if(1)
-			return "Psyrise" // March - The first month of a year is dedicated to the original god that created the world
+			return "Astrise" // March - The first month of a year is dedicated to the original god that created the world
 		if(2)
 			return "Eora" // April
 		if(3)
@@ -68,10 +68,10 @@
 		if(6)
 			return "Malum" // August
 		if(7)
-			// This neatly split the year into two half of rise and fall of Psydon.
-			// It also happens to be the start of "Fall" / Autumn.
-			// And it matches the "Psydonia is a minecraft world" joke quite well with Psydon going back to school
-			return "Syonfall"
+			// Naexidor is cool.
+			// So he gets his own month.
+			// Screw you.
+			return "Naexidor"
 		if(8)
 			// Middle / End of harvesting seasons for some crops. It make sense that the goddess of rot / decay follows
 			// And after Syonfall comes the gradual move to winter

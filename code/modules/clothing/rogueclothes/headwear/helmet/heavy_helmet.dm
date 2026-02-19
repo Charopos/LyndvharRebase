@@ -127,7 +127,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/heavy/guard/bogman
 	name = "steel bogman's helmet"
-	desc = "A helmet featuring the face of a snarling goblin. Once worn by the Bogmen, now a relic of old Azuria."
+	desc = "A helmet featuring the face of a snarling goblin. Once worn by the Bogmen, now a relic of their forces."
 	icon_state = "guardhelm"
 
 /obj/item/clothing/head/roguetown/helmet/heavy/guard/aalloy
@@ -741,7 +741,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/heavy/frogmouth
 	name = "froggemund helmet"
-	desc = "A tall and imposing frogmouth-style helm popular in the highest plateaus of the Azure Peak. It covers not only the entire head and face, but the neck as well. Add a cloth to show the colors of your family or allegiance."
+	desc = "A tall and imposing frogmouth-style helm popular in the northern territories. It covers not only the entire head and face, but the neck as well. Add a cloth to show the colors of your family or allegiance."
 	icon_state = "frogmouth"
 	item_state = "frogmouth"
 	emote_environment = 3
@@ -779,7 +779,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/heavy/frogmouth/legacy //Triumph-exclusive.
 	name = "valorian froggemund helmet"
-	desc = "A triumphant greathelm, crested with a steel gorget that - while cumbersome - offers the finest protection in all of Azuria. Will you succumb to despair, or will you fight for your happiness?"
+	desc = "A triumphant greathelm, crested with a steel gorget that - while cumbersome - offers the finest protection in all of Beowricke. Will you succumb to despair, or will you fight for your happiness?"
 	smelt_bar_num = 1
 
 /obj/item/clothing/head/roguetown/helmet/heavy/matthios

@@ -1,14 +1,14 @@
-/datum/language/oldazurian
-	name = "Old Azurian"
-	desc = "The olden tongue of Azuria's Enclave, still remembered by most natives and the independent groups living in the outskirts of the lands. It is marked by elongated syllables, as if the speaker is reminiscing of a time that has passed."
+/datum/language/lyndhardtian
+	name = "Lyndhardtian"
+	desc = ""
 	speech_verb = "remarks"
 	ask_verb = "inquires"
 	exclaim_verb = "asserts"
 	key = "z"
 	space_chance = 20
 	default_priority = 75
-	icon_state = "oldazure"
-	spans = list(SPAN_OLDAZURE)
+	icon_state = "lyndhardtian"
+	spans = list(SPAN_LYNDHARDTIAN)
 	syllables = list(
 "to",
 "ost",

@@ -359,5 +359,5 @@
 
 /obj/item/reagent_containers/glass/bottle/alchemical/tripot
 	name = "vial of distilled triumphance"
-	desc = "The fruits of your labor, distilled into a sparkling pittance that shimmers with Azurian light. Even after the vial's emptying, it still retains that otherworldly glitterance."
+	desc = "The fruits of your labor, distilled into a sparkling pittance that shimmers with dazzling light. Even after the vial's emptying, it still retains that otherworldly glitterance."
 	list_reagents = list(/datum/reagent/buff/tri = 10)
