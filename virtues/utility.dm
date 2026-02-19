@@ -131,7 +131,7 @@
 		/datum/language/draconic,
 		/datum/language/celestial,
 		/datum/language/grenzelhoftian,
-		/datum/language/kazengunese,
+		/datum/language/yansheneze,
 		/datum/language/valorian,
 		/datum/language/calmirixian,
 		/datum/language/rhaenish,

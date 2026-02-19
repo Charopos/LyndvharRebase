@@ -415,10 +415,10 @@
 		knives += K
 	update_icon()
 
-/obj/item/storage/belt/rogue/leather/knifebelt/black/kazengun/Initialize()
+/obj/item/storage/belt/rogue/leather/knifebelt/black/yanshen/Initialize()
 	. = ..()
 	for(var/i in 1 to max_storage)
-		var/obj/item/rogueweapon/huntingknife/throwingknife/kazengun/K = new()
+		var/obj/item/rogueweapon/huntingknife/throwingknife/yanshen/K = new()
 		knives += K
 	update_icon()
 

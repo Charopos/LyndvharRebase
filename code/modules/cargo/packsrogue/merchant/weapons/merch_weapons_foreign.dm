@@ -60,19 +60,19 @@
 	contains = list(/obj/item/rogueweapon/spear/naginata)
 
 /datum/supply_pack/rogue/merc_weapons/katana
-	name = "Kazengun Hwando"
+	name = "Yansheneze Hwando"
 	cost = 120
 	contains = list(/obj/item/rogueweapon/sword/sabre/mulyeog)
 
-/datum/supply_pack/rogue/merc_weapons/kazengunhookblade
-	name = "Kazengun Hook Sword"
+/datum/supply_pack/rogue/merc_weapons/yanshenhookblade
+	name = "Yansheneze Hook Sword"
 	cost = 150
 	contains = list(/obj/item/rogueweapon/sword/sabre/hook)
 
-/datum/supply_pack/rogue/merc_weapons/kazengunscabbard
-	name = "Kazengun Scabbard"
+/datum/supply_pack/rogue/merc_weapons/yanshenscabbard
+	name = "Yansheneze Scabbard"
 	cost = 250
-	contains = list(/obj/item/rogueweapon/scabbard/sword/kazengun)
+	contains = list(/obj/item/rogueweapon/scabbard/sword/yanshen)
 
 /datum/supply_pack/rogue/merc_weapons/beardedaxe
 	name = "Bearded Axe"

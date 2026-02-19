@@ -284,9 +284,9 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Exotic Anklets"
 	path = /obj/item/clothing/shoes/roguetown/anklets
 
-/datum/loadout_item/rumaclanshoes
+/datum/loadout_item/xuefengclanshoes
 	name = "Raised Sandals"
-	path = /obj/item/clothing/shoes/roguetown/armor/rumaclan/shitty
+	path = /obj/item/clothing/shoes/roguetown/armor/xuefengclan/shitty
 
 //SHIRTS
 /datum/loadout_item/longcoat

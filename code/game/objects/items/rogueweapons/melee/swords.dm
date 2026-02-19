@@ -1236,7 +1236,7 @@
 	grid_width = 32
 	grid_height = 96
 
-/obj/item/rogueweapon/sword/short/kazengun
+/obj/item/rogueweapon/sword/short/yanshen
 	name = "steel kodachi"
 	desc = "A razor-edged sword with a wavy pattern weld apparent on its blade."
 	possible_item_intents = list(
@@ -2118,7 +2118,7 @@
 
 /obj/item/rogueweapon/sword/long/kriegmesser/ssangsudo
 	name = "ssangsudo"
-	desc = "A style of long blade used by the kouken of Kazengun. A weapon supremely skilled in the art of cutting."
+	desc = "A style of long blade used by the zhanshi of Yanshen. A weapon supremely skilled in the art of cutting."
 	icon = 'icons/roguetown/weapons/swords64.dmi'
 	icon_state = "ssangsudo"
 	sheathe_icon = "ssangsudo"
@@ -2137,7 +2137,7 @@
 	icon_state = "declongsword"
 	sellprice = 140
 
-// kazengite content
+// yanshen content
 // Stronger offense less defense sword meant to be paired w/ scabbard for parrying
 /obj/item/rogueweapon/sword/sabre/mulyeog
 	force = 25
@@ -2148,15 +2148,15 @@
 	smeltresult = /obj/item/ingot/steel
 	wdefense = 3
 
-/obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
-	name = "ruma hwando"
-	desc = "A foreign steel single-edged sword with cloud patterns on the groove. The Ruma Clan's insignia is engraved on the blade."
+/obj/item/rogueweapon/sword/sabre/mulyeog/xuefenghench
+	name = "xuefeng hwando"
+	desc = "A foreign steel single-edged sword with cloud patterns on the groove. The Xuefeng Family's insignia is engraved on the blade."
 	icon_state = "eastsword2"
 
-/obj/item/rogueweapon/sword/sabre/mulyeog/rumacaptain
+/obj/item/rogueweapon/sword/sabre/mulyeog/xuefengcaptain
 	force = 30
 	name = "samjeongdo"
-	desc = "A gold-stained sword with cloud patterns on the groove. One of a kind. It is a symbol of status within the Ruma clan."
+	desc = "A gold-stained sword with cloud patterns on the groove. One of a kind. It is a symbol of status within the Xuefeng Family."
 	icon_state = "eastsword3"
 	max_integrity = 180
 	sharpness_mod = 2

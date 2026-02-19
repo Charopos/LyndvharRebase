@@ -109,14 +109,14 @@
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 	name = "strange ripped pants"
-	desc = "Weird pants typically worn by the destitute in Kazengun. Or, those looking to make a fashion statement."
+	desc = "Weird pants typically worn by the destitute in Yanshen. Or, those looking to make a fashion statement."
 	icon_state = "eastpants2"
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	max_integrity = ARMOR_INT_LEG_HARDLEATHER - 50
 
-/obj/item/clothing/under/roguetown/heavy_leather_pants/kazengun //no, not 'eastpants3', silly!
+/obj/item/clothing/under/roguetown/heavy_leather_pants/yanshen //no, not 'eastpants3', silly!
 	name = "gambeson trousers"
-	desc = "A form of Kazengunite peasant's trousers. The fabric used in their manufacture is strong, and could probably turn away a few blows."
+	desc = "A form of Yansheneze peasant's trousers. The fabric used in their manufacture is strong, and could probably turn away a few blows."
 	icon_state = "baggypants"
 	item_state = "baggypants"
 	max_integrity = ARMOR_INT_LEG_HARDLEATHER - 50

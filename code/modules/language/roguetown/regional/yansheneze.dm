@@ -1,5 +1,5 @@
-/datum/language/kazengunese
-	name = "Kazengunese"
+/datum/language/yansheneze
+	name = "Yansheneze"
 	desc = ""
 	speech_verb = "says"
 	whisper_verb = "whispers"
@@ -8,8 +8,7 @@
 	space_chance = 30
 	default_priority = 90
 	icon_state = "galcom"
-	spans = list(SPAN_KAZENGUNESE)
-	mutually_intelligible = list(/datum/language/lingyuese)
+	spans = list(SPAN_YANSHENEZE)
 	syllables = list(
 		"ka", "ki", "ku", "ke", "ko", "sa", "shi", "su", "se", "so", "ta", "chi", "tsu",
 		"te", "to", "na", "ni", "nu", "ne", "no", "ha", "hi", "fu", "he", "ho", "ma",

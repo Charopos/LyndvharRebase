@@ -103,7 +103,7 @@
 
 /obj/item/clothing/gloves/roguetown/plate/kote
 	name = "jjajeungna gauntlets"
-	desc = "A set of reinforced Kazengunite gauntlets. Difficult to do much other than fight in, but not entirely arresting."
+	desc = "A set of reinforced Yansheneze gauntlets. Difficult to do much other than fight in, but not entirely arresting."
 	icon_state = "kazengungauntlets"
 	item_state = "kazengungauntlets"
 	body_parts_covered = HANDS|ARMS

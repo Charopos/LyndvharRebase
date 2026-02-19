@@ -182,7 +182,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
 	name = "padded caftan"
-	desc = "A long overcoat commonly worn in Naledi, Kazengun, and Aavnr - but mostly associated with steppesmen. This specific kind rivals a padded gambeson in protection."
+	desc = "A long overcoat commonly worn in most northern territories of Beowricke - but mostly associated with steppesmen of the Vruirid. This specific kind rivals a padded gambeson in protection."
 	icon_state = "chargah"
 	color = "#ffffff"
 	boobed = TRUE
@@ -268,7 +268,7 @@
 	armor = ARMOR_PADDED_GOOD
 	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM + 30 //280
 
-//Special Hand armor. More defense, low integrity, similar logic to Ruma Clan tattoos. Can't be worn in shirt slot.
+//Special Hand armor. More defense, low integrity, similar logic to tattoos. Can't be worn in shirt slot.
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hand
 	name = "hand's gambeson"
 	desc = "Sturdy leather, fine silks and ornaments of gold, opulent and imperial, for any one who must say <i>\"I am in charge.\"</i> holds no power at all."

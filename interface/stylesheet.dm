@@ -144,7 +144,7 @@ h1.alert, h2.alert	{color: #c9c1ba;font-family: Pterra, TrueType;}
 .beast					{font-family: "Thief by The Riddler", Pterra;}
 .reptile				{font-family: "Kingthings Petrock", Pterra; font-size: 120%;}
 .grenzelhoftian			{font-family: "Emperialisme", Pterra; font-size: 120%;}
-.kazengunese 			{font-family: "Yuji Boku", Pterra;}
+.yansheneze 			{font-family: "Yuji Boku", Pterra;}
 .valorian					{font-family: "ArkansasDB", "Pterra"; font-size: 120%;}
 .calmirixian				{font-family: "Feronia", "Pterra"; font-size: 100%;}
 .rhaenish				{font-family: "Jorvik Informal", "Pterra"; font-size: 100%;}
