@@ -24,4 +24,4 @@
 			if(!player.client)
 				continue
 
-			to_chat(player, span_danger("Matthios, is this true? Bandits flock to Azuria. Three bandit slots have been opened."))
+			to_chat(player, span_danger("Matthios, is this true? Bandits flock to Lyndvhar. Three bandit slots have been opened."))

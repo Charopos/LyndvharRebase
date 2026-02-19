@@ -287,7 +287,7 @@ export class Changelog extends Component {
           {' for the MIT license.'}
         </p>
         <p>
-          {'Roguetown / Azure Peak was originally forked from '}
+          {'Roguetown / Lyndvhar was originally forked from '}
           <a href="https://github.com/tgstation/tgstation/commit/c28b351807bad950d2b323ada048190844bbda32">
             TG station commit c28b351807bad950d2b323ada048190844bbda32 on 2019/17/11
           </a>

@@ -27,7 +27,7 @@
 		/datum/language/aavnic,
 		/datum/language/undead,
 		/datum/language/abyssal,
-		/datum/language/oldazurian
+		/datum/language/lyndhardtian
 	))
 
 /obj/item/organ/tongue/Initialize(mapload)

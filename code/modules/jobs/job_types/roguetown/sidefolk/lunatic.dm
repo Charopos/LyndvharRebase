@@ -3,8 +3,8 @@
 	flag = LUNATIC
 	department_flag = SIDEFOLK
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	round_contrib_points = 2
 	var/list/traits_applied
 	traits_applied = list(TRAIT_PSYCHOSIS, TRAIT_NOSTINK, TRAIT_MANIAC_AWOKEN, TRAIT_HOMESTEAD_EXPERT) // Maniac_Awoken no longer has any function other than the flavor text and trait
@@ -16,7 +16,7 @@
 	bypass_jobban = FALSE
 	min_pq = 100 //the magic of an allowlist server.
 	max_pq = null
-	tutorial = "The Lunatic, shunned by society and a magnet for misfortune. Your task is simple yet perilous: survive by any means, though your very existence invites danger from every corner. It is said that Azure Peak drives those most familiar with it, the most insane."
+	tutorial = "The writings on the wall- the whispers spoken in the back of your mind. You know it is true- that nothing is real, and everything is a falsehood. You lost everything in the pursuit of this madness, and have become completely undesired and hated for it. Your task is simple yet perilous: survive by any means necessary and spread the truth, though your very existence invites danger from every corner. It is said that Beowricke drives those most familiar with its setting, the most insane. Wake up."
 	display_order = JDO_LUNATIC
 	selection_color = JCOLOR_SIDEFOLK
 
@@ -31,7 +31,7 @@
 
 /datum/advclass/lunatic
 	name = "Lunatic"
-	tutorial = "The Lunatic, shunned by society and a magnet for misfortune. Your task is simple yet perilous: survive by any means, though your very existence invites danger from every corner. It is said that Azure Peak drives those most familiar with it, the most insane."
+	tutorial = "The writings on the wall- the whispers spoken in the back of your mind. You know it is true- that nothing is real, and everything is a falsehood. You lost everything in the pursuit of this madness, and have become completely undesired and hated for it. Your task is simple yet perilous: survive by any means necessary and spread the truth, though your very existence invites danger from every corner. It is said that Beowricke drives those most familiar with its setting, the most insane. Wake up."
 	outfit = /datum/outfit/job/roguetown/lunatic/basic
 	category_tags = list(CTAG_LUNATIC)
 	subclass_stats = list(
