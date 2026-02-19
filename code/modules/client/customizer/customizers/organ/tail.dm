@@ -164,12 +164,11 @@
 		/datum/sprite_accessory/tail/lynx,
 		/datum/sprite_accessory/tail/owl,
 		/datum/sprite_accessory/tail/forked_long,
-		/datum/sprite_accessory/tail/pinecone,
 		/datum/sprite_accessory/tail/haven,
 		/datum/sprite_accessory/tail/swallow,
 		/datum/sprite_accessory/tail/zorzor,
 		/datum/sprite_accessory/tail/large_snake,
-		/datum/sprite_accessory/tail/large_snake_plain
+		/datum/sprite_accessory/tail/large_snake_plain,
 		/datum/sprite_accessory/tail/hawk,
 		/datum/sprite_accessory/tail/corvid,
 		)
@@ -268,7 +267,6 @@
 		/datum/sprite_accessory/tail/tentacle,
 		/datum/sprite_accessory/tail/tiger,
 		/datum/sprite_accessory/tail/wolf,
-		/datum/sprite_accessory/tail/pinecone,
 		/datum/sprite_accessory/tail/guilmon,
 		/datum/sprite_accessory/tail/sharknofin,
 		/datum/sprite_accessory/tail/raptor,
