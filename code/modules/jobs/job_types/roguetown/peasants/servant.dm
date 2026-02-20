@@ -61,7 +61,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/roguekey/manor
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -101,7 +101,7 @@
 	cloak = /obj/item/clothing/cloak/apron/waist/maid
 	belt = /obj/item/storage/belt/rogue/leather/sash/maid
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltr = /obj/item/roguekey/manor
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	if(H.mind)
@@ -136,7 +136,7 @@
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/roguekey/manor
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor

@@ -65,8 +65,8 @@
 		belt = /obj/item/storage/belt/rogue/leather
 		beltl = /obj/item/storage/keyring/lady
 		beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
-		backr = /obj/item/storage/backpack/rogue/satchel
-		id = /obj/item/clothing/ring/silver
+		backr = /obj/item/storage/backpack/rogue/satchel/short
+		id = /obj/item/clothing/ring/gold
 	H.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
