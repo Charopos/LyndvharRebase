@@ -75,15 +75,6 @@
 		/datum/language/celestial
 	)
 
-	custom_selection = list(
-		"+1 FOR" = STATKEY_LCK,
-		"+1 INT" = STATKEY_INT,
-		"+1 CON" = STATKEY_CON,
-		"+1 WIL" = STATKEY_WIL,
-		"+1 PER" = STATKEY_PER,
-		"No Hunger & Thirst" = TRAIT_NOHUNGER
-	)
-
 /datum/species/aasimar/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
