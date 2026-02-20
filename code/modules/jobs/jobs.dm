@@ -64,7 +64,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 ///////////////
 
 GLOBAL_LIST_INIT(leadership_positions, list( // Used for boldening text primarily
-	"Grand Duke",
+	"Viscount",
 	"Hand",
 	"Court Magician",
 	"Marshal",
@@ -81,7 +81,7 @@ GLOBAL_LIST_INIT(leadership_positions, list( // Used for boldening text primaril
 
 GLOBAL_LIST_INIT(regency_positions, list( // Used to determine elligibility for Regency
 	"Consort",
-	"Prince",
+	"Heir",
 	"Hand",
 	"Steward",
 	"Councillor",
@@ -89,9 +89,9 @@ GLOBAL_LIST_INIT(regency_positions, list( // Used to determine elligibility for 
 ))
 
 GLOBAL_LIST_INIT(noble_positions, list( //Royal family only
-	"Grand Duke",
+	"Viscount",
 	"Consort",
-	"Prince",
+	"Heir",
 ))
 
 GLOBAL_LIST_INIT(courtier_positions, list( //Anyone that is officially part of the court
@@ -181,10 +181,10 @@ GLOBAL_LIST_INIT(inquisition_positions, list( //Self explanatory
 ))
 
 GLOBAL_LIST_INIT(rogueoverthrow_positions, list( //Used for Aspirant / Peasant Rebellion
-	"Grand Duke",
+	"Viscount",
 	"Consort",
 	"Suitor",
-	"Prince",
+	"Heir",
 	"Hand",
 	"Steward",
 	"Councillor",

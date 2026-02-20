@@ -299,7 +299,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	for(var/mob/living/carbon/human/HU in get_step(src, src.dir))
 		if(!HU.mind)
 			continue
-		if(HU.mind.assigned_role == "Grand Duke")
+		if(HU.mind.assigned_role == "Viscount")
 			continue
 		if(!HU.head)
 			continue
@@ -309,15 +309,15 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		//Abdicate previous King
 		for(var/mob/living/carbon/human/HL in GLOB.human_list)
 			if(HL.mind)
-				if(HL.mind.assigned_role == "Grand Duke")
+				if(HL.mind.assigned_role == "Viscount")
 					HL.mind.assigned_role = "Towner" //So they don't get the innate traits of the king
 			//would be better to change their title directly, but that's not possible since the title comes from the job datum
-			if(HL.job == "Grand Duke")
+			if(HL.job == "Viscount")
 				HL.job = "Duke Emeritus"
 
 		//Coronate new King (or Queen)
-		HU.mind.assigned_role = "Grand Duke"
-		HU.job = "Grand Duke"
+		HU.mind.assigned_role = "Viscount"
+		HU.job = "Viscount"
 		ADD_TRAIT(HU, TRAIT_DNR, TRAIT_GENERIC) // Consequences, Johnathan.
 		SSticker.set_ruler_mob(HU)
 		SSticker.regentmob = null
@@ -325,7 +325,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		removeomen(OMEN_NOLORD)
 		say("By the authority of the gods, I pronounce you overseer of the city of Lyndvhar!")
 		priority_announce("[real_name] the [dispjob] has named [HU.real_name] the inheritor of the city of Lyndvhar!", title = "Long Live [HU.real_name]!", sound = 'sound/misc/bell.ogg')
-		var/datum/job/roguetown/nomoredukes = SSjob.GetJob("Grand Duke")
+		var/datum/job/roguetown/nomoredukes = SSjob.GetJob("Viscount")
 		if(nomoredukes)
 			nomoredukes.total_positions = -1000 //We got what we got now.
 
