@@ -73,7 +73,7 @@ SUBSYSTEM_DEF(ticker)
 	/// Short form for casual references (e.g. "Duchy", "Republic"). Changed by usurpation rites.
 	var/realm_type_short = "Port"
 	/// Reports the current ruler's display name
-	var/rulertype = "Grand Duke"
+	var/rulertype = "Viscount"
 	/// The current ruling mob
 	var/rulermob = null
 	/// Current regent mob
@@ -779,8 +779,7 @@ SUBSYSTEM_DEF(ticker)
 /// Wrapper for setting rulermob and rulertype
 /datum/controller/subsystem/ticker/proc/set_ruler_mob(mob/newruler)
 	rulermob = newruler
-	had_ruler = TRUE
-	var/datum/job/lord_job = SSjob.GetJob("Grand Duke")
+	var/datum/job/lord_job = SSjob.GetJob("Viscount")
 	if(should_wear_femme_clothes(rulermob))
 		SSticker.rulertype = lord_job?.f_title || lord_job.title
 	else

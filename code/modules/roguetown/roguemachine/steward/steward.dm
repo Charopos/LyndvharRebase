@@ -273,9 +273,9 @@
 			return
 		for(var/mob/living/carbon/human/A in SStreasury.bank_accounts)
 			if(A == X)
-				// Check if user has permission (Steward, Clerk, Grand Duke, or Regent)
+				// Check if user has permission (Steward, Clerk, Viscount, or Regent)
 				var/is_authorized = FALSE
-				if(usr.job == "Steward" || usr.job == "Clerk" || usr.job == "Grand Duke")
+				if(usr.job == "Steward" || usr.job == "Clerk" || usr.job == "Viscount")
 					is_authorized = TRUE
 				if(SSticker.regentmob && usr == SSticker.regentmob)
 					is_authorized = TRUE
