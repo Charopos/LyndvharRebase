@@ -1,21 +1,20 @@
 /datum/advclass/thug/goon
-	name = "Goon"
-	tutorial = "You are a goon, a low-lyfe thug in a painful world - not good enough for war, not smart enough for peace. What you lack in station you make up for in daring."
+	name = "Thug"
+	tutorial = "Maybe you've never been the smartest person in town, but you may have been the sturdiest; Good enough for soilers to pay you to cart around saigashit, good enough for miners to offload some of their work to you, good enough for a carpenter who doesn't want to pay top mams for chopped wood, and good enough for just about anyone who wants a meathead to look scary with."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	outfit = /datum/outfit/job/roguetown/adventurer/thug/goon
+	outfit = /datum/outfit/job/roguetown/adventurer/thug
+	traits_applied = list(TRAIT_HOMESTEAD_EXPERT)
+	cmode_music = 'sound/music/cmode/towner/combat_towner2.ogg'
+	maximum_possible_slots = 30
 	category_tags = list(CTAG_TOWNER)
-	traits_applied = list(TRAIT_SEEPRICES_SHITTY)
-	cmode_music = 'sound/music/combat_bum.ogg'
-	maximum_possible_slots = 2 // i dont want an army of towner thugs
-	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
+	subclass_languages = list(/datum/language/thievescant)
 	subclass_stats = list(
+		STATKEY_CON = 3,
 		STATKEY_STR = 2,
 		STATKEY_WIL = 1,
-		STATKEY_CON = 2,
-		STATKEY_SPD = -1,
-		STATKEY_INT = -2,
-		STATKEY_PER = -2
+		STATKEY_INT = -1,
+		STATKEY_SPD = -1
 	)
 	subclass_skills = list(
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
@@ -23,11 +22,10 @@
 		/datum/skill/combat/axes = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/maces = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN, 
 		/datum/skill/labor/mining = SKILL_LEVEL_NOVICE,
 		/datum/skill/labor/lumberjacking = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/labor/farming = SKILL_LEVEL_NOVICE,
@@ -36,24 +34,18 @@
 		/datum/skill/misc/stealing = SKILL_LEVEL_JOURNEYMAN,
 	)
 
-/datum/outfit/job/roguetown/adventurer/thug/goon/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/adventurer/thug/pre_equip(mob/living/carbon/human/H)
 	..()
-	belt = /obj/item/storage/belt/rogue/leather/rope
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
+	head = /obj/item/clothing/head/roguetown/roguehood/random 
+	belt = /obj/item/storage/belt/rogue/leather
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	pants = /obj/item/clothing/under/roguetown/tights/random
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-	armor = /obj/item/clothing/suit/roguetown/armor/leather
-	backpack_contents = list(
-				/obj/item/flashlight/flare/torch/metal = 1,
-				/obj/item/recipe_book/survival = 1,
-				/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
-				/obj/item/rogueweapon/scabbard/sheath = 1,
-				/obj/item/rogueweapon/huntingknife = 1,
-				)
+	armor = /obj/item/clothing/suit/roguetown/armor/workervest
 	var/options = list("Frypan", "Knuckles", "Navaja", "Bare Hands", "My Trusty Cudgel", "Whatever I Can Find")
 	var/option_choice = input("Choose your means.", "TAKE UP ARMS") as anything in options
 	switch(option_choice)
@@ -118,7 +110,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 	pants = /obj/item/clothing/under/roguetown/tights/random
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -184,7 +176,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 	pants = /obj/item/clothing/under/roguetown/tights/random
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor

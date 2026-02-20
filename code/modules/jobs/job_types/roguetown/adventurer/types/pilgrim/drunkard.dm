@@ -5,11 +5,12 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/drunkard
 	traits_applied = list(TRAIT_HOMESTEAD_EXPERT)
-
+	maximum_possible_slots = 30
 	category_tags = list(CTAG_TOWNER)
 	subclass_stats = list(
 		STATKEY_LCK = 2,
 		STATKEY_CON = 1,
+		STATKEY_END = 2,
 		STATKEY_STR = 1,
 	)
 	subclass_skills = list(
@@ -20,8 +21,8 @@
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE, //Climbing into windows to steal drugs or booze.
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/athletics = SKILL_LEVEL_APPRENTICE,
 	)
-	maximum_possible_slots = 20 // Should not fill, just a hack to make it shows what types of towners are in round
 
 /datum/outfit/job/roguetown/adventurer/drunkard/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -31,7 +32,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	armor = /obj/item/clothing/suit/roguetown/shirt/shortshirt/random
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/clothing/mask/cigarette/rollie/cannabis
 	beltl = /obj/item/flint
