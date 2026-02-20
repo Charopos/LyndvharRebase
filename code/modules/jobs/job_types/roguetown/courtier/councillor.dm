@@ -28,8 +28,6 @@
 		/datum/advclass/councillor/cofferer,
 	)
 
-	H.verbs |= list(/mob/living/carbon/human/proc/request_law, /mob/living/carbon/human/proc/request_law_removal, /mob/living/carbon/human/proc/request_purge)
-
 /datum/advclass/councillor/herald
 	name = "Herald"
 	tutorial = "While lacking in some faculties, such as wealth and courtly advice, you have the uncanny ability to spread the word of the court, and rally people to your liege's cause. The crown saw it fit to employ you as a messenger, but may still lend an ear if you speak your mind. You may be the lowest rung of the ladder, but that rung still towers over everyone else in town."

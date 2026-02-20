@@ -1050,7 +1050,7 @@
 
 /obj/structure/mineral_door/wood/bath/bathmaid
 	icon_state = "woodwindow"
-	resident_advclass = list(/datum/advclass/bathworker)
+	resident_advclass = list(/datum/advclass/nightmaiden)
 
 /obj/structure/mineral_door/wood/bath/courtesan
-	resident_advclass = list(/datum/advclass/bathworker/harlot, /datum/advclass/bathworker/courtesan)
+	resident_advclass = list(/datum/advclass/nightmaiden/concubine, /datum/advclass/nightmaiden/courtesan)
