@@ -1,5 +1,5 @@
 /datum/job/roguetown/wapprentice
-	title = "Magicians Associate"
+	title = "Arcyne Apprentice"
 	flag = APPRENTICE
 	department_flag = BURGHERS
 	faction = "Station"

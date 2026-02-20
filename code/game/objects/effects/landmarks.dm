@@ -124,7 +124,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/physician
-	name = "Head Physician"
+	name = "Practitioner"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/guardsman

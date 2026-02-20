@@ -26,7 +26,7 @@
 		"Heiress",
 		"Hand",
 		"Steward",
-		"Head Physician",
+		"Practitioner",
 		"Town Crier",
 		"Captain",
 		"Archivist",

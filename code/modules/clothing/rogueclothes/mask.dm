@@ -598,7 +598,7 @@
 	sewrepair = TRUE
 
 /obj/item/clothing/mask/rogue/courtphysician
-	name = "head physician's mask"
+	name = "practitioner's mask"
 	desc = "This one is made with actual bone! Don't ask whose."
 	icon = 'icons/roguetown/clothing/special/courtphys.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/courtphys.dmi'
