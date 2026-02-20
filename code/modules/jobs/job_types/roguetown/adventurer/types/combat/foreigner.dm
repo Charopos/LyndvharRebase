@@ -233,7 +233,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/slaver
 	subclass_languages = list(/datum/language/celestial)
-	cmode_music = 'sound/music/combat_blackstarstar.ogg'
+	cmode_music = 'sound/music/combat_blackstar.ogg'
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
 		STATKEY_STR = 2,
