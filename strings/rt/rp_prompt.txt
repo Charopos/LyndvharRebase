@@ -345,6 +345,19 @@ Disaster has recently stabbed its underbelly, however, with the civil war. In an
 
 <details>
 	<summary><strong><span style="font-size:130%"> GLOSSARY OF BEOWRICKE </span></strong></summary>
+
+	<details>
+	<strong><span style="font-size:115%"> NOTEWORTHY PEOPLES </span></strong>
+	<br><br>
+		<p><strong> Naexidor </strong> - The founder of the Lyndhardtian Empire. An elven warrior that wielded a powerful hammer imbued with powerful arcyne strength. They themselves were a masterful arcyne conduit, and expert strategist, conquering nearly half the continent of Lewyn. </p>
+		<p><strong> Camille </strong> - A half-elf, and the last Empress of the Lyndhardtian Empire, before her untimely and unexplained death. The cause is still unknown, but her death spiraled the realm into chaos. </p>
+		<p><strong> Baleron </strong> -  The illegitimate bastard successor of the Empress herself, was in the north in a campaign against the Rhaenvali Confederation at the beginning of the Ruby War, and consolidated the northern territories for himself- declaring himself the true Emperor of Lyndhardtia. </p>
+		<p><strong> Laurence </strong> - A powerful Archmage with heavy ties to the Eyrie College, declared a successor state in the south- a full-fledged Magocracy- and began a terror campaign against all who opposed him, razing entire cities to the ground. </p>
+		<p><strong> Gunthard </strong> - The well known Duke of the Draguippe, quickly amassed his own powerbase and took control of the centralized heartlands of the Empire, declaring his own successor state out of the remains of the capital. </p>
+		<p><strong> Vladislav </strong> -  A general having been fighting a holy war against the orcish hordes of the southwest, was anointed as the true holy mortal aspect of the Luminary by a regional papal power, and carved out his own small territory of the collapsing realm to rule as its Luminous Emperor. </p>
+		<br>
+	</details>
+
 	<details>
 	<strong><span style="font-size:115%"> NOTEWORTHY CONCEPTS </span></strong>
 	<br><br>
@@ -359,6 +372,8 @@ Disaster has recently stabbed its underbelly, however, with the civil war. In an
 		<p><strong> Alotheos </strong> - A labyrinthian tomb, located within the Draguippe. Though its origins aren't known, its said to hold untold riches within. </p>
 		<p><strong> Arcyne </strong> - Magicka. A blessing of Noc, which allows for the manipulation of Beowricke's latent energies. </p>
 		<p><strong> Leyline </strong> - Channels of pure magicka, running across Beowricke like the arteries in a body. Most arcyne acts draw from these veins. It is theorized that Lyndvhar itself is settled on one. </p>
+		<p><strong> Dracanae </strong> - The branch of Eskallian-kind that represent their former dragon overlords the most, usually bearing wings. Hate the Caiman. </p>
+		<p><strong> Caiman </strong> - The lesser branch of Eskallian-kind that resemble more common lizards than their former dragon overlords, usually without wings. Hate the Dracanae. </p>
 		<br>
 	</details>
 
