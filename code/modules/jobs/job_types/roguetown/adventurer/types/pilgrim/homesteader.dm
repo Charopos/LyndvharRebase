@@ -1,9 +1,10 @@
 /datum/advclass/homesteader
 	name = "Homesteader"
-	tutorial = "Azure population's tendency to take up arms and become unwashed beastslayers had forced you to take up jobs, small and large of most professions.\n A jack of all trades, what will you be known as this week?"
+	tutorial = "The native population of Lyndhardtia's tendency to take up arms and become unwashed beastslayers in this dae and age had forced you to take up jobs, small and large of most professions.\n A jack of all trades, what will you be known as this week?"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/homesteader
+	maximum_possible_slots = 30
 	traits_applied = list(TRAIT_JACKOFALLTRADES,
 		TRAIT_ALCHEMY_EXPERT,
 		TRAIT_SMITHING_EXPERT,
@@ -18,7 +19,7 @@
 		STATKEY_STR = 1,
 		STATKEY_WIL = 1,
 		STATKEY_PER = 1,
-		STATKEY_LCK = 1,
+		STATKEY_LCK = 1,	
 	)
 	subclass_skills = list(
 		/datum/skill/labor/farming = SKILL_LEVEL_APPRENTICE,
@@ -54,7 +55,6 @@
 		/datum/skill/labor/fishing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/labor/butchering = SKILL_LEVEL_APPRENTICE,
 	)
-	maximum_possible_slots = 20 // Should not fill, just a hack to make it shows what types of towners are in round
 
 /datum/outfit/job/roguetown/homesteader/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -105,7 +105,7 @@
 						/obj/item/hair_dye_cream = 3,
 						/obj/item/rogueweapon/chisel = 1,
 						/obj/item/natural/clay = 3,
-						/obj/item/natural/clay/glassbatch = 1,
+						/obj/item/natural/clay/glassbatch = 1, 
 						/obj/item/rogueore/coal = 1,
 						/obj/item/roguegear = 1,
 	)

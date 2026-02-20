@@ -1,6 +1,6 @@
 /datum/advclass/mystic
 	name = "Mystic"
-	tutorial = "I have spent my youth deepening my faith, only to be lured by the way of the magi, to the great regret of my family"
+	tutorial = "I have spent my youth deepening my faith, only to be lured by the way of the magi, to the great regret of my family."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/mystic
@@ -28,7 +28,7 @@
 
 /datum/outfit/job/roguetown/adventurer/mystic/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("I have spent my youth deepening my faith, only to be lured by the way of the magi, to the great regret of my family"))
+	to_chat(H, span_warning("I have spent my youth deepening my faith, only to be lured by the way of the magi, to the great regret of my family."))
 	head = /obj/item/clothing/head/roguetown/roguehood/mage
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -36,7 +36,7 @@
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/mage
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	r_hand = /obj/item/rogueweapon/woodstaff/quarterstaff/iron
 	l_hand = /obj/item/rogueweapon/scabbard/gwstrap
 	H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
@@ -94,7 +94,7 @@
 
 /datum/advclass/mystic/resilientsoul
 	name = "Resilient Soul"
-	tutorial = "I have spent my youth deepening my faith, but soon followed closely on the side of a generous enchantor who taught me a few tricks to preserve and save lyves"
+	tutorial = "I have spent my youth deepening my faith, but soon followed closely on the side of a generous enchantor who taught me a few tricks to preserve and save lyves."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/resilient
@@ -122,7 +122,7 @@
 
 /datum/outfit/job/roguetown/adventurer/resilient/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("I have spent my youth deepening my faith, but soon followed closely on the side of a generous enchantor who taught me a few tricks to preserve and save lyves"))
+	to_chat(H, span_warning("I have spent my youth deepening my faith, but soon followed closely on the side of a generous enchantor who taught me a few tricks to preserve and save lyves."))
 	head = /obj/item/clothing/head/roguetown/roguehood/mage
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -130,7 +130,7 @@
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/mage
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backr = /obj/item/rogueweapon/woodstaff
 	H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
 	backpack_contents = list(
@@ -190,7 +190,7 @@
 
 /datum/advclass/mystic/holyblade
 	name = "Holyblade"
-	tutorial = "I have spent my youth deepening my faith and one day a spellblade was under my care at the church, ever since their recovery they accepted me as their pupil and taught the way of the blade and arcyne"
+	tutorial = "I have spent my youth deepening my faith and one day a spellblade was under my care at the church, ever since their recovery they accepted me as their pupil and taught the way of the blade and arcyne."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/holyblade
@@ -221,7 +221,7 @@
 
 /datum/outfit/job/roguetown/adventurer/holyblade/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("I have spent my youth deepening my faith and one day a spellblade was under my care at the church, ever since their recovery they accepted me as their pupil and taught the way of the blade and arcyne"))
+	to_chat(H, span_warning("I have spent my youth deepening my faith and one day a spellblade was under my care at the church, ever since their recovery they accepted me as their pupil and taught the way of the blade and arcyne."))
 	head = /obj/item/clothing/head/roguetown/roguehood/mage
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -229,7 +229,7 @@
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/mage
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backr = /obj/item/rogueweapon/shield/wood
 	beltr = /obj/item/rogueweapon/scabbard/sword
 	r_hand = /obj/item/rogueweapon/sword/iron
@@ -318,7 +318,7 @@
 
 /datum/outfit/job/roguetown/adventurer/theurgist/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("I have spent my youth deepening my faith among Noctite acolytes and where shown the wonders of the Arcynes, one day i decided to begins my studies of the arcyne art"))
+	to_chat(H, span_warning("I have spent my youth deepening my faith among Noctite acolytes and where shown the wonders of the Arcynes, one day i decided to begins my studies of the arcyne art."))
 	head = /obj/item/clothing/head/roguetown/roguehood/mage
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -326,7 +326,7 @@
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/mage
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backr = /obj/item/rogueweapon/woodstaff
 	H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
 	backpack_contents = list(

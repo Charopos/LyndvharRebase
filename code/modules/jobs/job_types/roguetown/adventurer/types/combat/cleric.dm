@@ -50,7 +50,7 @@
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/monk
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/cloth/monk
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltr = /obj/item/flashlight/flare/torch/lantern
@@ -199,28 +199,24 @@
 /datum/outfit/job/roguetown/adventurer/paladin/pre_equip(mob/living/carbon/human/H)
 	// This list exists here so it can be overwritten later.
 	var/helmets = list(
-		"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
+		"Sallet Helmet" 	= /obj/item/clothing/head/roguetown/helmet/sallet/iron,
 		"Guard Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/guard,
-		"Barred Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/sheriff,
-		"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket,
-		"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
-		"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
-		"Armet"				= /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet,
-		"Hounskull Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull,
-		"Klappvisier Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia,
-		"Slitted Kettle" = /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
+		"Kettle Helmet"		= /obj/item/clothing/head/roguetown/helmet/kettle/iron,
+		"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket/iron,
+		"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/iron,
+		"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron,
 		"None"
 	)
 
 	to_chat(H, span_warning("You are a holy knight, clad in maille and armed with steel. Where others of the clergy may have spent their free time studying scriptures, you devoted yourself towards fighting Psydonia's evils - a longsword in one hand, and a clenched psycross in the other."))
 	belt = /obj/item/storage/belt/rogue/leather
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backr = /obj/item/rogueweapon/shield/iron
 	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	pants = /obj/item/clothing/under/roguetown/chainlegs
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-	gloves = /obj/item/clothing/gloves/roguetown/chain
+	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	backpack_contents = list(
 		/obj/item/flashlight/flare/torch/metal = 1, 
 		/obj/item/recipe_book/survival = 1,
@@ -237,48 +233,48 @@
 				var/armor_choice = input(H, "Choose your MAILLE.", "STAND AGAINST HER DARKNESS.") as anything in armors
 				switch(armor_choice)
 					if("Hauberk")
-						armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+						armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 					if("Cuirass")
-						armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fluted/ornate
+						armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
 		if(/datum/patron/divine/astrata)
 			cloak = /obj/item/clothing/cloak/tabard/devotee/astrata
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 			helmets += list("Old Astratan Helm" = /obj/item/clothing/head/roguetown/helmet/heavy/astratahelm)
 		if(/datum/patron/divine/noc)
 			cloak = /obj/item/clothing/cloak/tabard/devotee/noc
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 		if(/datum/patron/divine/abyssor)
 			cloak = /obj/item/clothing/cloak/tabard/abyssortabard
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 		if(/datum/patron/divine/dendor)
 			cloak = /obj/item/clothing/cloak/tabard/devotee/dendor
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 		if(/datum/patron/divine/necra)
 			cloak = /obj/item/clothing/cloak/tabard/devotee/necra
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 			helmets += list("Old Necran Helm" = /obj/item/clothing/head/roguetown/helmet/heavy/necrahelm)
 		if (/datum/patron/divine/malum)
 			cloak = /obj/item/clothing/cloak/tabard/devotee/malum
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 		if (/datum/patron/divine/eora)
 			cloak = /obj/item/clothing/cloak/templar/eora
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 			helmets += list("Old Eoran Sallet" = /obj/item/clothing/head/roguetown/helmet/sallet/eoran)
 		if (/datum/patron/divine/ravox)
 			cloak = /obj/item/clothing/cloak/cleric/ravox
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 		if (/datum/patron/divine/xylix)
 			cloak = /obj/item/clothing/cloak/templar/xylix
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 		if (/datum/patron/divine/pestra)
 			cloak = /obj/item/clothing/cloak/templar/pestra
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 		else
 			cloak = /obj/item/clothing/cloak/cape/crusader
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_WEAK, devotion_limit = CLERIC_REQ_1)	//Capped to T1 miracles.
+	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_1)	//Capped to T1 miracles.
 	if(H.mind)
 		// HELM CHOICE.
 		var/helmchoice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmets
@@ -411,7 +407,7 @@
 	H.mind?.current.faction += "[H.name]_faction"
 	head = /obj/item/clothing/head/roguetown/bardhat
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -421,7 +417,7 @@
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/steel/special
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_miracles(H, cleric_tier = CLERIC_T2, passive_gain = CLERIC_REGEN_DEVOTEE, devotion_limit = CLERIC_REQ_2)	//Capped to T2 miracles.
+	C.grant_miracles(H, cleric_tier = CLERIC_T2, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_2)	//Capped to T2 miracles.
 	var/datum/inspiration/I = new /datum/inspiration(H)
 	I.grant_inspiration(H, bard_tier = BARD_T2)
 	backpack_contents = list(
@@ -556,7 +552,7 @@
 /datum/outfit/job/roguetown/adventurer/missionary/pre_equip(mob/living/carbon/human/H)
 	to_chat(H, span_warning("You are a devout worshipper of the divine with a strong connection to your patron god. You've spent years studying scriptures and serving your deity - now you wander into foreign lands, spreading the word of your faith."))
 	H.mind?.current.faction += "[H.name]_faction"
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/priest
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots
