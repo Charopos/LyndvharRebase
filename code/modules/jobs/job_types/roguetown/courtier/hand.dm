@@ -195,20 +195,24 @@
 	)
 
 /datum/outfit/job/roguetown/hand/marshal/pre_equip(mob/living/carbon/human/H)
-	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/retinue
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 	pants = /obj/item/clothing/under/roguetown/tights/black
-	cloak = /obj/item/clothing/cloak/stabard/surcoat/bailiff
+	cloak = /obj/item/clothing/cloak/tabard/stabard/surcoat/bailiff
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	beltl = /obj/item/rogueweapon/mace/cudgel/justice
 	head = /obj/item/clothing/head/roguetown/chaperon/noble/bailiff
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
 	backpack_contents = list(
-		/obj/item/storage/keyring/hand = 1,
-		/obj/item/book/rogue/law = 1,
-		)
+		/obj/item/rogueweapon/huntingknife/idagger/dtace = 1,
+		/obj/item/rogueweapon/scabbard/sheath/royal = 1,
+		/obj/item/storage/keyring/lord = 1,
+		/obj/item/roguekey/skeleton = 1
+	)
+	if(H.mind)
+		SStreasury.give_money_account(ECONOMIC_RICH, H, "Savings.")
 
 /datum/advclass/hand/kcommander
 	name = "Retired Commandant"
@@ -241,17 +245,21 @@
 /datum/outfit/job/roguetown/hand/kcommander/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 	pants = /obj/item/clothing/under/roguetown/tights/black
-	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff/coat
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/marshal
 	gloves = /obj/item/clothing/gloves/roguetown/leather
-	backr = /obj/item/rogueweapon/sword/long/oathkeeper
+	r_hand = /obj/item/rogueweapon/sword/long/oathkeeper
+	backr = /obj/item/rogueweapon/scabbard/sword/royal
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	beltl = /obj/item/reagent_containers/glass/bottle/rogue/healthpot
-	backl = /obj/item/storage/backpack/rogue/satchel/short
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
-		/obj/item/storage/keyring/hand = 1,
-		/obj/item/book/rogue/law = 1
-		)
+		/obj/item/rogueweapon/huntingknife/idagger/dtace = 1,
+		/obj/item/rogueweapon/scabbard/sheath/royal = 1,
+		/obj/item/storage/keyring/lord = 1,
+		/obj/item/roguekey/skeleton = 1
+	)
+	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_RICH, H, "Savings.")
 
 ////////////////////
