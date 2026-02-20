@@ -144,7 +144,7 @@ GLOBAL_LIST_INIT(burgher_positions, list( //Artisans, store owners what have you
 
 
 GLOBAL_LIST_INIT(peasant_positions, list( //Serfs / peasants / generic towners
-	"Bathhouse Attendant",
+	"Nightswain",
 	"Cook",
 	"Tapster",
 	"Servant",

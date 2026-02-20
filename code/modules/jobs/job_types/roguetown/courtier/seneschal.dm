@@ -8,7 +8,7 @@
 
 	allowed_races = ACCEPTED_RACES
 
-	tutorial = "Servitude unto death; that is your motto. You are the manor's major-domo, commanding over the house servants and seeing to the administrative affairs, day to day of the estate. This role has style options for chief butlers and head maids."
+	tutorial = "Servitude unto death; that is your motto. You have worked tirelessly in the court of Lyndvhar as a servant, and this had not gone unrecognized. You have become the de-facto head of the serving staff, with power over the lesser courtiers. For if it were not for you and your underlings, the nobles would have starved to death long ago."
 	outfit = /datum/outfit/job/roguetown/seneschal
 	advclass_cat_rolls = list(CTAG_SENESCHAL = 20)
 	job_traits = list(TRAIT_FOOD_STIPEND)
@@ -63,7 +63,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/seneschal
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
@@ -104,7 +104,7 @@
 	cloak = /obj/item/clothing/cloak/apron/waist/maid
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
 	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather/sash/maid
 	beltr = /obj/item/storage/keyring/seneschal
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
@@ -142,7 +142,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/seneschal
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid

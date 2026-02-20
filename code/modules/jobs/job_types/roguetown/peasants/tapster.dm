@@ -8,7 +8,7 @@
 	spawn_positions = 4
 
 	allowed_races = ACCEPTED_RACES
-	tutorial = "You have a simple role at the Fool's Flagon; please. You wait tables and help guests, clean the rooms, grow and brew more drink, and assist in the kitchens as need be. Bring a smile to the masses--and those cheapsake townsfolk and adventures might just give you an extra coin...assuming you've not already pilfered their pouch while they're in a drunken stupor off your latest brew."
+	tutorial = "You have a simple role at the tavern: to please. You wait tables and help guests, clean the rooms, grow and brew more drink, and assist in the kitchens as need be. Bring a smile to the masses--and those cheapsake townsfolk and adventures might just give you an extra coin...assuming you've not already pilfered their pouch while they're in a drunken stupor off your latest brew."
 
 	outfit = /datum/outfit/job/roguetown/tapster
 	display_order = JDO_TAPSTER
@@ -28,7 +28,7 @@
 
 /datum/advclass/tapster
 	name = "Tapster"
-	tutorial = "You have a simple role at the Fool's Flagon; please. You wait tables and help guests, clean the rooms, grow and brew more drink, and assist in the kitchens as need be. Bring a smile to the masses--and those cheapsake townsfolk and adventures might just give you an extra coin...assuming you've not already pilfered their pouch while they're in a drunken stupor off your latest brew."
+	tutorial = "You have a simple role at the tavern: to please. You wait tables and help guests, clean the rooms, grow and brew more drink, and assist in the kitchens as need be. Bring a smile to the masses--and those cheapsake townsfolk and adventures might just give you an extra coin...assuming you've not already pilfered their pouch while they're in a drunken stupor off your latest brew."
 	outfit = /datum/outfit/job/roguetown/tapster/basic
 	category_tags = list(CTAG_TAPSTER)
 	// 5 points weighted
@@ -63,7 +63,7 @@
 	H.adjust_blindness(-3)
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/roguekey/tavern
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	cloak = /obj/item/clothing/cloak/apron/waist
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots

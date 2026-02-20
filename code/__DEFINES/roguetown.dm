@@ -317,7 +317,7 @@ GLOBAL_LIST_EMPTY(round_join_times)
 #define CTAG_WAPPRENTICE	"CTAG_WAPPRENTICE"	// Mage Apprentice Classes - Handles Mage Apprentices class selector
 #define CTAG_GUILDSMASTER 	"CAT_GUILDSMASTER"	// Guildsmaster class - Handles Guildsmaster class selector 
 #define CTAG_GUILDSMEN 		"CAT_GUILDSMEN"		// Guildsmen class - Handles Guildsmen class selector
-#define CTAG_BATHWORKER		"CAT_BATHWORKER"	// Bathhouse Attendant's aesthetic choices.
+#define CTAG_BATHWORKER		"CAT_BATHWORKER"	// Nightswain's aesthetic choices.
 
 // List of Migrant Classes.
 #define CTAG_HFT_LORD "CAT_HFT_LORD"  // Weocilyn Lord Class - Handles Weocilyn Lord class selector.
