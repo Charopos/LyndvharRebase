@@ -1,19 +1,20 @@
 // Elven unique mercenary type; should be scary in a way solo but easy to kill with a group or bow.
-/datum/advclass/mercenary/blackoak
-	name = "Black Oak's Guardian"
-	tutorial = "A shady guardian of the Black Oaks. Half mercenary band, half irregular militia fighting for control of their ancestral elven homeland of the Peaks. Thankfully, you are not here today to shed the blood of the Duke's men — unless someone pays you to..."
+/datum/advclass/mercenary/crestguardian
+	name = "Crestborne Strider"
+	tutorial = "A mercenary of the Crestborne. Half mercenary band, half irregular militia fighting for control against the orc hordes in the name of Greencrest nobility. You are one of the few not doing so- on mercenary employ in Lyndvhar. Your only worry is if the civil war will find its way to the city gates with you in it."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
-		/datum/species/human/halfelf,
+		/datum/species/human/northern,
 		/datum/species/elf/wood,
-		/datum/species/elf/dark,
+		/datum/species/human/halfelf,
+		/datum/species/demihuman,
 	)
-	outfit = /datum/outfit/job/roguetown/mercenary/blackoak
+	outfit = /datum/outfit/job/roguetown/mercenary/crestguardian
 	class_select_category = CLASS_CAT_RACIAL
 	category_tags = list(CTAG_MERCENARY)
 	cmode_music = 'sound/music/combat_blackoak.ogg'
-	extra_context = "This subclass is race-restricted to: Half-Elves, Elves, Dark Elves."
-	traits_applied = list(TRAIT_AZURENATIVE, TRAIT_OUTDOORSMAN, TRAIT_BLACKOAK, TRAIT_MEDIUMARMOR)
+	extra_context = "This subclass is race-restricted to: Half-Elves, Elves, Humens, and Half-kin."
+	traits_applied = list(TRAIT_OUTDOORSMAN, TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
 		STATKEY_STR = 3,
 		STATKEY_WIL = 2,
@@ -38,23 +39,23 @@
 		/datum/skill/labor/farming = SKILL_LEVEL_APPRENTICE,
 	)
 
-/datum/outfit/job/roguetown/mercenary/blackoak/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/crestguardian/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
 	has_loadout = TRUE
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/elven_helm
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/elven_plate
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/special
-	beltr = /obj/item/flashlight/flare/torch
+	beltr = /obj/item/flashlight/flare/torch/lantern
 	shoes = /obj/item/clothing/shoes/roguetown/boots/elven_boots
 	cloak = /obj/item/clothing/cloak/forrestercloak
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	gloves = /obj/item/clothing/gloves/roguetown/elven_gloves
 	belt = /obj/item/storage/belt/rogue/leather/black
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-	pants = /obj/item/clothing/under/roguetown/trou/leather
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
@@ -62,10 +63,10 @@
 		)
 	H.merctype = 2
 
-/datum/outfit/job/roguetown/mercenary/blackoak/choose_loadout(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/crestguardian/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Elvish Glaive", "Elvish Curveblade", "Elvish Longsword")
-	var/weapon_choice = input(H, "Choose your weapon.", "FOR THE OAKS AND THE PEAKS") as anything in weapons
+	var/weapon_choice = input(H, "Choose your weapon.", "FOR GREENCREST") as anything in weapons
 	switch(weapon_choice)
 		if("Elvish Glaive")
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_EXPERT, TRUE)
@@ -80,11 +81,11 @@
 			H.put_in_hands(new /obj/item/rogueweapon/sword/long/elvish)
 			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sword, SLOT_BACK_R, TRUE)
 
-/datum/advclass/mercenary/blackoak/ranger
-	name = "Black Oak's Ranger"
-	tutorial = "A shady ranger of the Black Oaks. Half mercenary band, half irregular militia fighting for control of their ancestral elven homeland of the Peaks. Thankfully, you are not here today to shed the blood of the Duke's men — unless someone pays you to..."
-	outfit = /datum/outfit/job/roguetown/mercenary/blackoak_ranger
-	traits_applied = list(TRAIT_AZURENATIVE, TRAIT_OUTDOORSMAN, TRAIT_BLACKOAK, TRAIT_DODGEEXPERT, TRAIT_WOODWALKER)
+/datum/advclass/mercenary/crestguardian/ranger
+	name = "Crestborne Arrowslinger"
+	tutorial = "A mercenary of the Crestborne. Half mercenary band, half irregular militia fighting for control against the orc hordes in the name of Greencrest nobility. You are one of the few not doing so- on mercenary employ in Lyndvhar. Your only worry is if the civil war will find its way to the city gates with you in it."
+	outfit = /datum/outfit/job/roguetown/mercenary/crestguardian_ranger
+	traits_applied = list(TRAIT_OUTDOORSMAN, TRAIT_DODGEEXPERT, TRAIT_WOODWALKER)
 	subclass_stats = list(
 		STATKEY_SPD = 3,
 		STATKEY_WIL = 2,
@@ -108,21 +109,21 @@
 		/datum/skill/labor/farming = SKILL_LEVEL_APPRENTICE,
 	)
 
-/datum/outfit/job/roguetown/mercenary/blackoak_ranger/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/crestguardian_ranger/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
 	has_loadout = TRUE
-	neck = /obj/item/clothing/neck/roguetown/chaincoif/full
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	beltl = /obj/item/quiver/arrows
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
-	shoes = /obj/item/clothing/shoes/roguetown/boots/elven_boots
-	cloak = /obj/item/clothing/cloak/forrestercloak
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	cloak = /obj/item/clothing/cloak/forrestercloak/snow
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	gloves = /obj/item/clothing/gloves/roguetown/elven_gloves
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 	belt = /obj/item/storage/belt/rogue/leather/black
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-	pants = /obj/item/clothing/under/roguetown/trou/leather
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
@@ -132,7 +133,7 @@
 		)
 	H.merctype = 2
 
-/datum/outfit/job/roguetown/mercenary/blackoak_ranger/choose_loadout(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/crestguardian_ranger/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Elvish Dagger", "Elvish Saber", "Elvish Shortsword")
 	var/weapon_choice = input(H, "Choose your weapon.", "FOR THE OAKS AND THE PEAKS") as anything in weapons
@@ -149,11 +150,11 @@
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_EXPERT, TRUE) //Still 4 defence, fair enough
 			H.put_in_hands(new /obj/item/rogueweapon/sword/short/elvish)
 			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sword, SLOT_BELT_R, TRUE)
-	var/armors = list("Trophy Fur Robes", "Elven Cuirass")
+	var/armors = list("Studded Leather", "Elven Cuirass")
 	var/armor_choice = input(H, "Choose your armor.", "THE FOREST CLOAKS YOU") as anything in armors
 	switch(armor_choice)
-		if("Trophy Fur Robes")
-			H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/leather/trophyfur, SLOT_ARMOR, TRUE)
+		if("Studded Leather")
+			H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/leather/studded, SLOT_ARMOR, TRUE)
 		if("Elven Cuirass")
 			REMOVE_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fencer/elven, SLOT_ARMOR, TRUE)
@@ -161,6 +162,6 @@
 	var/helmet_choice = input(H, "Choose your helmet.", "LEAVES OVER STEEL") as anything in helmets
 	switch(helmet_choice)
 		if("Elven Barbute")
-			H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/elvenbarbute/blackoak, SLOT_HEAD, TRUE)
+			H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/elvenbarbute/crestguardian, SLOT_HEAD, TRUE)
 		if("Winged Elven Barbute")
-			H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/elvenbarbute/winged/blackoak, SLOT_HEAD, TRUE)
+			H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/elvenbarbute/winged/crestguardian, SLOT_HEAD, TRUE)

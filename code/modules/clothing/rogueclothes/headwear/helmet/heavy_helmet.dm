@@ -741,7 +741,7 @@
 	name = "woad elven helm"
 	desc = "An assembly of woven trunk, kept alive by ancient song, now twisted and warped for battle and scorn."
 	body_parts_covered = FULL_HEAD | NECK
-	armor = ARMOR_BLACKOAK //Resistant to blunt & stab, but very weak to slash.
+	armor = ARMOR_CRESTGUARDIAN //Resistant to blunt & stab, but very weak to slash.
 	prevent_crits = PREVENT_CRITS_ALL
 	icon = 'icons/roguetown/clothing/special/race_armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/race_armor.dmi'

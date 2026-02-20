@@ -244,7 +244,7 @@
 /obj/item/clothing/shoes/roguetown/boots/elven_boots
 	name = "woad elven boots"
 	desc = "The living trunks still blossom in the spring. They let water through, but it is never cold."
-	armor = ARMOR_BLACKOAK //Resistant to blunt and stab, but very weak to slash.
+	armor = ARMOR_CRESTGUARDIAN //Resistant to blunt and stab, but very weak to slash.
 	prevent_crits = PREVENT_CRITS_ALL
 	max_integrity = ARMOR_INT_SIDE_IRON
 	resistance_flags = FIRE_PROOF

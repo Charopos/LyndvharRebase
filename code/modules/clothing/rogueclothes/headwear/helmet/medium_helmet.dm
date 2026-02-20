@@ -334,11 +334,11 @@
 	icon_state = "elven_barbute_winged"
 	item_state = "elven_barbute_winged"
 
-/obj/item/clothing/head/roguetown/helmet/elvenbarbute/blackoak
+/obj/item/clothing/head/roguetown/helmet/elvenbarbute/crestguardian
 	desc = "An elven barbute with a thin gold plating designed for Elven Woodland guardians."
 	color = COLOR_ASSEMBLY_GOLD
 
-/obj/item/clothing/head/roguetown/helmet/elvenbarbute/winged/blackoak
+/obj/item/clothing/head/roguetown/helmet/elvenbarbute/winged/crestguardian
 	desc = "A winged version of the elven barbute with a thin gold plating designed for Elven Woodland guardians."
 	color = COLOR_ASSEMBLY_GOLD
 
