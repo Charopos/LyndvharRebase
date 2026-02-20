@@ -6,12 +6,12 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = ACCEPTED_RACES
+	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
 	is_quest_giver = TRUE
 
-	tutorial = "You work the largest store in the Peaks by grace of the Merchant who has shackled you to this drudgery. The work of stocking shelves and taking inventory for your employer is mind-numbing and repetitive--but at least you have a roof over your head and comfortable surroundings. With time, perhaps you will one day be more than a glorified servant."
+	tutorial = "You work the largest store in Lyndvhar by grace of the Merchant who has shackled you to this drudgery. The work of stocking shelves and taking inventory for your employer is mind-numbing and repetitive--but at least you have a roof over your head and comfortable surroundings. With time, perhaps you will one day be more than a glorified servant."
 
 	outfit = /datum/outfit/job/roguetown/shophand
 	display_order = JDO_SHOPHAND
@@ -30,9 +30,7 @@
 
 /datum/advclass/shophand
 	name = "Shophand"
-	tutorial = "You work the largest store in the Peaks by grace of the Merchant who has shackled you to this drudgery. \
-	The work of stocking shelves and taking inventory for your employer is mind-numbing and repetitive--but at least you have a roof over your head and comfortable surroundings. \
-	With time, perhaps you will one day be more than a glorified servant."
+	tutorial = "You work the largest store in Lyndvhar by grace of the Merchant who has shackled you to this drudgery. The work of stocking shelves and taking inventory for your employer is mind-numbing and repetitive--but at least you have a roof over your head and comfortable surroundings. With time, perhaps you will one day be more than a glorified servant."
 	outfit = /datum/outfit/job/roguetown/shophand/basic
 	category_tags = list(CTAG_SHOPHAND)
 	subclass_stats = list(
@@ -64,7 +62,7 @@
 		belt = /obj/item/storage/belt/rogue/leather
 		beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 		beltl = /obj/item/storage/keyring/merchant
-		backr = /obj/item/storage/backpack/rogue/satchel
+		backr = /obj/item/storage/backpack/rogue/satchel/short
 	else if(should_wear_masc_clothes(H))
 		pants = /obj/item/clothing/under/roguetown/tights
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
@@ -72,7 +70,7 @@
 		belt = /obj/item/storage/belt/rogue/leather
 		beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 		beltl = /obj/item/storage/keyring/merchant
-		backr = /obj/item/storage/backpack/rogue/satchel
+		backr = /obj/item/storage/backpack/rogue/satchel/short
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/appraise/secular)
 	if(prob(33))
