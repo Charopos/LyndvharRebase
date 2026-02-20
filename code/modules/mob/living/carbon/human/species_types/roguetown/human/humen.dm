@@ -9,14 +9,8 @@
 	origin = "Grenzelhoft"
 	sub_name = "Northern Humen"
 	desc = "<b>Humen</b><br>\
-	Humens (or \"Humans\") are the eldest of the Weeping God's creations. Noted for their \
-	tenacity and overwhelming population, humens are the most commonly seen race across the lands, \
-	at a rate of about ten to one in regions such as Grenzelhoft. However, to the west \
-	the opposite is true. Humens come from a vast swathe of cultures and ethnicities, most of which \
-	have historically been at odds with one another. Being the eldest creations of the Weeping God, humens \
-	tend to find fortune easier than the other races, and are so diverse that no other racial traits \
-	are dominant in their species.<br>\
-	(+1 Willpower, +1 Intelligence)"
+	Humens are a relatively fickle race, being the largest majority in all of Beowricke. Most well noted for their tenacity and rather fast adaptability, they are also the third eldest race of Beowricke, believed to have been brought into the cycle after the successful creation of the Elf. Humens are the largest majority of mortal life in Beowricke, and come in many shapes, sizes, as well as different cultures and personal beliefs. They are the most diverse of the mortal creations, and are the majority racial presence in Lyndhardtia and beyond. It was Humen hands that molded the many great empires of Beowricke, as well as the current standing hegemonies of the world.<br>\
+	(TRAITS WILL GO HERE)"
 
 	skin_tone_wording = "Ancestry"
 
@@ -46,7 +40,7 @@
 		OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-1), \
 		)
-	race_bonus = list(STAT_INTELLIGENCE = 1, STAT_WILLPOWER = 1)
+
 	enflamed_icon = "widefire"
 	customizers = list(
 		/datum/customizer/organ/eyes/humanoid,

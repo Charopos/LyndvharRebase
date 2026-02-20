@@ -4,14 +4,12 @@
 /datum/species/anthromorph
 	name = "Wild-Kin"
 	id = "anthromorph"
+	origin_default = /datum/virtue/origin/unknown
+	origin = "Dendor"
 	base_name = "Beastvolk"
-	desc = "A product of Dendor's enigmatic meddling in mortals races. The average wild-kin suffers from animalistic urges that vary in severity, \
-	from simply avoiding certain foods to smoldering desires to howl at the moon or chase prey. Usually these urges are tied to the animal that the wild-kin is melded with, \
-	making them rather predictable. Despite this, the way each wild-kin approaches their bizarre physiology and psychology varies, \
-	creating a diverse race of people who may not even empathise with one another. And whilst Dendor is considered the main culprit for Wild-kin, there are those created through other means, \
-	akin to Noc's stolen knowledge that created lupians and other abstract experimentation or circumstance. \
-	(Wild-kin are not a template race to play your own custom race. If you play a wild-kin, you are expected to roleplay to the setting and the race's lore.)<br>\
-	(+1 Constitution, +1 Perception)"
+	desc = "<b>Wild-Kin</b><br>\
+	Chimera are a rather odd existence- consisting of an amalgamation of many different animalistic entities merging into one singular entity brought into the grasp of the cycle. A rather unfortunate side-effect of the Chimera is a lack of much higher reasoning, leading to many succumbing to very beast-like behavior and an unnatural ravenous hunger. The aberration that they are has led many to theorize they were a corruption of the spirit by Strialis in order to sow chaos amongst the races. Many have been able to successfully quell these chaotic behaviors and live in civilised society, but suffer many drawbacks and effects mentally- always dealing with the gnawing thoughts of madness, trying to break free of its mental shackles.<br>\
+	(TRAITS WILL GO HERE)"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,
@@ -49,7 +47,7 @@
 		OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-1), \
 		)
-	race_bonus = list(STAT_PERCEPTION = 1, STAT_CONSTITUTION = 1)
+
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,

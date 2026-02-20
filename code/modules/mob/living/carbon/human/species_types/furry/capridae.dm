@@ -4,8 +4,13 @@
 /datum/species/capridae
 	name = "Capridae"
 	id = "capridae"
+	is_subrace = TRUE
+	origin_default = /datum/virtue/origin/lyndhardt
+	origin = "Lyndhardt"
+	base_name = "Beastvolk"
 	desc = "<b>Capridae</b><br>\
-	A race consisting of many different shapes of horns and furs, resembling the many different goats and sheep that dot the lands. Found mainly in the northern mountainous territories of Lyndhardtia, they are well-renowned for their extreme adaptation to these hostile terrains found all across the Okalberg mountain range. It is often that a native Capridae is hired to traverse these mountains in caravans as guides as they are able to easily identify differing paths and slopes. Native Capridae leave totems to Astrata and Noc along cairns dotting the Okalberg to give reverence to the sky. In the last century and a half the Capridae have begun to migrate southwards during the golden era of the Empire, spreading all across it and can now be found in many places across Llewyn as a result.<br>"
+	A race consisting of many different shapes of horns, furs, or wool. Found mainly in the northern mountainous territories of Lyndhardtia, they are well-renowned for their extreme adaptation to these hostile terrains found all across the Okalberg mountain range. It is often that a native Capridae is hired to traverse these mountains in caravans as guides as they are able to easily identify differing paths and slopes. Native Capridae leave totems to Iraeth along cairns dotting the Okalberg to give reverence to the spirits. During the Ruby War, many Capridae fled all across many different regions of the continent and can now be consistently found amongst the remnant cities of the Empire.<br>\
+	(TRAITS WILL GO HERE)"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

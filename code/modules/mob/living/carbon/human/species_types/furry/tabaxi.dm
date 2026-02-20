@@ -10,14 +10,8 @@
 	base_name = "Beastvolk"
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | SLIME_EXTRACT
 	desc = "<b>Tabaxi</b><br>\
-		Tabaxi are taller than most humans at six to seven feet. \
-		Their bodies are slender and covered in spotted or striped fur. \
-		Like most felines, Tabaxi have long tails and retractable claws. \
-		Tabaxi fur color ranges from light yellow to brownish red. \
-		Tabaxi eyes are slit-pupilled and usually green or yellow. \
-		Tabaxi are competent swimmers and climbers as well as speedy runners. \
-		They have a good sense of balance and an acute sense of smell.<br>\
-		(+1 Speed)"
+	These feline-like beings hail from the far northern territories of Zybantu, in the jungles of the Akunana. They can come in many shapes and sizes, often being seen as tall as seven feet. Slender bodies make them quite agile, making it much easier for them to hunt in the jungles of the northeastern Raj. With an acute sense of smell and striking intelligence, the Tabaxi are some of the most feared hunters in these regions. Many still hold to tribal tradition in the northern areas where the Raj government is not able to so easily control or hold sway. Often attacking unsuspecting foreigners or wanderers who stray too close into their tribal prides in these jungles. Others have propagated well outside of these regions thanks to the Zybantine trading of slaves. Most living on this side of Beowricke are descendants of the slaves and servants that were brought by corsairs and contractors to work as relatively cheap labor in many construction projects along the coastal regions of the Ruby Empire.<br>\
+	(TRAITS WILL GO HERE)"
 	skin_tone_wording = "Fur Colors"
 	use_skin_tone_wording_for_examine = FALSE
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE, MUTCOLORS)
@@ -41,7 +35,7 @@
 		OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-1)
 		)
-	race_bonus = list(STAT_SPEED = 1)
+
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
