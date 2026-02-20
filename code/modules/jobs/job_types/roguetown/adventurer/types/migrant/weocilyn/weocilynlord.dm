@@ -1,9 +1,9 @@
 
 /datum/job/roguetown/weocilyn/lord
-	title = "Lord of Weocilyn"
-	tutorial = "You are the Lord of Weocilyn, the once-proud ruler of a barony now reduced to ashes. With little more than your maps, your prayers, and the fire of vengeance in your heart, you set out for the port city of Lyndvhar. There, you hope to find aid and sanctuary in the halls of your old friend, the Viscount. This will be the first step in a plan to reclaim your honor and exact retribution against Baleron, the man who brought your lands to ruin."
+	title = "Baron of Weocilyn"
+	tutorial = "You are the Baron of Weocilyn, the once-proud ruler of a barony now reduced to ashes. With little more than your maps, your prayers, and the fire of vengeance in your heart, you set out for the port city of Lyndvhar. There, you hope to find aid and sanctuary in the halls of your old friend, the Viscount. This will be the first step in a plan to reclaim your honor and exact retribution against Baleron, the man who brought your lands to ruin."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_NO_CONSTRUCT
+	allowed_races = RACES_SHUNNED_UP
 	outfit = null
 	total_positions = 1
 	spawn_positions = 0
@@ -18,8 +18,8 @@
 // DEFAULT - STANDARD OLD CLASS
 
 /datum/advclass/weocilyn/lord/lord
-	name = "Lord of Weocilyn"
-	tutorial = "You are the Lord of Weocilyn, the once-proud ruler of a barony now reduced to ashes. With little more than your maps, your prayers, and the fire of vengeance in your heart, you set out for the port city of Lyndvhar. There, you hope to find aid and sanctuary in the halls of your old friend, the Viscount. This will be the first step in a plan to reclaim your honor and exact retribution against Baleron, the man who brought your lands to ruin."
+	name = "Baron of Weocilyn"
+	tutorial = "You are the Baron of Weocilyn, the once-proud ruler of a barony now reduced to ashes. With little more than your maps, your prayers, and the fire of vengeance in your heart, you set out for the port city of Lyndvhar. There, you hope to find aid and sanctuary in the halls of your old friend, the Viscount. This will be the first step in a plan to reclaim your honor and exact retribution against Baleron, the man who brought your lands to ruin."
 	category_tags = list(CTAG_HFT_LORD)
 	maximum_possible_slots = 1
 	outfit = /datum/outfit/job/weocilyn/lord/lord
@@ -166,7 +166,7 @@
 
 /datum/advclass/weocilyn/lord/chief
 	name = "Chieftain of Weocilyn"
-	tutorial = "You are the Chieftain of Weocilyn, Chieftain of a once tribal lands over Lyndhardtia. Now, you rule it under the watchful gaze of the Grand Duchy. \
+	tutorial = "You are the Chieftain of Weocilyn, Chieftain of a once tribal lands over Lyndhardtia. \
 	However, with the increase in banditry, necromancy, deadite risings, and increasing sea raider raids, there are rumors abound that Weocilyn is not what it used to be. \
 	Travellers often warn of Weocilyn having fallen already, and words of secretive cultists isn't unheard of."
 	category_tags = list(CTAG_HFT_LORD)

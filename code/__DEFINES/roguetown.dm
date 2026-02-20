@@ -56,30 +56,28 @@ Balloon Alert / Floating Text defines
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
 	/datum/species/anthromorph,\
-	,\
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/kobold,\
 	/datum/species/goblinp,\
 	/datum/species/dullahan,\
-  /datum/species/dwarf/gnome\
+  	/datum/species/dwarf/gnome,\
 )
 
-#define RACES_RESPECTED \
+
+#define RACES_ESTEEMED \
 	/datum/species/human/northern,\
 	/datum/species/elf/wood,\
-	/datum/species/elf/sun,\
-	/datum/species/human/halfelf,\
 	/datum/species/dwarf/mountain,\
+
+#define RACES_RESPECTED \
 	/datum/species/aasimar,\
+	/datum/species/human/halfelf,\
 
 #define RACES_TOLERATED \
-	/datum/species/elf/dark,\
-	/datum/species/tieberian,\
-	/datum/species/lizardfolk,\
 	/datum/species/tabaxi,\
-	/datum/species/akula,\
-	/datum/species/anthromorph,\
+	/datum/species/lupian,\
+	/datum/species/vulpkanin,\
 	/datum/species/demihuman,\
 	/datum/species/lizardfolk,\
 	/datum/species/capridae,\
@@ -87,33 +85,26 @@ Balloon Alert / Floating Text defines
 	/datum/species/cervaline,\
 
 #define RACES_SHUNNED \
+	/datum/species/anthromorph,\
 	/datum/species/halforc,\
 	/datum/species/akula,\
 	/datum/species/tieberian,\
 	/datum/species/elf/dark,\
 
 #define RACES_DESPISED \
-	/datum/species/anthromorph,\
-	,\
 	/datum/species/goblinp,\
 	/datum/species/kobold,\
 	/datum/species/dullahan,\
-	,\
 
 #define RACES_RESPECTED_UP list(RACES_RESPECTED, RACES_ESTEEMED)
 
-#define RACES_CONSTRUCT \
-	,\
+#define ACCEPTED_RACES list(RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED, RACES_DESPISED, RACES_ESTEEMED)
 
-#define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED, RACES_CONSTRUCT)	//Truely no restrictions
+#define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED, RACES_ESTEEMED, RACES_VILLIFIED)
 
-#define ACCEPTED_RACES list(RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED, RACES_CONSTRUCT)	//Allows all races except dallahun
+#define RACES_SHUNNED_UP list(RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED, RACES_ESTEEMED)
 
-#define RACES_NO_CONSTRUCT list(RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
-
-#define RACES_SHUNNED_UP list(RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
-
-#define RACES_TOLERATED_UP list(RACES_TOLERATED, RACES_RESPECTED)
+#define RACES_TOLERATED_UP list(RACES_TOLERATED, RACES_RESPECTED, RACES_ESTEEMED)
 
 #define NOBLE_RACES_TYPES list(\
 	/datum/species/human/northern,\
@@ -133,11 +124,9 @@ Balloon Alert / Floating Text defines
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
 	/datum/species/anthromorph,\
-	,\
 	/datum/species/demihuman,\
 	/datum/species/kobold,\
 	/datum/species/goblinp,\
-	,\
 )
 
 #define CLOTHED_RACES_TYPES list(\
@@ -211,6 +200,8 @@ Balloon Alert / Floating Text defines
 #define ALL_ACOLYTE_PATRONS list(/datum/patron/divine/undivided, /datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/pestra, /datum/patron/divine/ravox, /datum/patron/divine/eora, /datum/patron/divine/xylix, /datum/patron/divine/necra, /datum/patron/divine/abyssor, /datum/patron/divine/malum) // Currently unused.
 
 #define ALL_DIVINE_PATRONS list(/datum/patron/divine/undivided, /datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/abyssor, /datum/patron/divine/ravox, /datum/patron/divine/necra, /datum/patron/divine/xylix, /datum/patron/divine/pestra, /datum/patron/divine/malum, /datum/patron/divine/eora)
+
+#define ALL_NICE_PATRONS list(/datum/patron/divine/undivided, /datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/abyssor, /datum/patron/divine/ravox, /datum/patron/divine/necra, /datum/patron/divine/xylix, /datum/patron/divine/pestra, /datum/patron/divine/malum, /datum/patron/divine/eora, /datum/patron/old_god)
 
 #define ALL_INHUMEN_PATRONS list(/datum/patron/inhumen/zizo, /datum/patron/inhumen/graggar, /datum/patron/inhumen/matthios, /datum/patron/inhumen/baotha)
 
