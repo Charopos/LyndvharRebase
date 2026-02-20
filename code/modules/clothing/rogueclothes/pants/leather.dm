@@ -69,13 +69,13 @@
 	desc = "A handmade pair of baggy, thin leather pants. They end in a tight stocking around the calf, ballooning out around the thigh."
 	icon_state = "monkpants"
 	item_state = "monkpants"
-	naledicolor = TRUE
+	khazumiacolor = TRUE
 	salvage_result = /obj/item/natural/hide/cured
 
 /obj/item/clothing/under/roguetown/trou/leather/pontifex/zybantu
 	name = "baggy desert pants"
 	desc = "A handmade pair of baggy, thin leather pants. Keeps sand out of your boots, sun off your legs, and a creacher's fangs from piercing your ankles."
-	naledicolor = FALSE
+	khazumiacolor = FALSE
 
 /obj/item/clothing/under/roguetown/trou/leather/eastern
 	icon_state = "eastpants1"

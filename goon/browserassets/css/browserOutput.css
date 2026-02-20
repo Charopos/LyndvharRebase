@@ -103,7 +103,7 @@ body {
 
 @font-face {
 	font-family: "Romeodn";
-	src: url("aavnic.ttf");
+	src: url("greencrest.ttf");
 }
 
 @font-face {
@@ -889,7 +889,7 @@ h2.alert {
 	font-family: "Jorvik Informal", "Pterra";
 	font-size: 100%;
 }
-.aavnic {
+.greencrest {
 	font-family: "Romeodn", "Pterra";
 	font-size: 100%;
 }

@@ -105,17 +105,17 @@
 		"Giza-Azure" = SKIN_COLOR_GIZA_AZURE,
 		"Walnut-Stine" = SKIN_COLOR_WALNUT_STINE,
 		"Etrustcan-Dandelion" = SKIN_COLOR_ETRUSTCAN_DANDELION,
-		"Naledi-Born" = SKIN_COLOR_NALEDI_BORN,
-		"Naledi-Southerner" = SKIN_COLOR_NALEDI_LIGHT,
+		"Khazumian-Born" = SKIN_COLOR_KHAZUMIA_BORN,
+		"Khazumian-Southerner" = SKIN_COLOR_KHAZUMIA_LIGHT,
 		"Kaze-Lotus" = SKIN_COLOR_KAZE_LOTUS,
 		"Grenzel-Lyndvhar" = SKIN_COLOR_GRENZEL_WOODS,
 		"Calmirixian-Lirvas" = SKIN_COLOR_CALMIRIXIAN_LIRVAS,
 		"Free Roamers" = SKIN_COLOR_FREE_FOLK,
-		"Avar Borne"	= SKIN_COLOR_AVAR_BORNE,
+		"Khazumite Borne"	= SKIN_COLOR_KHAZUMITE_BORNE,
 		"Shalvine Roamer" = SKIN_COLOR_SHALVINE_AZURE,
-		"Lalve-Steppes" = SKIN_COLOR_LALVE_NALEDI,
-		"Naledi-Valoria" = SKIN_COLOR_NALEDI_VALORIAN,
-		"Grezel-Avar" = SKIN_COLOR_GRENZEL_AVAR,
+		"Lalve-Steppes" = SKIN_COLOR_LALVE_KHAZUMIA,
+		"Khazumia-Valoria" = SKIN_COLOR_KHAZUMIA_VALORIAN,
+		"Grenzel-Khazumia" = SKIN_COLOR_GRENZEL_KHAZUMIAN,
 		"Hammer-Rhaenish" = SKIN_COLOR_HAMMER_RHAENVAL,
 		"Commorah-kin" = SKIN_COLOR_COMMORAH,
 		"Gloomhaven-kin" = SKIN_COLOR_GLOOMHAVEN,
@@ -127,7 +127,7 @@
 	)
 
 /datum/species/human/halfelf/proc/languages(mob/living/carbon/human/literally_him)
-	if(literally_him.skin_tone == SKIN_COLOR_AVAR_BORNE)
+	if(literally_him.skin_tone == SKIN_COLOR_KHAZUMITE_BORNE)
 		literally_him.grant_language(/datum/language/celestial)
 
 /datum/species/human/halfelf/get_hairc_list()

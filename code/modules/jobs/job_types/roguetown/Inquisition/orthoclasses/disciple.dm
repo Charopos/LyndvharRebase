@@ -74,9 +74,9 @@
 				neck = /obj/item/clothing/neck/roguetown/psicross/silver
 				id = /obj/item/clothing/ring/signet/silver
 			if("Sojourner - Lightweight, Arcyne-Martiality")
-				head = /obj/item/clothing/head/roguetown/headband/naledi
-				mask = /obj/item/clothing/mask/rogue/lordmask/naledi/sojourner
-				wrists = /obj/item/clothing/wrists/roguetown/bracers/cloth/naledi
+				head = /obj/item/clothing/head/roguetown/headband/khazumia
+				mask = /obj/item/clothing/mask/rogue/lordmask/khazumia/sojourner
+				wrists = /obj/item/clothing/wrists/roguetown/bracers/cloth/khazumia
 				backl = /obj/item/storage/backpack/rogue/satchel/black
 				pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 				neck = /obj/item/clothing/neck/roguetown/psicross/g
@@ -84,7 +84,7 @@
 				l_hand = /obj/item/spellbook_unfinished/pre_arcyne
 				ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC) //Sojourners are magyck-inclined lightweights, relying on evasive maneuvers and unorthodox techniques - compared to the Disciple, who simply Kills People With Rocks.
 				ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-				ADD_TRAIT(H, TRAIT_NALEDI, TRAIT_GENERIC)
+				ADD_TRAIT(H, TRAIT_KHAZUMIA, TRAIT_GENERIC)
 				REMOVE_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
 				H.adjust_skillrank_up_to(/datum/skill/magic/arcane, 3, TRUE)
 				H.grant_language(/datum/language/celestial) //They're from the Khaliphate, they should speak Sama'glos
@@ -103,7 +103,7 @@
 	
 	backpack_contents = list(/obj/item/roguekey/inquisitionmanor = 1,
 	/obj/item/paper/inqslip/arrival/ortho = 1,
-	/obj/item/roguegem/amethyst/naledi = 1) //Kept here for now, until we figure out how to make it better fit in overfilled hands.
+	/obj/item/roguegem/amethyst/khazumia = 1) //Kept here for now, until we figure out how to make it better fit in overfilled hands.
 	belt = /obj/item/storage/belt/rogue/leather/rope/dark
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	cloak = /obj/item/clothing/cloak/tabard/psydontabard/alt

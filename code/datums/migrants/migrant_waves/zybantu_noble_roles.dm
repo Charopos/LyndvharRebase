@@ -66,7 +66,7 @@
 		/obj/item/reagent_containers/glass/bottle/alchemical/healthpotnew = 2,
 		)
 	H.cmode_music = 'sound/music/combat_desertrider.ogg'
-	H.grant_language(/datum/language/celestial)
+	H.grant_language(/datum/language/zybanti)
 
 /datum/migrant_role/zybantu/amirah
 	name = "Amirah"
@@ -125,7 +125,7 @@
 		/obj/item/reagent_containers/glass/bottle/alchemical/healthpotnew = 1,
 	)
 	H.cmode_music = 'sound/music/combat_desertrider.ogg'
-	H.grant_language(/datum/language/celestial)
+	H.grant_language(/datum/language/zybanti)
 
 /datum/migrant_role/zybantu/janissary
 	name = "Janissary"
@@ -186,7 +186,7 @@
 		/obj/item/natural/bundle/cloth/bandage/full = 1,
 		)
 	H.cmode_music = 'sound/music/combat_desertrider.ogg'
-	H.grant_language(/datum/language/celestial)
+	H.grant_language(/datum/language/zybanti)
 
 /datum/migrant_role/zybantu/advisor
 	name = "Advisor"
@@ -245,7 +245,7 @@
 		/obj/item/storage/belt/rogue/pouch/coins/veryrich = 1,
 		)
 	H.cmode_music = 'sound/music/combat_desertrider.ogg'
-	H.grant_language(/datum/language/celestial)
+	H.grant_language(/datum/language/zybanti)
 
 #undef CTAG_ZYBANTU_EMIR
 #undef CTAG_ZYBANTU_AMIRAH

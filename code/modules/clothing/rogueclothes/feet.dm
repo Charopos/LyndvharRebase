@@ -89,7 +89,7 @@
 	AddComponent(/datum/component/armour_filtering/positive, TRAIT_HONORBOUND)
 
 /obj/item/clothing/shoes/roguetown/boots/nobleboot/steppesman
-	name = "aavnic riding boots"
+	name = "vruirid riding boots"
 	desc = "A pair of sturdy riding boots with an iron heel and brass spurs."
 	armor = ARMOR_LEATHER_GOOD
 	max_integrity = ARMOR_INT_SIDE_HARDLEATHER
@@ -244,7 +244,7 @@
 /obj/item/clothing/shoes/roguetown/boots/elven_boots
 	name = "woad elven boots"
 	desc = "The living trunks still blossom in the spring. They let water through, but it is never cold."
-	armor = ARMOR_BLACKOAK //Resistant to blunt and stab, but very weak to slash.
+	armor = ARMOR_CRESTGUARDIAN //Resistant to blunt and stab, but very weak to slash.
 	prevent_crits = PREVENT_CRITS_ALL
 	max_integrity = ARMOR_INT_SIDE_IRON
 	resistance_flags = FIRE_PROOF

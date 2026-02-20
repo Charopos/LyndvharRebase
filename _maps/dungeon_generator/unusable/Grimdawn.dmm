@@ -3,8 +3,8 @@
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/under/tomb/cave)
 "b" = (
-/obj/item/reagent_containers/glass/bottle/rogue/beer/avarmead,
-/obj/item/reagent_containers/glass/bottle/rogue/beer/avarmead,
+/obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridmead,
+/obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridmead,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/tomb/indoors)
 "d" = (
@@ -41,7 +41,7 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/tomb)
 "J" = (
-/obj/item/reagent_containers/glass/bottle/rogue/beer/avarrice,
+/obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridrice,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/tomb/indoors)
 "K" = (

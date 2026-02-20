@@ -323,10 +323,10 @@ GLOBAL_LIST_EMPTY(round_join_times)
 #define CTAG_BATHWORKER		"CAT_BATHWORKER"	// Bathhouse Attendant's aesthetic choices.
 
 // List of Migrant Classes.
-#define CTAG_HFT_LORD "CAT_HFT_LORD"  // Heartfelt Lord Class - Handles Heartfelt Lord class selector.
-#define CTAG_HFT_HAND "CAT_HFT_HAND"  // Heartfelt Hand Class - Handles Heartfelt Hand class selector.
-#define CTAG_HFT_KNIGHT "CAT_HFT_KNIGHT"  // Heartfelt Knight Class - Handles Heartfelt Knight class selector.
-#define CTAG_HFT_RETINUE "CAT_HFT_RETINUE"  // Heartfelt Retinue Class - Handles Heartfelt Retinue class selector.
+#define CTAG_HFT_LORD "CAT_HFT_LORD"  // Weocilyn Lord Class - Handles Weocilyn Lord class selector.
+#define CTAG_HFT_HAND "CAT_HFT_HAND"  // Weocilyn Hand Class - Handles Weocilyn Hand class selector.
+#define CTAG_HFT_KNIGHT "CAT_HFT_KNIGHT"  // Weocilyn Knight Class - Handles Weocilyn Knight class selector.
+#define CTAG_HFT_RETINUE "CAT_HFT_RETINUE"  // Weocilyn Retinue Class - Handles Weocilyn Retinue class selector.
 
 // List of mono-class categories. Only here for standardisation sake, but can be added on if desired.
 #define CTAG_BISHOP			"CAT_BISHOP"

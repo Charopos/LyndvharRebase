@@ -233,17 +233,17 @@
 	list_reagents = list(/datum/reagent/consumable/ethanol/rhaenvalmead = 50)
 	desc = "A bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to Rhaenish highlands."
 
-/obj/item/reagent_containers/glass/bottle/rogue/beer/avarmead
+/obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridmead
 	name = "bottle of Golden Mead"
 	icon_state = "plum_wine"
-	list_reagents = list(/datum/reagent/consumable/ethanol/avarmead = 50)
-	desc = "A bottle with a simple cork-seal. A golden honey-wine brewed in the Avar Steppes. Manages to keep a proper taste while staying strong."
+	list_reagents = list(/datum/reagent/consumable/ethanol/vruiridmead = 50)
+	desc = "A bottle with a simple cork-seal. A golden honey-wine brewed in the Vruirid Steppes. Manages to keep a proper taste while staying strong."
 
-/obj/item/reagent_containers/glass/bottle/rogue/beer/avarrice
-	name = "bottle of Aavnic White"
+/obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridrice
+	name = "bottle of Vruirid White"
 	icon_state = "white_wine"
-	list_reagents = list(/datum/reagent/consumable/ethanol/avarrice = 50)
-	desc = "A bottle with a simple cork-seal. A murky, white wine made from rice grown in the steppes of Avar."
+	list_reagents = list(/datum/reagent/consumable/ethanol/vruiridrice = 50)
+	desc = "A bottle with a simple cork-seal. A murky, white wine made from rice grown in the steppes of the Vruirid."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/saigamilk
 	name = "bottle of brewed Saiga Milk"
@@ -304,7 +304,7 @@
 	name = "bottle of Possumtail Swampweed Wine"
 	icon_state = "plum_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/murkwine = 50)
-	desc = "A bottle with a Possumtail Brewery mark. A special brew made from murky water and swampweed. A Heartfelt special."
+	desc = "A bottle with a Possumtail Brewery mark. A special brew made from murky water and swampweed. A Weocilyn special."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/nocshine
 	name = "bottle of Nocshine"

@@ -57,7 +57,7 @@
 /obj/item/clothing/suit/roguetown/armor/leather/jacket/artijacket
 	name = "artificer jacket"
 	icon_state = "artijacket"
-	desc = "A thick leather jacket adorned with fur and cog decals. The height of Heartfelt fashion."
+	desc = "A thick leather jacket adorned with fur and cog decals. The height of Weocilyn fashion."
 
 /obj/item/clothing/suit/roguetown/armor/leather/cuirass
 	name = "leather cuirass"
@@ -203,7 +203,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/shepherd
 	name = "shepherd's vest"
-	desc = "A light, flexible leather vest worn by shepherds in the forested peaks of Aavnr."
+	desc = "A light, flexible leather vest worn by shepherds in the steppes of the Vruirid."
 	icon_state = "freijacket"
 	item_state = "freijacket"
 	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM

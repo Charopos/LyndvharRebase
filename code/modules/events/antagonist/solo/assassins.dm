@@ -10,8 +10,8 @@
 	shared_occurence_type = SHARED_MINOR_THREAT
 
 	restricted_roles = list(
-		"Grand Duke",
-		"Grand Duchess",
+		"Viscount",
+		"Viscountess",
 		"Consort",
 		"Sergeant",
 		"Men-at-arms",
@@ -22,8 +22,8 @@
 		"Martyr",
 		"Templar",
 		"Councillor",
-		"Prince",
-		"Princess",
+		"Heir",
+		"Heiress",
 		"Hand",
 		"Steward",
 		"Head Physician",

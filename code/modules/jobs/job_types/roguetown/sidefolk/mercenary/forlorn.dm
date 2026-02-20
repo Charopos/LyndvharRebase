@@ -7,7 +7,7 @@
 	class_select_category = CLASS_CAT_FORVHEIPAL
 	min_pq = 2
 	cmode_music = 'sound/music/combat_blackstar.ogg'
-	subclass_languages = list(/datum/language/celestial)
+	subclass_languages = list(/datum/language/forvheipan)
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_NOPAINSTUN, TRAIT_CRITICAL_RESISTANCE) // We're going back to the original gimmick of Forlorn Hope, having Critical Resistance
 	// Since we demoted them to light armor, I think it is fair they have access to expert weapons as that is also the unarmed barbarian gimmick

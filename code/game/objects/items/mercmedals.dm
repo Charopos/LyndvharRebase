@@ -57,9 +57,9 @@
 	name = "imperial gryphon"
 	desc = "A parody of the brass medal issued to Grenzelhoftian soldiers of great honor and renown. Frequently adopted as medals by other, younger guilds among the mercenaries of PSYDONIA, with slight adjustment."
 
-/obj/item/clothing/neck/roguetown/luckcharm/mercmedal/blackoak
+/obj/item/clothing/neck/roguetown/luckcharm/mercmedal/crestguardian
 	name = "guardian's seedpouch"
-	desc = "A pouch, sealed tight, bearing the acorn of an oak native to the Azure Basin. May your end be a new beginning for Azurea."
+	desc = "A pouch, sealed tight, bearing the acorn of an oak native to Greencrest. May your end be a new beginning for the Crestborne."
 	icon_state = "blackoak_pouch"
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/condottiero

@@ -217,7 +217,7 @@
 	if(ishuman(user))
 		var/mob/living/carbon/human/HU = user
 
-		if(HU.job != "Grand Duke")
+		if(HU.job != "Viscount")
 			to_chat(user, span_danger("The mace's divine authority doesn't recognize me."))
 			return
 

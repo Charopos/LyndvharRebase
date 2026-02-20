@@ -114,7 +114,7 @@
 	if(ishuman(user))
 		var/mob/living/carbon/human/HU = user
 
-		if(HU.job != "Grand Duke")
+		if(HU.job != "Viscount")
 			to_chat(user, span_danger("The rod doesn't obey me."))
 			return
 
@@ -330,7 +330,7 @@
 
 /obj/item/rogueweapon/katar/punchdagger/frei
 	name = "vývrtka"
-	desc = "A type of punch dagger of Aavnic make initially designed to level the playing field with an orc in fisticuffs, its serrated edges and longer, thinner point are designed to maximize pain for the recipient. It's aptly given the name of \"corkscrew\", and this specific one has the colours of Szöréndnížina. Can be worn on your ring slot."
+	desc = "A type of punch dagger of Vruirid make initially designed to level the playing field with an orc in fisticuffs, its serrated edges and longer, thinner point are designed to maximize pain for the recipient. It's aptly given the name of \"corkscrew\", and this specific one has the colours of Szöréndnížina. Can be worn on your ring slot."
 	force = 18
 	icon_state = "freiplug"
 	slot_flags = ITEM_SLOT_RING

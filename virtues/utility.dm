@@ -135,7 +135,7 @@
 		/datum/language/valorian,
 		/datum/language/calmirixian,
 		/datum/language/rhaenish,
-		/datum/language/aavnic,
+		/datum/language/greencrest,
 		/datum/language/forvheipan,
 		/datum/language/zybanti,
 	)

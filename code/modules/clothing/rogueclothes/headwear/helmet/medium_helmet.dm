@@ -215,7 +215,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/sallet/shishak
 	name = "steel shishak"
-	desc = "A flat decorated steel helmet of Aavnic make with a spike at the top end. A hanging layer of chainmail protects the sides of the head and even the neck."
+	desc = "A flat decorated steel helmet of Vruirid make with a spike at the top end. A hanging layer of chainmail protects the sides of the head and even the neck."
 	body_parts_covered = HEAD|EARS|HAIR|NECK
 	max_integrity = ARMOR_INT_HELMET_STEEL + 50
 	icon_state = "shishak"
@@ -334,11 +334,11 @@
 	icon_state = "elven_barbute_winged"
 	item_state = "elven_barbute_winged"
 
-/obj/item/clothing/head/roguetown/helmet/elvenbarbute/blackoak
+/obj/item/clothing/head/roguetown/helmet/elvenbarbute/crestguardian
 	desc = "An elven barbute with a thin gold plating designed for Elven Woodland guardians."
 	color = COLOR_ASSEMBLY_GOLD
 
-/obj/item/clothing/head/roguetown/helmet/elvenbarbute/winged/blackoak
+/obj/item/clothing/head/roguetown/helmet/elvenbarbute/winged/crestguardian
 	desc = "A winged version of the elven barbute with a thin gold plating designed for Elven Woodland guardians."
 	color = COLOR_ASSEMBLY_GOLD
 

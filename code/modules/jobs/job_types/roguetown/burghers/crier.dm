@@ -44,7 +44,9 @@
 		/datum/language/rhaenish,
 		/datum/language/yansheneze,
 		/datum/language/draconic,
-		/datum/language/aavnic, // All but beast, which is associated with werewolves.
+		/datum/language/greencrest,
+		/datum/language/zybanti,
+		/datum/language/forvheipan // All but beast, which is associated with werewolves.
 	)
 	category_tags = list(CTAG_TOWNCRIER)
 	subclass_stats = list(

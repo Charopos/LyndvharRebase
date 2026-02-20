@@ -163,7 +163,7 @@ UNDER NO CIRCUMSTANCE SHOULD ANY OF THE BOOKS BE GIVEN OUT INTO SPAWNERS OR TO B
 	desc = "If you got hold of this either spawn system screwed up somewhere or admin is trolling you, report THIS."
 	oneuse = TRUE
 	crafting_recipe_types = list(
-		/datum/crafting_recipe/roguetown/sewing/tailor/naledisash,
+		/datum/crafting_recipe/roguetown/sewing/tailor/khazumiasash,
 		/datum/crafting_recipe/roguetown/sewing/tailor/halfrobe,
 		/datum/crafting_recipe/roguetown/sewing/tailor/monkrobe,
 		/datum/crafting_recipe/roguetown/leather/unique/monkleather,
@@ -206,7 +206,7 @@ UNDER NO CIRCUMSTANCE SHOULD ANY OF THE BOOKS BE GIVEN OUT INTO SPAWNERS OR TO B
 	name = "Almanach of Heritage Tailoring"
 	desc = "A collection of images and instructions on how to assemble traditional outfits of more isolationist groups."
 	crafting_recipe_types = list(
-		/datum/crafting_recipe/roguetown/sewing/tailor/naledisash,
+		/datum/crafting_recipe/roguetown/sewing/tailor/khazumiasash,
 		/datum/crafting_recipe/roguetown/sewing/tailor/halfrobe,
 		/datum/crafting_recipe/roguetown/sewing/tailor/monkrobe,
 		/datum/crafting_recipe/roguetown/leather/unique/monkleather,
