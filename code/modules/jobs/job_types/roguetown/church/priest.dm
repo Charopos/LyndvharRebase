@@ -21,7 +21,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	allowed_races = RACES_SHUNNED_UP
 	allowed_patrons = ALL_DIVINE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
-	tutorial = "The Divine is all that matters in a world of the immoral. The Weeping God abandoned us, and in his stead the TEN rule over us mortals--and you will preach their wisdom to any who still heed their will. The faithless are growing in number. It is up to you to shepherd them toward a Gods-fearing future; for you are a Bishop of the Holy See."
+	tutorial = "In this time of strife and destruction, only the power of the PANTHEON is what truly matters against those of immorality. You have served the Ten for as long as you can remember- from your birth swaddled in cloth to your anointment as a member of the upper echelons of the Mother Church- bestowed with the position of Priest of Lyndvhar. You control and oversee the entire Church in this city, and are respected as such- with almost as much influence as the Viscount themself. Keep the spirits of those under you uplifted and the city faithful, for danger may always come from within."
 	whitelist_req = FALSE
 	cmode_music = 'sound/music/cmode/church/combat_astrata.ogg'
 
@@ -43,10 +43,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 /datum/advclass/bishop
 	name = "Bishop"
-	tutorial = "The Divine is all that matters in a world of the immoral. \
-	The Weeping God abandoned us, and in his stead the TEN rule over us mortals--and you will preach their wisdom to any who still heed their will. The faithless are growing in number. \
-	It is up to you to shepherd them toward a Gods-fearing future; for you are a Bishop of the Holy See. \
-	My closest patron may have blessed me, yet my allegiance remains true in harmonizing all 10 faiths."
+	tutorial = "In this time of strife and destruction, only the power of the PANTHEON is what truly matters against those of immorality. You have served the Ten for as long as you can remember- from your birth swaddled in cloth to your anointment as a member of the upper echelons of the Mother Church- bestowed with the position of Priest of Lyndvhar. You control and oversee the entire Church in this city, and are respected as such- with almost as much influence as the Viscount themself. Keep the spirits of those under you uplifted and the city faithful, for danger may always come from within."
 	outfit = /datum/outfit/job/roguetown/priest/basic
 	subclass_languages = list(/datum/language/grenzelhoftian)
 	category_tags = list(CTAG_BISHOP)
@@ -61,15 +58,17 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	subclass_skills = list(
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/staves = SKILL_LEVEL_MASTER,
-		/datum/skill/combat/polearms = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/staves = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/shields = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/reading = SKILL_LEVEL_LEGENDARY,
 		/datum/skill/misc/medicine = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/cooking = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/crafting = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/sewing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/labor/farming = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/magic/holy = SKILL_LEVEL_MASTER,
+		/datum/skill/magic/holy = SKILL_LEVEL_LEGENDARY,
 		/datum/skill/craft/alchemy = SKILL_LEVEL_JOURNEYMAN,
 	)
 	subclass_stashed_items = list(
@@ -92,7 +91,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	id = /obj/item/clothing/ring/active/nomag
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/needle/pestra = 1,
 		/obj/item/natural/worms/leech/cheele = 1, //little buddy
