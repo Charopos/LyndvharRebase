@@ -55,7 +55,7 @@
 	var/armor_class = ARMOR_CLASS_NONE
 
 	sellprice = 1
-	var/naledicolor = FALSE
+	var/khazumiacolor = FALSE
 	var/chunkcolor = "#5e5e5e"
 	var/material_category = ARMOR_MAT_LEATHER
 

@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/fogbeast
 	name = "fogbeast mare"
-	desc = "A distant cousin to the saiga, hailing from the mysterious islands of Kaizoku - rarer, but more strongly valued. Extensively used in the Steppes of Aavnr as pack animals and combat mounts."
+	desc = "A distant cousin to the saiga, hailing from the mysterious western island of Zorn off the coast of Rhaenval - rarer, but more strongly valued. Extensively used in the Steppes of the Vruirid as pack animals and combat mounts."
 	icon = 'icons/roguetown/mob/monster/fogbeast.dmi'
 	icon_state = "fogbeast"
 	icon_living = "fogbeast"
@@ -191,7 +191,7 @@
 // FOAL
 /mob/living/simple_animal/hostile/retaliate/rogue/fogbeast/kid
 	name = "fogbeast filly"
-	desc = "A young fogbeast, likely to be running around with its mother. Fogbeasts are a distant cousin to the saiga, hailing from the mysterious islands of Kaizoku - rarer, but more strongly valued. Extensively used in the Steppes of Aavnr as pack animals and combat mounts."
+	desc = "A young fogbeast, likely to be running around with its mother. Fogbeasts are a distant cousin to the saiga, hailing from the mysterious island of Zorn off the western coast of Rhaenval - rarer, but more strongly valued. Extensively used in the Steppes of the Vruirid as pack animals and combat mounts."
 	icon = 'icons/roguetown/mob/monster/fogbeast.dmi'
 	icon_state = "foggie"
 	icon_living = "foggie"

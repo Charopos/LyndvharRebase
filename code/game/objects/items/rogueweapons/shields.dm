@@ -490,7 +490,7 @@
 
 /obj/item/rogueweapon/shield/iron/steppesman
 	name = "steppesman shield"
-	desc = "A banded iron shield decorated with traditional Aavnic colours, often seen in the hands of the Steppesmen."
+	desc = "A banded iron shield decorated with traditional Vruirid colours, often seen in the hands of the Steppesmen."
 	icon_state = "ironsh_steppeman"
 	max_integrity = 250 //+30
 

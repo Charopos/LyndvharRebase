@@ -171,7 +171,7 @@
 				to_chat(H, span_danger("I'm electrocuted by the Court Magos!"))
 				return
 
-/obj/item/rogueweapon/woodstaff/naledi
+/obj/item/rogueweapon/woodstaff/khazumia
 	cast_time_reduction = DIAMOND_CAST_TIME_REDUCTION
 	resistance_flags = FIRE_PROOF
 	sellprice = 40

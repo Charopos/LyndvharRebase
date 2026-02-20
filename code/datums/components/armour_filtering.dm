@@ -160,10 +160,10 @@ TRAIT UNIQUE PROCS
 			user.apply_status_effect(/datum/status_effect/buff/psydonic_endurance)
 		return
 
-	if(HAS_TRAIT(user, TRAIT_NALEDI) && id == "naledi_mask")
+	if(HAS_TRAIT(user, TRAIT_KHAZUMIA) && id == "khazumia_mask")
 		if(positive)
-			user.remove_status_effect(/datum/status_effect/debuff/lost_naledi_mask)
-			user.remove_stress(/datum/stressevent/naledimasklost)
+			user.remove_status_effect(/datum/status_effect/debuff/lost_khazumia_mask)
+			user.remove_stress(/datum/stressevent/khazumiamasklost)
 		return
 
 	if(HAS_TRAIT(user, TRAIT_JAILOR) && id == "dungeoneer")
@@ -182,16 +182,16 @@ TRAIT UNIQUE PROCS
 			user.remove_status_effect(/datum/status_effect/buff/psydonic_endurance)
 		return
 
-	if(HAS_TRAIT(user, TRAIT_NALEDI) && id == "naledi_mask")
+	if(HAS_TRAIT(user, TRAIT_KHAZUMIA) && id == "khazumia_mask")
 		if(positive)
 			if(istiefling(user))
 				return
-			if(user.has_status_effect(/datum/status_effect/debuff/lost_naledi_mask))
+			if(user.has_status_effect(/datum/status_effect/debuff/lost_khazumia_mask))
 				return
-			if(user.has_stress_event(/datum/stressevent/naledimasklost))
+			if(user.has_stress_event(/datum/stressevent/khazumiamasklost))
 				return
-			user.apply_status_effect(/datum/status_effect/debuff/lost_naledi_mask)
-			user.add_stress(/datum/stressevent/naledimasklost)
+			user.apply_status_effect(/datum/status_effect/debuff/lost_khazumia_mask)
+			user.add_stress(/datum/stressevent/khazumiamasklost)
 		return
 
 	return

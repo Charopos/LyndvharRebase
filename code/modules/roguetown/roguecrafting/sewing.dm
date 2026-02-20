@@ -1680,7 +1680,7 @@
 /datum/crafting_recipe/roguetown/sewing/tailor
 	always_availible = FALSE
 
-/datum/crafting_recipe/roguetown/sewing/tailor/naledisash
+/datum/crafting_recipe/roguetown/sewing/tailor/khazumiasash
 	name = "hierophant's sash"
 	category = "Cloaks"
 	result = list(/obj/item/clothing/cloak/hierophant)

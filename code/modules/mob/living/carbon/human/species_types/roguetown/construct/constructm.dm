@@ -6,7 +6,7 @@
 	name = "Metal Construct"
 	id = "constructm"
 	origin_default = /datum/virtue/origin/unknown
-	origin = "Naledi"
+	origin = "Unknown"
 	base_name = "Godtouched"
 	is_subrace = TRUE
 	desc = "<b>Metallic Construct</b><br>\

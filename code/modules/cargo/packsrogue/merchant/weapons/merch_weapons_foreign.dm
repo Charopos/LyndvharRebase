@@ -29,10 +29,10 @@
 	cost = 140
 	contains = list(/obj/item/rogueweapon/sword/sabre/shamshir)
 
-/datum/supply_pack/rogue/merc_weapons/naledistaff
-	name = "Naledi Warstaff"
+/datum/supply_pack/rogue/merc_weapons/khazumiastaff
+	name = "Khazumian Warstaff"
 	cost = 140
-	contains = list(/obj/item/rogueweapon/woodstaff/naledi)
+	contains = list(/obj/item/rogueweapon/woodstaff/khazumia)
 
 /datum/supply_pack/rogue/merc_weapons/grenzelstaff
 	name = "Grenzelhoftian Blacksteel Staff"
