@@ -147,7 +147,7 @@
 	user.changeNext_move(CLICK_CD_MELEE)
 	if(ishuman(user))
 		var/mob/living/carbon/human/HU = user
-		if(HU.job != "Court Magician")
+		if(HU.job != "Archmagus")
 			to_chat(user, span_danger("The staff doesn't obey me."))
 			return
 		if(ishuman(target))

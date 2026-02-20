@@ -3,7 +3,7 @@
 		"Viscount",\
 		"Consort",\
 		"Hand",\
-		"Court Magician",\
+		"Archmagus",\
 		"Marshal",\
 		"Knight",\
 		"Bishop",\

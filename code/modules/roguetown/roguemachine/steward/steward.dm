@@ -45,7 +45,7 @@
 	daily_payments["Servant"] = 20	
 	daily_payments["Practitioner"] = 20 //Doctors
 	daily_payments["Apothecary"] = 10
-	daily_payments["Court Magician"] = 40 //University
+	daily_payments["Archmagus"] = 40 //University
 	daily_payments["Archivist"] = 20
 	daily_payments["Magicians Associate"] = 10
 

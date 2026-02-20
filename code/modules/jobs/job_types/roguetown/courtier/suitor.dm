@@ -9,14 +9,14 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
 	advclass_cat_rolls = list(CTAG_CONSORT = 20)
-	tutorial = "You are a noble from a foreign court who has travelled to Lyndvhar in order to win the hand of its most eligible bachelor and secure a political ally for your house. Competition is fierce, and it seems you're not the only one vying for the duke's favor..."
+	tutorial = "You are a noble from a foreign court who has travelled to the city in order to win the hand of Lyndvhar's eligible ruler or his offspring and secure a political ally for your lesser house in this time of civil strife amongst the continent. Competition is fierce due to the city's relative isolation and safety from the war, and it seems you're not the only one vying for the Viscount's favor..."
 
 	outfit = /datum/outfit/job/roguetown/suitor
 
 	display_order = JDO_SUITOR
 	give_bank_account = 40
 	noble_income = 20
-	min_pq = 3
+	min_pq = 0
 	max_pq = null
 	round_contrib_points = 3
 	cmode_music = 'sound/music/combat_noble.ogg'
@@ -27,7 +27,7 @@
 
 /datum/advclass/suitor/envoy
 	name = "Envoy"
-	tutorial = "You're a graceful envoy - fluent in flattery, courtesy, and calculated sincerity. You'll charm your way into the Duke's heart, winning favor with warmth, wit, and well-timed smiles."
+	tutorial = "You're a graceful envoy - fluent in flattery, courtesy, and calculated sincerity. You'll charm your way into the Viscount's heart, winning favor with warmth, wit, and well-timed smiles."
 	outfit = /datum/outfit/job/roguetown/suitor/envoy
 	category_tags = list(CTAG_CONSORT)
 	traits_applied = list(TRAIT_SEEPRICES, TRAIT_NUTCRACKER, TRAIT_GOODLOVER)
@@ -88,7 +88,7 @@
 
 /datum/advclass/suitor/schemer
 	name = "Schemer"
-	tutorial = "You're a silver-tongued snake - master of whispers, poison, and perfectly timed accidents. Why win hearts when you can twist them? With rivals removed and secrets weaponized, the Duke will have no choice but to choose you."
+	tutorial = "You're a silver-tongued snake - master of whispers, poison, and perfectly timed accidents. Why win hearts when you can twist them? With rivals removed and secrets weaponized, the Viscount will have no choice but to choose you."
 	outfit = /datum/outfit/job/roguetown/suitor/schemer
 	traits_applied = list(TRAIT_ALCHEMY_EXPERT)
 	category_tags = list(CTAG_CONSORT)
@@ -143,7 +143,7 @@
 
 /datum/advclass/suitor/gallant
 	name = "Gallant"
-	tutorial = "With honor and the flash of your steel, you meet your rivals in open challenge. You'll win the Duke's favor not with whispers or warmth, but with roaring applause."
+	tutorial = "With honor and the flash of your steel, you meet your rivals in open challenge. You'll win the Viscount's favor not with whispers or warmth, but with roaring applause."
 	outfit = /datum/outfit/job/roguetown/suitor/gallant
 	category_tags = list(CTAG_CONSORT)
 	traits_applied = list(TRAIT_MEDIUMARMOR)
