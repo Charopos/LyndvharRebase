@@ -19,7 +19,7 @@
 	selection_color = JCOLOR_BURGHER
 	display_order = JDO_GUILDSMAN
 	give_bank_account = TRUE
-	min_pq = 0
+	min_pq = -1
 	max_pq = null
 	round_contrib_points = 3
 	advjob_examine = TRUE // So that everyone know which subjob they have picked
@@ -100,9 +100,9 @@
 
 /datum/advclass/guildsman/artificer
 	name = "Artificer"
-	tutorial = "You are an Artificer, oft known by the longer name of Artificer-Enchanter. You have basic training in the arts of smithing, and can substitute for a blacksmith's work if needed.\
+	tutorial = "You found a keen interest in ancient technologies lost forgotten, and thus have devoted yourself to artificery. You have basic training in the arts of smithing, and can substitute for a blacksmith's work if needed.\
 	But your true calling is the creation and enchantment of magical items, alongside feats of engineering, creating mechanical and magical wonders whose art of creation has been passed down\
-	from a certain elven Artificer..."
+	from ancient smiths of the Gilded Age.."
 	outfit = /datum/outfit/job/roguetown/guildsman/artificer
 
 	category_tags = list(CTAG_GUILDSMEN)
@@ -169,7 +169,7 @@
 
 /datum/advclass/guildsman/architect
 	name = "Architect"
-	tutorial = "You are a Guild Architect, a master of the art of building and construction. You build castles, fortifications and entire cities with your own hands. And you know how to source those materials yourself too.\
+	tutorial = "Unlike others, you found interest in the writing in stone- chiseling, masonry, and craftsmanship- a master artist of building and construction. You build castles, fortifications and entire cities with your own hands. And you know how to source those materials yourself too.\
 	When there is no construction work around, your fellow Guildsmen appreciate your help with gathering materials."
 	outfit = /datum/outfit/job/roguetown/guildsman/architect
 

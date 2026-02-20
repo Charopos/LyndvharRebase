@@ -47,7 +47,7 @@
 	tutorial = "You are a Knight of Weocilyn, once part of a brotherhood in service to your Lord. \
 	Now, alone and committed to safeguarding what remains of your court, you ride to the Peaks, resolved to ensure their safe arrival."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_NO_CONSTRUCT
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/weocilyn/knight
 	maximum_possible_slots = 1
 	pickprob = 100
