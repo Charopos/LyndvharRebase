@@ -43,7 +43,6 @@
 		/datum/advclass/wretch/plaguebearer,
 		/datum/advclass/wretch/pyromaniac,
 		/datum/advclass/wretch/vigilante,
-		/datum/advclass/wretch/blackoakwyrm,
 		/datum/advclass/wretch/munitioneer
 	)
 

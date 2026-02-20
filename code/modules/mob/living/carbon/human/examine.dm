@@ -149,7 +149,7 @@
 			else
 				. += span_notice("A noble!")
 
-		if((HAS_TRAIT(user, TRAIT_BLACKOAK) && !(src.dna.species.name == "Elf" || src.dna.species.name == "Dark Elf" || src.dna.species.name == "Half-Elf")))
+		if((HAS_TRAIT(user, TRAIT_PARANOIA) && !(src.dna.species.name == "Elf" || src.dna.species.name == "Dark Elf" || src.dna.species.name == "Half-Elf")))
 			. += span_phobia("An invader...")
 
 		//For tennite schism god-event
