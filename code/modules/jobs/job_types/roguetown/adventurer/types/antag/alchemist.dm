@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/job/roguetown/bandit/hedgealchemist
 	category_tags = list(CTAG_BANDIT)
 	maximum_possible_slots = 2
-	cmode_music = 'sound/music/combat_physician.ogg'
+	cmode_music = 'sound/music/combat_poacher.ogg'
 	traits_applied = list(TRAIT_MEDICINE_EXPERT, TRAIT_NOSTINK, TRAIT_ALCHEMY_EXPERT, TRAIT_EXPLOSIVE_SUPPLY, TRAIT_BOMBER_EXPERT)
 	subclass_stats = list(
 		STATKEY_INT = 4,
@@ -47,8 +47,8 @@
 	l_hand = /obj/item/rogueweapon/sword/rapier
 	beltr = /obj/item/rogueweapon/scabbard/sword
 	pants = /obj/item/clothing/under/roguetown/trou
-	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
-	backr = /obj/item/storage/backpack/rogue/satchel
+	shoes = /obj/item/clothing/shoes/roguetown/boots
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	id = /obj/item/mattcoin
 	backpack_contents = list(
 					/obj/item/natural/worms/leech/cheele = 1,
