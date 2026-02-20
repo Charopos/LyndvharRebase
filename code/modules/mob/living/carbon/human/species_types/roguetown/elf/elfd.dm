@@ -31,10 +31,6 @@
 	use_skin_tone_wording_for_examine = FALSE
 	max_age = 850
 
-	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,OLDGREY)
-	allowed_taur_types = list(
-		/obj/item/bodypart/taur/spider,
-	)
 	default_features = MANDATORY_FEATURE_LIST
 	use_skintones = TRUE
 	disliked_food = NONE

@@ -98,7 +98,6 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
-	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	beltr = /obj/item/storage/keyring/magician
 	beltl = /obj/item/storage/magebag/associate

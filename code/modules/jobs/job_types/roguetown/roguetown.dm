@@ -39,7 +39,6 @@
 	belt = null
 	back = null
 	shoes = null
-	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes
 	box = null
 	/// List of patrons we are allowed to use
 	var/list/allowed_patrons

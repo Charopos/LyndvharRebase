@@ -29,7 +29,7 @@
 	var/limbs_regenerated = 0
 	var/max_limbs_to_regenerate = 3
 	var/outline_colour = "#FFD700"
-	var/static/list/regenerable_zones = list(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG, BODY_ZONE_TAUR)
+	var/static/list/regenerable_zones = list(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 
 #define MIRACLE_HEALING_FILTER "pestra_heal_glow"
 

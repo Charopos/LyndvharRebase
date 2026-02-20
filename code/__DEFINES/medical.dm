@@ -5,7 +5,6 @@
 #define BODY_ZONE_R_ARM		"r_arm"
 #define BODY_ZONE_L_LEG		"l_leg"
 #define BODY_ZONE_R_LEG		"r_leg"
-#define BODY_ZONE_TAUR		"taur"
 
 #define BODY_ZONE_PRECISE_SKULL		"skull"
 #define BODY_ZONE_PRECISE_EARS		"ears"
@@ -83,7 +82,6 @@
 #define ORGAN_SLOT_HEAD_FEATURE "head_feature"
 #define ORGAN_SLOT_BACK_FEATURE "back_feature"
 #define ORGAN_SLOT_TAIL_FEATURE "tail_feature"
-#define ORGAN_SLOT_TAUR_BODY "taur_body"
 #define ORGAN_SLOT_WINGS "wings"
 #define ORGAN_SLOT_SNOUT "snout"
 

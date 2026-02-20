@@ -62,7 +62,6 @@
 	pants = /obj/item/clothing/under/roguetown/tights
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/seneschal
@@ -103,7 +102,6 @@
 	armor = /obj/item/clothing/suit/roguetown/shirt/dress/maid
 	cloak = /obj/item/clothing/cloak/apron/waist/maid
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
-	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather/sash/maid
 	beltr = /obj/item/storage/keyring/seneschal
@@ -141,7 +139,6 @@
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/seneschal
