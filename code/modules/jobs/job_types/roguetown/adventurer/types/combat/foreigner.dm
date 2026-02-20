@@ -2,7 +2,13 @@
 	name = "Eastern Warrior"
 	tutorial = "A warrior hailing from the distant land of Yanshen, far across the Splitstern sea."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = NON_DWARVEN_RACE_TYPES // Clothing has no dwarf sprites.
+	allowed_races = list(
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/demihuman,
+		/datum/species/vulpkanin,
+	)
 	outfit = /datum/outfit/job/roguetown/adventurer/foreigner
 	class_select_category = CLASS_CAT_NOMAD
 	traits_applied = list(TRAIT_STEELHEARTED)
@@ -34,7 +40,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	belt = /obj/item/storage/belt/rogue/leather/black
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/recipe_book/survival = 1,
 		/obj/item/flashlight/flare/torch/lantern,
@@ -47,24 +53,30 @@
 			if("Naginata")
 				r_hand = /obj/item/rogueweapon/spear/naginata
 				backr = /obj/item/rogueweapon/scabbard/gwstrap
-				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 3, TRUE)
 				armor = /obj/item/clothing/suit/roguetown/armor/basiceast/mentorsuit
 			if("Quarterstaff")
 				backr = /obj/item/rogueweapon/woodstaff/quarterstaff/steel
-				H.adjust_skillrank_up_to(/datum/skill/combat/staves, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/staves, 3, TRUE)
 				armor = /obj/item/clothing/suit/roguetown/armor/basiceast/mentorsuit
 			if("Hwando")
 				beltl = /obj/item/rogueweapon/sword/sabre/mulyeog
 				beltr = /obj/item/rogueweapon/scabbard/sword/yanshen
 				armor = /obj/item/clothing/suit/roguetown/armor/basiceast
 				H.adjust_skillrank_up_to(/datum/skill/combat/shields, 3, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 
 /datum/advclass/foreigner/jiandie
 	name = "Eastern Assassin"
 	tutorial = "The Jiandie are Yansheneze agents trained in assassination, sabotage, and irregular combat. You are armed with daggers or a short sword, perfect \
 	for combat in the tight confines of castles and back alleys."
-	allowed_races = NON_DWARVEN_RACE_TYPES //Clothing has no dwarf sprites.
+	allowed_races = list(
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/demihuman,
+		/datum/species/vulpkanin,
+	)
 	outfit = /datum/outfit/job/roguetown/adventurer/jiandie
 	subclass_languages = list(/datum/language/yansheneze)
 	cmode_music = 'sound/music/combat_kazengite.ogg'
@@ -113,11 +125,11 @@
 			if("Tanto")
 				beltr = /obj/item/rogueweapon/huntingknife/idagger/steel/yanshen
 				beltl = /obj/item/rogueweapon/scabbard/sheath/yanshen
-				H.adjust_skillrank_up_to(/datum/skill/combat/knives, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/knives, 3, TRUE)
 			if("Kodachi")
 				beltr = /obj/item/rogueweapon/sword/short/yanshen
 				beltl = /obj/item/rogueweapon/scabbard/sword/yanshen/kodachi
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 		var/masks = list("Oni","Kitsune")
 		var/mask_choice = input(H, "Choose your mask.", "HIDE YOURSELF") as anything in masks
 		switch(mask_choice)
@@ -131,7 +143,7 @@
 	tutorial = "An exile from the Valorian Bisphoric, accused of heresy and cast out of your homeland as penance. \
 	Some consider yours a fate worse than death; the metal alloy mask seared onto your face serving as a permanent reminder of your sins. \
 	You are a living example of what becomes of those who stand in defiance of the Valorian inquisition."
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/repentant
 	subclass_languages = list(/datum/language/valorian)
 	cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
@@ -150,7 +162,7 @@
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/whipsflails = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/whipsflails = SKILL_LEVEL_JOURNEYMAN,
 	)
 
 /datum/outfit/job/roguetown/adventurer/repentant/pre_equip(mob/living/carbon/human/H)
@@ -175,7 +187,7 @@
 /datum/advclass/foreigner/refugee
 	name = "Khaliphate Wanderer"
 	tutorial = "A wanderer who has travelled far and across the sea from Khazumia, driven here in exploration of the war-torn ruins of Lyndhardtia."
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/refugee
 	subclass_languages = list(/datum/language/celestial)
 	cmode_music = 'sound/music/warscholar.ogg'
@@ -193,7 +205,7 @@
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/polearms = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
 	)
 
 /datum/outfit/job/roguetown/adventurer/refugee/pre_equip(mob/living/carbon/human/H)
@@ -202,7 +214,7 @@
 	mask = /obj/item/clothing/mask/rogue/lordmask/tarnished
 	r_hand = /obj/item/rogueweapon/spear/assegai
 	backl = /obj/item/rogueweapon/scabbard/gwstrap
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	wrists = /obj/item/clothing/neck/roguetown/psicross/khazumia
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/civilian
@@ -215,13 +227,13 @@
 						/obj/item/rogueweapon/huntingknife = 1)
 
 /datum/advclass/foreigner/slaver
-	name = "Ranesheni Slaver"
-	tutorial = "In parts of Psydonia, the practice of slavery is still a common sight. \
-	You hail from the Ranesheni Empire, where the market of flesh is ancient and unbroken, and your coin is earned in the trade of living souls."
+	name = "Forvheipal Slaver"
+	tutorial = "In parts of Beowricke, the practice of slavery is still a common sight. \
+	You hail from the Kingdom of Forvheipal, where the market of flesh is ancient and unbroken, and your coin is earned in the trade of living souls."
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/slaver
 	subclass_languages = list(/datum/language/celestial)
-	cmode_music = 'sound/music/combat_desertrider.ogg'
+	cmode_music = 'sound/music/combat_blackstarstar.ogg'
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
 		STATKEY_STR = 2,
@@ -235,7 +247,7 @@
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/maces = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/whipsflails = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/shields = SKILL_LEVEL_JOURNEYMAN,
 	) // Spawns with a variety of jman skills and fairly good medium armor.
@@ -243,27 +255,28 @@
 
 /datum/outfit/job/roguetown/adventurer/slaver/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("In parts of Psydonia, the practice of slavery is still a common sight. \
-	You hail from the Ranesheni Empire, where the market of flesh is ancient and unbroken, and your coin is earned in the trade of living souls."))
+	to_chat(H, span_warning("In parts of Beowricke, the practice of slavery is still a common sight. \
+	You hail from the Kingdom of Forvheipal, where the market of flesh is ancient and unbroken, and your coin is earned in the trade of living souls."))
 	mask = /obj/item/clothing/mask/rogue/facemask/steel
-	head = /obj/item/clothing/head/roguetown/roguehood/shalal/purple
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	shoes = /obj/item/clothing/shoes/roguetown/shalal
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	gloves = /obj/item/clothing/gloves/roguetown/angle
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/purple
-	belt = /obj/item/storage/belt/rogue/leather/shalal/purple
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
-	cloak = /obj/item/clothing/cloak/cape/purple
+	head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/black
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/brigandine
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	pants = /obj/item/clothing/under/roguetown/brigandinelegs
+	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+	belt = /obj/item/storage/belt/rogue/leather/battleskirt/black
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
+	cloak = /obj/item/clothing/cloak/thief_cloak/jiandie
 	backr = /obj/item/rogueweapon/shield/heater
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	beltr = /obj/item/rogueweapon/sword/long/shotel
+	beltr = /obj/item/rogueweapon/mace/steel/morningstar
 	backpack_contents = list(/obj/item/rope/chain = 2, 
 							/obj/item/storage/belt/rogue/pouch/coins/poor = 1, 
 							/obj/item/recipe_book/survival = 1, 
-							/obj/item/rogueweapon/huntingknife = 1)
+							/obj/item/rogueweapon/huntingknife = 1,
+							/obj/item/rogueweapon/scabbard/sheath = 1,)
 
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/civilian
@@ -360,18 +373,18 @@
 		var/weapon_choice = input(H, "Choose your expertise.", "TAKE UP ARMS") as anything in weapons
 		switch(weapon_choice)
 			if("Balanced Longsword")
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_EXPERT, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				l_hand = /obj/item/rogueweapon/sword/long/fencerguy
 				r_hand = /obj/item/rogueweapon/huntingknife/combat
 				backr = /obj/item/rogueweapon/scabbard/sword
 			if("Spear & Punch Dagger")
-				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_EXPERT, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/unarmed, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				l_hand = /obj/item/rogueweapon/spear/boar
 				r_hand = /obj/item/rogueweapon/katar/punchdagger
 				backr = /obj/item/rogueweapon/scabbard/gwstrap
 			if("Sabre")
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_EXPERT, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				l_hand = /obj/item/rogueweapon/sword/sabre
 				r_hand = /obj/item/rogueweapon/huntingknife/idagger
 				beltr = /obj/item/rogueweapon/scabbard/sword
@@ -380,9 +393,9 @@
 	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves
 	neck = /obj/item/clothing/neck/roguetown/fencerguard/generic
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	shoes = /obj/item/clothing/shoes/roguetown/grenzelhoft
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	backpack_contents = list(
 		/obj/item/flashlight/flare/torch = 1,
