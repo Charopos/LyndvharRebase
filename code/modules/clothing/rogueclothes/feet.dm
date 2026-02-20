@@ -568,15 +568,6 @@
 	image.pixel_y = -1
 	return image
 
-/obj/item/clothing/shoes/roguetown/horseshoes/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning)
-	var/mob/living/equipped_to_mob = equipper || M
-	var/obj/item/bodypart/taur/taur = equipped_to_mob.get_taur_tail()
-	if(!istype(taur, /obj/item/bodypart/taur/horse))
-		if(!disable_warning)
-			to_chat(M, span_warning("These horseshoes can only be equipped by beings with hooves."))
-		return FALSE
-	return ..()
-
 /obj/item/clothing/shoes/roguetown/horseshoes/steel
 	name = "steel horseshoes"
 	desc = "A pair of robust steel horseshoes nailed onto thick leather soles. These are ready to be attached to some hooves."

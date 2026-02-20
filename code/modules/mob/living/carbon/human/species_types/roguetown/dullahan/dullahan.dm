@@ -16,12 +16,6 @@
 	use_skin_tone_wording_for_examine = FALSE
 	max_age = "???"
 
-	allowed_taur_types = list(
-		/obj/item/bodypart/taur/lamia,
-		/obj/item/bodypart/taur/spider,
-		/obj/item/bodypart/taur/horse,
-		/obj/item/bodypart/taur/goat,
-	)
 	base_name = "Godtouched"
 	is_subrace = TRUE
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS)

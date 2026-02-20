@@ -218,9 +218,6 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 	var/datum/familiar_prefs/familiar_prefs
 
-	var/taur_type = null
-	var/taur_color = "ffffff"
-
 	/// Assoc list of culinary preferences, where the key is the type of the culinary preference, and value is food/drink typepath
 	var/list/culinary_preferences = list()
 
@@ -307,7 +304,6 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	randomize_all_customizer_accessories()
 	reset_descriptors()
 	virtue_origin = new pref_species.origin_default
-	taur_type = null
 
 #define APPEARANCE_CATEGORY_COLUMN "<td valign='top' width='14%'>"
 #define MAX_MUTANT_ROWS 4
@@ -472,12 +468,6 @@ GLOBAL_LIST_EMPTY(chosen_names)
 				if(randomise[RANDOM_BODY] || randomise[RANDOM_BODY_ANTAG]) //doesn't work unless random body
 					dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_GENDER]'>Always Random Bodytype: [(randomise[RANDOM_GENDER]) ? "Yes" : "No"]</A>"
 					dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_GENDER_ANTAG]'>When Antagonist: [(randomise[RANDOM_GENDER_ANTAG]) ? "Yes" : "No"]</A>"
-
-			if(LAZYLEN(pref_species.allowed_taur_types))
-				var/obj/item/bodypart/taur/T = taur_type
-				var/name = ispath(T) ? T::name : "None"
-				dat += "<b>Taur Body Type:</b> <a href='?_src_=prefs;preference=taur_type;task=input'>[name]</a><BR>"
-				dat += "<b>Taur Color:</b><span style='border: 1px solid #161616; background-color: #[taur_color];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=taur_color;task=input'>Change</a><BR>"
 
 			dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><BR>"
 
@@ -1753,29 +1743,6 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						voiceline.frequency = voice_pitch
 						user.playsound_local(user, vol = 100, S = voiceline)
 
-				if("taur_type")
-					var/list/species_taur_list = pref_species.get_taur_list()
-					if(!LAZYLEN(species_taur_list))
-						taur_type = null
-						to_chat(user, span_bad("There are no available taur bodies for this species."))
-						return
-
-					var/list/taur_selection = list("None")
-					for(var/obj/item/bodypart/taur/tt as anything in pref_species.get_taur_list())
-						taur_selection[tt::name] = tt
-
-					var/new_taur_type = tgui_input_list(user, "Choose your character's taur body", "TAUR BODY", taur_selection)
-					if(!new_taur_type)
-						return
-
-					if(new_taur_type == "None")
-						taur_type = null
-					else
-						taur_type = taur_selection[new_taur_type]
-
-					var/obj/item/bodypart/taur/tt = taur_type
-					to_chat(user, span_red("Your character now has [tt ? tt::name : "no taurtype."]."))
-
 				if("faith")
 					var/list/faiths_named = list()
 					for(var/path as anything in GLOB.preference_faiths)
@@ -2475,11 +2442,6 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						new_body_size = clamp(new_body_size * 0.01, BODY_SIZE_MIN, BODY_SIZE_MAX)
 						features["body_size"] = new_body_size
 
-				if("taur_color")
-					var/new_taur_color = color_pick_sanitized(user, "Choose your character's taur color:", "Character Preference", "#"+taur_color)
-					if(new_taur_color)
-						taur_color = sanitize_hexcolor(new_taur_color)
-
 				if("mutant_color")
 					var/new_mutantcolor = color_pick_sanitized(user, "Choose your character's mutant #1 color:", "Character Preference","#"+features["mcolor"])
 					if(new_mutantcolor)
@@ -3031,12 +2993,6 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		if(L)
 			for(var/X in L)
 				ADD_TRAIT(character, curse2trait(X), TRAIT_GENERIC)
-
-	if(taur_type)
-		character.Taurize(taur_type, "#[taur_color]")
-	else if(character_setup)
-		// This should only ever ~do~ anything for previews
-		character.ensure_not_taur()
 
 	if(icon_updates)
 		character.update_body()

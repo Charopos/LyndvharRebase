@@ -831,14 +831,11 @@
 /mob/living/carbon/human/proc/get_best_worn_armor(def_zone, d_type)
 	var/protection = 0
 	var/obj/item/clothing/used
-	if(def_zone == BODY_ZONE_TAUR)
-		def_zone = pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
-	else if(get_taur_tail())
-		switch(def_zone)
-			if(BODY_ZONE_PRECISE_L_FOOT)
-				def_zone = BODY_ZONE_L_LEG
-			if(BODY_ZONE_PRECISE_R_FOOT)
-				def_zone = BODY_ZONE_R_LEG
+	switch(def_zone)
+		if(BODY_ZONE_PRECISE_L_FOOT)
+			def_zone = BODY_ZONE_L_LEG
+		if(BODY_ZONE_PRECISE_R_FOOT)
+			def_zone = BODY_ZONE_R_LEG
 	var/list/body_parts = list(skin_armor, head, wear_mask, wear_wrists, gloves, wear_neck, cloak, wear_armor, wear_shirt, shoes, wear_pants, backr, backl, belt, s_store, glasses, ears, wear_ring) //Everything but pockets. Pockets are l_store and r_store. (if pockets were allowed, putting something armored, gloves or hats for example, would double up on the armor)
 	for(var/bp in body_parts)
 		if(!bp)
@@ -858,14 +855,11 @@
 
 /// Helper proc that returns the worn item ref that has the highest rating covering the def_zone (targeted zone) for the d_type (damage type). Returns the whole list of items that cover def_zone, from highest rating to lowest.
 /mob/living/carbon/human/proc/get_best_worn_armor_layered(def_zone, d_type)
-	if(def_zone == BODY_ZONE_TAUR)
-		def_zone = pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
-	else if(get_taur_tail())
-		switch(def_zone)
-			if(BODY_ZONE_PRECISE_L_FOOT)
-				def_zone = BODY_ZONE_L_LEG
-			if(BODY_ZONE_PRECISE_R_FOOT)
-				def_zone = BODY_ZONE_R_LEG
+	switch(def_zone)
+		if(BODY_ZONE_PRECISE_L_FOOT)
+			def_zone = BODY_ZONE_L_LEG
+		if(BODY_ZONE_PRECISE_R_FOOT)
+			def_zone = BODY_ZONE_R_LEG
 	var/list/body_parts = list(skin_armor, head, wear_mask, wear_wrists, gloves, wear_neck, cloak, wear_armor, wear_shirt, shoes, wear_pants, backr, backl, belt, s_store, glasses, ears, wear_ring) //Everything but pockets. Pockets are l_store and r_store. (if pockets were allowed, putting something armored, gloves or hats for example, would double up on the armor)
 	var/list/used_armor = list()
 	for(var/bp in body_parts)

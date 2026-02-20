@@ -35,9 +35,6 @@
 	/// Type path of item to go in shoes slot
 	var/shoes = null
 
-	/// Type path of item that goes in the shoes slot if the mob is a saiga taur
-	var/saiga_shoes = null
-
 	/// Type path of item to go in head slot
 	var/head = null
 
@@ -191,10 +188,6 @@
 		H.equip_to_slot_or_del(SSwardrobe.provide_type(belt, H), SLOT_BELT, TRUE)
 	if(gloves)
 		H.equip_to_slot_or_del(SSwardrobe.provide_type(gloves, H), SLOT_GLOVES, TRUE)
-	if(saiga_shoes)
-		var/obj/item/bodypart/taur/taur = H.get_taur_tail()
-		if(istype(taur, /obj/item/bodypart/taur/horse))
-			H.equip_to_slot_or_del(SSwardrobe.provide_type(saiga_shoes, H), SLOT_SHOES, TRUE)
 	if(shoes)
 		H.equip_to_slot_or_del(SSwardrobe.provide_type(shoes, H), SLOT_SHOES, TRUE)
 	if(head)
@@ -447,7 +440,6 @@
 	preload += belt
 	preload += gloves
 	preload += shoes
-	preload += saiga_shoes
 	preload += head
 	preload += mask
 	preload += neck
