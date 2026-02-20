@@ -10,11 +10,11 @@
 	allowed_patrons = ALL_DIVINE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/job/roguetown/monk
-	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble acolyte is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Bishop in their daily tasks, maybe today will be the day something interesting happens."
+	tutorial = "Chores, some more chores- and even more chores.. oh how the life of a humble acolyte is exhausting! You have faith, having found safety and security in the arms of the Mother Church from the dangers of the realm lurking outside the wall. Assist the Priest in their daely tasks, and maybe today will be the day something interesting happens in your boring routine."
 
 	display_order = JDO_ACOLYTE
 	give_bank_account = TRUE
-	min_pq = 1 //A step above sexton, should funnel new players to the sexton role to learn miracles at a more sedate pace
+	min_pq = -2
 	max_pq = null
 	round_contrib_points = 5
 
@@ -28,9 +28,8 @@
 
 /datum/advclass/acolyte
 	name = "Acolyte"
-	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble acolyte is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Bishop in their daily tasks, maybe today will be the day something interesting happens."
+	tutorial = "Chores, some more chores- and even more chores.. oh how the life of a humble acolyte is exhausting! You have faith, having found safety and security in the arms of the Mother Church from the dangers of the realm lurking outside the wall. Assist the Priest in their daely tasks, and maybe today will be the day something interesting happens in your boring routine."
 	outfit = /datum/outfit/job/roguetown/monk/basic
-	subclass_languages = list(/datum/language/grenzelhoftian)
 	category_tags = list(CTAG_ACOLYTE)
 	subclass_stats = list(
 		STATKEY_INT = 3,
@@ -68,7 +67,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltl = /obj/item/storage/keyring/acolyte
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(/obj/item/ritechalk)
 	H.cmode_music = 'sound/music/cmode/church/combat_acolyte.ogg' // has to be defined here for the selection below to work. sm1 please rewrite cmusic to apply pre-equip.
 	switch(H.patron?.type)
