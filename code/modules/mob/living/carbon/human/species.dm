@@ -23,7 +23,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/origin = "Lyndhardt"
 	var/origin_default = /datum/virtue/origin/lyndhardt
 	var/max_age = 75
-	var/is_subrace = FALSE
+	var/is_subrace = FALSE // Do not put this on the default pick for the category (ex. wildkin for beastvolk). It will not initialise the list otherwise (it breaks everything).
 	var/list/offset_features = list(OFFSET_ID = list(0,0), OFFSET_GLOVES = list(0,0),\
 	OFFSET_CLOAK = list(0,0), OFFSET_FACEMASK = list(0,0), OFFSET_HEAD = list(0,0), \
 	OFFSET_FACE = list(0,0), OFFSET_BELT = list(0,0), OFFSET_BACK = list(0,0), \
