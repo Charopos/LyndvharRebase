@@ -8,7 +8,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP		//Would you trust a machine to handle a role that requires non-logical intuition and commanding? Maybe. Could undo this if the community likes it. Purpose-built supermachines sound cool, too.
 	allowed_patrons = list(/datum/patron/old_god) //Requires your character's patron to be Psydon. This role is explicitly designed to be played by Psydonites, only, and almost everything they have - down to the equipment and statblock - is rooted in Psydonism. Do NOT make this accessable to other faiths, unless you go through the efforts of redesigning it from the ground up.
-	tutorial = "You are a puritan of unmatched aptitude, adherent to the Psydonic doctrine and entrusted with the authority to lead a local sect. Valoria - the largest Psydonic realm in Beowricke - has seen it fit to treat you like a silver-tipped olive branch, gifted to Lyndvhar to ward off the encroaching darkness. Tread carefully when pursuing your missives, lest the faithless strap you to the pyre as well."
+	tutorial = "You are the direct hand of the Psydonic inquisition. You have been sent by the Bisphoric of Valoria, the leading realm of the Psydonian Orthodoxy, on a diplomatic misssion.. officially, that is. Unofficially, you work to cast out the sinners from Psydon's house. Heresy of all kinds must be corrected; from Pantheon-worshippers that stray too far towards heretical thought, to fools that worship the Daemons, and converting those willing. The city of Lyndvhar tolerates you due to your ability to fight the daemonic, and the Pantheonic Church tolerates you due to your aligned goals.. but it is probably best to not let them peer too closely."
 	whitelist_req = TRUE
 	cmode_music = 'sound/music/inquisitorcombat.ogg'
 	selection_color = JCOLOR_INQUISITION
@@ -17,7 +17,7 @@
 	display_order = JDO_INQUISITOR
 	advclass_cat_rolls = list(CTAG_INQUSITOR = 20)
 	give_bank_account = 30
-	min_pq = 10
+	min_pq = 0
 	max_pq = null
 	round_contrib_points = 2
 	job_subclasses = list(

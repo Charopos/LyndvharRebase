@@ -13,7 +13,7 @@
 	subclass_skills = list(
 		/datum/skill/misc/music = SKILL_LEVEL_MASTER,
 		/datum/skill/magic/holy = SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/knives = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
@@ -82,11 +82,11 @@
 	switch(weapon_choice)
 		if("Psydonic Whip")
 			H.put_in_hands(new /obj/item/rogueweapon/whip/psywhip_lesser(H))
-			H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 4, TRUE)
+			H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 3, TRUE)
 		if("Psydonic Shortsword")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/short/psy(H))
 			H.put_in_hands(new /obj/item/rogueweapon/scabbard/sword(H))
-			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 	change_origin(H, /datum/virtue/origin/valoria, "Holy order")
 /datum/outfit/job/roguetown/psyaltrist
 	job_bitflag = BITFLAG_HOLY_WARRIOR
