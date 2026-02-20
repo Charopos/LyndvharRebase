@@ -713,7 +713,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				return FALSE
 			if( !(I.slot_flags & ITEM_SLOT_SHOES) )
 				return FALSE
-			var/obj/item/clothing/shoes = I
 			if(num_legs < 1)
 				return FALSE
 			if(DIGITIGRADE in species_traits)
