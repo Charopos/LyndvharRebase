@@ -36,7 +36,7 @@
 	to_chat(H, span_warning("You are a treasure hunter trained in hunting for valuables. Discern what is treasure or not, your fortune could be hidden anywhere."))
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
@@ -59,7 +59,7 @@
 		switch(weapon_choice)
 			if("Sabre")
 				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
-				beltr = /obj/item/rogueweapon/sword/sabre
+				beltr = /obj/item/rogueweapon/sword/saber/iron
 				r_hand = /obj/item/rogueweapon/scabbard/sword
 			if("Whip")
 				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, SKILL_LEVEL_JOURNEYMAN, TRUE)
@@ -160,7 +160,7 @@
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/steel
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	cloak = /obj/item/clothing/cloak/half/red
 	backpack_contents = list(
 		/obj/item/lockpick = 1,
@@ -227,7 +227,7 @@
 	pants = /obj/item/clothing/under/roguetown/tights/sailor
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor/red
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backr = /obj/item/rogue/instrument/hurdygurdy
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/iron
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather

@@ -30,17 +30,17 @@
 /datum/outfit/job/roguetown/adventurer/noble/pre_equip(mob/living/carbon/human/H)
 	..()
 	to_chat(H, span_warning("You are a traveling noble visiting foreign lands. With wealth, come the poor, ready to pilfer you of your hard earned (inherited) coin, so tread lightly unless you want to meet a grizzly end."))
-	shoes = /obj/item/clothing/shoes/roguetown/boots
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltr = /obj/item/flashlight/flare/torch/lantern
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
-	id = /obj/item/clothing/ring/silver
+	id = /obj/item/clothing/ring/gold
 	beltl = /obj/item/rogueweapon/sword/sabre/dec
 	l_hand = /obj/item/rogueweapon/scabbard/sword/noble
 	if(should_wear_masc_clothes(H))
-		cloak = /obj/item/clothing/cloak/half/red
-		shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/red
+		cloak = /obj/item/clothing/cloak/raincloak/red
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/red
 		pants = /obj/item/clothing/under/roguetown/tights/black
 	if(should_wear_femme_clothes(H))
 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/gen/purple
@@ -54,6 +54,7 @@
 /datum/advclass/noble/knighte
 	name = "Knight Errant"
 	tutorial = "You are a knight from a distant land, a scion of a noble house visiting Lyndvhar for one reason or another."
+	maximum_possible_slots = 2
 	outfit = /datum/outfit/job/roguetown/adventurer/knighte
 	traits_applied = list(TRAIT_NOBLE, TRAIT_HEAVYARMOR)
 	subclass_stats = list(
@@ -83,16 +84,12 @@
 	if(H.mind)
 		to_chat(H, span_warning("You are a knight from a distant land, a scion of a noble house visiting Lyndvhar for one reason or another."))
 		var/helmets = list(
-			"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
+			"Sallet Helmet" 	= /obj/item/clothing/head/roguetown/helmet/sallet/iron,
 			"Guard Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/guard,
-			"Barred Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/sheriff,
-			"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket,
-			"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
-			"Visored Sallet"			= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
-			"Armet"				= /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet,
-			"Hounskull Bascinet" 		= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull,
-			"Calmirixian Bascinet" 		= /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia,
-			"Slitted Kettle"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
+			"Kettle Helmet"		= /obj/item/clothing/head/roguetown/helmet/kettle/iron,
+			"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket/iron,
+			"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/iron,
+			"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron,
 			"None"
 			)
 		var/helmchoice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmets
@@ -101,15 +98,15 @@
 
 		var/armors = list(
 			"Light Brigandine"		= /obj/item/clothing/suit/roguetown/armor/brigandine/light,
-			"Cuirass"	= /obj/item/clothing/suit/roguetown/armor/plate/cuirass,
-			"Half-Plate"		= /obj/item/clothing/suit/roguetown/armor/plate,
+			"Cuirass"	= /obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron,
+			"Half-Plate"		= /obj/item/clothing/suit/roguetown/armor/plate/iron,
 			"Fancy Coat"		= /obj/item/clothing/suit/roguetown/shirt/tunic/noblecoat
 			)
 		var/armorchoice = input(H, "Choose your armor.", "TAKE UP ARMOR") as anything in armors
 		armor = armors[armorchoice]
 
 		var/shirts = list(
-			"Gambeson"	= /obj/item/clothing/suit/roguetown/armor/gambeson/heavy,
+			"Gambeson"	= /obj/item/clothing/suit/roguetown/armor/gambeson,
 			"Hauberk"	= /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
 			"Gilded Dress Shirt" = /obj/item/clothing/suit/roguetown/shirt/dress/royal/prince,
 			)
@@ -122,7 +119,7 @@
 	neck = /obj/item/clothing/neck/roguetown/bevor/iron
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
@@ -145,12 +142,12 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				beltr = /obj/item/rogueweapon/mace
-				backr = /obj/item/rogueweapon/shield/tower/metal
+				backr = /obj/item/rogueweapon/shield/iron
 			if("Flail + Shield")
 				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				beltr = /obj/item/rogueweapon/flail
-				backr = /obj/item/rogueweapon/shield/tower/metal
+				backr = /obj/item/rogueweapon/shield/iron
 			if("Greatflail")
 				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				r_hand = /obj/item/rogueweapon/flail/peasantwarflail/iron
@@ -170,6 +167,7 @@
 /datum/advclass/noble/squire
 	name = "Squire Errant"
 	tutorial = "You are a squire who has traveled far in search of a master to train you and a lord to knight you."
+	maximum_possible_slots = 2
 	outfit = /datum/outfit/job/roguetown/adventurer/squire
 	traits_applied = list(TRAIT_SQUIRE_REPAIR)
 	subclass_stats = list(
@@ -204,7 +202,7 @@
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	belt = /obj/item/storage/belt/rogue/leather
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1, 
@@ -219,7 +217,7 @@
 		var/armor_choice = input(H, "Choose your armor.", "TAKE UP ARMS") as anything in armors
 		switch(armor_choice)
 			if("Light Armor")
-				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 				pants = /obj/item/clothing/under/roguetown/trou/leather
 				gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 				beltr = /obj/item/rogueweapon/huntingknife/idagger
