@@ -3,9 +3,9 @@
 	flag = SEXTON
 	department_flag = CHURCHMEN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
-	allowed_sexes = list(MALE, FEMALE)
+	total_positions = 0
+	spawn_positions = 0
+
 	allowed_races = ACCEPTED_RACES
 	tutorial = "You are a Sexton, an apprentice, helping hand or aide for the local church. Your responsibilities are little, but so are your obligations."
 	outfit = /datum/outfit/job/roguetown/sexton/
