@@ -9,14 +9,8 @@
 	origin = "The Oceans"
 	base_name = "Beastvolk"
 	desc = "<b>Axian</b><br>\
-	Axians are a proud, shark-like people that have a heritage founded in maritime trade, \
-	tax evasion, and piracy. They have a strong distaste for the nobility and taxation, \
-	making them a target of discrimination in the Azurean lands. They are oftentimes scapegoats for crime. \
-	Due to their penchant for trade and travel, they can be found all over the world, oftentimes \
-	seeing places many could not even dream of. They look down at those they considered the 'settled' \
-	and often uproot themselves quite often in their lifetimes. However, due to the isolation in Azure, many Axians \
-	find their sanity being clawed away as they find themselves stuck in one place.<br>\
-	"
+	Axians are unique in that they do not hail from Lewyn or Yoheon. All oceans and seas of Beowricke are what they call home- and to this they heavily defend their territories and packs. They are an ocean hunter- and often a tale from an old sailor of sea beasts that attacked their vessel were actually a tribe of Axian warriors defending their perceived swathe of the ocean. Sailors usually pay tribute to the Axians of the sea in order to travel safely across the waves. It is common belief that the Luminary Iraeth made Axians to be the guardian of the oceans cycle, and to annihilate anyone who would dare interrupt it. For their open hostilities in the water, they are often perceived as dangerous beings, and face much scrutiny on land. Most Axians seen in civilized areas are exiles from their territories, often working along the many docks and ships that cross the sea due to their inherent knowledge of waves. Axians coming from land are usually descendants of exiles removed from their ocean society for a number of reasons.<br>\
+	(TRAITS WILL GO HERE)"
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	inherent_traits = list(TRAIT_WATERBREATHING, TRAIT_SEA_DRINKER)

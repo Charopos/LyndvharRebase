@@ -8,7 +8,8 @@
 	origin = "The Gods"
 	base_name = "Godtouched"
 	desc = "<b>Aasimar</b><br>\
-	The Aasimar, or as many call them Godlings, are the race created by the Pantheon to directly serve in the Bloodwake as the main bulk of the militaries. If they were not serving in these positions, they often held command over non-aasimar legions, like the humens or the elves. After the Bloodwake, the Aasimar were left to wander the realm after the Gods looked inward to recover. Due to the nature of their creation and construct they are much more prone to aggression and violence when feeling threatened than many other races, leading them to have a stigma about them. Despite this, they can be found in many positions of wisdom or still found in military garrisons, performing their duties they were created to do oh-so long ago.<br>"
+	Widely accepted and believed to have been the first creations molded by the Cycle, Aasimar are effectively powerfully arcyne-charged constructs born from the aspects of the Luminary themselves. Naturally blessed with guiding martial prowess- they are most commonly believed to be the shepherds of its status quo, blessed with an immortal lifespan in order to guide younger races. However, at the dawn of the Bloodwake, many Aasimar were slain in its catastrophic chokehold on Beowricke- the ones that remain hold much of the scarring of the past in the form of memory blockages and shortsighted wit, making them rather susceptible to trickery and persuasion. Aasimar cannot reproduce whatsoever as a byproduct of being immortal and therefore immune to the cycle of Creation, so it is becoming rarer and rarer by the day to see them.<br>\
+	(TRAITS WILL GO HERE)"
 
 	max_age = "???"
 

@@ -6,24 +6,12 @@
 	id = "dwarfm"
 	psydonic = TRUE
 	origin_default = /datum/virtue/origin/unknown
-	origin = "Hammerhold"
+	origin = "Dwarven Holds"
 	sub_name = "Mountain Dwarf"
 	clothes_id = "dwarf"
 	desc = "<b>Dwarf</b><br>\
-	A proud and robust race of short mountain folk, \
-	the dwarves are known for their pride in martial strength \
-	and the tenacity with which they adhere to their ancient traditions. \
-	A Dwarf, much like the rock that they carve their fortresses out of, \
-	is stubborn and ancient, with their race being the longest lived of all \
-	of the Weeping God's creations. They, like stone, also rarely change \
-	and tend to shun the modernization of the world around them. \
-	Instead, a Dwarf looks to their ancestorial heritage for guidance on \
-	the various challenges they face. Even if, ironically, this behaviour \
-	leads their kind towards technological advacement as they continue \
-	to improve their crafts, both in engineering workshops and the forges. \
-	Dwarves are hearty, but are not known for their speed or eyesight... \
-	Each dwarf hails from a ancient fortress named after the most plentiful mineral.<br>\"
-
+	A proud and robust race of small folk that live in mountains, dwarves are notably the third mortal race created by the cycle. They are a stubborn race, often isolating themselves in mountain fortresses and holds. They live for a relatively long time, much like elves. They are hearty and taut, not often well known for their agility, but they are some of the most expert craftsmen and women in all of Beowricke. Many inventions have been created and forged from a dwarf.<br>\
+	(TRAITS WILL GO HERE)"
 
 	skin_tone_wording = "Dwarf Fortress"
 

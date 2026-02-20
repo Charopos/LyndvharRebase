@@ -5,11 +5,11 @@
 	name = "Half-Kin"
 	id = "demihuman"
 	is_subrace = TRUE
-	origin_default = /datum/virtue/origin/grenzelhoft
-	origin = "Grenzelhoft"
+	origin_default = /datum/virtue/origin/unknown
+	origin = "Nowhere"
 	base_name = "Humen"
-	desc = "The inevitable union between wildkin and some form of humanity or another. While they also experience animalistic tendencies akin to their full-blooded ancestors, their intermingling with others has stemmed the severity of such primordial impulses. (Half-kin are not a template race to play your own custom race. If you play a half-kin, you are expected to roleplay to the setting and the race's lore.)<br>\
-	"
+	desc = "A growing contingent of being- the Halfkin are usually the resulting mixture of either a humen or elf combined with one of the many other races running amok Beowricke- be it Tabaxi or even Eskallian. Considerably a strange byproduct of the cycle- it’s often believed to be an ill-omen for such a being to be born. While usually retaining the behaviors of humens or elves, they also subsume the identities of the races they were mixed with. This can oftentimes become a detriment in social environments and conversation due to differing tempers or behaviors. It is often for this reason that half-kin are rather rare to see in administrative positions of power, usually found in lesser jobs in the ladder of hierarchy.<br>\
+	(TRAITS WILL GO HERE)"
 	skin_tone_wording = "Ancestry"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS_PARTSONLY)

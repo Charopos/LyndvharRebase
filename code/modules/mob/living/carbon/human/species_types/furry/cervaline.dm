@@ -4,8 +4,13 @@
 /datum/species/cervaline
 	name = "Cervaline"
 	id = "cervaline"
+	is_subrace = TRUE
+	origin_default = /datum/virtue/origin/rhaenval
+	origin = "Rhaenval"
+	base_name = "Beastvolk"
 	desc = "<b>Cervaline</b><br>\
-	A rather populous and movement-prone race, the Cervaline originate from the Great Plains of western Rhaenval, in the Vruirid homelands. Sprouting different sets of antlers, large ears, and an assortment of different shades of darker fur colors, they are a large bulk of the remaining nomadic peoples of the continent. Having spread far and wide across the lands in old times, they can be found in many different regions- well known for their adaptability and resourcefulness. It is not often unlikely to encounter trade caravans solely operated by the Cervaline peoples. Back in their homelands of Vruirid they were one of the founding members of the Rhaenvali Confederation- which was birthed as a direct counterforce to the growing mass of the Lyndhardtian Empire.<br>"
+	A rather populous and movement-prone race, the Cervaline originate from the Great Plains of western Rhaenval, in the Vruirid homelands. Sprouting different sets of antlers, large ears, and an assortment of different shades of darker fur colors, they are a large bulk of what remains of the nomadic peoples of the continent after Naexidor’s conquest of eastern Lewyn. Having spread far and wide across the lands in older times, they can be found in almost any region and are most well known for their adaptability and resourcefulness. It is not often unlikely to encounter trade caravans solely operated by the Cervaline peoples due to their generally nomadic lifestyle.<br>\
+	(TRAITS WILL GO HERE)"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

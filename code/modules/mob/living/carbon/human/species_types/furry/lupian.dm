@@ -6,15 +6,11 @@
 	id = "lupian"
 	is_subrace = TRUE
 	origin_default = /datum/virtue/origin/forvheipal
-	origin = "Hammerhold"
+	origin = "Forvheipal"
 	base_name = "Beastvolk"
 	desc = "<b>Lupian</b><br>\
-	As written by an Archivist from times before yours: Lupians, known by many as Volfmen, are a very prominent type of Beastkin that is easily found all across Psydonia. \
-	They are oft tall and slim, carrying with them a coat of discoloured short or medium length fur. \
-	Their bodies are naturally resilient and their minds as sharp as a Humen's own. \
-	A Lupian will usually display loyalty to a fault, as they are quite factional beings. \
-	Tales of old claim that they came to be when Noc stole Dendor’s curse to create lyfe of his own in an attempt to replicate Psydon’s, instead giving birth to a flawed beast-people.<br>\
-	"
+	Hailing from the continent of Yoheon, the Lupian originally spread forth across the continent from what became the region of Forvheipal. Many have integrated themselves with the other races dotting across Beowricke since, forming tight-knitted communities in these locations. Known for cunning resilience, many strong warriors just also happen to be lupians. Lupians are considerably more aggressive as a detriment however, usually bringing simple arguments into full brawls abruptly and suddenly, owing to the harsh, hostile environment of Forvheipal and its incredibly tall cliffs, stinging tundras, and glistening swamps.<br>\
+	(TRAITS WILL GO HERE)"
 	skin_tone_wording = "Ascendance"
 	species_traits = list(
 		MUTCOLORS,
