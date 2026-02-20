@@ -5,16 +5,12 @@
 	name = "Venardine"
 	id = "vulpkanin"
 	is_subrace = TRUE
-	origin_default = /datum/virtue/origin/grenzelhoft
-	origin = "Grenzelhoft"
+	origin_default = /datum/virtue/origin/yanshen
+	origin = "Yanshen"
 	base_name = "Beastvolk"
 	desc = "<b>Venardine</b><br>\
-	Based on the writings of the living Fietje von Zenitstadt: A subspecies of the more common \"Lupian\", found almost exclusively in thick forests.\
-	They are usually shorter and meeker, but in turn more perceptive than their Volf-like brethren. \
-	Their name is quite obvious, coming from the Venards they closely resemble. \
-	Venardines are often much more solitary than Lupians, lacking the fervent pack mentality of their parent race. \
-	To this dae, their origin is heavily disputed by few archivists across Psydonia - though the rest, perhaps for sanity's sake, consider them to be just Lupians.<br>\
-	(+1 Perception, +1 Intelligence)"
+	Hailing from Yoheon, Vulpkian are a highly intelligent race most notably found in many upper aristocracy of Forvheipal and Saltlian society. Often considered to be one of the most pragmatic and highly mercantile peoples, the usual depiction is one of calculated wisdom and agility. The danger comes from the pragmatism; they are nigh practical to a fault which often comes to the detriment of relationships and social aspects of life. Many become devoid of most emotion as they get older, only seeing things that boost their status as advantageous to participate in. They are not often seen in Lewyn, though the ones that are have either come as well-trained mercenaries, foreign explorers, or advisors for many aristocratic positions.<br>\
+	(TRAITS WILL GO HERE)"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

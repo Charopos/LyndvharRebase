@@ -4,8 +4,13 @@
 /datum/species/rhaeteian
 	name = "Rhaeteian"
 	id = "rhaeteian"
+	is_subrace = TRUE
+	origin_default = /datum/virtue/origin/lyndhardt
+	origin = "Lyndhardt"
+	base_name = "Beastvolk"
 	desc = "<b>Rhaeteian</b><br>\
-	Residing in the southeastern regions of the expanse of the Ruby Throne, the Rhaeteian are an avian species of well-renowned trade and guile. This region, known as the Lafeuyet plateau, is a large peninsula shaped over centuries by the waves of the Splitstern Sea. These birds have called this place their home for centuries, and forged a vast economic wealth outwards from it. The Rhaeteian are some of the best mercantile folk in the entirety of Llewyn, serving in many courts exclusively as the stewards, bankers, or store owners and clerks. Their guile has also served them very adeptly with their wings, making great thieves and rogues. The Rhaeteian make up the bulk of some of the most infamous thieves’ guilds as majority members- much to their own dismay, sometimes- as it has netted them a rather strenuous relationship with some portions of upper Lyndhardtian society.<br>"
+	Residing in the southeastern regions of the expanse of the Ruby Throne, the Rhaeteian are an avian species of well-renowned trade and guile. This region, known as the Lafeuyet plateau, is a large peninsula shaped over centuries by the waves of the Splitstern Sea. These birds have called this place their home for centuries, and forged a vast economic wealth outwards from it. The Rhaeteian are some of the best mercantile folk in the entirety of Llewyn, serving in many courts exclusively as the stewards, bankers, or store owners and clerks. Their guile has also served them very adeptly with their wings, making great thieves and rogues. The Rhaeteian make up the bulk of some of the most infamous thieves’ guilds as majority members- much to their own dismay, sometimes- as it has netted them a rather strenuous relationship with some portions of upper Lyndhardtian society.<br>\
+	(TRAITS WILL GO HERE)"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

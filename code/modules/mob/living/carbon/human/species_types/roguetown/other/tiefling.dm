@@ -9,15 +9,8 @@
 	base_name = "Godtouched"
 	is_subrace = TRUE
 	desc = "<b>Tiefling</b><br>\
-	The offspring of demons with mortal races, a consequence of demonic incursions into the mortal realm and dark pacts. \
-	Their origins dating back to the demonic invasion of Archdevil Vheslyn who pillaged and ravaged the mortal lands and its people before being stopped by Psydon. \
-	These offspring of demon and mortal races came to be known as 'Tieflings', largely despised by most people for centuries for their unnatural origins and appearances. \
-	It was only recently that they became more tolerated, even if the Church still watches them with a weary eye. \
-	When a Tiefling has offspring, no matter the race of their partner, the child would always be a pureblooded Tiefling. \
-	The taint of their very being going back generations, and no amount of cleansing can be rid of it. \
-	As over a millennium a simple handful of Tieflings have created extended bloodlines linking back to their infernal progenitors. Some Tieflings embrace their demonic origin, while other shun it. \
-	No matter if they embrace their demonic ancestors or not, Tieflings have formed an importance upon their bloodline and family due to often being shunned and hunted through out time in which only those of their blood and kin they could truly trust. <br>\
-	(+1 Constitution, +1 Intelligence)"
+	A rather unholy and odd conglomeration of blood, Tieflings are what occurred when occultists of the Triumvirate made unholy pacts with differing scions of Zenu, molding their future offspring into what would become the devilish beings that consist of this race. Despite this creation they held no true loyalty to the Triumvirate and were effectively used as slave power during the waxing years of the Bloodwake. After the sealing of the Triumvirate they were hunted quite heavily but were able to survive through wit and conversions to the Luminary. Nowadays much of the bad blood has boiled over, but there are still many who frown heavily upon their existence as a stain to the Luminary’s cycle of creation. They have found themselves home in many enclaves or cities across Lewyn and Yoheon since the Bloodwake, forming their own distinct cultures in each. Incapable of reproduction with other races, they’ve become rather rare to spot outside of their enclaves.<br>\
+	(TRAITS WILL GO HERE)"
 
 	skin_tone_wording = "Progenitor"
 	use_skin_tone_wording_for_examine = FALSE
