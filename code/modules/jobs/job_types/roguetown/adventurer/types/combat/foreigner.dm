@@ -230,7 +230,11 @@
 	name = "Forvheipal Slaver"
 	tutorial = "In parts of Beowricke, the practice of slavery is still a common sight. \
 	You hail from the Kingdom of Forvheipal, where the market of flesh is ancient and unbroken, and your coin is earned in the trade of living souls."
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = list(
+		/datum/species/vulpkanin,
+		/datum/species/lupian,
+		/datum/species/demihuman,
+	)
 	outfit = /datum/outfit/job/roguetown/adventurer/slaver
 	subclass_languages = list(/datum/language/celestial)
 	cmode_music = 'sound/music/combat_blackstar.ogg'
@@ -294,7 +298,7 @@
 	tutorial = "You're a simple shepherd hailing from the Vruirid plains, taking a pilgrimage or having travelled for one reason or another. You can easily fend for yourself in the wilderness, and with enough practice, fend for yourself in combat against even armoured opponents with your traditional axe."
 	extra_context = "This class is for experienced adventurers with a solid grasp on footwork and stamina management. Your weapon has special intents you can juggle through to make fights easier... Sometimes."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 	subclass_languages = list(/datum/language/rhaenish)
 	outfit = /datum/outfit/job/roguetown/adventurer/freishepherd
 	traits_applied = list()
@@ -343,7 +347,7 @@
 	tutorial = "You're an itinerant weapons expert that was trained in a Grenzelhoftian fencing school, carrying with you your weapon, your skillset, your pride... And not much else, frankly."
 	extra_context = "This is a freeform class that's meant to evoke a similar feeling to playing a Freifechter, your equipment and skillset is limited compared to other classes - this is by design - but you start with cool weapons."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/fencerguy
 	subclass_languages = list(/datum/language/grenzelhoftian)
 	cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
