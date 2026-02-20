@@ -2262,7 +2262,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						if(user.client)
 							if(race.patreon_req > user.client.patreonlevel())
 								continue
-							if(race.is_subrace == TRUE)
+							if(race.is_subrace == TRUE) // Do not put this on the default pick for the category (ex. wildkin for beastvolk). It will not initialise the list otherwise (it breaks everything).
 								continue
 							if(race.base_name == pref_species.base_name)
 								continue
