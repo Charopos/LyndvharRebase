@@ -31,6 +31,7 @@
 		/datum/skill/craft/tanning = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
 		/datum/skill/labor/butchering = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 	)
 	subclass_stashed_items = list(
         "Sewing Kit" =  /obj/item/repair_kit,
@@ -38,11 +39,11 @@
 
 /datum/outfit/job/roguetown/wretch/berserker/pre_equip(mob/living/carbon/human/H)
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
-	gloves = /obj/item/clothing/gloves/roguetown/plate
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/hip/headhook //Standard iron version. More-so for style than substance.
 	neck = /obj/item/clothing/neck/roguetown/leather
@@ -90,12 +91,12 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_EXPERT, TRUE)
 				beltr = /obj/item/rogueweapon/scabbard/sword
 				r_hand = /obj/item/rogueweapon/sword/falx
-		var/helmets = list("Berserker's Volfskulle Bascinet","Steel Kettle + Wildguard")
+		var/helmets = list("Berserker's Volfskulle Bascinet","Volfhelm + Wildguard")
 		var/helmet_choice = input(H, "Choose your HELMET.", "STEEL YOURSELF.") as anything in helmets
 		switch(helmet_choice)
 			if("Berserker's Volfskulle Bascinet")
 				head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate/berserker //Pseudoantagonistic-exclusive. Light AC with an on-wear trait for HELMBITING.
-			if("Steel Kettle + Wildguard")
-				head = /obj/item/clothing/head/roguetown/helmet/kettle
+			if("Volfhelm + Wildguard")
+				head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
 				mask = /obj/item/clothing/mask/rogue/wildguard
 		wretch_select_bounty(H)

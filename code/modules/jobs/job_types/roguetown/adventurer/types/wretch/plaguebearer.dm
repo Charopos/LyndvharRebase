@@ -16,7 +16,7 @@
 		/datum/skill/combat/bows = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/knives = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN, // To escape grapplers, fuck you
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT, // To escape grapplers, fuck you
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/crafting = SKILL_LEVEL_JOURNEYMAN,
@@ -68,7 +68,7 @@
 				beltl = /obj/item/quiver/poisonarrows
 			if("LET THERE BE PLAGUE!!!")
 				H.adjust_skillrank_up_to(/datum/skill/magic/arcane, 4, TRUE)
-				backr = /obj/item/rogueweapon/woodstaff/toper
+				backr = /obj/item/rogueweapon/woodstaff/emerald
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash)
 		wretch_select_bounty(H)

@@ -17,10 +17,10 @@
 		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN, // To escape grapplers, fuck you
+		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT, // RUN BOY RUN
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT, // To escape grapplers, fuck you
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/traps = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/alchemy = SKILL_LEVEL_EXPERT,
@@ -32,17 +32,17 @@
         "Armor Plates" =  /obj/item/repair_kit/metal,
     )
 /datum/outfit/job/roguetown/wretch/pyromaniac/pre_equip(mob/living/carbon/human/H)
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/sheriff //wear protection :) 
-	mask = /obj/item/clothing/mask/rogue/facemask/
-	neck = /obj/item/clothing/neck/roguetown/chaincoif/full //Protect your head!
-	pants = /obj/item/clothing/under/roguetown/brigandinelegs
-	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
-	backl = /obj/item/storage/backpack/rogue/satchel
+	head = /obj/item/clothing/head/roguetown/helmet/bandana
+	mask = /obj/item/clothing/mask/rogue/facemask
+	neck = /obj/item/clothing/neck/roguetown/leather
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
-	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/brigandine
+	gloves = /obj/item/clothing/gloves/roguetown/leather
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	r_hand = /obj/item/bomb
 	l_hand = /obj/item/bomb
 	backpack_contents = list(
