@@ -4,7 +4,7 @@
 
 /obj/structure/roguemachine/crier
 	name = "rous master"
-	desc = "A magitech device intended for the town crier. Can broadcast communications throughout the town and manage the streetpipe network."
+	desc = "A magitech device intended for the City Herald. Can broadcast communications throughout the town and manage the streetpipe network."
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "crier_machine"
 	density = TRUE

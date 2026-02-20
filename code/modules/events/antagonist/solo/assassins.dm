@@ -27,7 +27,7 @@
 		"Hand",
 		"Steward",
 		"Practitioner",
-		"Town Crier",
+		"City Herald",
 		"Captain",
 		"Archivist",
 		"Knight",
