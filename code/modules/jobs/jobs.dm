@@ -73,7 +73,7 @@ GLOBAL_LIST_INIT(leadership_positions, list( // Used for boldening text primaril
 	"Martyr",
 	"Merchant",
 	"Guildmaster",
-	"Head Physician",
+	"Practitioner",
 	"Innkeeper",
 	"Bathmaster",
 	"Inquisitor"
@@ -134,7 +134,7 @@ GLOBAL_LIST_INIT(burgher_positions, list( //Artisans, store owners what have you
 	"Guildmaster",
 	"Guildsman",
 	"Tailor",
-	"Head Physician",
+	"Practitioner",
 	"Apothecary",
 	"Innkeeper",
 	"Bathmaster",

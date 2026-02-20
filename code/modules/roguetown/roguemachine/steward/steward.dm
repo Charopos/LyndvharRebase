@@ -43,7 +43,7 @@
 	daily_payments["Squire"] = 10
 	daily_payments["Seneschal"] = 40 //Manor-House
 	daily_payments["Servant"] = 20	
-	daily_payments["Head Physician"] = 20 //Doctors
+	daily_payments["Practitioner"] = 20 //Doctors
 	daily_payments["Apothecary"] = 10
 	daily_payments["Court Magician"] = 40 //University
 	daily_payments["Archivist"] = 20

@@ -1,23 +1,23 @@
 #define CRIER_ANNOUNCEMENT_COOLDOWN (10 MINUTES)//He has access to free SCOM he should be using this
 
 /datum/job/roguetown/crier
-	title = "Town Crier"
-	tutorial = "Keeper of the Horn, Master of the Jabberline, and self-appointed Voice of Reason. From your desk in the SCOM atelier, you decide which words will thunder across the realm and which will die in the throats of petitioners who didn't pay enough ratfeed. In your upstairs studio, you host debates, recite gossip, and spin tales that will ripple through every corner of town. All ears are turned toward you - so speak wisely."
+	title = "City Herald"
+	tutorial = "You are the Keeper of the Horn, Master of the Jabberline, and self-appointed Voice of Reason- at least, that's how you like to style yourself. From your desk in the SCOM atelier, you decide which words will thunder across the streets and which will die in the throats of petitioners who didn't pay enough ratfeed. In your upstairs studio, you host debates, recite gossip, and spin tales that will ripple through every corner of the city. All ears are turned toward you - so speak wisely."
 	flag = CRIER
 	department_flag = BURGHERS
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
-	allowed_races = ALL_RACES_TYPES
+	allowed_races = RACES_SHUNNED_UP
 	allowed_ages = ALL_AGES_LIST
 
 	outfit = /datum/outfit/job/roguetown/loudmouth
 	display_order = JDO_CRIER
 	give_bank_account = TRUE
-	min_pq = 3 // Has actual responsibility and is a key figure in town.
+	min_pq = 0
 	max_pq = null
-	round_contrib_points = 3
+	round_contrib_points = 2
 
 	job_traits = list(TRAIT_INTELLECTUAL, TRAIT_ARCYNE_T1, TRAIT_MAGEARMOR, TRAIT_SEEPRICES_SHITTY, TRAIT_HOMESTEAD_EXPERT)
 
@@ -28,9 +28,9 @@
 
 /datum/advclass/towncrier
 	name = "Town Crier"
-	tutorial = "Keeper of the Horn, Master of the Jabberline, and self-appointed Voice of Reason. \
-	From your desk in the SCOM atelier, you decide which words will thunder across the realm and which will die in the throats of petitioners who didn't pay enough ratfeed. \
-	In your upstairs studio, you host debates, recite gossip, and spin tales that will ripple through every corner of town. All ears are turned toward you - so speak wisely."
+	tutorial = "You are the Keeper of the Horn, Master of the Jabberline, and self-appointed Voice of Reason- at least, that's how you like to style yourself. \
+	From your desk in the SCOM atelier, you decide which words will thunder across the streets and which will die in the throats of petitioners who didn't pay enough ratfeed. \
+	In your upstairs studio, you host debates, recite gossip, and spin tales that will ripple through every corner of the city. All ears are turned toward you - so speak wisely."
 	outfit = /datum/outfit/job/roguetown/loudmouth/basic
 	subclass_languages = list(
 		/datum/language/elvish,
@@ -61,10 +61,10 @@
 		/datum/skill/misc/medicine = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_NOVICE,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/swimming = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_NOVICE,
-		/datum/skill/magic/arcane = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/magic/arcane = SKILL_LEVEL_NOVICE,
 	)
 
 /datum/outfit/job/roguetown/loudmouth/basic/pre_equip(mob/living/carbon/human/H)
@@ -96,7 +96,7 @@
 	set category = "CRIER"
 	if(stat)
 		return
-	var/announcementinput = input("Bellow to the Peaks", "Make an Announcement") as text|null
+	var/announcementinput = input("Announce to the City", "Make an Announcement") as text|null
 	if(announcementinput)
 		if(!src.can_speak_vocal())
 			to_chat(src,span_warning("I can't speak!"))
@@ -110,7 +110,7 @@
 		visible_message(span_warning("[src] takes a deep breath, preparing to make an announcement.."))
 		if(do_after(src, 15 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
 			say(announcementinput)
-			priority_announce("[announcementinput]", "The Crier Pontificates", 'sound/misc/bell.ogg', sender = src)
+			priority_announce("[announcementinput]", "The Herald Pontificates", 'sound/misc/bell.ogg', sender = src)
 			COOLDOWN_START(src, crier_announcement, CRIER_ANNOUNCEMENT_COOLDOWN)
 		else
 			to_chat(src, span_warning("Your announcement was interrupted!"))

@@ -69,7 +69,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	beltl = /obj/item/rogueweapon/whip
 
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/grown/rogue/swampweeddry = 2,
 		/obj/item/reagent_containers/powder/moondust = 2,
