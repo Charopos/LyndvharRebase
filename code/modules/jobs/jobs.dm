@@ -66,7 +66,7 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 GLOBAL_LIST_INIT(leadership_positions, list( // Used for boldening text primarily
 	"Viscount",
 	"Hand",
-	"Court Magician",
+	"Archmagus",
 	"Marshal",
 	"Sergeant",
 	"Bishop",
@@ -100,7 +100,7 @@ GLOBAL_LIST_INIT(courtier_positions, list( //Anyone that is officially part of t
 	"Councillor",
 	"Clerk",
 	"Jester",
-	"Court Magician",
+	"Archmagus",
 	"Archivist",
 	"Seneschal",
 	"Suitor",

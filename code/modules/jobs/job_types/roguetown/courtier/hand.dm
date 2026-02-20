@@ -12,11 +12,11 @@
 	advclass_cat_rolls = list(CTAG_HAND = 20)
 	display_order = JDO_HAND
 	selection_color = JCOLOR_COURTIER
-	tutorial = "You owe everything to your liege. Once, you were just a humble friend--now you are one of the most important people within the duchy itself. You have played spymaster and confidant to the Noble-Family for so long that you are a veritable vault of intrigue, something you exploit with potent conviction at every opportunity. Let no man ever forget into whose ear you whisper. You've killed more men with those lips than any blademaster could ever claim to."
+	tutorial = "You owe your entire life to the Viscount. Once perhaps a childhood friend you are one of the most important people within the city itself, second only to the Viscount. You have played spymaster and confidant to the noble family for so long that you are a veritable vault of intrigue, something you exploit with potent conviction at every opportunity. Let no man ever forget into whose ear you whisper. You've killed more men with those lips than any blademaster could ever claim to."
 	whitelist_req = TRUE
 	give_bank_account = TRUE
 	noble_income = 22
-	min_pq = 9 //The second most powerful person in the realm...
+	min_pq = 0
 	max_pq = null
 	round_contrib_points = 3
 	cmode_music = 'sound/music/cmode/nobility/combat_spymaster.ogg'
@@ -25,7 +25,8 @@
 	job_subclasses = list(
 		/datum/advclass/hand/blademaster,
 		/datum/advclass/hand/spymaster,
-		/datum/advclass/hand/advisor
+		/datum/advclass/hand/marshal,
+		/datum/advclass/hand/kcommander
 	)
 
 /datum/outfit/job/roguetown/hand
@@ -165,61 +166,92 @@
 	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_RICH, H, "Savings.")
 
-//Advisor Start
-/datum/advclass/hand/advisor
-	name = "Advisor"
-	tutorial = " You have played researcher and confidant to the Noble-Family for so long that you are a vault of knowledge, something you exploit with potent conviction. Let no man ever forget the knowledge you wield. You've read more books than any blademaster or spymaster could ever claim to."
-	outfit = /datum/outfit/job/roguetown/hand/advisor
+/datum/advclass/hand/marshal
+	name = "Marshal"
+	tutorial = "You've spent your daes in the courts and garrisons of the city. You've studied the law tome from back to front and enforce your word with the iron hand of justice, and the iron mace in your hands. More men have spent days rotting in the dungeon than that Retinue Captain could ever have claimed, and every person in the realm respects your authority in matters of law and order."
+	outfit = /datum/outfit/job/roguetown/hand/marshal
 
 	category_tags = list(CTAG_HAND)
-	traits_applied = list(TRAIT_ALCHEMY_EXPERT, TRAIT_MAGEARMOR, TRAIT_ARCYNE_T2)
+	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_STEELHEARTED)
 	subclass_stats = list(
-		STATKEY_INT = 4,
-		STATKEY_PER = 3,
-		STATKEY_WIL = 2,
-		STATKEY_LCK = 2,
+		STATKEY_PER = 1,
+		STATKEY_INT = 2,
+		STATKEY_STR = 2,
+		STATKEY_CON = 1,
+		STATKEY_WIL = 1,
+		STATKEY_SPD = -1
 	)
-	age_mod = /datum/class_age_mod/hand_advisor
-	subclass_spellpoints = 15
 	subclass_skills = list(
-		/datum/skill/combat/crossbows = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/staves = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/maces = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/tracking = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/reading = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/craft/alchemy = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/medicine = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/lockpicking = SKILL_LEVEL_EXPERT,
-		/datum/skill/magic/arcane = SKILL_LEVEL_APPRENTICE,
 	)
-/datum/outfit/job/roguetown/hand/advisor
-	armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hand/advisor
-	r_hand = /obj/item/rogueweapon/sword/rapier/hand
-	beltr = /obj/item/rogueweapon/scabbard/sheath/courtphysician/hand
-	beltl = /obj/item/rogueweapon/huntingknife/idagger/dtace
-	head = /obj/item/clothing/head/roguetown/chaperon/noble/hand
-	pants = /obj/item/clothing/under/roguetown/tights/black
 
-//Advisor start. Trades combat skills for more knowledge and skills - for older hands, hands that don't do combat - people who wanna play wizened old advisors.
-/datum/outfit/job/roguetown/hand/advisor/pre_equip(mob/living/carbon/human/H)
-	if(should_wear_femme_clothes(H))
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/hand_f
-	else if(should_wear_masc_clothes(H))
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/hand_m
+/datum/outfit/job/roguetown/hand/marshal/pre_equip(mob/living/carbon/human/H)
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff
+	gloves = /obj/item/clothing/gloves/roguetown/leather
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	cloak = /obj/item/clothing/cloak/stabard/surcoat/bailiff
+	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
+	beltl = /obj/item/rogueweapon/mace/cudgel/justice
+	head = /obj/item/clothing/head/roguetown/chaperon/noble/bailiff
+	backr = /obj/item/storage/backpack/rogue/satchel/short
+	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
 	backpack_contents = list(
-		/obj/item/rogueweapon/scabbard/sheath/noble = 1,
-		/obj/item/storage/keyring/lord = 1,
-		/obj/item/roguekey/skeleton = 1,
-		/obj/item/lockpickring/mundane = 1,
-		/obj/item/reagent_containers/glass/bottle/rogue/poison = 1,//starts with a vial of poison, like all wizened evil advisors do!
+		/obj/item/storage/keyring/hand = 1,
+		/obj/item/book/rogue/law = 1,
+		)
+
+/datum/advclass/hand/kcommander
+	name = "Retired Commandant"
+	tutorial = "You spent your daes as a dutiful cataphract in the service to the Ruby Throne. Earning your accolades through military tactics and victories, you are well-renowned for your knowledge in warfare. Now retired from your days afield, you enforce the same iron law you once practiced in the civil war in your home. You run the garrison, knights and the town's laws with a military strictness, and no-one can claim you are weak on crime."
+	outfit = /datum/outfit/job/roguetown/hand/kcommander
+
+	category_tags = list(CTAG_HAND)
+	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_STEELHEARTED)
+	subclass_stats = list(
+		STATKEY_PER = 1,
+		STATKEY_INT = 2,
+		STATKEY_STR = 2,
+		STATKEY_CON = 1,
+		STATKEY_WIL = 1,
+		STATKEY_SPD = -1
 	)
-	if(H.mind)
+	subclass_skills = list(
+		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/tracking = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
+	)
+
+/datum/outfit/job/roguetown/hand/kcommander/pre_equip(mob/living/carbon/human/H)
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff/coat
+	gloves = /obj/item/clothing/gloves/roguetown/leather
+	backr = /obj/item/rogueweapon/sword/long/oathkeeper
+	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
+	beltl = /obj/item/reagent_containers/glass/bottle/rogue/healthpot
+	backl = /obj/item/storage/backpack/rogue/satchel/short
+	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
+	backpack_contents = list(
+		/obj/item/storage/keyring/hand = 1,
+		/obj/item/book/rogue/law = 1
+		)
 		SStreasury.give_money_account(ECONOMIC_RICH, H, "Savings.")
 
 ////////////////////
