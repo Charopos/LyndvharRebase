@@ -42,10 +42,10 @@
 /obj/item/skillbook/proc/add_author(mob/living/carbon/human/H)
 	if(!H || !H.real_name)
 		return
-	var/author_job = H.advjob ? H.advjob : "Adventurer"
+	var/author_job = H.advjob ? H.advjob : "Outlander"
 	var/datum/job/J = SSjob.GetJob(H.job)
 	if (J.obsfuscated_job || J.wanderer_examine)
-		author_job = "Adventurer"
+		author_job = "Outlander"
 	if(!(H.real_name in authors))
 		authors[H.real_name] = author_job
 	else if(authors[H.real_name] != author_job)

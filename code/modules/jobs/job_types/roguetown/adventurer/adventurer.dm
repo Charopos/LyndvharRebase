@@ -4,14 +4,14 @@ GLOBAL_VAR_INIT(adventurer_hugbox_duration, 40 SECONDS)
 GLOBAL_VAR_INIT(adventurer_hugbox_duration_still, 3 MINUTES)
 
 /datum/job/roguetown/adventurer
-	title = "Adventurer"
+	title = "Outlander"
 	flag = ADVENTURER
 	department_flag = WANDERERS
 	faction = "Station"
-	total_positions = 20
-	spawn_positions = 20
+	total_positions = 10
+	spawn_positions = 10
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Hero of nothing, a wanderer in foreign lands in search of fame and riches. Whatever led you to this fate is up to the wind to decide, and you've never fancied yourself for much other than the thrill. Some day your pride is going to catch up to you, and you're going to find out why most men don't end up in the annals of history."
+	tutorial = "A wanderer, not from this region. Whatever led you to this fate is up to the wind to decide, be it that you are fleeing the civil war, looking for work, or otherwise. Whether you will survive the coming week is an altogether different matter entirely- however. The roads have become inhospitable and treacherous to most. You may learn fairly quickly why your destination has become so isolated from everywhere else."
 	class_categories = TRUE
 
 	outfit = null

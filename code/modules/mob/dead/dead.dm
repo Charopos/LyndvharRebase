@@ -84,7 +84,7 @@ INITIALIZE_IMMEDIATE(/mob/dead)
 	var/list/job_list = list()
 	var/list/ready_players_by_job = list()
 	var/list/wanderer_jobs = list(
-		"Adventurer",
+		"Outlander",
 		"Wretch",
 		"Court Agent"
 	)

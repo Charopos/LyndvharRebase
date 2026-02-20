@@ -271,7 +271,7 @@ SUBSYSTEM_DEF(migrants)
 		var/mob_name = character.real_name
 		var/mob_rank = rank
 		if(character.mind.special_role == "Court Agent")
-			mob_rank = "Adventurer"
+			mob_rank = "Outlander"
 		GLOB.actors_list[character.mobid] = list("name" = mob_name, "rank" = mob_rank)
 		log_character("[character.ckey] ([fakekey]) - [character.real_name] - [rank]")
 	if(GLOB.respawncounts[character.ckey])

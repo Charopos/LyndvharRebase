@@ -278,7 +278,7 @@
 		var/mob_name = H.real_name
 		var/mob_rank
 		if (obsfuscated_job)
-			mob_rank = "Adventurer"
+			mob_rank = "Outlander"
 		else
 			mob_rank = H.mind.assigned_role
 		GLOB.actors_list[H.mobid] = list("name" = mob_name, "rank" = mob_rank)

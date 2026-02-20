@@ -206,7 +206,7 @@
 
 	var/is_adventurer = (SSjob.name_occupations[human.job]?.type == /datum/job/roguetown/adventurer)
 	if(user.mind && ((user.mind.has_antag_datum(/datum/antagonist)||is_adventurer)))
-		name = "[user.real_name] the Adventurer's house"
+		name = "[user.real_name] the Outlander's house"
 	else
 		name = "[user.real_name] the [human.advjob ? human.advjob : human.job]'s house"
 
