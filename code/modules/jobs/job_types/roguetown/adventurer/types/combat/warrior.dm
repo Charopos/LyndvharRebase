@@ -440,12 +440,12 @@
 	cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_PURITAN_ADVENTURER, TRAIT_ALCHEMY_EXPERT)
-	maximum_possible_slots = 5 //Not a Wretch or Towner, but still conditionally lethal for an Adventurer - especially with steel coverage and round-start access to silver weapons. Adjust the amount of available slots as needed.
+	maximum_possible_slots = 5 //Not a Wretch or Towner, but still conditionally lethal for an Outlander - especially with steel coverage and round-start access to silver weapons. Adjust the amount of available slots as needed.
 	subclass_stats = list(
 		STATKEY_STR = 2,
 		STATKEY_PER = 2,
 		STATKEY_WIL = 1,
-	) //Follows the Adventurer's seven-point statblock rule. Adds an eighth point to an unoccupied statkey, when a discipline is selected.
+	) //Follows the Outlander's seven-point statblock rule. Adds an eighth point to an unoccupied statkey, when a discipline is selected.
 
 	age_mod = /datum/class_age_mod/exorcist
 

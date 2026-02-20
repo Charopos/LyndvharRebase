@@ -162,7 +162,7 @@ GLOBAL_LIST_INIT(sidefolk_positions, list( //Weerdoes who hang around the town
 ))
 
 GLOBAL_LIST_INIT(wanderer_positions, list( //Homeless
-	"Adventurer",
+	"Outlander",
 	"Court Agent",
 	"Trader",
 ))
@@ -201,7 +201,7 @@ GLOBAL_LIST_INIT(rogueoverthrow_positions, list( //Used for Aspirant / Peasant R
 ))
 
 GLOBAL_LIST_INIT(roguewar_positions, list(
-	"Adventurer",
+	"Outlander",
 ))
 
 GLOBAL_LIST_INIT(roguefight_positions, list(
@@ -217,7 +217,7 @@ GLOBAL_LIST_INIT(roguefight_positions, list(
 
 //This list is used to prevent the duke from stripping nobility from certain jobs that aren't intrinsically a part of the town.
 GLOBAL_LIST_INIT(foreign_positions, list(
-	"Adventurer", 
+	"Outlander", 
 	"Mercenary", 
 	"Bandit", 
 	"Wretch",
