@@ -135,8 +135,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	/// List of bodypart features of this species
 	var/list/bodypart_features
 
-	var/list/allowed_taur_types = list()
-
 	/// List of descriptor choices this species gets in preferences customization
 	var/list/descriptor_choices = list(
 		/datum/descriptor_choice/trait,
@@ -278,9 +276,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 /datum/species/proc/get_skin_list()
 	return GLOB.skin_tones
-
-/datum/species/proc/get_taur_list()
-	return allowed_taur_types
 
 /datum/species/proc/get_hairc_list()
 	return GLOB.haircolor
@@ -626,7 +621,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/is_inhumen = HAS_TRAIT(H, TRAIT_INHUMEN_ANATOMY)
 	var/num_arms = H.get_num_arms(FALSE)
 	var/num_legs = H.get_num_legs(FALSE)
-	var/is_taur = !!H.get_taur_tail()
 
 	switch(slot)
 		if(SLOT_HANDS)
@@ -720,8 +714,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			if( !(I.slot_flags & ITEM_SLOT_SHOES) )
 				return FALSE
 			var/obj/item/clothing/shoes = I
-			if(is_taur && (!istype(shoes) || !(shoes.clothing_flags & TAUR_COMPATIBLE)))
-				return FALSE
 			if(num_legs < 1)
 				return FALSE
 			if(DIGITIGRADE in species_traits)

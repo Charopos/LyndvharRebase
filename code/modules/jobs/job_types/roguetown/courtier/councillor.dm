@@ -111,7 +111,6 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/fancyjacket
 	pants = /obj/item/clothing/under/roguetown/trou/beltpants
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes/steel
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/roguekey/manor
@@ -129,7 +128,6 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/fancyjacket
 	pants = /obj/item/clothing/under/roguetown/trou/beltpants
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes/steel
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/roguekey/manor
@@ -147,7 +145,6 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/fancyjacket
 	pants = /obj/item/clothing/under/roguetown/trou/beltpants
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
-	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes/gold
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	beltl = /obj/item/storage/keyring/steward
