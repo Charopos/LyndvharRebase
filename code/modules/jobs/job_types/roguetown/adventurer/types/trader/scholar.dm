@@ -26,7 +26,7 @@
 /datum/outfit/job/roguetown/adventurer/scholar/pre_equip(mob/living/carbon/human/H)
 	..()
 	to_chat(H, span_warning("You are a scholar traveling the world in order to write a book about your ventures. You trade in stories and tales of your travels."))
-head = /obj/item/clothing/head/roguetown/roguehood
+	head = /obj/item/clothing/head/roguetown/roguehood
 	mask = /obj/item/clothing/mask/rogue/spectacles
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	pants = /obj/item/clothing/under/roguetown/tights/black
