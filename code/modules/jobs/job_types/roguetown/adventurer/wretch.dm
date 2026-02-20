@@ -37,7 +37,6 @@
 		/datum/advclass/wretch/roguemage,
 		/datum/advclass/wretch/necromancer,
 		/datum/advclass/wretch/heretic,
-		/datum/advclass/wretch/heretic/spy,
 		/datum/advclass/wretch/outlaw,
 		/datum/advclass/wretch/poacher,
 		/datum/advclass/wretch/plaguebearer,

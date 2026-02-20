@@ -17,7 +17,7 @@
 	subclass_skills = list(
 		/datum/skill/misc/tracking = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/bows = SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/knives = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/axes = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
@@ -40,19 +40,19 @@
 
 /datum/outfit/job/roguetown/wretch/poacher/pre_equip(mob/living/carbon/human/H)
 	head = /obj/item/clothing/head/roguetown/roguehood/darkgreen
-	mask = /obj/item/clothing/mask/rogue/wildguard
+	mask = /obj/item/clothing/mask/rogue/facemask/steel
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/darkgreen
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-	backl = /obj/item/storage/backpack/rogue/satchel
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
-	neck = /obj/item/clothing/neck/roguetown/gorget
+	neck = /obj/item/clothing/neck/roguetown/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 	beltl = /obj/item/quiver/arrows
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	backpack_contents = list(
 		/obj/item/bait = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
@@ -78,5 +78,5 @@
 				beltr = /obj/item/rogueweapon/mace/cudgel
 			if ("My Bow Is Enough")
 				H.adjust_skillrank_up_to(/datum/skill/combat/bows, 5, TRUE)
-				head = /obj/item/clothing/head/roguetown/helmet/kettle
+				head = /obj/item/clothing/head/roguetown/duelhat
 		wretch_select_bounty(H)
