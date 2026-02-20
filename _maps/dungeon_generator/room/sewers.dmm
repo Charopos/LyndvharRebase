@@ -112,7 +112,7 @@
 /turf/open/floor/rogue/metal/barograte/open,
 /area/rogue/under/tomb/sewer)
 "px" = (
-/obj/item/clothing/cloak/heartfelt{
+/obj/item/clothing/cloak/weocilyn{
 	name = "shit stained cloak";
 	desc = "You are the lord of this shithouse."
 	},

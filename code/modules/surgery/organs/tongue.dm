@@ -24,7 +24,7 @@
 		/datum/language/valorian,
 		/datum/language/calmirixian,
 		/datum/language/rhaenish,
-		/datum/language/aavnic,
+		/datum/language/greencrest,
 		/datum/language/undead,
 		/datum/language/abyssal,
 		/datum/language/lyndhardtian,

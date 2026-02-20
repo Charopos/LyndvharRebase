@@ -84,7 +84,7 @@
 
 /datum/curse/abyssor
 	name = "Curse of Abyssor"
-	description = "I am forsaken by the Dreamer. His domain will surely become my grave."
+	description = "I am forsaken by the Dreamer. Her domain will surely become my grave."
 	trait = TRAIT_CURSE_ABYSSOR
 
 /datum/curse/ravox

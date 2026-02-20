@@ -1,8 +1,8 @@
 /datum/patron/old_god
 	name = "Psydon"
 	domain = "Otava, Naledi, Rockhill, and most of Psydonia's outermost fiefs."
-	desc = "  </br>''God. The manifestation of maximal good, and the father of all.'' </br>''He, who created reality for His children to frollick within.'' </br>''He, who breathed lyfe into the Pantheon to shepherd His virtues.'' </br>''He, who sacrificed His strength to strike down the Archdevil with the Comet Syon.'' </br>''He, who yet slumbers to this dae; and who may yet still return.''"
-	worshippers = "Commonfolk, Zealots, Heroes, and the Esoteric."
+	desc = "The Valorian Orthodoxy believe him to be the savior of all- the creator of everything, and all aspects of life itself. He is everything, and he is all. His love is infinite, and his wrath to his enemies total. While those of the Pantheon believe them to be the creators of Beowricke, and the aspects of all life, the Valorian Orthodoxy Church believes Psydon to have forged Beowricke with his own hands, and the representative of everything. He is omnipotent, omniscient, and omnipresent. When the Bloodwake came, it was Psydon that single handedly repelled the Archdaemons, and destroyed their armies. It is believed that Psydon currently rests, but will reawaken when he is needed once again."
+	worshippers = "Valorians, the Sojourner-Khazumians, and those converted by the Orthodoxy"
 	associated_faith = /datum/faith/old_god
 	mob_traits = list(TRAIT_PSYDONIAN_GRIT) //Assigned to all mobs with Psydon as the chosen patron. Gives a Willpower-scaling chance to resist succumbing to pain.
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison			= CLERIC_ORI,

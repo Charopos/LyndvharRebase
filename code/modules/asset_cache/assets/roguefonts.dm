@@ -21,7 +21,7 @@
 		"valorian.ttf" = 'interface/fonts/languages/valorian.ttf',
 		"calmirixia.ttf" = 'interface/fonts/languages/calmirixia.ttf',
 		"rhaenish.ttf" = 'interface/fonts/languages/rhaenish.ttf',
-		"aavnic.ttf" = 'interface/fonts/languages/aavnic.ttf',
+		"greencrest.ttf" = 'interface/fonts/languages/greencrest.ttf',
 		"forvheipan.ttf" = 'interface/fonts/languages/forvheipan.ttf',
 		"zybanti.otf" = 'interface/fonts/languages/zybanti.otf',
 	)

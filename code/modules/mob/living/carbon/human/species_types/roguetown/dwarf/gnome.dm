@@ -110,7 +110,7 @@ Even though they are of mixed blood and smaller than typical dwarves, most gnome
 		"Shalvine Forests" = SKIN_COLOR_SHALVINE_FORESTS,
 		"Lalve Steppes" = SKIN_COLOR_LALVE_STEPPES,
 		"Palm" = SKIN_COLOR_PALM,
-		"Naledi Coast" = SKIN_COLOR_NALEDI_COAST,
+		"Khazumian Coast" = SKIN_COLOR_KHAZUMIAN_COAST,
 	)
 /datum/species/dwarf/gnome/get_hairc_list()
 	return sortList(list(

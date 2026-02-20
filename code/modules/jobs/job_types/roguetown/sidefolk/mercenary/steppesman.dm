@@ -123,7 +123,7 @@
 
 			if("Druzhina - Light Archer")	//Tl;dr - light armor class for Tatar-style archery. Has 'Druzhina' as a name cus czech/polish influence, couldn't think of better one.
 				H.set_blindness(0)
-				to_chat(H, span_warning("A Druzhina, a commoner of the Aavnic steppes made into a professional soldier. Hunters, herders, and various nomads from all walks of life. Equal in service, equal behind their bow, and ready to fight."))
+				to_chat(H, span_warning("A Druzhina, a commoner of the Vruirid steppes made into a professional soldier. Hunters, herders, and various nomads from all walks of life. Equal in service, equal behind their bow, and ready to fight."))
 				shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot/steppesman
 				head = /obj/item/clothing/head/roguetown/helmet/sallet/shishak
 				gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather

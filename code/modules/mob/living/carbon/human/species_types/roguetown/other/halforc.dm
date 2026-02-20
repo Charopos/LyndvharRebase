@@ -5,7 +5,7 @@
 	name = "Half Orc"
 	id = "halforc"
 	origin_default = /datum/virtue/origin/unknown
-	origin = "Aavnr"
+	origin = "Unknown"
 	base_name = "Humen"
 	is_subrace = TRUE
 	desc = "<b>Half Orcs</b><br>\

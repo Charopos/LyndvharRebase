@@ -72,7 +72,7 @@
 /datum/virtue/origin/greencrest
 	name = "Crestborne"
 	origin_name = "Greencrest"
-	added_languages = list(/datum/language/aavnic)
+	added_languages = list(/datum/language/greencrest)
 	desc = "I originate from the open plains of Greencrest, a nation governed by an elvish aristocracy. All other races are effectively barred from upper castes of its heavily feudalistic society.<br>"
 	origin_desc = "PLACEHOLDER TO BE DONE FOR LATER"
 

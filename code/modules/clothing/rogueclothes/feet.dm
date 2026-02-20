@@ -89,7 +89,7 @@
 	AddComponent(/datum/component/armour_filtering/positive, TRAIT_HONORBOUND)
 
 /obj/item/clothing/shoes/roguetown/boots/nobleboot/steppesman
-	name = "aavnic riding boots"
+	name = "vruirid riding boots"
 	desc = "A pair of sturdy riding boots with an iron heel and brass spurs."
 	armor = ARMOR_LEATHER_GOOD
 	max_integrity = ARMOR_INT_SIDE_HARDLEATHER

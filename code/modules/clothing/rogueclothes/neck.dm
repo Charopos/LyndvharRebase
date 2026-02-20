@@ -832,9 +832,9 @@
 	sellprice = 100
 	anvilrepair = /datum/skill/craft/armorsmithing
 
-/obj/item/clothing/neck/roguetown/psicross/naledi
-	name = "naledian psy-bracelet"
-	desc = "A peculiar icon of worship from a foreign land. Forming the three-progned Psydonite cross in a circular ring, this bracelet embodies the Naledian belief of Psydon's eternity."
+/obj/item/clothing/neck/roguetown/psicross/khazumia
+	name = "khaliphate bracelet"
+	desc = "A peculiar icon of worship from a foreign land. Forming the three-progned cross in a circular ring, this bracelet represents a foreign form of Pantheonic faith abroad in Khazumia."
 	icon_state = "psybracelet"
 	item_state = null
 

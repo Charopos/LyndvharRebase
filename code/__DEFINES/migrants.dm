@@ -2,10 +2,10 @@
 #define MIGRANT_WAVE(wave_type) GLOB.migrant_waves[wave_type]
 
 #define MIGRANT_NOBILITY \
-	/datum/migrant_role/heartfelt/lord,\
-	/datum/migrant_role/heartfelt/hand,\
-	/datum/migrant_role/heartfelt/knight,\
+	/datum/migrant_role/weocilyn/lord,\
+	/datum/migrant_role/weocilyn/hand,\
+	/datum/migrant_role/weocilyn/knight,\
 
 
 #define MIGRANT_LORDS \
-	/datum/migrant_role/heartfelt/lord,\
+	/datum/migrant_role/weocilyn/lord,\

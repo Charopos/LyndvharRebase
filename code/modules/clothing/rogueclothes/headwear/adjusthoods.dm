@@ -107,7 +107,7 @@
 
 /obj/item/clothing/head/roguetown/roguehood/shalal/hijab
 	name = "hijab"
-	desc = "Flowing like blood from a wound, this tithe of cloth-and-silk spills out to the shoulders. It carries the telltale mark of Naledian stitcheries."
+	desc = "Flowing like blood from a wound, this tithe of cloth-and-silk spills out to the shoulders. It carries the telltale mark of Khaliphate stitcheries."
 	item_state = "hijab"
 	icon_state = "hijab"
 	hidesnoutADJ = FALSE
@@ -122,7 +122,7 @@
 	armor = ARMOR_SPELLSINGER //basically the same as a warscholar hood
 	item_state = "hijab"
 	icon_state = "hijab"
-	naledicolor = TRUE
+	khazumiacolor = TRUE
 
 /obj/item/clothing/head/roguetown/roguehood/shalal/heavyhood
 	name = "heavy hood"
@@ -353,7 +353,7 @@
 	armor = ARMOR_SPELLSINGER
 	icon_state = "hijab"
 	item_state = "hijab"
-	naledicolor = TRUE
+	khazumiacolor = TRUE
 	salvage_result = /obj/item/natural/cloth
 	salvage_amount = 1
 
@@ -365,7 +365,7 @@
 	armor = ARMOR_SPELLSINGER
 	icon_state = "monkhood"
 	item_state = "monkhood"
-	naledicolor = TRUE
+	khazumiacolor = TRUE
 	salvage_result = /obj/item/natural/cloth
 	salvage_amount = 1
 

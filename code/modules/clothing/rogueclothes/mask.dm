@@ -204,7 +204,7 @@
 
 /obj/item/clothing/mask/rogue/lordmask/tarnished
 	name = "tarnished golden halfmask"
-	desc = "Runes and wards, meant for daemons; the gold has somehow rusted in unnatural, impossible agony. The gold is now worthless, but that is not why the Naledi wear them."
+	desc = "Runes and wards, meant for daemons; the gold has somehow rusted in unnatural, impossible agony. The gold is now worthless, but that is not why the Khaliphate wear them."
 	sellprice = 20
 
 ////////////////////////
@@ -411,14 +411,14 @@
 
 /obj/item/clothing/mask/rogue/facemask/steel/steppesman
 	name = "steppesman war mask"
-	desc = "A steel mask shaped like the face of a rather charismatic fellow! Pronounced cheeks, a nose, and a large mustache. Well, people outside of Aavnr don't think you'd look charismatic at all wearing this."
+	desc = "A steel mask shaped like the face of a rather charismatic fellow! Pronounced cheeks, a nose, and a large mustache. Well, people outside of Rhaenish lands don't think you'd look charismatic at all wearing this."
 	max_integrity = 250
 	icon_state = "steppemask"
 	layer = HEAD_LAYER
 
 /obj/item/clothing/mask/rogue/facemask/steel/steppesman/anthro
 	name = "steppesman beast mask"
-	desc = "A steel mask shaped like the face of a rather charismatic beastman! Pronounced cheeks, a nose, and small spikes for whiskers. Well, people outside of Aavnr don't think you'd look charismatic at all wearing this."
+	desc = "A steel mask shaped like the face of a rather charismatic beastman! Pronounced cheeks, a nose, and small spikes for whiskers. Well, people outside of Rhaenish lands don't think you'd look charismatic at all wearing this."
 	icon_state = "steppemask_snout"
 
 /obj/item/clothing/mask/rogue/facemask/goldmask
@@ -533,24 +533,24 @@
 /obj/item/clothing/mask/rogue/ragmask/black
 	color = CLOTHING_BLACK
 
-/obj/item/clothing/mask/rogue/lordmask/naledi
-	name = "war scholar's mask"
+/obj/item/clothing/mask/rogue/lordmask/khazumia
+	name = "khaliphate mask"
 	item_state = "naledimask"
 	icon_state = "naledimask"
-	desc = "Runes and wards, meant for daemons; the gold has somehow rusted in unnatural, impossible agony. The most prominent of these etchings is in the shape of the Naledian psycross. Armored to protect the wearer's face."
+	desc = "Runes and wards, meant for daemons- an old enemy of the Khaliphate; the gold has somehow rusted in unnatural, impossible agony. Armored to protect the wearer's face."
 	max_integrity = 100
 	armor = ARMOR_PLATE
 	flags_inv = HIDEFACE|HIDESNOUT
 	sellprice = 0
 
-/obj/item/clothing/mask/rogue/lordmask/naledi/ComponentInitialize()
-	AddComponent(/datum/component/armour_filtering/positive, TRAIT_NALEDI, "naledi_mask")
+/obj/item/clothing/mask/rogue/lordmask/khazumia/ComponentInitialize()
+	AddComponent(/datum/component/armour_filtering/positive, TRAIT_KHAZUMIA, "khazumia_mask")
 
-/obj/item/clothing/mask/rogue/lordmask/naledi/sojourner
+/obj/item/clothing/mask/rogue/lordmask/khazumia/sojourner
 	name = "sojourner's mask"
 	item_state = "naledimask"
 	icon_state = "naledimask"
-	desc = "A golden mask, gnarled by the sustained agonies of djinnic corruption; yet as long as its Naledian hexes endure, so too will its wearer. Hand-fitted shingles flank the sides to repel incoming strikes. </br>'..Clad with the stereotype of abruptly disappearing without any forewarning, the typical Sojourner is in constant pursuit of diversifying their erudition. One might arrive to learn the local witch's recipe of sanctifying atropa extract and spend yils in the community trying to master it, while another might work alongside the region's Orthodoxic chapter to slay a lycker lord in exchange for his archive, only to vanish the very next day..'"
+	desc = "A golden mask, gnarled by the sustained agonies of wear and tear; yet as long as its Vaktasi hexes endure, so too will its wearer. Hand-fitted shingles flank the sides to repel incoming strikes. </br>'..Clad with the stereotype of abruptly disappearing without any forewarning, the typical Sojourner is in constant pursuit of diversifying their erudition. One might arrive to learn the local witch's recipe of sanctifying atropa extract and spend yils in the community trying to master it, while another might work alongside the region's Orthodoxic chapter to slay a lycker lord in exchange for his archive, only to vanish the very next day..'"
 	max_integrity = 150
 	armor = ARMOR_PLATE
 	flags_inv = HIDEFACE|HIDESNOUT

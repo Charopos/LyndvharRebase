@@ -173,8 +173,8 @@
 						/obj/item/rogueweapon/huntingknife = 1)
 
 /datum/advclass/foreigner/refugee
-	name = "Naledi Refugee"
-	tutorial = "An asylum-seeker from the war-torn deserts of Naledi, driven north as your homeland continues to be ravaged by an endless conflict against the Djinn."
+	name = "Khaliphate Wanderer"
+	tutorial = "A wanderer who has travelled far and across the sea from Khazumia, driven here in exploration of the war-torn ruins of Lyndhardtia."
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/refugee
 	subclass_languages = list(/datum/language/celestial)
@@ -198,13 +198,12 @@
 
 /datum/outfit/job/roguetown/adventurer/refugee/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("An asylum-seeker from the war-torn deserts of Naledi, \
-	driven north as your homeland continues to be ravaged by an endless conflict against the Djinn."))
+	to_chat(H, span_warning("A wanderer who has travelled far and across the sea from Khazumia, driven here in exploration of the war-torn ruins of Lyndhardtia."))
 	mask = /obj/item/clothing/mask/rogue/lordmask/tarnished
 	r_hand = /obj/item/rogueweapon/spear/assegai
 	backl = /obj/item/rogueweapon/scabbard/gwstrap
 	backr = /obj/item/storage/backpack/rogue/satchel
-	wrists = /obj/item/clothing/neck/roguetown/psicross/naledi
+	wrists = /obj/item/clothing/neck/roguetown/psicross/khazumia
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/civilian
 	pants = /obj/item/clothing/under/roguetown/skirt/black
@@ -266,13 +265,24 @@
 							/obj/item/rogueweapon/huntingknife = 1)
 
 
+/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/civilian
+	name = "shawl"
+	desc = "Thick and protective while remaining light and breezy; the perfect garb for protecting one from the hot sun and the harsh sands of Khazumia."
+	color = CLOTHING_BLACK
+
+/obj/item/clothing/head/roguetown/roguehood/shalal/hijab/black
+	color = CLOTHING_BLACK
+
+/obj/item/storage/belt/rogue/leather/shalal/purple
+	color = CLOTHING_PURPLE
+
 /datum/advclass/foreigner/shepherd
 	name = "Szöréndnížine Shepherd"
-	tutorial = "You're a simple shepherd hailing from Aavnr's Free City, taking a pilgrimage or having fled for one reason or another. You can easily fend for yourself in the wilderness, and with enough practice, fend for yourself in combat against even armoured opponents with your traditional axe."
+	tutorial = "You're a simple shepherd hailing from the Vruirid plains, taking a pilgrimage or having travelled for one reason or another. You can easily fend for yourself in the wilderness, and with enough practice, fend for yourself in combat against even armoured opponents with your traditional axe."
 	extra_context = "This class is for experienced adventurers with a solid grasp on footwork and stamina management. Your weapon has special intents you can juggle through to make fights easier... Sometimes."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	subclass_languages = list(/datum/language/aavnic)
+	subclass_languages = list(/datum/language/rhaenish)
 	outfit = /datum/outfit/job/roguetown/adventurer/freishepherd
 	traits_applied = list()
 	cmode_music = 'sound/music/frei_shepherd.ogg'

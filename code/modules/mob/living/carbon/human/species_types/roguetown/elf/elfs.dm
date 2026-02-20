@@ -121,17 +121,16 @@
 		"Grenzel Woods" = SKIN_COLOR_GRENZEL_WOODS,
 		"Dandelion Creek" = SKIN_COLOR_DANDELION_CREEK,
 		"Roseveil" = SKIN_COLOR_ROSEVEIL,
-		"Azuregrove" = SKIN_COLOR_AZUREGROVE,
+		"Rubygrove" = SKIN_COLOR_AZUREGROVE,
 		"Arborshome" = SKIN_COLOR_ARBORSHOME,
 		"Almondvalle" = SKIN_COLOR_ALMONDVALLE,
 		"Walnut Woods" = SKIN_COLOR_WALNUT_WOODS,
 		"Timberborn" = SKIN_COLOR_TIMBERBORN,
 		"Lotus Coast" = SKIN_COLOR_LOTUS_COAST,
-		"Grenzel Woods" = SKIN_COLOR_GRENZEL_WOODS,
 		"Calmirixian Swamps" = SKIN_COLOR_CALMIRIXIAN_SWAMPS,
-		"Shalvine Forests" = SKIN_COLOR_SHALVINE_FORESTS,
-		"Lalvestine Thickets" = SKIN_COLOR_LALVE_STEPPES,
-		"Naledi Coverts"	= SKIN_COLOR_NALEDI_COAST
+		"Zybantine Forests" = SKIN_COLOR_SHALVINE_FORESTS,
+		"Kargradian Thickets" = SKIN_COLOR_LALVE_STEPPES,
+		"Khaliphate Coverts"	= SKIN_COLOR_KHAZUMIAN_COAST
 	)
 
 /datum/species/elf/wood/get_hairc_list()

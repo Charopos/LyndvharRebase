@@ -596,18 +596,18 @@
 	desc = "I was on the sermon. My patron is not proud of me."
 	icon_state = "hereticsermon"
 
-/datum/status_effect/debuff/lost_naledi_mask
-	id = "naledimask"
-	alert_type = /atom/movable/screen/alert/status_effect/debuff/naledimask
+/datum/status_effect/debuff/lost_khazumia_mask
+	id = "khazumiamask"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/khazumiamask
 	effectedstats = list(STATKEY_WIL = -3, STATKEY_LCK = -3)
 
-/atom/movable/screen/alert/status_effect/debuff/naledimask
+/atom/movable/screen/alert/status_effect/debuff/khazumiamask
 	name = "Lost Mask"
-	desc = "Djinns and daemons may claim me at any moment without the mask. It is not safe."
+	desc = "My face is visible, and my identity is shown to all. It is not safe- daemons could take me at any moment."
 	icon_state = "muscles"
 
 /datum/status_effect/debuff/lost_shaman_hood
-	id = "naledimask"
+	id = "khazumiamask"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/shamanhood
 	effectedstats = list(STATKEY_WIL = -3, STATKEY_LCK = -3)
 

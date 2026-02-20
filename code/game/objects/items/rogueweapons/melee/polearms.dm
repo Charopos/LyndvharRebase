@@ -1405,9 +1405,9 @@
 				return list("shrink" = 0.6,"sx" = -1,"sy" = 2,"nx" = 0,"ny" = 2,"wx" = 2,"wy" = 1,"ex" = 0,"ey" = 1,"nturn" = 0,"sturn" = 0,"wturn" = 70,"eturn" = 15,"nflip" = 1,"sflip" = 1,"wflip" = 1,"eflip" = 1,"northabove" = 1,"southabove" = 0,"eastabove" = 0,"westabove" = 0)
 
 
-/obj/item/rogueweapon/woodstaff/naledi
-	name = "naledian warstaff"
-	desc = "A staff carrying the crescent moon of Psydon's knowledge, as well as the black and gold insignia of the war scholars."
+/obj/item/rogueweapon/woodstaff/khazumia
+	name = "khazumian warstaff"
+	desc = "A staff carrying the crescent moon of Noc's knowledge, as well as the black and gold insignia of the Vaktasi."
 	icon_state = "naledistaff"
 	possible_item_intents = list(SPEAR_BASH, /datum/intent/special/magicarc)
 	gripped_intents = list(/datum/intent/spear/bash/ranged, /datum/intent/special/magicarc, /datum/intent/mace/smash/wood/ranged)
@@ -1415,7 +1415,7 @@
 	force_wielded = 22
 	max_integrity = 250
 
-/obj/item/rogueweapon/woodstaff/naledi/getonmobprop(tag)
+/obj/item/rogueweapon/woodstaff/khazumia/getonmobprop(tag)
 	. = ..()
 	if(tag)
 		switch(tag)
@@ -1456,7 +1456,7 @@
 
 /obj/item/rogueweapon/woodstaff/quarterstaff/silver
 	name = "silver quarterstaff"
-	desc = "A quarterstaff reinforced with silver tips. A relatively new design, purportedly inspired by the warstaffs oft-carried by Naledian warscholars. Durable enough to catch avantyne to the shaft, without so much as a splinter - or so, they say."
+	desc = "A quarterstaff reinforced with silver tips. A relatively new design, purportedly inspired by the warstaffs oft-carried by Khaliphate Vaktasi-acolytes. Durable enough to catch avantyne to the shaft, without so much as a splinter - or so, they say."
 	force = 20
 	force_wielded = 27
 	gripped_intents = list(/datum/intent/spear/bash/ranged/quarterstaff, /datum/intent/spear/thrust/quarterstaff)
@@ -1478,7 +1478,7 @@
 
 /obj/item/rogueweapon/woodstaff/quarterstaff/psy
 	name = "psydonic quarterstaff"
-	desc = "A quarterstaff reinforced with silver tips. A relatively new design, purportedly inspired by the warstaffs oft-carried by Naledian warscholars. Durable enough to catch avantyne to the shaft, without so much as a splinter - or so, they say."
+	desc = "A quarterstaff reinforced with silver tips. A relatively new design, purportedly inspired by the warstaffs oft-carried by Khazumian Vaktasi-acolytes. Durable enough to catch avantyne to the shaft, without so much as a splinter - or so, they say."
 	force = 20
 	force_wielded = 27
 	gripped_intents = list(/datum/intent/spear/bash/ranged/quarterstaff, /datum/intent/spear/thrust/quarterstaff)
@@ -1546,7 +1546,7 @@
 	smeltresult = /obj/item/ingot/steel
 
 /obj/item/rogueweapon/spear/boar/frei
-	name = "Aavnic lándzsa"
+	name = "Khaliphate lándzsa"
 	desc = "A regional earspoon lance with a carved handle, adorned with the colours of the Freifechters. These are smithed by the legendary armourers of Vyšvou and given to distinguished lancers upon their graduation."
 	icon_state = "cityspear"
 	icon = 'icons/roguetown/weapons/special/freifechter.dmi'
@@ -1611,7 +1611,7 @@
 
 /obj/item/rogueweapon/spear/assegai/iron
 	name = "iron assegai"
-	desc = "A long spear originating from the southern regions of Naledi. Commoners living along the great river Bilomari are taught to use assegai so they can defend themselves against the Djinn."
+	desc = "A long spear originating from the southern regions of the Khaliphate. Commoners living along the great rivers that form the vast fertile oasis are taught to use assegai so they can defend themselves against desert raiders."
 	max_integrity = 150
 	max_blade_int = 150
 	icon_state = "assegai_iron"
@@ -1619,7 +1619,7 @@
 
 /obj/item/rogueweapon/spear/assegai
 	name = "steel assegai"
-	desc = "A long spear originating from the southern regions of Naledi. Commoners living along the great river Bilomari are taught to use assegai so they can defend themselves against the Djinn."
+	desc = "A long spear originating from the southern regions of the Khaliphate. Commoners living along the great river that form the vast fertile oasis are taught to use assegai so they can defend themselves against desert raiders."
 	icon = 'icons/roguetown/weapons/polearms64.dmi'
 	max_integrity = 250
 	max_blade_int = 200

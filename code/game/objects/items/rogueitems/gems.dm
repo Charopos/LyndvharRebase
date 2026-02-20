@@ -138,7 +138,7 @@
 
 /obj/item/roguegem/turq
 	name = "cerulite"
-	desc = "A beautiful teal gem that carves easily. Beloved by mages, its remarkable clarity makes it a favored tool of Naledi’s astrologer-mages in divination."
+	desc = "A beautiful teal gem that carves easily. Beloved by mages, its remarkable clarity makes it a favored tool of the Khaliphate's astrologists in divination."
 	icon = 'icons/roguetown/gems/gem_turq.dmi'
 	icon_state = "raw_turq"
 	sellprice = 75
@@ -200,8 +200,8 @@
 		slapcraft_recipes = slapcraft_recipe_list,\
 	)
 
-/obj/item/roguegem/amethyst/naledi
-	name = "naledic amythortz"
+/obj/item/roguegem/amethyst/khazumia
+	name = "khazumian amythortz"
 	desc = "A deep lavender crystal, crackling with magical energy. To a Disciple, it might simply be a keepsake from pilgrimages abroad: but to a Sojourner, it is the leyline to their arcyne-enchanted form of martial combat. </br>This gemstone can be applied to a yet-unfinished spelltome by those with arcyne potential, in order to recall more spells."
 
 /obj/item/roguegem/random

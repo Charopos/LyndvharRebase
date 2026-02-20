@@ -220,7 +220,7 @@
 	desc = "Sheared burlap and cloth, meticulously fashioned around the forearms. Taut fibers turn weeping gashes into mere tears along the cloth, allowing for Monks to more confidently parry blades with their bare hands."
 	color = "#BFB8A9"
 
-/obj/item/clothing/wrists/roguetown/bracers/cloth/naledi
+/obj/item/clothing/wrists/roguetown/bracers/cloth/khazumia
 	name = "sojourner's wrappings"
 	desc = "Sheared burlap and cloth, meticulously fashioned around the forearms."
 	color = "#48443B"

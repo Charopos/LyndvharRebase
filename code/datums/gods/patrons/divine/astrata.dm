@@ -1,7 +1,7 @@
 /datum/patron/divine/astrata
 	name = "Astrata"
 	domain = "Goddess of the Sun, Day, and Order"
-	desc = "The Tyrant of the Ten, sister and rival to Noc - and the eldest of them all. Her radiance keeps the evils at bay during the dae'. Nite', however, is a different tale."
+	desc = "Considered the eldest sibling of the Pantheon, ASTRATA is the Mother Goddess of the Sun. It is widely believed that Astrata came first, and through loneliness at being alone, she created her siblings in her own image. She oversees all the other members of the Pantheon as its leader. However, she is considered to be one of the more aggressive and prideful of the Ten. Her doctrine is one of zealotry- complete devotion to her and the order of the Gods."
 	worshippers = "The Noble Hearted, Zealots and Farmers"
 	mob_traits = list(TRAIT_APRICITY)
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison			= CLERIC_ORI,

@@ -157,7 +157,7 @@
 	return list(
 		"Grenzelhoft" = SKIN_COLOR_GRENZELHOFT,
 		"Hammerhold" = SKIN_COLOR_HAMMERHOLD,
-		"Avar" = SKIN_COLOR_AVAR,
+		"Greencrest" = SKIN_COLOR_GREENCREST,
 		"Rockhill" = SKIN_COLOR_ROCKHILL,
 		"Valoria" = SKIN_COLOR_VALORIAN,
 		"Calmirixia" = SKIN_COLOR_CALMIRIXIAN,
@@ -165,7 +165,7 @@
 		"North Zybantu (Chorodiaki)" = SKIN_COLOR_GIZA,
 		"West Zybantu (Vrdaqnan)" = SKIN_COLOR_SHALVISTINE,
 		"East Zybantu (Nshkormh)" = SKIN_COLOR_LALVESTINE,
-		"Naledi" = SKIN_COLOR_NALEDI,
-		"Naledi South" = SKIN_COLOR_NALEDI_LIGHT,
+		"Khazumia" = SKIN_COLOR_KHAZUMIA,
+		"Khazumia South" = SKIN_COLOR_KHAZUMIA_LIGHT,
 		"Yanshen" = SKIN_COLOR_YANSHEN,
 	)

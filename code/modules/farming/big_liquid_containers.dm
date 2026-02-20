@@ -113,12 +113,12 @@
 	reagents.add_reagent(/datum/reagent/consumable/ethanol/kgunsake,900)
 
 
-/obj/structure/fermentation_keg/avarrice
-	desc = "A barrel with a simple mark. A murky, white wine made from rice grown in the steppes of Avar."
+/obj/structure/fermentation_keg/vruiridrice
+	desc = "A barrel with a simple mark. A murky, white wine made from rice grown in the steppes of the Vruirid."
 
-/obj/structure/fermentation_keg/avarrice/Initialize()
+/obj/structure/fermentation_keg/vruiridrice/Initialize()
 	. = ..()
-	reagents.add_reagent(/datum/reagent/consumable/ethanol/avarrice,900)
+	reagents.add_reagent(/datum/reagent/consumable/ethanol/vruiridrice,900)
 
 
 /obj/structure/fermentation_keg/rhaenvalmead
