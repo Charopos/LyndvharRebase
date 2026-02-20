@@ -10,7 +10,7 @@
 	max_pq = null
 	antag_job = TRUE
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Long ago you did a crime worthy of your bounty being hung on the wall outside of the local inn. You now live with your fellow freemen in the bog, and generally get up to no good."
+	tutorial = "Long ago you forged a pact with the Archdaemon of Murder, GRAGGAR. It is through his will that you act, a blade in the dark upholding the wills of a dark master. May the streets never be safe as long as you roam them, for the power of Murder will never be truly satiated until it runs red with the blood of his victims."
 
 	outfit = null
 	outfit_female = null

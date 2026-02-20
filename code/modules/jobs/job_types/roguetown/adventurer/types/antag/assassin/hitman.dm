@@ -1,6 +1,6 @@
 /datum/advclass/assassin_hitman
 	name = "Assassin - Professional Hitman"
-	tutorial = "You are no street-thug or yoeman, you have honed your trade for years if not outright decades. Your craft? Blending in anywhere possible, waiting for your target to be alone, and finishing the hit. After all, dead men tell no tales."
+	tutorial = "You are no street-thug or yeoman, you have honed your trade for years if not outright decades. Your craft? Blending in anywhere possible, waiting for your target to be alone, and finishing the hit. After all, dead men tell no tales."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/assassin/hitman
@@ -44,7 +44,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 					/obj/item/flashlight/flare/torch/lantern/prelit = 1,
 					/obj/item/lockpickring/mundane = 1,
@@ -58,8 +58,6 @@
 	backl = /obj/item/rogueweapon/mace/cudgel
 	beltl = /obj/item/rogueweapon/knuckles
 
-	if(!istype(H.patron, /datum/patron/inhumen/graggar))
-		var/inputty = input(H, "Would you like to change your patron to Graggar?", "The beast roars", "No") as anything in list("Yes", "No")
-		if(inputty == "Yes")
-			to_chat(H, span_warning("My former deity has abandoned me.. Graggar is my new master."))
-			H.set_patron(/datum/patron/inhumen/graggar)
+	if (!(istype(H.patron, /datum/patron/inhumen/graggar)))
+		to_chat(H, span_warning("My former deity has abandoned me.. Graggar is my new master."))
+		H.set_patron(/datum/patron/inhumen/graggar)
