@@ -6,16 +6,16 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = ACCEPTED_RACES
+	allowed_races = RACES_SHUNNED_UP
 
-	tutorial = "Adventurers and warriors alike have two exit plans; the early grave or even earlier retirement. As the proud owner of this fine establishment, you took the latter: The Fool's Flagon, tavern, inn, and bathhouse! You even have an assortment of staff to help you, and plenty of business from the famished townsfolk looking to eat, weary travelers looking to rest, and characters of dubious repute seeking their own sort of success. Your bladework has gotten a little rusty, and the church across the street gives you the odd evil eye for the extra 'delights' of the bathhouse--but, well...you can't win 'em all!"
+	tutorial = "Adventurers and warriors alike have two exit plans in Beowricke; the early grave or even earlier retirement. As the proud owner of the Fool's Flagon, you took the latter. You even have an assortment of staff to help you, and plenty of business from the famished townsfolk looking to eat, weary travelers looking to rest, and characters of dubious repute seeking their own sort of success. Your bladework has gotten a little rusty, and the church across the street gives you the odd evil eye for the extra 'delights' of the bathhouse--but, well...you can't win 'em all!"
 
 	outfit = /datum/outfit/job/roguetown/innkeeper
 	display_order = JDO_INNKEEPER
 	give_bank_account = TRUE
 	min_pq = -4
 	max_pq = null
-	round_contrib_points = 3
+	round_contrib_points = 5
 	cmode_music = 'sound/music/cmode/towner/combat_retired.ogg'
 
 	job_traits = list(TRAIT_MEDIUMARMOR, TRAIT_TAVERN_FIGHTER, TRAIT_EMPATH, TRAIT_DODGEEXPERT, TRAIT_CICERONE, TRAIT_HOMESTEAD_EXPERT)
@@ -28,7 +28,7 @@
 
 /datum/advclass/innkeeper
 	name = "Innkeeper"
-	tutorial = "Adventurers and warriors alike have two exit plans; the early grave or even earlier retirement. As the proud owner of this fine establishment, you took the latter: The Fool's Flagon, tavern, inn, and bathhouse! You even have an assortment of staff to help you, and plenty of business from the famished townsfolk looking to eat, weary travelers looking to rest, and characters of dubious repute seeking their own sort of success. Your bladework has gotten a little rusty, and the church across the street gives you the odd evil eye for the extra 'delights' of the bathhouse--but, well...you can't win 'em all!"
+	tutorial = "Adventurers and warriors alike have two exit plans in Beowricke; the early grave or even earlier retirement. As the proud owner of the Fool's Flagon, you took the latter. You even have an assortment of staff to help you, and plenty of business from the famished townsfolk looking to eat, weary travelers looking to rest, and characters of dubious repute seeking their own sort of success. Your bladework has gotten a little rusty, and the church across the street gives you the odd evil eye for the extra 'delights' of the bathhouse--but, well...you can't win 'em all!"
 	outfit = /datum/outfit/job/roguetown/innkeeper/basic
 	category_tags = list(CTAG_INNKEEPER)
 	subclass_stats = list(
@@ -41,9 +41,9 @@
 	age_mod = /datum/class_age_mod/innkeeper
 	subclass_skills = list(
 		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/knives = SKILL_LEVEL_NOVICE,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_EXPERT, // get out of my bar
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT, // get out of my bar
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_APPRENTICE,
