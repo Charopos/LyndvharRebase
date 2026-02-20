@@ -152,7 +152,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/crier
-	name = "Town Crier"
+	name = "City Herald"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/keeper
