@@ -5,7 +5,7 @@
 	However, with the increase in banditry, necromancy, deadite risings, and increasing sea raider raids, there are rumors abound that Weocilyn is not what it used to be. \
 	Travellers often warn of Weocilyn having fallen already, and words of secretive cultists isn't unheard of."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = ACCEPTED_RACES
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/weocilyn/retinue/houseguard
 	maximum_possible_slots = 4
 	pickprob = 100
@@ -216,7 +216,7 @@
 	However, with the increase in banditry, necromancy, deadite risings, and increasing sea raider raids, there are rumors abound that Weocilyn is not what it used to be. \
 	Travellers often warn of Weocilyn having fallen already, and words of secretive cultists isn't unheard of."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_NO_CONSTRUCT
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/weocilyn/retinue/squire
 	maximum_possible_slots = 2
 	pickprob = 100

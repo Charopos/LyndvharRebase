@@ -22,7 +22,7 @@
 	var/current_tab = TAB_MAIN
 	var/compact = TRUE
 	var/total_deposit = 0
-	var/list/excluded_jobs = list("Wretch","Vagabond","Adventurer")
+	var/list/excluded_jobs = list("Wretch","Vagabond","Outlander")
 	var/current_category = "Raw Materials"
 	var/list/categories = list("Raw Materials", "Fruit", "Vegetable", "Animal","Seafood")
 	var/list/daily_payments = list() // Associative list: job name -> payment amount
@@ -43,9 +43,9 @@
 	daily_payments["Squire"] = 10
 	daily_payments["Seneschal"] = 40 //Manor-House
 	daily_payments["Servant"] = 20	
-	daily_payments["Head Physician"] = 20 //Doctors
+	daily_payments["Practitioner"] = 20 //Doctors
 	daily_payments["Apothecary"] = 10
-	daily_payments["Court Magician"] = 40 //University
+	daily_payments["Archmagus"] = 40 //University
 	daily_payments["Archivist"] = 20
 	daily_payments["Magicians Associate"] = 10
 
@@ -553,9 +553,9 @@
 
 /obj/structure/roguemachine/steward/proc/job_filter(advj, j, compact = FALSE)
 	if(advj in excluded_jobs)
-		return "Adventurer"
+		return "Outlander"
 	if(j in excluded_jobs)
-		return "Adventurer"
+		return "Outlander"
 	if(compact && j)
 		return j
 	else if(!compact && advj && j)

@@ -8,10 +8,7 @@
 
 	allowed_races = ACCEPTED_RACES
 
-	tutorial = "The Grenzelhofts were known for their Jesters, wisemen with a tongue just as sharp as their wit. \
-		You command a position of a fool, envious of the position your superiors have upon you. \
-		Your cheap tricks and illusions of intelligence will only work for so long, \
-		and someday you'll find yourself at the end of something sharper than you."
+	tutorial = "You command a position of a fool, envious of the position your superiors have upon you. Your cheap tricks and illusions of intelligence will only work for so long, and someday you'll find yourself at the end of something sharper than you."
 
 	allowed_ages = ALL_AGES_LIST
 	outfit = /datum/outfit/job/roguetown/jester
@@ -49,6 +46,7 @@
 	H.STAINT = rand(1, 21)
 	H.STAPER = rand(1, 21)
 	H.STALUC = rand(1, 21)
+	H.STASPD = rand(1, 21)
 	H.cmode_music = 'sound/music/combat_jester.ogg'
 	if(H.mind)
 		// Mime vs Jester.

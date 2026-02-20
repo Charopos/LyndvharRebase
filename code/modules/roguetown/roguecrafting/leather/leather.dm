@@ -192,7 +192,7 @@
 	always_availible = TRUE
 
 /datum/crafting_recipe/roguetown/leather/doctormask
-	name = "head physician's mask"
+	name = "prax's mask"
 	result = /obj/item/clothing/mask/rogue/courtphysician
 	reqs = list(/obj/item/natural/hide/cured = 1, /obj/item/natural/bone = 1)
 	craftdiff = 1

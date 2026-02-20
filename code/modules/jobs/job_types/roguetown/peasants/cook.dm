@@ -33,16 +33,17 @@
 	category_tags = list(CTAG_COOK)
 	subclass_stats = list(
 		STATKEY_CON = 2,
-		STATKEY_STR = 1,
-		STATKEY_INT = 1
+		STATKEY_STR = 2,
+		STATKEY_INT = 1,
+		STATKEY_SPD = -1
 	)
 	age_mod = /datum/class_age_mod/cook
 	subclass_skills = list(
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN, // get out of my kitchen dude
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
-		/datum/skill/craft/cooking = SKILL_LEVEL_EXPERT,
+		/datum/skill/craft/cooking = SKILL_LEVEL_MASTER,
 		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE,
 		/datum/skill/labor/butchering = SKILL_LEVEL_EXPERT,

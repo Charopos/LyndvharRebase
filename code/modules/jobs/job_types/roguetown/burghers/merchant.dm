@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = JCOLOR_BURGHER
-	allowed_races = ACCEPTED_RACES
+	allowed_races = RACES_ALL_KINDS
 	tutorial = "You were born into wealth, learning from before you could talk about the basics of mathematics. Counting coins is a simple pleasure for any person, but you've made it an art form. These people are addicted to your wares, and you are the literal beating heart of this economy: Don't let these filth-covered troglodytes ever forget that."
 
 	display_order = JDO_MERCHANT
@@ -14,10 +14,10 @@
 	outfit = /datum/outfit/job/roguetown/merchant
 	give_bank_account = TRUE
 	noble_income = 100 // Guild Support - The sole Money Role outside of the keep, should help them keep pace a bit + pick up if they get completely knocked out of coin.
-	min_pq = 1 //"Yeah...my guy says the best I can do is one PQ, final offer"
+	min_pq = 0
 	max_pq = null
 	required = TRUE
-	round_contrib_points = 3
+	round_contrib_points = 4
 	cmode_music = 'sound/music/combat_noble.ogg'
 	is_quest_giver = TRUE
 
@@ -42,7 +42,7 @@
 		STATKEY_STR = -1
 	)
 	subclass_skills = list(
-		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/bows = SKILL_LEVEL_APPRENTICE,
@@ -61,19 +61,24 @@
 /datum/outfit/job/roguetown/merchant/basic/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/navaja = 1,
-		/obj/item/blueprint/mace_mushroom = 1
-		)
+	mask = /obj/item/clothing/mask/rogue/spectacles/golden
 	neck = /obj/item/clothing/neck/roguetown/horus
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/merchant
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor
 	pants = /obj/item/clothing/under/roguetown/tights/sailor
-	belt = /obj/item/storage/belt/rogue/leather/rope
-	beltl = /obj/item/storage/keyring/merchant
+	belt = /obj/item/storage/belt/rogue/leather
+	beltl = /obj/item/rogueweapon/scabbard
 	beltr = /obj/item/storage/belt/rogue/pouch/merchant/coins
-	id = /obj/item/clothing/ring/gold
-	backr = /obj/item/storage/backpack/rogue/satchel
+	l_hand = /obj/item/rogueweapon/sword/rapier
+	id = /obj/item/clothing/ring/emeralds
+	backr = /obj/item/storage/backpack/rogue/satchel/short
+	backpack_contents = list(
+		/obj/item/rogueweapon/scabbard/sheath,
+		/obj/item/bottle_kit,
+		/obj/item/storage/keyring/merchant,
+		/obj/item/rogueweapon/huntingknife/idagger/navaja,
+		/obj/item/blueprint/mace_mushroom
+	)
 	if(should_wear_masc_clothes(H))
 		shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 		H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()

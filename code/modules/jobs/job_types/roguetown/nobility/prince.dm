@@ -7,7 +7,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	f_title = "Heiress"
-	allowed_races = RACES_NO_CONSTRUCT //Maybe a system to force-pick lineage based on king and queen should be implemented. (No it shouldn't.)
+	allowed_races = RACES_SHUNNED_UP //Maybe a system to force-pick lineage based on king and queen should be implemented. (No it shouldn't.)
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
 	advclass_cat_rolls = list(CTAG_HEIR = 20)
@@ -17,17 +17,15 @@
 	display_order = JDO_PRINCE
 	give_bank_account = TRUE
 	noble_income = 20
-	min_pq = 1
+	min_pq = 0
 	max_pq = null
 	round_contrib_points = 3
 	cmode_music = 'sound/music/combat_noble.ogg'
 	job_traits = list(TRAIT_NOBLE)
 	job_subclasses = list(
 		/datum/advclass/heir/daring,
-		/datum/advclass/heir/bookworm,
 		/datum/advclass/heir/aristocrat,
-		/datum/advclass/heir/inbred,
-		/datum/advclass/heir/scamp
+		/datum/advclass/heir/scamp,
 	)
 
 /datum/outfit/job/roguetown/heir/pre_equip(mob/living/carbon/human/H)
@@ -97,48 +95,6 @@
 	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_RICH, H, "Savings.")
 
-/datum/advclass/heir/bookworm
-	name = "Introverted Bookworm"
-	tutorial = "Despite your standing, sociability is not your strong suit, and you have kept mostly to yourself and your books. This hardly makes you a favourite among the lords and ladies of the court, and an exit from your room is often met with amusement from nobility and servants alike. But maybe... just maybe, some of your reading interests may be bearing fruit."
-	outfit = /datum/outfit/job/roguetown/heir/bookworm
-	traits_applied = list(TRAIT_ARCYNE_T1, TRAIT_MAGEARMOR)
-	category_tags = list(CTAG_HEIR)
-	subclass_stats = list(
-		STATKEY_STR = -1,
-		STATKEY_INT = 2,
-		STATKEY_SPD = 1,
-		STATKEY_CON = -1,
-		STATKEY_LCK = 1,
-	)
-	subclass_spellpoints = 9
-	subclass_skills = list(
-		/datum/skill/misc/reading = SKILL_LEVEL_MASTER,
-		/datum/skill/magic/arcane = SKILL_LEVEL_NOVICE,
-		/datum/skill/craft/crafting = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/craft/alchemy = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/knives = SKILL_LEVEL_NOVICE,
-	)
-
-/datum/outfit/job/roguetown/heir/bookworm/pre_equip(mob/living/carbon/human/H)
-	..()
-	if(should_wear_masc_clothes(H))
-		pants = /obj/item/clothing/under/roguetown/tights/random
-		armor = /obj/item/clothing/suit/roguetown/armor/longcoat
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/prince
-	if(should_wear_femme_clothes(H))
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/princess
-	head = /obj/item/clothing/head/roguetown/circlet
-	belt = /obj/item/storage/belt/rogue/leather/cloth/lady
-	beltr = /obj/item/storage/keyring/heir
-	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/special
-	backr = /obj/item/storage/backpack/rogue/satchel
-	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
-	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes/gold
-	mask = /obj/item/clothing/mask/rogue/spectacles
-	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
-	if(H.mind)
-		SStreasury.give_money_account(ECONOMIC_RICH, H, "Savings.")
-
 /datum/advclass/heir/aristocrat
 	name = "Sheltered Aristocrat"
 	tutorial = "Life has been kind to you; you've an entire keep at your disposal, servants to wait on you, and a whole retinue of guards to guard you. You've nothing to prove; just live the good life and you'll be a lord someday, too. A lack of ambition translates into a lacking skillset beyond schooling, though, and your breaks from boredom consist of being a damsel or court gossip."
@@ -190,8 +146,8 @@
 		SStreasury.give_money_account(ECONOMIC_RICH, H, "Savings.")
 
 /datum/advclass/heir/inbred
-	name = "Inbred wastrel"
-	tutorial = "Your bloodline ensures Psydon smiles upon you by divine right, the blessing of nobility... until you were born, anyway. You are a child forsaken, and even though your body boils as you go about your day, your spine creaks, and your drooling form needs to be waited on tirelessly you are still considered more important then the peasant that keeps the town fed and warm. Remind them of that fact when your lungs are particularly pus free."
+	name = "Inbred Wastrel"
+	tutorial = "Your bloodline ensures Astrata smiles upon you by divine right, the blessing of nobility... until you were born, anyway. You are a child forsaken, and even though your body boils as you go about your day, your spine creaks, and your drooling form needs to be waited on tirelessly you are still considered more important then the peasant that keeps the town fed and warm. Remind them of that fact when your lungs are particularly pus free."
 	outfit = /datum/outfit/job/roguetown/heir/inbred
 	traits_applied = list(TRAIT_CRITICAL_WEAKNESS, TRAIT_NORUN, TRAIT_GOODLOVER)
 	category_tags = list(CTAG_HEIR)

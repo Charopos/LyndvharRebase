@@ -6,9 +6,9 @@
 	total_positions = 2
 	spawn_positions = 2
 
-	allowed_races = ACCEPTED_RACES
+	allowed_races = RACES_SHUNNED_UP
 
-	tutorial = "You are an accomplished physician, trained and practiced in the art of medicine. You answer to the Head Physician, who enables your practice. Woe betide the one who suffers your scalpel."
+	tutorial = "Working under the tutelage of the Practitioner, you still remain a mere apprentice in the medical arts. Woe is the one who has to suffer your hand holding the scalpel when your master is out."
 
 	outfit = /datum/outfit/job/roguetown/apothecary
 
@@ -17,7 +17,7 @@
 	display_order = JDO_APOTHECARY
 	give_bank_account = TRUE
 
-	min_pq = 0
+	min_pq = -1
 	max_pq = null
 	round_contrib_points = 5
 
@@ -30,7 +30,7 @@
 
 /datum/advclass/apothecary
 	name = "Apothecary"
-	tutorial = "You are an accomplished physician, trained and practiced in the art of medicine. You answer to the Head Physician, who enables your practice. Woe betide the one who suffers your scalpel."
+	tutorial = "Working under the tutelage of the Practitioner, you still remain a mere apprentice in the medical arts. Woe is the one who has to suffer your hand holding the scalpel when your master is out."
 	outfit = /datum/outfit/job/roguetown/apothecary/basic
 	category_tags = list(CTAG_APOTH)
 	subclass_stats = list(
@@ -40,7 +40,7 @@
 	)
 	subclass_skills = list(
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE, //enhances survival chances.
+		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE, //enhances survival chances. 
 		/datum/skill/combat/wrestling = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_NOVICE,
@@ -53,18 +53,17 @@
 /datum/outfit/job/roguetown/apothecary/basic/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	head = /obj/item/clothing/head/roguetown/roguehood/black
+	mask = /obj/item/clothing/mask/rogue/physician
+	head = /obj/item/clothing/head/roguetown/roguehood/phys
 	pants = /obj/item/clothing/under/roguetown/trou/apothecary
 	shirt = /obj/item/clothing/suit/roguetown/shirt/apothshirt
-	armor = /obj/item/clothing/suit/roguetown/shirt/robe/black
-	belt = /obj/item/storage/belt/rogue/leather/rope
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe/tabardblack
+	belt = /obj/item/storage/belt/rogue/leather/black
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltl = /obj/item/storage/belt/rogue/surgery_bag/full/physician
 	beltr = /obj/item/roguekey/physician
-	id = /obj/item/scomstone/bad
-	r_hand = /obj/item/rogueweapon/woodstaff/
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/natural/worms/leech/cheele = 1,
 		/obj/item/recipe_book/alchemy = 1,

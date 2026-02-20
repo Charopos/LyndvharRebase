@@ -7,7 +7,7 @@
 	spawn_positions = 0
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_NO_CONSTRUCT
+	allowed_races = RACES_SHUNNED_UP
 	tutorial = "Picked out of your political value rather than likely any form of love, you have become the Viscount's most trusted confidant--and likely friend--throughout your marriage. Your loyalty and perhaps even your love will be tested this day... for the daggers that threaten your beloved are as equally pointed at your own throat."
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/servant,
@@ -17,7 +17,7 @@
 	display_order = JDO_LADY
 	give_bank_account = TRUE
 	noble_income = 22
-	min_pq = 5
+	min_pq = 0
 	max_pq = null
 	round_contrib_points = 3
 	vice_restrictions = list(/datum/charflaw/mute, /datum/charflaw/unintelligible) //Needs to use the throat - sometimes

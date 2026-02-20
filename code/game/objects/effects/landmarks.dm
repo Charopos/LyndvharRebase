@@ -78,9 +78,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	return INITIALIZE_HINT_QDEL
 
 /obj/effect/landmark/start/adventurerlate
-	name = "Adventurerlate"
+	name = "Outlanderlate"
 	icon_state = "arrow"
-	jobspawn_override = list("Pilgrim", "Adventurer", "Migrant", "Trader")
+	jobspawn_override = list("Pilgrim", "Outlander", "Migrant", "Trader")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/mercenarylate
@@ -120,11 +120,11 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/magician
-	name = "Court Magician"
+	name = "Archmagus"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/physician
-	name = "Head Physician"
+	name = "Practitioner"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/guardsman
@@ -152,7 +152,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/crier
-	name = "Town Crier"
+	name = "City Herald"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/keeper
@@ -204,7 +204,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/bathworker
-	name = "Bathhouse Attendant"
+	name = "Nightswain"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/merchant
@@ -300,7 +300,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/adventurer
-	name = "Adventurer"
+	name = "Outlander"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/trader

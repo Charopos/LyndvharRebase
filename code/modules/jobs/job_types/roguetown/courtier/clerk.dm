@@ -3,10 +3,10 @@
 	flag = CLERK
 	department_flag = COURTIERS
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 
-	allowed_races = ACCEPTED_RACES
+	allowed_races = RACES_SHUNNED_UP
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
 	is_quest_giver = TRUE
@@ -18,7 +18,7 @@
 	give_bank_account = TRUE
 	min_pq = -10
 	max_pq = null
-	round_contrib_points = 2
+	round_contrib_points = 3
 	advclass_cat_rolls = list(CTAG_CLERK = 2)
 
 	job_traits = list(TRAIT_SEEPRICES)
@@ -29,7 +29,7 @@
 
 /datum/advclass/clerk
 	name = "Clerk"
-	tutorial = "Clerk, tax-collector, blessed fool. You help the Steward with anything they need and perform their tasks when they are unavailable."
+	tutorial = "Clerk, tax-collector, blessed fool. You help the Steward with anything they need and perform their tasks when they are unavailable. Although you aren't a noble, it's not the worst position."
 	subclass_stats = list(
 		STATKEY_LCK = 2,
 		STATKEY_INT = 2,
@@ -42,11 +42,14 @@
 		/datum/skill/misc/medicine = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/lockpicking = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,
 	)
 	category_tags = list(CTAG_CLERK)
 	outfit = /datum/outfit/job/roguetown/clerk/basic
@@ -57,17 +60,16 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/appraise/secular)
 
 	if(should_wear_femme_clothes(H))
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/green
+		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/princess
 	else if(should_wear_masc_clothes(H))
 		armor = /obj/item/clothing/cloak/tabard/knight
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 
 	pants = /obj/item/clothing/under/roguetown/tights
-	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
+	shoes = /obj/item/clothing/shoes/roguetown/boots
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltl = /obj/item/storage/keyring/steward //serously doubt this is gonna be an issue, but if it is, i'll change it
-	backr = /obj/item/storage/backpack/rogue/satchel
-	id = /obj/item/scomstone/bad
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_UPPER_MIDDLE_CLASS, H, "Savings.")

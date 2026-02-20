@@ -206,7 +206,7 @@
 
 	var/is_adventurer = (SSjob.name_occupations[human.job]?.type == /datum/job/roguetown/adventurer)
 	if(user.mind && ((user.mind.has_antag_datum(/datum/antagonist)||is_adventurer)))
-		name = "[user.real_name] the Adventurer's house"
+		name = "[user.real_name] the Outlander's house"
 	else
 		name = "[user.real_name] the [human.advjob ? human.advjob : human.job]'s house"
 
@@ -1050,7 +1050,7 @@
 
 /obj/structure/mineral_door/wood/bath/bathmaid
 	icon_state = "woodwindow"
-	resident_advclass = list(/datum/advclass/bathworker)
+	resident_advclass = list(/datum/advclass/nightmaiden)
 
 /obj/structure/mineral_door/wood/bath/courtesan
-	resident_advclass = list(/datum/advclass/bathworker/harlot, /datum/advclass/bathworker/courtesan)
+	resident_advclass = list(/datum/advclass/nightmaiden/concubine, /datum/advclass/nightmaiden/courtesan)

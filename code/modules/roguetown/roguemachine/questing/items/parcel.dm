@@ -53,15 +53,15 @@
 /obj/item/parcel/proc/get_area_jobs(area_type)
 	var/static/list/area_jobs = list(
 		/area/rogue/indoors/town/tavern = list("Innkeeper", "Tapster", "Cook"),
-		/area/rogue/indoors/town/bath = list("Bathhouse Attendant", "Bathmaster"),
+		/area/rogue/indoors/town/bath = list("Nightswain", "Bathmaster"),
 		/area/rogue/indoors/town/church = list("Bishop", "Acolyte", "Templar", "Sexton", "Martyr"),
 		/area/rogue/indoors/town/dwarfin = list("Guildmaster", "Guildsman"),
 		/area/rogue/indoors/town/shop = list("Merchant", "Shophand"),
 		/area/rogue/indoors/town/manor = list("Councillor", "Seneschal", "Servant", "Hand", "Knight", "Marshal", "Steward", "Clerk", "Viscount"),
-		/area/rogue/indoors/town/magician = list("Court Magician", "Magicians Associate", "Archivist"),
+		/area/rogue/indoors/town/magician = list("Archmagus", "Magicians Associate", "Archivist"),
 		/area/rogue/indoors/town = list("Guild Handler")
 	)
-	return area_jobs[area_type] || list("Town Crier", "Steward", "Merchant")
+	return area_jobs[area_type] || list("City Herald", "Steward", "Merchant")
 
 /obj/item/parcel/proc/on_quest_component_deleted(datum/source)
 	SIGNAL_HANDLER

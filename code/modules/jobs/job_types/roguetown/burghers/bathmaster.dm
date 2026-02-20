@@ -6,16 +6,16 @@
 	total_positions = 1
 	spawn_positions = 1
 	f_title = "Bathmatron"
-	allowed_races = ACCEPTED_RACES
-	tutorial = "You are renting out the bathhouse in a joint operation with the Innkeep. You provide security for the bathwenches and help them to find work--when you're not being a trouble-making rake that others suffer to tolerate."
+	allowed_races = RACES_ALL_KINDS
+	tutorial = "While many may decry you as a pariah amongst the city, your services are nonetheless incredibly valuable for the economy. Having won your establishment through a bet a long time ago, you now operate and manage the largest- and only- bath house in the region. Provide security for your wenches and help them to find work--when you're not being a trouble-making rake that others suffer to tolerate."
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/job/roguetown/bathmaster
 	display_order = JDO_BATHMASTER
 	give_bank_account = 20
-	min_pq = 1
+	min_pq = -1
 	max_pq = null
 	bypass_lastclass = TRUE
-	round_contrib_points = 3
+	round_contrib_points = 2
 	cmode_music = 'sound/music/cmode/nobility/combat_spymaster.ogg'
 
 	job_traits = list(TRAIT_SEEPRICES, 
@@ -31,7 +31,7 @@
 
 /datum/advclass/bathmaster
 	name = "Bathmaster"
-	tutorial = "You are renting out the bathhouse in a joint operation with the Innkeep. You provide security for the bathwenches and help them to find work--when you're not being a trouble-making rake that others suffer to tolerate."
+	tutorial = "While many may decry you as a pariah amongst the city, your services are nonetheless incredibly valuable for the economy. Having won your establishment through a bet a long time ago, you now operate and manage the largest- and only- bath house in the region. Provide security for your wenches and help them to find work--when you're not being a trouble-making rake that others suffer to tolerate."
 	outfit = /datum/outfit/job/roguetown/bathmaster/basic
 	category_tags = list(CTAG_BATHMOM)
 	subclass_languages = list(/datum/language/thievescant)
@@ -42,8 +42,8 @@
 		STATKEY_INT = -1
 	)
 	subclass_skills = list(
-		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/whipsflails = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/sneaking = SKILL_LEVEL_EXPERT,
@@ -55,8 +55,6 @@
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
-		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
 	)
 
 /datum/outfit/job/roguetown/bathmaster/basic/pre_equip(mob/living/carbon/human/H)
@@ -71,7 +69,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	beltl = /obj/item/rogueweapon/whip
 
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/grown/rogue/swampweeddry = 2,
 		/obj/item/reagent_containers/powder/moondust = 2,
