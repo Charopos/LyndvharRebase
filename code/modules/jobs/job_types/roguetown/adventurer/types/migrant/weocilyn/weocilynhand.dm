@@ -5,7 +5,7 @@
 	Travellers often warn of Weocilyn having fallen already, and words of secretive cultists isn't unheard of. \
 	Despite doubts from others, your loyalty remains steadfast as you journey to the Peaks, determined to fulfill your duties."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = ACCEPTED_RACES
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/weocilyn/hand
 	total_positions = 1
 	spawn_positions = 0

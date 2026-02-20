@@ -2,7 +2,7 @@
 /datum/job/roguetown/weocilyn/retinue
 	title = "Weocilyn Retinue"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = ACCEPTED_RACES
+	allowed_races = RACES_SHUNNED_UP
 	job_traits = list(TRAIT_WEOCILYN)
 
 	job_subclasses = list(
