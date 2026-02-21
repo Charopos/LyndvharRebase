@@ -9,10 +9,10 @@
 	maximum_possible_slots = 1 // We only want one of these.
 	traits_applied = list(TRAIT_CIVILIZEDBARBARIAN, TRAIT_RITUALIST)
 	subclass_stats = list(
-		STATKEY_STR = 3,// LETS WRASSLE
-		STATKEY_WIL = 3,// This is our Go Big stat, we want lots of stamina for miracles and WRASSLIN.
-		STATKEY_LCK = 2,//We have a total of +12 in stats. 
-		STATKEY_CON = 1
+		STATKEY_STR = 3,
+		STATKEY_WIL = 3,
+		STATKEY_LCK = 2,
+		STATKEY_CON = 1,
 	)
 	subclass_skills = list(
 		/datum/skill/magic/holy = SKILL_LEVEL_EXPERT,
@@ -27,16 +27,16 @@
 		/datum/skill/misc/athletics = SKILL_LEVEL_MASTER, //We are the True Mathlete
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
 	)
-	cmode_music = 'sound/music/Iconoclast.ogg'
+	cmode_music = 'sound/music/combat_poacher.ogg'
 
 /datum/outfit/job/roguetown/bandit/iconoclast/pre_equip(mob/living/carbon/human/H)
 	..()
 	if (!(istype(H.patron, /datum/patron/inhumen/matthios)))	//This is the only class that forces Matthios. Needed for miracles + limited slot.
 		to_chat(H, span_warning("Matthios embraces me.. I must uphold his creed. I am his light in the darkness."))
 		H.set_patron(/datum/patron/inhumen/matthios)
-	belt = /obj/item/storage/belt/rogue/leather
+	belt = /obj/item/storage/belt/rogue/leather/plaquegold
 	pants = /obj/item/clothing/under/roguetown/trou/leather
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 					/obj/item/needle/thorn = 1,
 					/obj/item/natural/cloth = 1,
@@ -54,10 +54,10 @@
 			if("Chosen of Matthios") //Classic
 				r_hand = /obj/item/rogueweapon/woodstaff
 				head = /obj/item/clothing/head/roguetown/roguehood
-				armor = /obj/item/clothing/suit/roguetown/armor/plate
+				armor = /obj/item/clothing/suit/roguetown/shirt/robe
 				beltr = /obj/item/rogueweapon/katar
 				shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
-				shoes = /obj/item/clothing/shoes/roguetown/shortboots
+				shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 				cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
 				ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 				H.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_JOURNEYMAN, TRUE)
@@ -67,7 +67,7 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, SKILL_LEVEL_EXPERT, TRUE)
 			if("Golden Serpent") //Pugilist
 				head = /obj/item/clothing/head/roguetown/headband/monk
-				mask = /obj/item/clothing/mask/rogue/eyepatch
+				mask = /obj/item/clothing/mask/rogue/facemask/steel
 				wrists = /obj/item/clothing/wrists/roguetown/bracers/cloth/monk
 				gloves = /obj/item/clothing/gloves/roguetown/bandages/weighted
 				armor = /obj/item/clothing/suit/roguetown/armor/regenerating/skin/iconoclast

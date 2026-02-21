@@ -1,11 +1,11 @@
 /datum/advclass/mercenary/vaquero
-	name = "Vaquero"
-	tutorial = "Originating in the deadly swamps of the Calmirixia Province, the term 'vaquero' had merely stood for those who took up cattle-driving in the habitable parts of the swamp. Now, though, it has become a title for roaming swashbucklers after the Ruby War's fallout. Whether they set out as a defender of the commonfolk or a pilferer of purses, the Vaquero is defined by the tale they carve across Lewyn - and more frequently - by their story's violent end."
+	name = "Valorian Vaquero"
+	tutorial = "Originating in the deadly swamps of the Calmirixia Province, the term 'vaquero' had merely stood for those who took up cattle-driving in the habitable parts of the swamp. Now, though, it has become a title for roaming swashbucklers after the Ruby War's fallout and their migration towards Valoria- or what's left of it. Whether they set out as a defender of the commonfolk or a pilferer of purses, the Vaquero is defined by the tale they carve across Lewyn - and more frequently - by their story's violent end."
 	outfit = /datum/outfit/job/roguetown/mercenary/vaquero
-	class_select_category = CLASS_CAT_CALMIRIXIA
+	class_select_category = CLASS_CAT_VALORIA
 	cmode_music = 'sound/music/combat_vaquero.ogg'
 	category_tags = list(CTAG_MERCENARY)
-	subclass_languages = list(/datum/language/calmirixian)
+	subclass_languages = list(/datum/language/calmirixian, /datum/language/valorian)
 	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_DECEIVING_MEEKNESS, TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
 		STATKEY_SPD = 3,
@@ -13,19 +13,19 @@
 		STATKEY_WIL = 1
 	)
 	subclass_skills = list(
-		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/bows = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/knives = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/sneaking = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/stealing = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/riding = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/riding = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/lockpicking = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/music = SKILL_LEVEL_EXPERT,
 	)
@@ -51,19 +51,19 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	cloak = /obj/item/clothing/cloak/half/rider/red
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	l_hand = /obj/item/rogueweapon/sword/rapier/vaquero
 	beltr = /obj/item/rogueweapon/scabbard/sheath
 	r_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying/vaquero
 	backpack_contents = list(
-					/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
-					/obj/item/rogueweapon/huntingknife/idagger/navaja = 1,
-					/obj/item/lockpick = 1,
-					/obj/item/flashlight/flare/torch = 1,
-					/obj/item/roguekey/mercenary = 1,
-					/obj/item/rogueweapon/scabbard/sheath = 1
-					)
+		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
+		/obj/item/rogueweapon/huntingknife/idagger/navaja = 1,
+		/obj/item/lockpick = 1,
+		/obj/item/flashlight/flare/torch = 1,
+		/obj/item/roguekey/mercenary = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1
+		)
 	var/datum/inspiration/I = new /datum/inspiration(H)
 	I.grant_inspiration(H, bard_tier = BARD_T1)
 	if(H.mind)

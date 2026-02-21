@@ -48,12 +48,12 @@
 
 /datum/virtue/utility/resident/apply_to_human(mob/living/carbon/human/recipient)
 	var/mapswitch = 0
-	if(SSmapping.config.map_name == "Dun World")
+	if(SSmapping.config.map_name == "Port of Lyndvhar")
 		mapswitch = 1
 
 	if(mapswitch == 0)
 		return
-	if(recipient.mind?.assigned_role == "Adventurer" || recipient.mind?.assigned_role == "Mercenary" || recipient.mind?.assigned_role == "Court Agent")
+	if(recipient.mind?.assigned_role == "Outlander" || recipient.mind?.assigned_role == "Mercenary" || recipient.mind?.assigned_role == "Court Agent")
 		// Find tavern area for spawning
 		var/area/spawn_area
 		for(var/area/A in world)

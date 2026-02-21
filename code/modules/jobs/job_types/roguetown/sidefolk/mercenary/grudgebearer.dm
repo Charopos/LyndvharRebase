@@ -8,7 +8,7 @@
 		/datum/species/dwarf/mountain
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/grudgebearer
-	class_select_category = CLASS_CAT_RACIAL
+	class_select_category = CLASS_CAT_UNALIGNED
 	category_tags = list(CTAG_MERCENARY)
 	cmode_music = 'sound/music/combat_dwarf.ogg'
 	extra_context = "This subclass is race-limited to: Dwarves."
@@ -78,8 +78,8 @@
 		STATKEY_SPD = -2
 	)
 	subclass_skills = list(
-		/datum/skill/combat/axes = SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/maces = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/axes = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/maces = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,

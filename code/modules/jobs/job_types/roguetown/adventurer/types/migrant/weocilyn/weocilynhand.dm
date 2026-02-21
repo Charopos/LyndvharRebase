@@ -3,7 +3,7 @@
 	tutorial = "You are the Hand of Weocilyn, burdened by the perception in protecting your Lord's domain. \
 	However, with the increase in banditry, necromancy, deadite risings, and increasing sea raider raids, there are rumors abound that Weocilyn is not what it used to be. \
 	Travellers often warn of Weocilyn having fallen already, and words of secretive cultists isn't unheard of. \
-	Despite doubts from others, your loyalty remains steadfast as you journey to the Peaks, determined to fulfill your duties."
+	Despite doubts from others, your loyalty remains steadfast as you journey to Lyndvhar, determined to fulfill your duties."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/weocilyn/hand
@@ -37,7 +37,7 @@
 /datum/advclass/weocilyn/hand/marshal
 	name = "Marshal of Weocilyn"
 	tutorial = "Renowned for your command of war, you laid down your blade in peaceful years, but peace died with Weocilyn. \
-	Pressed once more into service by tragedy, you climb towards the Peaks."
+	Pressed once more into service by tragedy, you climb to Lyndvhar."
 	outfit = /datum/outfit/job/roguetown/weocilyn/hand/marshal
 	category_tags = list(CTAG_HFT_HAND)
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_NOBLE, TRAIT_WEOCILYN, TRAIT_STEELHEARTED)
@@ -110,7 +110,7 @@
 	name = "Steward of Weocilyn"
 	tutorial = "You are the Steward of Weocilyn, once the quiet architect behind the barony's \
 	order—keeper of ledgers, harvests, and the lifeblood that sustained your people. \
-	Pressed once more into service by tragedy, you climb towards the Peaks."
+	Pressed once more into service by tragedy, you climb to Lyndvhar."
 	outfit = /datum/outfit/job/roguetown/weocilyn/hand/steward
 	category_tags = list(CTAG_HFT_HAND)
 	traits_applied = list(TRAIT_SEEPRICES, TRAIT_WEOCILYN)
@@ -168,7 +168,7 @@
 /datum/advclass/weocilyn/hand/advisor
 	name = "Advisor of Weocilyn"
 	tutorial = "You are the Advisor of Weocilyn, trusted for your measured counsel and keen insight into matters of state. \
-	Bound once more to serve in the wake of ruin, you climb towards the Peaks."
+	Bound once more to serve in the wake of ruin, you climb to Lyndvhar."
 	outfit = /datum/outfit/job/roguetown/weocilyn/hand/advisor
 	category_tags = list(CTAG_HFT_HAND)
 	traits_applied = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T2, TRAIT_INTELLECTUAL, TRAIT_SEEPRICES_SHITTY, TRAIT_WEOCILYN)

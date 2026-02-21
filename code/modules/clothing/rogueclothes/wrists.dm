@@ -68,8 +68,8 @@
 	sellprice = 300
 	unenchantable = TRUE
 
-/obj/item/clothing/wrists/roguetown/bracers/lirvas
-	name = "lirvasi pauldrons"
+/obj/item/clothing/wrists/roguetown/bracers/calmirixia
+	name = "calmirixian pauldrons"
 	desc = "Oversized gold pauldrons that protect the forearms and upper-arms. Surprisingly protective and flashy, but heavy...!"
 	icon_state = "goldpauldron"
 	sellprice = 20

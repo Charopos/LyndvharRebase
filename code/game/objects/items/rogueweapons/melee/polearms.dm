@@ -840,7 +840,7 @@
 
 /obj/item/rogueweapon/halberd/psyhalberd/relic
 	name = "Stigmata"
-	desc = "Christened in the Siege of Lirvas, these silver-tipped poleaxes - wielded by a lonesome contingent of Saint Eora's paladins - kept the horrors at bay for forty daes-and-nites. Long-since-recovered from the rubble, this relic now serve as a bulwark for the defenseless."
+	desc = "Christened in the Siege of Calmirixia by Naexidor, these silver-tipped poleaxes - wielded by a lonesome contingent of Psydonite aligned paladins to his cause - kept the Dracanae at bay for forty daes and nites. Long-since-recovered from the rubble, this relic now serve as a bulwark for the defenseless."
 	icon_state = "psyhalberd"
 
 /obj/item/rogueweapon/halberd/psyhalberd/relic/ComponentInitialize()
@@ -1255,7 +1255,7 @@
 
 /obj/item/rogueweapon/greatsword/bsword/psy/relic
 	name = "Creed"
-	desc = "Psydonian prayers and Tennite smiths, working as one to craft a weapon to slay the Four. A heavy and large blade, favored by Saint Ravox, to lay waste to those who threaten His flock. The crossguard's psycross reflects even the faintest of Noc's light. You're the light - show them the way."
+	desc = "Psydonian prayers and Valorian smiths, working as one to craft a weapon to slay the Archdaemons. A heavy and large blade, favored by Inquisition alike, to lay waste to those who threaten His flock. The crossguard's psycross reflects even the faintest of his light. You're the light - show them the way."
 	icon_state = "psybroadsword"
 	is_silver = TRUE
 	smeltresult = /obj/item/ingot/silver

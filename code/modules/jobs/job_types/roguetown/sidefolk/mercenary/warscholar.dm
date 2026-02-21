@@ -2,7 +2,7 @@
 	name = "Khazumian Hierophant"
 	tutorial ="You are a Khazumian Hierophant, a magician who studied under cloistered sages, well-versed in all manners of arcyne. You prioritize enhancing your teammates and distracting foes while staying in the backline."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/mercenary/warscholar
 	subclass_languages = list(/datum/language/celestial)
 	class_select_category = CLASS_CAT_KHAZUMIA
@@ -78,7 +78,7 @@
 	beltl = /obj/item/flashlight/flare/torch
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife/idagger = 1,
@@ -158,7 +158,7 @@
 	beltl = /obj/item/flashlight/flare/torch
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/lockpick = 1,
@@ -169,7 +169,7 @@
 
 /datum/advclass/mercenary/warscholar/vizier
 	name = "Khazumian Vizier"
-	tutorial = "You are a Khazumian Vizier. Your research into miracles and holy incantations has lead you to esoteric magycks. Though psydonians have long struggled to channel their all-father's divinity, a combination of the saint's power may be similar enough."
+	tutorial = "You are a Khazumian Vizier. Your research into miracles and holy incantations has lead you to esoteric magycks. Though many have long struggled to channel their patron's divinity, a combination of the arcyne power may be similar enough."
 	outfit = /datum/outfit/job/roguetown/mercenary/warscholar_vizier
 	traits_applied = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T2, TRAIT_ALCHEMY_EXPERT, TRAIT_KHAZUMIA)
 	subclass_stats = list(
@@ -216,7 +216,7 @@
 		"MAROON" = "#5F1F34",
 		"BLACK" = "#242526"
 	))
-	to_chat(H, span_warning("You are a Khazumian Vizier. Your research into miracles and holy incantations has lead you to esoteric magycks. Though psydonians have long struggled to channel their all-father's divinity, a combination of the saint's power may be similar enough."))
+	to_chat(H, span_warning("You are a Khazumian Vizier. Your research into miracles and holy incantations has lead you to esoteric magycks. Though many have long struggled to channel their patron's divinity, a combination of the arcyne power may be similar enough."))
 	r_hand = /obj/item/rogueweapon/woodstaff/khazumia
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/magered
 
@@ -226,7 +226,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	gloves = /obj/item/clothing/gloves/roguetown/angle
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	head = /obj/item/clothing/head/roguetown/roguehood/shalal/black
 	cloak = /obj/item/clothing/cloak/half
 	wrists = /obj/item/clothing/neck/roguetown/psicross/khazumia

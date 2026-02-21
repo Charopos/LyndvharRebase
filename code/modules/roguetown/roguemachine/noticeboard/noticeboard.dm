@@ -122,9 +122,9 @@
 		contents += "Scouts rate how dangerous a region is from Safe -> Low -> Moderate -> Dangerous -> Bleak <br>"
 		contents += "A safe region is safe and travelers are unlikely to be ambushed by common creechurs and brigands <br>"
 		contents += "A low threat region is unlikely to manifest any great threat and brigands and creechurs are often found alone.<br>"
-		contents += "Only Azure Basin, Azure Grove and the Terrorbog can be rendered safe entirely. <br>"
+		contents += "Only the city outskirts, the Draguippe Forest and the Terrorbog can be rendered safe entirely. <br>"
 		contents += "Regions not listed are beyond the charge of the wardens. Danger will be constant in these regions.<br>"
-		contents += "Danger is reduced by luring villains and creechurs and killing them when they ambush you. The signal horns wardens have been issued can help with this. Take care with using it."
+		contents += "Danger is reduced by luring villains and creechurs and killing them when they ambush you. The signal horns guards have been issued can help with this. Take care with using it."
 	else if(current_category == "Mercenary Roster")
 		if(SSroguemachine.mercenary_statue)
 			contents += SSroguemachine.mercenary_statue.get_readonly_roster_html()

@@ -1924,7 +1924,7 @@
 				return list("shrink" = 0.4,"sx" = -4,"sy" = -6,"nx" = 5,"ny" = -6,"wx" = 0,"wy" = -6,"ex" = -1,"ey" = -6,"nturn" = 100,"sturn" = 156,"wturn" = 90,"eturn" = 180,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
 
 /obj/item/rogueweapon/sword/long/oathkeeper/hand
-	name = "Azurefyre"
+	name = "Rubyfyre"
 	desc = "The Blade fit for the Hand, wielded in service to the crown and never mistaken for another."
 	icon = 'icons/roguetown/weapons/special/hand64.dmi'
 	sellprice = 250

@@ -7,7 +7,7 @@
 	spawn_positions = 0
 	antag_job = TRUE
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Long ago you did a crime worthy of your bounty being hung on the wall outside of the local inn. You now live with your fellow freemen in the bog, and generally get up to no good."
+	tutorial = "Long ago you did a crime worthy of your head being drawn on a bounty poster and placed around the walls and buildings dotted around the city of Lyndvhar. It was those of MATTHIOS that took you in afterwards, and they are all have you known since as your closest confidants and allies. Do beware, however: as in the Cult of Matthios- loyalty is often fleeting and set to the highest paying bidders."
 
 	outfit = null
 	outfit_female = null
@@ -16,7 +16,7 @@
 
 	display_order = JDO_BANDIT
 	announce_latejoin = FALSE
-	min_pq = 3
+	min_pq = 10
 	max_pq = null
 	round_contrib_points = 5
 

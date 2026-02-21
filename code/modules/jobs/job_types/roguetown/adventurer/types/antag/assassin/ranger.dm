@@ -46,7 +46,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	gloves = /obj/item/clothing/gloves/roguetown/angle
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 					/obj/item/flashlight/flare/torch/lantern/prelit = 1,
 					/obj/item/rogueweapon/scabbard/sheath = 1,
@@ -74,8 +74,6 @@
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 				beltl = /obj/item/quiver/bolts
 
-	if(!istype(H.patron, /datum/patron/inhumen/graggar))
-		var/inputty = input(H, "Would you like to change your patron to Graggar?", "The beast roars", "No") as anything in list("Yes", "No")
-		if(inputty == "Yes")
-			to_chat(H, span_warning("My former deity has abandoned me.. Graggar is my new master."))
-			H.set_patron(/datum/patron/inhumen/graggar)
+	if (!(istype(H.patron, /datum/patron/inhumen/graggar)))
+		to_chat(H, span_warning("My former deity has abandoned me.. Graggar is my new master."))
+		H.set_patron(/datum/patron/inhumen/graggar)
