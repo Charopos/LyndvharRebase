@@ -5,7 +5,7 @@
 
 /datum/map_config
 	// Metadata
-	var/config_filename = "_maps/dun_world.json"
+	var/config_filename = "_maps/lyndvhar_port.json"
 	var/defaulted = TRUE  // set to FALSE by LoadConfig() succeeding
 	// Config from maps.txt
 	var/config_max_users = 0
@@ -14,9 +14,9 @@
 	var/votable = FALSE
 
 	// Config actually from the JSON - should default to Dun World
-	var/map_name = "Dun World"
-	var/map_path = "map_files/dun_world"
-	var/map_file = "dun_world.dmm"
+	var/map_name = "Port of Lyndvhar"
+	var/map_path = "map_files/lyndvhar_port"
+	var/map_file = "lyndvhar_port.dmm"
 
 	var/traits = null
 	var/space_ruin_levels = 7
