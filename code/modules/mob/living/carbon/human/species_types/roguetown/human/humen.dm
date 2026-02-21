@@ -80,18 +80,18 @@
 /datum/species/human/northern/get_skin_list()
 	return list(
 		"Grenzelhoft" = SKIN_COLOR_GRENZELHOFT,
-		"Hammerhold" = SKIN_COLOR_HAMMERHOLD,
-		"Greencrest" = SKIN_COLOR_GREENCREST,
-		"Rockhill" = SKIN_COLOR_ROCKHILL,
-		"Valoria" = SKIN_COLOR_VALORIAN,
-		"Calmirixia" = SKIN_COLOR_CALMIRIXIAN,
-		"Rhaenval" = SKIN_COLOR_RHAENVAL,
-		"North Zybantu (Chorodiaki)" = SKIN_COLOR_GIZA,
-		"West Zybantu (Vrdaqnan)" = SKIN_COLOR_SHALVISTINE,
-		"East Zybantu (Nshkormh)" = SKIN_COLOR_LALVESTINE,
-		"Khazumia" = SKIN_COLOR_KHAZUMIA,
-		"Southern Khazumia" = SKIN_COLOR_KHAZUMIA_LIGHT,
-		"Yanshen" = SKIN_COLOR_YANSHEN
+		"Lyndhardtian" = SKIN_COLOR_LYNDHARDTIAN,
+		"Rhaenvalian" = SKIN_COLOR_RHAENVALIAN,
+		"Crestborne" = SKIN_COLOR_GREENCREST,
+		"Valorian" = SKIN_COLOR_VALORIAN,
+		"Calmirixian" = SKIN_COLOR_CALMIRIXIAN,
+		"Atgervian" = SKIN_COLOR_ATGERVIAN,
+		"North Zybantium (Akunana)" = SKIN_COLOR_NORTHERN_ZYBANTIUM,
+		"West Zybantium (Messied)" = SKIN_COLOR_WESTERN_ZYBANTIUM,
+		"East Zybantium (Tarourache)" = SKIN_COLOR_EASTERN_ZYBANTIUM,
+		"Khazumian" = SKIN_COLOR_KHAZUMIA,
+		"Yanshen" = SKIN_COLOR_YANSHEN,
+		"Light Khazumian" = SKIN_COLOR_KHAZUMIA_LIGHT,
 	)
 
 /datum/species/human/northern/get_hairc_list()

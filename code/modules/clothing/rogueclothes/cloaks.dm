@@ -1600,7 +1600,7 @@
 
 /obj/item/clothing/cloak/banneret
 	name = "knight banneret's cape"
-	desc = "A cape with a gold embroided heraldry of Azure."
+	desc = "A cape with a gold embroided heraldry of Lyndhardt."
 	icon = 'icons/roguetown/clothing/special/captain.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/captain.dmi'

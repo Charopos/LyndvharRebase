@@ -1,7 +1,7 @@
-// Azure Grove - the areas to the south of the map
+// Draguippe Forest - the areas to the west of the map
 
 /area/rogue/outdoors/woods
-	name = "The Azure Grove"
+	name = "Draguippe Forest"
 	icon_state = "woods"
 	ambientsounds = AMB_FORESTDAY
 	ambientnight = AMB_FORESTNIGHT
@@ -21,24 +21,24 @@
 				/mob/living/carbon/human/species/goblin/npc/ambush = 30,
 				/mob/living/carbon/human/species/human/northern/militia/deserter = 20,
 				/mob/living/carbon/human/species/human/northern/highwayman/ambush = 10)
-	first_time_text = "THE AZURE GROVE"
+	first_time_text = "DRAGUIPPE FOREST"
 	converted_type = /area/rogue/indoors/shelter/woods
 	deathsight_message = "somewhere in the wilds"
-	threat_region = THREAT_REGION_AZURE_GROVE
-	detail_text = DETAIL_TEXT_AZURE_GROVE
+	threat_region = THREAT_REGION_DRAGUIPPE_FOREST
+	detail_text = DETAIL_TEXT_DRAGUIPPE_FOREST
 
 /area/rogue/indoors/shelter/woods
-	name = "Azure Grove"
+	name = "Draguippe Forest"
 	icon_state = "woods"
 	droning_sound = 'sound/music/area/forest.ogg'
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/forestnight.ogg'
-	threat_region = THREAT_REGION_AZURE_GROVE
+	threat_region = THREAT_REGION_DRAGUIPPE_FOREST
 	deathsight_message = "somewhere in the wilds"
 
 
 /area/rogue/outdoors/woods/north
-	name = "Azure Grove - North"
+	name = "Draguippe Forest - North"
 	ambush_mobs = list(
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf/badger = 10,
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf/raccoon = 30,
@@ -46,10 +46,10 @@
 		/mob/living/carbon/human/species/skeleton/npc/easy = 20,
 		/mob/living/carbon/human/species/goblin/npc/ambush = 30,
 		/mob/living/carbon/human/species/human/northern/highwayman/ambush = 30)
-	threat_region = THREAT_REGION_AZURE_GROVE
+	threat_region = THREAT_REGION_DRAGUIPPE_FOREST
 
 /area/rogue/outdoors/woods/northeast
-	name = "Azure Grove - Northeast"
+	name = "Draguippe Forest - Northeast"
 	ambush_mobs = list(
 			/mob/living/simple_animal/hostile/retaliate/rogue/wolf/badger = 10,
 			/mob/living/simple_animal/hostile/retaliate/rogue/wolf/raccoon = 30,
@@ -59,10 +59,10 @@
 			/mob/living/carbon/human/species/goblin/npc/ambush = 20,
 			/mob/living/carbon/human/species/goblin/npc/sea = 10,
 			/mob/living/carbon/human/species/human/northern/highwayman/ambush = 30)
-	threat_region = THREAT_REGION_AZURE_GROVE
+	threat_region = THREAT_REGION_DRAGUIPPE_FOREST
 
 /area/rogue/outdoors/woods/southeast
-	name = "Azure Grove - Southeast"
+	name = "Draguippe Forest - Southeast"
 	ambush_mobs = list(
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf/badger = 10,
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf/raccoon = 30,
@@ -74,7 +74,7 @@
 		/mob/living/carbon/human/species/human/northern/highwayman/ambush = 30)
 
 /area/rogue/outdoors/woods/south
-	name = "Azure Grove - South"
+	name = "Draguippe Forest - South"
 	ambush_mobs = list(
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf/badger = 10,
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf/raccoon = 30,
@@ -85,7 +85,7 @@
 		/mob/living/carbon/human/species/human/northern/highwayman/ambush = 20)
 
 /area/rogue/outdoors/woods/southwest
-	name = "Azure Grove - Southwest"
+	name = "Draguippe Forest - Southwest"
 	ambush_mobs = list(
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf/badger = 10,
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf/raccoon = 30,
@@ -96,7 +96,7 @@
 		/mob/living/carbon/human/species/human/northern/highwayman/ambush = 20)
 
 /area/rogue/outdoors/woods/northwest
-	name = "Azure Grove - Northwest"
+	name = "Draguippe Forest - Northwest"
 	ambush_mobs = list(
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf/badger = 10,
 		/mob/living/simple_animal/hostile/retaliate/rogue/wolf/raccoon = 30,

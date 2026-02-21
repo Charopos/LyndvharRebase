@@ -372,7 +372,7 @@
 
 
 /obj/item/book/rogue/tales3
-	name = "Myths & Legends of the Peaks & Beyond Volume I"
+	name = "Myths & Legends of Beowricke Volume I"
 	desc = "Arbalius The Younger"
 	icon_state ="book3_0"
 	base_icon_state = "book3"

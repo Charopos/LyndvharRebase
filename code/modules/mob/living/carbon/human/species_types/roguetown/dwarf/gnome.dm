@@ -11,7 +11,7 @@
 	desc = "<b>Gnome</b><br>\
 	Gnomes are short delicate creatures known for their quick thinking and wit.<br>\
 The naturally inquisitive mind of a Gnome inclines them towards arcane pursuits, artificing and teaching others.\
-Gnomish folk have an earned reputation for being brilliant tradespeople and crafters, although their rapid thoughts often lead to them seeming scatterbrained to the other beings of Azuria.<br>\
+Gnomish folk have an earned reputation for being brilliant tradespeople and crafters, although their rapid thoughts often lead to them seeming scatterbrained to the other beings of Beowricke.<br>\
 Gnomes are typically a mixed race of Dwarves and a magical race, typically Elves when the two aren't arguing, but some are born with fae blood as well. <br>\
 Even though they are of mixed blood and smaller than typical dwarves, most gnomes and dwarves still regard each other as kin.<br>\
 	(TRAITS WILL GO HERE)"
@@ -105,12 +105,12 @@ Even though they are of mixed blood and smaller than typical dwarves, most gnome
 		"Jade" = SKIN_COLOR_JADE,
 		"Ashen" = SKIN_COLOR_ASHEN,
 		"Underdark" = SKIN_COLOR_UNDERDARK,
-		"Almondvalle" = SKIN_COLOR_ALMONDVALLE,
+		"Wood" = SKIN_COLOR_WOOD_ELF,
 		"Beach" = SKIN_COLOR_BEACH,
-		"Shalvine Forests" = SKIN_COLOR_SHALVINE_FORESTS,
-		"Lalve Steppes" = SKIN_COLOR_LALVE_STEPPES,
+		"Flower" = SKIN_COLOR_LOTUS_ELF,
+		"Bog" = SKIN_COLOR_SWAMP_ELF,
 		"Palm" = SKIN_COLOR_PALM,
-		"Khazumian Coast" = SKIN_COLOR_KHAZUMIAN_COAST,
+		"Sun" = SKIN_COLOR_SUN_ELF,
 	)
 /datum/species/dwarf/gnome/get_hairc_list()
 	return sortList(list(

@@ -6,7 +6,7 @@ SUBSYSTEM_DEF(regionthreat)
 	// The first four regions are meant to be "tameable" for towner purposes
 	var/list/threat_regions = list(
 		new /datum/threat_region(
-			_region_name = THREAT_REGION_AZURE_BASIN, 
+			_region_name = THREAT_REGION_CITY_OUTSKIRTS, 
 			_latent_ambush = DANGER_LOW_FLOOR,
 			_min_ambush = DANGER_SAFE_FLOOR,
 			_max_ambush = DANGER_DANGEROUS_LIMIT, // Let's not go DIRE no matter what, in the future 
@@ -15,7 +15,7 @@ SUBSYSTEM_DEF(regionthreat)
 			_highpop_tick = 1,
 		),
 		new /datum/threat_region(
-			_region_name = THREAT_REGION_AZURE_GROVE,
+			_region_name = THREAT_REGION_DRAGUIPPE_FOREST,
 			_latent_ambush = DANGER_MODERATE_FLOOR,
 			_min_ambush = DANGER_SAFE_FLOOR,
 			_max_ambush = DANGER_DANGEROUS_LIMIT,
@@ -34,7 +34,7 @@ SUBSYSTEM_DEF(regionthreat)
 		),
 		// All regions after are meant to stay somewhat dangerous no matter what
 		new /datum/threat_region(
-			_region_name = THREAT_REGION_AZUREAN_COAST,
+			_region_name = THREAT_REGION_LYNDVHAR_COAST,
 			_latent_ambush = DANGER_DANGEROUS_FLOOR,
 			_min_ambush = DANGER_MODERATE_FLOOR,
 			_max_ambush = DANGER_BLEAK_LIMIT,

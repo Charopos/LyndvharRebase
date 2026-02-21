@@ -15,7 +15,7 @@
 	converted_type = /area/rogue/outdoors/exposed/town
 	town_area = TRUE
 	deathsight_message = "the city of Lyndvhar and all its bustling souls"
-	detail_text = DETAIL_TEXT_AZURE_PEAK
+	detail_text = DETAIL_TEXT_LYNDVHAR
 
 /area/rogue/outdoors/exposed/town
 	icon_state = "town"
@@ -67,7 +67,7 @@
 	first_time_text = "THE UNIVERSITY OF LYNDVHAR"
 	converted_type = /area/rogue/outdoors/exposed/magiciantower
 	keep_area = TRUE
-	detail_text = DETAIL_TEXT_UNIVERSITY_OF_LYNDVHAR
+	detail_text = DETAIL_TEXT_STUDY
 
 /area/rogue/outdoors/exposed/magiciantower
 	icon_state = "magiciantower"
@@ -75,7 +75,7 @@
 	droning_sound_dusk = null
 	droning_sound_night = null
 	keep_area = TRUE
-	detail_text = DETAIL_TEXT_UNIVERSITY_OF_LYNDVHAR
+	detail_text = DETAIL_TEXT_STUDY
 
 /area/rogue/indoors/town/shop
 	name = "Shop"
@@ -238,9 +238,9 @@
 	droning_sound = 'sound/music/area/dwarf.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "AZUREAN GUILD OF CRAFT"
+	first_time_text = "MAKERS GUILD QUARTER"
 	converted_type = /area/rogue/outdoors/exposed/dwarf
-	detail_text = DETAIL_TEXT_AZUREAN_GUILD_OF_CRAFT
+	detail_text = DETAIL_TEXT_GUILD_OF_CRAFT
 
 /area/rogue/outdoors/exposed/dwarf
 	icon_state = "dwarf"
