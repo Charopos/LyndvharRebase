@@ -1,31 +1,30 @@
 /datum/job/roguetown/squire
-	title = "Squire"
+	title = "Squire" // user of all, master of none. someone elevated to nobility to be the next cataphract.
 	flag = SQUIRE
 	department_flag = RETINUE
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
-	allowed_races = ACCEPTED_RACES
+	total_positions = 1
+	spawn_positions = 1
+	allowed_races = RACES_TOLERATED_UP
+	allowed_patrons = ALL_NICE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
 	advclass_cat_rolls = list(CTAG_SQUIRE = 20)
-	job_traits = list(TRAIT_SQUIRE_REPAIR)
+	job_traits = list(TRAIT_SQUIRE_REPAIR, TRAIT_NOBLE)
 
 	tutorial = "Your folks said you were going to be something, they had better aspirations for you than the life of a peasant. You practiced the basics \
 		in the field alongside your friends, swordfighting with sticks, chasing rabbits with grain flail, and helping around the house lifting heavy \
-		bags of grain. The Knight took notice of your potential and brought you on as his personal ward. You're going to be something someday."
+		bags of grain. The Cataphract took notice of your potential and brought you on as their personal ward. You're going to be something someday."
 	outfit = /datum/outfit/job/roguetown/squire
 	display_order = JDO_SQUIRE
 	give_bank_account = TRUE
-	min_pq = -5 //squires aren't great but they can do some damage
+	min_pq = -2 //squires aren't great but they can do some damage
 	max_pq = null
-	round_contrib_points = 2
+	round_contrib_points = 1
 
 	cmode_music = 'sound/music/combat_squire.ogg'
 	job_subclasses = list(
-		/datum/advclass/squire/lancer,
 		/datum/advclass/squire/footman,
-		/datum/advclass/squire/skirmisher
 	)
 
 /datum/outfit/job/roguetown/squire
@@ -33,15 +32,15 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/squire
-	cloak = /obj/item/clothing/cloak/tabard/stabard/surcoat/guard
-	id = /obj/item/scomstone/bad/garrison
+	cloak = /obj/item/clothing/cloak/tabard/stabard/guard
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	job_bitflag = BITFLAG_GARRISON
 
 /datum/job/roguetown/squire/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		if(istype(H.cloak, /obj/item/clothing/cloak/tabard/stabard/surcoat/guard))
+		if(istype(H.cloak, /obj/item/clothing/cloak/tabard/stabard/guard))
 			var/obj/item/clothing/S = H.cloak
 			var/index = findtext(H.real_name, " ")
 			if(index)
@@ -50,64 +49,13 @@
 				index = H.real_name
 			S.name = "squire's tabard ([index])"
 
-/datum/advclass/squire/lancer
-	name = "Cavalier Squire"
-	tutorial = "A hopeful for the next generation of knightly mounted lancers and infantry pike specialists, \
-	your training with polearms sets you apart from other squires."
-	outfit = /datum/outfit/job/roguetown/squire/lancer
-
-	category_tags = list(CTAG_SQUIRE)
-	traits_applied = list(TRAIT_MEDIUMARMOR)
-	subclass_stats = list(
-		STATKEY_STR = 1,
-		STATKEY_SPD = 1,
-		STATKEY_PER = 1,
-		STATKEY_CON = 1,
-		STATKEY_INT = 1,
-	)
-	subclass_skills = list(
-		/datum/skill/combat/maces = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/crossbows = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/riding = SKILL_LEVEL_JOURNEYMAN,
-	)
-
-/datum/outfit/job/roguetown/squire/lancer/pre_equip(mob/living/carbon/human/H)
-	. = ..()
-	H.verbs |= /mob/proc/haltyell_exhausting
-	r_hand = /obj/item/rogueweapon/spear/trainer
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
-	gloves = /obj/item/clothing/gloves/roguetown/leather
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	backr = /obj/item/storage/backpack/rogue/satchel
-	backl = /obj/item/rogueweapon/scabbard/gwstrap
-	backpack_contents = list(
-		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif/iron,
-		/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
-		/obj/item/repair_kit/metal,
-		/obj/item/repair_kit,
-	)
-	if(H.mind)
-		SStreasury.give_money_account(ECONOMIC_WORKING_CLASS, H, "Savings.")
-
 /datum/advclass/squire/footman
-	name = "Squire at Arms"
-	tutorial = "Your training has been singularly focused on the fine techniques of melee, suited to to your \
-	future dominance on the battlefield."
+	name = "Squire"
+	tutorial = "In squiring under the Cataphract to follow in their footsteps, you have been given a wide-range of tutelage that continues to be ever on-going..."
 	outfit = /datum/outfit/job/roguetown/squire/footman
-
+	
 	category_tags = list(CTAG_SQUIRE)
-	traits_applied = list(TRAIT_MEDIUMARMOR)
+	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT, TRAIT_BADTRAINER)
 	subclass_stats = list(
 		STATKEY_STR = 1,
 		STATKEY_SPD = 1,
@@ -117,94 +65,43 @@
 	)
 	subclass_skills = list(
 		/datum/skill/combat/maces = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/shields = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/bows = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/crossbows = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/knives = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/riding = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
 	)
 
 /datum/outfit/job/roguetown/squire/footman/pre_equip(mob/living/carbon/human/H)
-	. = ..()
-	H.verbs |= /mob/proc/haltyell_exhausting
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short/black
 	backpack_contents = list(
-		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif/iron,
+		/obj/item/storage/belt/rogue/pouch/coins/mid,
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
-		/obj/item/repair_kit/metal,
-		/obj/item/repair_kit,
+		/obj/item/rogueweapon/huntingknife/idagger,
+		/obj/item/rogueweapon/scabbard/sheath,
 	)
 	H.adjust_blindness(-3)
 	if(H.mind)
-		var/weapons = list("Training Sword","Club",)
+		var/weapons = list("Sword","Recurve Bow")
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 		H.set_blindness(0)
 		switch(weapon_choice)
-			if("Training Sword")
+			if("Sword")
 				beltr = /obj/item/rogueweapon/scabbard/sword
-				r_hand = /obj/item/rogueweapon/sword/long/training
-			if("Club")
-				beltr = /obj/item/rogueweapon/mace/woodclub
-	if(H.mind)
-		SStreasury.give_money_account(ECONOMIC_WORKING_CLASS, H, "Savings.")
-
-/datum/advclass/squire/skirmisher
-	name = "Irregular Squire"
-	tutorial = "As militaries become more flexible and tactics more moderne the importance of irregular troops \
-	has become more apparent, and hopefuls such as yourself have been trained into the future of elite skirmisher \
-	troops."
-	outfit = /datum/outfit/job/roguetown/squire/skirmisher
-
-	category_tags = list(CTAG_SQUIRE)
-	traits_applied = list(TRAIT_DODGEEXPERT)
-	subclass_stats = list(
-		STATKEY_SPD = 2,
-		STATKEY_PER = 1,
-		STATKEY_CON = 1,
-		STATKEY_INT = 1,
-	)
-	subclass_skills = list(
-		/datum/skill/combat/bows = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/crossbows = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/riding = SKILL_LEVEL_NOVICE,
-	)
-
-/datum/outfit/job/roguetown/squire/skirmisher/pre_equip(mob/living/carbon/human/H)
-	. = ..()
-	H.verbs |= /mob/proc/haltyell_exhausting
-	beltr = /obj/item/quiver/sling/iron
-	beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/sling
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy
-	pants = /obj/item/clothing/under/roguetown/trou/leather
-	gloves = /obj/item/clothing/gloves/roguetown/leather
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	backr = /obj/item/storage/backpack/rogue/satchel
-	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/steel/trainer,
-		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif/iron,
-		/obj/item/rogueweapon/scabbard/sheath,
-		/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
-		/obj/item/repair_kit/metal,
-		/obj/item/repair_kit,
-		)
+				r_hand = /obj/item/rogueweapon/sword
+			if("Recurve Bow")
+				beltr = /obj/item/quiver/arrows
+				r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve	
 	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_WORKING_CLASS, H, "Savings.")
