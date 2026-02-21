@@ -344,7 +344,7 @@
 	weight = 100
 
 /datum/special_trait/atheism/on_apply(mob/living/carbon/human/character, silent)
-	character.set_patron(/datum/patron/godless)
+	character.set_patron(/datum/patron/godless/defiant)
 
 //negative
 /datum/special_trait/nimrod
