@@ -156,7 +156,7 @@
 		"Valoria" = SKIN_COLOR_VALORIAN,
 		"Calmirixia" = SKIN_COLOR_CALMIRIXIAN,
 		"Rhaenval" = SKIN_COLOR_RHAENVALIAN,
-		"Atgervi" = SKIN_COLOR_ATGERVIAN
+		"Atgervi" = SKIN_COLOR_ATGERVIAN,
 		"North Zybantium (Akunana)" = SKIN_COLOR_NORTHERN_ZYBANTIUM,
 		"West Zybantium (Messied)" = SKIN_COLOR_WESTERN_ZYBANTIUM,
 		"East Zybantium (Tarourache)" = SKIN_COLOR_EASTERN_ZYBANTIUM,
