@@ -10,7 +10,7 @@
 	spawn_positions = 1
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	allowed_races = RACES_SHUNNED_UP
-	allowed_ages = ALL_AGES_LIST
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
 
 	outfit = /datum/outfit/job/roguetown/loudmouth
 	display_order = JDO_CRIER
@@ -19,7 +19,7 @@
 	max_pq = null
 	round_contrib_points = 2
 
-	job_traits = list(TRAIT_INTELLECTUAL, TRAIT_ARCYNE_T1, TRAIT_MAGEARMOR, TRAIT_SEEPRICES_SHITTY, TRAIT_HOMESTEAD_EXPERT)
+	job_traits = list(TRAIT_INTELLECTUAL, TRAIT_ARCYNE_T1, TRAIT_MAGEARMOR, TRAIT_SEEPRICES_SHITTY, TRAIT_HOMESTEAD_EXPERT, TRAIT_NOBLE)
 
 	advclass_cat_rolls = list(CTAG_TOWNCRIER = 2)
 	job_subclasses = list(

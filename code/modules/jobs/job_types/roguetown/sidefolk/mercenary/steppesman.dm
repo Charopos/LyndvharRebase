@@ -2,7 +2,7 @@
 	name = "Vruirid Kazak"
 	tutorial = "Once having lived and came from the Vruirid Steppe frontiers, you have been rented out as a mercenary in the distant realms to bring coin home. There are three things you value most; saigas, freedom, and coin."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_TOLERATED_UP
 	class_select_category = CLASS_CAT_RHAENVAL
 	category_tags = list(CTAG_MERCENARY)
 	cmode_music = 'sound/music/combat_steppe.ogg'

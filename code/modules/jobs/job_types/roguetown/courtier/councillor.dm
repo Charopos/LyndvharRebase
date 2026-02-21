@@ -5,8 +5,8 @@
 	faction = "Station"
 	total_positions = 4
 	spawn_positions = 4
-	allowed_ages = ALL_AGES_LIST
-	allowed_races = RACES_SHUNNED_UP
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
+	allowed_races = RACES_TOLERATED_UP
 	allowed_sexes = list(MALE, FEMALE)
 	display_order = JDO_COUNCILLOR
 	tutorial = "You may have bought your way into this position, or were appointed to it by merit--perish the thought! Whatever the case though, you work as an assistant and agent of the city in matters of state, levy, law, or simply enjoying the free food of the keep- you do anything the court requires of you and your duties usually vary day by day. You may be the lowest rung of the ladder, but that rung still towers over everyone else in this shithole. Don't let any of these lesser folk think otherwise."

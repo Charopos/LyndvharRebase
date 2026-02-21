@@ -1,6 +1,6 @@
 // Virtues that let you unlock crafter role
 /datum/virtue/utility/blacksmith
-	name = "Blacksmith's Apprentice"
+	name = "Blacksmith"
 	desc = "In my youth, I worked under a skilled blacksmith, honing my skills with an anvil."
 	added_traits = list(TRAIT_SMITHING_EXPERT)
 	softcap = TRUE
@@ -12,7 +12,7 @@
 	)
 
 /datum/virtue/utility/tailor
-	name = "Tailor's Apprentice"
+	name = "Tailor"
 	desc = "In my youth, I worked under a skilled tailor, studying fabric and design."
 	added_traits = list(TRAIT_SEWING_EXPERT)
 	softcap = TRUE
@@ -27,7 +27,7 @@
 	)
 
 /datum/virtue/utility/physician
-	name = "Physician's Apprentice"
+	name = "Physician"
 	desc = "In my youth, I worked under a skilled physician, studying medicine and alchemy."
 	added_traits = list(TRAIT_MEDICINE_EXPERT, TRAIT_ALCHEMY_EXPERT)
 	added_stashed_items = list("Medicine Pouch" = /obj/item/storage/belt/rogue/pouch/medicine)
@@ -43,7 +43,7 @@
 
 
 /datum/virtue/utility/hunter
-	name = "Hunter's Apprentice"
+	name = "Hunter"
 	desc = "In my youth, I trained under a skilled hunter, learning how to butcher animals and work with leather/hide."
 	added_traits = list(TRAIT_SURVIVAL_EXPERT)
 	softcap = TRUE
@@ -56,7 +56,7 @@
 	)
 
 /datum/virtue/utility/artificer
-	name = "Artificer's Apprentice"
+	name = "Artificer"
 	desc = "In my youth, I worked under a skilled artificer, studying construction and engineering."
 	added_traits = list(TRAIT_SMITHING_EXPERT)
 	softcap = TRUE
@@ -74,7 +74,7 @@
 	)
 
 /datum/virtue/utility/mining
-	name = "Miner's Apprentice"
+	name = "Miner"
 	added_traits = list(TRAIT_SMITHING_EXPERT) // Not sure whether smithing or homestead but given mining goods goes into smithing this fits better?
 	desc = "The dark shafts, the damp smells of ichor and the laboring hours are no stranger to me. I keep my pickaxe and lamptern close, and have been taught how to mine well."
 	added_stashed_items = list(
@@ -86,7 +86,7 @@
 	)
 
 /datum/virtue/utility/woodcutting
-	name = "Woodcutter's Apprentice"
+	name = "Woodcutter"
 	desc = "I know which way the tree falls, when you sever it from its roots. Hence, I keep my axe close."
 	added_stashed_items = list(
 		"Steel Axe" = /obj/item/rogueweapon/stoneaxe/woodcut/steel/woodcutter

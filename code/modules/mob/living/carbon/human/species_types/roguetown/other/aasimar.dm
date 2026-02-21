@@ -9,12 +9,12 @@
 	base_name = "Godtouched"
 	desc = "<b>Aasimar</b><br>\
 	Widely accepted and believed to have been the first creations molded by the Cycle, Aasimar are effectively powerfully arcyne-charged constructs born from the aspects of the Luminary themselves. Naturally blessed with guiding martial prowess- they are most commonly believed to be the shepherds of its status quo, blessed with an immortal lifespan in order to guide younger races. However, at the dawn of the Bloodwake, many Aasimar were slain in its catastrophic chokehold on Beowricke- the ones that remain hold much of the scarring of the past in the form of memory blockages and shortsighted wit, making them rather susceptible to trickery and persuasion. Aasimar cannot reproduce whatsoever as a byproduct of being immortal and therefore immune to the cycle of Creation, so it is becoming rarer and rarer by the day to see them.<br>\
-	(TRAITS WILL GO HERE)"
+	(NO HUNGER, NO BREATHING, IMMUNE TO DEADITES)"
 
 	max_age = "???"
 
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY)
-	inherent_traits = list(TRAIT_NOMOBSWAP)
+	inherent_traits = list(TRAIT_NOMOBSWAP, TRAIT_NOHUNGER, TRAIT_NOBREATH, TRAIT_ZOMBIE_IMMUNE)
 	default_features = MANDATORY_FEATURE_LIST
 	use_skintones = TRUE
 	disliked_food = NONE

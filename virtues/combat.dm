@@ -1,5 +1,5 @@
 // Arcyne Potential now gives 3 Spellpoints instead of 6 spellpoints so it is less of a "must take" for caster.
-/datum/virtue/combat/magical_potential
+/*/datum/virtue/combat/magical_potential
 	name = "Arcyne Potential"
 	desc = "I am talented in the Arcyne arts, expanding my capacity for magic. I have become more intelligent from its studies. Other effects depends on what training I chose to focus on at a later age."
 	custom_text = "Classes that has a combat trait (Medium / Heavy Armor Training, Dodge Expert or Critical Resistance) get only prestidigitation. Everyone else get +3 spellpoints and T1 Arcyne Potential if they don't have any Arcyne."
@@ -13,9 +13,9 @@
 			ADD_TRAIT(recipient, TRAIT_ARCYNE_T1, TRAIT_GENERIC)
 			recipient.mind?.adjust_spellpoints(3)
 	else
-		recipient.mind?.adjust_spellpoints(3) // 3 extra spellpoints since you don't get any spell point from the skill anymore
-	
-/datum/virtue/combat/devotee
+		recipient.mind?.adjust_spellpoints(3) // 3 extra spellpoints since you don't get any spell point from the skill anymore 
+	*/
+/* /datum/virtue/combat/devotee
 	name = "Devotee"
 	desc = "Though not officially of the Church, my relationship with my chosen Patron is strong enough to grant me the most minor of their blessings. I've also kept a psycross of my deity."
 
@@ -60,9 +60,9 @@
 		if(/datum/patron/old_god)
 			ADD_TRAIT(recipient, TRAIT_PSYDONITE, TRAIT_GENERIC)
 			recipient.mind?.special_items["Psycross"] = /obj/item/clothing/neck/roguetown/psicross
-
+*/
 /datum/virtue/combat/duelist
-	name = "Duelist's Apprentice"
+	name = "Duelist"
 	desc = "I have trained under a duelist of considerable skill. I have a pair of dueling weapons - both a hunting sword and dagger - stowed away."
 	custom_text = "Guaranteed Journeyman for Swords & Knives."
 	added_stashed_items = list("Duelist's Messer" = /obj/item/rogueweapon/sword/short/messer/iron/virtue,
@@ -84,7 +84,7 @@
 	recipient.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_JOURNEYMAN, silent = TRUE)
 
 /datum/virtue/combat/executioner
-	name = "Dungeoneer's Apprentice"
+	name = "Torturer"
 	desc = "I was set to be a dungeoneer some time ago, and I was taught by one. I have an axe and whip stashed away, should the need arise."
 	custom_text = "Guaranteed Journeyman for Axes & Whips/Flails."
 	added_stashed_items = list("Axe" = /obj/item/rogueweapon/stoneaxe/woodcut,
@@ -106,7 +106,7 @@
 	recipient.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_JOURNEYMAN, silent = TRUE)
 
 /datum/virtue/combat/brawler
-	name = "Brawler's Apprentice"
+	name = "Brawler"
 	desc = "I have trained under a skilled brawler, and have some experience fighting with my fists. I have a katar and some knuckledusters stashed away, too."
 	custom_text = "Guaranteed Journeyman for Unarmed & Wrestling."
 	added_stashed_items = list("Katar" = /obj/item/rogueweapon/katar/bronze,

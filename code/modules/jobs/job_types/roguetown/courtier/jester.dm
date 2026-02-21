@@ -6,11 +6,11 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = ACCEPTED_RACES
+	allowed_races = RACES_ALL_KINDS
 
 	tutorial = "You command a position of a fool, envious of the position your superiors have upon you. Your cheap tricks and illusions of intelligence will only work for so long, and someday you'll find yourself at the end of something sharper than you."
 
-	allowed_ages = ALL_AGES_LIST
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
 	outfit = /datum/outfit/job/roguetown/jester
 	job_traits = list(TRAIT_ZJUMP, TRAIT_LEAPER, TRAIT_NUTCRACKER, TRAIT_TEMPO)
 	display_order = JDO_JESTER

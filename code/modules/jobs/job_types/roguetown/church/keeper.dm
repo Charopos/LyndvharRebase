@@ -7,7 +7,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	allowed_races = ACCEPTED_RACES
-	allowed_ages = ALL_AGES_LIST
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
 	allowed_patrons = list(/datum/patron/divine/pestra)
 
 	outfit = /datum/outfit/job/roguetown/keeper

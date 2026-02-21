@@ -8,14 +8,11 @@
 	name = "Revenant"
 	id = "revenant"
 	desc = "<b>Revenant</b><br>\
-	Revenants are those that have died, returning from death to continue 'living' in a manner to speak. Their origins are not entirely known, yet many strongly believe them to have originated from the rot and decay of Psydonia. \
-	Unable to truly rest, yet entirely sane of mind. Capable of detaching their heads through unknown arcyne means, they are oft wanderers due to their unknown origins and being ostracized by both the Church and many of the common masses around the lands."
-	// Stat balancing. Per-server decision. Preferably keep neutral until analysis post testmerges.
-	//race_bonus = list(STAT_INTELLIGENCE = 1, STAT_CONSTITUTION = 1)
+	Considered an averse and unholy side-effect of the Triumvirate’s corruption upon the Luminary Cycle, Revenants are beings that have been cursed with undeath at the end of their lifespans, and reborn as something much more ominous and foul. Unable to truly die of old age, their minds will slowly begin to wither away until there is naught much left but malice. They are capable of removing their heads through means still relatively unknown to the general populace, and usually end up as permanent wanderers due to their origin and decaying mind. Still, not dying of old age does have its benefits.<br>\
+	(NO HUNGER, NO BREATHING, IMMUNE TO DEADITES, EASILY DECAPITATED)"
 	skin_tone_wording = "Catalyst"
 	use_skin_tone_wording_for_examine = FALSE
 	max_age = "???"
-
 	base_name = "Godtouched"
 	is_subrace = TRUE
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS)
@@ -24,7 +21,7 @@
 	use_skintones = TRUE
 	disliked_food = NONE
 	liked_food = NONE
-	possible_ages = ALL_AGES_LIST
+	possible_ages = list(AGE_IMMORTAL)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
 	limbs_icon_m = 'icons/roguetown/mob/bodies/m/mt.dmi'
 	limbs_icon_f = 'icons/roguetown/mob/bodies/f/fm.dmi'
