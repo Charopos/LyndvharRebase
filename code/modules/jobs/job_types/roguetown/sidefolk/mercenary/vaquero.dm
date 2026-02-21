@@ -13,19 +13,19 @@
 		STATKEY_WIL = 1
 	)
 	subclass_skills = list(
-		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/bows = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/knives = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/sneaking = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/stealing = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/riding = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/riding = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/lockpicking = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/music = SKILL_LEVEL_EXPERT,
 	)
@@ -51,19 +51,19 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	cloak = /obj/item/clothing/cloak/half/rider/red
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	l_hand = /obj/item/rogueweapon/sword/rapier/vaquero
 	beltr = /obj/item/rogueweapon/scabbard/sheath
 	r_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying/vaquero
 	backpack_contents = list(
-					/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
-					/obj/item/rogueweapon/huntingknife/idagger/navaja = 1,
-					/obj/item/lockpick = 1,
-					/obj/item/flashlight/flare/torch = 1,
-					/obj/item/roguekey/mercenary = 1,
-					/obj/item/rogueweapon/scabbard/sheath = 1
-					)
+		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
+		/obj/item/rogueweapon/huntingknife/idagger/navaja = 1,
+		/obj/item/lockpick = 1,
+		/obj/item/flashlight/flare/torch = 1,
+		/obj/item/roguekey/mercenary = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1
+		)
 	var/datum/inspiration/I = new /datum/inspiration(H)
 	I.grant_inspiration(H, bard_tier = BARD_T1)
 	if(H.mind)
