@@ -1,5 +1,5 @@
 /datum/virtue/items/rich
-	name = "Rich and Shrewd"
+	name = "Wealthy"
 	desc = "Through a stroke of luck or shrewd planning, I've come into a considerable amount of mammon. I can tell the value of those I speak to, and what they offer. I've also stowed away some coinage for a rainy dae."
 	added_traits = list(TRAIT_SEEPRICES)
 	added_skills = list(list(/datum/skill/misc/reading, 1, 6))	//So the spell would work
