@@ -13,7 +13,6 @@
 		STATKEY_WIL = 3,
 		STATKEY_LCK = 2,
 		STATKEY_CON = 1,
-		STATKEY_CON = 1
 	)
 	subclass_skills = list(
 		/datum/skill/magic/holy = SKILL_LEVEL_EXPERT,
