@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/routier
 	name = "Valorian Routiers"
-	tutorial = "The Routiers are a formidable band of warriors from Valoria, a brotherhood of knights from families serving lords who seek to profit in peacetime. Recently disgraced in their failures against the hordes of Kelamash, they have had their nobility tarnished and have been exiled from Valoria, wandering as a band-for-hire since."
+	tutorial = "The Routiers are a rather ingrained mercenary band in the city- having made their trek here from Valoria a few years earlier. Originally a brotherhood of exiled warriors who seek to profit in peacetime- they have effectively just become another standard in the halls of the Mercenary Guild."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = NON_DWARVEN_RACE_TYPES
 	outfit = /datum/outfit/job/roguetown/mercenary/routier
@@ -9,12 +9,12 @@
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	cmode_music = 'sound/music/combat_routier.ogg'
-	subclass_stats = list(
-		STATKEY_CON = 4,
+subclass_stats = list(
+		STATKEY_CON = 3,
 		STATKEY_WIL = 2,
-		STATKEY_STR = 2,
-		STATKEY_PER = 1,
-		STATKEY_SPD = -1
+		STATKEY_STR = 1,
+		STATKEY_INT = 1,
+		STATKEY_SPD = -2
 	)
 	subclass_skills = list(
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
@@ -46,20 +46,20 @@
 		to_chat(H, span_warning("You are a disgraced knight of Valoria, well experienced in the use of your chosen arms."))
 		switch(classchoice)
 			if("Swordsman")
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 				beltl = /obj/item/rogueweapon/scabbard/sword
 				l_hand = /obj/item/rogueweapon/sword/short/falchion
 			if("Macebearer")
-				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 3, TRUE)
 				beltl = /obj/item/rogueweapon/mace/steel/morningstar
 			if("Flailman")
-				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 3, TRUE)
 				beltl = /obj/item/rogueweapon/flail/sflail
 			if("Foot Lancer")
-				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 3, TRUE)
 				r_hand = /obj/item/rogueweapon/spear/lance
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	belt = /obj/item/storage/belt/rogue/leather
+	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	neck = /obj/item/clothing/neck/roguetown/fencerguard
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/valorian
@@ -68,8 +68,8 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
 	shoes = /obj/item/clothing/shoes/roguetown/boots/valorian
 	gloves = /obj/item/clothing/gloves/roguetown/valorian
-	backr = /obj/item/storage/backpack/rogue/satchel/black
-	backl = /obj/item/rogueweapon/shield/tower/metal
+	backr = /obj/item/storage/backpack/rogue/satchel/short
+	backl = /obj/item/rogueweapon/shield/tower
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/flashlight/flare/torch = 1,

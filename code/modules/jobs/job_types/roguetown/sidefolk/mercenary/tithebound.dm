@@ -50,7 +50,7 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/calmirixia
 	belt = /obj/item/storage/belt/rogue/leather/plaquegold
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
-	l_handl = /obj/item/rogueweapon/sword/sabre
+	l_hand = /obj/item/rogueweapon/sword/sabre
 	beltl = /obj/item/rogueweapon/scabbard/sword/royal
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel/gold
 	armor = /obj/item/clothing/suit/roguetown/armor/regenerating/skin/disciple/calmirixia
@@ -67,7 +67,7 @@
 		)
 
 	H.merctype = 16 //literally no idea what this does
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/tithebound_tithe)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/calmirixia_tithe)
 
 /*                              ,---.
 ,--.  ,--.        ,--.  ,--.  |   |

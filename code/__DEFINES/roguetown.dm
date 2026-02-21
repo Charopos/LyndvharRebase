@@ -385,7 +385,7 @@ GLOBAL_LIST_EMPTY(round_join_times)
 #define CLASS_CAT_RHAENVAL "Rhaenval"
 #define CLASS_CAT_VALORIA "Valoria"
 #define CLASS_CAT_YANSHEN "Yanshen"
-#define CLASS_CAT_RACIAL "Race Exclusive" //Used for black oaks, grudgebearer dwarves, etc.
+#define CLASS_CAT_UNALIGNED "Unaligned"
 
 //Migrant categories
 #define CLASS_CAT_HFT_COURT "Upper Court"

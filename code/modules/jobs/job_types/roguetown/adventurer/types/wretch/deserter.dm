@@ -139,7 +139,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-	backl = /obj/item/storage/backpack/rogue/satchel/shortl //gwstraps landing on backr asyncs with backpack_contents
+	backl = /obj/item/storage/backpack/rogue/satchel/short //gwstraps landing on backr asyncs with backpack_contents
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/flashlight/flare/torch/lantern/prelit = 1,
@@ -157,7 +157,7 @@
 	cmode_music = 'sound/music/cmode/antag/combat_thewall.ogg' // same as new hedgeknight music
 	// Slightly more rounded. These can be nudged as needed.
 	traits_applied = list(TRAIT_MEDIUMARMOR)
-subclass_stats = list(
+	subclass_stats = list(
 		STATKEY_STR = 1,
 		STATKEY_CON = 3,
 		STATKEY_WIL = 2,
