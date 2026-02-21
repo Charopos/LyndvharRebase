@@ -2,7 +2,13 @@
 	name = "Bahzu-Zhanshi"
 	tutorial = "The respected leader and singular representative of the Xuefeng Family, you're an experienced warrior amongst your peers. It matters not where the coin comes from, so long as you can make enough to support the clan in its survival from the Xinyi Dynasty and its conflicts, now in strange lands."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = list(
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/demihuman,
+		/datum/species/vulpkanin,
+	)
 	outfit = /datum/outfit/job/roguetown/mercenary/bahzu
 	subclass_languages = list(/datum/language/yansheneze)
 	class_select_category = CLASS_CAT_YANSHEN
@@ -32,7 +38,7 @@
 		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN, //doesn't do much, but they're meant to be noblemen.
 		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 	)
-	extra_context = "This subclass is race-limited from: Constructs."
+	extra_context = "This subclass is only for: Humens, Elves, Halfkin, and Venardines."
 
 /datum/outfit/job/roguetown/mercenary/bahzu/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -103,7 +109,13 @@
 	name = "Nongmin-Zhishou"
 	tutorial = "Once, you were a farmer, a miner, a seamstress, a commoner. Now the sword is your plow and war your field. You’ve hammered your scythes into spears and recast your knives into swords. Past the door, your family is calling - and destiny awaits."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = ALL
+	allowed_races = list(
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/demihuman,
+		/datum/species/vulpkanin,
+	)
 	outfit = /datum/outfit/job/roguetown/mercenary/nongmin
 	subclass_languages = list(/datum/language/yansheneze)
 	class_select_category = CLASS_CAT_YANSHEN
@@ -127,6 +139,7 @@
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/crafting = SKILL_LEVEL_JOURNEYMAN
 	)
+	extra_context = "This subclass is only for: Humens, Elves, Halfkin, and Venardines."
 
 /datum/outfit/job/roguetown/mercenary/nongmin/pre_equip(mob/living/carbon/human/H)
 	..()
