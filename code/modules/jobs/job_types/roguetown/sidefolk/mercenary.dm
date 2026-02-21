@@ -41,6 +41,8 @@
 		/datum/advclass/mercenary/routier,
 		/datum/advclass/mercenary/xuefengclan,
 		/datum/advclass/mercenary/xuefengclan/sasu,
+		/datum/advclass/mercenary/bahzu,
+		/datum/advclass/mercenary/nongmin,
 		/datum/advclass/mercenary/steppesman/sabrevet,
 		/datum/advclass/mercenary/steppesman/sapper,
 		/datum/advclass/mercenary/steppesman/archer,

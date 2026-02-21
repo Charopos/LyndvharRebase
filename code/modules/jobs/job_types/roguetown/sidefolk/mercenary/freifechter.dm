@@ -63,7 +63,9 @@
 
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
-		/obj/item/natural/bundle/cloth/bandage/full = 1
+		/obj/item/natural/bundle/cloth/bandage/full = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/storage/belt/rogue/pouch/coins/poor = 1
 		)	
 	H.merctype = 6
 
@@ -125,8 +127,10 @@
 
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
-		/obj/item/natural/bundle/cloth/bandage/full = 1
-		)
+		/obj/item/natural/bundle/cloth/bandage/full = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/storage/belt/rogue/pouch/coins/poor = 1
+		)	
 	H.merctype = 6
 
 /datum/advclass/mercenary/freelancer/sabrist
@@ -184,6 +188,8 @@
 
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
-		/obj/item/natural/bundle/cloth/bandage/full = 1
+		/obj/item/natural/bundle/cloth/bandage/full = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/storage/belt/rogue/pouch/coins/poor = 1
 		)	
 	H.merctype = 6
