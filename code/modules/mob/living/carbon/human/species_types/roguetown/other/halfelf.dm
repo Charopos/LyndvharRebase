@@ -110,7 +110,7 @@
 		"Khazumian-Southerner" = SKIN_COLOR_KHAZUMIA_LIGHT,
 		"Kaze-Lotus" = SKIN_COLOR_KAZE_LOTUS,
 		"Grenzel-Lyndvhar" = SKIN_COLOR_GRENZEL_WOODS,
-		"Calmirixian-Lirvas" = SKIN_COLOR_CALMIRIXIAN_LIRVAS,
+		"Calmirixian-LYNDHARDT" = SKIN_COLOR_CALMIRIXIAN_LYNDHARDT,
 		"Free Roamers" = SKIN_COLOR_FREE_FOLK,
 		"Khazumite Borne"	= SKIN_COLOR_KHAZUMITE_BORNE,
 		"Shalvine Roamer" = SKIN_COLOR_SHALVINE_AZURE,

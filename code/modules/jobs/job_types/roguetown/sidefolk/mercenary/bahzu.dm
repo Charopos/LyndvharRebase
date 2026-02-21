@@ -1,9 +1,9 @@
-/datum/advclass/mercenary/hangyaku
-	name = "Hangyaku-Kounen"
-	tutorial = "Rebel. Outlaw. Failure. Once, you served the upper echelons of Yansheneze society as more than just a 'knight'- you were a champion, a beacon of virtue, a legend in the making. Now you wander distant Psydonia, seeking a fresh start... or fresh coin, at least."
+/datum/advclass/mercenary/bahzu
+	name = "Bahzu-Zhanshi"
+	tutorial = "The respected leader and singular representative of the Xuefeng Family, you're an experienced warrior amongst your peers. It matters not where the coin comes from, so long as you can make enough to support the clan in its survival from the Xinyi Dynasty and its conflicts, now in strange lands."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
-	outfit = /datum/outfit/job/roguetown/mercenary/hangyaku
+	outfit = /datum/outfit/job/roguetown/mercenary/bahzu
 	subclass_languages = list(/datum/language/yansheneze)
 	class_select_category = CLASS_CAT_YANSHEN
 	category_tags = list(CTAG_MERCENARY)
@@ -34,11 +34,11 @@
 	)
 	extra_context = "This subclass is race-limited from: Constructs."
 
-/datum/outfit/job/roguetown/mercenary/hangyaku/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/bahzu/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
 	has_loadout = TRUE
-	to_chat(H, span_warning("Rebel. Outlaw. Failure. Once, you served the upper echelons of Yansheneze society as more than just a 'knight'- you were a champion, a beacon of virtue, a legend in the making. Now you wander distant Psydonia, seeking a fresh start... or fresh coin, at least."))
+	to_chat(H, span_warning("Rebel. Outlaw. Failure. Once, you served the upper echelons of Yansheneze society as more than just a 'knight'- you were a champion, a beacon of virtue, a legend in the making- atleast, before the failed Xuefeng Revolt. Now you wander distant Lewyn, seeking a fresh start... or fresh coin, at least."))
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/kabuto
 	belt = /obj/item/storage/belt/rogue/leather/cloth
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel/yanshen
@@ -56,29 +56,29 @@
 		)
 	H.merctype = 9
 
-/datum/outfit/job/roguetown/mercenary/hangyaku/choose_loadout(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/bahzu/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Sword","Great Mace","Spear","Bow")
 	var/weapon_choice = input(H, "Choose your weapon.", "WHEN STEEL MUST SPEAK...") as anything in weapons
 	switch(weapon_choice)
 		if("Sword")
-			H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_EXPERT, TRUE)
+			H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/sword/long/kriegmesser/ssangsudo)
 			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sword/yanshen/noparry, SLOT_BELT_L, TRUE)	
 		if("Great Mace")
-			H.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_EXPERT, TRUE)
+			H.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/mace/goden/kanabo)
 			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/gwstrap, SLOT_BACK_R, TRUE)
 		if("Spear")
-			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_EXPERT, TRUE)
+			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/spear/naginata) 
 			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/gwstrap, SLOT_BACK_R, TRUE)
 		if("Bow")
-			H.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_EXPERT, TRUE)
+			H.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve) 
 			H.equip_to_slot_or_del(new /obj/item/quiver/arrows, SLOT_BELT_L, TRUE) 
 	var/armors = list("Heavy Armor","Medium Armor")
-	var/armor_choice = input(H, "Choose your armor.", "...THE TONGUE MUST STAY QUIET.") as anything in armors
+	var/armor_choice = input(H, "Choose your armor.", "THE TONGUE MUST STAY QUIET.") as anything in armors
 	switch(armor_choice)
 		if("Heavy Armor")
 			ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
@@ -99,12 +99,12 @@
 		if("Half-Mask")
 			H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/yanshen, SLOT_WEAR_MASK, TRUE)
 
-/datum/advclass/mercenary/chonin
-	name = "Hangyaku-Chonin"
-	tutorial = "Once, you were a farmer, a miner, a seamstress, a commoner. Now the sword is your plow and war your field. You’ve hammered your scythes into spears and recast your knives into swords. Past the door, your daimyo is calling - and destiny awaits."
+/datum/advclass/mercenary/nongmin
+	name = "Nongmin-Zhishou"
+	tutorial = "Once, you were a farmer, a miner, a seamstress, a commoner. Now the sword is your plow and war your field. You’ve hammered your scythes into spears and recast your knives into swords. Past the door, your family is calling - and destiny awaits."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = ALL
-	outfit = /datum/outfit/job/roguetown/mercenary/chonin
+	outfit = /datum/outfit/job/roguetown/mercenary/nongmin
 	subclass_languages = list(/datum/language/yansheneze)
 	class_select_category = CLASS_CAT_YANSHEN
 	category_tags = list(CTAG_MERCENARY)
@@ -128,7 +128,7 @@
 		/datum/skill/craft/crafting = SKILL_LEVEL_JOURNEYMAN
 	)
 
-/datum/outfit/job/roguetown/mercenary/chonin/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/nongmin/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
 	has_loadout = TRUE
@@ -150,7 +150,7 @@
 		)
 	H.merctype = 9
 
-/datum/outfit/job/roguetown/mercenary/chonin/choose_loadout(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/nongmin/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/trades = list("Town Physician","Farmer","Tailor","Laborer","Merchant","Levy") //JMAN COMBAT SKILLS... AND TOWNER TRADES. GOD I HOPE THIS ISN'T A TERRIBLE IDEA.
 	var/trade_choice = input(H, "Choose your former trade.", "WHO ARE YOU?") as anything in trades
@@ -198,7 +198,7 @@
 			H.equip_to_slot_or_del(new /obj/item/rogueweapon/scabbard/sheath/yanshen, SLOT_BELT_R, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/yanshen)
 		if("Levy") //straight-up fighter. gets a naginata AND a tanto.
-			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_EXPERT, TRUE)
+			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_JOURNEYMAN, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/spear/naginata)
 			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/yanshen)

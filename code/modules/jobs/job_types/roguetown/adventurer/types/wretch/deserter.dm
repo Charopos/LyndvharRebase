@@ -10,7 +10,7 @@
 
 	cmode_music = 'sound/music/cmode/antag/combat_thewall.ogg' // same as new hedgeknight music
 	// Deserter are the knight-equivalence. They get a balanced, straightforward 2 2 3 statspread to endure and overcome.
-subclass_stats = list(
+	subclass_stats = list(
 		STATKEY_STR = 3, //Heavy hitters. Less speed, high strength.
 		STATKEY_INT = 1,
 		STATKEY_CON = 2,

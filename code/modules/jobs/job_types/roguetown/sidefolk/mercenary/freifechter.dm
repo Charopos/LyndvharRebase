@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/freelancer
-	name = "Freifechter Fencer"
-	tutorial = "You are a graduate of the Aavnic Freifechters - \"Freelancers\" - part of a prestigious fighting guild localized in the independent City-state of Szöréndnížina. It has formed an odd thirty yils ago, but its visitors come from all over Western Psydonia. You have swung one weapon ten-thousand times, and not the other way around. Your faith is stalwart in the teachings of the Psydonic Reformation, and you've become a warrior poet of sorts - educating the peasantry in the ways of the New Word and angering the Orthodoxy in turn. You've left your cradle in search of riches to fund your people's armies."
+	name = "Khaliphate Almubaraz"
+	tutorial = "You are a warrior of the Khaliphate, a well-renowned Almubaraz - \"Swordsmen\" - and part of a prestigious lineage of highly-trained warriors localized in the grand city of Sohayrah. It was formed an odd one hundred yils ago, but its visitors come from all parts of the Khaliphate. You have swung one weapon ten-thousand times, and not the other way around. You've left your cradle in search of riches to fund your people's armies- primarily in the ruins of Lyndhardtia."
 	extra_context = "This class is for experienced players who have a solid grasp on footwork and stamina management, master skills alone won't save your lyfe. You make up for your inherent weaknesses and limitations with \"master strike\" mechanics."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
@@ -9,14 +9,14 @@
 	class_select_category = CLASS_CAT_KHAZUMIA
 	category_tags = list(CTAG_MERCENARY)
 	cmode_music = 'sound/music/frei_fencer.ogg'
-	traits_applied = list(TRAIT_BADTRAINER, TRAIT_INTELLECTUAL, TRAIT_LONGSWORDSMAN, TRAIT_FENCERDEXTERITY)
+	traits_applied = list(TRAIT_BADTRAINER, TRAIT_INTELLECTUAL, TRAIT_LONGSWORDSMAN, TRAIT_FENCERDEXTERITY, TRAIT_KHAZUMIA)
 	subclass_stats = list(
 		STATKEY_INT = 3,
 		STATKEY_PER = 3,
 		STATKEY_WIL = 3
 	)
 	subclass_skills = list(
-		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/swords = SKILL_LEVEL_MASTER,
 		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
@@ -29,11 +29,11 @@
 
 /datum/outfit/job/roguetown/mercenary/freelancer/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("You are a master in the arts of the longsword. Wielder of Psydonia's most versatile and noble weapon, you needn't anything else."))
+	to_chat(H, span_warning("You are a master in the arts of the longsword. Wielder of Beowricke's most versatile and noble weapon, you needn't anything else."))
 	l_hand = /obj/item/rogueweapon/scabbard/sword
 	var/weapons = list("Calmirixian Longsword", "Valorian Longsword")
 	if(H.mind)
-		var/weapon_choice = input(H, "Draw a sword.", "As presented to me by Master Oktawiusz...") as anything in weapons
+		var/weapon_choice = input(H, "Draw a sword.", "As presented to me by Master Kadin Latif...") as anything in weapons
 		switch(weapon_choice)
 			if("Calmirixian Longsword")		//A longsword with a compound ricasso. Accompanied by a traditional flip knife.
 				r_hand = /obj/item/rogueweapon/sword/long/calmirixia
@@ -50,14 +50,16 @@
 			var/armorchoice = input(H, "Don your armour.", "Security or Flexibility?") as anything in armors
 			armor = armors[armorchoice]
 
-	belt = /obj/item/storage/belt/rogue/leather/sash
+	belt = /obj/item/storage/belt/rogue/leather/battleskirt/black
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	shirt = /obj/item/clothing/suit/roguetown/shirt/freifechter
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
-	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves/freifechter
+	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/hierophant
+	pants = /obj/item/clothing/under/roguetown/trou/leather/eastern
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	backr = /obj/item/storage/backpack/rogue/satchel/short
-	neck = /obj/item/clothing/neck/roguetown/psicross/reform
+	wrists = /obj/item/clothing/neck/roguetown/psicross/khazumia
+	head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/black
+	mask = /obj/item/clothing/mask/rogue/lordmask/khazumia
 
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
@@ -66,13 +68,13 @@
 	H.merctype = 6
 
 /datum/advclass/mercenary/freelancer/lancer
-	name = "Freifechter Lancer"
-	tutorial = "You are a graduate of the Aavnic Freifechters - \"Freelancers\" - part of a prestigious fighting guild localized in the independent City-state of Szöréndnížina. It has formed an odd thirty yils ago, but its visitors come from all over Western Psydonia. You have swung one weapon ten-thousand times, and not the other way around. A Lancer and his pike are inseparable, and the first line of offense. You can choose to display the banners of the Reformist Order or your own State."
+	name = "Khaliphate Lansir"
+	tutorial = "You are a warrior of the Khaliphate, a well-renowned Lansir - \"Lancer\" - and part of a prestigious lineage of highly-trained warriors localized in the grand city of Sohayrah. It was formed an odd one hundred yils ago, but its visitors come from all parts of the Khaliphate. You have swung one weapon ten-thousand times, and not the other way around. You've left your cradle in search of riches to fund your people's armies- primarily in the ruins of Lyndhardtia."
 	extra_context = "This class is for experienced players who have a solid grasp on footwork and stamina management, master skills alone won't save your lyfe. You make up for your inherent weaknesses and limitations with unique high-durability weapons."
 	cmode_music = 'sound/music/frei_lancer.ogg'
 	outfit = /datum/outfit/job/roguetown/mercenary/freelancer_lancer
 	subclass_languages = list(/datum/language/celestial)
-	traits_applied = list(TRAIT_BADTRAINER, TRAIT_FENCERDEXTERITY, TRAIT_INTELLECTUAL)
+	traits_applied = list(TRAIT_BADTRAINER, TRAIT_FENCERDEXTERITY, TRAIT_INTELLECTUAL, TRAIT_KHAZUMIA)
 	subclass_stats = list(
 		STATKEY_CON = 2,
 		STATKEY_PER = 3,
@@ -92,31 +94,34 @@
 
 /datum/outfit/job/roguetown/mercenary/freelancer_lancer/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("You put complete trust in your polearm, the most effective weapon the world has seen. Why wear armour when you cannot be hit? You can choose to display the banners of the Reformist Order or your own State."))
+	to_chat(H, span_warning("You put complete trust in your polearm, the most effective weapon the world has seen. Why wear armour when you cannot be hit? You can choose to display the banners of the Khaliphate or of Sohayrah."))
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/freifechter
 	backl = /obj/item/rogueweapon/scabbard/gwstrap
-	var/weapons = list("Graduate's Spear", "Banner of Szöréndnížina", "Banner of Psydonic Reformism")
+	var/weapons = list("Graduate's Spear", "Banner of Sohayrah", "Banner of the Khaliphate")
 	if(H.mind)
-		var/weapon_choice = input(H, "Spear or Pike-Banner?", "As presented to me by Lance-Master Szörénsław...") as anything in weapons
+		var/weapon_choice = input(H, "Spear or Pike-Banner?", "As presented to me by Lance-Master Ubaid Javid...") as anything in weapons
 		switch(weapon_choice)
 			if("Graduate's Spear")		//A steel spear with a cool-looking stick & a banner sticking out of it.
 				r_hand = /obj/item/rogueweapon/spear/boar/frei
 				l_hand = /obj/item/rogueweapon/katar/punchdagger/frei
-			if("Banner of Szöréndnížina")
+			if("Banner of Sohayrah")
 				r_hand = /obj/item/rogueweapon/spear/boar/frei/pike
 				wrists = /obj/item/rogueweapon/katar/punchdagger/frei
-			if("Banner of Psydonic Reformism")
+			if("Banner of the Khaliphate")
 				r_hand = /obj/item/rogueweapon/spear/boar/frei/pike/reformist
 				wrists = /obj/item/rogueweapon/katar/punchdagger/frei
 
-	belt = /obj/item/storage/belt/rogue/leather/sash
+	belt = /obj/item/storage/belt/rogue/leather/battleskirt/black
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	shirt = /obj/item/clothing/suit/roguetown/shirt/freifechter
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
-	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves/freifechter
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/freifechter
+	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/hierophant
+	pants = /obj/item/clothing/under/roguetown/trou/leather/eastern
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	backr = /obj/item/storage/backpack/rogue/satchel/short
-	neck = /obj/item/clothing/neck/roguetown/psicross/reform
+	wrists = /obj/item/clothing/neck/roguetown/psicross/khazumia
+	head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/black
+	mask = /obj/item/clothing/mask/rogue/lordmask/khazumia
 
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
@@ -125,8 +130,8 @@
 	H.merctype = 6
 
 /datum/advclass/mercenary/freelancer/sabrist
-	name = "Freifechter Sabrist"
-	tutorial = "You are a graduate of the Aavnic Freifechters - \"Freelancers\" - part of a prestigious fighting guild localized in the independent City-state of Szöréndnížina. It has formed an odd thirty yils ago, but its visitors come from all over Western Psydonia. You have swung one weapon ten-thousand times, and not the other way around. Your faith is stalwart in the teachings of the Psydonic Reformation, and you've become a warrior poet of sorts - educating the peasantry in the ways of the New Word and angering the Orthodoxy in turn. You've left your cradle in search of riches to fund your people's armies. Sabrists are renowned for their dexterity and speed, but lack the adaptability of longswordmen."
+	name = "Khaliphate Mubariz"
+	tutorial = "You are a warrior of the Khaliphate, a well-renowned Mubariz - \"Fencer\" - and part of a prestigious lineage of highly-trained warriors localized in the grand city of Sohayrah. It was formed an odd one hundred yils ago, but its visitors come from all parts of the Khaliphate. You have swung one weapon ten-thousand times, and not the other way around. You've left your cradle in search of riches to fund your people's armies- primarily in the ruins of Lyndhardtia."
 	extra_context = "This class is for experienced players who have a solid grasp on footwork and stamina management, master skills alone won't save your lyfe. You make up for your inherent weaknesses and limitations with \"master strike\" mechanics."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
@@ -135,7 +140,7 @@
 	class_select_category = CLASS_CAT_KHAZUMIA
 	category_tags = list(CTAG_MERCENARY)
 	cmode_music = 'sound/music/frei_sabre.ogg'
-	traits_applied = list(TRAIT_BADTRAINER, TRAIT_INTELLECTUAL, TRAIT_FENCERDEXTERITY, TRAIT_SABRIST)
+	traits_applied = list(TRAIT_BADTRAINER, TRAIT_INTELLECTUAL, TRAIT_FENCERDEXTERITY, TRAIT_SABRIST, TRAIT_KHAZUMIA)
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_PER = 3,
@@ -155,7 +160,7 @@
 
 /datum/outfit/job/roguetown/mercenary/sabrist/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("You are a master in the arts of the sabre. Wielder of Aavnr's sword by excellence, you needn't anything else. Your professionally made sabre facilitates moves from traditional Aavnic fencing treatises."))
+	to_chat(H, span_warning("You are a master in the arts of the sabre. Wielder of a Khaliphate-made sword of excellence, you needn't anything else. Your professionally made sabre facilitates moves from traditional Khazumian fencing treatises."))
 	if(H.mind)
 		var/armors = list(
 		"Fencing Jacket"	= /obj/item/clothing/suit/roguetown/armor/leather/heavy/freifechter,
@@ -166,15 +171,16 @@
 	l_hand = /obj/item/rogueweapon/scabbard/sword
 	r_hand = /obj/item/rogueweapon/sword/sabre/freifechter
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/navaja/freifechter
-	belt = /obj/item/storage/belt/rogue/leather/sash
+	belt = /obj/item/storage/belt/rogue/leather/battleskirt/black
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	shirt = /obj/item/clothing/suit/roguetown/shirt/freifechter
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
-	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves/freifechter
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain	//Obsessed with arms-hands. Keeping them protected on-spawn.
+	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/hierophant
+	pants = /obj/item/clothing/under/roguetown/trou/leather/eastern
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	backr = /obj/item/storage/backpack/rogue/satchel/short
-	neck = /obj/item/clothing/neck/roguetown/psicross/reform
+	wrists = /obj/item/clothing/neck/roguetown/psicross/khazumia
+	head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/black
+	mask = /obj/item/clothing/mask/rogue/lordmask/khazumia
 
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,

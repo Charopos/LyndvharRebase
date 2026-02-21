@@ -10,7 +10,7 @@
 	tutorial = "Blood stains your hands and the coins you hold. You are a sell-sword, a mercenary, a contractor of war. Where you come from, what you are, who you serve.. none of it matters. What matters is that the mammon flows to your pocket."
 	display_order = JDO_MERCENARY
 	selection_color = JCOLOR_WANDERER
-	min_pq = 2		//Will be handled by classes if PQ limiting is needed. --But Until then, learn escalation, mercs.
+	min_pq = 0
 	max_pq = null
 	round_contrib_points = 1
 	outfit = null	//Handled by classes
@@ -28,7 +28,6 @@
 		/datum/advclass/mercenary/calmirixia/balestrieri,
 		/datum/advclass/mercenary/desert_rider,
 		/datum/advclass/mercenary/desert_rider/zeybek,
-		/datum/advclass/mercenary/desert_rider/almah,
 		/datum/advclass/mercenary/forlorn,
 		/datum/advclass/mercenary/vaquero,
 		/datum/advclass/mercenary/freelancer,
@@ -37,13 +36,11 @@
 		/datum/advclass/mercenary/grenzelhoft,
 		/datum/advclass/mercenary/grenzelhoft/halberdier,
 		/datum/advclass/mercenary/grenzelhoft/crossbowman,
-		/datum/advclass/mercenary/grenzelhoft/mage,
 		/datum/advclass/mercenary/rhaenval,
 		/datum/advclass/mercenary/rhaenvalheavy,
 		/datum/advclass/mercenary/routier,
 		/datum/advclass/mercenary/xuefengclan,
 		/datum/advclass/mercenary/xuefengclan/sasu,
-		/datum/advclass/mercenary/seonjang,
 		/datum/advclass/mercenary/steppesman,
 		/datum/advclass/mercenary/warscholar,
 		/datum/advclass/mercenary/warscholar/pontifex,

@@ -14,23 +14,23 @@
 		STATKEY_CON = 3,
 		STATKEY_STR = 2,
 		STATKEY_PER = 1,
-		STATKEY_SPD = -1
+		STATKEY_SPD = -2
 	)
 	subclass_skills = list(
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/axes = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/axes = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/bows = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/shields = SKILL_LEVEL_EXPERT,	
+		/datum/skill/combat/shields = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/polearms = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 	)
 
 /datum/outfit/job/roguetown/mercenary/atgervi
@@ -39,15 +39,15 @@
 	..()
 	to_chat(H, span_warning("Atgervians are the term for those who live in the far north of Rhaenval. This land is particular known for its highlands and more hostile weather patterns- those who live here are the hardiest and most fiercesome of people. In past ages the Atgervians were known as fierce sea raiders- amassing wealth across the seas. But those daes have passed, and now most of the Varangian are seen doing mercenary work abroad."))
 	H.mind?.current.faction += "[H.name]_faction"
-	head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi
-	gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
+	head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/rhaenval/ownel
+	gloves = /obj/item/clothing/gloves/roguetown/chain/rhaenval
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
 	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/rhaenval
-	pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
+	pants = /obj/item/clothing/under/roguetown/splintlegs/iron/rhaenval
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 	backr = /obj/item/rogueweapon/shield/atgervi
-	backl = /obj/item/storage/backpack/rogue/satchel/black
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel/atgervi
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/chainmantle //They didn't have neck protection before.
@@ -67,15 +67,15 @@
 	subclass_languages = list(/datum/language/rhaenish)
 	cmode_music = 'sound/music/combat_shaman2.ogg'
 	traits_applied = list(TRAIT_STRONGBITE, TRAIT_CIVILIZEDBARBARIAN, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_NOPAINSTUN, TRAIT_BLOOD_RESISTANCE)
-	subclass_stats = list(
+subclass_stats = list(
 		STATKEY_STR = 3,
 		STATKEY_CON = 2,
 		STATKEY_WIL = 1,
 		STATKEY_SPD = 1,
 		STATKEY_INT = -1,
-		STATKEY_PER = -1
+		STATKEY_PER = -2
 	)
-	subclass_skills = list(
+subclass_skills = list(
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,
@@ -102,10 +102,10 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-	beltl = /obj/item/flashlight/flare/torch
+	beltl = /obj/item/flashlight/flare/torch/lantern
 	H.put_in_hands(new /obj/item/rogueweapon/handclaw/rhaenval)
 
 	backpack_contents = list(
@@ -118,14 +118,14 @@
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
 	name = "varangian hauberk"
-	desc = "The pride of the Highland mercenaries, this hauberk is a well crafted blend of chain and leather woven into a dense, protective coat."
+	desc = "The pride of Rhaenish metalworking, this hauberk is a well crafted blend of chain and leather woven into a dense, protective coat."
 	icon_state = "atgervi_raider_mail"
 	item_state = "atgervi_raider_mail"
 	max_integrity = 400
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi
 	name = "shamanic coat"
-	desc = "A furred, protective coat. Often made by hand, it embodies the second trial of the Iskarn Shamans: To honor the leopard is to desire for more."
+	desc = "A furred, protective coat. Often made by hand, it embodies the northern wastes of Rhaenval: to honor the shamans is to desire for more."
 	icon_state = "atgervi_shaman_coat"
 	item_state = "atgervi_shaman_coat"
 
@@ -144,7 +144,7 @@
 
 /obj/item/clothing/gloves/roguetown/plate/atgervi
 	name = "beast claws"
-	desc = "A menacing pair of plated claws, whose forging methods are a closely protected tradition of the Shamans. The four claws embodying the Four Great Beasts, decorated with symbols of the Gods they praise and the Gods they reject."
+	desc = "A menacing pair of plated claws, whose forging methods are a closely protected tradition of the Rhaenish. The four claws embody the four divine beings they worship."
 	icon_state = "atgervi_shaman_gloves"
 	item_state = "atergvi_shaman_gloves"
 
@@ -163,7 +163,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
 	name = "moose hood"
-	desc = "A deceptively strong moosehide hood with a pair of large heavy antlers. It is the reward of the fourth trial of the Iskarn Shamans: To slay a Grinning Moose in the final hunt alone - and fashion a hood from its head."
+	desc = "A deceptively strong moosehide hood with a pair of large heavy antlers."
 	icon_state = "atgervi_shaman"
 	item_state = "atgervi_shaman"
 	flags_inv = HIDEEARS|HIDEFACE
@@ -177,7 +177,7 @@
 
 /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 	name = "atgervi leather boots"
-	desc = "A pair of strong leather boots, designed to endure both the heat of battle and the frigid cold of the Northern Empty."
+	desc = "A pair of strong leather boots, designed to endure both the heat of battle and the frigid cold of northern Rhaenval."
 	icon_state = "atgervi_boots"
 	item_state = "atgervi_boots"
 
