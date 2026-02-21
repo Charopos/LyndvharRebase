@@ -9,7 +9,7 @@
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	vice_restrictions = list(/datum/charflaw/unintelligible)
 	allowed_races = RACES_TOLERATED_UP
-	allowed_ages = ALL_AGES_LIST
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
 	cmode_music = 'sound/music/cmode/towner/combat_towner3.ogg'
 
 	outfit = /datum/outfit/job/roguetown/archivist
