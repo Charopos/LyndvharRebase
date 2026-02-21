@@ -24,7 +24,7 @@
 	min_pq = 0
 	max_pq = null
 	cmode_music = 'sound/music/combat_ManAtArms.ogg'
-	job_traits = list(TRAIT_GUARDSMAN, TRAIT_STEELHEARTED, TRAIT_MEDIUMARMOR)
+	job_traits = list(TRAIT_GUARDSMAN, TRAIT_STEELHEARTED, TRAIT_MEDIUMARMOR, TRAIT_GOODTRAINER)
 	job_subclasses = list(
 		/datum/advclass/sergeant/sergeant
 	)
