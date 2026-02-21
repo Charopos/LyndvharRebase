@@ -16,11 +16,11 @@
 	traits_applied = list(TRAIT_CRITICAL_RESISTANCE, TRAIT_HARDDISMEMBER, TRAIT_NOPAINSTUN, TRAIT_HONORBOUND)
 	cmode_music = 'sound/music/combat_kazengite.ogg'
 	subclass_stats = list(
-		STATKEY_CON = 3,
+		STATKEY_CON = 2,
 		STATKEY_WIL = 3,
 		STATKEY_STR = 2,
 		STATKEY_PER = 1,
-		STATKEY_SPD = -1
+		STATKEY_SPD = -2
 	)
 	subclass_skills = list(
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
@@ -48,7 +48,7 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 	shoes = /obj/item/clothing/shoes/roguetown/armor/xuefengclan
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary,
 		/obj/item/flashlight/flare/torch/lantern,
@@ -61,10 +61,10 @@
 	tutorial = "A band of foreign outcast Yansheneze. The Xuefeng Family were outcasted from Yanshen, after its heads attempted a coup upon the Celestial. The Family departed lest they risked being executed for conspiracy, or worse. It is no organized group of soldiers, but rather a loose collection of experienced fighters."
 	outfit = /datum/outfit/job/roguetown/mercenary/xuefengclan_sasu
 	subclass_stats = list(
-		STATKEY_SPD = 4,
+		STATKEY_SPD = 3,
 		STATKEY_PER = 2,
 		STATKEY_WIL = 2,
-		STATKEY_STR = -1,
+		STATKEY_STR = -2,
 		STATKEY_CON = -1
 	)
 	subclass_skills = list(
@@ -95,7 +95,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/armor/xuefengclan
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary,
 		/obj/item/storage/belt/rogue/pouch/coins/poor,
