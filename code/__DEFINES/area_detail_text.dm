@@ -90,6 +90,6 @@ Rusted metals distantly grind in anoxic pus-condensate in-tune with the Signal. 
 #define DETAIL_TEXT_GUILD_OF_CRAFT "One of the earliest formed institutions in the city, the Maker's Guild founded this workshop of craft as one of the founding structures of the city, and ever since then has been a bastion of tools, weapons, armaments and the like for any wandering traveller or soldier looking for an axe-sharpening."
 
 
-// Tomb of Alotheos
+// Tomb of Alotheos: Dungeon
 #define DETAIL_TEXT_TOMB_OF_ALOTHEOS ""
 

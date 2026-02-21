@@ -165,6 +165,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	deathsight_message = "somewhere in the wilds, next to towering walls"
 	warden_area = TRUE
 	threat_region = THREAT_REGION_CITY_OUTSKIRTS
+	detail_text = DETAIL_TEXT_LYNDVHAR
 
 /area/rogue/druidsgrove
 	name = "Druids Grove"
@@ -272,6 +273,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	first_time_text = "THE CITY OF LYNDVHAR"
 	town_area = TRUE
 	fog_protected = TRUE
+	detail_text = DETAIL_TEXT_LYNDVHAR
 
 /area/rogue/indoors/shelter/town
 	icon_state = "town"
@@ -288,13 +290,14 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/indoors/shelter/town/sargoth
-	first_time_text = "SARGOTH"
+	first_time_text = "MERCENARY GUILD"
+
 /area/rogue/indoors/shelter/town/sargoth
 	icon_state = "sargoth"
 	droning_sound = 'sound/music/area/sargoth.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "SARGOTH"
+	first_time_text = "MERCENARY GUILD"
 
 /area/rogue/outdoors/town/roofs
 	name = "roofs"
