@@ -54,7 +54,7 @@
 	reagents.add_reagent(/datum/reagent/consumable/ethanol/blackgoat,900)
 
 /obj/structure/fermentation_keg/hagwoodbitter
-	desc = "A barrel marked with the Hagwood Bitters emblem. The least bitter thing to be exported from the Grenzelhoft occupied state of Zorn."
+	desc = "A barrel marked with the Hagwood Bitters emblem. The least bitter thing to be exported from the Lyndhardtian province of Calmirixial."
 
 /obj/structure/fermentation_keg/hagwoodbitter/Initialize()
 	. = ..()
@@ -77,7 +77,7 @@
 	reagents.add_reagent(/datum/reagent/consumable/ethanol/sourwine,900)
 
 /obj/structure/fermentation_keg/whitewine
-	desc = "A barrel that contains a Valorian luxury. A sweeter tasting wine that often serves to highlight and enhance savoury notes. The rarer the vintage, the harder the find. The names of the ingredients often grow more ostentatious the closer you get to the capital."
+	desc = "A barrel that contains a Rhaenvalian luxury. A sweeter tasting wine that often serves to highlight and enhance savoury notes."
 
 /obj/structure/fermentation_keg/whitewine/Initialize()
 	. = ..()
