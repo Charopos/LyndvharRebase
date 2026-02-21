@@ -289,7 +289,7 @@
 		if(L.m_intent == MOVE_INTENT_SNEAK)
 			return
 		else
-			if(!(HAS_TRAIT(L, TRAIT_AZURENATIVE) && L.m_intent != MOVE_INTENT_RUN))
+			if(!(HAS_TRAIT(L, TRAIT_LYNDNATIVE) && L.m_intent != MOVE_INTENT_RUN))
 				playsound(A.loc, "plantcross", 100, FALSE, -1)
 			var/oldx = A.pixel_x
 			animate(A, pixel_x = oldx+1, time = 0.5)
@@ -811,7 +811,7 @@
 	mush_light_power = 3
 	mush_light_color = "#e2e2e2"
 	int_req = 10
-	special_examine = "This mushroom has an identical appearance to a highly murderous mushroom, called the weeping angel, but luckily that one isn't native to Azure."
+	special_examine = "This mushroom has an identical appearance to a highly murderous mushroom, called the weeping angel, but luckily that one isn't native to Lewyn."
 	static_debris = null
 	mush_animate = FALSE
 

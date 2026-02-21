@@ -107,8 +107,8 @@
 	caparison_state = "eora_caparison"
 	female_caparison_state = "eora_caparison-f"
 
-/obj/item/caparison/azure
-	name = "azurean caparison"
+/obj/item/caparison/lyndvhar
+	name = "lyndhardtian caparison"
 	desc = "A decorative piece of cloth meant to be used as a saddle decoration. It's adorned with ducal colours. This one fits on a Saiga."
 	caparison_state = "azure_caparison"
 	female_caparison_state = "azure_caparison-f"

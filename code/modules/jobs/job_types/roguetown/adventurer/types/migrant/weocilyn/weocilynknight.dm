@@ -2,7 +2,7 @@
 /datum/job/roguetown/weocilyn/knight
 	title = "Knight of Weocilyn"
 	tutorial = "You are a Knight of Weocilyn, part of a brotherhood in service to your Lord. \
-	Now, alone and committed to safeguarding the court, you ride to the Peaks, resolved to ensure their safe arrival."
+	Now, alone and committed to safeguarding the court, you ride to Lyndvhar, resolved to ensure their safe arrival."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
 	total_positions = 1
@@ -45,7 +45,7 @@
 /datum/advclass/weocilyn/knight
 	name = "Knight of Weocilyn"
 	tutorial = "You are a Knight of Weocilyn, once part of a brotherhood in service to your Lord. \
-	Now, alone and committed to safeguarding what remains of your court, you ride to the Peaks, resolved to ensure their safe arrival."
+	Now, alone and committed to safeguarding what remains of your court, you ride to Lyndvhar, resolved to ensure their safe arrival."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/weocilyn/knight
