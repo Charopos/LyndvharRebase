@@ -149,6 +149,129 @@
 	H.equip_to_slot_or_del(new /obj/item/clothing/wrists/roguetown/bracers, SLOT_WRISTS, TRUE)
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/roguetown/boots/armor, SLOT_SHOES, TRUE)
 
+/datum/advclass/wretch/heretic/spy
+	name = "Heretic Spy"
+	tutorial = "Nimble of dagger and foot both, you are the shadowy herald of the cabal. They will not see you coming."
+	outfit = /datum/outfit/job/roguetown/wretch/hereticspy
+	maximum_possible_slots = 2 //Ppl dont like rogue antags.
+	traits_applied = list(TRAIT_RITUALIST, TRAIT_DODGEEXPERT)
+	//Slower than outlaw, but a bit more PER and INT
+	subclass_stats = list(
+		STATKEY_PER = 2,
+		STATKEY_WIL = 2,
+		STATKEY_SPD = 2,
+		STATKEY_INT = 1
+	)
+	subclass_skills = list(
+		/datum/skill/magic/holy = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/tracking = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/climbing = SKILL_LEVEL_MASTER,
+		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/sneaking = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/stealing = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/lockpicking = SKILL_LEVEL_EXPERT,
+		/datum/skill/craft/traps = SKILL_LEVEL_JOURNEYMAN,
+	)
+	subclass_stashed_items = list(
+        "Sewing Kit" =  /obj/item/repair_kit,
+    )
+	extra_context = "This subclass gain the Wound Heal miracle and the Convert Heretic spell."
+
+
+/datum/outfit/job/roguetown/wretch/hereticspy
+	has_loadout = TRUE
+
+/datum/outfit/job/roguetown/wretch/hereticspy/pre_equip(mob/living/carbon/human/H)
+	..()
+	to_chat(H, span_warning("Nimble of dagger and foot both, you are the shadowy herald of the cabal. They will not see you coming."))
+	cloak = /obj/item/clothing/cloak/raincloak/mortus
+	backl = /obj/item/storage/backpack/rogue/satchel
+	belt = /obj/item/storage/belt/rogue/leather
+	neck = /obj/item/clothing/neck/roguetown/gorget
+	mask =  HAS_TRAIT(H, TRAIT_PSYDONIAN_GRIT)?/obj/item/clothing/mask/rogue/facemask/steel/confessor : /obj/item/clothing/mask/rogue/ragmask/black
+	backpack_contents = list(
+		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
+		/obj/item/lockpickring/mundane = 1,
+		/obj/item/flashlight/flare/torch/lantern/prelit = 1,
+		/obj/item/rope/chain = 1,
+		/obj/item/storage/roguebag = 1,
+		/obj/item/ritechalk = 1,
+		/obj/item/reagent_containers/glass/bottle/alchemical/healthpot = 1,	//Small health vial
+		)
+	H.cmode_music = 'sound/music/cmode/antag/combat_cutpurse.ogg'
+	if(H.mind)
+		H.mind?.current.faction += "[H.name]_faction"
+		var/weapons = list("Rapier","Dagger", "Bow", "Crossbow", "Slurbow")
+		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+		H.set_blindness(0)
+		switch(weapon_choice)
+			if("Rapier")
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_EXPERT, TRUE)
+				if(HAS_TRAIT(H, TRAIT_PSYDONIAN_GRIT))
+					l_hand = /obj/item/rogueweapon/sword/rapier/psy //Fuck you it's aura
+				else
+					l_hand = /obj/item/rogueweapon/sword/rapier
+				beltl = /obj/item/rogueweapon/scabbard/sword
+
+			if("Dagger")
+				H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_EXPERT, TRUE)
+				beltl = /obj/item/rogueweapon/scabbard/sheath
+				if(HAS_TRAIT(H, TRAIT_PSYDONIAN_GRIT))
+					l_hand = /obj/item/rogueweapon/huntingknife/idagger/silver/psydagger
+				else
+					l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/special
+			if("Bow")
+				H.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_JOURNEYMAN, TRUE)
+				beltl = /obj/item/quiver/arrows
+				backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
+			if("Crossbow")
+				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_JOURNEYMAN, TRUE) //have to specifically go into bows/crossbows unlike outlaw
+				beltr = /obj/item/quiver/bolts
+				backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
+			if("Slurbow")
+				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_JOURNEYMAN, TRUE) // I think this is a very good alternative to the crossbow, given that this role involves mobile combat.
+				beltr = /obj/item/quiver/bolts
+				backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow
+		var/datum/devotion/C = new /datum/devotion(H, H.patron)
+		C.grant_miracles(H, cleric_tier = CLERIC_T2, passive_gain = CLERIC_REGEN_MINOR, start_maxed = TRUE)	//Minor regen, starts maxed out.
+		wretch_select_bounty(H)
+
+	if (istype (H.patron, /datum/patron/inhumen/zizo))
+		if(H.mind)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/minion_order)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravemark)
+			H.mind?.current.faction += "[H.name]_faction"
+		ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/convert_heretic)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/wound_heal)
+
+/datum/outfit/job/roguetown/wretch/hereticspy/choose_loadout(mob/living/carbon/human/H)
+	. = ..()
+	switch(H.patron?.type)
+		if(/datum/patron/inhumen/zizo)
+			H.cmode_music = 'sound/music/combat_heretic.ogg'
+			H.equip_to_slot_or_del(new /obj/item/clothing/neck/roguetown/psicross/inhumen/aalloy, SLOT_RING, TRUE)
+		if(/datum/patron/inhumen/matthios)
+			H.cmode_music = 'sound/music/combat_matthios.ogg'
+			H.equip_to_slot_or_del(new /obj/item/clothing/neck/roguetown/psicross/inhumen/matthios, SLOT_RING, TRUE)
+		if(/datum/patron/inhumen/baotha)
+			H.cmode_music = 'sound/music/combat_baotha.ogg'
+		if(/datum/patron/inhumen/graggar)
+			H.cmode_music = 'sound/music/combat_graggar.ogg'
+			H.equip_to_slot_or_del(new /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar, SLOT_RING, TRUE)
+	H.equip_to_slot_or_del(new /obj/item/clothing/under/roguetown/heavy_leather_pants, SLOT_PANTS, TRUE)
+	H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat, SLOT_ARMOR, TRUE)
+	H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/gambeson, SLOT_SHIRT, TRUE)
+	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/roguetown/fingerless_leather, SLOT_GLOVES, TRUE)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/roguetown/boots/leather/reinforced, SLOT_SHOES, TRUE)
+	H.equip_to_slot_or_del(new /obj/item/clothing/wrists/roguetown/bracers/leather/heavy, SLOT_WRISTS, TRUE)
+
 /obj/effect/proc_holder/spell/invoked/convert_heretic
 	name = "Convert The Downtrodden"
 	desc = "Convert an soul excommunicated, cursed, or forced onto apotasy to your cause. Requires a willing participant, and takes a long time to cast."
