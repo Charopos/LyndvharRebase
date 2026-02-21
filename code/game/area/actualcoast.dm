@@ -11,7 +11,7 @@
 	converted_type = /area/rogue/under/lake
 	first_time_text = "CITY HARBOR"
 	deathsight_message = "a windswept shore"
-	detail_text = DETAIL_TEXT_ACTUAL_COAST
+	detail_text = DETAIL_TEXT_CITY_COAST
 
 // No sea raiders here! The Central Coast is relatively safe.
 /area/rogue/outdoors/beach/central
