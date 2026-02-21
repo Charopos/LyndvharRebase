@@ -10,9 +10,9 @@
 	allowed_races = ACCEPTED_RACES
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_IMMORTAL)
 	job_traits = list(TRAIT_GUARDSMAN, TRAIT_STEELHEARTED)
-	tutorial = "Having proven yourself loyal and capable, you are entrusted to defend the town and enforce its laws. \
-				Trained regularly in combat and siege warfare, you deal with threats - both within and without. \
-				Obey your Sergeant-at-Arms, the Marshal, and the Crown. Show the nobles and knights your respect, so that you may earn it in turn. Not as a commoner, but as a soldier.."
+	tutorial = "Having proven yourself loyal and capable compared to most of the rabble on the streets, you were hired and entrusted to defend the Manor and keep it protected at all cost. \
+				With your newfound position came much training under the Cataphract, and with it a true warrior's education. \
+				The word of the Viscount is your law- much more than any common levy of the Watch. Show the noble court and the Cataphract your respect, so that you may earn it in turn. Not as a commoner- but as a guardian of the noble court."
 	display_order = JDO_GUARD
 	whitelist_req = TRUE
 

@@ -252,24 +252,27 @@
 /obj/item/storage/keyring/marshal //All access for Retinue / Garrison
 	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/royal, /obj/item/roguekey/heir, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight, /obj/item/roguekey/dungeon, /obj/item/roguekey/garrison,  /obj/item/roguekey/armory, /obj/item/roguekey/sergeant, /obj/item/roguekey/warden)
 
-/obj/item/storage/keyring/knight
-	keys = list(/obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight)
+/obj/item/storage/keyring/knight // All access to the manor and the garrison
+	keys = list(/obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight, /obj/item/roguekey/dungeon, /obj/item/roguekey/armory)
 
-/obj/item/storage/keyring/squire
-	keys = list(/obj/item/roguekey/walls, /obj/item/roguekey/manor)
+/obj/item/storage/keyring/squire // All access to the manor and garrison
+	keys = list(/obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/garrison, /obj/item/roguekey/armory)
 
 //////////////
 // GARRISON //
 //////////////
 
-/obj/item/storage/keyring/sergeant //All access to barracks and wardens
+/obj/item/storage/keyring/sergeant //All access to the manor and the garrison
 	keys = list(/obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/dungeon, /obj/item/roguekey/armory, /obj/item/roguekey/warden, /obj/item/roguekey/sergeant, /obj/item/roguekey/manor, /obj/item/roguekey/justiciary)
 
-/obj/item/storage/keyring/manatarms //All access to barracks
+/obj/item/storage/keyring/manatarms // All access to the manor
 	keys = list(/obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/dungeon, /obj/item/roguekey/armory, /obj/item/roguekey/manor)
 
 /obj/item/storage/keyring/warden //All access to wardens
 	keys = list(/obj/item/roguekey/walls, /obj/item/roguekey/warden)
+
+/obj/item/storage/keyring/watchman // All access to the garrison
+	keys = list(/obj/item/roguekey/dungeon, /obj/item/roguekey/garrison, /obj/item/roguekey/armory)
 
 ////////////
 // CHURCH //

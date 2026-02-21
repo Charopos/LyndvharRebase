@@ -7,7 +7,7 @@
 	spawn_positions = 0
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_TOLERATED_UP
 	allowed_ages = ALL_NATURAL_AGES_LIST
 	tutorial = "Picked out of your political value rather than likely any form of love, you have become the Viscount's most trusted confidant--and likely friend--throughout your marriage. Your loyalty and perhaps even your love will be tested this day... for the daggers that threaten your beloved are as equally pointed at your own throat."
 
