@@ -43,7 +43,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/chain/rhaenval
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
 	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/rhaenval
-	pants = /obj/item/clothing/under/roguetown/splintlegs/iron/rhaenval
+	pants = /obj/item/clothing/under/roguetown/splintlegs/rhaenval
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 	backr = /obj/item/rogueweapon/shield/atgervi
@@ -67,7 +67,7 @@
 	subclass_languages = list(/datum/language/rhaenish)
 	cmode_music = 'sound/music/combat_shaman2.ogg'
 	traits_applied = list(TRAIT_STRONGBITE, TRAIT_CIVILIZEDBARBARIAN, TRAIT_IGNOREDAMAGESLOWDOWN, TRAIT_NOPAINSTUN, TRAIT_BLOOD_RESISTANCE)
-subclass_stats = list(
+	subclass_stats = list(
 		STATKEY_STR = 3,
 		STATKEY_CON = 2,
 		STATKEY_WIL = 1,
@@ -75,7 +75,7 @@ subclass_stats = list(
 		STATKEY_INT = -1,
 		STATKEY_PER = -2
 	)
-subclass_skills = list(
+	subclass_skills = list(
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,

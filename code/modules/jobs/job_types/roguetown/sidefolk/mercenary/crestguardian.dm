@@ -10,7 +10,7 @@
 		/datum/species/demihuman,
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/crestguardian
-	class_select_category = CLASS_CAT_RACIAL
+	class_select_category = CLASS_CAT_UNALIGNED
 	category_tags = list(CTAG_MERCENARY)
 	cmode_music = 'sound/music/combat_blackoak.ogg'
 	extra_context = "This subclass is race-restricted to: Half-Elves, Elves, Humens, and Half-kin."

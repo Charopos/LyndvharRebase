@@ -2046,13 +2046,13 @@
 		owner.remove_status_effect(/datum/status_effect/buff/dagger_boost)
 
 // special calmirixia dragonskin buffs
-/datum/status_effect/buff/calmirixian_broken_scales
-	id = "calmirixian_broken_scales"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/calmirixian_broken_scales
+/datum/status_effect/buff/calmirixia_broken_scales
+	id = "calmirixia_broken_scales"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/calmirixia_broken_scales
 	effectedstats = list(STATKEY_SPD = 4, STATKEY_STR = -4)
 	duration = -1
 
-/atom/movable/screen/alert/status_effect/buff/calmirixian_broken_scales
+/atom/movable/screen/alert/status_effect/buff/calmirixia_broken_scales
 	name = "Broken Scales"
 	desc = "My natural defenses are gone! I am lighter, but far weaker."
 	icon_state = "buff"

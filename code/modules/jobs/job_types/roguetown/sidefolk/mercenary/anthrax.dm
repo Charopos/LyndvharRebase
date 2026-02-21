@@ -6,7 +6,7 @@
 		/datum/species/elf/dark,
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/anthrax
-	class_select_category = CLASS_CAT_RACIAL
+	class_select_category = CLASS_CAT_UNALIGNED
 	category_tags = list(CTAG_MERCENARY)
 
 	cmode_music = 'sound/music/combat_delf.ogg'

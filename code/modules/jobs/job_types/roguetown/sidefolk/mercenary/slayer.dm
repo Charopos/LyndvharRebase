@@ -7,7 +7,7 @@
 		)
 	outfit = /datum/outfit/job/roguetown/mercenary/trollslayer
 	category_tags = list(CTAG_MERCENARY)
-	class_select_category = CLASS_CAT_RACIAL
+	class_select_category = CLASS_CAT_UNALIGNED
 	cmode_music = 'sound/music/combat_dwarf.ogg'
 	extra_context = "Only the dwarves who swore an Oath to the ten may become Trollslayers." // dwarf exclusive and will force Ravox
 
