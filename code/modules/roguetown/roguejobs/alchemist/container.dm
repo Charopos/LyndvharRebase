@@ -123,7 +123,7 @@
 	name = "bottle of Hagwood Bitters"
 	icon_state = "beer"
 	list_reagents = list(/datum/reagent/consumable/ethanol/hagwoodbitter = 50)
-	desc = "A bottle with the hagwood bitters cork-seal. The least bitter thing to be exported from the Grenzelhoft occupied state of Zorn."
+	desc = "A bottle with the hagwood bitters cork-seal. The least bitter thing to be exported from the Lyndhardtian province of Calmirixial."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/aurorian
 	name = "bottle of Aurorian Herbal Beer"
@@ -141,7 +141,7 @@
 	name = "bottle of Butterhairs"
 	icon_state = "ale"
 	list_reagents = list(/datum/reagent/consumable/ethanol/butterhairs = 50)
-	desc = "A bottle with the Dwarven Federation Trade Alliance cork-seal. This beer, known as butterhairs: is widely considered one of the greatest exported by the Dwarves."
+	desc = "A bottle with the Dwarven Commerce Alliance cork-seal. This beer, known as butterhairs: is widely considered one of the greatest exported by the Dwarves."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/stonebeardreserve
 	name = "bottle of Stonebeards Reserve"
@@ -158,7 +158,7 @@
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/voddena
 	list_reagents = list(/datum/reagent/consumable/ethanol/voddena = 50)
-	desc = "A bottle with the City of Norwandine cork-seal. It contains a respectably pure, clean voddena."
+	desc = "A bottle with the Miloski Brewery cork-seal. It contains a respectably pure, clean voddena."
 
 // WINES - Expensive, Nobleblooded
 /obj/item/reagent_containers/glass/bottle/rogue/wine
@@ -172,7 +172,7 @@
 	name = "bottle of Grenzelhoft Sour"
 	icon_state = "red_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/sourwine = 50)
-	desc = "A bottle that contains a Grenzelhoftian classic with a black ink cork-seal.. An extremely sour wine that is watered down with mineral water."
+	desc = "A bottle that contains a Grenz classic with a black ink cork-seal.. An extremely sour wine that is watered down with mineral water."
 
 /obj/item/reagent_containers/glass/bottle/rogue/redwine
 	name = "bottle of Valorian Red"
@@ -182,14 +182,14 @@
 	desc = "A bottle with the Valorian Merchant Guild cork-seal. This one appears to be labelled as a relatively young red-wine from the coinlord state."
 
 /obj/item/reagent_containers/glass/bottle/rogue/whitewine
-	name = "bottle of Valorian White"
+	name = "Bottle of Northern White"
 	icon = 'icons/obj/alcohol.dmi'
 	icon_state = "white_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/whitewine = 50)
-	desc = "A bottle with the Valorian Merchant Guild cork-seal. This one appears to be labelled as a sweet wine from the colder northern regions."
+	desc = "A bottle with the Rhaenval Trading Company cork-seal. This one appears to be labelled as a sweet wine from the colder northern regions."
 
 /obj/item/reagent_containers/glass/bottle/rogue/elfred
-	name = "bottle of Elven Red"
+	name = "Bottle of Green Red"
 	icon = 'icons/obj/alcohol.dmi'
 	icon_state = "elven_red"
 	list_reagents = list(/datum/reagent/consumable/ethanol/elfred = 50)
@@ -200,7 +200,7 @@
 	icon = 'icons/obj/alcohol.dmi'
 	icon_state = "valmora_blue"
 	list_reagents = list(/datum/reagent/consumable/ethanol/elfblue = 50)
-	desc = "A bottle gilded with a golden cork-seal. This is the legendary Valmora Blue from the Vineyard of Valmora, headed by a sainted Dark-Elf swordsmaster. This bottle would swoon Gods over!"
+	desc = "A bottle gilded with a golden cork-seal. This is the legendary Valmora Blue from the Vineyard of Valmora in Greencrest, headed by a sainted Snow Elven swordsmaster. This bottle would swoon Gods over!"
 
 //AZURE DRINKS
 /obj/item/reagent_containers/glass/bottle/rogue/beer/jagdtrunk
@@ -225,13 +225,13 @@
 	name = "bottle of Norwandine Ale"
 	icon_state = "ale"
 	list_reagents = list(/datum/reagent/consumable/ethanol/nred = 50)
-	desc = "A bottle with the City of Norwandine cork-seal. A red ale brewed to perfection in the lands of Hammerhold."
+	desc = "A bottle with the Miloski Brewery cork-seal. A red ale brewed to perfection in the lands of southwestern Lyndhardtia."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/rhaenvalmead
 	name = "bottle of Shieldmaiden Mead"
 	icon_state = "red_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/rhaenvalmead = 50)
-	desc = "A bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to Rhaenish highlands."
+	desc = "A bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to far northern Rhaenvalian highlands."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridmead
 	name = "bottle of Golden Mead"
@@ -240,7 +240,7 @@
 	desc = "A bottle with a simple cork-seal. A golden honey-wine brewed in the Vruirid Steppes. Manages to keep a proper taste while staying strong."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridrice
-	name = "bottle of Vruirid White"
+	name = "Bottle of Okalberghan White"
 	icon_state = "white_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/vruiridrice = 50)
 	desc = "A bottle with a simple cork-seal. A murky, white wine made from rice grown in the steppes of the Vruirid."
@@ -292,13 +292,13 @@
 	name = "bottle of Yaojiu Rice Wine"
 	icon_state = "rice_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/yaojiu = 50)
-	desc = "A bottle with a red seal. A strong, sweet rice wine infused with medicinal herbs, including Ginseng. Often prescribed as a medicine on the Zhongese mainland."
+	desc = "A bottle with a red seal. A strong, sweet rice wine infused with medicinal herbs, including Ginseng. Often prescribed as a medicine in Quanhou, in far-away Yanshen."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/shejiu
 	name = "bottle of Shejiu Rice Wine"
 	icon_state = "rice_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/shejiu = 50)
-	desc = "A bottle with a red seal. A strong rice wine with a dead snake inside. In the land of Zhong, It is believed that drinking this will improve one's virility and blood circulation."
+	desc = "A bottle with a red seal. A strong rice wine with a dead snake inside. In the land of Yanshen, It is believed that drinking this will improve one's virility and blood circulation."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/murkwine
 	name = "bottle of Possumtail Swampweed Wine"
@@ -342,11 +342,11 @@
 
 /obj/item/reagent_containers/glass/bottle/claybottle/nred
 	list_reagents = list(/datum/reagent/consumable/ethanol/nred = 75)
-	desc = "A clay bottle with the City of Norwandine cork-seal. A red ale brewed to perfection in the lands of Hammerhold."
+	desc = "A clay bottle with the City of Norwandine cork-seal. A red ale brewed to perfection in southern Lyndhardtia."
 
 /obj/item/reagent_containers/glass/bottle/claybottle/rhaenvalmead
 	list_reagents = list(/datum/reagent/consumable/ethanol/rhaenvalmead = 75)
-	desc = "A clay bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to Rhaenish highlands."
+	desc = "A clay bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to the northern Rhaenvalian highlands."
 
 /obj/item/reagent_containers/glass/bottle/claybottle/whitewine
 	list_reagents = list(/datum/reagent/consumable/ethanol/whitewine = 75)

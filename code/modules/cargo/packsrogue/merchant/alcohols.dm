@@ -49,7 +49,7 @@
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/stonebeardreserve)
 
 /datum/supply_pack/rogue/alcohol/voddena
-	name = "Hammerhold Voddena"
+	name = "Miloski Voddena"
 	cost = 25
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/voddena)
 
@@ -74,12 +74,12 @@
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/redwine)
 
 /datum/supply_pack/rogue/alcohol/winevalorwhite
-	name = "Valorian White Wine"
+	name = "Northern White Wine"
 	cost = 35
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/whitewine)
 
 /datum/supply_pack/rogue/alcohol/elfred
-	name = "Elvish Red Wine"
+	name = "Green Red Wine"
 	cost = 150
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/elfred)
 
@@ -151,21 +151,21 @@
 
 // Zhongese
 /datum/supply_pack/rogue/alcohol/zhonghuangjiu
-	name = "Huangjiu (Zhongese Yellow Rice Wine)"
+	name = "Huangjiu (Yanshen Yellow Rice Wine)"
 	cost = 20
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/huangjiu)
 
 /datum/supply_pack/rogue/alcohol/baijiu
-	name = "Baijiu (Zhongese Sorghum Liquor)"
+	name = "Baijiu (Yanshen Sorghum Liquor)"
 	cost = 50
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/baijiu)
 
 /datum/supply_pack/rogue/alcohol/yaojiu
-	name = "Yaojiu (Zhongese Herbal Rice Wine)"
+	name = "Yaojiu (Yanshen Herbal Rice Wine)"
 	cost = 150
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/yaojiu)
 
 /datum/supply_pack/rogue/alcohol/shejiu
-	name = "Shejiu (Zhongese Snake Wine)"
+	name = "Shejiu (Yanshen Snake Wine)"
 	cost = 150
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/shejiu)
