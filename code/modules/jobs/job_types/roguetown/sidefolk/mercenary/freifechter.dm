@@ -3,7 +3,7 @@
 	tutorial = "You are a warrior of the Khaliphate, a well-renowned Almubaraz - \"Swordsmen\" - and part of a prestigious lineage of highly-trained warriors localized in the grand city of Sohayrah. It was formed an odd one hundred yils ago, but its visitors come from all parts of the Khaliphate. You have swung one weapon ten-thousand times, and not the other way around. You've left your cradle in search of riches to fund your people's armies- primarily in the ruins of Lyndhardtia."
 	extra_context = "This class is for experienced players who have a solid grasp on footwork and stamina management, master skills alone won't save your lyfe. You make up for your inherent weaknesses and limitations with \"master strike\" mechanics."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/mercenary/freelancer
 	subclass_languages = list(/datum/language/celestial)
 	class_select_category = CLASS_CAT_KHAZUMIA
