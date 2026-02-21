@@ -1,5 +1,5 @@
 /datum/advclass/mercenary/vaquero
-	name = "Vaquero"
+	name = "Valorian Vaquero"
 	tutorial = "Originating in the deadly swamps of the Calmirixia Province, the term 'vaquero' had merely stood for those who took up cattle-driving in the habitable parts of the swamp. Now, though, it has become a title for roaming swashbucklers after the Ruby War's fallout and their migration towards Valoria- or what's left of it. Whether they set out as a defender of the commonfolk or a pilferer of purses, the Vaquero is defined by the tale they carve across Lewyn - and more frequently - by their story's violent end."
 	outfit = /datum/outfit/job/roguetown/mercenary/vaquero
 	class_select_category = CLASS_CAT_VALORIA
