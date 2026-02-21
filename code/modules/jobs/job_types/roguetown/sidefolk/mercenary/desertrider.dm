@@ -1,5 +1,5 @@
 /datum/advclass/mercenary/desert_rider
-	name = "Desert Rider Janissary"
+	name = "Desert Janissary"
 	tutorial = "Blood, like the desert sand, stains your hands, a crimson testament to the gold you covet. A desert rider, renowned mercenary of the far east, your shamshir whispers tales of centuries-old tradition. Your loyalty, a fleeting mirage in the shifting sands, will yield to the allure of fortune."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
@@ -75,7 +75,7 @@
 	H.merctype = 4
 
 /datum/advclass/mercenary/desert_rider/zeybek
-	name = "Desert Rider Zeybek"
+	name = "Desert Zeybek"
 	tutorial = "Blood, like the desert sand, stains your hands, a crimson testament to the gold you covet. A desert rider, renowned mercenary of the far east, your shamshir whispers tales of centuries-old tradition. Your loyalty, a fleeting mirage in the shifting sands, will yield to the allure of fortune."
 	outfit = /datum/outfit/job/roguetown/mercenary/desert_rider_zeybek
 	traits_applied = list(TRAIT_DODGEEXPERT)

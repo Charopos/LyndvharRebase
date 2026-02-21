@@ -27,7 +27,7 @@
 	..()
 
 	//Universal gear
-	backl = /obj/item/storage/backpack/rogue/satchel/black
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	backpack_contents = list(
@@ -57,8 +57,8 @@
 				beltr = /obj/item/rogueweapon/scabbard/sword
 				l_hand = /obj/item/rogueweapon/sword/short/rhaenval
 				neck = /obj/item/clothing/neck/roguetown/leather
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/shields, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/shields, 3, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/axes, 2, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/knives, 3, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/misc/athletics, 4, TRUE)
