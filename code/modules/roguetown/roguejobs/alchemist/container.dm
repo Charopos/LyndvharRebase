@@ -216,10 +216,10 @@
 	desc = "A bottle with the Apfelweinheim cork-seal. A cider from the Grenzelhoftian town of Apfelweinheim. Well received for its addition of pear, alongside crisp apples."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/rtoper
-	name = "bottle of Lirvas Cider"
+	name = "bottle of Calmirixian Cider"
 	icon_state = "ale"
 	list_reagents = list(/datum/reagent/consumable/ethanol/rtoper = 50)
-	desc = "A bottle with the Lirvas-crest cork-seal. An especially tart cider from the petty kingdom of Lirvas. Myths say the brewers let the barrels age in the bog, which results in that especially stong flavour."
+	desc = "A bottle with the Calmirixian-crest cork-seal. An especially tart cider from the conquered province of Calmirixia. Myths say the brewers let the barrels age in the bog, which results in that especially stong flavour."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/nred
 	name = "bottle of Norwandine Ale"

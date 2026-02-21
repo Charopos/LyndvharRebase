@@ -4,7 +4,7 @@
         "azure_default" = "Ascendant",
         "azure_green" = "Undivided",
 		"azure_lane" = "Azure",
-		// "azure_gold" = "Lirvas",
+		// "azure_gold" = "Calmirixia",
 		"azure_purple" = "Zybantu",
 		// "azure_gilbranze" = "Gilbranze", - Coming soon :tm:
 		"trey_liam" = "Trey Liam"

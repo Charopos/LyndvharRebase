@@ -2,7 +2,13 @@
 	name = "Xuefeng Gun-in"
 	tutorial = "You are well versed and experienced in swordfighting, you have no problem in taking up most jobs so long as the coin is good, for either yourself or fellow Xuefeng."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = NON_DWARVEN_RACE_TYPES //no dwarf sprites
+	allowed_races = list(
+		/datum/species/human/northern,
+		/datum/species/elf/wood,
+		/datum/species/human/halfelf,
+		/datum/species/demihuman,
+		/datum/species/vulpkanin,
+	)
 	outfit = /datum/outfit/job/roguetown/mercenary/xuefengclan
 	subclass_languages = list(/datum/language/yansheneze)
 	class_select_category = CLASS_CAT_YANSHEN
