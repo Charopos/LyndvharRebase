@@ -47,7 +47,6 @@
 
 //All skills/traits are on the loadouts. All are identical. Welcome to the stupid way we have to make sub-classes...
 /datum/outfit/job/roguetown/sergeant
-/datum/outfit/job/roguetown/sergeant
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
 	backr = /obj/item/storage/backpack/rogue/satchel/short/black
 	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
@@ -59,7 +58,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 	cloak = /obj/item/clothing/cloak/tabard/stabard/guardhood
-	id = /obj/item/scomstone/garrison
+	id = /obj/item/scomstone/bad/garrison
 
 //Rare-ish anti-armor two hander sword. Kinda alternative of a bastard sword type. Could be cool.
 /datum/advclass/sergeant/sergeant
