@@ -123,7 +123,7 @@
 	name = "bottle of Hagwood Bitters"
 	icon_state = "beer"
 	list_reagents = list(/datum/reagent/consumable/ethanol/hagwoodbitter = 50)
-	desc = "A bottle with the hagwood bitters cork-seal. The least bitter thing to be exported from the Lyndhardtian province of Calmirixial."
+	desc = "A bottle with the hagwood bitters cork-seal. The least bitter thing to be exported from the Lyndhardtian province of Calmirixia."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/aurorian
 	name = "bottle of Aurorian Herbal Beer"
@@ -240,10 +240,10 @@
 	desc = "A bottle with a simple cork-seal. A golden honey-wine brewed in the Vruirid Steppes. Manages to keep a proper taste while staying strong."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridrice
-	name = "Bottle of Okalberghan White"
+	name = "Bottle of Okalbergrice"
 	icon_state = "white_wine"
 	list_reagents = list(/datum/reagent/consumable/ethanol/vruiridrice = 50)
-	desc = "A bottle with a simple cork-seal. A murky, white wine made from rice grown in the steppes of the Vruirid."
+	desc = "A bottle with a simple cork-seal. A murky, white wine made from rice grown in the far western mountains of the Okalberg Ranges."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/saigamilk
 	name = "bottle of brewed Saiga Milk"

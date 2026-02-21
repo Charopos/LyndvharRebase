@@ -54,7 +54,7 @@
 	reagents.add_reagent(/datum/reagent/consumable/ethanol/blackgoat,900)
 
 /obj/structure/fermentation_keg/hagwoodbitter
-	desc = "A barrel marked with the Hagwood Bitters emblem. The least bitter thing to be exported from the Lyndhardtian province of Calmirixial."
+	desc = "A barrel marked with the Hagwood Bitters emblem. The least bitter thing to be exported from the Lyndhardtian province of Calmirixia."
 
 /obj/structure/fermentation_keg/hagwoodbitter/Initialize()
 	. = ..()
@@ -114,7 +114,7 @@
 
 
 /obj/structure/fermentation_keg/vruiridrice
-	desc = "A barrel with a simple mark. A murky, white wine made from rice grown in the steppes of the Vruirid."
+	desc = "A barrel with a simple mark. A murky, white wine made from rice grown in the far western mountains of the Okalberg Ranges."
 
 /obj/structure/fermentation_keg/vruiridrice/Initialize()
 	. = ..()
