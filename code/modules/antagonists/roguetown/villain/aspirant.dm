@@ -54,7 +54,7 @@
 	addtimer(CALLBACK(src, PROC_REF(give_equipment_prompt)), 5 SECONDS)
 
 /datum/antagonist/aspirant/greet()
-	to_chat(owner, span_danger("I have grown weary of being near the throne, but never on it. I have decided that it is time I ruled Enigma."))
+	to_chat(owner, span_danger("I have grown weary of being near the throne, but never on it. I have decided that it is time I ruled Lyndvhar."))
 	..()
 
 /datum/antagonist/aspirant/loyalist/greet()
