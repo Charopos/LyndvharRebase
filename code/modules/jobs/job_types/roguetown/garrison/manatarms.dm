@@ -68,8 +68,9 @@
 	subclass_stats = list(
 		STATKEY_STR = 2,// seems kinda lame but remember guardsman bonus!!
 		STATKEY_INT = 1,
-		STATKEY_CON = 3, //Like other footman classes their main thing is constitution more so than anything else
-		STATKEY_WIL = 1
+		STATKEY_CON = 2, //Like other footman classes their main thing is constitution more so than anything else
+		STATKEY_WIL = 1,
+		STATKEY_SPD = -1,
 	)
 	subclass_skills = list(
 		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
@@ -182,7 +183,7 @@
 	category_tags = list(CTAG_MENATARMS)
 	//Garrison ranged/speed class. Time to go wild
 	subclass_stats = list(
-		STATKEY_STR = 1, //Xbow
+		STATKEY_STR = -1,
 		STATKEY_SPD = 2,// seems kinda lame but remember guardsman bonus!!
 		STATKEY_PER = 2,
 		STATKEY_WIL = 1
@@ -269,10 +270,11 @@
 	//Garrison mounted class; charge and charge often.
 	subclass_stats = list(
 		STATKEY_CON = 2,// seems kinda lame but remember guardsman bonus!!
-		STATKEY_WIL = 2,// Your name is speed, and speed is running.
+		STATKEY_WIL = 1,// Your name is speed, and speed is running.
 		STATKEY_STR = 1,
 		STATKEY_INT = 1, // No strength to account for the nominally better weapons. We'll see.
-		STATKEY_PER = 2 //Trackers
+		STATKEY_PER = 2, //Trackers
+		STATKEY_SPD = -1,
 	)
 	subclass_skills = list(
 		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
