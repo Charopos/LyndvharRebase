@@ -28,7 +28,7 @@
 	often resulting in mischief - and sometimes violence.<br>\
 	(TRAITS WILL GO HERE)" 
 	species_traits = list(EYECOLOR,LIPS,STUBBLE)
-	possible_ages = ALL_AGES_LIST
+	possible_ages = ALL_NATURAL_AGES_LIST
 	use_skintones = TRUE
 	default_features = MANDATORY_FEATURE_LIST
 	skin_tone_wording = "Skin Color"
