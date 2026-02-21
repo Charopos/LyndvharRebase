@@ -1,7 +1,7 @@
 /datum/migrant_role/weocilyn/lord
 	name = "Baron of Weocilyn"
 	advclass_cat_rolls = list(CTAG_HFT_LORD = 20)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_TOLERATED_UP
 	show_wanderer_examine = FALSE
 
 /datum/migrant_role/weocilyn/hand
@@ -15,7 +15,7 @@
 /datum/migrant_role/weocilyn/knight
 	name = "Knight of Weocilyn"
 	advclass_cat_rolls = list(CTAG_HFT_KNIGHT = 20)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_TOLERATED_UP
 	grant_lit_torch = FALSE
 	show_wanderer_examine = FALSE
 	outfit = /datum/outfit/job/roguetown/weocilyn/cloak

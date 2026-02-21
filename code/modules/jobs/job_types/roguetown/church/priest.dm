@@ -18,7 +18,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	spawn_positions = 1
 	selection_color = JCOLOR_CHURCH
 	f_title = "Bishop"
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_TOLERATED_UP
 	allowed_patrons = ALL_DIVINE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
 	tutorial = "In this time of strife and destruction, only the power of the PANTHEON is what truly matters against those of immorality. You have served the Ten for as long as you can remember- from your birth swaddled in cloth to your anointment as a member of the upper echelons of the Mother Church- bestowed with the position of Priest of Lyndvhar. You control and oversee the entire Church in this city, and are respected as such- with almost as much influence as the Viscount themself. Keep the spirits of those under you uplifted and the city faithful, for danger may always come from within."

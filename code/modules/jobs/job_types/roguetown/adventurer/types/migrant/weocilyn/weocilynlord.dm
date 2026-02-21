@@ -3,7 +3,7 @@
 	title = "Baron of Weocilyn"
 	tutorial = "You are the Baron of Weocilyn, the once-proud ruler of a barony now reduced to ashes. With little more than your maps, your prayers, and the fire of vengeance in your heart, you set out for the port city of Lyndvhar. There, you hope to find aid and sanctuary in the halls of your old friend, the Viscount. This will be the first step in a plan to reclaim your honor and exact retribution against Baleron, the man who brought your lands to ruin."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_TOLERATED_UP
 	outfit = null
 	total_positions = 1
 	spawn_positions = 0

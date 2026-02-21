@@ -4,7 +4,7 @@
 	tutorial = "You are a Knight of Weocilyn, part of a brotherhood in service to your Lord. \
 	Now, alone and committed to safeguarding the court, you ride to Lyndvhar, resolved to ensure their safe arrival."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_TOLERATED_UP
 	total_positions = 1
 	spawn_positions = 1
 	job_traits = list(TRAIT_NOBLE, TRAIT_HEAVYARMOR, TRAIT_WEOCILYN)
@@ -47,7 +47,7 @@
 	tutorial = "You are a Knight of Weocilyn, once part of a brotherhood in service to your Lord. \
 	Now, alone and committed to safeguarding what remains of your court, you ride to Lyndvhar, resolved to ensure their safe arrival."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/weocilyn/knight
 	maximum_possible_slots = 1
 	pickprob = 100
