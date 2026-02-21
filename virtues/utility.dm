@@ -1,4 +1,4 @@
-/datum/virtue/utility/noble
+/* /datum/virtue/utility/noble
 	name = "Nobility"
 	desc = "By birth, blade or brain, I am noble known to the royalty of these lands, and have all the benefits associated with it. I've cleverly stashed away a healthy amount of coinage, alongside a familial heirloom."
 	restricted = TRUE
@@ -9,7 +9,7 @@
                                 "Hefty Coinpurse" = /obj/item/storage/belt/rogue/pouch/coins/virtuepouch)
 
 /datum/virtue/utility/noble/apply_to_human(mob/living/carbon/human/recipient)
-	SStreasury.noble_incomes[recipient] += 15
+	SStreasury.noble_incomes[recipient] += 15 */
 
 /datum/virtue/utility/beautiful
 	name = "Beautiful"
@@ -107,7 +107,7 @@
 /datum/virtue/utility/linguist
 	name = "Intellectual"
 	desc = "I've spent my life surrounded by various books or sophisticated foreigners, be it through travel or other fortunes beset on my life. I've picked up several tongues and wits, and keep a journal closeby. I can tell people's exact prowess."
-	custom_text = "Maximizes Assess benefits with a bonus of the target's Stats. Allows the choice of 3 languages to learn upon joining. +1 INT."
+	custom_text = "Maximizes Assess benefits with a bonus of the target's Stats. Allows the choice of 3 languages to learn upon joining."
 	added_traits = list(TRAIT_INTELLECTUAL)
 	added_skills = list(list(/datum/skill/misc/reading, 3, 6))
 	added_stashed_items = list(
@@ -159,10 +159,10 @@
 				to_chat(recipient, span_info("I recall my knowledge of [chosen_language]..."))
 				count--
 
-/datum/virtue/utility/deathless
+/* /datum/virtue/utility/deathless
 	name = "Deathless"
 	desc = "Some fell magick has rendered me inwardly unliving - I do not hunger, and I do not breathe."
-	added_traits = list(TRAIT_NOHUNGER, TRAIT_NOBREATH)
+	added_traits = list(TRAIT_NOHUNGER, TRAIT_NOBREATH) */
 
 /datum/virtue/utility/feral_appetite
 	name = "Feral Appetite"
@@ -330,7 +330,7 @@
 	desc = "The 'Holy' See has their blood-stained grounds, and so do we. Underneath their noses, we pray to the true gods - I know the location of the local heretic conclave. Secrecy is paramount. If found out, I will surely be killed."
 	added_traits = list(TRAIT_ZURCH)
 
-/datum/virtue/utility/mountable
+/* /datum/virtue/utility/mountable
 	name = "Mountable"
 	desc = "You have trained and become fit enough to function as a suitable mount. People may ride you as they would a saiga."
-	added_traits = list(TRAIT_MOUNTABLE)
+	added_traits = list(TRAIT_MOUNTABLE) */
