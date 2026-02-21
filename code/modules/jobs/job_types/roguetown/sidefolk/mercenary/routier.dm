@@ -9,7 +9,7 @@
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	cmode_music = 'sound/music/combat_routier.ogg'
-subclass_stats = list(
+	subclass_stats = list(
 		STATKEY_CON = 3,
 		STATKEY_WIL = 2,
 		STATKEY_STR = 1,
