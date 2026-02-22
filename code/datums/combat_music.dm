@@ -109,7 +109,7 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	name = "Barbarian"
 	desc = ""
 	shortname = "Barbarian"
-	musicpath = list('sound/music/combat_gronn.ogg')
+	musicpath = list('sound/music/combat_rhaenval.ogg')
 
 /datum/combat_music/crestguardian
 	name = "Crestborne Guardian"

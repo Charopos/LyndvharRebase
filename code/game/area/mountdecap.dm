@@ -85,7 +85,7 @@
 	name = "Wyvern's Peak Fortress"
 	icon_state = "under"
 	first_time_text = "WYVERN'S PEAK"
-	droning_sound = 'sound/music/area/sewersold.ogg'
+	droning_sound = 'sound/music/area/siege.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	ceiling_protected = TRUE
