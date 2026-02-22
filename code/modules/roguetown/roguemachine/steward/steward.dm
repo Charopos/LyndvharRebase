@@ -47,7 +47,7 @@
 	daily_payments["Apothecary"] = 10
 	daily_payments["Archmagus"] = 40 //University
 	daily_payments["Archivist"] = 20
-	daily_payments["Magicians Associate"] = 10
+	daily_payments["Arcyne Apprentice"] = 10
 
 /obj/structure/roguemachine/steward/attackby(obj/item/P, mob/user, params)
 	if(istype(P, /obj/item/roguekey))

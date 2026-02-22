@@ -139,7 +139,7 @@ GLOBAL_LIST_INIT(burgher_positions, list( //Artisans, store owners what have you
 	"Innkeeper",
 	"Bathmaster",
 	"City Herald",
-	"Magicians Associate",
+	"Arcyne Apprentice",
 ))
 
 GLOBAL_LIST_INIT(bathhouse_positions, list(
