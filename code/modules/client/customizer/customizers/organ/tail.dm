@@ -20,7 +20,10 @@
 		/datum/sprite_accessory/tail/eevee,
 		/datum/sprite_accessory/tail/fennec,
 		/datum/sprite_accessory/tail/jackal,
-		/datum/sprite_accessory/tail/tamamo_kitsune
+		/datum/sprite_accessory/tail/kitsune,
+		/datum/sprite_accessory/tail/tamamo_kitsune,
+		/datum/sprite_accessory/tail/sabresune,
+		/datum/sprite_accessory/tail/lunasune,
 		)
 
 /datum/customizer/organ/tail/lupian
@@ -67,6 +70,8 @@
 		/datum/sprite_accessory/tail/lizard/dtiger,
 		/datum/sprite_accessory/tail/lizard/ltiger,
 		/datum/sprite_accessory/tail/lizard/spikes,
+		/datum/sprite_accessory/tail/large_snake_plain,
+		/datum/sprite_accessory/tail/large_snake,
 		)
 
 /datum/customizer/organ/tail/axian
