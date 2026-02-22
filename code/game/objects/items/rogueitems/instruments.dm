@@ -206,7 +206,7 @@
 	name = "lute"
 	desc = "Its graceful curves were designed to weave joyful melodies."
 	icon_state = "lute"
-	song_list = list("A Knight's Return" = 'sound/music/instruments/lute (1).ogg',
+	song_list = list("A Cataphract's Return" = 'sound/music/instruments/lute (1).ogg',
 	"Amongst Fare Friends" = 'sound/music/instruments/lute (2).ogg',
 	"The Road Traveled by Few" = 'sound/music/instruments/lute (3).ogg',
 	"Tip Thine Tankard" = 'sound/music/instruments/lute (4).ogg',

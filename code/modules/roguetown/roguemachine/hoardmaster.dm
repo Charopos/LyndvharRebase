@@ -102,7 +102,7 @@
 			unlocked_cats+="Sellsword"
 		if("Hedge Alchemist")
 			unlocked_cats+="Alchemist"
-		if("Hedge Knight")
+		if("Hedge Cataphract")
 			unlocked_cats+="Knight"
 		if("Hedge Mage")
 			unlocked_cats+="Mage"
