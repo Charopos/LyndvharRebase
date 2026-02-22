@@ -303,13 +303,13 @@
 
 /obj/item/roguekey/knight
 	name = "knight's key"
-	desc = "This is a key to the knight's chambers."
+	desc = "This is a key to the Cataphract's chambers."
 	icon_state = "ekey"
 	lockid = "knight"
 
 /obj/item/roguekey/sergeant
 	name = "sergeant key"
-	desc = "This key opens garrison's sergeant office."
+	desc = "This key opens garrison's Watch Captain office."
 	icon_state = "spikekey"
 	lockid = "sergeant"
 

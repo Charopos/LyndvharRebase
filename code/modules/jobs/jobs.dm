@@ -68,7 +68,7 @@ GLOBAL_LIST_INIT(leadership_positions, list( // Used for boldening text primaril
 	"Hand",
 	"Archmagus",
 	"Marshal",
-	"Sergeant",
+	"Watch Captain",
 	"Bishop",
 	"Martyr",
 	"Merchant",
@@ -108,13 +108,13 @@ GLOBAL_LIST_INIT(courtier_positions, list( //Anyone that is officially part of t
 
 GLOBAL_LIST_INIT(retinue_positions, list( //Manorites
 	"Marshal",
-	"Knight",
+	"Cataphract",
 	"Squire",
 ))
 
 GLOBAL_LIST_INIT(garrison_positions, list( //Guards
-	"Sergeant",
-	"Man at Arms",
+	"Watch Captain",
+	"Manor Guard",
 	"Warden",
 	"Watchman",
 ))
@@ -191,7 +191,7 @@ GLOBAL_LIST_INIT(rogueoverthrow_positions, list( //Used for Aspirant / Peasant R
 	"Councillor",
 	"Suitor",
 	"Marshal",
-	"Knight",
+	"Cataphract",
 	"Inquisitor",
 	"Absolver",
 	"Orthodoxist",

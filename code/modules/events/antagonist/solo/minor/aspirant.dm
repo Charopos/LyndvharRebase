@@ -16,7 +16,7 @@
 		"Heiress",
 		"Captain",
 		"Marshal",
-		"Sergeant",
+		"Watch Captain",
 		"Steward",
 		"Archmagus"
 	)
@@ -37,7 +37,7 @@
 	for(var/datum/mind/antag_mind as anything in setup_minds)
 		add_datum_to_mind(antag_mind, antag_mind.current)
 
-	var/list/helping = list("Consort" ,"Hand" ,"Suitor" ,"Heir" ,"Captain" ,"Steward" ,"Archmagus ","Archivist", "Knight", "Marshal", "Councillor", "City Herald", "Keeper", "Veteran")
+	var/list/helping = list("Consort" ,"Hand" ,"Suitor" ,"Heir" ,"Captain" ,"Steward" ,"Archmagus ","Archivist", "Cataphract", "Marshal", "Councillor", "City Herald", "Keeper", "Veteran")
 	var/list/possible_helpers = list()
 	for(var/mob/living/living in GLOB.human_list)
 		if(!living.client)
