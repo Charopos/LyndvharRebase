@@ -32,7 +32,7 @@
 	detail_text = DETAIL_TEXT_DECAP
 
 /area/rogue/outdoors/mountains/decap/stepbelow
-	name = "Tarichea - Valley of Loss"
+	name = "The Scorched Caldera"
 	icon_state = "decap"
 	ambush_mobs = list(
 				new /datum/ambush_config/pair_of_direbear = 10,
@@ -47,7 +47,7 @@
 	droning_sound = 'sound/music/area/caldera.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "TARICHEA, VALLEY OF LOSS"
+	first_time_text = "THE SCORCHED CALDERA"
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 	threat_region = THREAT_REGION_MOUNT_DECAP
@@ -65,7 +65,7 @@
 	droning_sound = 'sound/music/area/siege.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "KHUUFVALE RUINS"
+	first_time_text = "THE RUINS OF KHUUFVALE"
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 	ceiling_protected = TRUE
@@ -84,7 +84,7 @@
 /area/rogue/under/cave/dragonden
 	name = "Wyvern's Peak Fortress"
 	icon_state = "under"
-	first_time_text = "WYVERN'S PEAK"
+	first_time_text = "WYVERN'S PEAK FORTRESS"
 	droning_sound = 'sound/music/area/siege.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
@@ -123,10 +123,10 @@
 /area/rogue/outdoors/mountains/decap/minotaurfort
 	name = "Ancient Dwarven Forge"
 	icon_state = "decap"
-	droning_sound = 'sound/music/area/prospector.ogg'
+	droning_sound = 'sound/music/area/siege.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "ANCIENT DWARVEN FORGE"
+	first_time_text = "ANCIENT KHUUFVALE FORGE"
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 	ceiling_protected = TRUE
