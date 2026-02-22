@@ -14,7 +14,7 @@
 	class_select_category = CLASS_CAT_YANSHEN
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_NOBLE) //i hate nobles but it's thematic
-	cmode_music = 'sound/music/combat_kazengite.ogg'
+	cmode_music = 'sound/music/combat_yanshen.ogg'
 	maximum_possible_slots = 1
 	subclass_stats = list(  // mounted knight, but slower.
 		STATKEY_STR = 2,
@@ -121,7 +121,7 @@
 	class_select_category = CLASS_CAT_YANSHEN
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_DECEIVING_MEEKNESS, TRAIT_MEDIUMARMOR) //peasant levy turned mercenary. the underdog.
-	cmode_music = 'sound/music/combat_kazengite.ogg'
+	cmode_music = 'sound/music/combat_yanshen.ogg'
 	subclass_stats = list(  
 		STATKEY_STR = 2,
 		STATKEY_CON = 2,
