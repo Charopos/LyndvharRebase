@@ -15,7 +15,7 @@
 	var/hear_distance = 40 // Might need to be adjusted later.
 	// if other roles needed these it can be subtyped with this. in the future it might be better to bind these
 	// to players but that's not really necessary atm
-	var/list/servant_types = list(/datum/job/roguetown/butler, /datum/job/roguetown/servant)
+	var/list/servant_types =  /datum/job/roguetown/servant
 
 	COOLDOWN_DECLARE(nearby_ring_bell)
 	var/nearby_cooldown = 5 SECONDS
