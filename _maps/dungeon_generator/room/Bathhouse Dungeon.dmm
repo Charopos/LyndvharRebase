@@ -510,6 +510,10 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/rogue/grass,
 /area/rogue/under/tomb/wilds)
+"kz" = (
+/mob/living/carbon/human/species/npc/deadite,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/under/tomb/indoors/royal)
 "kA" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -1756,6 +1760,10 @@
 	dir = 1
 	},
 /area/rogue/under/tomb/sewer)
+"Ka" = (
+/mob/living/carbon/human/species/npc/deadite,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/tomb/indoors/royal)
 "Kg" = (
 /obj/machinery/light/rogue/candle/weak,
 /turf/closed/wall/mineral/rogue/stone/moss,
@@ -2638,7 +2646,7 @@ vW
 vW
 Eu
 iN
-iN
+nW
 hP
 iN
 zv
@@ -2671,7 +2679,7 @@ vW
 Zl
 Gr
 iN
-kN
+iN
 iN
 zv
 ri
@@ -3648,9 +3656,9 @@ gQ
 GI
 SJ
 oJ
-Qj
+Ka
 LZ
-Dd
+qg
 MJ
 Nv
 jr
@@ -4097,8 +4105,8 @@ ri
 be
 Le
 ae
+kz
 ae
-yC
 LZ
 tv
 YN

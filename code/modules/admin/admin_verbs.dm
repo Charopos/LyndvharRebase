@@ -614,7 +614,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Stealth Mode") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/drop_bomb()
-	set category = "-GameMaster-"
+	set category = "-Fun-"
 	set name = "Bomb..."
 	set desc = ""
 
@@ -656,7 +656,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Drop Bomb") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/drop_dynex_bomb()
-	set category = "-GameMaster-"
+	set category = "-Fun-"
 	set name = "Bomb - DynEx..."
 	set desc = ""
 
@@ -703,7 +703,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	message_admins("[key_name_admin(usr)] has  modified Dynamic Explosion Scale: [ex_scale]")
 
 /client/proc/give_spell(mob/T in GLOB.mob_list)
-	set category = "-GameMaster-"
+	set category = "-Fun-"
 	set name = "Give Spell"
 	set desc = ""
 
@@ -727,7 +727,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		message_admins(span_danger("Spells given to mindless mobs will not be transferred in mindswap or cloning!"))
 
 /client/proc/remove_spell(mob/T in GLOB.mob_list)
-	set category = "-GameMaster-"
+	set category = "-Fun-"
 	set name = "Remove Spell"
 	set desc = ""
 

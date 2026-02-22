@@ -214,15 +214,13 @@
 /datum/controller/subsystem/ticker/proc/get_end_reason()
 	var/end_reason
 
-	if(!check_for_lord(forced = TRUE))
+	if(!check_for_lord())
 		end_reason = pick("Without a Monarch, they were doomed to become slaves of Zizo.",
 						"Without a Monarch, they were doomed to be eaten by nite creachers.",
 						"Without a Monarch, they were doomed to become victims of Gehenna.",
-						"Without a Monarch, they were doomed to wander the wilderness as exiles.",
+						"Without a Monarch, they were doomed to enjoy a mass-suicide.",
 						"Without a Monarch, the Lich made them his playthings.",
 						"Without a Monarch, some jealous rival reigned in tyranny.",
-						"Without a Monarch, the gnomes eventually destroyed the town with explosives.",
-						"Without a Monarch, the courtesans sucked the town dry and moved on to the next one.",
 						"Without a Monarch, the town was abandoned.")
 
 	if(vampire_werewolf() == "vampire")

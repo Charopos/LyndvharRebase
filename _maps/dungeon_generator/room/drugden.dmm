@@ -404,11 +404,9 @@
 /turf/open/floor/carpet/red,
 /area/rogue/under/tomb/indoors)
 "Pk" = (
+/mob/living/carbon/human/species/npc/deadite,
 /obj/item/clothing/ring/quartz,
 /obj/effect/mapping_helpers/floor_clothing_equipper,
-/mob/living/carbon/human/species/skeleton/npc/no_equipment,
-/obj/item/clothing/suit/roguetown/shirt/tunic/black,
-/obj/item/rogueweapon/huntingknife/idagger/steel/parrying,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/tomb/indoors)
 "Px" = (

@@ -1185,7 +1185,6 @@ SUBSYSTEM_DEF(gamemode)
         STATS_ALIVE_DARK_ELVES,
         STATS_ALIVE_WOOD_ELVES,
         STATS_ALIVE_HALF_ELVES,
-		STATS_ALIVE_SUN_ELVES,
         STATS_ALIVE_HALF_ORCS,
         STATS_ALIVE_GOBLINS,
         STATS_ALIVE_KOBOLDS,
@@ -1305,8 +1304,6 @@ SUBSYSTEM_DEF(gamemode)
 				record_round_statistic(STATS_ALIVE_DARK_ELVES)
 			if(iswoodelf(human_mob))
 				record_round_statistic(STATS_ALIVE_WOOD_ELVES)
-			if(issunelf(human_mob))
-				record_round_statistic(STATS_ALIVE_SUN_ELVES)
 			if(ishalfelf(human_mob))
 				record_round_statistic(STATS_ALIVE_HALF_ELVES)
 			if(ishalforc(human_mob))
