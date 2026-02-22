@@ -1,8 +1,8 @@
 
 /obj/effect/landmark/mapGenerator/rogue/mountain
 	mapGeneratorType = /datum/mapGenerator/mtn
-	endTurfX = 255
-	endTurfY = 255
+	endTurfX = 400
+	endTurfY = 350
 	startTurfX = 1
 	startTurfY = 1
 
