@@ -254,7 +254,7 @@
 	name = "suspicious passage"
 	desc = "A crevice in the wall. It looks like it leads somewhere."
 	required_trait = "bathhouse_passage_seen"
-	required_jobs = list("Bathmaster", "Bathhouse Attendant")
+	required_jobs = list("Bathmaster", "Nightswain")
 	travel_time = 30 SECONDS // If there's an active chase you basically cannot use it to escape quickly
 	travel_message = "I begin to squeeze through the passage..."
 	travel_deny_message = "You're not supple enough to use this passage."

@@ -121,13 +121,13 @@ Outlaws and undead are shunned by Astrata outside of her order. They may not inv
 /// Insiders need fewer (insider / diplomatic coup).
 /datum/usurpation_rite/solar_succession/proc/get_required_assents()
 	if(invoker.job == "Consort" || invoker.job == "Prince" || invoker.job == "Hand" || \
-	invoker.job == "Steward" || invoker.job == "Councillor" || HAS_TRAIT(invoker, TRAIT_HEARTFELT))
+	invoker.job == "Steward" || invoker.job == "Councillor" || HAS_TRAIT(invoker, TRAIT_WEOCILYN))
 		return SOLAR_REQUIRED_ASSENTS_INSIDER
 	return SOLAR_REQUIRED_ASSENTS_OUTSIDER
 
 /// Returns the vote weight for a noble: resident nobles count full, foreign nobles count half.
 /datum/usurpation_rite/solar_succession/proc/get_vote_weight(mob/living/carbon/human/noble)
-	if((noble.job in GLOB.foreign_positions) || HAS_TRAIT(noble, TRAIT_HEARTFELT))
+	if((noble.job in GLOB.foreign_positions) || HAS_TRAIT(noble, TRAIT_WEOCILYN))
 		return SOLAR_VOTE_FOREIGNER
 	return SOLAR_VOTE_RESIDENT
 

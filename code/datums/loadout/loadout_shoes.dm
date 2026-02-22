@@ -52,5 +52,5 @@
 
 /datum/loadout_item/rumaclanshoes
 	name = "Raised Sandals"
-	path = /obj/item/clothing/shoes/roguetown/armor/rumaclan/shitty
+	path = /obj/item/clothing/shoes/roguetown/armor/xuefengclan/shitty
 	sort_category = "Shoes"

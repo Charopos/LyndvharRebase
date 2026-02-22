@@ -151,8 +151,7 @@
 /datum/advclass/wretch/deserter/maa
 	name = "Disgraced Guardsman"
 	tutorial = "You had your post. You had your duty. Dissatisfied, lacking in morale, or simply thinking yourself better than it. - You decided to walk. Now it follows you everywhere you go."
-	outfit = /datum/outfit/job/roguetown/wretch/desertermaa
-	maximum_possible_slots = 3 //Ideal role for fraggers. Better to limit it.
+	maximum_possible_slots = 3
 
 	cmode_music = 'sound/music/cmode/antag/combat_thewall.ogg' // same as new hedgeknight music
 	// Slightly more rounded. These can be nudged as needed.
@@ -230,9 +229,10 @@
 		"Wildguard"			= /obj/item/clothing/mask/rogue/wildguard,
 		"None"
 		)
-		var/armorchoice = input(H, "Choose your armor.", "TAKE UP ARMOR") as anything in armors
-		armor = armors[armorchoice]
-
+		var/maskchoice = input(H, "Choose your Mask.", "MASK MASK MASK") as anything in masks // Run from it. MASK. MASK. MASK.
+		if(maskchoice != "None")
+			mask = masks[maskchoice]
+		
 		wretch_select_bounty(H)
 
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
