@@ -190,7 +190,7 @@
 	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/refugee
 	subclass_languages = list(/datum/language/celestial)
-	cmode_music = 'sound/music/warscholar.ogg'
+	cmode_music = 'sound/music/combat_khazumite.ogg'
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_DODGEEXPERT)
 	subclass_stats = list(
 		STATKEY_SPD = 2,

@@ -264,9 +264,10 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 
 /datum/combat_music/khazumite
 	name = "Khazumite"
-	desc = "How did you even get here, I wonder..? It matters little."
+	desc = "Windswept sands of the oasis call for you."
 	shortname = "Khazumite"
 	musicpath = list('sound/music/combat_khazumite.ogg')
+	credits = "Butcher's Boulevard - Kristjan Thomas Haaristo"
 
 /datum/combat_music/knight
 	name = "Knightly Oath"
@@ -580,13 +581,6 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	desc = "A nobody who believes they will be something one day."
 	shortname = "Towner3"
 	musicpath = list('sound/music/cmode/towner/combat_towner2.ogg')
-
-/datum/combat_music/warscholar
-	name = "Warscholar, Naledi"
-	desc = ""
-	shortname = "Warscholar"
-	credits = "Butcher's Boulevard - Kristjan Thomas Haaristo"
-	musicpath = list('sound/music/warscholar.ogg')
 
 /datum/combat_music/freifencer
 	name = "Freifechter, Fencer"
