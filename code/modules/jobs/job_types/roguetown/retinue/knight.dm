@@ -114,27 +114,34 @@
 			if("Claymore")
 				r_hand = /obj/item/rogueweapon/greatsword/zwei
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
 			if("Great Mace")
 				r_hand = /obj/item/rogueweapon/mace/goden/steel
+				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 5, TRUE)
 			if("Battle Axe")
 				r_hand = /obj/item/rogueweapon/stoneaxe/battle
+				H.adjust_skillrank_up_to(/datum/skill/combat/axes, 5, TRUE)
 			if("Poleaxe")
 				r_hand = /obj/item/rogueweapon/greataxe/steel/knight
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
 			if("Estoc")
 				r_hand = /obj/item/rogueweapon/estoc
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
 			if("Lucerne")
 				r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
 			if("Partizan")
 				r_hand = /obj/item/rogueweapon/spear/partizan
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
 
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rope/chain = 1,
-		/obj/item/rogueweapon/scabbard/sheath/noble = 1
+		/obj/item/rogueweapon/scabbard/sheath/royal = 1
 	)
 	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_UPPER_CLASS, H, "Savings.")
@@ -185,21 +192,25 @@
 				beltl = /obj/item/rogueweapon/scabbard/sword/noble
 				l_hand = /obj/item/rogueweapon/sword/long/dec
 				backl = /obj/item/rogueweapon/shield/buckler/banneret
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
 			if("Flail")
 				beltr = /obj/item/rogueweapon/flail/sflail
 				backl = /obj/item/rogueweapon/shield/buckler/banneret
+				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 5, TRUE)
 			if ("Warhammer")
 				beltr = /obj/item/rogueweapon/mace/warhammer/steel //Steel warhammer. This is one-handed and pairs well with shields.
 				backl = /obj/item/rogueweapon/shield/buckler/banneret
+				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 5, TRUE)
 			if("Edict and Aegis")
-				beltl = /obj/item/rogueweapon/scabbard/sword/noble
+				beltl = /obj/item/rogueweapon/scabbard/sword/royal
 				l_hand = /obj/item/rogueweapon/sword/sabre/banneret
 				backl = /obj/item/rogueweapon/shield/buckler/banneret
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
 
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rope/chain = 1,
-		/obj/item/rogueweapon/scabbard/sheath/noble = 1
+		/obj/item/rogueweapon/scabbard/sheath/royal = 1
 	)
 	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_UPPER_CLASS, H, "Savings.")
@@ -265,29 +276,38 @@
 				r_hand = /obj/item/rogueweapon/sword/long/dec
 				beltr = /obj/item/quiver/bolts
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, 5, TRUE)
 			if("Billhook + Recurve Bow")
 				r_hand = /obj/item/rogueweapon/spear/billhook
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
 				beltr = /obj/item/quiver/arrows
 				beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/bows, 5, TRUE)
 			if("Grand Mace + Longbow")
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
 				beltr = /obj/item/quiver/arrows
 				beltl = /obj/item/rogueweapon/mace/goden/steel
+				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 5, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/bows, 5, TRUE)
 			if("Sabre + Recurve Bow")
 				l_hand = /obj/item/rogueweapon/scabbard/sword/noble
 				r_hand = /obj/item/rogueweapon/sword/sabre/dec
 				beltr = /obj/item/quiver/arrows
 				beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/bows, 5, TRUE)
 			if("Lance + Aegis")
 				r_hand = /obj/item/rogueweapon/spear/lance
 				backl = /obj/item/rogueweapon/shield/buckler/banneret
 				H.adjust_skillrank_up_to(/datum/skill/combat/shields, 3, TRUE) // Let them skip dummy hitting
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
 
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rope/chain = 1,
-		/obj/item/rogueweapon/scabbard/sheath/noble = 1
+		/obj/item/rogueweapon/scabbard/sheath/royal = 1
 	)
 	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_UPPER_CLASS, H, "Savings.")
