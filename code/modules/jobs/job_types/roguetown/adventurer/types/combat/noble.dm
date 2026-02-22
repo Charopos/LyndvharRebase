@@ -159,6 +159,10 @@
 			if("Battle Axe")
 				H.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				r_hand = /obj/item/rogueweapon/stoneaxe/battle
+			if("Greataxe")
+				H.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_JOURNEYMAN, TRUE)
+				r_hand = /obj/item/rogueweapon/greataxe
+				backr = /obj/item/rogueweapon/scabbard/gwstrap
 
 /datum/advclass/noble/squire
 	name = "Squire Errant"

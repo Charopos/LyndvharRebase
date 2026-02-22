@@ -204,7 +204,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	l_hand = /obj/item/rogueweapon/sword
 	beltl = /obj/item/rogueweapon/scabbard/sword
-	beltr = /obj/item/roguekey/garrison
+	beltr = /obj/item/roguekey/veteran
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backl = /obj/item/rogueweapon/shield/tower/metal
 	r_hand = /obj/item/rogueweapon/spear/billhook
@@ -315,7 +315,7 @@
 	cloak = /obj/item/clothing/cloak/half/vet
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
-		/obj/item/roguekey/garrison = 1,
+		/obj/item/roguekey/veteran = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
 	H.verbs |= /mob/proc/haltyell

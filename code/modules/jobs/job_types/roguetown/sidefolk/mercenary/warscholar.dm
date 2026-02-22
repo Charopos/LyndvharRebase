@@ -234,7 +234,7 @@
 	beltl = /obj/item/flashlight/flare/torch
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
+	backr = /obj/item/storage/backpack/rogue/satchel/black
 
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,

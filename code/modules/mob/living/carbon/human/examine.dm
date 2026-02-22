@@ -32,6 +32,7 @@
 	var/t_is = p_are()
 	var/obscure_name = FALSE
 	var/race_name = "<a href='?src=[REF(src)];species_lore=1'><u>[dna.species.name]</u></A> "
+	var/origin_name = "<a href='?src=[REF(src)];origin_lore=1'><u>[dna.species.origin]</u></A>"
 	var/datum/antagonist/maniac/maniac = user.mind?.has_antag_datum(/datum/antagonist/maniac)
 	var/datum/antagonist/skeleton/skeleton = user.mind?.has_antag_datum(/datum/antagonist/skeleton)
 	if(maniac && (user != src))
@@ -109,7 +110,7 @@
 			else
 				. = list(span_info("ø ------------ ø\nThis is the <EM>[used_name]</EM>, the [race_name]."))
 
-		//Origins
+	//Origins
 		var/pronoun	//They / Their
 		if(!dna.species.use_skin_tone_wording_for_examine)
 			if(user == src)
@@ -124,12 +125,12 @@
 			if(dna.species.origin == "Unknown")
 				origin = "is implacable.."
 			else
-				origin = "originates in [dna.species.origin]"
+				origin = "originates in [origin_name]"
 		else
 			if(dna.species.origin == "Unknown")
 				origin = "nowhere.."
 			else
-				origin = dna.species.origin
+				origin = origin_name
 		. += span_info("[pronoun] [wording] [origin].")	//"He hails from [X / Nowhere]" || "His [word] originates from [X]" || "His [word] is implacable..."
 
 		if(HAS_TRAIT(src, TRAIT_WITCH))
@@ -140,7 +141,9 @@
 			else
 				. += span_notice("Something about them seems... different.")
 
-		if(GLOB.lord_titles[name])
+		if(SSticker.rulermob == src)
+			. += span_notice("<b>The ruler of this land.</b>")
+		else if(GLOB.lord_titles[name])
 			. += span_notice("[m3] been granted the title of \"[GLOB.lord_titles[name]]\".")
 
 		if(HAS_TRAIT(src, TRAIT_NOBLE) || HAS_TRAIT(src, TRAIT_DEFILED_NOBLE))
@@ -216,10 +219,10 @@
 				if(ishuman(user))
 					if(has_flaw(/datum/charflaw/addiction/paranoid))
 						. += span_nicegreen("[m1] is the kind who sticks to their own. I understand.")
-						user.sate_addiction()
+						user.sate_addiction(/datum/charflaw/addiction/paranoid)
 					else if(pflaw.check_faction(src))
 						. += span_nicegreen("One of my own.")
-						user.sate_addiction()
+						user.sate_addiction(/datum/charflaw/addiction/paranoid)
 					else
 						user.add_stress(/datum/stressevent/paracrowd)
 
@@ -238,9 +241,12 @@
 					user.add_stress(/datum/stressevent/averse)
 					. += span_secradio("One of <b>them...</b>")
 
-			if(user.has_flaw(/datum/charflaw/addiction/voyeur) && has_flaw(/datum/charflaw/addiction) && get_dist(src, user) <= 3)
-				var/flawname = charflaw?.voyeur_descriptor ? charflaw?.voyeur_descriptor : charflaw?.name
-				. += span_voyeurvice("[m1] [flawname]...")
+			if(user.has_flaw(/datum/charflaw/addiction/voyeur) && get_dist(src, user) <= 3)
+				if(charflaws.len)
+					var/list/vice_desc = list()
+					for(var/datum/charflaw/cf in charflaws)
+						vice_desc.Add(cf.voyeur_descriptor)
+					. += span_voyeurvice("[m1][english_list(vice_desc)]...")
 
 			if(HAS_TRAIT(user, TRAIT_EMPATH) && HAS_TRAIT(src, TRAIT_PERMAMUTE))
 				. += span_notice("[m1] lacks a voice. [m1] is a mute!")
@@ -1005,7 +1011,7 @@
 	if(HAS_TRAIT(src, TRAIT_DECEIVING_MEEKNESS))
 		return
 	if(HAS_TRAIT(src, TRAIT_COMMIE) && HAS_TRAIT(examiner, TRAIT_COMMIE))
-		heretic_text += "♠"
+		heretic_text += "⚖️" //♠ is the original
 	//Defunct as of *fsalute changes, leaving here as a symbol reference.
 	/*else if(HAS_TRAIT(src, TRAIT_CABAL) && HAS_TRAIT(examiner, TRAIT_CABAL))
 		heretic_text += "♦"

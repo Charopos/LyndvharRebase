@@ -151,8 +151,7 @@
 /datum/advclass/wretch/deserter/maa
 	name = "Disgraced Guardsman"
 	tutorial = "You had your post. You had your duty. Dissatisfied, lacking in morale, or simply thinking yourself better than it. - You decided to walk. Now it follows you everywhere you go."
-	outfit = /datum/outfit/job/roguetown/wretch/desertermaa
-	maximum_possible_slots = 3 //Ideal role for fraggers. Better to limit it.
+	maximum_possible_slots = 3
 
 	cmode_music = 'sound/music/cmode/antag/combat_thewall.ogg' // same as new hedgeknight music
 	// Slightly more rounded. These can be nudged as needed.
@@ -180,10 +179,10 @@
 		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/tracking = SKILL_LEVEL_NOVICE,
 	)
-/datum/outfit/job/roguetown/wretch/desertermaa/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/wretch/desertergeneric/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(H.mind)
-		var/weapons = list("Warhammer & Shield","Sabre & Shield","Axe & Shield","Billhook","Greataxe","Halberd",)
+		var/weapons = list("Warhammer & Shield","Sabre & Shield","Axe & Shield","Billhook","Greataxe","Halberd","Crossbow")
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 		H.set_blindness(0)
 		switch(weapon_choice)
@@ -206,6 +205,10 @@
 			if("Greataxe")
 				r_hand = /obj/item/rogueweapon/greataxe/steel
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+			if("Crossbow")
+				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_EXPERT, TRUE)
+				r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
+				backl = /obj/item/quiver/bolts
 	H.verbs |= list(/mob/living/carbon/human/mind/proc/setorders)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/order/movemovemove)
@@ -219,8 +222,7 @@
 		"None"
 		)
 		var/helmchoice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmets
-		if(helmchoice != "None")
-			head = helmets[helmchoice]
+		head = helmets[helmchoice]
 
 		var/masks = list(
 		"Iron Mask"		= /obj/item/clothing/mask/rogue/facemask,
@@ -230,7 +232,7 @@
 		var/maskchoice = input(H, "Choose your Mask.", "MASK MASK MASK") as anything in masks // Run from it. MASK. MASK. MASK.
 		if(maskchoice != "None")
 			mask = masks[maskchoice]
-
+		
 		wretch_select_bounty(H)
 
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron

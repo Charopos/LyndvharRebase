@@ -619,7 +619,7 @@
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/under/tomb/indoors/royal)
 "nW" = (
-/mob/living/carbon/human/species/npc/deadite,
+/mob/living/carbon/human/species/skeleton/npc/hard,
 /turf/open/floor/rogue/carpet,
 /area/rogue/under/tomb/indoors/royal)
 "ob" = (
@@ -853,7 +853,7 @@
 /turf/open/floor/rogue/blocks/newstone/alt,
 /area/rogue/under/tomb/sewer)
 "sy" = (
-/mob/living/carbon/human/species/npc/deadite,
+/mob/living/carbon/human/species/skeleton/npc/hard,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/tomb/indoors)
 "sz" = (
@@ -1177,6 +1177,10 @@
 /obj/machinery/light/rogue/candle/weak,
 /turf/open/floor/rogue/grass,
 /area/rogue/under/tomb/wilds)
+"yC" = (
+/mob/living/carbon/human/species/skeleton/npc/medium,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/under/tomb/indoors/royal)
 "yH" = (
 /obj/structure/rack/rogue/shelf/biggest,
 /obj/item/natural/cloth,
@@ -1435,6 +1439,11 @@
 "Da" = (
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/under/tomb/indoors)
+"Dd" = (
+/obj/effect/decal/cleanable/blood/old,
+/mob/living/carbon/human/species/skeleton/npc/medium,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/under/tomb/indoors/royal)
 "De" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/sparsegrass,
