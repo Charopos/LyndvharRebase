@@ -89,6 +89,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	jobspawn_override = list("Mercenary")
 	delete_after_roundstart = FALSE
 
+/obj/effect/landmark/start/druidlate
+	name = "Druidlate"
+	icon_state = "arrow"
+	jobspawn_override = list("Druid")
+	delete_after_roundstart = FALSE
+
 /obj/effect/landmark/start/sieges
 	name = "Siege Spawnpoint"
 	icon_state = "arrow"
@@ -129,6 +135,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 
 /obj/effect/landmark/start/guardsman
 	name = "Manor Guard"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/guardsman
+	name = "Watchman"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/warden
@@ -320,7 +330,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/wapprentice
-	name = "Magicians Associate"
+	name = "Arcyne Apprentice"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/apothecary
