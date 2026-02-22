@@ -111,8 +111,8 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	shortname = "Barbarian"
 	musicpath = list('sound/music/combat_gronn.ogg')
 
-/datum/combat_music/blackoak
-	name = "Black Oak"
+/datum/combat_music/crestguardian
+	name = "Crestborne Guardian"
 	desc = "The songs of those protective of the woodlands."
 	shortname = "Warden"
 	musicpath = list('sound/music/combat_blackoak.ogg')
@@ -348,7 +348,7 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 
 /datum/combat_music/saltlia
 	name = "Saltlia"
-	desc = "The melody of the Xingyi beckons to you. Perhaps the will can be enforced this far west."
+	desc = "The melody of the lands of salt beckons to you. Perhaps the will can be enforced this far west."
 	shortname = "Saltlia"
 	musicpath = list('sound/music/combat_saltlia.ogg')
 
