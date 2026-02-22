@@ -18,10 +18,10 @@
 	var/affectedjobs = list()
 	var/affectedtargets = list()
 	if(!single_target) //We want one spell to use the old method so we'll separate this out
-		if(user.job == "Sergeant")
-			affectedjobs = list("Man at Arms", "Watchman")
-		else if(user.job == "Knight")
-			affectedjobs = list("Knight", "Squire")
+		if(user.job == "Watch Captain")
+			affectedjobs = list("Manor Guard", "Watchman")
+		else if(user.job == "Cataphract")
+			affectedjobs = list("Cataphract", "Squire")
 		else if(user.job == "Wretch")
 			affectedjobs = list("Brother")
 		else if(user.job == "Migrant")
@@ -34,7 +34,7 @@
 			if(target.job in affectedjobs)
 				affectedtargets += target
 				continue
-			if(user.advjob == "Disgraced Knight" && target.advjob == "Disgraced Man at Arms") //Special line so Disgraced Knight can buff Disgraced Man at Arms
+			if(user.advjob == "Disgraced Cataphract" && target.advjob == "Disgraced Guardsman") //Special line so Disgraced Cataphract can buff Disgraced Guardsman
 				affectedtargets += target
 		if(!length(affectedtargets))
 			to_chat(user, span_alert("There are no subordinates close enough to hear my orders!"))
@@ -142,13 +142,13 @@
 		if(!msg)
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
-		if(user.job == "Sergeant")
-			if(!(target.job in list("Man at Arms", "Watchman")))
+		if(user.job == "Watch Captain")
+			if(!(target.job in list("Manor Guard", "Watchman")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				revert_cast()
 				return
-		if(user.job == "Knight")
-			if(!(target.job in list("Knight", "Squire")))
+		if(user.job == "Cataphract")
+			if(!(target.job in list("Cataphract", "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				revert_cast()
 				return

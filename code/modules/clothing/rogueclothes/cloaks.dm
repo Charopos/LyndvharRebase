@@ -1599,7 +1599,7 @@
 	user.update_inv_armor()
 
 /obj/item/clothing/cloak/banneret
-	name = "knight banneret's cape"
+	name = "cataphract's cape"
 	desc = "A cape with a gold embroided heraldry of Lyndhardt."
 	icon = 'icons/roguetown/clothing/special/captain.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'
