@@ -14,7 +14,7 @@
 	class_select_category = CLASS_CAT_YANSHEN
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_CRITICAL_RESISTANCE, TRAIT_HARDDISMEMBER, TRAIT_NOPAINSTUN, TRAIT_HONORBOUND)
-	cmode_music = 'sound/music/combat_kazengite.ogg'
+	cmode_music = 'sound/music/combat_yanshen.ogg'
 	subclass_stats = list(
 		STATKEY_CON = 2,
 		STATKEY_WIL = 3,

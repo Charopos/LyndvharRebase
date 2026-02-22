@@ -62,7 +62,7 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	name = "Bandit Two"
 	desc = "The status of the common crook- the envy of Matthios."
 	shortname = "Bandit"
-	musicpath = list('sound/music/combat_bandit_mage.ogg')
+	musicpath = list('sound/music/combat_matthios.ogg')
 
 /datum/combat_music/baotha
 	name = "Baotha Heretic"
@@ -346,25 +346,18 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	shortname = "Routier"
 	musicpath = list('sound/music/combat_routier.ogg')
 
-/datum/combat_music/saltlia
-	name = "Saltlia"
+/datum/combat_music/yanshen
+	name = "Yanshen"
 	desc = "The melody of the lands of salt beckons to you. Perhaps the will can be enforced this far west."
-	shortname = "Saltlia"
-	musicpath = list('sound/music/combat_saltlia.ogg')
+	shortname = "Yanshen"
+	musicpath = list('sound/music/combat_yanshen.ogg')
 
 /datum/combat_music/shaman
 	name = "Shaman"
 	desc = "Winds whisper to you- words of wisdom.."
 	shortname = "Shaman"
-	musicpath = list('sound/music/combat_shaman.ogg')
-
-/datum/combat_music/shamanalt
-	name = "Shaman (alt)"
-	desc = "Winds whisper to you- words of wisdom.."
-	shortname = "Shaman"
 	musicpath = list('sound/music/combat_shaman2.ogg')
 	credits = "Heilung - Elddansurin"
-	musicpath = list('sound/music/combat_shaman2.ogg')
 
 /datum/combat_music/spymaster
 	name = "Spymaster"
@@ -396,8 +389,7 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	desc = "The seas call upon you- make a prayer to Abyssor for these fair winds we have been blessed with!"
 	shortname = "Pirate"
 	musicpath = list('sound/music/combat_swashbuckler.ogg')
-	credits = "MusicImaginary - Tatars"
-	musicpath = list('sound/music/combat_steppe.ogg')
+	credits = "Assassin's Creed IV Black Flag - The High Seas"
 
 /datum/combat_music/town_dirt
 	name = "Town Dirt (Default)"
