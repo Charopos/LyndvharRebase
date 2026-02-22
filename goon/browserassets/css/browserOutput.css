@@ -116,6 +116,16 @@ body {
 	src: url('zybanti.otf');
 }
 
+@font-face {
+	font-family: "Caslame";
+	src: url('forvheipan.ttf');
+}
+
+@font-face {
+	font-family: "Persian";
+	src: url('zybanti.otf');
+}
+
 /* */
 
 em {
