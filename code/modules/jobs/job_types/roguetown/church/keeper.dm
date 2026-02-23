@@ -62,12 +62,13 @@
 	neck = /obj/item/clothing/neck/roguetown/psicross/pestra
 	cloak = /obj/item/clothing/cloak/templar/pestran
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
+	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/monk/holy
 	pants = /obj/item/clothing/under/roguetown/trou/leather/eastern
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	belt = /obj/item/storage/belt/rogue/leather/black
+	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/steel/pestrasickle
 	beltl = /obj/item/flashlight/flare/torch/lantern
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backl = /obj/item/storage/backpack/rogue/backpack/bagpack
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/mid = 1,
 							 /obj/item/heart_canister = 2,

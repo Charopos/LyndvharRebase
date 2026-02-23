@@ -30,21 +30,21 @@ The epilogue implies an impending war with Grenzelhoft - for breaking the status
 		"The Inquisition has seized power in the name of Psydon. " + \
 		"An oddity that no one saw coming. " + \
 		"The Inquisition - fanatics, criminals, assassins, the best and the dregs of His faithful - " + \
-		"now rule in His name, over a realm of Tennites who have long since abandoned Psydon " + \
-		"for His children that will listen to their prayers. " + \
+		"now rule in His name, over a realm of Tennites who have no understanding of this foreign deity " + \
+		"and no love in their heart for his prayers. " + \
 		"How long can this rule last?" + \
 		"\n\n" + \
-		"To the north, the smoke of a signal fire rises. " + \
-		"Through this takeover, the Inquisition has broken the balance of power that kept the realm sovereign. " + \
-		"How can a wretched sect of Psydonian fanatics rule a realm of Tennites, " + \
-		"once the proud heart of the very Celestial Empire, the very place of Comet Syon, " + \
-		"where it is said that the very gods were created, from the shard of His divinity? " + \
-		"Grenzelhoft will not stand idle while Otavan fanatics rule the heart of the realm, " + \
-		"and neither will the many Tennite nobles of the land, eager to reclaim the throne for themselves. " + \
+		"To the south, the smoke of a pyre rises. " + \
+		"Through this takeover, the Inquisition has broken the balance of power that kept the city sovereign. " + \
+		"How can a sect of Psydonians- far from Valoria- rule a city of Tennites, " + \
+		"once a proud city in the Lyndhardtian Empire, the very place of its commercial heart, " + \
+		"where it is said that the forests parted way in the Draguippe for its construction, forge a lasting realm in the ruins of the old world? " + \
+		"Surely the warlords will not stand idle while Valorian fanatics rule the heart of the realm, " + \
+		"and neither will the many Tennite nobles wandering the ruins of Lyndhardtia, eager to the city for themselves. Or what's left of it. " + \
 		"War is coming." + \
 		"\n\n" + \
 		"But just as Psydon stirs and endures for His return, " + \
-		"so does the Inquisition endure to re-establish His rule upon Psydonia."
+		"so does the Inquisition endure to re-establish His rule upon Beowricke."
 
 /// Only Inquisition members (Inquisitor, Absolver, Orthodoxist) who follow Psydon can invoke. No undead.
 /datum/usurpation_rite/psydonian_tribunal/can_invoke(mob/living/carbon/human/user)

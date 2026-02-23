@@ -16,16 +16,16 @@
 <p><b>How it works:</b> Mages trained in the Arcyne arts must gather near the throne and speak the words 'I assent' to support your claim. Any level of Arcyne Training is sufficient to assent.</p>\
 <p><b>Completion condition:</b> <b>5</b> mages must speak their assent. Once the threshold is reached, the realm is alerted and a contestation period begins — survive it and stay conscious while remaining near the throne, and it is yours.</p>\
 <p><b>Realm type if successful:</b> Magocracy, ruled by an Archmagos.</p>"}
-	new_ruler_title = "Archmagos"
-	new_ruler_title_f = "Archmagos"
+	new_ruler_title = "Grand Archmagos"
+	new_ruler_title_f = "Grand Archmagos"
 	new_realm_type = "Magocracy"
 	new_realm_type_short = "Magocracy"
 	roundend_epilogue = "For the first time in centuries, " + \
-		"an Archmagos rules openly without the assent of Astrata or the pretensions of wealth. " + \
-		"They say their rule is enlightened, but foreign rulers only see the vestige of the Celestial Empire. " + \
+		"a Grand Archmagos rules openly without the assent of Astrata or the pretensions of wealth. " + \
+		"They say their rule is enlightened, but foreign rulers only see the dying vestiges of the Lyndhardtian Empire. " + \
 		"Hubris, heresy. " + \
 		"Will the rule of mages bring about a new golden age, " + \
-		"or will it be a brief, shining moment before the realm burns in arcane fire?"
+		"or will it be a brief, shining moment before the realm burns in arcane fire? Somewhere out there, Laurence laughs."
 
 /// Any mage with T2+ arcyne training can invoke — no noble blood required.
 /datum/usurpation_rite/lunar_ascension/can_invoke(mob/living/carbon/human/user)

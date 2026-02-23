@@ -18,9 +18,9 @@
 <p><b>How it works:</b> Anyone with a total of at least 200 mammons in their bank account or person must gather near the throne and speak the words 'I assent' to support your claim.</p>\
 <p><b>Completion condition:</b> <b>7</b> citizens must speak their assent. Once the threshold is reached, the realm is alerted and a contestation period begins — survive it and stay conscious while remaining near the throne, and it is yours.</p>\
 <p><b>Restrictions:</b> Outlaws and the undead may not invoke or assent to this rite.</p>\
-<p><b>Realm type if successful:</b> Republic, ruled by a Grand Consul.</p>"}
-	new_ruler_title = "Grand Consul"
-	new_ruler_title_f = "Grand Consul"
+<p><b>Realm type if successful:</b> Republic, ruled by a Consul.</p>"}
+	new_ruler_title = "Consul"
+	new_ruler_title_f = "Consul"
 	new_realm_type = "Republic"
 	new_realm_type_short = "Republic"
 	roundend_epilogue = "The quill has proven mightier than the sword. " + \
