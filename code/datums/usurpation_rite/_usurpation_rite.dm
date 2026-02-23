@@ -19,10 +19,10 @@
 	var/list/assenters
 	var/phase_timer_id
 	var/started_at = 0
-	var/new_ruler_title = "Grand Duke"
-	var/new_ruler_title_f = "Grand Duchess"
-	var/new_realm_type = "Grand Duchy"
-	var/new_realm_type_short = "Duchy"
+	var/new_ruler_title = "Viscount"
+	var/new_ruler_title_f = "Viscountess"
+	var/new_realm_type = "Viscounty"
+	var/new_realm_type_short = "City"
 	var/mob/living/carbon/human/contester
 	var/contester_timer_id
 	var/contest_time_remaining = 0
@@ -172,19 +172,19 @@
 
 /// Follows the same pattern as coronate_lord() in priest.dm.
 /datum/usurpation_rite/proc/transfer_power()
-	var/old_rulertype = SSticker.rulertype || "Duke"
+	var/old_rulertype = SSticker.rulertype || "Viscount"
 
 	var/emeritus_title = "[old_rulertype] Emeritus"
 	for(var/mob/living/carbon/human/HL in GLOB.human_list)
-		if(HL.mind?.assigned_role == "Grand Duke")
+		if(HL.mind?.assigned_role == "Viscount")
 			HL.mind.assigned_role = "Towner"
-		if(HL.job == "Grand Duke")
+		if(HL.job == "Viscount")
 			HL.job = "Towner"
 			HL.advjob = emeritus_title
 			GLOB.lord_titles[HL.real_name] = emeritus_title
 
 	// Must update display titles before set_ruler_mob() reads them
-	var/datum/job/roguetown/lord_job = SSjob.GetJob("Grand Duke")
+	var/datum/job/roguetown/lord_job = SSjob.GetJob("Viscount")
 	if(lord_job)
 		lord_job.display_title = new_ruler_title
 		lord_job.f_title = new_ruler_title_f
@@ -193,8 +193,8 @@
 	SSticker.realm_type = new_realm_type
 	SSticker.realm_type_short = new_realm_type_short
 
-	invoker.mind.assigned_role = "Grand Duke"
-	invoker.job = "Grand Duke"
+	invoker.mind.assigned_role = "Viscount"
+	invoker.job = "Viscount"
 	SSticker.set_ruler_mob(invoker)
 	SSticker.regentmob = null
 	SSticker.usurpation_day = GLOB.dayspassed
@@ -212,7 +212,7 @@
 			to_chat(invoker, span_notice("The crown materializes at your feet."))
 		crown.forceMove(get_turf(invoker))
 
-	var/realm = SSticker.realm_name || "Azure Peak"
+	var/realm = SSticker.realm_name || "Lyndvhar"
 	// Imitate the text whenever a new Duke joins the game
 	to_chat(world, "<b><span class='notice'><span class='big'>[invoker.real_name] is [SSticker.rulertype] of [realm].</span></span></b>")
 

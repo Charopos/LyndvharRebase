@@ -26,9 +26,9 @@ Outlaws and undead are shunned by Astrata outside of her order. They may not inv
 	explanation = {"<p>A noble may claim the throne through the assent of their peers. An ancient tradition upheld by the order ordained by Astrata.</p>\
 <p><b>Who may invoke:</b> Any noble.</p>\
 <p><b>How it works:</b> Nobles of the realm must then gather near the throne and speak the words 'I assent' to support your claim.</p>\
-<p><b>Completion condition:</b> Members of the ducal family (Consort, Prince), Insiders (Hand, Steward, Councillor) and those with Heartfelt ties need only <b>3</b> noble voices — a palace coup. All other nobles require a quorum of <b>5</b> voices. Resident nobles of Azure Peak count as a full voice; foreign (wanderer) nobles count as only half. Once the threshold is reached, the realm is alerted and a contestation period begins — survive it and stay conscious while remaining near the throne, and it is yours.</p>\
+<p><b>Completion condition:</b> Members of the noble family (Consort, Heir), Insiders (Hand, Steward, Councillor) and those with ties to the Barony of Weocilyn need only <b>3</b> noble voices — a palace coup. All other nobles require a quorum of <b>5</b> voices. Resident nobles of the city of Lyndvhar count as a full voice; foreign (wanderer) nobles count as only half. Once the threshold is reached, the realm is alerted and a contestation period begins — survive it and stay conscious while remaining near the throne, and it is yours.</p>\
 <p><b>Restrictions:</b> Outlaws and those touched by the stench of undead may not invoke or assent.</p>\
-<p><b>Realm type if successful:</b> Grand Duchy, ruled by a Grand Duke / Grand Duchess.</p>"}
+<p><b>Realm type if successful:</b> Viscounty, ruled by a Viscount / Viscountess.</p>"}
 
 /datum/usurpation_rite/solar_succession/can_invoke(mob/living/carbon/human/user)
 	if(!..())
@@ -61,7 +61,7 @@ Outlaws and undead are shunned by Astrata outside of her order. They may not inv
 /datum/usurpation_rite/solar_succession/on_contesting_started()
 	priority_announce( \
 		"[invoker.real_name] has invoked the Rite of Solar Succession!\n\n" + \
-		"In the name of Astrata, Goddess of Order, a claim is made upon the throne of [SSticker.realm_name].\n\n" + \
+		"In the name of Astrata, Goddess of Order, a claim is made upon the city of [SSticker.realm_name].\n\n" + \
 		"A Council of Lords has affirmed this claim.\n\n" + \
 		"The Sun's judgement shall fall in [RITE_CONTEST_DURATION / (1 MINUTES)] minutes -- unless the claim is struck down.\n\n", \
 		"Rite of Solar Succession", \
@@ -120,7 +120,7 @@ Outlaws and undead are shunned by Astrata outside of her order. They may not inv
 /// Returns the number of assent voices required based on the invoker's position.
 /// Insiders need fewer (insider / diplomatic coup).
 /datum/usurpation_rite/solar_succession/proc/get_required_assents()
-	if(invoker.job == "Consort" || invoker.job == "Prince" || invoker.job == "Hand" || \
+	if(invoker.job == "Consort" || invoker.job == "Heir" || invoker.job == "Hand" || \
 	invoker.job == "Steward" || invoker.job == "Councillor" || HAS_TRAIT(invoker, TRAIT_WEOCILYN))
 		return SOLAR_REQUIRED_ASSENTS_INSIDER
 	return SOLAR_REQUIRED_ASSENTS_OUTSIDER

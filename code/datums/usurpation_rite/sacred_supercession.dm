@@ -17,24 +17,24 @@
 <p><b>How it works:</b> Members of the Church of the Ten, or those who have reached the First Tier of Divine devotion, must gather near the throne and speak the words 'I assent' to support your claim. Only followers of the Ten may participate.</p>\
 <p><b>Completion condition:</b> <b>5</b> weighted voices must speak their assent. Foreign or wandering clergy count as only half a voice. Once the threshold is reached, the realm is alerted and a contestation period begins — survive it and stay conscious while remaining near the throne, and it is yours.</p>\
 <p><b>Restrictions:</b> Only followers of the Ten may invoke or assent. Outlaws and the undead are shunned.</p>\
-<p><b>Realm type if successful:</b> Prince-Bishopric, ruled by a Prince-Bishop.</p>"}
-	new_ruler_title = "Prince-Bishop"
-	new_ruler_title_f = "Princess-Bishop"
-	new_realm_type = "Prince-Bishopric"
-	new_realm_type_short = "Prince-Bishopric"
+<p><b>Realm type if successful:</b> Arch-Bishopric, ruled by an Archbishop.</p>"}
+	new_ruler_title = "Archbishop"
+	new_ruler_title_f = "Archbishopess"
+	new_realm_type = "Arch-Bishopric"
+	new_realm_type_short = "Arch-Bishopric"
 	roundend_epilogue = "Astrata's sacred order has been restored, but with a twist. " + \
-		"For as long as most faithful can remember, realms of Psydonia were ruled by the blue-blooded, " + \
+		"For as long as most faithful can remember, realms of Beowricke were ruled by the blue-blooded, " + \
 		"those who derive their power from Astrata's divinity, but never wielded Her power directly. " + \
 		"Now, the Church itself has taken the throne. " + \
 		"Is this truly Astrata's will? To mix temporal and spiritual power in one ruler? " + \
 		"The Sun Goddess is silent, or perhaps she has acquiesced to this new order." + \
 		"\n\n" + \
 		"To the west, the smoke of a signal fire rises. " + \
-		"Through this takeover, the Church has broken the balance of power that kept the realm sovereign - " + \
-		"the Tens, the faith of the majority, Psydon, the faith of a minority. " + \
+		"Through this takeover, the Church has broken the balance of power that kept the city strong - " + \
+		"the Tens, the faith of the majority, cracks and wavers at this new order. " + \
 		"Each tolerated the other and kept each other in check. " + \
 		"The ruler may believe themselves sovereign, " + \
-		"but Otava believes Grenzelhoft have won a battle, and will not let them win the war. " + \
+		"but the warlords believe this has weakened the city, and will not let them remain independent for long. " + \
 		"War is coming."
 
 /// Any member of the Church of the Ten with a divine patron. No outlaws or undead.
