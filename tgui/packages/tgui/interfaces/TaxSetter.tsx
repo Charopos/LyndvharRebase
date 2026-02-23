@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   Button,
   LabeledList,
@@ -6,9 +5,12 @@ import {
   Section,
   Stack,
 } from 'tgui-core/components';
+
 import { BooleanLike } from 'tgui-core/react';
 
 import { useBackend } from '../backend';
+import { useState } from 'react';
+
 import { Window } from '../layouts';
 
 type TaxCategory = {

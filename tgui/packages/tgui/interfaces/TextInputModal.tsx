@@ -4,7 +4,6 @@ import { Window } from 'tgui/layouts';
 import { Box, Section, Stack, TextArea } from 'tgui-core/components';
 import { isEscape, KEY } from 'tgui-core/keys';
 import type { BooleanLike } from 'tgui-core/react';
-
 import { InputButtons } from './common/InputButtons';
 import { Loader } from './common/Loader';
 
