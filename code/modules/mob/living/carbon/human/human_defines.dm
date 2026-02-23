@@ -113,21 +113,16 @@
 	var/headshot_link = null
 	var/standard_headshot_link = null //used to store headshots when swapping for antag ones
 	var/flavortext = null
+	var/flavortext_display = null
 	var/ooc_notes = null
+	var/ooc_notes_display = null
 	var/ooc_extra
+	var/nsfw_headshot_link = null
+	var/ooc_extra_link
 	var/rumour = null
 	var/noble_gossip = null
-	var/song_title
-	var/song_artist
+	var/is_legacy = FALSE
 	var/received_resident_key = FALSE
-	var/nsfwflavortext = null
-	var/erpprefs = null
-
-	// Cached version
-	var/flavortext_cached = ""
-	var/nsfwflavortext_cached = ""
-	var/ooc_notes_cached = ""
-	var/erpprefs_cached = ""
 
 	var/list/img_gallery = list()
 	

@@ -710,28 +710,29 @@
 			return
 		if(!client || !client.prefs)
 			return
-		if(alert(usr,"This will irreversibly purge an INDIVIDUAL PORTION of this slot. Is this what you want?","DON'T FATFINGER THIS","PURGE","Nevermind") == "PURGE")
+		if(alert(usr,"This will irreversibly an INDIVIDUAL PORTION of this slot. Is this what you want?","DON'T FATFINGER THIS","PURGE","Nevermind") == "PURGE")
 			if(alert(usr,"The next prompt will not have a Nevermind option. Are you sure you want this?","ITS NOT REVERSIBLE","Yes","Nevermind") == "Yes")
 				var/choice = alert(usr,"What would you like to purge?","ITS TOO LATE NOW","Flavor","Notes","Extra")
 				if(choice)
 					switch(choice)
 						if("Flavor")
+							is_legacy = FALSE
 							flavortext = null
-							nsfwflavortext = null
+							flavortext_display = null
 							client.prefs?.flavortext = null
+							client.prefs?.flavortext_display = null
 						if("Notes")
+							is_legacy = FALSE
 							ooc_notes = null
-							erpprefs = null
+							ooc_notes_display = null
 							client.prefs?.ooc_notes = null
+							client.prefs?.ooc_notes_display = null
 						if("Extra")
+							is_legacy = FALSE
+							ooc_extra_link = null
 							ooc_extra = null
-							song_artist = null
-							song_title = null
-							client.prefs?.song_artist = null
-							client.prefs?.song_title = null
 							client.prefs?.ooc_extra = null
-							img_gallery = list()
-							client.prefs?.img_gallery = list()
+							client.prefs?.ooc_extra_link = null
 						else
 							return
 					client.prefs?.save_preferences()
@@ -745,22 +746,20 @@
 		if(alert(usr,"This will irreversibly purge this ENTIRE character's slot (OOC, FT, OOC Ex.)","PURGE","PURGE","Nevermind") == "PURGE")
 			if(alert(usr,"This cannot be undone. Are you sure?","DON'T FATFINGER THIS","Yes","No") == "Yes")
 				flavortext = null
-				nsfwflavortext = null
-				erpprefs = null
+				flavortext_display = null
+				is_legacy = FALSE
 				ooc_notes = null
+				ooc_notes_display = null
 				ooc_extra = null
-				song_artist = null
-				song_title = null
-				img_gallery = list()
+				ooc_extra_link = null
 				if(client)
 					client.prefs?.flavortext = null
-					client.prefs?.nsfwflavortext = null
-					client.prefs?.erpprefs = null
+					client.prefs?.flavortext_display = null
+					client.prefs?.is_legacy = FALSE
 					client.prefs?.ooc_notes = null
+					client.prefs?.ooc_notes_display = null
 					client.prefs?.ooc_extra = null
-					client.prefs?.song_artist = null
-					client.prefs?.song_title = null
-					client.prefs?.img_gallery = list()
+					client.prefs?.ooc_extra_link = null
 					client.prefs?.save_preferences()
 					client.prefs?.save_character()
 					to_chat(usr, span_warn("Slot purged successfully."))
