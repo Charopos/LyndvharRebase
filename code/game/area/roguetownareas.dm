@@ -116,7 +116,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 /area/rogue/indoors/shelter
 	icon_state = "shelter"
-	droning_sound = 'sound/music/area/townstreets.ogg'
+	droning_sound = 'sound/music/area/townstreetslyndvhar.ogg'
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 	deathsight_message = "somewhere in the wilds, under a roof"
@@ -238,7 +238,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	name = "lich's domain"
 	icon_state = "under"
 	first_time_text = "LICH'S DOMAIN"
-	droning_sound = 'sound/music/area/dragonden.ogg'
+	droning_sound = 'sound/music/area/siege.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	ceiling_protected = TRUE
@@ -266,9 +266,9 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	name = "outdoors"
 	icon_state = "town"
 	soundenv = 16
-	droning_sound = 'sound/music/area/townstreets.ogg'
+	droning_sound = 'sound/music/area/townstreetslyndvhar.ogg'
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
-	droning_sound_night = 'sound/music/area/sleeping.ogg'
+	droning_sound_night = 'sound/music/area/townstreetsold.ogg'
 	converted_type = /area/rogue/indoors/shelter/town
 	first_time_text = "THE CITY OF LYNDVHAR"
 	town_area = TRUE

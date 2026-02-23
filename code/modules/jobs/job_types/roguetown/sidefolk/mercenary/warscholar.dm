@@ -7,7 +7,7 @@
 	subclass_languages = list(/datum/language/celestial)
 	class_select_category = CLASS_CAT_KHAZUMIA
 	category_tags = list(CTAG_MERCENARY)
-	cmode_music = 'sound/music/warscholar.ogg'
+	cmode_music = 'sound/music/combat_khazumite.ogg'
 	traits_applied = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T3, TRAIT_ALCHEMY_EXPERT, TRAIT_KHAZUMIA)
 	subclass_stats = list(
 		STATKEY_INT = 3,

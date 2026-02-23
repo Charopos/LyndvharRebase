@@ -29,7 +29,7 @@
 	)
 
 /datum/advclass/servant
-	traits_applied = list(TRAIT_CICERONE, TRAIT_ROYALSERVANT)
+	traits_applied = list(TRAIT_CICERONE, TRAIT_KEENEARS, TRAIT_SLEUTH, TRAIT_ROYALSERVANT)
 	age_mod = /datum/class_age_mod/servant
 
 /datum/advclass/servant/servant
@@ -58,14 +58,14 @@
 
 /datum/outfit/job/roguetown/servant/servant/pre_equip(mob/living/carbon/human/H)
 	..()
-	pants = /obj/item/clothing/under/roguetown/trou
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
-	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backl = /obj/item/storage/backpack/rogue/satchel/short
-	belt = /obj/item/storage/belt/rogue/leather
+	pants = /obj/item/clothing/under/roguetown/trou/formal/shorts
+	armor = /obj/item/clothing/suit/roguetown/shirt/dress/maid/servant
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/formal
+	shoes = /obj/item/clothing/shoes/roguetown/boots
+	backl = /obj/item/storage/backpack/rogue/satchel/black
+	belt = /obj/item/storage/belt/rogue/leather/suspenders/butler
 	beltr = /obj/item/roguekey/manor
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-	armor = /obj/item/clothing/suit/roguetown/armor/workervest
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless
 	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_WORKING_CLASS, H, "Savings.")
@@ -96,12 +96,12 @@
 
 /datum/outfit/job/roguetown/servant/maid/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/maidhead
+	head = /obj/item/clothing/head/roguetown/maidband
 	armor = /obj/item/clothing/suit/roguetown/shirt/dress/maid
-	cloak = /obj/item/clothing/cloak/apron/waist/maid
-	belt = /obj/item/storage/belt/rogue/leather/sash/maid
-	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
-	backl = /obj/item/storage/backpack/rogue/satchel/short
+	cloak = /obj/item/clothing/cloak/apron/maid
+	backl = /obj/item/storage/backpack/rogue/satchel/black
+	belt = /obj/item/storage/belt/rogue/leather/sash
+	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	beltr = /obj/item/roguekey/manor
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	if(H.mind)
@@ -133,11 +133,11 @@
 
 /datum/outfit/job/roguetown/servant/butler/pre_equip(mob/living/carbon/human/H)
 	..()
-	pants = /obj/item/clothing/under/roguetown/tights/black
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
-	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backl = /obj/item/storage/backpack/rogue/satchel/short
-	belt = /obj/item/storage/belt/rogue/leather
+	pants = /obj/item/clothing/under/roguetown/trou/formal/shorts
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/formal
+	shoes = /obj/item/clothing/shoes/roguetown/boots
+	backl = /obj/item/storage/backpack/rogue/satchel/black
+	belt = /obj/item/storage/belt/rogue/leather/suspenders/butler
 	beltr = /obj/item/roguekey/manor
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
