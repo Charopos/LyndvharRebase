@@ -1975,7 +1975,7 @@
 #include "code\modules\language\roguetown\elf.dm"
 #include "code\modules\language\roguetown\calmirixian.dm"
 #include "code\modules\language\roguetown\forvheipan.dm"
-#include "code\modules\language\roguetown\grenzelhoftian.dm"
+#include "code\modules\language\roguetown\regional\grenzelhoftian.dm"
 #include "code\modules\language\roguetown\rhaenish.dm"
 #include "code\modules\language\roguetown\hellspeak.dm"
 #include "code\modules\language\roguetown\lyndhardtian.dm"
