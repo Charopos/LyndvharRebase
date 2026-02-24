@@ -252,7 +252,7 @@
 	max_integrity = ARMOR_INT_CHEST_PLATE_PSYDON
 
 /obj/item/clothing/suit/roguetown/armor/plate/fluted/ornate/ComponentInitialize()
-	AddComponent(/datum/component/armour_filtering/positive, TRAIT_BeowrickeN_GRIT, "ornate_plate")
+	AddComponent(/datum/component/armour_filtering/positive, TRAIT_PSYDONIAN_GRIT, "ornate_plate")
 
 // HEAVY
 /obj/item/clothing/suit/roguetown/armor/plate/full
