@@ -5,8 +5,8 @@
 	name = "Humen"
 	id = "humen"
 	psydonic = TRUE
-	origin_default = /datum/virtue/origin/grenzelhoft
-	origin = "Grenzelhoft"
+	origin_default = /datum/virtue/origin/unknown
+	origin = "Nowhere"
 	sub_name = "Northern Humen"
 	desc = "<b>Humen</b><br>\
 	Humens are a relatively fickle race, being the largest majority in all of Beowricke. Most well noted for their tenacity and rather fast adaptability, they are also the third eldest race of Beowricke, believed to have been brought into the cycle after the successful creation of the Elf. Humens are the largest majority of mortal life in Beowricke, and come in many shapes, sizes, as well as different cultures and personal beliefs. They are the most diverse of the mortal creations, and are the majority racial presence in Lyndhardtia and beyond. It was Humen hands that molded the many great empires of Beowricke, as well as the current standing hegemonies of the world.<br>\
