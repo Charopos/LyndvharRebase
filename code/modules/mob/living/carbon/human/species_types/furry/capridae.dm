@@ -10,7 +10,7 @@
 	base_name = "Beastvolk"
 	desc = "<b>Capridae</b><br>\
 	A race consisting of many different shapes of horns, furs, or wool. Found mainly in the northern mountainous territories of Lyndhardtia, they are well-renowned for their extreme adaptation to these hostile terrains found all across the Okalberg mountain range. It is often that a native Capridae is hired to traverse these mountains in caravans as guides as they are able to easily identify differing paths and slopes. Native Capridae leave totems to Iraeth along cairns dotting the Okalberg to give reverence to the spirits. During the Ruby War, many Capridae fled all across many different regions of the continent and can now be consistently found amongst the remnant cities of the Empire.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

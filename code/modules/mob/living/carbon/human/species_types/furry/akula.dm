@@ -10,7 +10,7 @@
 	base_name = "Beastvolk"
 	desc = "<b>Axian</b><br>\
 	Axians are unique in that they do not hail from Lewyn or Yoheon. All oceans and seas of Beowricke are what they call home- and to this they heavily defend their territories and packs. They are an ocean hunter- and often a tale from an old sailor of sea beasts that attacked their vessel were actually a tribe of Axian warriors defending their perceived swathe of the ocean. Sailors usually pay tribute to the Axians of the sea in order to travel safely across the waves. It is common belief that the Luminary Iraeth made Axians to be the guardian of the oceans cycle, and to annihilate anyone who would dare interrupt it. For their open hostilities in the water, they are often perceived as dangerous beings, and face much scrutiny on land. Most Axians seen in civilized areas are exiles from their territories, often working along the many docks and ships that cross the sea due to their inherent knowledge of waves. Axians coming from land are usually descendants of exiles removed from their ocean society for a number of reasons.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>WATERBREATHING | CAN DRINK SALTWATER</b></span><br>"
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	inherent_traits = list(TRAIT_WATERBREATHING, TRAIT_SEA_DRINKER)

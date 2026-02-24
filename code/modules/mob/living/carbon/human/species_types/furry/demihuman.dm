@@ -9,7 +9,7 @@
 	origin = "Nowhere"
 	base_name = "Humen"
 	desc = "A growing contingent of being- the Halfkin are usually the resulting mixture of either a humen or elf combined with one of the many other races running amok Beowricke- be it Tabaxi or even Eskallian. Considerably a strange byproduct of the cycle- it’s often believed to be an ill-omen for such a being to be born. While usually retaining the behaviors of humens or elves, they also subsume the identities of the races they were mixed with. This can oftentimes become a detriment in social environments and conversation due to differing tempers or behaviors. It is often for this reason that half-kin are rather rare to see in administrative positions of power, usually found in lesser jobs in the ladder of hierarchy.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 	skin_tone_wording = "Ancestry"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS_PARTSONLY)

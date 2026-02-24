@@ -9,7 +9,7 @@
 	base_name = "Humen"
 	desc = "<b>Half Elf</b><br>\
 	The children of an Elf and a Humen, most conservative minds frown upon such a union. Half-Elves are distinguishable by their elf-ears yet humen appearance and features. However with the lack of a true cultural identity and pillar, they are often found either acting more as an elf or more as a humen. They are the embodiment of a “melting pot” of cultures, where the identity of humen and elf is blended into one. The amount of half-elf children has been growing in recent years and it is widely believed that eventually the race of Humen and Elf may dilute into one singular race of the cycle.<br>\
-	(TRAITS WILL GO HERE)" 
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>" 
 
 	skin_tone_wording = "Ancestry"
 	max_age = 250

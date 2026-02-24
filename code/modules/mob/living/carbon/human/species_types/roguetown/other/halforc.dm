@@ -10,7 +10,7 @@
 	is_subrace = TRUE
 	desc = "<b>Half Orcs</b><br>\
 	Considered to be an unholy union by many, a Half Orc is as the name implies what is created when a Humen and an Orc have children. Many see it as a bastardization of the cycle owing to Orcish connection to Zenu, and usually created through less-than-friendly means of interaction, Half-Orcs face heavy scrutiny- pure Orcs will kill them on sight, and most other races view them with similar disdain to true Orcs. Half-Orcs have no true lineage to call their own beyond their own formed clans, nestling themselves outside of major routes in order to try and live peaceful lives.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 
 	skin_tone_wording = "Clan"
 

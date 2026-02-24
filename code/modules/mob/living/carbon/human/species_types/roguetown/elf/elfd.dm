@@ -10,7 +10,7 @@
 	base_name = "Elf"
 	desc = "<b>Dark Elf</b><br>\
 	Often referred to as the Drow, very little is known about this species outside of those who live aboveground. Below the ground, they live in large, interconnected caves, in which many cities of the below reside hosting entirely dark elf communities ruled by a Matriarch. They are a brash, and often aggressive race of ambitious and bloodthirsty culture. Often an expedition of dark elves emerge onto the surface to raid smaller towns for slaves, before retreating back underground in unseen passages before they can be stopped. As a result, the dark elves living above ground face much scrutiny, distrust, and open hatred. Dark elves aboveground are usually refugees exiled from their communities, or wanted criminals escaping justice.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 
 /*
 	Former RT Desc: These guys were undead which doesn't really fit considering now you have a ton of them walking around.
