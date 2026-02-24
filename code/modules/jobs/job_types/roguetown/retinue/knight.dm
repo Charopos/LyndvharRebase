@@ -11,7 +11,7 @@
 	allowed_patrons = ALL_NICE_PATRONS
 	tutorial = "Having served as one of the most faithful members of the Retinue serving from humble beginnings as a squire, you were rewarded most gloriously by the Viscount with a proper noble title and knighthood, serving as the Cataphract to the House of Lyndvhar. Lead your men to victory--and keep them in line--and you will see this city prosper under a thousand suns and be returned to its former glory."
 	display_order = JDO_KNIGHT
-	whitelist_req = TRUE
+	whitelist_req = FALSE
 	outfit = /datum/outfit/job/roguetown/knight
 	advclass_cat_rolls = list(CTAG_ROYALGUARD = 20)
 	job_traits = list(TRAIT_NOBLE, TRAIT_STEELHEARTED, TRAIT_GUARDSMAN)

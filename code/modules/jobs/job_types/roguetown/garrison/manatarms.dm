@@ -15,7 +15,7 @@
 				With your newfound position came much training under the Cataphract, and with it a true warrior's education. \
 				The word of the Viscount is your law- much more than any common levy of the Watch. Show the noble court and the Cataphract your respect, so that you may earn it in turn. Not as a commoner- but as a guardian of the noble court."
 	display_order = JDO_GUARD
-	whitelist_req = TRUE
+	whitelist_req = FALSE
 
 	outfit = /datum/outfit/job/roguetown/manorguard
 	advclass_cat_rolls = list(CTAG_MENATARMS = 20)

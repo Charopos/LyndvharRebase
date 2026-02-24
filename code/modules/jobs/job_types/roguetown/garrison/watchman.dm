@@ -12,7 +12,7 @@
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_IMMORTAL)
 	tutorial = "Whether it was through a conscription or a want to do good and serve the city, you are one of the many city guard dotted the walls and streets. Responsible for the safety of the port city and the enforcement of the law, you are the vanguard of the city faced with punishing those who defy the Viscount and their laws. Life is difficult and danger often lurks around every single alley, but you find great camaraderie in your fellow men and women of the watch. Hopefully the city will endure another week with you protecting it."
 	display_order = JDO_WATCHMAN
-	whitelist_req = TRUE
+	whitelist_req = FALSE
 
 	outfit = /datum/outfit/job/roguetown/watchman
 	advclass_cat_rolls = list(CTAG_WATCH = 20)

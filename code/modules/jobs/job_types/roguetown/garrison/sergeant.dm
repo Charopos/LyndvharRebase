@@ -13,7 +13,7 @@
 				See to those under your command with due diligence and fill in the gaps that any of the retinue leave in their wake. Obey the orders given to you by your superiors, and you may be well-rewarded."
 	display_order = JDO_SERGEANT
 	selection_color = JCOLOR_GARRISON
-	whitelist_req = TRUE
+	whitelist_req = FALSE
 	round_contrib_points = 3
 
 
