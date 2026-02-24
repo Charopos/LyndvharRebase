@@ -5,7 +5,7 @@
 	desc = "Composite armour made in accordance with universal tradition across Beowricke. It's a high-quality arched plate cuirass sewn with dyed leather and fitted with a wide skirt at the bottom to cover the groin."
 	icon_state = "brigandine"
 	blocksound = SOFTHIT
-	body_parts_covered = COVERAGE_ALL_BUT_LEGS
+	body_parts_covered = COVERAGE_ALL_BUT_HANDLEGS
 	armor = ARMOR_PLATE
 	allowed_sex = list(MALE, FEMALE)
 	nodismemsleeves = TRUE

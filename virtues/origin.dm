@@ -84,7 +84,7 @@
 	races = list(/datum/species/elf/dark,
 				/datum/species/human/halfelf,
 				/datum/species/kobold,
-				/datum/species/dwarf,
+				/datum/species/dwarf/mountain,
 				/datum/species/dwarf/gnome,
 				/datum/species/goblinp,
 )
