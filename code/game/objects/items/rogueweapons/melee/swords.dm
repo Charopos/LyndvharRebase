@@ -299,7 +299,7 @@
 //sword objs ฅ^•ﻌ•^ฅ
 /obj/item/rogueweapon/sword
 	name = "arming sword"
-	desc = "A long steel blade attached to a hilt, separated by a crossguard. The arming sword has been Psydonia's implement of war by excellence for generations."
+	desc = "A long steel blade attached to a hilt, separated by a crossguard. The arming sword has been Beowricke's implement of war by excellence for generations."
 	slot_flags = ITEM_SLOT_HIP | ITEM_SLOT_BACK
 	force = 22
 	force_wielded = 25
@@ -351,7 +351,7 @@
 
 /obj/item/rogueweapon/sword/iron
 	name = "iron arming sword"
-	desc = "A long iron blade attached to a hilt, separated by a crossguard. The arming sword has been Psydonia's implement of war by excellence for generations, this one is cheaper than its steel brother."
+	desc = "A long iron blade attached to a hilt, separated by a crossguard. The arming sword has been Beowricke's implement of war by excellence for generations, this one is cheaper than its steel brother."
 	icon_state = "isword"
 	minstr = 6
 	smeltresult = /obj/item/ingot/iron
@@ -361,7 +361,7 @@
 
 /obj/item/rogueweapon/sword/bronze
 	name = "bronze arming sword"
-	desc = "A long bronze blade attached to a hilt, separated by a crossguard. The arming sword has been Psydonia's implement of war by excellence for generations - and this implement is the grandfather of them all. Though it lacks the gladii's girth, this arming sword still feels well-balanced for one-handed use."
+	desc = "A long bronze blade attached to a hilt, separated by a crossguard. The arming sword has been Beowricke's implement of war by excellence for generations - and this implement is the grandfather of them all. Though it lacks the gladii's girth, this arming sword still feels well-balanced for one-handed use."
 	icon_state = "bronzesword"
 	force = 23 //Iron- and steel arming swords have the same force. +2 to mimic the one-handed nature of bronze swords.
 	force_wielded = 25
@@ -433,7 +433,7 @@
 /obj/item/rogueweapon/sword/long
 	name = "longsword"
 	desc = "A lethal and perfectly balanced weapon. The longsword is the protagonist of endless tales and myths \
-	all across Psydonia, seen in the hands of noblemen and an ever-decreasing quantity of master duelists. \
+	all across Beowricke, seen in the hands of noblemen and an ever-decreasing quantity of master duelists. \
 	It has great cultural significance in the empires of today, where legendary swordsmen \
 	have created and perfected many fighting techniques.."
 	force = 25
@@ -472,7 +472,7 @@
 /obj/item/rogueweapon/sword/long/broadsword
 	name = "broadsword"
 	desc = "A lethal and well-balanced weapon. The broadsword - better known as a 'hand-and-a-halfer' - has dutifully served the \
-	swordsmen of Psydonia in their clashes against man-and-monster alike since time immemmorial. It is one of Rockhill's greatest \
+	swordsmen of Beowricke in their clashes against man-and-monster alike since time immemmorial. It is one of Rockhill's greatest \
 	cultural hallmarks, just behind the concepts of 'zenny-a-mug' happy hours and 'killing people over minor disagreements.'"
 	icon_state = "broadsword"
 	sheathe_icon = "broadsword"
@@ -499,7 +499,7 @@
 /obj/item/rogueweapon/sword/long/broadsword/steel
 	name = "steel broadsword"
 	desc = "A lethal and well-balanced weapon. The broadsword - better known as a 'hand-and-a-halfer' - has dutifully served the \
-	swordsmen of Psydonia in their clashes against man-and-monster alike since time immemmorial. Valoria's watchmen are renowned for \
+	swordsmen of Beowricke in their clashes against man-and-monster alike since time immemmorial. Valoria's watchmen are renowned for \
 	their use of these steel-bladed iterations: an expensive necessity, in order to lay their undying besiegers to rest for good."
 	icon_state = "sbroadsword"
 	sheathe_icon = "sbroadsword"
@@ -515,7 +515,7 @@
 /obj/item/rogueweapon/sword/long/triumph
 	name = "valorian longsword"
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This particular variant has a stouter crossguard and wider blade; a prevaling design \
+	all across Beowricke. This particular variant has a stouter crossguard and wider blade; a prevaling design \
 	from the preceding century, oft-mantled in the homes of now-retired adventurers."
 	icon = 'icons/roguetown/weapons/64.dmi'  //Framework for Triumph-purchasable longswords.
 	icon_state = "longsword_triumph"
@@ -535,7 +535,7 @@
 
 /obj/item/rogueweapon/sword/long/triumph/rockhill
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This particular variant has a narrow crossguard and lengthened blade; the proportions \
+	all across Beowricke. This particular variant has a narrow crossguard and lengthened blade; the proportions \
 	of an ancient hero's claymore, resurrected through modern smithing techniques."
 	icon_state = "longsword_rockhill"
 	sheathe_icon = "gensword"
@@ -544,7 +544,7 @@
 	name = "valorian claymore"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This sharp-edged variant has a narrow crossguard and lengthened blade; the proportions \
+	all across Beowricke. This sharp-edged variant has a narrow crossguard and lengthened blade; the proportions \
 	of an ancient hero's claymore, resurrected through modern smithing techniques."
 	icon_state = "longsword_rockhill"
 
@@ -565,7 +565,7 @@
 	name = "valorian broadsword"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	desc = "A lethal and well-balanced weapon. The broadsword - better known as a 'hand-and-a-halfer' - has dutifully served the \
-	swordsmen of Psydonia in their clashes against man-and-monster alike since time immemmorial. The edge glimmers with the hopes \
+	swordsmen of Beowricke in their clashes against man-and-monster alike since time immemmorial. The edge glimmers with the hopes \
 	and dreams of the Weeping God's children, imbuing your very soul with determination. ‎</br>‎‎ </br>'There's a light inside your \
 	soul, that’s still shining in the cold: the truth, the promise in our hearts.. ..don't forget, I'm with you in the dark.'"
 	icon_state = "longsword_rockhill"
@@ -585,7 +585,7 @@
 
 /obj/item/rogueweapon/sword/long/triumph/sabreguard
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This particular variant has a curved crossguard and stouter blade; hallmarks of nobility, \
+	all across Beowricke. This particular variant has a curved crossguard and stouter blade; hallmarks of nobility, \
 	whether professed atop a saiga or against a villain's edge."
 	icon_state = "longsword_sabreguard"
 	sheathe_icon = "cutlass"
@@ -594,7 +594,7 @@
 	name = "valorian greatsabre"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This broad-edged variant has a curved crossguard and stouter blade; hallmarks of nobility, \
+	all across Beowricke. This broad-edged variant has a curved crossguard and stouter blade; hallmarks of nobility, \
 	whether professed atop a saiga or against a villain's edge."
 	icon_state = "longsword_sabreguard"
 	sheathe_icon = "cutlass"
@@ -614,7 +614,7 @@
 
 /obj/item/rogueweapon/sword/long/triumph/wideguard
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This particular variant has a widened crossguard, adored by lightly-armored mercenaries \
+	all across Beowricke. This particular variant has a widened crossguard, adored by lightly-armored mercenaries \
 	who cannot afford to leave a single riposte without interception."
 	icon_state = "longsword_wideguard"
 	sheathe_icon = "opsysword"
@@ -623,7 +623,7 @@
 	name = "valorian greatrapier"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This well-honed variant has a widened crossguard, adored by lightly-armored mercenaries \
+	all across Beowricke. This well-honed variant has a widened crossguard, adored by lightly-armored mercenaries \
 	who cannot afford to leave a single riposte without interception."
 	icon_state = "longsword_wideguard"
 	sheathe_icon = "opsysword"
@@ -643,7 +643,7 @@
 
 /obj/item/rogueweapon/sword/long/triumph/psycrucifix
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This particular variant has a psycruciformed crossguard; a masterwork, held in silent \
+	all across Beowricke. This particular variant has a psycruciformed crossguard; a masterwork, held in silent \
 	reverance by those who've vowed to never forget the ultimate sacrifice."
 	icon_state = "longsword_psycrucifix"
 	sheathe_icon = "opsysword"
@@ -652,7 +652,7 @@
 	name = "valorian silver longsword"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This silvered variant has a psycruciformed crossguard; a masterwork, held in silent \
+	all across Beowricke. This silvered variant has a psycruciformed crossguard; a masterwork, held in silent \
 	reverance by those who've vowed to never forget the ultimate sacrifice."
 	icon_state = "longsword_psycrucifix"
 	sheathe_icon = "opsysword"
@@ -709,7 +709,7 @@
 
 /obj/item/rogueweapon/sword/long/church
 	name = "see longsword"
-	desc = "A blessed longsword, wielded by the Holy See's templars in their stalwart defense against evil. Originating in the wake of the Celestial Empire's collapse, legends say that it is the grandfather to longswords all across Psydonia: the triumph of an ancient Malumite priest, stricken with divine inspiration in humenity's darkest hour. Centuries later, it still remains the ideal choice for skewering infidels and monsters alike. </br>'I am the holder of light, in the dark abyss..' </br>'..I am the holder of order and ward against vileness..' </br>'..let the Gods guide my hand, and let the Inhumen cower before me.'"
+	desc = "A blessed longsword, wielded by the Holy See's templars in their stalwart defense against evil. Originating in the wake of the Celestial Empire's collapse, legends say that it is the grandfather to longswords all across Beowricke: the triumph of an ancient Malumite priest, stricken with divine inspiration in humenity's darkest hour. Centuries later, it still remains the ideal choice for skewering infidels and monsters alike. </br>'I am the holder of light, in the dark abyss..' </br>'..I am the holder of order and ward against vileness..' </br>'..let the Gods guide my hand, and let the Inhumen cower before me.'"
 	icon_state = "churchsword"
 	max_blade_int = 250
 	max_integrity = 180
@@ -966,7 +966,7 @@
 
 /obj/item/rogueweapon/sword/long/marlin
 	name = "shalal saber"
-	desc = "A large yet surprisingly agile curved blade meant to be wielded in two hands. It has a similar composition to northwestern Psydonian longswords, but it's notably lighter."
+	desc = "A large yet surprisingly agile curved blade meant to be wielded in two hands. It has a similar composition to northwestern Beowricken longswords, but it's notably lighter."
 	force = 26
 	force_wielded = 31
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/strike, /datum/intent/sword/peel)

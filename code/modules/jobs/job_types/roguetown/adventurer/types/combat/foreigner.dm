@@ -424,9 +424,9 @@
 
 /datum/advclass/foreigner/bronzeclad
 	name = "Thespian-Errant"
-	tutorial = "Gladiators from the arenas of Raneshen and Lirvas, reenactors from the curtain-dazzled courts of Otava and Grenzelhoft, and \
-	shieldbearers from the outermost reaches of Psydonia itself; all are unified in their subconscious pursuit of entertaining something greater \
-	than themselves. You are a skilled combatant from beyond Azuria, who - for one reason or another - is intimately familiar with fighting in ancient equipment."
+	tutorial = "Gladiators from the arenas of Zybantu and the rings of Forvheipal, reenactors from the curtain-dazzled courts of Valoria and Grenzelhoft, and \
+	shieldbearers from the outermost reaches of Beowricke itself; all are unified in their subconscious pursuit of entertaining something greater \
+	than themselves. You are a skilled combatant from beyond the Draguippe, who - for one reason or another - is intimately familiar with fighting in ancient equipment."
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/bronzeclad
 	cmode_music = 'sound/music/combat_thespian.ogg'
@@ -900,7 +900,7 @@
 	name = "bronze panoplic armor"
 	desc = "What can only be described as an 'armored robe'; thick bronze plates, layered atop one-another and interlinked with strappings \
 	to form an assembly of segmented plate armor. While overwhelmingly heavy and cumbersome, it is certain to weather any storm poised its way. \
-	</br>Scholars oft-describe this suit as a 'panoply', purpose-made for the physiques of Psydonia's earliest Aasimari."
+	</br>Scholars oft-describe this suit as a 'panoply', purpose-made for the physiques of Beowricke's earliest Aasimari."
 	icon_state = "bronzeplate"
 	item_state = "bronzeplate"
 	armor = ARMOR_PLATE_BRONZE
