@@ -270,7 +270,7 @@
 /datum/anvil_recipe/engineering/golem_skill_core
 	name = "Golem Skill Exhibitor"
 	created_item = /obj/item/golem_skill_core
-	req_bar = /obj/item/ingot/copper
+	req_bar = /obj/item/ingot/bronze
 	additional_items = list(/obj/item/roguegear, /obj/item/roguegear)
 	craftdiff = 4
 	craftdiff = 3
