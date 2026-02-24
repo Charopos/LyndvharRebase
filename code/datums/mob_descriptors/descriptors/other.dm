@@ -50,6 +50,10 @@
 			adjective = "an average"
 		if(3)
 			adjective = "a large"
+		if(4)
+			adjective = "a huge"
+		if(5)
+			adjective = "a massive"
 	var/list/arousal_data = list()
 	SEND_SIGNAL(H, COMSIG_SEX_GET_AROUSAL, arousal_data)
 	switch(arousal_data["arousal"])
@@ -65,10 +69,16 @@
 	if(penis.erect_state != ERECT_STATE_HARD && penis.sheath_type != SHEATH_TYPE_NONE)
 		switch(penis.sheath_type)
 			if(SHEATH_TYPE_NORMAL)
-				if(penis.penis_size == 3)
+				if(penis.penis_size == 5)
+					used_name = "a hefty sheath"
+				else if(penis.penis_size == 4)
+					used_name = "a thick sheath"
+				else if(penis.penis_size == 3)
 					used_name = "a fat sheath"
-				else
-					used_name = "a sheath"
+				else if(penis.penis_size == 2)
+					used_name = "a thin sheath"
+				else if(penis.penis_size == 1)
+					used_name = "a tiny sheath"
 			if(SHEATH_TYPE_SLIT)
 				used_name = "a genital slit"
 	else
@@ -108,6 +118,10 @@
 			adjective = "an average"
 		if(3)
 			adjective = "a large"
+		if(4)
+			adjective = "a huge"
+		if(5)
+			adjective = "a massive"
 	return "[adjective] pair of balls"
 
 /datum/mob_descriptor/vagina
