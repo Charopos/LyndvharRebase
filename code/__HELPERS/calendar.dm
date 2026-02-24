@@ -152,7 +152,7 @@
 		if(5)
 			return "Feast's Dae"
 		if(6)
-			return "Psydon's Dae"
+			return "Naexidor's Dae"
 		if(7)
 			return "Sun's Dae"
 	return "Unknown Dae"
