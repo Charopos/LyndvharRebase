@@ -170,13 +170,13 @@
 
 /atom/movable/screen/alert/status_effect/debuff/netted
 	name = "Net"
-	desc = "A net was thrown on me.. how can I move?"
+	desc = "A net was thrown on me... how can I move?"
 	icon_state = "muscles"
 
 /datum/status_effect/debuff/netted
 	id = "net"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/netted
-	effectedstats = list(STATKEY_SPD = -5, STATKEY_WIL = -2)
+	effectedstats = list(STATKEY_SPD = -5)
 //	duration = 3 MINUTES // WHY?????
 
 /datum/status_effect/debuff/netted/on_apply()
