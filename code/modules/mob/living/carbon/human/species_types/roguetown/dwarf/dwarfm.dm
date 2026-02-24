@@ -11,7 +11,7 @@
 	clothes_id = "dwarf"
 	desc = "<b>Dwarf</b><br>\
 	A proud and robust race of small folk that live in mountains, dwarves are notably the third mortal race created by the cycle. They are a stubborn race, often isolating themselves in mountain fortresses and holds. They live for a relatively long time, much like elves. They are hearty and taut, not often well known for their agility, but they are some of the most expert craftsmen and women in all of Beowricke. Many inventions have been created and forged from a dwarf.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 
 	skin_tone_wording = "Dwarf Fortress"
 

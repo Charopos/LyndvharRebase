@@ -10,7 +10,7 @@
 	base_name = "Beastvolk"
 	desc = "<b>Cervaline</b><br>\
 	A rather populous and movement-prone race, the Cervaline originate from the Great Plains of western Rhaenval, in the Vruirid homelands. Sprouting different sets of antlers, large ears, and an assortment of different shades of darker fur colors, they are a large bulk of what remains of the nomadic peoples of the continent after Naexidor’s conquest of eastern Lewyn. Having spread far and wide across the lands in older times, they can be found in almost any region and are most well known for their adaptability and resourcefulness. It is not often unlikely to encounter trade caravans solely operated by the Cervaline peoples due to their generally nomadic lifestyle.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

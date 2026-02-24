@@ -10,7 +10,7 @@
 	base_name = "Beastvolk"
 	desc = "<b>Lupian</b><br>\
 	Hailing from the continent of Yoheon, the Lupian originally spread forth across the continent from what became the region of Forvheipal. Many have integrated themselves with the other races dotting across Beowricke since, forming tight-knitted communities in these locations. Known for cunning resilience, many strong warriors just also happen to be lupians. Lupians are considerably more aggressive as a detriment however, usually bringing simple arguments into full brawls abruptly and suddenly, owing to the harsh, hostile environment of Forvheipal and its incredibly tall cliffs, stinging tundras, and glistening swamps.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 	skin_tone_wording = "Ascendance"
 	species_traits = list(
 		MUTCOLORS,

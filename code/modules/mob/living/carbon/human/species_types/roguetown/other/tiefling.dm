@@ -10,7 +10,7 @@
 	is_subrace = TRUE
 	desc = "<b>Tiefling</b><br>\
 	A rather unholy and odd conglomeration of blood, Tieflings are what occurred when occultists of the Triumvirate made unholy pacts with differing scions of Zenu, molding their future offspring into what would become the devilish beings that consist of this race. Despite this creation they held no true loyalty to the Triumvirate and were effectively used as slave power during the waxing years of the Bloodwake. After the sealing of the Triumvirate they were hunted quite heavily but were able to survive through wit and conversions to the Luminary. Nowadays much of the bad blood has boiled over, but there are still many who frown heavily upon their existence as a stain to the Luminary’s cycle of creation. They have found themselves home in many enclaves or cities across Lewyn and Yoheon since the Bloodwake, forming their own distinct cultures in each. Incapable of reproduction with other races, they’ve become rather rare to spot outside of their enclaves.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 
 	skin_tone_wording = "Progenitor"
 	use_skin_tone_wording_for_examine = FALSE

@@ -9,12 +9,14 @@
 	id = "revenant"
 	desc = "<b>Revenant</b><br>\
 	Considered an averse and unholy side-effect of the Triumvirate’s corruption upon the Luminary Cycle, Revenants are beings that have been cursed with undeath at the end of their lifespans, and reborn as something much more ominous and foul. Unable to truly die of old age, their minds will slowly begin to wither away until there is naught much left but malice. They are capable of removing their heads through means still relatively unknown to the general populace, and usually end up as permanent wanderers due to their origin and decaying mind. Still, not dying of old age does have its benefits.<br>\
-	(NO HUNGER, NO BREATHING, IMMUNE TO DEADITES, EASILY DECAPITATED)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>NO HUNGER | IMMUNE TO DEADITES | DOES NOT BREATHE | EASILY DECAPITATED</b></span><br>"
 	skin_tone_wording = "Catalyst"
 	use_skin_tone_wording_for_examine = FALSE
 	max_age = "???"
 	base_name = "Godtouched"
 	is_subrace = TRUE
+	origin_default = /datum/virtue/origin/unknown
+	origin = "Nowhere"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY,MUTCOLORS)
 	default_features = MANDATORY_FEATURE_LIST
 	inherent_traits = list(TRAIT_EASYDECAPITATION, TRAIT_NOHUNGER, TRAIT_NOBREATH, TRAIT_ZOMBIE_IMMUNE) //Given the deathless traits inherently as part of their nature as pseudo-undead.

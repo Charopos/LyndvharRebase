@@ -9,7 +9,7 @@
 	base_name = "Eskallid"
 	desc = "<b>Eskallian</b><br>\
 	The Eskallian are rather distinct from many other races dotted across Beowricke. Hailing from the swamps of Calmirixia, they consist of many different shapes and sizes of scaled hides of which many could refer to smaller depictions of drakes, or as many liked to famously call them the Dragons in the old sagas of the Gilded Era. What position exactly they served is a wildly debated topic amongst Eskallian society. Divided into two castes, the Eskallian consist of the Dracaena and the Caiman who split during a flare of tension in the debate of their position that resulted in brutal suppression and open revolt for years after the Dragons reportedly vanished near the end of the Gilded Era. The Dracaena believed themselves to be the chosen of the Dragons, while the Caiman believed they had never been anything more than slaves. This resulting schism would uproot and destroy Eskallian society to the point that both Dracaena and Caiman have formed a brutal hatred for one another, and something that to this day long after Naexidor’s conquest of Calmirixia has still not been mended.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 	skin_tone_wording = "Tribe"
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	possible_ages = ALL_NATURAL_AGES_LIST

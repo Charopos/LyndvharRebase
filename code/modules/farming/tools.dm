@@ -67,7 +67,7 @@
 
 /obj/item/rogueweapon/thresher/bronze
 	name = "bronze thresher"
-	desc = "Threshed stalks beget grains to eat, and stricken grains beget seeds to grow. This cycle, humble as it is, is the sole reason why Psydonia's many inhabitants still lyve todae."
+	desc = "Threshed stalks beget grains to eat, and stricken grains beget seeds to grow. This cycle, humble as it is, is the sole reason why Beowricke's many inhabitants still lyve todae."
 	force = 15
 	force_wielded = 20
 	icon_state = "bronzethresh"

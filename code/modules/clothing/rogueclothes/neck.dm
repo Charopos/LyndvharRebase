@@ -128,7 +128,7 @@
 
 /obj/item/clothing/neck/roguetown/chaincoif
 	name = "chain coif"
-	desc = "A maille-hood, fashioned from interlinked steel rings - a favorite amongst Psydonia's more noble-hearted errants. It offers superior coverage to gorgets and bevors, though it sacrifices some protection in return."
+	desc = "A maille-hood, fashioned from interlinked steel rings - a favorite amongst Beowricke's more noble-hearted errants. It offers superior coverage to gorgets and bevors, though it sacrifices some protection in return."
 	icon_state = "chaincoif"
 	item_state = "chaincoif"
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
@@ -898,7 +898,7 @@
 
 /obj/item/clothing/neck/roguetown/psicross/inhumen/g/triumph
 	name = "ornate inverted psycross"
-	desc = "'Meet your lord, and know your place. Let progress be my chariot, and let my hands be the vessel that rips paradise free from its heavenly grasp. Let Psydonia's carcass not spell the death of Man, but the birth of Gods.'"
+	desc = "'Meet your lord, and know your place. Let progress be my chariot, and let my hands be the vessel that rips paradise free from its heavenly grasp. Let Beowricke's carcass not spell the death of Man, but the birth of Gods.'"
 	sellprice = 66
 
 /obj/item/clothing/neck/roguetown/psicross/astrata/g/triumph
@@ -1072,7 +1072,7 @@
 	. = ..()
 	if(slot == SLOT_NECK)
 		active_item = TRUE
-		to_chat(user, span_red("As you don the psicross, the chains tighten like a vice around your neck!  </br>  </br>You're overcome with a sense of terrible anguish - all of humenity's suffering, thrust upon your very spirit!  </br>  </br>Your chest grows cold, yet your blood boils hotter than magma! Psydonia's villains may be brutal and merciless, but you will be WORSE!  </br>  </br>You've gone BERSERK!"))
+		to_chat(user, span_red("As you don the psicross, the chains tighten like a vice around your neck!  </br>  </br>You're overcome with a sense of terrible anguish - all of humenity's suffering, thrust upon your very spirit!  </br>  </br>Your chest grows cold, yet your blood boils hotter than magma! Beowricke's villains may be brutal and merciless, but you will be WORSE!  </br>  </br>You've gone BERSERK!"))
 		user.change_stat(STATKEY_STR, 3)
 		user.change_stat(STATKEY_CON, 3)
 		user.change_stat(STATKEY_WIL, 3)

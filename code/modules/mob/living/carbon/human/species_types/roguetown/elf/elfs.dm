@@ -8,7 +8,7 @@
 	sub_name = "Wood Elf"
 	desc = "<b>Elf</b><br>\
 	Considered the second eldest of the Luminary cycle, elves are a rather mixed bag of stance. Widely considered one of the most intelligent and longest-living races in Beowricke, they have found many of their kindred seats in some of the highest echelons of aristocracy and governance across the known realms. Many baronies, cities, and even realms- such as Greencrest- are made up of an entire elvish nobility. Prideful at heart, many believe they are the superior race to all others, and it is often reflected in their politics.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 
 	skin_tone_wording = "Tribal Identity"
 	max_age = 850
@@ -117,7 +117,7 @@
 		"Jungle Elf" = SKIN_COLOR_JUNGLE_ELF,
 		"Lotus Elf" = SKIN_COLOR_LOTUS_ELF,
 		"Swamp Elf" = SKIN_COLOR_SWAMP_ELF,
-		"Sun Elf" = SKIN_COLOR_SUN_ELF,
+		"Lesser Sun Elf" = SKIN_COLOR_SUN_ELF,
 		"Desert Elf" = SKIN_COLOR_DESERT_ELF,
 		"Khazumite Elf"	= SKIN_COLOR_KHAZUMITE_ELF
 	)

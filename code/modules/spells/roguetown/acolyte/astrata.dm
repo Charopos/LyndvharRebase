@@ -1041,7 +1041,7 @@
 
 /obj/effect/proc_holder/spell/self/astrata_sword
 	name = "Solar Blade"
-	desc = "Call for a blade to preserve light and order in Psydonia. Its strength is middling, but it glows fiercely and can be used to cauterize wounds."
+	desc = "Call for a blade to preserve light and order in Beowricke. Its strength is middling, but it glows fiercely and can be used to cauterize wounds."
 	overlay_state = "sacredflame"
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	associated_skill = /datum/skill/magic/holy

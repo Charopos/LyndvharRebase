@@ -5,44 +5,34 @@
 	name = "Sun Elf"
 	id = "elfc"
 	is_subrace = TRUE
-	origin_default = /datum/virtue/origin/raneshen
-	origin = "Raneshen"
+	origin_default = /datum/virtue/origin/khazumia
+	origin = "Khazumia"
 	base_name = "Elf"
 	sub_name = "Sun Elf"
 
 	desc = "<b>Sun Elf</b><br>\
-	Native to the vast region of Raneshen, Sun Elves are an elven subspecies descended \
-	from the followers of the Günayan Crusade who settled in the region a millenium \
+	Native to the terrains of Zybantu and Khazumia, Sun Elves are an elven subspecies descended \
+	from the many elves who pledged to Astrata in the Bloodwake, and then afterwards who settled in the region a millenium \
 	ago. Tradition holds that Astrata guided their ancestors on a holy mission to carve out \
-	a divine Dominion of the Sun, one that would purge all darkness with Astrata's holy light.<br><br>\
-	For most of their history, Sun Elves ruled over Raneshen's Nshkormh region as a deeply-hierarchical \
+	a divine Dominion of the Sun, one that would purge all darkness with Astrata's holy light that remained after the war was over.<br><br>\
+	For most of their history, Sun Elves ruled over a small contingent in the Akunana region as a deeply-hierarchical \
 	slaver state, with brutal and oft-controversial Astratan worship, comprised of odd, bespoke rituals that came at the cost of the chosen enslaved. \
-	The See had never acknowledged such practices, however it is suspected that due to them the thinly-numbered race had received their 'blessings'.<br><br> \
-	The past half-century has seen an eruption of religious warfare, spurred on by the inevitable anger from other faiths as well as the enslaved themselves, \
-	with a massive Psydonian rebellion ultimately shattering the Solar Dominion. Since \
-	then, many Sun Elf refugees have traveled from the East. Some bring their Crusade \
-	along with them, while others yearn for sanctuary from the ever-encroaching \
-	Darkness — and many more seek only to selfish enrich themselves in this foreign land.<br><br>\
+	The Mother Church in Zybantu had never acknowledged such practices, however it is suspected that due to them the thinly-numbered race had received their 'blessings'.<br><br> \
+	The past half-century has seen an eruption of abolitionist warfare, spurred on by the inevitable anger from others of the faithful as well as the enslaved themselves, \
+	with a massive rebellion spreading from the province ultimately shattering the autonomous region. Since \
+	then, many Sun Elf refugees have traveled from the East. Some bring their traditions \
+	along with them, while others yearn for sanctuary in a place as lawless as the ruins \
+	of the Ruby Empire — and many more seek only to selfish enrich themselves in this foreign land and take what's left for themselves.<br><br>\
 	Sun Elves are often deeply concerned with social order, castes, and superiority. Many \
 	are vain or power-hungry, and they tend to have imperious and assertive personalities. \
 	It is a common sentiment among Sun Elves that they are the 'chosen' of Astrata, leading \
 	to a great deal of condescension or disdain toward those faiths deemed 'lesser'.<br>\
-	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>+1 Stat of their choice, Silver-blooded, Rot immune. <br>Astratan Affinity grants a devotion bonus if the selected patron is Astrata.</b></span><br>"
-
-	custom_selection = list(
-		"+1 FOR" = STATKEY_LCK,
-		"+1 INT" = STATKEY_INT,
-		"+1 CON" = STATKEY_CON,
-		"+1 WIL" = STATKEY_WIL,
-		"+1 PER" = STATKEY_PER,
-		"+1 STR, -1 CON" = list(STATKEY_STR = 1, STATKEY_CON = -1),
-		"Astratan Affinity" = list(TRAIT_ASTRATAN_AFFINITY, /datum/virtue/combat/devotee/astratan_affinity)
-	)
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>SILVER BLESSED | IMMUNE TO DEADITES | IMMUNE TO VAMPYRES | AFFINITY TO ASTRATA</b></span><br>"
 
 	skin_tone_wording = "Skintone"
 	use_skin_tone_wording_for_examine = FALSE
 
-	inherent_traits = list(TRAIT_SILVER_BLESSED, TRAIT_ZOMBIE_IMMUNE, TRAIT_UNLYCKERABLE)
+	inherent_traits = list(TRAIT_SILVER_BLESSED, TRAIT_ZOMBIE_IMMUNE, TRAIT_UNLYCKERABLE, TRAIT_ASTRATAN_AFFINITY)
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,OLDGREY)
 	default_features = MANDATORY_FEATURE_LIST
 	use_skintones = 1

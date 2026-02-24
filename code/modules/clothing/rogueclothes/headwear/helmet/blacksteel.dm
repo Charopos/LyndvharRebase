@@ -1,7 +1,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/blacksteel/modern
 	name = "blacksteel armet"
-	desc = "A magnificent greathelm of blacksteel, bearing the handiwork of Psydonia's finest blacksmiths. Beneath the visor most-assuredly lays a legendary guise; be it a commander's glare, a conquerer's sneer, or a champion's observance."
+	desc = "A magnificent greathelm of blacksteel, bearing the handiwork of Beowricke's finest blacksmiths. Beneath the visor most-assuredly lays a legendary guise; be it a commander's glare, a conquerer's sneer, or a champion's observance."
 	icon_state = "bplatehelm"
 	item_state = "bplatehelm"
 	adjustable = CAN_CADJUST

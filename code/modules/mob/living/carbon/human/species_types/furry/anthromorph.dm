@@ -9,7 +9,7 @@
 	base_name = "Beastvolk"
 	desc = "<b>Wild-Kin</b><br>\
 	Chimera are a rather odd existence- consisting of an amalgamation of many different animalistic entities merging into one singular entity brought into the grasp of the cycle. A rather unfortunate side-effect of the Chimera is a lack of much higher reasoning, leading to many succumbing to very beast-like behavior and an unnatural ravenous hunger. The aberration that they are has led many to theorize they were a corruption of the spirit by Strialis in order to sow chaos amongst the races. Many have been able to successfully quell these chaotic behaviors and live in civilised society, but suffer many drawbacks and effects mentally- always dealing with the gnawing thoughts of madness, trying to break free of its mental shackles.<br>\
-	(TRAITS WILL GO HERE)"
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b>TRAITS WILL GO HERE | TRAITS WILL GO HERE</b></span><br>"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,
