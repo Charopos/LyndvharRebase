@@ -24,6 +24,7 @@
 		/datum/sprite_accessory/tail/tamamo_kitsune,
 		/datum/sprite_accessory/tail/sabresune,
 		/datum/sprite_accessory/tail/lunasune,
+		/datum/sprite_accessory/tail/pinecone,
 		)
 
 /datum/customizer/organ/tail/lupian
@@ -41,7 +42,8 @@
 		/datum/sprite_accessory/tail/fox,
 		/datum/sprite_accessory/tail/fox2,
 		/datum/sprite_accessory/tail/lab,
-		/datum/sprite_accessory/tail/husky
+		/datum/sprite_accessory/tail/husky,
+		/datum/sprite_accessory/tail/pinecone,
 		)
 
 /datum/customizer/organ/tail/tabaxi
@@ -56,6 +58,7 @@
 		/datum/sprite_accessory/tail/tiger,
 		/datum/sprite_accessory/tail/leopard,
 		/datum/sprite_accessory/tail/lynx,
+		/datum/sprite_accessory/tail/pinecone,
 		)
 
 /datum/customizer/organ/tail/lizard
@@ -176,6 +179,7 @@
 		/datum/sprite_accessory/tail/large_snake_plain,
 		/datum/sprite_accessory/tail/hawk,
 		/datum/sprite_accessory/tail/corvid,
+		/datum/sprite_accessory/tail/pinecone,
 		)
 
 /datum/customizer/organ/tail/rhaeteian
@@ -293,7 +297,8 @@
 		/datum/sprite_accessory/tail/swallow,
 		/datum/sprite_accessory/tail/zorzor,
 		/datum/sprite_accessory/tail/large_snake,
-		/datum/sprite_accessory/tail/large_snake_plain
+		/datum/sprite_accessory/tail/large_snake_plain,
+		/datum/sprite_accessory/tail/pinecone,
 		)
 
 /datum/customizer/organ/tail/dullahan
