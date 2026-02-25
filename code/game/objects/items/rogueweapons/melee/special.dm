@@ -844,7 +844,7 @@
 
 /obj/item/rogueweapon/handclaw/rhaenval
 	name = "Rhaenish Beast Claws"
-	desc = "A pair of uniquely reinforced iron claws forged with the addition of bone.
+	desc = "A pair of uniquely reinforced iron claws forged with the addition of bone."
 	icon_state = "gronnclaws"
 	icon = 'icons/roguetown/weapons/unarmed32.dmi'
 	wdefense = 3

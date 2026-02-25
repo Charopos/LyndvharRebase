@@ -492,7 +492,7 @@
 
 /obj/item/rogueweapon/mace/cudgel/psy/old
 	name = "enduring flanged mace"
-	desc = "A flanged mace, weathered by tyme's gaze. It radiates a strange energy; distant, fleeting, but ever-so-familiar. May His embrace come and comfort us all.
+	desc = "A flanged mace, weathered by tyme's gaze. It radiates a strange energy; distant, fleeting, but ever-so-familiar. May His embrace come and comfort us all."
 	force_wielded = 25
 	wbalance = WBALANCE_NORMAL
 	icon_state = "opsyflangedmace"
