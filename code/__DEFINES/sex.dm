@@ -101,6 +101,9 @@ GLOBAL_LIST_EMPTY(locked_sex_objects)
 	"Small" = MIN_PENIS_SIZE,\
 	"Average" = DEFAULT_PENIS_SIZE,\
 	"Large" = LARGE_PENIS_SIZE,\
+	)
+
+#define PENIS_SIZES_STINGER list(\
 	"Huge" = LARGER_PENIS_SIZE,\
 	"Massive" = LARGEST_PENIS_SIZE,\
 	)
@@ -141,6 +144,9 @@ GLOBAL_LIST_EMPTY(locked_sex_objects)
 	"Small" = MIN_TESTICLES_SIZE,\
 	"Average" = DEFAULT_TESTICLES_SIZE,\
 	"Large" = LARGE_TESTICLES_SIZE,\
+	)
+
+#define TESTICLE_SIZES_STINGER list(\
 	"Huge" = LARGER_TESTICLES_SIZE,\
 	"Massive" = LARGEST_TESTICLES_SIZE,\
 	)

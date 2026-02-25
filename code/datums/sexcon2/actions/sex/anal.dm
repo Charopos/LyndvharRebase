@@ -35,8 +35,8 @@
 /datum/sex_action/sex/anal/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
 	var/is_knotting = sex_session.do_knot_action
-	user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] [is_knotting ? "knot-fucks" : "fucks"] [target]'s ass."))
-	playsound(target, sex_session.get_force_sound(), 50, TRUE, -2, ignore_walls = FALSE)
+	show_sex_message(user, target, sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] [is_knotting ? "knot-fucks" : "fucks"] [target]'s ass."))
+	play_sex_sound(user, target, sex_session.get_force_sound(), 50)
 	do_thrust_animate(user, target, sex_session)
 
 	do_onomatopoeia(user)
@@ -51,7 +51,7 @@
 	sex_session.handle_passive_ejaculation(target)
 
 /datum/sex_action/sex/anal/handle_climax_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	user.visible_message(span_love("[user] cums into [target]'s butt!"))
+	show_sex_message(user, target, span_love("[user] cums into [target]'s butt!"))
 	user.virginity = FALSE
 	return "into"
 
@@ -84,8 +84,8 @@
 /datum/sex_action/sex/anal/double/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
 	var/is_knotting = sex_session.do_knot_action
-	user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] [is_knotting ? "double-knots" : "double-fucks" ] [target]'s ass."))
-	playsound(target, sex_session.get_force_sound(), 50, TRUE, -2, ignore_walls = FALSE)
+	show_sex_message(user, target, sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] [is_knotting ? "double-knots" : "double-fucks" ] [target]'s ass."))
+	play_sex_sound(user, target, sex_session.get_force_sound(), 50)
 	do_thrust_animate(user, target, sex_session)
 
 	do_onomatopoeia(user)

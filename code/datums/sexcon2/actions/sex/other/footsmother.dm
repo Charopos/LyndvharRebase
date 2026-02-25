@@ -34,11 +34,11 @@
 
 /datum/sex_action/sex/other/footsmother/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
-	user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] smothers [target]'s face with [user.p_their()] feet..."))
-	playsound(user, 'sound/misc/mat/fingering.ogg', 30, TRUE, -2, ignore_walls = FALSE)
+	show_sex_message(user, target, sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] smothers [target]'s face with [user.p_their()] feet..."))
+	play_sex_sound(user, target, 'sound/misc/mat/fingering.ogg', 30)
 
 	if(istype(user.shoes, /obj/item/clothing/shoes/roguetown/jester))
-		playsound(user, SFX_JINGLE_BELLS, 30, TRUE, -2, ignore_walls = FALSE)
+		play_sex_sound(user, target, SFX_JINGLE_BELLS, 30)
 
 	sex_session.perform_sex_action(target, 2, 4, TRUE)
 	sex_session.handle_passive_ejaculation(target)

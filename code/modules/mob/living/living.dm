@@ -1111,6 +1111,44 @@
 		stop_attack(FALSE)
 
 	SEND_SIGNAL(src, COMSIG_LIVING_RESIST, src)
+	
+	// Check if we're stored inside another mob
+	if(ismob(loc))
+		var/mob/living/carbon/human/wearer = loc
+		if(src.container)
+			// Check if restrained - if so, squirming is mostly cosmetic
+			var/is_restrained = restrained()
+			
+			if(!is_restrained)
+				strugglecount++
+				to_chat(src, span_warning("I squirm inside [container]! ([strugglecount]/5)"))
+				to_chat(wearer, span_warning("[src] squirms inside [src.container]!"))
+			else
+				to_chat(src, span_warning("I squirm helplessly inside [container]!"))
+				to_chat(wearer, span_warning("[src] squirms helplessly inside [src.container]!"))
+			
+			// Only manage decay timer if not restrained
+			if(!is_restrained)
+				// Cancel existing decay timer and schedule a new one
+				if(struggle_decay_timer)
+					deltimer(struggle_decay_timer)
+				struggle_decay_timer = addtimer(CALLBACK(src, PROC_REF(decay_strugglecount)), 5 SECONDS, TIMER_STOPPABLE)
+				
+				if(strugglecount >= 5)
+					wearer.visible_message(span_warning("[src] tumbles out in a heap from [container]!"))
+					forceMove(get_turf(wearer))
+					src.clear_fullscreen("contained")
+					Knockdown(90)
+					container = null
+					strugglecount = 0
+					if(struggle_decay_timer)
+						deltimer(struggle_decay_timer)
+						struggle_decay_timer = null
+				if(struggle_decay_timer)
+					deltimer(struggle_decay_timer)
+					struggle_decay_timer = null
+			return
+	
 	//resisting grabs (as if it helps anyone...)
 	if(pulledby)
 		var/mob/living/P
@@ -1172,6 +1210,14 @@
 /mob/living/proc/end_submit()
 	surrendering = 0
 	update_mobility()
+
+/mob/living/proc/decay_strugglecount()
+	if(strugglecount > 0)
+		strugglecount--
+		if(strugglecount > 0 && container)
+			struggle_decay_timer = addtimer(CALLBACK(src, PROC_REF(decay_strugglecount)), 5 SECONDS, TIMER_STOPPABLE)
+		else
+			struggle_decay_timer = null
 
 /mob/living/proc/toggle_compliance()
 	set name = "Toggle Compliance"
