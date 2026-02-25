@@ -29,16 +29,16 @@
 
 /datum/sex_action/masturbate/other/tailjob_vagina/get_start_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
-	user.visible_message(span_warning("[user] starts pressing [user.p_their()] tail into [target]'s [pick("slit","cunt","pussy","snatch")]..."))
+	show_sex_message(user, target,(span_warning("[user] starts pressing [user.p_their()] tail into [target]'s [pick("slit","cunt","pussy","snatch")]...")))
 
 /datum/sex_action/masturbate/other/tailjob_vagina/get_finish_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
-	user.visible_message(span_warning("[user] pulls out [user.p_their()] tail out of [target]'s [pick("slit","cunt","pussy","snatch")]."))
+	show_sex_message(user, target,(span_warning("[user] pulls out [user.p_their()] tail out of [target]'s [pick("slit","cunt","pussy","snatch")].")))
 
 /datum/sex_action/masturbate/other/tailjob_vagina/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
-	user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] presses [user.p_their()] tail into [target]'s [pick("slit","cunt","pussy","snatch")]..."))
-	playsound(user, 'sound/misc/mat/fingering.ogg', 30, TRUE, -2, ignore_walls = FALSE)
+	show_sex_message(user, target,(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] presses [user.p_their()] tail into [target]'s [pick("slit","cunt","pussy","snatch")]...")))
+	play_sex_sound(user, target, 'sound/misc/mat/fingering.ogg', 30)
 
 	sex_session.perform_sex_action(target, 3, 4, TRUE)
 

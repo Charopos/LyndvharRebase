@@ -123,7 +123,7 @@
 		"arousal_multiplier" = arousal_multiplier
 	)
 
-/datum/component/arousal/proc/receive_sex_action(datum/source, arousal_amt, pain_amt, giving, applied_force, applied_speed)
+/datum/component/arousal/proc/receive_sex_action(datum/source, arousal_amt, pain_amt, giving, applied_force, applied_speed, muted = FALSE)
 	var/mob/user = parent
 
 	// Apply multipliers
@@ -139,7 +139,7 @@
 		adjust_arousal(source, arousal_amt)
 
 	damage_from_pain(pain_amt)
-	try_do_moan(arousal_amt, pain_amt, applied_force, giving)
+	try_do_moan(arousal_amt, pain_amt, applied_force, giving, muted)
 	try_do_pain_effect(pain_amt, giving)
 
 /datum/component/arousal/proc/update_arousal_effects()
@@ -337,7 +337,7 @@
 		return
 	user.apply_damage(damage, BRUTE, part)
 
-/datum/component/arousal/proc/try_do_moan(arousal_amt, pain_amt, applied_force, giving)
+/datum/component/arousal/proc/try_do_moan(arousal_amt, pain_amt, applied_force, giving, muted)
 	var/mob/user = parent
 	if(arousal_amt < 1.5)
 		return
@@ -370,7 +370,8 @@
 				chosen_emote = "painmoan"
 
 	last_moan = world.time
-	user.emote(chosen_emote)
+	if(!muted)
+		user.emote(chosen_emote)
 
 /datum/component/arousal/proc/try_do_pain_effect(pain_amt, giving)
 	var/mob/user = parent

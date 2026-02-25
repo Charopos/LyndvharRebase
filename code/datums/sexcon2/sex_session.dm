@@ -166,7 +166,9 @@
 			break
 
 		var/do_time = action.do_time / get_speed_multiplier()
-		if(!do_after(user, do_time, target = target))
+		// Hide progress bar if action is subtle, location-subtle, or discrete-subtle
+		var/show_progress = !(action.subtle || action.is_location_subtle(user, target) || action.is_discrete_subtle(user, target))
+		if(!do_after(user, do_time, target = target, progress = show_progress))
 			break
 
 		if(current_action == null || performed_action_type != current_action)
@@ -201,6 +203,22 @@
 	if(!action_type)
 		return FALSE
 	var/datum/sex_action/action = SEX_ACTION(action_type)
+	
+	// Check if one participant is stored inside the other - bypass position/grab checks
+	var/stored_together = FALSE
+	if(ismob(user.loc) && user.loc == target)
+		stored_together = TRUE
+	else if(ismob(target.loc) && target.loc == user)
+		stored_together = TRUE
+	
+	if(stored_together)
+		// Only check basic requirements when stored together
+		if(!target)
+			return FALSE
+		if(user.stat != CONSCIOUS)
+			return FALSE
+		return TRUE
+	
 	if(!inherent_perform_check(action_type))
 		return FALSE
 	if(!action.can_perform(user, target) && !performing)
@@ -229,7 +247,12 @@
 	return TRUE
 
 /datum/sex_session/proc/perform_sex_action(mob/living/carbon/human/action_target, arousal_amt, pain_amt, giving)
-	SEND_SIGNAL(action_target, COMSIG_SEX_RECEIVE_ACTION, arousal_amt, pain_amt, giving, force, speed)
+	var/muted = FALSE
+	if(current_action)
+		// check if the action_target specifically is stored inside another mob
+		if(ismob(action_target.loc) && action_target.loc != action_target)
+			muted = TRUE
+	SEND_SIGNAL(action_target, COMSIG_SEX_RECEIVE_ACTION, arousal_amt, pain_amt, giving, force, speed, muted)
 
 /datum/sex_session/proc/handle_passive_ejaculation(mob/living/carbon/human/handler)
 	if(!handler)
@@ -330,15 +353,32 @@
 		if(SEX_MANUAL_AROUSAL_FULL)
 			return "<font color='#d146f5'>FULLY ERECT</font>"
 /datum/sex_session/proc/get_generic_force_adjective()
+	var/base_adjective = ""
 	switch(force)
 		if(SEX_FORCE_LOW)
-			return pick(list("gently", "carefully", "tenderly", "gingerly", "delicately", "lazily"))
+			base_adjective = pick(list("gently", "carefully", "tenderly", "gingerly", "delicately", "lazily"))
 		if(SEX_FORCE_MID)
-			return pick(list("firmly", "vigorously", "eagerly", "steadily", "intently"))
+			base_adjective = pick(list("firmly", "vigorously", "eagerly", "steadily", "intently"))
 		if(SEX_FORCE_HIGH)
-			return pick(list("roughly", "carelessly", "forcefully", "fervently", "fiercely"))
+			base_adjective = pick(list("roughly", "carelessly", "forcefully", "fervently", "fiercely"))
 		if(SEX_FORCE_EXTREME)
-			return pick(list("brutally", "violently", "relentlessly", "savagely", "mercilessly"))
+			base_adjective = pick(list("brutally", "violently", "relentlessly", "savagely", "mercilessly"))
+	
+	// Check if current action is subtle and add prefix
+	if(current_action)
+		var/datum/sex_action/action = SEX_ACTION(current_action)
+		if(action)
+			var/is_subtle = action.subtle || action.is_location_subtle(user, target)
+			var/is_discrete_subtle = action.discrete && (force <= SEX_FORCE_MID && speed < SEX_SPEED_MID)
+			
+			if(is_subtle)
+				var/prefix = pick(list("discreetly and", "quietly and", "subtly and", "secretly and"))
+				return "[prefix] [base_adjective]"
+			else if(is_discrete_subtle)
+				var/prefix = pick(list("carefully and", "cautiously and", "discreetly and"))
+				return "[prefix] [base_adjective]"
+	
+	return base_adjective
 
 /datum/sex_session/proc/spanify_force(string)
 	switch(force)
@@ -372,15 +412,19 @@
 
 	// Build action list (doesn't change during session)
 	var/list/actions = list()
+	
 	for(var/action_type in GLOB.sex_actions)
 		var/datum/sex_action/action = SEX_ACTION(action_type)
 		if(!action.shows_on_menu(user, target))
 			continue
+		
 		actions += list(list(
 			"name" = action.name,
 			"type" = action_type,
 			"description" = action.description || "",
-			"requires_grab" = action.require_grab
+			"requires_grab" = action.require_grab,
+			"subtle" = action.subtle,
+			"discrete" = action.discrete
 		))
 	data["actions"] = actions
 
@@ -431,6 +475,31 @@
 		if(can_perform_action(action_type))
 			can_perform += action_type
 	data["can_perform"] = can_perform
+	
+	// Which actions are currently subtle (updates dynamically with force/speed)
+	var/list/subtle_actions = list()
+	var/stored_together = FALSE
+	if(ismob(user.loc) && user.loc == target)
+		stored_together = TRUE
+	else if(ismob(target.loc) && target.loc == user)
+		stored_together = TRUE
+	
+	for(var/action_type in GLOB.sex_actions)
+		var/datum/sex_action/action = SEX_ACTION(action_type)
+		if(!action.shows_on_menu(user, target))
+			continue
+		
+		var/is_subtle = FALSE
+		if(action.subtle || stored_together)
+			is_subtle = TRUE
+		else if(action.discrete)
+			// Discrete actions are subtle if force <= FIRM AND speed < STEADY
+			if(force <= SEX_FORCE_MID && speed < SEX_SPEED_MID)
+				is_subtle = TRUE
+		
+		if(is_subtle)
+			subtle_actions += action_type
+	data["subtle_actions"] = subtle_actions
 
 	// Session info
 	data["session_name"] = collective?.collective_display_name || "Private Session"

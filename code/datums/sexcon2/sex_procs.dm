@@ -9,6 +9,14 @@
 	return grabstate
 
 /proc/do_thrust_animate(atom/movable/user, atom/movable/target, datum/sex_session/sex_session, pixels = 4, time = 2.7)
+	// Check if current action is subtle, location-subtle, or discrete-subtle
+	if(sex_session?.current_action)
+		var/datum/sex_action/action = SEX_ACTION(sex_session.current_action)
+		if(action)
+			var/is_subtle = action.subtle || action.is_location_subtle(user, target) || action.is_discrete_subtle(user, target)
+			if(is_subtle)
+				return // Don't animate if action is subtle
+	
 	var/oldx = user.pixel_x
 	var/oldy = user.pixel_y
 	var/target_x = oldx
@@ -115,6 +123,52 @@
 	if(!user.start_sex_session(target))
 		to_chat(user, "<span class='warning'>I'm already sexing.</span>")
 		return
+
+/obj/item/clothing/MiddleMouseDrop_T(atom/movable/dragged, mob/living/user)
+	// Check if this clothing item is worn by someone
+	if(!ismob(loc))
+		return ..()
+	
+	var/mob/living/carbon/human/wearer = loc
+	var/mob/living/carbon/human/human_user = user
+	var/mob/living/carbon/human/target = dragged
+	
+	if(!istype(wearer) || !istype(human_user) || !istype(target))
+		return ..()
+	
+	if(user.mmb_intent)
+		return ..()
+	
+	// Only allow if this item is equipped in pants or shirt slot
+	if(wearer.wear_pants != src && wearer.wear_shirt != src)
+		return ..()
+	
+	// Dragging the target mob onto the clothing worn by the wearer
+	// This moves the target into the wearer's location
+	if(!human_user.can_do_sex)
+		to_chat(user, "<span class='warning'>I can't do this.</span>")
+		return
+	
+	var/may_bang = target.client && target.client.prefs && target.client.prefs.sexable == TRUE
+	#ifdef LOCALTEST
+		may_bang = TRUE
+	#endif
+
+	if(!may_bang) // Don't bang someone that doesn't want it.
+		to_chat(user, "<span class='warning'>[target] doesn't wish to be touched. (Their ERP preference under options)</span>")
+		to_chat(target, "<span class='warning'>[user] failed to touch you. (Your ERP preference under options)</span>")
+		return
+
+	to_chat(user, "<span class='danger'>[wearer] attempts to stuff [target] inside [src].</span>")
+	to_chat(target, "<span class='danger'>[wearer] is attempting to stuff [target] inside [src]!</span>")
+	if(do_after(wearer, 50, target = target))	
+		to_chat(user, "<span class='danger'>[wearer] stuffs [target] inside [src].</span>")
+		to_chat(target, "<span class='danger'>[wearer] stuffs [target] inside [src].</span>")
+		target.forceMove(wearer)
+		target.container = src
+		target.overlay_fullscreen("contained", /atom/movable/screen/fullscreen/impaired, 2)
+		wearer.start_sex_session(target)
+		target.start_sex_session(wearer)
 
 /proc/get_sex_session(mob/giver, mob/taker)
 	for(var/datum/sex_session/session as anything in GLOB.sex_sessions)

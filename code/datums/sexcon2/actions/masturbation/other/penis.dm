@@ -25,12 +25,12 @@
 
 /datum/sex_action/masturbate/other/penis/on_start(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
-	user.visible_message(span_warning("[user] starts jerking [target]'s cock off..."))
+	show_sex_message(user, target,(span_warning("[user] starts jerking [target]'s cock off...")))
 
 /datum/sex_action/masturbate/other/penis/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
-	user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] jerks [target]'s cock off..."))
-	playsound(user, 'sound/misc/mat/fingering.ogg', 30, TRUE, -2, ignore_walls = FALSE)
+	show_sex_message(user, target,(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] jerks [target]'s cock off...")))
+	play_sex_sound(user, target, 'sound/misc/mat/fingering.ogg', 30)
 
 	sex_session.perform_sex_action(target, 2, 0, TRUE)
 
@@ -38,12 +38,12 @@
 
 /datum/sex_action/masturbate/other/penis/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
-	user.visible_message(span_warning("[user] stops jerking [target] off."))
+	show_sex_message(user, target,(span_warning("[user] stops jerking [target] off.")))
 
 /datum/sex_action/masturbate/other/penis/lock_sex_object(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
 	sex_locks |= new /datum/sex_session_lock(target, ORGAN_SLOT_PENIS)
 
 /datum/sex_action/masturbate/other/penis/handle_climax_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	user.visible_message(span_love("[user] cums over [target]'s hand!"))
+	show_sex_message(user, target,(span_love("[user] cums over [target]'s hand!")))
 	return "into"

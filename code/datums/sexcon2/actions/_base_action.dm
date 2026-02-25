@@ -58,6 +58,10 @@
 	var/masturbation = FALSE
 	///Whenever or not you need to be adjacent to someone to use it
 	var/ranged_action = FALSE
+	/// Whether this action is subtle (only messages/sounds to involved parties, no particles)
+	var/subtle = FALSE
+	/// Whether this action is discrete (only does obvious animations if intent is higher than firm and speed is greater or equal to steady)
+	var/discrete = FALSE 
 
 /datum/sex_action/Destroy()
 	for(var/datum/sex_session_lock/lock in sex_locks)
@@ -68,6 +72,38 @@
 
 /datum/sex_action/proc/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	return TRUE
+
+/// Checks if this action should be automatically subtle due to location
+/// Returns TRUE if either participant's loc is a mob
+/datum/sex_action/proc/is_location_subtle(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	if(!user || !target)
+		return FALSE
+	
+	// Check if user is inside target
+	if(ismob(user.loc) && user.loc == target)
+		return TRUE
+	
+	// Check if target is inside user
+	if(ismob(target.loc) && target.loc == user)
+		return TRUE
+	
+	return FALSE
+
+/// Checks if discrete actions should remain subtle based on force and speed
+/// Returns TRUE if action should stay subtle (force <= FIRM AND speed < STEADY)
+/datum/sex_action/proc/is_discrete_subtle(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	if(!discrete)
+		return FALSE
+	
+	var/datum/sex_session/sex_session = get_sex_session(user, target)
+	if(!sex_session)
+		return TRUE // Default to subtle if no session
+	
+	// Discrete actions only become obvious if force > FIRM OR speed >= STEADY
+	if(sex_session.force > SEX_FORCE_MID || sex_session.speed >= SEX_SPEED_MID)
+		return FALSE // Not subtle - action is obvious
+	
+	return TRUE // Subtle - action is discrete
 
 /datum/sex_action/proc/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	SHOULD_CALL_PARENT(TRUE)
@@ -150,11 +186,29 @@
 
 	var/message = get_start_message(user, target)
 	if(message)
-		user.visible_message(message)
+		var/is_subtle = subtle || is_location_subtle(user, target) || is_discrete_subtle(user, target)
+		
+		if(is_subtle)
+			// Subtle mode: only send to involved parties
+			to_chat(user, message)
+			if(target && target != user)
+				to_chat(target, message)
+		else
+			// Normal mode: visible to everyone
+			user.visible_message(message)
 
 	var/sound = get_start_sound(user, target)
 	if(sound)
-		playsound(target, sound, 20, TRUE, ignore_walls = FALSE)
+		var/is_subtle = subtle || is_location_subtle(user, target) || is_discrete_subtle(user, target)
+		if(is_subtle)
+			// Subtle mode: only play to involved parties
+			if(user?.client)
+				SEND_SOUND(user, sound(sound, repeat = FALSE, wait = FALSE, volume = 20, channel = CHANNEL_HEARTBEAT))
+			if(target?.client && target != user)
+				SEND_SOUND(target, sound(sound, repeat = FALSE, wait = FALSE, volume = 20, channel = CHANNEL_HEARTBEAT))
+		else
+			// Normal mode: play to area
+			playsound(target, sound, 20, TRUE, ignore_walls = FALSE)
 
 	return TRUE
 
@@ -173,7 +227,15 @@
 
 	var/message = get_finish_message(user, target)
 	if(message)
-		user.visible_message(message)
+		var/is_subtle = subtle || is_location_subtle(user, target) || is_discrete_subtle(user, target)
+		if(is_subtle)
+			// Subtle mode: only send to involved parties
+			to_chat(user, message)
+			if(target && target != user)
+				to_chat(target, message)
+		else
+			// Normal mode: visible to everyone
+			user.visible_message(message)
 
 	return
 
@@ -214,9 +276,65 @@
 
 
 /datum/sex_action/proc/do_onomatopoeia(mob/living/carbon/human/user)
+	// Check if action is subtle - if so, don't show balloon alert to viewers
+	var/mob/living/carbon/human/target = null
+	for(var/datum/sex_session/session in GLOB.sex_sessions)
+		if(session.user == user)
+			target = session.target
+			break
+	
+	var/is_subtle = subtle || is_location_subtle(user, target) || is_discrete_subtle(user, target)
+	if(is_subtle)
+		return // Don't show onomatopoeia if action is subtle
+	
 	user.balloon_alert_to_viewers("Plap!", x_offset = rand(-15, 15), y_offset = rand(0, 25))
 
+/// Helper to play sounds respecting subtle mode
+/datum/sex_action/proc/play_sex_sound(mob/living/carbon/human/user, mob/living/carbon/human/target, sound_file, volume = 50)
+	if(!sound_file)
+		return
+	
+	var/is_subtle = subtle || is_location_subtle(user, target) || is_discrete_subtle(user, target)
+	
+	if(is_subtle)
+		// Subtle mode: only play to involved parties
+		if(user?.client)
+			SEND_SOUND(user, sound(sound_file, repeat = FALSE, wait = FALSE, volume = volume, channel = CHANNEL_HEARTBEAT))
+		if(target?.client && target != user)
+			SEND_SOUND(target, sound(sound_file, repeat = FALSE, wait = FALSE, volume = volume, channel = CHANNEL_HEARTBEAT))
+	else
+		// Normal mode: play to area
+		playsound(target, sound_file, volume, TRUE, -2, ignore_walls = FALSE)
+
+/// Helper to show messages respecting subtle mode
+/datum/sex_action/proc/show_sex_message(mob/living/carbon/human/user, mob/living/carbon/human/target, message)
+	if(!message)
+		return
+	
+	var/is_subtle = subtle || is_location_subtle(user, target) || is_discrete_subtle(user, target)
+	
+	if(is_subtle)
+		// Subtle mode: only send to involved parties
+		to_chat(user, message)
+		if(target && target != user)
+			to_chat(target, message)
+	else
+		// Normal mode: visible to everyone
+		user.visible_message(message)
+
 /datum/sex_action/proc/show_sex_effects(mob/living/carbon/human/user)
+	var/mob/living/carbon/human/target = null
+	// Try to find the target from an active session
+	for(var/datum/sex_session/session in GLOB.sex_sessions)
+		if(session.user == user)
+			target = session.target
+			break
+	
+	var/is_subtle = subtle || is_location_subtle(user, target) || is_discrete_subtle(user, target)
+	
+	if(is_subtle)
+		return // No visual effects in subtle mode or when inside someone
+	
 	for(var/i in 1 to rand(1, 3))
 		if(!user.cmode) // Combat mode
 			new /obj/effect/temp_visual/heart/sex_effects(get_turf(user))

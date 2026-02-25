@@ -241,6 +241,7 @@ export const SexSession = () => {
                     {leftColumn.map((action) => {
                       const isCurrentAction = data.current_action === action.type;
                       const isAvailable = data.can_perform.includes(action.type);
+                      const isSubtle = data.subtle_actions.includes(action.type);
 
                       return (
                         <Stack.Item key={action.type}>
@@ -249,6 +250,7 @@ export const SexSession = () => {
                               action={action}
                               isCurrentAction={isCurrentAction}
                               isAvailable={isAvailable}
+                              isSubtle={isSubtle}
                               onClick={() => onClickActionButton(action.type)}
                             />
                           </Box>
@@ -264,6 +266,7 @@ export const SexSession = () => {
                     {rightColumn.map((action) => {
                       const isCurrentAction = data.current_action === action.type;
                       const isAvailable = data.can_perform.includes(action.type);
+                      const isSubtle = data.subtle_actions.includes(action.type);
 
                       return (
                         <Stack.Item key={action.type}>
@@ -272,6 +275,7 @@ export const SexSession = () => {
                               action={action}
                               isCurrentAction={isCurrentAction}
                               isAvailable={isAvailable}
+                              isSubtle={isSubtle}
                               onClick={() => onClickActionButton(action.type)}
                             />
                           </Box>
