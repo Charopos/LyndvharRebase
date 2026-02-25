@@ -8,7 +8,7 @@
 	origin_default = /datum/virtue/origin/racial/underdark
 	origin = "the Underdark"
 	base_name = "Beastvolk"
-	desc = "Many comparisons have been made to the common moths in an attempt to describe this unique species. From the appetite for clothing to the disconcertingly insectoid appearance, the name 'Moth' is forever stamped onto the common vocabulary. The comparison, however, falls short on the matter of flight.<br>\"
+	desc = "Many comparisons have been made to the common moths in an attempt to describe this unique species. From the appetite for clothing to the disconcertingly insectoid appearance, the name Moth is forever stamped onto the common vocabulary. The comparison, however, falls short on the matter of flight.<br>"
 	
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS,HAIR)
 	possible_ages = ALL_NATURAL_AGES_LIST
