@@ -19,7 +19,7 @@
 /datum/customizer_choice/organ/penis/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/penis/penis_entry = entry
-	penis_entry.penis_size = sanitize_integer(penis_entry.penis_size, MIN_PENIS_SIZE, MAX_PENIS_SIZE, DEFAULT_PENIS_SIZE)
+	penis_entry.penis_size = sanitize_integer(penis_entry.penis_size, MIN_PENIS_SIZE, LARGEST_PENIS_SIZE, DEFAULT_PENIS_SIZE)
 
 /datum/customizer_choice/organ/penis/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -43,7 +43,7 @@
 			if(isnull(named_size))
 				return
 			var/new_size = PENIS_SIZES_BY_NAME[named_size]
-			penis_entry.penis_size = sanitize_integer(new_size, MIN_PENIS_SIZE, MAX_PENIS_SIZE, DEFAULT_PENIS_SIZE)
+			penis_entry.penis_size = sanitize_integer(new_size, MIN_PENIS_SIZE, LARGEST_PENIS_SIZE, DEFAULT_PENIS_SIZE)
 		if("functional")
 			penis_entry.functional = !penis_entry.functional
 
@@ -213,7 +213,7 @@
 /datum/customizer_choice/organ/testicles/validate_entry(datum/preferences/prefs, datum/customizer_entry/entry)
 	..()
 	var/datum/customizer_entry/organ/testicles/testicles_entry = entry
-	testicles_entry.ball_size = sanitize_integer(testicles_entry.ball_size, MIN_TESTICLES_SIZE, MAX_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
+	testicles_entry.ball_size = sanitize_integer(testicles_entry.ball_size, MIN_TESTICLES_SIZE, LARGEST_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
 
 /datum/customizer_choice/organ/testicles/imprint_organ_dna(datum/organ_dna/organ_dna, datum/customizer_entry/entry, datum/preferences/prefs)
 	..()
@@ -239,7 +239,7 @@
 			if(isnull(named_size))
 				return
 			var/new_size = TESTICLE_SIZES_BY_NAME[named_size]
-			testicles_entry.ball_size = sanitize_integer(new_size, MIN_TESTICLES_SIZE, MAX_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
+			testicles_entry.ball_size = sanitize_integer(new_size, MIN_TESTICLES_SIZE, LARGEST_TESTICLES_SIZE, DEFAULT_TESTICLES_SIZE)
 		if("virile")
 			testicles_entry.virility = !testicles_entry.virility
 

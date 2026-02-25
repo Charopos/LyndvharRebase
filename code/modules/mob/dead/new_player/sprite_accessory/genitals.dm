@@ -25,9 +25,9 @@
 
 	if(uses_size_sprites)
 		if(pp.erect_state == ERECT_STATE_HARD)
-			return "[icon_state]_2_[min(pp.penis_size, 3)]"
+			return "[icon_state]_2_[min(pp.penis_size, 5)]"
 		else
-			return "[icon_state]_1_[min(pp.penis_size, 3)]"
+			return "[icon_state]_1_[min(pp.penis_size, 5)]"
 	else
 		if(pp.erect_state == ERECT_STATE_HARD)
 			return "[icon_state]_2"
