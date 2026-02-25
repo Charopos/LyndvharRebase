@@ -20,7 +20,7 @@
 	var/brew_required = 48
 	var/current_brew = 0
 	var/max_brew = 96
-	var/chair_skill_level = 4
+	var/chair_skill_level = 0 //this is how hard it is to operate it, using med skill
 
 	var/static/list/brew_overlays = list(
 		"low" = "frankenbrew_low",
@@ -33,7 +33,7 @@
 	pixel_x = -8
 
 /obj/structure/chair/frankenstein/zizo
-	chair_skill_level = 2
+	chair_skill_level = 0 // there's no reason to have either of these at any skill requirement, it's just a skill grind check
 	current_brew = 48
 
 /obj/structure/chair/frankenstein/Initialize()
