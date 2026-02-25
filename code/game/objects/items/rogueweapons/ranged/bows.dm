@@ -80,8 +80,7 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 	name = "crude selfbow"
-	desc = "This roughly hewn selfbow is just a bit too little of everything. Too little length, \
-	too little poundage, too slow a shot."
+	desc = "This roughly hewn selfbow is just a bit too little of everything. Too little length, too little poundage, too slow a shot."
 	icon = 'icons/roguetown/weapons/misc32.dmi'
 	icon_state = "bow"
 	item_state = "bow"
@@ -266,8 +265,7 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 	name = "recurve bow"
-	desc = "A medium length composite bow of glued horn, wood, and sinew with good shooting \
-	characteristics."
+	desc = "A medium length composite bow of glued horn, wood, and sinew with good shooting characteristics."
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "recurve_bow"
 	force = 9
@@ -355,8 +353,7 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
 	name = "yew longbow"
-	desc = "A sturdy warbow made of a tillered yew stave. It's difficult to handle, but the \
-	power is worth the effort."
+	desc = "A sturdy warbow made of a tillered yew stave. It's difficult to handle, but the power is worth the effort."
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "longbow"
 	slot_flags = ITEM_SLOT_BACK

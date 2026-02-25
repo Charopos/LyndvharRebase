@@ -735,9 +735,7 @@
 /obj/item/clothing/head/roguetown/helmet/bronzegladiator
 	name = "bronze murmillo"
 	desc = "A bronze helmet that veils the wearer's face behind a perforated visor; a distant ancestor to both the sallet and sayovard, \
-	providing excellent coverage while ensuring one doesn't suffocate on their own adrenal huffs. </br>Out of all actorial labors, none surpass \
-	the reenactment of Ravox's duel against Graggar atop Ur-Syon's ruins - mythologized not as a tentacled star, but as a towering doppelganger-champion; \
-	sculpted by the Archdevil to be the inverse to all who stood for justice and chivalry."
+	providing excellent coverage while ensuring one doesn't suffocate on their own adrenal huffs."
 	armor = ARMOR_PLATE_BRONZE
 	max_integrity = ARMOR_INT_HELMET_HEAVY_BRONZE - 100
 	armor_class = ARMOR_CLASS_LIGHT
@@ -787,8 +785,7 @@
 /obj/item/rogueweapon/spear/bronze/winged
 	name = "bronze winged spear"
 	desc = "An antiquital staff, adorned with a winged bronze spearhead. The flared edges catch errant strikes and keep snarling foes from \
-	further impaling themselves in order to maul its wielder. </br>Scholars believe this particular type of polearm was made to counter Vheslynic \
-	seadaemons, during the now-mythologized Syonic era's collapse."
+	further impaling themselves in order to maul its wielder.
 	icon_state = "bronzewingedspear"
 	item_state = "bronzewingedspear"
 	wdefense = 6 //Functionally the same, but with +1 DEF.
@@ -804,7 +801,7 @@
 
 /obj/item/rogueweapon/spear/bronze/winged/strapless
 	desc = "An antiquital staff, adorned with a winged bronze spearhead. The flared edges catch errant strikes and keep snarling foes from further \
-	impaling themselves in order to maul its wielder. </br>Scholars believe this particular type of polearm was made to counter Vheslynic seadaemons, during the now-mythologized Syonic era's collapse. </br>This particular spear has a thin strap running along its grain, allowing it to be stowed without the need for a greatweapon strap."
+	impaling themselves in order to maul its wielder. </br>This particular spear has a thin strap running along its grain, allowing it to be stowed without the need for a greatweapon strap."
 	slot_flags = ITEM_SLOT_BACK //Ditto.
 	equip_delay_self = 2 SECONDS
 	unequip_delay_self = 2 SECONDS
@@ -969,7 +966,7 @@
 
 /obj/item/rogueweapon/shield/bronze/great
 	name = "hoplon greatshield"
-	desc = "A heavy shield, taller and thicker than most of their contemporaries. It has survived the Calamity, endured the Apotheosis, and blunted the Sundering; and for one final time, it shall ward this dying world from a crueler fate."
+	desc = "A heavy shield, taller and thicker than most of their contemporaries. It has survived thus far, and for one final time, it shall ward its user until the end."
 	icon_state = "bronzegreatshield"
 	item_state = "bronzegreatshield"
 	max_integrity = 360 //Highest integrity and passive projectile-blocking chance of most non-unique shields.

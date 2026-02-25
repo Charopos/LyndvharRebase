@@ -75,7 +75,7 @@
 	dreams = list(
 		"...the bog becomes more tolerable when it is not your foot that has to tread upon it. It took some coin, but your travels are much smoother atop your trustworthy steed...",
 		"...the landsknecht thrusts their pole-arm at your steed and it bucks wildly. Lurching forwards, you interpose your shield to the weapon and feel your balance shift. Flexing every muscle in your core and legs, you barely manage to remain mounted...",
-		"...the tourney's onlookers cheer as you trot out onto the grounds, mounted atop a noble steed. A 'fogbeast', they call it - taller and thicker than the common saiga, draped in a caparison of your own design. Your opponent stares you down from across the circuit; a knight in blackened plate, who's steed is nothing more than bone-and-sinew...",
+		"...the tourney's onlookers cheer as you trot out onto the grounds, mounted atop a noble steed. A 'fogbeast', they call it - taller and thicker than the common saiga, draped in a caparison of your own design. Your opponent stares you down from across the circuit; a knight in blackened plate, whose steed is nothing more than bone-and-sinew...",
 		"...the forest behind you collapses into a raging inferno, just as your steed leaps forth. With choked lungs and burning eyes, you cling tightly to the reins and mutter a prayer; yet against all the odds, the saiga sticks the landing. Welting eyes unpucker, graced with the dawn's cool breeze and the sight of your steed's continued galloping..."
 	)
 	expert_name = "Rider"
@@ -88,7 +88,7 @@
 	dreams = list(
 		"...offstage, anxiety grips you, sweat beading on your brow. But onstage, you are as still as a winter night, your voice steady and clear. Curiosity pulls your audience in as you begin to sing...",
 		"...you raise your hands to the strings and draw the crowds attention unto yourself. The music comes easily out of you, and your lyre is like a second voice...",
-		"...your audience moves under the music like grass against the wind. With a voice bold and boisterous, you sing of the comet's first coming, each note soaring proudly into the air...",
+		"...your audience moves under the music like grass against the wind. With a voice bold and boisterous, you sing of the Naexidor's first coming, each note soaring proudly into the air...",
 		"...the heat of the bonfire causes sweat to drip down your face. The crowd moves with fervor, their chants rising in rhythm with each beat. You can no longer tell if they follow your tempo or whether your hands obey the beating of their hearts. Tonight, the drum and their spirits thunder as one..."
 	)
 	expert_name = "Musician"

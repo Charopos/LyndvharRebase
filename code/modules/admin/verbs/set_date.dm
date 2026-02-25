@@ -24,7 +24,7 @@
 			"4 - Astrata (June)",
 			"5 - Xylix (July)",
 			"6 - Malum (August)",
-			"7 - Syonfall (September)",
+			"7 - Naexidor (September)",
 			"8 - Pestra (October)",
 			"9 - Necra (November)",
 			"10 - Noc (December)",

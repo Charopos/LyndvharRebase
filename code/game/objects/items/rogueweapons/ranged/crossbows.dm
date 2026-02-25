@@ -257,7 +257,7 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/aalloy
 	name = "ancient crossbow"
-	desc = "A deadly weapon from another tyme, which shoots a bolt with terrific power. Unlike the common bow, it uses a sophisticated mechanism to renock - and retain - its half-length bolts; a matter that relies more on raw strength than dexterity to master. </br>Once, these mechanical delights bristled the arms of Zaelorian's ancient empire; now, it shudders in the grasp of Zizo's deathless crusade."
+	desc = "A deadly weapon from another tyme, which shoots a bolt with terrific power. Unlike the common bow, it uses a sophisticated mechanism to renock - and retain - its half-length bolts; a matter that relies more on raw strength than dexterity to master."
 	icon = 'icons/roguetown/weapons/misc32.dmi'
 	icon_state = "ancientcrossbow0"
 	item_state = "ancientcrossbow"
@@ -265,7 +265,7 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/light
 	name = "stockless crossbow"
-	desc = "A deadly weapon that shoots a bolt with terrific power. The stock has been whittled down into a 'cabbit's foot'-styled grip; fletchable on the move without compromising the lethality of its bolts. Without a stock to bolster one's draw-strength, however, it means preparing each shot is more laborious than the last. </br>Rockhill's wytch-hunting folk heroes were oft-mythed to wield two of these at once."
+	desc = "A deadly weapon that shoots a bolt with terrific power. The stock has been whittled down into a 'cabbit's foot'-styled grip; fletchable on the move without compromising the lethality of its bolts. Without a stock to bolster one's draw-strength, however, it means preparing each shot is more laborious than the last."
 	icon = 'icons/roguetown/weapons/misc32.dmi'
 	icon_state = "crossbowshort0"
 	item_state = "crossbowshort"
@@ -321,7 +321,7 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/heavy
 	name = "siegebow"
-	desc = "A heavier weight crossbow - the basis of a mounted ballista, made fit for handheld usage. Integrated just beneath the stock is a windlass mechanism, necessary to surmount the siegebow's titanic draw-strength. It loads heavier, full-length bolts; purpose-made to pulverize. </br>Assembled in southern Lyndhardtia, championed by Valoria, and unfamiliar to the forests of Lyndvhar."
+	desc = "A heavier weight crossbow -- the basis of a mounted ballista, made fit for handheld usage. Integrated just beneath the stock is a windlass mechanism, necessary to surmount the siegebow's titanic draw-strength. It loads heavier, full-length bolts: purpose-made to pulverize. </br>Assembled in southern Lyndhardtia, championed by Valoria, and unfamiliar to the forests of Lyndvhar."
 	icon = 'icons/roguetown/weapons/misc32.dmi'
 	icon_state = "heavybow0"
 	item_state = "heavybow"
@@ -378,7 +378,7 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/heavy/paalloy
 	name = "ancient siegebow"
-	desc = "A heavier weight crossbow from another tyme - the basis of a mounted ballista, made fit for handheld usage. Integrated just beneath the stock is a windlass mechanism, necessary to surmount the siegebow's titanic draw-strength. It loads heavier, full-length bolts; purpose-made to pulverize. </br>'Rudmarsch's walls broke beneath the volley, and Her sickness petered through the cracks..'"
+	desc = "A heavier weight crossbow from another tyme - the basis of a mounted ballista, made fit for handheld usage. Integrated just beneath the stock is a windlass mechanism, necessary to surmount the siegebow's titanic draw-strength. It loads heavier, full-length bolts; purpose-made to pulverize."
 	icon_state = "ancientheavybow0"
 	item_state = "ancientheavybow"
 	max_integrity = 130

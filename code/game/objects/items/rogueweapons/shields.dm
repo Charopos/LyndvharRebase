@@ -328,7 +328,7 @@
 
 /obj/item/rogueweapon/shield/tower
 	name = "tower shield"
-	desc = "A gigantic, iron reinforced shield that covers the entire body, a design-copy of the Aasimar shields of an era gone by."
+	desc = "A gigantic, iron-reinforced shield that covers the entire body, a design-copy of the Aasimar shields of an era gone by."
 	icon_state = "shield_tower"
 	force = 6
 	throwforce = 10
@@ -416,7 +416,7 @@
 
 /obj/item/rogueweapon/shield/tower/metal/gold
 	name = "golden shield"
-	desc = "A resplendant kite shield, assembled from six golden plates that've been hooked together by a glimmering holy sigil. Nobility may be fragile, but - so long as its grip remains steadfast - none could ever hope to sever its weakest link."
+	desc = "A resplendant kite shield, assembled from six golden plates that've been hooked together by a glimmering holy sigil. Nobility may be fragile, but -- so long as its grip remains steadfast -- none could ever hope to sever its weakest link."
 	icon_state = "goldshield"
 	force = 25
 	throwforce = 35
@@ -467,7 +467,7 @@
 
 /obj/item/rogueweapon/shield/tower/metal/alloy
 	name = "decrepit shield"
-	desc = "A hefty tower shield, wrought from frayed bronze. Looped with dried kelp and reeking of saltwater, you'd assume that this had been fished out from the remains of a long-sunken warship.. alongside its former legionnaire."
+	desc = "A hefty tower shield, wrought from frayed bronze. Looped with dried kelp and reeking of saltwater, you'd assume that this had been fished out from the remains of a long-sunken warship... alongside its former legionnaire."
 	max_integrity = 120
 	wdefense = 9
 	icon_state = "ancientsh"
@@ -478,7 +478,7 @@
 
 /obj/item/rogueweapon/shield/tower/metal/palloy
 	name = "ancient shield"
-	desc = "A venerable scutum, plated with polished gilbranze. An undying legionnaire's closest friend; that which rebukes arrow-and-bolt alike with unphasing prejudice. It is a reminder - one of many - that Her progress cannot be stopped."
+	desc = "A venerable scutum, plated with polished gilbranze. An undying legionnaire's closest friend; that which rebukes arrow-and-bolt alike with unphasing prejudice. It is a reminder -- one of many -- that Her progress cannot be stopped."
 	icon_state = "ancientsh"
 	smeltresult = /obj/item/ingot/purifiedaalloy
 
@@ -567,8 +567,7 @@
 
 /obj/item/rogueweapon/shield/buckler/palloy
 	name = "ancient buckler"
-	desc = "An object once before its time, now out of it. The artisan's hammerstrikes are still visible in the mottled surface, yet \
-	the encroach of rust and rot threatens even this memory."
+	desc = "An object once before its time, now out of it. The artisan's hammerstrikes are still visible in the mottled surface, yet the encroach of rust and rot threatens even this memory."
 	icon_state = "ancient_buckler"
 	max_integrity = 85
 	smeltresult = /obj/item/ingot/purifiedaalloy
@@ -642,7 +641,7 @@
 
 /obj/item/rogueweapon/shield/bronze
 	name = "hoplon shield"
-	desc = "The finest companion to a javelin, gladius, and warclub; a thick-yet-sturdy shield of bronze."
+	desc = "The finest companion to a javelin, gladius, and warclub: a thick-yet-sturdy shield of bronze."
 	icon_state = "bronzeshield"
 	force = 25
 	throwforce = 30 // DO NOT GIVE ANYTHING; BUT TAKE FROM THEM.. EVERYTHING!
@@ -757,7 +756,7 @@
 
 /obj/item/rogueweapon/shield/tower/metal/gold/king
 	name = "\"Bulwarke\""
-	desc = "A resplendant kite shield, assembled from six golden plates that've been hooked together by a glimmering holy sigil. Mounted in its core is a shard of Astrata's divinity authority, crackling with the strength to violently repulse man-and-monster alike. ‎</br>‎‎ </br>'Tyranny and honor! Glory to thine kingdome-come! Let thine will be done!'"
+	desc = "A resplendant kite shield, assembled from six golden plates that've been hooked together by a glimmering holy sigil. Mounted in its core is a shard of Astrata's divine authority, crackling with the strength to violently repulse man-and-monster alike. ‎</br>‎‎ </br>'Tyranny and honor! Glory to thine kingdome-come! Let thine will be done!'"
 	icon_state = "goldshieldking"
 	max_integrity = 350
 	var/smoke_path = /obj/effect/particle_effect/smoke/transparent

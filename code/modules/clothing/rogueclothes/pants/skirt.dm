@@ -39,13 +39,13 @@
 
 /obj/item/clothing/under/roguetown/skirt/desert
 	name = "desert skirt"
-	desc = "At least it cools me off, but what of the modesty?"
+	desc = "It'll at least keep you cool, but what of the modesty?"
 	icon_state = "desertskirt"
 	item_state = "desertskirt"
 
 /obj/item/clothing/under/roguetown/skirt/courtphysician
 	name = "sanguine skirt"
-	desc = "An elegant velvet skirt that does you no good when running to someones aid."
+	desc = "An elegant velvet skirt... it won't do you any good when running to someones aid, though."
 	icon_state = "docskirt"
 	item_state = "docskirt"
 	icon = 'icons/roguetown/clothing/special/courtphys.dmi'

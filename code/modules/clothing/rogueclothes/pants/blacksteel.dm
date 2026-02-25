@@ -1,6 +1,6 @@
 /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
 	name = "blacksteel plate chausses"
-	desc = "Tasseted leggings of blacksteel, adorned with hooks to suspend both sabatons-and-faulds alike. Besilken trousers shepherd the maille, leaving the royal flesh unmarred by even the slightest of chafes-or-bruises. May its wearer never kneel again; be it in surrender or death."
+	desc = "Tasseted leggings of blacksteel, adorned with hooks to suspend both sabatons-and-faulds alike. Besilken trousers shepherd the maille, leaving the flesh unmarred by even the slightest of chafes-or-bruises. May its wearer never kneel again; be it in surrender or death."
 	icon_state = "bplatelegs"
 	item_state = "bplatelegs"
 

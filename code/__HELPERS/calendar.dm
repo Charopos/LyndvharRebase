@@ -37,7 +37,6 @@
 
 // Returns the current IC time as a string in the format [DAYS] ᛉ HH:MM ([Time Of Day])
 /proc/get_current_ic_time_as_string()
-	// Credit to Zydras for Syon's Dae for Saturday
 	// These are the day names that can be referred to sensically ICly
 	// By using secular names rather than IRL deity like Thule, Saturn, Tiw (Tyr), it avoids us having to explain a non-existent
 	// Norse deity while remaining phonetically close to the original English name 
@@ -83,7 +82,7 @@
 			return "Naexidor"
 		if(8)
 			// Middle / End of harvesting seasons for some crops. It make sense that the goddess of rot / decay follows
-			// And after Syonfall comes the gradual move to winter
+			// And after Naexidor fall comes the gradual move to winter
 			return "Pestra" // October
 		if(9)
 			// A month dedicated to the goddess of death, before the sun's rebirth and after the goddess of rot

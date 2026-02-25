@@ -18,6 +18,7 @@
 
 /obj/item/clothing/under/roguetown/trou/leather
 	name = "leather trousers"
+	desc = ""
 	armor = ARMOR_LEATHER
 	icon_state = "leathertrou"
 	max_integrity = ARMOR_INT_LEG_LEATHER
@@ -30,12 +31,13 @@
 
 /obj/item/clothing/under/roguetown/trou/leather/mourning
 	name = "mourning trousers"
+	desc = ""
 	icon_state = "leathertrou"
 	color = "#151615"
 
 /obj/item/clothing/under/roguetown/trou/shadowpants
 	name = "silk tights"
-	desc = "Form-fitting legwear. Almost too form-fitting."
+	desc = "Form-fitting legwear... almost too form-fitting."
 	icon_state = "shadowpants"
 	allowed_race = NON_DWARVEN_RACE_TYPES
 
@@ -47,7 +49,7 @@
 
 /obj/item/clothing/under/roguetown/trou/apothecary
 	name = "apothecary trousers"
-	desc = "Heavily padded trousers. They're stained by countless herbs."
+	desc = "Heavily padded trousers. They've been stained by countless herbs and concoctions."
 	icon_state = "apothpants"
 	item_state = "apothpants"
 
@@ -106,7 +108,7 @@
 
 /obj/item/clothing/under/roguetown/trou/leather/courtphysician
 	name = "sanguine trousers"
-	desc = "A pair of formal trousers, clean to the best of the servant's ability, but some bloodstains are impossible to rid them of"
+	desc = "A pair of formal trousers. Cleaned to the best of the servant's abilities, but some bloodstains are impossible to get rid of."
 	icon_state = "docpants"
 	salvage_result = /obj/item/natural/silk
 	item_state = "docpants"

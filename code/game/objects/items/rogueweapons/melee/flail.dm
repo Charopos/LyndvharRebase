@@ -160,7 +160,7 @@
 
 /obj/item/rogueweapon/flail/sflail/paflail
 	name = "ancient flail"
-	desc = "A spiked ball of polished gilbranze, chained to a reinforced handle. They say that His children worshipped the flail above all else, for its twirls replicated the Comet Syon's blazing flights."
+	desc = "A spiked ball of polished gilbranze, chained to a reinforced handle. Age makes it creak as it spins and cascades, one must hope that it lasts longer than one's enemies."
 	icon_state = "aflail"
 	smeltresult = /obj/item/ingot/aaslag
 
@@ -244,7 +244,7 @@
 
 /obj/item/rogueweapon/flail/sflail/psyflail/relic
 	name = "Consecratia"
-	desc = "The weight of His anguish, His pain, His hope and His love for humenkind - all hanging on the ornamental silver-steel head chained to this arm. <br><br>A declaration of love for all that Psydon lives for, and a crushing reminder to the arch-nemesis that they will not triumph as long as He endures."
+	desc = "The weight of His anguish, His pain, His hope and His love for His flock -- all hanging on the ornamental silver-steel head chained to this arm. <br><br>A declaration of love for all that Psydon lives for, and a crushing reminder to the arch-nemesis that they will not triumph as long as He endures."
 	icon_state = "psymorningstar"
 	possible_item_intents = list(/datum/intent/flail/strike, /datum/intent/flail/smash/ranged, /datum/intent/flail/bash)
 
@@ -297,7 +297,7 @@
 
 /obj/item/rogueweapon/flail/peasantwarflail/iron
 	name = "greatflail"
-	desc = "The lucerne's ungaitly cousin, favoring a 'ball-and-chain' design that - once spun - can devastate anything caught in its way; a trait that makes it dearly beloved by both peasantry and knights alike."
+	desc = "The mace's ungaitly cousin, favoring a 'ball-and-chain' design that - once spun - can devastate anything caught in its way; a trait that makes it dearly beloved by both peasantry and knights alike."
 	icon_state = "greatflail"
 	wdefense = 6
 	minstr = 12

@@ -2,7 +2,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/blacksteel/modern
 	name = "blacksteel plate armor"
-	desc = "A magnificent set of blacksteel plate armor; the greatest triumph of sixteenth-century metallurgy, forged from the rarest of manmade alloys. It befits only the presence of Beowricke's most renowned - be they a hero, a lord, or a monster."
+	desc = "A magnificent set of blacksteel plate armor; the greatest triumph of modern metallurgy, forged from the rarest of manmade alloys. It befits only the presence of Beowricke's most renowned - be they a hero, a lord, or a monster."
 	icon_state = "bplate"
 	item_state = "bplate"
 

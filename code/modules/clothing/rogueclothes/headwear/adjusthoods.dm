@@ -110,7 +110,7 @@
 
 /obj/item/clothing/head/roguetown/roguehood/shalal/hijab
 	name = "hijab"
-	desc = "Flowing like blood from a wound, this tithe of cloth-and-silk spills out to the shoulders. It carries the telltale mark of Khaliphate stitcheries."
+	desc = "Flowing like blood from a wound, this tithe of cloth-and-silk spills out to the shoulders. It carries the telltale mark of Khaliphate tailoring."
 	item_state = "hijab"
 	icon_state = "hijab"
 	hidesnoutADJ = FALSE
@@ -179,7 +179,7 @@
 
 /obj/item/clothing/head/roguetown/roguehood/abyssor
 	name = "depths hood"
-	desc = "A hood worn by the followers of Abyssor, with a unique, coral-shaped mask. How do they even see out of this?"
+	desc = "A hood worn by the followers of Abyssor, with a unique, coral-shaped mask... how does one even see out of this?"
 	color = null
 	icon_state = "abyssorhood"
 	item_state = "abyssorhood"
@@ -377,7 +377,7 @@
 
 /obj/item/clothing/head/roguetown/roguehood/studded
 	name = "studded hood"
-	desc = "A padded hood splinted across creating a cocooon for whoever wears it - won't protect your face however."
+	desc = "A padded hood splinted across, creating a cocooon for whoever wears it -- it won't protect your face, however."
 	icon_state = "studhood"
 	item_state = "studhood"
 	body_parts_covered = NECK | HEAD | HAIR
@@ -399,7 +399,7 @@
 
 /obj/item/clothing/head/roguetown/roguehood/studded/retinue //For skirmisher
 	name = "guard studded hood"
-	desc = "A padded hood splinted across creating a cocooon for whoever wears it - won't protect your face however. This one bears the heraldry of the local lord."
+	desc = "A padded hood splinted across, creating a cocooon for whoever wears it -- it won't protect your face, however. This one bears the heraldry of the local lord."
 	detail_tag = "_detail"
 	color = CLOTHING_AZURE
 	detail_color = CLOTHING_WHITE
