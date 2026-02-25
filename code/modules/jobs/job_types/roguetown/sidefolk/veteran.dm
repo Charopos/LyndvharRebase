@@ -13,7 +13,7 @@
 	allowed_ages = list(AGE_OLD)
 	advclass_cat_rolls = list(CTAG_VETERAN = 20)
 	display_order = JDO_VETERAN
-	whitelist_req = TRUE
+	whitelist_req = FALSE
 	give_bank_account = 35
 	min_pq = 0
 	max_pq = null

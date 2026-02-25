@@ -15,7 +15,7 @@
 		Out of desperation, you followed the ways of Pestra and managed to be cured. \
 		Now you serve the city ensuring the good health of those inhabiting the walls."
 	outfit = /datum/outfit/job/roguetown/physician
-	whitelist_req = TRUE
+	whitelist_req = FALSE
 	advclass_cat_rolls = list(CTAG_COURTPHYS = 2)
 
 	give_bank_account = TRUE

@@ -13,7 +13,7 @@
 	display_order = JDO_HAND
 	selection_color = JCOLOR_COURTIER
 	tutorial = "You owe your entire life to the Viscount. Once perhaps a childhood friend you are one of the most important people within the city itself, second only to the Viscount. You have played spymaster and confidant to the noble family for so long that you are a veritable vault of intrigue, something you exploit with potent conviction at every opportunity. Let no man ever forget into whose ear you whisper. You've killed more men with those lips than any blademaster could ever claim to."
-	whitelist_req = TRUE
+	whitelist_req = FALSE
 	give_bank_account = TRUE
 	noble_income = 22
 	min_pq = 0
