@@ -1149,7 +1149,8 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 	if(whitelisted != 2)
 		return whitelisted
 	else
-		if(BC_IsKeyWhitelisted(ckey))
+		// uhh checks border control whitelist and config whitelist idk i was told to put this here
+		if(BC_IsKeyWhitelisted(ckey) || check_whitelist(ckey))
 			whitelisted = 1
 		else
 			whitelisted = 0
