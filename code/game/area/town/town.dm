@@ -68,6 +68,7 @@
 	converted_type = /area/rogue/outdoors/exposed/magiciantower
 	keep_area = TRUE
 	detail_text = DETAIL_TEXT_STUDY
+	ceiling_protected = TRUE
 
 /area/rogue/outdoors/exposed/magiciantower
 	icon_state = "magiciantower"
@@ -110,6 +111,7 @@
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/bath
+	ceiling_protected = TRUE
 
 /area/rogue/outdoors/exposed/bath
 	icon_state = "bath"
@@ -142,6 +144,7 @@
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
 	keep_area = TRUE
 	cell_area = TRUE
+	ceiling_protected = TRUE
 
 /area/rogue/indoors/town/tavern
 	name = "tavern"
@@ -191,6 +194,7 @@
 	droning_sound_dusk = null
 	droning_sound_night = null
 	first_time_text = "THE CRYPT OF THE TEN"
+	ceiling_protected = TRUE
 
 /area/rogue/indoors/town/fire_chamber
 	name = "incinerator"
@@ -205,6 +209,7 @@
 	icon_state = "chapel"
 	first_time_text = "THE VALORIAN INQUISITION"
 	detail_text = DETAIL_TEXT_INQUISITION_HQ
+	ceiling_protected = TRUE
 
 /area/rogue/indoors/inq/office
 	name = "The Inquisitor's Office"
@@ -228,6 +233,8 @@
 	name = "vault"
 	icon_state = "vault"
 	keep_area = TRUE
+	ceiling_protected = TRUE
+
 /area/rogue/indoors/town/entrance
 	first_time_text = "Roguetown"
 	icon_state = "entrance"
@@ -241,6 +248,7 @@
 	first_time_text = "MAKERS GUILD QUARTER"
 	converted_type = /area/rogue/outdoors/exposed/dwarf
 	detail_text = DETAIL_TEXT_GUILD_OF_CRAFT
+	ceiling_protected = TRUE
 
 /area/rogue/outdoors/exposed/dwarf
 	icon_state = "dwarf"
