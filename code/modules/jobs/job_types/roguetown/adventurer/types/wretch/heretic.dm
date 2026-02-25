@@ -207,7 +207,7 @@
 	H.cmode_music = 'sound/music/cmode/antag/combat_cutpurse.ogg'
 	if(H.mind)
 		H.mind?.current.faction += "[H.name]_faction"
-		var/weapons = list("Rapier", "Sabre", "Bow", "Crossbow", "Slurbow")
+		var/weapons = list("Rapier", "Sabre", "Bow", "Crossbow")
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 		H.set_blindness(0)
 		switch(weapon_choice)
@@ -236,14 +236,6 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_JOURNEYMAN, TRUE) //have to specifically go into bows/crossbows unlike outlaw
 				beltr = /obj/item/quiver/bolts
 				backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
-				H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_EXPERT, TRUE)
-				beltl = /obj/item/rogueweapon/scabbard/sheath
-				if(HAS_TRAIT(H, TRAIT_PSYDONIAN_GRIT))
-					l_hand = /obj/item/rogueweapon/huntingknife/idagger/silver/psydagger
-			if("Slurbow")
-				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_JOURNEYMAN, TRUE) // I think this is a very good alternative to the crossbow, given that this role involves mobile combat.
-				beltr = /obj/item/quiver/bolts
-				backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow
 				H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_EXPERT, TRUE)
 				beltl = /obj/item/rogueweapon/scabbard/sheath
 				if(HAS_TRAIT(H, TRAIT_PSYDONIAN_GRIT))

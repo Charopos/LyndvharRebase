@@ -3,6 +3,8 @@ export interface SexAction {
   type: string;
   description: string;
   requires_grab: boolean;
+  subtle: boolean;
+  discrete: boolean;
 }
 
 export interface Participant {
@@ -36,6 +38,9 @@ export interface SexSessionData {
 
   // Which actions can be performed
   can_perform: string[];
+  
+  // Which actions are currently subtle (updates with force/speed)
+  subtle_actions: string[];
 
   // Session info
   session_name: string;

@@ -27,11 +27,11 @@
 
 /datum/sex_action/lick_ears/on_start(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
-	user.visible_message(span_warning("[user] places [user.p_their()] tongue against [target] ear..."))
+	show_sex_message(user, target,(span_warning("[user] places [user.p_their()] tongue against [target] ear...")))
 
 /datum/sex_action/lick_ears/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
-	user.visible_message(span_warning("[user] stops licking [target]'s ear ..."))
+	show_sex_message(user, target,(span_warning("[user] stops licking [target]'s ear ...")))
 
 /datum/sex_action/lick_ears/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
@@ -39,10 +39,10 @@
 
 	if(iself(target) || ishalfelf(target) || isdarkelf(target) || ishalforc(target) || isgoblinp(target))
 		sex_session.perform_sex_action(target, 8, 0, TRUE)
-		user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] licks [target]'s ear... [target.p_their()] weakness..."))
+		show_sex_message(user, target,(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] licks [target]'s ear... [target.p_their()] weakness...")))
 	else
 		sex_session.perform_sex_action(target, 1, 0, TRUE)
-		user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] licks [target]'s ear..."))
+		show_sex_message(user, target,(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] licks [target]'s ear...")))
 
 	sex_session.handle_passive_ejaculation(target)
 

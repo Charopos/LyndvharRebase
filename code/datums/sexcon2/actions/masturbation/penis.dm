@@ -26,13 +26,13 @@
 
 /datum/sex_action/masturbate/penis/on_start(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
-	user.visible_message(span_warning("[user] starts jerking off..."))
+	show_sex_message(user, target,(span_warning("[user] starts jerking off...")))
 
 /datum/sex_action/masturbate/penis/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
 	var/chosen_verb = pick(list("jerks [user.p_their()] cock", "strokes [user.p_their()] cock", "masturbates", "jerks off"))
-	user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] [chosen_verb]..."))
-	playsound(user, 'sound/misc/mat/fingering.ogg', 30, TRUE, -2, ignore_walls = FALSE)
+	show_sex_message(user, target,(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] [chosen_verb]...")))
+	play_sex_sound(user, target, 'sound/misc/mat/fingering.ogg', 30)
 
 	do_onomatopoeia(user)
 
@@ -42,7 +42,7 @@
 
 /datum/sex_action/masturbate/penis/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
-	user.visible_message(span_warning("[user] stops jerking off."))
+	show_sex_message(user, target,(span_warning("[user] stops jerking off.")))
 
 /datum/sex_action/masturbate/penis/lock_sex_object(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()

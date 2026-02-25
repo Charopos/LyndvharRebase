@@ -8,11 +8,12 @@ interface ActionButtonProps {
   };
   isCurrentAction: boolean;
   isAvailable: boolean;
+  isSubtle: boolean;
   onClick: () => void;
 }
 
 export const ActionButton = (props: ActionButtonProps) => {
-  const { action, isCurrentAction, isAvailable, onClick } = props;
+  const { action, isCurrentAction, isAvailable, isSubtle, onClick } = props;
 
   const handleClick = () => {
     // Don't allow clicking disabled buttons (unless it's the current action)
@@ -28,6 +29,8 @@ export const ActionButton = (props: ActionButtonProps) => {
       ? { color: '#5e5959', opacity: 0.7, cursor: 'default' }
       : { color: 'var(--color-label)' };
 
+  const displayName = isSubtle ? `(S) ${action.name}` : action.name;
+
   return (
     <Button
       fluid
@@ -35,7 +38,7 @@ export const ActionButton = (props: ActionButtonProps) => {
       onClick={handleClick}
       style={buttonStyle}
     >
-      {action.name}
+      {displayName}
     </Button>
   );
 };

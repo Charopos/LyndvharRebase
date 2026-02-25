@@ -206,3 +206,10 @@
 	var/toggle_delay = 1 SECONDS
 	/// Toggle timer for Specials, or really anything else that you don't want input spam to instantly cycle through.
 	var/toggle_timer
+
+	/// Reference to the object containing this mob
+	var/container = null
+	/// Counter for resist attempts when stored inside a container
+	var/strugglecount = 0
+	/// Timer reference for struggle decay
+	var/struggle_decay_timer = null

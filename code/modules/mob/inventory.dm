@@ -318,6 +318,18 @@
 	if(atkswinging)
 		stop_attack(FALSE)
 	if(I)
+		// Check if anyone is stored inside the unequipper (with this item as their container)
+		for(var/mob/living/M in src.contents)
+			if(M.container == I)
+				visible_message(span_warning("[M] tumbles out as [src] removes [I]!"))
+				M.clear_fullscreen("contained")
+				M.forceMove(get_turf(src))
+				M.Knockdown(90)
+				M.container = null
+				M.strugglecount = 0
+				if(M.struggle_decay_timer)
+					deltimer(M.struggle_decay_timer)
+					M.struggle_decay_timer = null
 		if(client)
 			client.screen -= I
 		I.layer = initial(I.layer)

@@ -480,7 +480,7 @@
 					should_update = TRUE
 
 		if("Breast Size")
-			var/list/breast_sizes = list("Flat", "Slight", "Small", "Moderate", "Large", "Generous", "Heavy", "Massive", "Heaping", "Obscene")
+			var/list/breast_sizes = list("Flat", "Slight", "Small", "Moderate", "Large", "Enormous")
 			var/new_size = input(H, "Choose your breast size", "Breast Size") as null|anything in breast_sizes
 			if(new_size)
 				var/obj/item/organ/breasts/breasts = H.getorganslot(ORGAN_SLOT_BREASTS)
@@ -497,23 +497,15 @@
 							size_num = 3
 						if("Large")
 							size_num = 4
-						if("Generous")
+						if("Enormous")
 							size_num = 5
-						if("Heavy")
-							size_num = 6
-						if("Massive")
-							size_num = 7
-						if("Heaping")
-							size_num = 8
-						if("Obscene")
-							size_num = 9
 
 					breasts.breast_size = size_num
 					H.update_body()
 					should_update = TRUE
 
 		if("Penis Size")
-			var/list/penis_sizes = list("small", "average", "large")
+			var/list/penis_sizes = list("small", "average", "large", "huge", "massive")
 			var/new_size = input(H, "Choose your penis size", "Penis Size") as null|anything in penis_sizes
 			if(new_size)
 				var/obj/item/organ/penis/penis = H.getorganslot(ORGAN_SLOT_PENIS)
@@ -526,13 +518,17 @@
 							size_num = 2
 						if("large")
 							size_num = 3
+						if("huge")
+							size_num = 4
+						if("massive")
+							size_num = 5
 
 					penis.penis_size = size_num
 					H.update_body()
 					should_update = TRUE
 
 		if("Testicle Size")
-			var/list/testicle_sizes = list("small", "average", "large")
+			var/list/testicle_sizes = list("small", "average", "large", "huge", "massive")
 			var/new_size = input(H, "Choose your testicle size", "Testicle Size") as null|anything in testicle_sizes
 			if(new_size)
 				var/obj/item/organ/testicles/testicles = H.getorganslot(ORGAN_SLOT_TESTICLES)
@@ -545,6 +541,10 @@
 							size_num = 2
 						if("large")
 							size_num = 3
+						if("huge")
+							size_num = 4
+						if("massive")
+							size_num = 5
 
 					testicles.ball_size = size_num
 					H.update_body()

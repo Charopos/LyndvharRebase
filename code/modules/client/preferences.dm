@@ -107,7 +107,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/shake = TRUE
 	var/sexable = FALSE
 	var/compliance_notifs = TRUE
-
+	var/kneestinger = FALSE
 	var/list/custom_names = list()
 	var/preferred_ai_core_display = "Blue"
 	var/prefered_security_department = SEC_DEPT_RANDOM
@@ -480,7 +480,11 @@ GLOBAL_LIST_EMPTY(chosen_names)
 					dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_GENDER]'>Always Random Bodytype: [(randomise[RANDOM_GENDER]) ? "Yes" : "No"]</A>"
 					dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_GENDER_ANTAG]'>When Antagonist: [(randomise[RANDOM_GENDER_ANTAG]) ? "Yes" : "No"]</A>"
 
-			dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><BR>"
+			if(AGE_IMMORTAL in pref_species.possible_ages)
+				dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[AGE_IMMORTAL]</a><BR>"
+			else
+				dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><BR>"
+			
 
 //			dat += "<br><b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a>"
 //			if(randomise[RANDOM_BODY] || randomise[RANDOM_BODY_ANTAG]) //doesn't work unless random body
@@ -593,11 +597,6 @@ GLOBAL_LIST_EMPTY(chosen_names)
 			dat += "<br><b>Descriptors:</b> <a href='?_src_=prefs;preference=descriptors;task=menu'>Change</a>"
 
 			dat += "<BR>"
-			if(AGE_IMMORTAL in pref_species.possible_ages)
-				dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[AGE_IMMORTAL]</a><BR>"
-			else
-				dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><BR>"
-			
 			dat += "<b>Loadout:</b> <a href='?_src_=prefs;preference=open_loadout;task=input'>Open Menu</a><br>"
 			
 			// Rumours / Gossip
@@ -1692,6 +1691,11 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 				if("name")
 					var/new_name = tgui_input_text(user, "The name of this vessel?", "IDENTITY", encode = FALSE)
 					if(new_name)
+						if(new_name == "KNEESTINGERED" || kneestinger == FALSE)
+							kneestinger = TRUE
+							to_chat(user, "<span class='notice'>I Blame Merky For This.</span>")
+							SEND_SOUND(user, sound('sound/XULU.ogg'))
+							new_name = null
 						new_name = reject_bad_name(new_name)
 						if(new_name)
 							real_name = new_name
