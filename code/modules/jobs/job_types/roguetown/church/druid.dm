@@ -20,7 +20,7 @@
 	round_contrib_points = 2
 	cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg' // this was originally druid music. i think its ok to have druids share it w/ wardens.
 
-	job_traits = list(TRAIT_SEEDKNOW, TRAIT_OUTDOORSMAN, TRAIT_RITUALIST, TRAIT_HOMESTEAD_EXPERT, TRAIT_WOODWALKER, TRAIT_WOODSMAN)
+	job_traits = list(TRAIT_SEEDKNOW, TRAIT_OUTDOORSMAN, TRAIT_RITUALIST, TRAIT_CLERGY, TRAIT_HOMESTEAD_EXPERT, TRAIT_WOODWALKER, TRAIT_WOODSMAN)
 
 	advclass_cat_rolls = list(CTAG_DRUID = 2)
 	job_subclasses = list(
