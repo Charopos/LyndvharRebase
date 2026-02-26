@@ -1166,6 +1166,16 @@
 	slot_flags = ITEM_SLOT_NECK
 	sellprice = 25
 
+/obj/item/clothing/neck/roguetown/elfears
+	name = "elf ear necklace"
+	desc = "A necklace made from the preserved ears of elves. A trophy to show off the wearer's macabre collection of elven ears."
+	icon_state = "elfears"
+
+/obj/item/clothing/neck/roguetown/menears
+	name = "ear necklace"
+	desc = "A necklace made from the preserved ears of humens. A trophy to show off the wearer's macabre collection of humen ears."
+	icon_state = "menears"
+
 /obj/item/clothing/neck/roguetown/collar/prisoner
 	name = "castifico collar"
 	icon_state = "castifico_collar"
