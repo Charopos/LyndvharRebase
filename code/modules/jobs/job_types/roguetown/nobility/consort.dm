@@ -9,6 +9,8 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_TOLERATED_UP
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	advclass_cat_rolls = list(CTAG_CONSORT = 20)
+	job_traits = list(TRAIT_NOBLE, TRAIT_GOODLOVER, TRAIT_NUTCRACKER)
 	tutorial = "Picked out of your political value rather than likely any form of love, you have become the Viscount's most trusted confidant--and likely friend--throughout your marriage. Your loyalty and perhaps even your love will be tested this day... for the daggers that threaten your beloved are as equally pointed at your own throat."
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/servant,
@@ -23,6 +25,12 @@
 	round_contrib_points = 3
 	vice_restrictions = list(/datum/charflaw/mute, /datum/charflaw/unintelligible) //Needs to use the throat - sometimes
 
+	job_subclasses = list(
+		/datum/advclass/consort/diplomat,
+		/datum/advclass/consort/courtesan,
+		/datum/advclass/consort/lowborn
+	)
+
 /datum/job/roguetown/exlady
 	title = "Consort Dowager"
 	flag = LADY
@@ -35,7 +43,6 @@
 
 /datum/outfit/job/roguetown/lady
 	head = /obj/item/clothing/head/roguetown/nyle/consortcrown
-	pants = /obj/item/clothing/under/roguetown/tights
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
@@ -43,45 +50,166 @@
 	id = /obj/item/scomstone/garrison
 	job_bitflag = BITFLAG_ROYALTY
 
-/datum/outfit/job/roguetown/lady/pre_equip(mob/living/carbon/human/H)
-	. = ..()
-	ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
-//		SSticker.rulermob = H
+/datum/advclass/consort/diplomat
+	name = "Diplomat"
+	tutorial = "You've always been a graceful diplomat for your spouse - fluent in flattery, courtesy, and calculated sincerity. There aren't many that can't help but smile in your presence- which is quite helpful in meetings and arrangements."
+	outfit = /datum/outfit/job/roguetown/consort/diplomat
+	category_tags = list(CTAG_CONSORT)
+	traits_applied = list(TRAIT_SEEPRICES)
+	subclass_stats = list(
+		STATKEY_INT = 3,
+		STATKEY_PER = 3,
+		STATKEY_WIL = 1,
+		STATKEY_SPD = 1,
+		STATKEY_LCK = 5
+	)
+	subclass_skills = list(
+		/datum/skill/misc/music = SKILL_LEVEL_MASTER,
+		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/reading = SKILL_LEVEL_MASTER,
+		/datum/skill/misc/medicine = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/craft/crafting = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/craft/cooking = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/craft/sewing = SKILL_LEVEL_JOURNEYMAN,
+	)
+
+/datum/outfit/job/roguetown/consort/diplomat/pre_equip(mob/living/carbon/human/H)
+	..()
 	if(should_wear_femme_clothes(H))
-		beltl = /obj/item/storage/keyring/lady
 		neck = /obj/item/storage/belt/rogue/pouch/coins/rich
-		belt = /obj/item/storage/belt/rogue/leather/cloth/lady
+		beltr = /obj/item/storage/keyring/lady
+		belt = /obj/item/storage/belt/rogue/leather/plaquegold
 		head = /obj/item/clothing/head/roguetown/nyle/consortcrown
-		shirt = /obj/item/clothing/suit/roguetown/armor/armordress/winterdress/monarch
+		armor = /obj/item/clothing/suit/roguetown/armor/armordress/winterdress/monarch
+		backl = /obj/item/rogue/instrument/harp
+		beltl = /obj/item/flashlight/flare/torch/lantern
+		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt
+		backr = /obj/item/storage/backpack/rogue/satchel/short
 		id = /obj/item/scomstone/garrison
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	else if(should_wear_masc_clothes(H))
 		head = /obj/item/clothing/head/roguetown/nyle/consortcrown
 		pants = /obj/item/clothing/under/roguetown/tights
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
-		armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+		armor = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
-		belt = /obj/item/storage/belt/rogue/leather
+		belt = /obj/item/storage/belt/rogue/leather/plaquegold
 		beltl = /obj/item/storage/keyring/lady
 		beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 		backr = /obj/item/storage/backpack/rogue/satchel/short
-		id = /obj/item/clothing/ring/gold
-	H.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
-	H.change_stat(STATKEY_INT, 3)
-	H.change_stat(STATKEY_WIL, 3)
-	H.change_stat(STATKEY_SPD, 2)
-	H.change_stat(STATKEY_PER, 2)
-	H.change_stat(STATKEY_LCK, 5)
+		id = /obj/item/scomstone/garrison
+	if(H.mind)
+		SStreasury.give_money_account(ECONOMIC_RICH, H, "Savings.")
+
+/datum/advclass/consort/courtesan
+	name = "Courtesan"
+	tutorial = "Having been picked less for your talents and house and more for your looks, you've taken full advantage of your time in this court to build up a weaved web of gossip and intrigue, using any skills and tactics you could muster."
+	outfit = /datum/outfit/job/roguetown/consort/courtesan
+	traits_applied = list(TRAIT_ALCHEMY_EXPERT, TRAIT_KEENEARS, TRAIT_BEAUTIFUL)
+	category_tags = list(CTAG_CONSORT)
+	subclass_stats = list(
+		STATKEY_SPD = 3,
+		STATKEY_INT = 1,
+		STATKEY_PER = 2,
+		STATKEY_WIL = 1,
+		STATKEY_LCK = 5
+	)
+	subclass_skills = list(
+		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_NOVICE,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/sneaking = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/stealing = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/lockpicking = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/craft/traps = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/craft/alchemy = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/riding = SKILL_LEVEL_MASTER,
+	)
+
+/datum/outfit/job/roguetown/consort/courtesan/pre_equip(mob/living/carbon/human/H)
+	..()
+	head = /obj/item/clothing/head/roguetown/nyle/consortcrown
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
+	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
+	belt = /obj/item/storage/belt/rogue/leather/plaquegold
+	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
+	l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/decorated
+	beltl = /obj/item/flashlight/flare/torch/lantern
+	beltr = /obj/item/storage/keyring/lady
+	backr = /obj/item/storage/backpack/rogue/satchel/short/black
+	id = /obj/item/scomstone/garrison
+	if(should_wear_femme_clothes(H))
+		armor = /obj/item/clothing/suit/roguetown/armor/armordress/winterdress/monarch
+	if(should_wear_masc_clothes(H))
+		armor = /obj/item/clothing/suit/roguetown/armor/longcoat
+	backpack_contents = list(
+		/obj/item/reagent_containers/glass/bottle/rogue/poison = 1,
+		/obj/item/lockpick = 1,
+		/obj/item/rogueweapon/scabbard/sheath/noble = 1,
+		)
+	if(H.mind)
+		SStreasury.give_money_account(ECONOMIC_RICH, H, "Savings.")
+
+/datum/advclass/consort/lowborn
+	name = "Lowborn"
+	tutorial = "You never could have dreamed your life would be like this. Though your origins are humble, something special about you - whether it was your good looks, your kind heart, or your bravery - has brought you into the clutches of the court."
+	outfit = /datum/outfit/job/roguetown/consort/lowborn
+	category_tags = list(CTAG_CONSORT)
+	traits_applied = list(TRAIT_SEEDKNOW, TRAIT_CICERONE, TRAIT_HOMESTEAD_EXPERT)
+	subclass_stats = list(
+		STATKEY_INT = -2,
+		STATKEY_STR = 1,
+		STATKEY_PER = 1,
+		STATKEY_CON = 3,
+		STATKEY_WIL = 2,
+		STATKEY_SPD = -1,
+		STATKEY_LCK = 5
+	)
+	subclass_skills = list(
+		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/riding = SKILL_LEVEL_JOURNEYMAN,
+	)
+
+/datum/outfit/job/roguetown/consort/lowborn/pre_equip(mob/living/carbon/human/H)
+	..()
+	if(should_wear_femme_clothes(H))
+		neck = /obj/item/storage/belt/rogue/pouch/coins/poor
+		beltr = /obj/item/storage/keyring/lady
+		belt = /obj/item/storage/belt/rogue/leather/plaquegold
+		head = /obj/item/clothing/head/roguetown/nyle/consortcrown
+		armor = /obj/item/clothing/suit/roguetown/armor/armordress/winterdress/monarch
+		backl = /obj/item/rogue/instrument/harp
+		beltl = /obj/item/flashlight/flare/torch/lantern
+		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt
+		backr = /obj/item/storage/backpack/rogue/satchel/short
+		id = /obj/item/scomstone/garrison
+		shoes = /obj/item/clothing/shoes/roguetown/shortboots
+	else if(should_wear_masc_clothes(H))
+		head = /obj/item/clothing/head/roguetown/nyle/consortcrown
+		pants = /obj/item/clothing/under/roguetown/tights
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
+		armor = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
+		shoes = /obj/item/clothing/shoes/roguetown/shortboots
+		belt = /obj/item/storage/belt/rogue/leather/plaquegold
+		beltl = /obj/item/storage/keyring/lady
+		beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+		backr = /obj/item/storage/backpack/rogue/satchel/short
+		id = /obj/item/scomstone/garrison
 	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_RICH, H, "Savings.")
 		record_round_statistic(STATS_MARRIAGES_MADE)//Terrible way to do this but like, it wouldn't work off the "I'm married proc" so here we are.
