@@ -37,12 +37,12 @@
 
 /datum/sex_action/sex/other/boobjob/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
-	target.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] rubs [target]'s cock with [user.p_their()] tits..."))
-	playsound(target, 'sound/misc/mat/fingering.ogg', 20, TRUE, -2, ignore_walls = FALSE)
+	show_sex_message(target, user, sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] rubs [target]'s cock with [user.p_their()] tits..."))
+	play_sex_sound(user, target, 'sound/misc/mat/fingering.ogg', 20)
 
 	sex_session.perform_sex_action(target, 2, 4, TRUE)
 	sex_session.handle_passive_ejaculation(target)
 
 /datum/sex_action/sex/other/boobjob/handle_climax_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	user.visible_message(span_love("[user] cums over [target]'s tits!"))
+	show_sex_message(user, target, span_love("[user] cums over [target]'s tits!"))
 	return "onto"

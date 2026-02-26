@@ -275,6 +275,7 @@
 	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/ComponentInitialize()
 	AddComponent(/datum/component/armour_filtering/negative, TRAIT_FENCERDEXTERITY)
@@ -296,12 +297,14 @@
 	grid_width = 96
 	sellprice = 200
 	unenchantable = TRUE
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/gold/king
 	name = "royal golden greaves"
 	max_integrity = ARMOR_INT_SIDE_GOLDPLUS // Doubled integrity.
 	sellprice = 300
 	unenchantable = TRUE
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/bronze
 	name = "bronze greaves"
@@ -312,6 +315,7 @@
 	armor = ARMOR_PLATE_BRONZE
 	max_integrity = ARMOR_INT_SIDE_BRONZE
 	prevent_crits = PREVENT_CRITS_ALL
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/graggar
 	name = "vicious boots"
@@ -319,6 +323,7 @@
 	max_integrity = ARMOR_INT_SIDE_ANTAG
 	armor = ARMOR_ASCENDANT
 	icon_state = "graggarplateboots"
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/graggar/Initialize()
 	. = ..()
@@ -331,6 +336,7 @@
 	desc = "Gilded tombs do worm enfold."
 	icon_state = "matthiosboots"
 	armor = ARMOR_ASCENDANT
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/matthios/Initialize()
 	. = ..()
@@ -350,6 +356,7 @@
 	chunkcolor = "#363030"
 	material_category = ARMOR_MAT_PLATE
 	armor = ARMOR_ASCENDANT
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/zizo/Initialize()
 	. = ..()
@@ -373,6 +380,7 @@
 	armor = ARMOR_PLATE
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/yanshen
 	name = "armored sandals"
@@ -503,6 +511,7 @@
 	armor = ARMOR_PLATE_BSTEEL
 	smeltresult = /obj/item/ingot/blacksteel
 	chunkcolor = "#303036"
+	sewrepair = FALSE
 
 // ----------------- BLACKSTEEL END -----------------------
 
