@@ -55,7 +55,7 @@
 	tutorial = "You've always been a graceful diplomat for your spouse - fluent in flattery, courtesy, and calculated sincerity. There aren't many that can't help but smile in your presence- which is quite helpful in meetings and arrangements."
 	outfit = /datum/outfit/job/roguetown/consort/diplomat
 	category_tags = list(CTAG_CONSORT)
-	traits_applied = list(TRAIT_SEEPRICES)
+	traits_applied = list(TRAIT_SEEPRICES, TRAIT_CICERONE)
 	subclass_stats = list(
 		STATKEY_INT = 3,
 		STATKEY_PER = 3,
@@ -64,6 +64,10 @@
 		STATKEY_LCK = 5
 	)
 	subclass_skills = list(
+		/datum/skill/combat/knives = SKILL_LEVEL_NOVICE,
+		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_NOVICE,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/music = SKILL_LEVEL_MASTER,
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
@@ -73,7 +77,7 @@
 		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/crafting = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/cooking = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE,
+		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE
 	)
 
 /datum/outfit/job/roguetown/consort/diplomat/pre_equip(mob/living/carbon/human/H)
