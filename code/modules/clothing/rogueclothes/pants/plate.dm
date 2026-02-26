@@ -1,6 +1,6 @@
 /obj/item/clothing/under/roguetown/platelegs
 	name = "steel plate chausses"
-	desc = "Armored leggings, covered in segmented plates of steel. The trouseres beneath are lined with quilted cloth, ensuring that neither pintle-nor-gudgeon shall succumb to the motions-of-war."
+	desc = "Armored leggings, covered in segmented plates of steel. The trousers beneath are lined with quilted cloth, ensuring that neither pintle-nor-gudgeon shall succumb to the motions-of-war."
 	gender = PLURAL
 	icon_state = "plate_legs"
 	item_state = "plate_legs"
@@ -54,7 +54,7 @@
 
 /obj/item/clothing/under/roguetown/platelegs/graggar
 	name = "vicious leggings"
-	desc = "Fluted chausses, marinated in the afterbirth of disemboweled tyrants. Never kneel, again - never fall, again; cripple the ones who sought to keep you a slave, and force them to see the monster they've made of you."
+	desc = "Fluted chausses, marinated in the afterbirth of disemboweled tyrants. Never kneel, again -- never fall, again; cripple the ones who sought to keep you a slave, and force them to see the monster they've made of you."
 	icon_state = "graggarplatelegs"
 	armor = ARMOR_ASCENDANT
 	max_integrity = ARMOR_INT_LEG_STEEL_PLATE // Good good resistances, but less crit resist than the other ascendant armors. In trade, we can take off our pants to repair, and they are medium rather than heavy.

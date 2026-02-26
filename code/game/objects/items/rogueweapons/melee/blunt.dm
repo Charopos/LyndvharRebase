@@ -162,7 +162,7 @@
 
 /obj/item/rogueweapon/mace/alloy
 	name = "decrepit mace"
-	desc = "Frayed bronze, perched atop a rotwooden shaft. His sacrifice had drowned Old Syon, and - in its wake - left Man bereft of all it had accomplished. With all other prayers falling upon deaf ears, Man had crafted this idol in tribute to its new God; violence."
+	desc = "Frayed bronze, perched atop a rotwooden shaft. The metal of this implement was never intended to build homes, or grow food, or warm a cold body. This was only intended to create corpses."
 	icon_state = "amace"
 	force = 17
 	force_wielded = 21
@@ -241,7 +241,7 @@
 
 /obj/item/rogueweapon/mace/gold/lordscepter
 	name = "\"Morningstar\""
-	desc = "A heavenly staff of besilked rosawood, crested with the golden sigil of royalty. Nestled within its glistening bosom is a shard of Astrata's divinity authority; let Her judgement course through those who'd dare to lessen your presence. ‎</br>‎‎ </br>'..The end of the matter - for all has been heard. Fear the Lord and keep their commandments, for this is the whole duty of man.'"
+	desc = "A heavenly staff of besilked rosawood, crested with the golden sigil of royalty. Nestled within its glistening bosom is a shard of Astrata's divine authority; let Her judgement course through those who'd dare to lessen your presence. ‎</br>‎‎ </br>'..The end of the matter - for all has been heard. Fear the Lord and keep their commandments, for this is the whole duty of man.'"
 	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/strike/dislocate, /datum/intent/lord_electrocute, /datum/intent/lord_silence)
 	gripped_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash, /datum/intent/effect/daze, /datum/intent/mace/strike/dislocate) 
 	icon_state = "goldmaceking"
@@ -394,7 +394,7 @@
 
 /obj/item/rogueweapon/mace/cudgel/flanged
 	name = "flanged mace"
-	desc = "Chivalry. </br>A one-handed derivative of the mace, purpose-made to dazzle armored opponents. Quartered into four symmetrical ridges, its flanged macehead can comfortably carve maille-and-bone behind the safety of an accompying shield."
+	desc = "A mace whose head is made of individual flat bits of metal, or flanges. Its flanged macehead can comfortably carve maille-and-bone behind the safety of an accompying shield."
 	force = 27 //+2 (1H) but -5 (2H), compared to the Steel Mace.
 	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/strike/dislocate, /datum/intent/effect/daze, /datum/intent/mace/warhammer/stab)
 	gripped_intents = null //One-handed. Pseudo-sidegrade between the Mace and Warhammer, offering more damage and dislocations at the cost of no Picking or Smashing.
@@ -415,10 +415,7 @@
 
 /obj/item/rogueweapon/mace/cudgel/flanged/silver
 	name = "silver flanged mace"
-	desc = "A flanged mace of silver, fit for a holy paladin's grasp. The weight within your hand is not of silver, alone - but of the fate that you may yet avert; for yourself, and \
-    for the world you love. </br>'Please do not wait for me..' \ </br>'For though I depart, my magic will never die..' </br>'Listen to my laughter in the babbling brook..' \
-	</br>'Hear my song being sung by the bards..' </br>'Feel my warmth in the rays of the morning sun..' </br>'See my light in the twinkling stars at night..' \
-	</br>'..and know that my spirit will always be with you..' </br>'..woven into the very fabric of the world we cherished together.'"
+	desc = "A flanged mace of silver, fit for a holy paladin's grasp. The weight within your hand is not of silver, alone - but of the fate that you may yet avert; for yourself, and for the world you love. In His name. Save them."
 	force = 30
 	minstr = 9
 	wdefense = 5
@@ -450,10 +447,7 @@
 
 /obj/item/rogueweapon/mace/cudgel/psy
 	name = "psydonic flanged mace"
-	desc = "A flanged mace of blessed silver, wielded by His children. The rosewood handle's curved nature beckons your fingers to curl along its grooves, and to never let go; \
-    no matter the weather nor odds. </br>'Please do not wait for me..' \ </br>'For though I depart, my magic will never die..' </br>'Listen to my laughter in the babbling brook..' \
-	</br>'Hear my song being sung by the bards..' </br>'Feel my warmth in the rays of the morning sun..' </br>'See my light in the twinkling stars at night..' \
-	</br>'..and know that my spirit will always be with you..' </br>'..woven into the very fabric of the world we cherished together.'"
+	desc = "A flanged mace of blessed silver, wielded by His children. The rosewood handle's curved nature beckons your fingers to curl along its grooves, and to never let go; no matter the weather nor odds. May He never depart our hearts. Never let go."
 	force = 30
 	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/strike/dislocate, /datum/intent/effect/daze, /datum/intent/mace/warhammer/stab)
 	gripped_intents = null //One-handed. Pseudo-sidegrade between the Mace and Warhammer. Exchanges smashing for dislocation.
@@ -498,10 +492,7 @@
 
 /obj/item/rogueweapon/mace/cudgel/psy/old
 	name = "enduring flanged mace"
-	desc = "A flanged mace, weathered by tyme's gaze. It radiates a strange energy; distant, fleeting, but ever-so-familiar. </br>'Please do not wait for me..' \
-	</br>'For though I depart, my magic will never die..' </br>'Listen to my laughter in the babbling brook..' </br>'Hear my song being sung by the bards..' \
-	</br>'Feel my warmth in the rays of the morning sun..' </br>'See my light in the twinkling stars at night..' </br>'..and know that my spirit will always be with you..' \
-	</br>'..woven into the very fabric of the world we cherished together.'"
+	desc = "A flanged mace, weathered by tyme's gaze. It radiates a strange energy; distant, fleeting, but ever-so-familiar. May His embrace come and comfort us all."
 	force_wielded = 25
 	wbalance = WBALANCE_NORMAL
 	icon_state = "opsyflangedmace"
@@ -514,7 +505,7 @@
 
 /obj/item/rogueweapon/mace/cudgel/psyclassic
 	name = "psydonic handmace"
-	desc = "A shorter variant of the flanged silver mace, rebalanced for one-handed usage. It isn't uncommon for these sidearms to mysteriously 'vanish' from an Adjudicator's belt, only to be 'rediscovered' - and subsequently kept - by a Confessor."
+	desc = "A shorter variant of the flanged silver mace, rebalanced for one-handed usage. It isn't uncommon for these sidearms to mysteriously 'vanish' from an Adjudicator's belt, only to be 'rediscovered' -- and subsequently kept -- by a Confessor."
 	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/strike/wallop)
 	gripped_intents = list(/datum/intent/mace/strike, /datum/intent/mace/strike/wallop, /datum/intent/mace/smash, /datum/intent/effect/daze)
 	force = 25
@@ -574,7 +565,7 @@
 
 /obj/item/rogueweapon/mace/cudgel/justice
 	name = "'Justice'"
-	desc = "The icon of the right of office of the Marshal. While mostly ceremonial in design, it serves it's purpose in dishing out some much needed justice."
+	desc = "The icon of the right of office of the Marshal. While mostly ceremonial in design, it serves its purpose in dishing out some much needed justice."
 	force = 30
 	icon_state = "justice"
 	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash, /datum/intent/effect/daze, /datum/intent/mace/strike/dislocate)
@@ -702,7 +693,7 @@
 
 /obj/item/rogueweapon/mace/goden/kanabo
 	name = "kanabo"
-	desc = "A steel-banded wooden club, made to break the enemy in spirit as much as in flesh. One of the outliers among the many more elegant weapons of Yanshen."
+	desc = "A steel-studded thick wooden club, made to break the enemy in spirit as much as in flesh. One of the outliers among the many more elegant weapons of Yanshen."
 	icon_state = "kanabo"
 	slot_flags = ITEM_SLOT_BACK
 	gripped_intents = list(/datum/intent/mace/strike/grand, /datum/intent/mace/smash/grand, /datum/intent/stab, /datum/intent/effect/daze)
@@ -763,7 +754,7 @@
 /obj/item/rogueweapon/mace/warhammer/bronze
 	force = 22
 	name = "bronze warclub"
-	desc = "The warhammer's ancestral link, carved from a weightsome log and studded with bronze. Elven natureguards carry it to both honor their forefathers, and as a way to sunder those who'd ravage Dendor's bounties without thought-or-restraint; a toss from afar turns into a sundering hurlbat."
+	desc = "The warhammer's ancestral link, carved from a weightsome log and studded with bronze. Elven natureguards carry it to both honor their forefathers, and as a way to sunder those who'd ravage Dendor's bounties without thought-or-restraint; a toss from afar turns it into a sundering hurlbat."
 	icon_state = "bronzeclub"
 	wbalance = WBALANCE_HEAVY
 	throwforce = 30
@@ -774,7 +765,7 @@
 
 /obj/item/rogueweapon/mace/warhammer/bronze/decorated
 	name = "decorated bronze warclub"
-	desc = "Flowers, silk, and gold caress this carved-and-spiked log; a honored totem who's roots trace back to the daes before Syon's impact. Myths speak of ancient elve-and-humen alike, wielding such bronzen bludgeons against the Archdevil's rampaging hordes."
+	desc = "Flowers, silk, and gold caress this carved-and-spiked log; an honored totem whose roots trace back to the daes before history, though clearly not before culture."
 	icon_state = "bronzeclubdec"
 	smeltresult = /obj/item/ingot/gold
 	sellprice = 100
@@ -796,7 +787,7 @@
 	force = 25
 	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash/lesser, /datum/intent/mace/warhammer/pick, /datum/intent/mace/warhammer/stab)
 	name = "steel warhammer"
-	desc = "Nobility. </br>A one-handed lucerne with a steel hammerhead, perfectly balanced for a gauntlet's grasp. The unique hook-shaped spike sprouting from its rear is better known as a 'saigaman's pick', which excels at gouging wounds through the gaps in an armored opponent's maille."
+	desc = "Nobility. </br>A one-handed beaked hammer made of steel, whose grip perfectly fits a gauntlet's grasp. The unique hook-shaped spike sprouting from its rear is better known as a 'saigaman's pick', which excels at gouging wounds through the gaps in an armored opponent's maille."
 	icon_state = "swarhammer"
 	smeltresult = /obj/item/ingot/steel
 	wdefense = 4
@@ -814,7 +805,7 @@
 
 /obj/item/rogueweapon/mace/warhammer/steel/paalloy
 	name = "ancient alloy warhammer"
-	desc = "A macehead of polished gilbranze, spiked and perched atop a reinforced shaft. An elegant weapon from a more civilized age; when Man lived in harmony with one-another, and when 'the undying' was nothing more than a nitemare's thought."
+	desc = "A macehead of polished gilbranze, spiked and perched atop a reinforced shaft. An elegant weapon from a more civilized age; when man lived in harmony with one-another... though of course not too much in harmony that they didn't need these."
 	icon_state = "awarhammer"
 	smeltresult = /obj/item/ingot/aaslag
 
@@ -919,8 +910,7 @@
 
 /obj/item/rogueweapon/mace/maul/grand
 	name = "grand maul"
-	desc = "You could probably crack a man's spine just by tapping them with this. \
-	Only a lunatic would carry something so heavy, however."
+	desc = "You could probably crack a man's spine just by tapping them with this. You'd have to hit them first, however"
 	icon_state = "cross"
 	force_wielded = 34 // -1 compared to grand mace.
 	smeltresult = /obj/item/ingot/steel
@@ -946,8 +936,7 @@
 //Dwarvish mauls. Unobtanium outside of Grudgebearer. Do not change that.
 /obj/item/rogueweapon/mace/maul/steel
 	name = "dwarvish maul"
-	desc = "An incredibly heavy, oversized hammer. The owner is not compensating, for this maul will do the speaking. \
-	This one has been well balanced, allowing for a weaker wielder to make use of it."
+	desc = "An incredibly heavy, oversized hammer. The owner is not compensating, for this maul will do the speaking. This one has been well balanced, allowing for a weaker wielder to make use of it."
 	icon_state = "dwarfhammer"
 	smeltresult = /obj/item/ingot/steel
 	minstr = 11 // +2STR from Grudgebearer Soldier. Should cover this.
@@ -957,8 +946,7 @@
 
 /obj/item/rogueweapon/mace/maul/spiked
 	name = "spiked maul"
-	desc = "Covered in spikes, such is the weapon of a Dwarvish smith. \
-	This one has been well balanced, allowing for a weaker wielder to make use of it."
+	desc = "Covered in spikes, such is the weapon of a Dwarvish smith. This one has been well balanced, allowing for a weaker wielder to make use of it."
 	icon_state = "spiky"
 	gripped_intents = list(/datum/intent/maul/spiked, /datum/intent/mace/smash/grand, /datum/intent/effect/daze, /datum/intent/effect/hobble)
 	wdefense_wbonus = 2 //4

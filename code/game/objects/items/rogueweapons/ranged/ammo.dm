@@ -52,21 +52,19 @@
 
 /obj/item/ammo_casing/caseless/rogue/bolt/paalloy
 	name = "ancient bolt"
-	desc = "An ancient bolt, tipped with polished gilbranze. The razor-thin tip \
-	resembles a sabot more than an arrowhead; something that most alloys cannot reliably withstand."
+	desc = "An ancient bolt, tipped with polished gilbranze. The razor-thin tip resembles a needle more than an arrowhead; something that most alloys cannot reliably withstand."
 	icon_state = "ancientbolt"
 	projectile_type = /obj/projectile/bullet/reusable/bolt/paalloy
 
 /obj/item/ammo_casing/caseless/rogue/bolt/bronze
 	name = "bronze bolt"
-	desc = "Bronze and wood, fitted by-hand to fashion a bolt's fuselage. The \
-	design, perfected over a millennium of trial-and-error, sails with tremendous haste."
+	desc = "Bronze and wood, fitted by-hand to fashion a bolt's fuselage. The design, perfected over a millennium of trial-and-error, sails with tremendous haste."
 	icon_state = "bronzebolt"
 	projectile_type = /obj/projectile/bullet/reusable/bolt/bronze
 
 /obj/item/ammo_casing/caseless/rogue/bolt/blunt
 	name = "blunt bolt"
-	desc = "A crossbow bolt without the part that pierces skulls. That doesn't mean it won't kill you."
+	desc = "A crossbow bolt without the part that easily pierces skulls. That doesn't mean it won't kill you."
 	projectile_type = /obj/projectile/bullet/reusable/bolt/blunt
 	possible_item_intents = list(/datum/intent/mace/strike)
 	icon_state = "bolt_blunt"
@@ -160,8 +158,7 @@
 
 /obj/item/ammo_casing/caseless/rogue/heavy_bolt
 	name = "heavy bolt"
-	desc = "A massive steel bolt that is designed to pulverize the defenses of \
-	another, whether it be a castle's parapit or a knight's plate."
+	desc = "A massive steel bolt that is designed to pulverize the defenses of another, whether it be a castle's parapit or a knight's plate."
 	projectile_type = /obj/projectile/bullet/reusable/heavy_bolt
 	possible_item_intents = list(/datum/intent/dagger/cut, /datum/intent/dagger/thrust)
 	caliber = "heabolt"
@@ -239,9 +236,7 @@
 
 /obj/item/ammo_casing/caseless/rogue/heavy_bolt/aalloy
 	name = "decrepit heavy bolt"
-	desc = "A length of frayed bronze, quilled to take flight and tear down the living. \
-	Metal flakes occassionally peel off from its core, mysteriously hovering about - \
-	tolerable by the undying, but unbearibly noxious to the living."
+	desc = "A length of frayed bronze, quilled to take flight and tear down the living. Metal flakes occassionally peel off from its core, mysteriously hovering about - tolerable by the undying, but unbearably noxious to the living."
 	icon_state = "ancientheavybolt"
 	projectile_type = /obj/projectile/bullet/reusable/heavy_bolt/aalloy
 	color = "#bb9696"
@@ -259,7 +254,7 @@
 
 /obj/item/ammo_casing/caseless/rogue/heavy_bolt/paalloy
 	name = "ancient heavy bolt"
-	desc = "A polished length of gilbranze, which chisels away stone-and-spirit alike with each vaulting. It whispers to you; a half-glance to the right, further up to compensate, so that the living's humors may taste utter disruption."
+	desc = "A polished length of gilbranze, which chisels away stone-and-spirit alike with each vaulting. It seems to whisper to you: 'a half-glance to the right, further up to compensate, so that the living's humors may taste utter disruption.'"
 	icon_state = "ancientheavybolt"
 	projectile_type = /obj/projectile/bullet/reusable/heavy_bolt/paalloy
 
@@ -290,9 +285,7 @@
 
 /obj/item/ammo_casing/caseless/rogue/arrow
 	name = "arrow"
-	desc = "Some devices are so simple in their nature and austere in their scope \
-	that they feel as if they've sprung into being without mortal intervention. \
-	Consult your gods."
+	desc = "Some devices are so simple in their nature and austere in their scope that they feel as if they've sprung into being without mortal intervention. Consult your gods."
 	projectile_type = /obj/projectile/bullet/reusable/arrow
 	caliber = "arrow"
 	icon_state = "arrow"
@@ -312,32 +305,26 @@
 
 /obj/item/ammo_casing/caseless/rogue/arrow/stone
 	name = "stone arrow"
-	desc = "A simple dowel sports lashed flint knapped and honed to a razor edge. Folk \
-	wisdom holds that these cut finer than iron heads, but they tend to shatter \
-	on impact with armor."
+	desc = "A simple dowel sports lashed flint knapped and honed to a razor edge. Folk wisdom holds that these cut finer than iron heads, but they tend to shatter on impact with armor."
 	max_integrity = 5
 	projectile_type = /obj/projectile/bullet/reusable/arrow/stone
 
 /obj/item/ammo_casing/caseless/rogue/arrow/bronze
 	name = "bronze arrow"
 	icon_state = "bronzearrow"
-	desc = "Bronze, quenched and batonned onto a feathered stick. The stories scribed along its imperfect edge could fill a hundred tomes; lost to antiquity, but remembered through sheer generational instinct."
+	desc = "Bronze, quenched and batonned onto a feathered stick. The rune etched onto it has lost all meaning, but is still inscribed on as though it is an integral component."
 	max_integrity = 8
 	projectile_type = /obj/projectile/bullet/reusable/arrow/bronze
 
 /obj/item/ammo_casing/caseless/rogue/arrow/iron
 	name = "iron broadhead arrow"
 	icon_state = "ironarrow"
-	desc = "Bundles of steam straightened dowels are notched at one end and fastened \
-	to iron-heads on another. With flight feathers lashed it will fly true to its \
-	shooters will."
+	desc = "Bundles of steam straightened dowels are notched at one end and fastened to iron-heads on another. With flight feathers lashed it will fly true to a skilled shooters' will."
 	projectile_type = /obj/projectile/bullet/reusable/arrow/iron
 
 /obj/item/ammo_casing/caseless/rogue/arrow/iron/aalloy
 	name = "decrepit broadhead arrow"
-	desc = "An arrow; one end, tipped with flattened and frayed bronze - the other, \
-	inlaid with decayed feathers. The alloy's decrepity forces it to burst into \
-	shrapnel upon impact, shredding flesh."
+	desc = "An arrow; one end, tipped with flattened and frayed bronze -- the other, inlaid with decayed feathers. The alloy's decrepity forces it to burst into shrapnel upon impact, shredding flesh."
 	icon_state = "ancientarrow"
 	projectile_type = /obj/projectile/bullet/reusable/arrow/iron/aalloy
 	color = "#bb9696"
@@ -345,15 +332,12 @@
 /obj/item/ammo_casing/caseless/rogue/arrow/steel
 	name = "steel bodkin arrow"
 	icon_state = "steelarrow"
-	desc = "Bundles of steam straightened dowels are notched at one end and fastened \
-	to steel-heads on another. Crafted for more well-prepared targets."
+	desc = "Bundles of steam straightened dowels are notched at one end and fastened to steel-heads on another. Crafted for more well-prepared targets."
 	projectile_type = /obj/projectile/bullet/reusable/arrow/steel
 
 /obj/item/ammo_casing/caseless/rogue/arrow/steel/paalloy
 	name = "ancient bodkin arrow"
-	desc = "An arrow; one end, tipped with a sharpened rod of polished gilbranze - \
-	the other, inlaid with feathers. The razor-thin tip resembles a sabot; an alloyed \
-	sliver that can punch straight through steel."
+	desc = "An arrow; one end, tipped with a sharpened rod of polished gilbranze -- the other, inlaid with feathers. The razor-thin tip resembles a sabot; an alloyed sliver that may punch straight through ill-prepared steel."
 	icon_state = "ancientarrow"
 	projectile_type = /obj/projectile/bullet/reusable/arrow/steel/paalloy
 
@@ -487,9 +471,7 @@
 /obj/item/ammo_casing/caseless/rogue/arrow/silver
 	name = "silver arrow"
 	icon_state = "silvarrow"
-	desc = "A masterworked arrow; boswellia wood, lovingly carved into a javelin \
-	that has been fitted with a spearhead of silver. It is expensive, yet unrivaled \
-	in power - pray that you have the will to see its aim unfettered-and-true."
+	desc = "A masterworked arrow; boswellia wood, lovingly carved into a missile that has been fitted with a spearhead of silver. It is expensive, yet unrivaled in power -- pray that you have the will to see its aim unfettered-and-true."
 	projectile_type = /obj/projectile/bullet/reusable/arrow/silver
 	is_silver = FALSE //Give these to the bad guys, if you want to be a little evil. Realistically wouldn't blight someone, unless they're touching the tip.
 
@@ -525,7 +507,7 @@
 
 /obj/item/ammo_casing/caseless/rogue/heavy_bolt/silver
 	name = "heavy silver bolt"
-	desc = "A silvered lance, poised to impale the unimaginable. You feel the hands of another guiding your own, as you prepare to load; may it be guidence from a higher power, or your wit upon the verge of breaking? </br>'God, please..'"
+	desc = "A silvered lance, poised to impale the unimaginable. You feel the hands of another guiding your own, as you prepare to load; may it be guidance from a higher power, or your wit upon the verge of breaking? </br>'God, please..'"
 	projectile_type = /obj/projectile/bullet/reusable/heavy_bolt/silver
 	icon_state = "silvheavybolt"
 	max_integrity = 30
@@ -806,7 +788,7 @@
 	force = 14
 	throw_speed = 4	
 	name = "iron javelin"
-	desc = "A tool used for centuries, as early as recorded history. This one is tipped with a iron head; standard among militiamen and irregulars alike."
+	desc = "A tool used for centuries, even before recorded history. This one is tipped with a iron head; standard among militiamen and irregulars alike."
 	icon_state = "ijavelin"
 	wlength = WLENGTH_NORMAL
 	w_class = WEIGHT_CLASS_BULKY
@@ -835,7 +817,7 @@
 
 /obj/item/ammo_casing/caseless/rogue/javelin/aalloy
 	name = "decrepit javelin"
-	desc = "A missile of frayed bronze. Before you is your weapon; that which rose Man out of the mud, and brought the Beasts of Old Syon to heel. When were you last aware of any other part of you? Do you recall seeing the world in any other way?"
+	desc = "A missile of frayed bronze. Before you is your weapon; that which rose Man out of the mud, and brought the Beasts of the old untamed wilds to heel. When were you last aware of any other part of you? Do you recall seeing the world in any other way?"
 	icon_state = "ajavelin"
 	throwforce = 20
 	force = 10
@@ -846,7 +828,7 @@
 
 /obj/item/ammo_casing/caseless/rogue/javelin/bronze
 	name = "bronze javelin"
-	desc = "A tool used for centuries, as early as recorded history. This one is tipped with a bronze head, wide and serrated - a death knell to the unarmored, and a staggering wound to the beplated."
+	desc = "A tool used for centuries, before recorded history. This one is tipped with a bronze head, wide and serrated - a death knell to the unarmored, and a staggering wound to the beplated."
 	icon_state = "bjavelin"
 	force = 20
 	throwforce = 36	//Devastating against unarmored foes, but with nearly halved armor penetration.
@@ -859,7 +841,7 @@
 	force = 16
 	armor_penetration = 50
 	name = "steel javelin"
-	desc = "A tool used for centuries, as early as recorded history. This one is tipped with a steel head; perfect for piercing armor!"
+	desc = "A tool used for centuries, even before recorded history. This one is tipped with a steel head: perfect for piercing armor!"
 	icon_state = "javelin"
 	max_integrity = 100						//In-line with other stabbing weapons.
 	throwforce = 28							//Equal to steel knife BUT this has peircing damage type so..
@@ -869,13 +851,13 @@
 
 /obj/item/ammo_casing/caseless/rogue/javelin/steel/paalloy
 	name = "ancient javelin"
-	desc = "A missile of polished gilbranze. Old Syon had drowned beneath His tears, and Her ascension had brought forth this world's end - so that You, with the killing blow, could become God."
+	desc = "A missile of polished gilbranze. -yet-patinaed gilbronze. Cast this one forth, and watch your brothers-in-arms cast theirs. Obliterate them -- or at least their spirit -- before they meet you face to face."
 	icon_state = "ajavelin"
 	smeltresult = null // 1 Ingots = 2 Javelins
 
 /obj/item/ammo_casing/caseless/rogue/javelin/silver
 	name = "silver javelin"
-	desc = "A tool used for centuries, as early as recorded history. This one appears to be tipped with a silver head. Decorative, perhaps.. or for some sort of specialized hunter."
+	desc = "A tool used for centuries, before recorded history even. This one appears to be tipped with a silver head. Decorative, perhaps.. or for some sort of specialized hunter."
 	icon_state = "sjavelin"
 	is_silver = TRUE
 	throwforce = 25							//Less than steel because it's.. silver. Good at killing vampires/WW's still.

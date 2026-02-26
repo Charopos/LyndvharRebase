@@ -221,7 +221,7 @@
 
 /obj/item/rogueweapon/huntingknife/bronze
 	name = "bronze knife"
-	desc = "A wide blade of bronze, fitted to a wooden handle. Ancient laborers and priests coveted this tool above all else: both as a means to handle the dae's labors, and to indulge in the rituos of sacrifice."
+	desc = "A wide blade of bronze, fitted to a wooden handle. Ancient laborers and priests alike coveted this tool above all else: both as a means to handle the dae's labors, and to indulge in the rituos of sacrifice."
 	icon_state = "bronzeknife"
 	sheathe_icon = "genknife"
 	possible_item_intents = list(/datum/intent/dagger/cut, /datum/intent/dagger/chop/bronze, /datum/intent/dagger/sucker_punch, /datum/intent/dagger/thrust/bronze)
@@ -395,7 +395,7 @@
 
 /obj/item/rogueweapon/huntingknife/combat/bronze
 	name = "sydearmme"
-	desc = "Wedged bronze and whittled rockwood, handfitted into the dagger's most ancient-of-ancestors. It bares marks of flintknaping along its middlewidth; a customary tradition that's purported to atune its edge to the forces of nature."
+	desc = "Wedged bronze and whittled rockwood, handfitted into the dagger's most ancient-of-ancestors. It bares marks of flintknapping along its middlewidth; a customary tradition that's purported to attune its edge to the forces of nature."
 	icon_state = "bronzedagger"
 	sheathe_icon = "bronzedagger"
 	possible_item_intents = list(/datum/intent/dagger/cut, /datum/intent/dagger/chop/bronze, /datum/intent/dagger/sucker_punch, /datum/intent/dagger/thrust/bronze)
@@ -454,15 +454,13 @@
 	force = 22 // Slightly more damage than a steel dagger.
 	max_integrity = 130 // Slightly less integrity than a steel dagger.
 	name = "warden's seax"
-	desc = "A well-worn seax utilised by the Fraternity of Wardens both as a tool and weapon. Nearly as effective for hacking \
-	down men as it is foiliage, but not quite as durable as more modern steel tools. More suitable for cutting than for thrusting."
+	desc = "A well-worn seax utilised by the Fraternity of Wardens both as a tool and weapon. Nearly as effective for hacking down men as it is foiliage, but not quite as durable as more modern steel tools. More suitable for cutting than for thrusting."
 	icon_state = "warden_machete"
 	sheathe_icon = "warden_machete"
 
 /obj/item/rogueweapon/huntingknife/combat/messser //Just as Grenzelhoft intended
 	name = "kampfmesser"
-	desc = "An undersized steel messer that barely fits into a conventional dagger sheath, the saving grace of any hunter. It lacks a tip for stabbing - yet the edge alone is sharp enough to hack most issues right away. \
-	While it was brought over by Grenzelhoftian migrants, it is considered a Lyndvhar staple these daes - the right tool for the right job."
+	desc = "An undersized steel messer that barely fits into a conventional dagger sheath, the saving grace of any hunter. It lacks a tip for stabbing - yet the edge alone is sharp enough to hack most issues right away. </br>While it was brought over by Grenzelhoftian migrants, it is considered a Lyndvhar staple these daes - the right tool for the right job."
 	possible_item_intents = list(/datum/intent/dagger/cut/rend, /datum/intent/dagger/chop/cleaver, /datum/intent/dagger/cut/heavy, /datum/intent/dagger/sucker_punch)
 	icon_state = "minimesser"
 	sheathe_icon = "minimesser"
@@ -587,7 +585,7 @@
 
 /obj/item/rogueweapon/huntingknife/idagger/dtace
 	name = "'De Tace'"
-	desc = "The right hand of the right hand, this narrow length of steel serves as a quick solution to petty greviences."
+	desc = "The right hand of the right hand, this narrow length of steel serves as a quick solution to petty grievances."
 	icon = 'icons/roguetown/weapons/special/hand32.dmi'
 	icon_state = "sdaggerhand"
 	sheathe_icon = "sdaggerhand"
@@ -607,7 +605,7 @@
 
 /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
 	name = "steel parrying dagger"
-	desc = "A dagger meant purely for defense against oncoming blows - don't expect to deflect an oncoming mace though."
+	desc = "A dagger with an elongated crossguard. Meant purely for defense against oncoming blows - don't expect to deflect an oncoming mace though."
 	icon_state = "spdagger"
 	sheathe_icon = "spdagger"
 	force = 10
@@ -642,8 +640,7 @@
 
 /obj/item/rogueweapon/huntingknife/idagger/steel/yanshen
 	name = "steel tanto"
-	desc = "A steel dagger imported from the Yansheneze badlands. A sturdy blade bears a subtle curve, set into a decorated circular crossguard. A waxed \
-	wrapping of twisted cordage provides a secure grip."
+	desc = "A steel dagger from the Yansheneze coast. A sturdy blade with subtle patterning bears a subtle curve, set into a decorated circular crossguard. A waxed wrapping of twisted cordage provides a secure grip."
 	icon_state = "eastdagger"
 	sheathe_icon = "tanto"
 
@@ -689,7 +686,7 @@
 
 /obj/item/rogueweapon/huntingknife/idagger/stake
 	name = "sharpened stake"
-	desc = "A branch that has been broken off of an azurielve tree, sharpened to a fine point. It can lay some unholy creechers to rest, but only by piercing their hearts."
+	desc = "A branch that has been broken off of an tree, sharpened to a fine point. It can lay some unholy creechers to rest, but only by piercing their hearts."
 	icon_state = "heavystake"
 	possible_item_intents = list(/datum/intent/dagger/thrust/pick, /datum/intent/dagger/thrust/quick, /datum/intent/dagger/cut/light, /datum/intent/dagger/sucker_punch)
 	force = 12
@@ -898,7 +895,7 @@
 
 /obj/item/rogueweapon/huntingknife/stoneknife/kukri
 	name = "jade kukri"
-	desc = "A kukri made out of jade. Its more of a ceremonial piece than it is an implement of war, its somewhat fragile. Be gentle with it."
+	desc = "A kukri made out of jade. It's more of a ceremonial piece than it is an implement of war, its somewhat fragile. Be gentle with it."
 	icon = 'icons/roguetown/gems/gem_jade.dmi'
 	icon_state = "kukri_jade"
 	max_integrity = 75
@@ -909,7 +906,7 @@
 
 /obj/item/rogueweapon/huntingknife/stoneknife/opalknife
 	name = "opal knife"
-	desc = "A beautiful knife carved out of opal. Its not intended for combat. It's presence is vital in some Crimson Elven ceremonies."
+	desc = "A beautiful knife carved out of opal. It's not intended for combat. Its presence is vital in some Elven ceremonies."
 	icon = 'icons/roguetown/gems/gem_opal.dmi'
 	icon_state = "knife_opal"
 	max_integrity = 75
@@ -920,7 +917,7 @@
 
 /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
 	name = "elvish dagger"
-	desc = "A wave-bladed dagger of Elven design, who's silvered beauty is only rivaled by its deceptive lethality."
+	desc = "A wave-bladed dagger of Elven design, whose silvered beauty is only rivaled by its deceptive lethality."
 	force = 22 //One of the rare silver-edged weapons that has a positive damage boost, due to it requiring both silver and gold to create.
 	icon_state = "elfdagger"
 	sheathe_icon = "elfdagger"
@@ -939,7 +936,7 @@
 
 /obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow
 	name = "dark elvish dagger"
-	desc = "A once-elegant mithril dagger, who's sunless presence has long since been overshadowed by its vicious bite."
+	desc = "A once-elegant mithril dagger, whose sunless presence has long since been overshadowed by its vicious bite."
 	force = 18 
 	last_used = 0
 	is_silver = FALSE //Intended, as it's technically not silver - or at the very least, so divorced from traditional silver that it no longer retains its properties.
@@ -949,7 +946,7 @@
 /obj/item/rogueweapon/huntingknife/idagger/navaja
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,  /datum/intent/dagger/thrust/pick)
 	name = "navaja"
-	desc = "A folding Zybantine knife valued by merchants, mercenaries and peasants for its convenience. It possesses a long hilt, allowing for a sizeable blade with good reach."
+	desc = "A folding Zybantine knife valued by merchants, mercenaries, and peasants for its convenience. It possesses a long hilt, allowing for a sizeable blade with good reach."
 	force = 5
 	icon_state = "navaja_c"
 	item_state = "elfdag"
@@ -992,7 +989,7 @@
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut, /datum/intent/dagger/chop, /datum/intent/dagger/thrust/pick)
 	name = "mountaineer's navaja"
 	icon = 'icons/roguetown/weapons/special/freifechter32.dmi'
-	desc = "A folding Zybantine knife valued by merchants, mercenaries and peasants for its convenience. This specific kind of ornate navaja is endemic to the Khaliphate."
+	desc = "A folding Zybantine knife valued by merchants, mercenaries, and peasants for its convenience. This specific kind of ornate navaja is endemic to the Khaliphate."
 	force = 5
 	icon_state = "mtnavaja_c"
 	item_state = "elfdag"
@@ -1058,8 +1055,7 @@
 
 /obj/item/rogueweapon/huntingknife/throwingknife/yanshen
 	name = "eastern tossblade"
-	desc = "A four pointed throwing knife ground and sharpened from a single piece of metal. The design is intended to solve one of weaknesses of basic tossblades; \
-	more points means these are more likely to land point-first. </br>This dagger can be stowed away inside a pair of boots, permitting it to be quickly drawn when needed."
+	desc = "A four pointed throwing knife ground and sharpened from a single piece of metal. The design is intended to solve one of weaknesses of basic tossblades; more points means these are more likely to land point-first. </br>This dagger can be stowed away inside a pair of boots, permitting it to be quickly drawn when needed."
 	icon_state = "easttossblade"
 
 /obj/item/rogueweapon/huntingknife/throwingknife/aalloy

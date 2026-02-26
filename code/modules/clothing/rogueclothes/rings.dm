@@ -319,7 +319,7 @@
 
 /obj/item/clothing/ring/duelist
 	name = "duelist's ring"
-	desc = "Born out of duelists desire for theatrics, this ring denotes a proposal — an honorable duel, with stakes set ahigh.\nIf both duelists wear this ring, successful baits will off balance them, and clashing disarms will never be unlikely.\n<i>'You shall know his name. You shall know his purpose. You shall die.'</i>"
+	desc = "Born out of some duelist's desire for theatrics, this ring denotes a proposal: an honorable duel, with stakes set ahigh.\nIf both duelists wear this ring, successful baits will off balance them, and clashing disarms will never be unlikely.\n<i>'You shall know his name. You shall know his purpose. You shall die.'</i>"
 	icon_state = "ring_duel"
 	sellprice = 10
 
@@ -466,18 +466,18 @@
 /obj/item/clothing/ring/diamond/triumph
 	name = "ornate dorpel ring"
 	icon_state = "g_newring_diamond"
-	desc = "A ring of royal splendor, crested with a magnificently-cut dorpel. Its prismesque reflections remind you of a dream, from long ago; a ship, sailing across a sea of rainbowed phlogiston, to a castle far beyond the clouds.."
+	desc = "A ring of royal splendor, crested with a magnificently-cut dorpel. Its prism-esque reflections remind you of a dream, from long ago; a ship, sailing across a sea of rainbowed phlogiston, to a castle far beyond the clouds.."
 	sellprice = 99
 	smeltresult = /obj/item/clothing/ring/signet/triumph
 
 /obj/item/clothing/ring/signet/triumph
 	name = "ornate signet ring"
-	desc = "A ring of opulent gold, bearing the symbol of an aristocratic household. By dipping it in melted redtallow, it can seal writs of religious importance - a matter better known to the Inquisition, rather than the Church or Crown."
+	desc = "A ring of opulent gold, bearing the symbol of an aristocratic household. By dipping it in melted redtallow, it can seal writs of religious importance -- a matter better known to the Inquisition, rather than the Church or Crown."
 	sellprice = 77 
 
 /obj/item/clothing/ring/gold/triumph
 	name = "ornate gold ring"
-	desc = "A ring of golden beauty, who's story could only be retold by a lonesome tongue."
+	desc = "A ring of golden beauty, whose story could only be retold by a lonesome tongue."
 	sellprice = 33
 
 /////////////////////////

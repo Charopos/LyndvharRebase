@@ -122,17 +122,14 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/studded/psyaltrist
 	name = "cuir-bouilli armor"
-	desc = "A padded vest that's been reinforced with 'cuir-bouilli' - leather that's been treated, water-boiled, and composite-layered together. The \
-	thickness makes it an excellent alternative to lighter cuirasses, at the cost of being unfittable beneath most dedicated suits of armor. If the \
-	blacksteel-studded reinforcements and psystitchings're anything to go by, this particular vest was likely fashioned to vestume Valoria's finest. "
+	desc = "A padded vest that's been reinforced with 'cuir-bouilli' - leather that's been treated, water-boiled, and composite-layered together. The thickness makes it an excellent alternative to lighter cuirasses, at the cost of being unfittable beneath most dedicated suits of armor. If the blacksteel-studded reinforcements and psystitchings're anything to go by, this particular vest was likely fashioned to vestume Valoria's finest. "
 	icon_state = "cuirbouilli"
 	item_state = "cuirbouilli"
 	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER + 30
 
 /obj/item/clothing/suit/roguetown/armor/leather/studded/cuirbouilli
 	name = "cuir-bouilli vest"
-	desc = "A padded vest that's been reinforced with 'cuir-bouilli' - leather that's been treated, water-boiled, and composite-layered together. It \
-	is traditionally worn beneath a heavier cuirass to protect against bludgeons-and-thrusts, but can be confidently worn on its own without qualm."
+	desc = "A padded vest that's been reinforced with 'cuir-bouilli' - leather that's been treated, water-boiled, and composite-layered together. It is traditionally worn beneath a heavier cuirass to protect against bludgeons-and-thrusts, but can be confidently worn on its own without qualm."
 	icon_state = "cuirbouilli"
 	item_state = "cuirbouilli"
 	body_parts_covered = CHEST | VITALS 
@@ -141,8 +138,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy
 	name = "hardened leather armor"
-	desc = "A heavy steerhide jerkin with enough body to stand on its own. It forms a stiff, protective mantle \
-	for its wearer, shielding from blows and weather alike."
+	desc = "A heavy steerhide jerkin with enough body to stand on its own. It forms a stiff, protective mantle for its wearer, shielding from blows and weather alike."
 	icon_state = "leather_armor"
 	item_state = "leather_armor"
 	armor = ARMOR_LEATHER_GOOD
@@ -246,7 +242,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/trophyfur
 	name = "treated trophy fur robes"
-	desc = "A heavy set of hardened robes, lined with fur. The leather is composed of several creatures that were notably difficult to fell by arrow. A proof or rangership among many."
+	desc = "A heavy set of hardened robes, lined with fur. The leather is composed of several creatures that are notably difficult to fell by arrow alone. A proof of one's hunting prowess, perhaps?"
 	icon_state = "hatanga"
 	item_state = "hatanga"
 	armor = list("blunt" = 90, "slash" = 30, "stab" = 40, "piercing" = 60, "fire" = 0, "acid" = 0)
@@ -255,7 +251,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/bikini
 	name = "leather corslet"
-	desc = "Flexible cowhide armor. Lightweight, better than nothing. Trimmed to protect the heart and hips."
+	desc = "Flexible cowhide armor. Lightweight, better than nothing. Trimmed to protect naught but the heart and hips."
 	body_parts_covered = CHEST|GROIN
 	icon_state = "leatherkini"
 	item_state = "leatherkini"
@@ -265,7 +261,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/studded/bikini
 	name = "studded leather corslet"
-	desc = "Studded leather is the most durable of all hides and leathers and about as light. Trimmed to protect the heart and hips."
+	desc = "Studded leather is the most durable of all hides and leathers and about as light. Trimmed to protect naught but the heart and hips."
 	body_parts_covered = CHEST|GROIN
 	icon_state = "studleatherkini"
 	item_state = "studleatherkini"
@@ -274,7 +270,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/hide/bikini
 	name = "hide corslet"
-	desc = "A light armor of wildbeast hide. Far more durable than leather. Trimmed to protect the heart and hips."
+	desc = "A light armor of wildbeast hide. Far more durable than leather. Trimmed to protect naught but the heart and hips."
 	body_parts_covered = CHEST|GROIN
 	icon_state = "hidearmorkini"
 	item_state = "hidearmorkini"
@@ -332,7 +328,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/jacket/courtphysician
 	name = "sanguine coat"
-	desc = "A padded coat made of a leather, perhaps this may keep the bloodstains away."
+	desc = "A padded coat made of a leather. Perhaps this may keep the bloodstains away?"
 	icon_state = "doccoat"
 	item_state = "doccoat"
 	color = null

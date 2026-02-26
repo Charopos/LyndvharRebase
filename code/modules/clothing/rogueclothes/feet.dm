@@ -168,7 +168,7 @@
 
 /obj/item/clothing/shoes/roguetown/sandals/aalloy
 	name = "decrepit sandals"
-	desc = "Frayed bronze platforms, curled about to cradle the feet. The beaches that these sandals once treaded are no more; pearly sands, long since turnt to glass from the Comet Syon's impact."
+	desc = "Frayed bronze platforms, curled about to cradle the feet. The beaches that these sandals once treaded are no more, every grain of sand that might have been treaded on has washed away and been replaced anew."
 	icon_state = "ancientsandals"
 	color = "#bb9696"
 	prevent_crits = PREVENT_CRITS_NONE
@@ -588,7 +588,7 @@
 
 /obj/item/clothing/shoes/courtphysician
 	name = "sanguine shoes"
-	desc = "Leather shoes, the solemn tap of these bears grim news, or salvation."
+	desc = "Leather shoes. The solemn tap of these bears grim news, or salvation."
 	icon_state = "docshoes"
 	item_state = "docshoes"
 	icon = 'icons/roguetown/clothing/special/courtphys.dmi'
@@ -598,7 +598,7 @@
 
 /obj/item/clothing/shoes/courtphysician/female
 	name = "sanguine heels"
-	desc = "Leather heels, the solemn tap of these bears grim news, or salvation."
+	desc = "Leather heels. The solemn tap of these bears grim news, or salvation."
 	icon_state = "docheels"
 	item_state = "docheels"
 	icon = 'icons/roguetown/clothing/special/courtphys.dmi'

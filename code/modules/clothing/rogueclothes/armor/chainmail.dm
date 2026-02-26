@@ -2,7 +2,7 @@
 /obj/item/clothing/suit/roguetown/armor/chainmail
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "haubergeon"
-	desc = "A maille shirt fashioned from hundreds of interlinked steel rings. This blouse covers all the little nooks-and-crannies that're neglected by a standard cuirass, and - when paired with a gambeson - offers superb protection from most worldly strikes."
+	desc = "A maille shirt fashioned from hundreds of interlinked steel rings. This blouse covers all the little nooks-and-crannies that're neglected by a standard cuirass, and -- when paired with a gambeson -- offers superb protection from most worldly strikes."
 	body_parts_covered = COVERAGE_ALL_BUT_HANDLEGS
 	icon_state = "haubergeon"
 	armor = ARMOR_MAILLE
@@ -23,7 +23,7 @@
 /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 	icon_state = "ihaubergeon"
 	name = "iron haubergeon"
-	desc = "A maille shirt fashioned from hundreds of interlinked iron rings. The humble combination of a haubergeon and gambeson is favored amongst Beowricke's levymen, alongside a sharpened spear and a cooled pint of ale."
+	desc = "A maille shirt fashioned from hundreds of interlinked iron rings. The humble combination of a haubergeon and gambeson is favored amongst Beowricke's levymen, alongside a sharpened spear and a pint of ale."
 	max_integrity = ARMOR_INT_CHEST_MEDIUM_IRON
 	smeltresult = /obj/item/ingot/iron
 
@@ -79,7 +79,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 	name = "iron hauberk"
-	desc = "A maille-aketon of iron, sleeved to cover both the arms and legs. Amongst the levymen, these robes of iron - while heftier than gambesons - are coveted when facing the monsters who claw-and-bite at nite."
+	desc = "A maille-aketon of iron, sleeved to cover both the arms and legs. Amongst the levymen, these robes of iron -- while heftier than gambesons -- are coveted when facing the monsters who claw-and-bite at nite."
 	icon_state = "ihauberk"
 	item_state = "ihauberk"
 	smeltresult = /obj/item/ingot/iron
@@ -105,7 +105,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/bikini
 	name = "chainmail corslet"	// corslet, from the old French 'cors' or bodice, with the diminutive 'let', used to describe lightweight military armor since 1500. Chosen here to replace 'bikini', an extreme anachronism.
-	desc = "For the daring, affording maille's protection with light weight."
+	desc = "For the daring -- or foolhardy -- this affords maille's protection with... light weight."
 	icon_state = "chainkini"
 	item_state = "chainkini"
 	allowed_sex = list(MALE, FEMALE)
@@ -127,7 +127,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron/heavy
 	name = "iron mailled hauberk"
-	desc = "A maille-aketon of iron, snuggly fitted beneath a matching cuirass. Best paired with a gambeson and a mug of chilled ale, or - as is the case with most levymen and adventurers - last nite's rags."
+	desc = "A maille-aketon of iron, snuggly fitted beneath a matching cuirass. Best paired with a gambeson and a mug of ale, or -- as is the case with most levymen and adventurers -- last nite's rags."
 	slot_flags = ITEM_SLOT_ARMOR
 	icon_state = "icuirasshauberk"
 	item_state = "icuirasshauberk"
@@ -218,7 +218,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/matthios
 	name = "gilded hauberk"
-	desc = "All that glimmers is gold; yet only shining stars shalt break the mold.."
+	desc = "All that glimmers is gold; yet only shining stars shalt break the mold..."
 	color = "#ffc960"
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/matthios/Initialize()

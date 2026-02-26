@@ -27,7 +27,7 @@
 
 /obj/item/clothing/gloves/roguetown/fingerless
 	name = "fingerless gloves"
-	desc = "Cloth gloves to absorb palm sweat while leaving the fingers free for fine manipulation."
+	desc = "Cloth gloves to absorb palm sweat, while leaving the fingers free for fine manipulation."
 	icon_state = "fingerless_gloves"
 	resistance_flags = FIRE_PROOF
 	blocksound = SOFTHIT
@@ -39,13 +39,13 @@
 
 /obj/item/clothing/gloves/roguetown/fingerless/shadowgloves
 	name = "fingerless gloves"
-	desc = "Cloth gloves to absorb palm sweat while leaving the fingers free for fine manipulation."
+	desc = "Cloth gloves to absorb palm sweat, while leaving the fingers free for fine manipulation."
 	icon_state = "shadowgloves"
 	allowed_race = NON_DWARVEN_RACE_TYPES
 
 /obj/item/clothing/gloves/roguetown/fingerless/shadowgloves/elflock
 	name = "fingerless gloves"
-	desc = "Cloth gloves to absorb palm sweat while leaving the fingers free for fine manipulation."
+	desc = "Cloth gloves to absorb palm sweat, while leaving the fingers free for fine manipulation."
 	icon_state = "shadowgloves"
 	armor = ARMOR_MAILLE
 	max_integrity = ARMOR_INT_SIDE_HARDLEATHER
@@ -53,8 +53,7 @@
 
 /obj/item/clothing/gloves/roguetown/fingerless_leather
 	name = "fingerless leather gloves"
-	desc = "A pair of protective gloves favored by lockshimmers, laborers, and smokers for maintaining \
-	manual dexterity over regular gloves."
+	desc = "A pair of protective gloves favored by lockshimmers, laborers, and smokers for maintaining manual dexterity over regular gloves."
 	icon_state = "roguegloves"
 	armor = ARMOR_LEATHER_GOOD
 	resistance_flags = FIRE_PROOF
@@ -69,7 +68,7 @@
 
 /obj/item/clothing/gloves/roguetown/valorian
 	name = "valorian leather gloves"
-	desc = "A pair of heavy Valorian leather gloves, commonly used by fencers and renowned for their quality."
+	desc = "A pair of heavy Valorian leather gloves. Commonly used by fencers, and renowned for their quality."
 	icon_state = "fencergloves"
 	item_state = "fencergloves"
 	armor = ARMOR_MAILLE
@@ -85,7 +84,7 @@
 
 /obj/item/clothing/gloves/roguetown/valorian/inqgloves
 	name = "inquisitorial leather gloves"
-	desc = "Masterworked leather gloves, reinforced with a light weave of maille. Hanging from the left glove's cuff is a small rosary necklace; a warm reminder that even the Inquisitors are beholden to His authority."
+	desc = "Masterworked leather gloves, reinforced with a light weave of maille. Hanging from the left glove's cuff is a small rosary necklace: a warm reminder that even the Inquisitors are beholden to His authority."
 	icon_state = "inqgloves"
 	item_state = "inqgloves"
 	salvage_result = /obj/item/natural/hide/cured
@@ -102,7 +101,7 @@
 // Eastern gloves
 /obj/item/clothing/gloves/roguetown/eastgloves1
 	name = "black gloves"
-	desc = "Sleek gloves typically used by swordsmen."
+	desc = "Sleek gloves typically used by eastern swordsmen."
 	icon_state = "eastgloves1"
 	item_state = "eastgloves1"
 	armor = ARMOR_LEATHER
@@ -132,7 +131,7 @@
 
 /obj/item/clothing/gloves/roguetown/courtphysician
 	name = "sanguine gloves"
-	desc = "Carefully sewn leather gloves, unrestricting to your ability to wield surgical tools, and stylish!"
+	desc = "Carefully sewn leather gloves, that should protect one from innards without hampering one's sewing abilities."
 	icon_state = "docgloves"
 	item_state = "docgloves"
 	icon = 'icons/roguetown/clothing/special/courtphys.dmi'
@@ -153,7 +152,7 @@
 
 /obj/item/clothing/gloves/roguetown/courtphysician/female
 	name = "sanguine sleeves"
-	desc = "Carefully sewn leather gloves with silk sleeves covering them, unrestricting to your ability to wield surgical tools, and stylish!"
+	desc = "Carefully sewn leather gloves with silk sleeves, should keep one's hands from sullying with blood while keeping the dexterity to fix the issue."
 	icon_state = "docsleeves"
 	item_state = "docsleeves"
 	icon = 'icons/roguetown/clothing/special/courtphys.dmi'

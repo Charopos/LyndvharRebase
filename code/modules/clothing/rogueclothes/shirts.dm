@@ -113,6 +113,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/puritan
 	name = "formal silks"
+	desc = ""
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	icon_state = "puritan_shirt"
 	allowed_race = CLOTHED_RACES_TYPES
@@ -609,7 +610,7 @@
 /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/steward
 	color = null
 	name = "ornate silk dress"
-	desc = "A dress woven of only the finest, softest silks. Golden thread is inlaid with a deep royal crimson, expressing the owner's exquisitve wealth."
+	desc = "A dress woven of only the finest, softest silks. Golden thread is inlaid with a deep royal crimson, expressing the owner's exquisite wealth."
 	icon_state = "stewarddress"
 	item_state = "stewarddress"
 
@@ -686,7 +687,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/desertbra
 	name = "desert bra"
-	desc = "An exquisite bra crafted from durable cloth. It leaves little to the imagination. Why is it a desert bra and not just a bra?"
+	desc = "An exquisite bra crafted from durable cloth. It leaves little to the imagination... except, why is it a desert bra and not just a bra?"
 	icon_state = "desertbra"
 	item_state = "desertbra"
 	body_parts_covered = CHEST
@@ -701,7 +702,7 @@
 /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt1
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	name = "black foreign shirt"
-	desc = "A shirt typically used by thugs."
+	desc = "A foreign style of shirt typically used by foreign thugs."
 	body_parts_covered = CHEST|GROIN|ARMS|VITALS
 	icon_state = "eastshirt1"
 	icon = 'icons/roguetown/clothing/shirts.dmi'
@@ -715,7 +716,7 @@
 /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	name = "white foreign shirt"
-	desc = "A shirt typically used by foreign gangs."
+	desc = "A foreign style of shirt typically used by foreign gangs."
 	body_parts_covered = CHEST|GROIN|ARMS|VITALS
 	icon_state = "eastshirt2"
 	icon = 'icons/roguetown/clothing/shirts.dmi'
@@ -799,7 +800,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/courtphysician
 	name = "sanguine vest"
-	desc = "A silk vest, perhaps it will make it another dae without being bloodied."
+	desc = "A silk vest. Perhaps it will make it another dae without being bloodied."
 	boobed = FALSE
 	icon_state = "docvest"
 	item_state = "docvest"
@@ -825,7 +826,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/courtphysician/female
 	name = "sanguine blouse"
-	desc = "A silk blouse, elegant, but it does you no good in surgery."
+	desc = "A silk blouse. Elegant, but it does you no good in surgery."
 	boobed = FALSE
 	icon_state = "docblouse"
 	item_state = "docblouse"

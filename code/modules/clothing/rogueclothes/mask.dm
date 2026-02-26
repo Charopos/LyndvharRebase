@@ -219,13 +219,13 @@
 
 /obj/item/clothing/mask/rogue/facemask/goldmask/triumph
 	name = "ornate golden mask"
-	desc = "An ornate mask of pure, glistening gold. If you have no face to call your own, then can you truly call yourself humen at all?"
+	desc = "An ornate mask of pure, glistening gold. If you have no face to call your own, then can you truly call yourself anyone at all?"
 	sellprice = 77
 	smeltresult = /obj/item/clothing/mask/rogue/lordmask/triumph
 
 /obj/item/clothing/mask/rogue/facemask/goldmaskc/triumph
 	name = "ornate golden mask"
-	desc = "An ornate mask of pure, glistening gold. If you have no face to call your own, then can you truly call yourself humen at all?"
+	desc = "An ornate mask of pure, glistening gold. If you have no face to call your own, then can you truly call yourself anyone at all?"
 	sellprice = 77
 	smeltresult = /obj/item/clothing/mask/rogue/lordmask/triumph
 
@@ -390,35 +390,33 @@
 
 /obj/item/clothing/mask/rogue/facemask/psydonmask
 	name = "psydonic mask"
-	desc = "A silver mask, forever locked in a rigor of uncontestable joy. The Order of Psydon can't decide on whether it's meant to represent Psydon's 'mirthfulness,' 'theatricality,' or the unpredictable melding of both."
+	desc = "A silver mask, forever locked in a rigor of uncontestable joy. The Valorian Orthodoxy can't decide on whether it's meant to represent Psydon's 'mirthfulness,' 'theatricality,' or the unpredictable melding of both."
 	icon_state = "psydonmask"
 	item_state = "psydonmask"
 
 /obj/item/clothing/mask/rogue/facemask/steel
 	name = "steel mask"
-	desc = "Expressionless steel sits where a face ought to be. It is better to be \
-	safe than to be known."
+	desc = "Expressionless steel sits where a face ought to be. It is better to be safe than to be known."
 	icon_state = "smask"
 	max_integrity = 200
 	smeltresult = /obj/item/ingot/steel
 
 /obj/item/clothing/mask/rogue/facemask/steel/paalloy
 	name = "ancient mask"
-	desc = "Polished gilbranze, molded into an intimidating visage. Touch the cheek; it is warm, \
-	like flesh. But it is not flesh. Not yet."
+	desc = "Polished gilbranze, molded into an intimidating visage. Touch the cheek; it is warm, like flesh. But it is not flesh. Not yet."
 	icon_state = "ancientmask"
 	smeltresult = /obj/item/ingot/aaslag
 
 /obj/item/clothing/mask/rogue/facemask/steel/steppesman
 	name = "steppesman war mask"
-	desc = "A steel mask shaped like the face of a rather charismatic fellow! Pronounced cheeks, a nose, and a large mustache. Well, people outside of Rhaenish lands don't think you'd look charismatic at all wearing this."
+	desc = "A steel mask shaped like the face of a rather charismatic fellow! Pronounced cheeks, a nose, and a large mustache. Well, people outside of Rhaenish lands aren't likely to think you'd look charismatic at all wearing this."
 	max_integrity = 250
 	icon_state = "steppemask"
 	layer = HEAD_LAYER
 
 /obj/item/clothing/mask/rogue/facemask/steel/steppesman/anthro
 	name = "steppesman beast mask"
-	desc = "A steel mask shaped like the face of a rather charismatic beastman! Pronounced cheeks, a nose, and small spikes for whiskers. Well, people outside of Rhaenish lands don't think you'd look charismatic at all wearing this."
+	desc = "A steel mask shaped like the face of a rather charismatic beastman! Pronounced cheeks, a nose, and small spikes for whiskers. Well, people outside of Rhaenish lands aren't likely to think you'd look charismatic at all wearing this."
 	icon_state = "steppemask_snout"
 
 /obj/item/clothing/mask/rogue/facemask/goldmask
@@ -457,7 +455,7 @@
 
 /obj/item/clothing/mask/rogue/facemask/steel/yanshen/full
 	name = "ogre mask"
-	desc = "\"The second lesson: Rich men have dreams. Poor men die to make them come true.\""
+	desc = "\"The second lesson of war: Rich men have dreams. Poor men die to make them come true.\""
 	icon_state = "kazengunfaceguard"
 	item_state = "kazengunfaceguard"
 
