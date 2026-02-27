@@ -70,6 +70,7 @@
 	name = "silk stockings"
 	desc = "A legwear made just for the pure aesthetics. Made out of thin silk. Popular among nobles."
 	icon_state = "silk"
+	sprite_acc = /datum/sprite_accessory/legwear/stockings/silk
 
 /obj/item/legwears/silk/random/Initialize()
 	. = ..()
@@ -96,6 +97,7 @@
 	name = "fishnet stockings"
 	desc = "A legwear popular among wenches."
 	icon_state = "fishnet"
+	sprite_acc = /datum/sprite_accessory/legwear/stockings/fishnet
 
 /obj/item/legwears/fishnet/random/Initialize()
 	. = ..()
@@ -122,6 +124,7 @@
 	name = "thigh-high stockings"
 	desc = "A legwear popular among those who plan to venture into colder climates."
 	icon_state = "thigh"
+	sprite_acc = /datum/sprite_accessory/legwear/stockings/thigh_high
 
 /obj/item/legwears/thigh_high/random/Initialize()
 	. = ..()
@@ -135,6 +138,7 @@
 	name = "silk thigh-high stockings"
 	desc = "A legwear popular amongst the aristocracy and wealth burghers. Goes well with any dress!"
 	icon_state = "thigh_silk"
+	sprite_acc = /datum/sprite_accessory/legwear/stockings/thigh_high_silk
 
 /obj/item/legwears/thigh_high_silk/white
 	color = "#e6e5e5"
@@ -144,6 +148,7 @@
 	name = "knee-high stockings"
 	desc = "A legwear popular among those who enjoy taller boots."
 	icon_state = "knee"
+	sprite_acc = /datum/sprite_accessory/legwear/stockings/knee_high
 
 /obj/item/legwears/knee_high/random/Initialize()
 	. = ..()
@@ -157,6 +162,7 @@
 	name = "knee-high stockings"
 	desc = "A legwear popular amongst wealthy courtesans and people with sense of style."
 	icon_state = "knee_silk"
+	sprite_acc = /datum/sprite_accessory/legwear/stockings/knee_high_silk
 
 /obj/item/legwears/knee_high_silk/white
 	color = "#e6e5e5"
