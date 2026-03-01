@@ -5,7 +5,7 @@
 
  Design intent: A military junta in all but name to makes a disloyal garrison a threat. The retinue (Marshal, Knight, Squire) and garrison (Sergeant, Man at Arms) can invoke this to seize the throne by rallying anyone with Expert weapon skill — guards, veterans, mercenaries, adventurers. Requires 7 assents due to the relative abundance of combat-skilled characters, making it a broad coalition play.
 
- Outlaws and the undead are explicitly excluded from this path - there's alternative paths for true antagonists.
+ The undead are explicitly excluded from this path - there's alternative paths for true antagonists.
  */
 /datum/usurpation_rite/martial_supercession
 	name = "Rite of Martial Supercession"
@@ -47,7 +47,7 @@
 /datum/usurpation_rite/martial_supercession/on_gathering_timeout()
 	fail("The warriors of the realm did not grant sufficient assent.")
 
-/// Override: warriors assent, not nobles. Check Expert+ combat skill instead of TRAIT_NOBLE.
+/// Override: warriors assent, not nobles. Check Expert+ combat skill instead of TRAIT_NOBLE. Outlaws may assent.
 /datum/usurpation_rite/martial_supercession/try_assent(mob/living/carbon/human/warrior)
 	if(stage != RITE_STAGE_GATHERING)
 		return FALSE
@@ -60,9 +60,6 @@
 		return FALSE
 	if(!has_expert_combat_skill(warrior))
 		to_chat(warrior, span_warning("Only those who have proven themselves as expert warriors may speak assent to this rite."))
-		return FALSE
-	if(HAS_TRAIT(warrior, TRAIT_OUTLAW))
-		to_chat(warrior, span_warning("Outlaws stand outside the law. There is no justice for the lawless."))
 		return FALSE
 	if(HAS_TRAIT(warrior, TRAIT_ROTMAN) || (warrior.mob_biotypes & MOB_UNDEAD))
 		to_chat(warrior, span_warning("The dead cannot serve justice."))

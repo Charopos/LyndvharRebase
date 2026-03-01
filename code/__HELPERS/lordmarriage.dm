@@ -1,4 +1,4 @@
-/mob/proc/lord_marriage_choice()
+/mob/proc/lord_suitor_choice()
 	
 	var/datum/job/suitor_job = SSjob.GetJob("Suitor")
 	var/datum/job/consort_job = SSjob.GetJob("Consort")
@@ -7,7 +7,7 @@
 		return
 
 	if(!client)
-		addtimer(CALLBACK(src, PROC_REF(lord_marriage_choice)), 50)
+		addtimer(CALLBACK(src, PROC_REF(lord_suitor_choice)), 50)
 		return
 	var/marriage_choice = list("Married (Consort)","Single (Suitors)")
 	var/choice = input(src, "I am...", "ROGUETOWN - Marriage Options") as anything in marriage_choice
