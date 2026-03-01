@@ -1991,7 +1991,7 @@
 #include "code\modules\language\roguetown\lyndhardtian.dm"
 #include "code\modules\language\roguetown\orc.dm"
 #include "code\modules\language\roguetown\valorian.dm"
-#include "code\modules\language\roguetown\sandspeak.dm"
+#include "code\modules\language\sandspeak.dm"
 #include "code\modules\language\roguetown\thievescant.dm"
 #include "code\modules\language\roguetown\undead.dm"
 #include "code\modules\language\roguetown\zybanti.dm"
