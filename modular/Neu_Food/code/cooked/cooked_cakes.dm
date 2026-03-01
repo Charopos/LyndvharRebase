@@ -906,7 +906,7 @@
 //	.................   Cooked   .................
 /obj/item/reagent_containers/food/snacks/rogue/hcake
 	name = "honey cake"
-	desc = "Cake glazed with honey in the famous Raneshi fashion for a delicious sweet treat."
+	desc = "Cake glazed with honey in the famous Zybantine fashion for a delicious sweet treat."
 	icon = 'modular/Neu_Food/icons/cooked/cooked_cakes.dmi'
 	icon_state = "honeycake"
 	slices_num = 8
@@ -925,7 +925,7 @@
 
 /obj/item/reagent_containers/food/snacks/rogue/hcakeslice
 	name = "honey cake slice"
-	desc = "A slice of cake glazed with honey in the famous Raneshi fashion, a delicious sweet treat."
+	desc = "A slice of cake glazed with honey in the famous Zybantine fashion, a delicious sweet treat."
 	icon = 'modular/Neu_Food/icons/cooked/cooked_cakes.dmi'
 	icon_state = "honeycake_slice"
 	slices_num = 0

@@ -14,7 +14,6 @@
 		"hell.ttf" = 'interface/fonts/languages/hell.ttf',
 		"orc.ttf" = 'interface/fonts/languages/orc.ttf',
 		"celestial.ttf" = 'interface/fonts/languages/celestial.ttf',
-		"raneshi.ttf" = 'interface/fonts/languages/raneshi.ttf',
 		"undead.ttf" = 'interface/fonts/languages/undead.ttf',
 		"draconic.ttf" = 'interface/fonts/languages/draconic.ttf',
 		"grenzelhoftian.ttf" = 'interface/fonts/languages/grenzelhoftian.ttf',

@@ -42,11 +42,9 @@
 	tutorial = "Your craft is knowledge- the meticulous preservation and organization of ancient scrolls and tomes, safeguarding the collective knowledge of older folk for generations to come. Nobles and peasants alike often seek your expertise on matters of history and fact, and your keenly-kept records on the events of this week will likely stand a testament to your Viscount's benevolence and their city's prosperity...or not. After all, you hold the true power: The power to dictate how the future generations will look back on these coming days."
 	outfit = /datum/outfit/job/roguetown/archivist/basic
 	subclass_languages = list(
-		/datum/language/oldazurian,//YOU LIVE HERE
 		/datum/language/elvish,
 		/datum/language/dwarvish,
 		/datum/language/celestial,
-		/datum/language/raneshi,
 		/datum/language/hellspeak,
 		/datum/language/orcish,
 		/datum/language/grenzelhoftian,

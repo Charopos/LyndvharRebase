@@ -57,11 +57,6 @@ body {
 }
 
 @font-face {
-	font-family: "Furqan";
-	src: url("raneshi.ttf");
-}
-
-@font-face {
 	font-family: "Xaphan";
 	src: url("hell.ttf");
 }

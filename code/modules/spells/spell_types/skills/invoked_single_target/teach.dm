@@ -62,7 +62,6 @@
 	//Languages
 	/datum/language/greencrest,
 	/datum/language/celestial,
-	/datum/language/raneshi,
 	/datum/language/draconic,
 	/datum/language/dwarvish,
 	/datum/language/elvish,

@@ -130,7 +130,6 @@
 		/datum/language/hellspeak,
 		/datum/language/draconic,
 		/datum/language/celestial,
-		/datum/language/raneshi,
 		/datum/language/grenzelhoftian,
 		/datum/language/yansheneze,
 		/datum/language/valorian,
