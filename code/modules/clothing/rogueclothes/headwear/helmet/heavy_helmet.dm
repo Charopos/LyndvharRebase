@@ -815,7 +815,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/heavy/matthios/Initialize()
 	. = ..()
-	AddComponent(/datum/component/cursed_item, TRAIT_COMMIE, "ARMOR")
+	AddComponent(/datum/component/cursed_item, TRAIT_FREEMAN, "ARMOR")
 
 /obj/item/clothing/head/roguetown/helmet/heavy/graggar
 	name = "vicious helmet"
@@ -847,7 +847,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/heavy/matthios/Initialize()
 	. = ..()
-	AddComponent(/datum/component/cursed_item, TRAIT_COMMIE, "VISAGE")
+	AddComponent(/datum/component/cursed_item, TRAIT_FREEMAN, "VISAGE")
 
 /obj/item/clothing/head/roguetown/helmet/heavy/zizo
 	name = "avantyne barbute"

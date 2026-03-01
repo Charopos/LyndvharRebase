@@ -100,6 +100,8 @@
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/riding = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE,
 	)
 
 /datum/outfit/job/roguetown/mercenary/desert_rider_zeybek/pre_equip(mob/living/carbon/human/H)
