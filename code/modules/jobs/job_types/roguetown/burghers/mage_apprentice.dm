@@ -7,7 +7,7 @@
 	spawn_positions = 4
 
 	allowed_ages = list(AGE_ADULT, AGE_IMMORTAL)
-	allowed_races = ACCEPTED_RACES
+	allowed_races = RACES_SHUNNED_UP
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	advclass_cat_rolls = list(CTAG_WAPPRENTICE = 20)
 
