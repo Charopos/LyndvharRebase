@@ -2238,14 +2238,14 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 								continue
 						else
 							continue
-						species[race.base_name] += race
+						species[race.base_name] = race
 
 					species = sortList(species)
 
 					var/result = tgui_input_list(user, "By what shape are you bound?", "RACE", species)
 
 					if(result)
-						var/datum/virtue/race_chosen = species[result]
+						var/datum/species/race_chosen = species[result]
 						set_new_race(race_chosen, user)
 				if("preset_bounty_toggle")
 					preset_bounty_enabled = !preset_bounty_enabled
