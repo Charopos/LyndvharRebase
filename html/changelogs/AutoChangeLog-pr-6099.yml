@@ -1,4 +1,4 @@
 author: "WeNeedMorePhoron"
 delete-after: True
 changes:
-  - rscadd: "Ghost no longer activate mobs."
+  - bugfix: "Fix double clicking bug."
