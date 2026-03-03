@@ -98,9 +98,9 @@ GLOBAL_LIST_INIT(our_forest_sex, typecacheof(list(
 #define iswildkin(A) (is_species(A, /datum/species/anthromorph))
 #define isaxian(A) (is_species(A, /datum/species/akula))
 #define islupian(A) (is_species(A, /datum/species/lupian))
-#define ismoth(A) (is_species(A, /datum/species/moth))
 #define istabaxi(A) (is_species(A, /datum/species/tabaxi))
 #define isvulp(A) (is_species(A, /datum/species/vulpkanin))
+#define isgnoll(A) (is_species(A, /datum/species/gnoll))
 
 
 //more carbon mobs

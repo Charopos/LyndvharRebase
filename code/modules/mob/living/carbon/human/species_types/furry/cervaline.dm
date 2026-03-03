@@ -67,6 +67,8 @@
 		/datum/customizer/bodypart_feature/accessory,
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
+		/datum/customizer/bodypart_feature/legwear,
+		/datum/customizer/bodypart_feature/piercing,
 		/datum/customizer/organ/tail/cervaline,
 		/datum/customizer/organ/snout/cervaline,
 		/datum/customizer/organ/ears/cervaline,
@@ -117,9 +119,10 @@
 		/datum/body_marking/gradient,
 	)
 	descriptor_choices = list(
+		/datum/descriptor_choice/trait,
+		/datum/descriptor_choice/stature,
 		/datum/descriptor_choice/height,
 		/datum/descriptor_choice/body,
-		/datum/descriptor_choice/stature,
 		/datum/descriptor_choice/face,
 		/datum/descriptor_choice/face_exp,
 		/datum/descriptor_choice/skin_all,
