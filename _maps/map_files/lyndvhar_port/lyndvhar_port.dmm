@@ -11793,12 +11793,6 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/beach/forest)
-"eem" = (
-/obj/structure/fluff/railing/wood{
-	layer = 4.51
-	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/rtfield)
 "een" = (
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/rogue/ruinedwood/herringbone,
@@ -22460,9 +22454,6 @@
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
-"hUj" = (
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/indoors/town)
 "hUm" = (
 /obj/effect/decal/cobbleedge{
 	dir = 2
@@ -30096,15 +30087,6 @@
 /obj/machinery/light/rogue/hearth,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/town/shop)
-"kuH" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_x = 2;
-	pixel_y = 7
-	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/rtfield)
 "kuX" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-sread"
@@ -320635,9 +320617,9 @@ iXb
 sTW
 sTW
 xPc
-hUj
-hUj
-hUj
+vNZ
+vNZ
+vNZ
 sTW
 sTW
 xPc
@@ -320987,9 +320969,9 @@ iXb
 xBx
 xBx
 xPc
-hUj
-hUj
-hUj
+vNZ
+vNZ
+vNZ
 xBx
 xBx
 xPc
@@ -321339,9 +321321,9 @@ iXb
 sTW
 sTW
 xPc
-hUj
-hUj
-hUj
+vNZ
+vNZ
+vNZ
 sTW
 sTW
 xPc
@@ -321691,9 +321673,9 @@ kbC
 ubz
 hSy
 hyk
-kuH
-mfe
-eem
+tnN
+edn
+nKk
 wPp
 ruT
 iMm
@@ -322043,9 +322025,9 @@ kbC
 pKX
 ruT
 ruT
-kuH
-mfe
-eem
+tnN
+edn
+nKk
 gAV
 ruT
 kbC
