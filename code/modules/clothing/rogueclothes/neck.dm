@@ -1181,13 +1181,13 @@
 
 /obj/item/clothing/neck/roguetown/elfears
 	name = "elf ear necklace"
-	desc = "A necklace made from the preserved ears of elves. A gruesome trophy to show off the wearer's macabre collection of elven ears."
+	desc = "A necklace made from the preserved ears of elves. A trophy to show off the wearer's macabre collection of elven ears."
 	icon_state = "elfears"
 	salvage_result = /obj/item/organ/ears/elf
 
 /obj/item/clothing/neck/roguetown/menears
 	name = "ear necklace"
-	desc = "A necklace made from the preserved ears of humens. A gruesome trophy to show off the wearer's macabre collection of humen ears."
+	desc = "A necklace made from the preserved ears of humens. A trophy to show off the wearer's macabre collection of humen ears."
 	icon_state = "menears"
 	salvage_result = /obj/item/organ/ears
 
