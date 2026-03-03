@@ -13590,14 +13590,6 @@
 	smooth = 0
 	},
 /area/rogue/outdoors/exposed/town/keep)
-"eLf" = (
-/obj/structure/lever/wall{
-	redstone_id = "castle_sally_gate";
-	pixel_y = -32;
-	name = "Sallybridge"
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/garrison)
 "eLk" = (
 /obj/machinery/light/rogue/firebowl/off,
 /turf/open/floor/rogue/cobble,
@@ -22629,11 +22621,6 @@
 "hWz" = (
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave)
-"hWG" = (
-/obj/structure/fluff/railing/border/west,
-/obj/structure/fluff/railing/corner/north_east,
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/town)
 "hWJ" = (
 /obj/structure/fluff/railing/border,
 /obj/structure/fluff/railing/wood,
@@ -44102,12 +44089,6 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/mountains/decap/minotaurfort)
-"psI" = (
-/obj/structure/floordoor{
-	redstone_id = "castle_sally_gate"
-	},
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/town)
 "psX" = (
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/greenstone,
@@ -308334,10 +308315,10 @@ caG
 caG
 ske
 ske
-hkN
-hkN
-hkN
-awi
+lbD
+lbD
+lbD
+kKm
 nho
 qsP
 rgV
@@ -308685,11 +308666,11 @@ lRv
 qrF
 jBG
 jBG
-igS
-psI
-psI
-psI
-iKD
+ske
+vaO
+lbD
+lbD
+kKm
 nho
 aHf
 dyE
@@ -309036,12 +309017,12 @@ ske
 yhP
 jBG
 jBG
-eLf
-ske
-hWG
-irR
-irR
-cpN
+jBG
+dop
+uOf
+lbD
+lbD
+kKm
 nho
 nho
 nho
