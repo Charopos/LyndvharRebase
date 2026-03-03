@@ -77,7 +77,7 @@
 	name = "blacksteel sugarloaf helmet"
 	desc = "A greathelmet of blacksteel that offers excellent protection to the head, while also ensuring total coverage to its most vulnerable spots. It \
 	resembles a freshly baked loave when worn - ergo, 'sugarloaf helmet'. Blessed fool, your faith will be challenged at every crevice-and-turn; will you \
-	succumb to despair's allure, or will your virtue shine forth in Psydonia's darkest hour?"
+	succumb to despair's allure, or will your virtue shine forth in Beowricke's darkest hour?"
 	icon_state = "crusader_helmb3"
 	icon = 'icons/roguetown/clothing/special/crusader.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/crusader.dmi'

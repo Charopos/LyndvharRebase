@@ -64,7 +64,6 @@
 	pants = /obj/item/clothing/under/roguetown/tights
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
 	id = /obj/item/clothing/ring/signet
-	saiga_shoes = /obj/item/clothing/shoes/roguetown/horseshoes/gold
 	if(should_wear_femme_clothes(H))
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gown/wintergown
 		backl = /obj/item/rogue/instrument/harp
@@ -83,7 +82,7 @@
 		beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 		backr = /obj/item/storage/backpack/rogue/satchel
 		id = /obj/item/clothing/ring/signet
-	if(H.mind)
+/*if(H.mind)
 		var/datum/antagonist/new_antag = new /datum/antagonist/suitor()
 		H.mind.add_antag_datum(new_antag)*/
 	if(H.mind)

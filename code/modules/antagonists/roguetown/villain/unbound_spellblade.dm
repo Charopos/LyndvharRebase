@@ -230,7 +230,6 @@
 		"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored/black,
 		"Armet"				= /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet/black,
 		"Hounskull Bascinet"= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull/black,
-		"Etruscan Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan/black,
 		"Slitted Kettle"	= /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle/black,
 		"None",
 	)

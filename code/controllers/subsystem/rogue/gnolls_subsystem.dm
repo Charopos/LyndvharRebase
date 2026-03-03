@@ -24,7 +24,7 @@ SUBSYSTEM_DEF(gnoll_scaling)
 		for(var/mob/dead/new_player/player as anything in GLOB.new_player_list)
 			if(!player.client)
 				continue
-			to_chat(player, "<span class='alert'>Graggar demands blood, gnolls flock to Azuria</span>")
+			to_chat(player, "<span class='alert'>Graggar demands blood, gnolls flock to Lyndvhar</span>")
 
 /datum/controller/subsystem/gnoll_scaling/proc/get_gnoll_scaling()
 	if(gnoll_scaling_mode != 0)

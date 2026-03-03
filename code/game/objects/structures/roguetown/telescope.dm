@@ -16,7 +16,7 @@
 		return
 
 	var/mob/living/carbon/human/H = user
-	var/random_message = pick("Noc's silvered glare soothes your mind..", "Astrata's fiery presence blinds you!", "Hermes's swifted orbit graces a shadow between Astrata and Noc..", "Kytheria's golden clouds swirl with blessed strife..", "Neoplx's saffiric glow wounds the heart with a sense of sudden somberness..", "Jove's bleeding vortex marrs its width with a crimson trail..", "Zuranus's shadowed presence looks upon you with eternal malice..", "Psydonia's worldly horizon reaches out as far as the telescope can see..", "You see a star!", "The stars smile upon you!", "Bands of starlight bedazzle the sky!")
+	var/random_message = pick("Noc's silvered glare soothes your mind..", "Astrata's fiery presence blinds you!", "Hermes's swifted orbit graces a shadow between Astrata and Noc..", "Kytheria's golden clouds swirl with blessed strife..", "Neoplx's saffiric glow wounds the heart with a sense of sudden somberness..", "Jove's bleeding vortex marrs its width with a crimson trail..", "Zuranus's shadowed presence looks upon you with eternal malice..", "Beowricke's worldly horizon reaches out as far as the telescope can see..", "You see a star!", "The stars smile upon you!", "Bands of starlight bedazzle the sky!")
 	to_chat(H, span_notice("[random_message]"))
 
 	if(random_message == "Astrata's fiery presence blinds you!")

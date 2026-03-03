@@ -16,8 +16,8 @@
 	. = ..()
 	. += span_info("Left-click the noticeboard to take a better look at it.")
 	. += span_info("'Postings' and 'Premium Postings' can host messages of any kind. The zads will audibly notify everyone that a new message has been added to the noticeboard, whenever one is posted.")
-	. += span_info("'Scout Reports' detail how dangerous the ambushes in Azuria's many regions might be. The more dangerous a region is, the more numerous and lethal its ambushers will be.")
-	. += span_info("'Mercenary Rosters' list the names and detailings of all Mercenaries currently registered to Azuria's Mercenary Guild.")
+	. += span_info("'Scout Reports' detail how dangerous the ambushes in Lyndvhar's many regions might be. The more dangerous a region is, the more numerous and lethal its ambushers will be.")
+	. += span_info("'Mercenary Rosters' list the names and detailings of all Mercenaries currently registered to Lyndvhar's Mercenary Guild.")
 
 /obj/structure/roguemachine/noticeboard/Initialize()
 	. = ..()

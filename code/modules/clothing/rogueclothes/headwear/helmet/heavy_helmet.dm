@@ -91,7 +91,7 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/barbute
 	name = "barbute"
 	desc = "A steel helmet that provides excellent coverage, while uniquely keeping its wearer's field-of-view almost entirely unrestricted. The cruciformic visor is \
-	an inherited design, borne from the earliest daes of Psydonia. Mounted on the back is a unique couplet, fit for adopting feathered greatplumes."
+	an inherited design, borne from the earliest daes of Beowricke. Mounted on the back is a unique couplet, fit for adopting feathered greatplumes."
 	icon_state = "barbute"
 	item_state = "barbute"
 	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL
@@ -157,7 +157,7 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/barbute/great
 	name = "great barbute"
 	desc = "A steel greathelm of inordinate thickness, whose design seems to've been inspired by both a tournament's froggemund and a kingdom's sugarloaf. It is far from elegant, but it will \
-	thwart killing blows again-and-again without compromise. Never forget that a champion of Psydonia needn't nobility nor wealth to become eternal; they need only the courage to be free. \
+	thwart killing blows again-and-again without compromise. Never forget that a champion of Beowricke needn't nobility nor wealth to become eternal; they need only the courage to be free. \
 	</br>'In their legends, there were no gods - only heroes.'"
 	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL + 50
 	icon_state = "barbutedunk"
@@ -686,7 +686,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/heavy/psydonbarbute
 	name = "psydonic barbute"
-	desc = "A ceremonial barbute, masterfully forged to represent Psydon's divine authority. Psydonian artisans have chiseled this pronged visage into more statues than you could possibly imagine."
+	desc = "A ceremonial barbute, masterfully forged to represent Psydon's divine authority. Valorian artisans have chiseled this pronged visage into more statues than you could possibly imagine."
 	icon_state = "psydonbarbute"
 	item_state = "psydonbarbute"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
