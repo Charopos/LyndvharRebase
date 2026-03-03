@@ -31701,8 +31701,8 @@
 	max_integrity = 2000;
 	name = "reinforced bars"
 	},
-/obj/structure/fluff/littlebanners/bluewhite{
-	pixel_y = -6
+/obj/structure/fluff/littlebanners/greenred{
+	pixel_y = -5
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town)
@@ -64516,16 +64516,6 @@
 "wGR" = (
 /obj/structure/chair/wood/rogue/chair3,
 /turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/indoors/town)
-"wGX" = (
-/obj/structure/bars{
-	max_integrity = 2000;
-	name = "reinforced bars"
-	},
-/obj/structure/fluff/littlebanners/bluewhite{
-	pixel_y = -6
-	},
-/turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
 "wHq" = (
 /obj/structure/fluff/walldeco/church/line{
@@ -309997,7 +309987,7 @@ ruT
 ruT
 ruT
 mfe
-wGX
+bOI
 fEw
 vNZ
 vrH
