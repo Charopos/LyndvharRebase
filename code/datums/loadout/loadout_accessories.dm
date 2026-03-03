@@ -279,3 +279,13 @@
 	name = "Fitted Coat"
 	path = /obj/item/clothing/cloak/cotehardie
 	sort_category = "Accessories"
+
+/datum/loadout_item/menears
+	name = "Ear Necklace"
+	path = /obj/item/clothing/neck/roguetown/menears
+	sort_category = "Accessories"
+
+/datum/loadout_item/elfears
+	name = "Elf Ear Necklace"
+	path = /obj/item/clothing/neck/roguetown/elfears
+	sort_category = "Accessories"
