@@ -103,8 +103,10 @@
 			"Guard Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/guard,
 			"Barred Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/sheriff,
 			"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket,
-			"Knight's Armet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
-			"Knight's Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/old,
+			"Sugarloaf Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket/crusader,
+			"Knight's Armet"	= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
+			"Knight's Helmet"	= /obj/item/clothing/head/roguetown/helmet/heavy/knight/old,
+			"Knight's Greatplumed Armet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/greatplume,
 			"Visored Sallet"			= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
 			"Armet"				= /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet,
 			"Hounskull Bascinet" 		= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull,
@@ -208,7 +210,7 @@
 			if("Crossbow")
 				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_EXPERT, TRUE)
 				r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
-				backl = /obj/item/quiver/bolts
+				backl = /obj/item/quiver/bolt/standard
 	H.verbs |= list(/mob/living/carbon/human/mind/proc/setorders)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/order/movemovemove)
