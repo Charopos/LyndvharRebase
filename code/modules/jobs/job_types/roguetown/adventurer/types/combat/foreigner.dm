@@ -710,7 +710,7 @@
 /obj/item/reagent_containers/glass/bottle/rogue/healthpot/zarum
 	name = "bottle of medicinal fish vinegar"
 	desc = "A bottle with a mudclay cork, tethered to the bottleneck via braided twine. Fermented innard-paste and herbs makes for a \
-	disgustingly cheap medicine; an ancient concoction, resurrected for usage within the gladitorial arenas of Lirvas and Raneshen. </br>A \
+	disgustingly cheap medicine; an ancient concoction, resurrected for usage within the gladitorial arenas of Lirvas and Zybantu. </br>A \
 	particular variant of this, made by fermenting zardines in the Terrorbog, happens to be a very popular condiment back in Rockhill."
 	list_reagents = list(/datum/reagent/medicine/healthpot/zarum = 50)
 
@@ -1022,18 +1022,21 @@
 	desc = "'We are Her soldiers, the Legion of light.' </br>'We are the center, the depth of the Sun.' </br>'Fire and flame - we are one.'"
 	icon_state = "astrata_b"
 	item_state = "astrata_b"
+	sellprice = 25 // same as a bronze psycross
 
 /obj/item/clothing/neck/roguetown/psicross/malum/bronze
 	name = "bronze amulet of Malum"
 	desc = "Stone to steel, bone to bronze, mulched to masterworked."
 	icon_state = "malum_b"
 	item_state = "malum_b"
+	sellprice = 25
 
 /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar/bronze
 	name = "bronze amulet of Graggar"
 	desc = "'EVERYTHING - AND EVERYONE YOU LOVE - WILL BE GONE! WHAT WILL YOU HAVE, AFTER THE LAST FIRE'S BEEN SMOTHERED OUT?!' </br>‎  </br>'..You. I'd still have you.'"
 	icon_state = "graggar_b"
 	item_state = "graggar_b"
+	sellprice = 25
 
 //////////////////////////
 // THESPIANS - END!     //

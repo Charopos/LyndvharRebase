@@ -1,8 +1,9 @@
 /datum/sex_action/sex/other/vagina
-	name = "Ride them"
+	name = "Ride them with cunt"
 	stamina_cost = 1.0
 	aggro_grab_instead_same_tile = FALSE
 	intensity = 4
+	debug_erp_panel_verb = FALSE
 
 /datum/sex_action/sex/other/vagina/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
@@ -37,31 +38,30 @@
 /datum/sex_action/sex/other/vagina/get_start_sound(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	return list('sound/misc/mat/insert (1).ogg','sound/misc/mat/insert (2).ogg')
 
+/datum/sex_action/sex/other/vagina/get_finish_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	return span_warning("[user] gets off [target].")
+
+/datum/sex_action/sex/other/vagina/handle_climax_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	target.visible_message(span_love("[user] cums into [target]'s cunt!"))
+	target.virginity = FALSE
+	user.virginity = FALSE
+	user.try_impregnate(target)
+	return "into"
+
 /datum/sex_action/sex/other/vagina/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
-	show_sex_message(user, target, sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] rides [target]."))
-	play_sex_sound(user, target, sex_session.get_force_sound(), 50)
+	user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] rides [target]."))
+	playsound(target, sex_session.get_force_sound(), 50, TRUE, -2, ignore_walls = FALSE)
 	// i became a man at arms to get access to the keep...
 	if(istype(user.head, /obj/item/clothing/head/roguetown/jester))
-		play_sex_sound(user, target, SFX_JINGLE_BELLS, 30)
+		playsound(user, SFX_JINGLE_BELLS, 30, TRUE, -2, ignore_walls = FALSE)
 	do_thrust_animate(user, target, sex_session)
-
 	do_onomatopoeia(user)
+
+	sex_session.perform_sex_action(user, 2, 4, FALSE)
 
 	if(sex_session.considered_limp(target))
 		sex_session.perform_sex_action(target, 1.2, 3, TRUE)
 	else
 		sex_session.perform_sex_action(target, 2.4, 7, TRUE)
 	sex_session.handle_passive_ejaculation(target)
-
-	sex_session.perform_sex_action(target, 2, 4, FALSE)
-
-/datum/sex_action/sex/other/vagina/handle_climax_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	show_sex_message(target, user, span_love("[user] cums into [target]'s cunt!"))
-	target.virginity = FALSE
-	user.virginity = FALSE
-	user.try_impregnate(target)
-	return "into"
-
-/datum/sex_action/sex/other/vagina/get_finish_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	return span_warning("[user] gets off [target].")

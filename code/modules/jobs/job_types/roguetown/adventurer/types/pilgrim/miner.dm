@@ -52,7 +52,7 @@
 						/obj/item/recipe_book/builder = 1,
 						/obj/item/rogueweapon/scabbard/sheath = 1
 						)
-	if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
+	if(H.pronouns == SHE_HER)
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
 	if(H.pronouns == HE_HIM || H.pronouns == THEY_THEM || H.pronouns == IT_ITS)

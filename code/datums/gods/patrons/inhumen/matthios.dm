@@ -4,16 +4,17 @@
 	desc = "The Archdaemon MATTHIOS was the third to be born from the sins of mortalkind. Matthios is the physical embodiment of mass theft, pillaging, and envy. Many of his cultist followers practice this through open banditry and thievery. Despite all this he is believed to also be the patron of the destitute and beggars– though there is always insidious intent to be found in an Archdaemon."
 	worshippers = "Highwaymen, Alchemists, Greedy Merchants, and Downtrodden Peasants"
 	crafting_recipes = list(/datum/crafting_recipe/roguetown/sewing/bandithood)
-	mob_traits = list(TRAIT_COMMIE, TRAIT_MATTHIOS_EYES, TRAIT_SEEPRICES_SHITTY)
+	mob_traits = list(TRAIT_FREEMAN, TRAIT_MATTHIOS_EYES, TRAIT_SEEPRICES_SHITTY)
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison					= CLERIC_ORI,
 					/obj/effect/proc_holder/spell/invoked/appraise						= CLERIC_ORI,
 					/obj/effect/proc_holder/spell/targeted/touch/lesserknock/miracle	= CLERIC_T0,
-					/obj/effect/proc_holder/spell/invoked/muffle						= CLERIC_T0,
-					/obj/effect/proc_holder/spell/invoked/transact						= CLERIC_T1, //It says it should be T1
+					/obj/effect/proc_holder/spell/self/matthios_liberate				= CLERIC_T0,
+					/obj/effect/proc_holder/spell/self/matthios_muffle					= CLERIC_T0,
+					/obj/effect/proc_holder/spell/invoked/matthios_transact				= CLERIC_T1, //It says it should be T1
 					/obj/effect/proc_holder/spell/invoked/lesser_heal 					= CLERIC_T1,
 					/obj/effect/proc_holder/spell/invoked/blood_heal					= CLERIC_T1,
-					/obj/effect/proc_holder/spell/invoked/equalize						= CLERIC_T2,
-					/obj/effect/proc_holder/spell/invoked/churnwealthy					= CLERIC_T3,
+					/obj/effect/proc_holder/spell/invoked/matthios_equalize				= CLERIC_T2,
+					/obj/effect/proc_holder/spell/invoked/matthios_churn				= CLERIC_T3,
 					/obj/effect/proc_holder/spell/invoked/resurrect/matthios			= CLERIC_T3, // Counterpart to anastasis
 	)
 	confess_lines = list(
@@ -64,7 +65,6 @@
 	*message_out = span_info("A wreath of... strange light passes over [target]?")
 	*message_self = span_notice("I'm bathed in a... strange holy light?")
 
-	if(HAS_TRAIT(target, TRAIT_COMMIE))
+	if(HAS_TRAIT(target, TRAIT_FREEMAN))
 		*conditional_buff = TRUE
 		*situational_bonus = 2.5
-

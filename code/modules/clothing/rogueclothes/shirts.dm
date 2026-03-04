@@ -14,7 +14,7 @@
 	boobed = TRUE
 	sewrepair = TRUE
 	flags_inv = HIDEBOOB
-	experimental_inhand = FALSE
+	experimental_inhand = TRUE
 	salvage_amount = 2
 
 	grid_width = 64
@@ -147,6 +147,12 @@
 	body_parts_covered = COVERAGE_ALL_BUT_ARMFEET
 	max_integrity = ARMOR_INT_CHEST_LIGHT_BASE
 	armor = ARMOR_PADDED
+
+/obj/item/clothing/suit/roguetown/shirt/shadowshirt/elflock/drowraider
+	desc = "custom-fit silk shirt"
+	desc = "A sleeveless shirt woven from glossy material. Custom-fit for its (now deceased) wearer."
+	allowed_race = list(/datum/species/elf/dark/raider)
+	sellprice = 10
 
 /obj/item/clothing/suit/roguetown/shirt/apothshirt
 	name = "apothecary shirt"
@@ -548,6 +554,16 @@
 
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/sexy/black/Initialize()
 	. = ..()
+	color = CLOTHING_BLACK
+
+/obj/item/clothing/suit/roguetown/shirt/dress/slit
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	name = "slitted dress"
+	desc = "A finely sewn dress with a slit to expose the thigh, how scandalous!"
+	icon_state = "slitdress"
+	item_state = "slitdress"
+	r_sleeve_status = SLEEVE_NOMOD
+	l_sleeve_status = SLEEVE_NOMOD
 	color = CLOTHING_BLACK
 
 /obj/item/clothing/suit/roguetown/shirt/undershirt/webs

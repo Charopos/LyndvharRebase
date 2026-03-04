@@ -122,9 +122,15 @@
 			"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
 			"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
 			"Armet"				= /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet,
+			"Sugarloaf Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket/crusader,
+			"Knight's Armet"	= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
+			"Knight's Helmet"	= /obj/item/clothing/head/roguetown/helmet/heavy/knight/old,
+			"Knight's Greatplumed Armet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/greatplume,
 			"Hounskull Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull,
 			"Klappvisier Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/calmirixia,
 			"Slitted Kettle" = /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
+			"Visored Barbute" = /obj/item/clothing/head/roguetown/helmet/heavy/barbute/visor,
+			"Great Barbute" = /obj/item/clothing/head/roguetown/helmet/heavy/barbute/great,
 			"None"
 		)
 
@@ -133,6 +139,8 @@
 			H.cmode_music = 'sound/music/combat_heretic.ogg'
 		if(/datum/patron/inhumen/matthios)
 			H.cmode_music = 'sound/music/combat_matthios.ogg'
+			helmets += list("Decorated Bucket Helmet" = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold/cleric,) // This is so stupid. - Just a little, but it does look cool!
+			H.equip_to_slot_or_del(new /obj/item/clothing/neck/roguetown/psicross/inhumen/matthios, SLOT_RING, TRUE)
 		if(/datum/patron/inhumen/baotha)
 			H.cmode_music = 'sound/music/combat_baotha.ogg'
 		if(/datum/patron/inhumen/graggar)
@@ -224,17 +232,17 @@
 				beltl = /obj/item/rogueweapon/scabbard/sword
 			if("Bow")
 				H.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_JOURNEYMAN, TRUE)
-				beltl = /obj/item/quiver/arrows
+				beltr = /obj/item/quiver/arrows
 				backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 				H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_EXPERT, TRUE)
 				beltl = /obj/item/rogueweapon/scabbard/sheath
 				if(HAS_TRAIT(H, TRAIT_PSYDONIAN_GRIT))
 					l_hand = /obj/item/rogueweapon/huntingknife/idagger/silver/psydagger
 				else
-					l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/special
+					l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel
 			if("Crossbow")
 				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_JOURNEYMAN, TRUE) //have to specifically go into bows/crossbows unlike outlaw
-				beltr = /obj/item/quiver/bolts
+				beltr = /obj/item/quiver/bolt/standard
 				backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 				H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_EXPERT, TRUE)
 				beltl = /obj/item/rogueweapon/scabbard/sheath

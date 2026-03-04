@@ -55,7 +55,7 @@
 		/obj/item/rogueweapon/scabbard/sheath,
 		/obj/item/storage/belt/rogue/pouch/coins/poor
 		)
-	var/weapons = list("Heavy Mace","Shamshir and Shield","Spear and Shield")
+	var/weapons = list("Mace & Shield","Spear & Shield")
 	if(H.mind)
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 		H.set_blindness(0)
@@ -100,6 +100,8 @@
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/riding = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE,
 	)
 
 /datum/outfit/job/roguetown/mercenary/desert_rider_zeybek/pre_equip(mob/living/carbon/human/H)

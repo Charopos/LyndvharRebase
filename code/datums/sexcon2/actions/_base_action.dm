@@ -62,6 +62,8 @@
 	var/subtle = FALSE
 	/// Whether this action is discrete (only does obvious animations if intent is higher than firm and speed is greater or equal to steady)
 	var/discrete = FALSE 
+	///Whenever it should be actually displayed on the panel or not
+	var/debug_erp_panel_verb = TRUE
 
 /datum/sex_action/Destroy()
 	for(var/datum/sex_session_lock/lock in sex_locks)
@@ -71,6 +73,10 @@
 	return ..()
 
 /datum/sex_action/proc/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	if(debug_erp_panel_verb)
+		return FALSE
+	if(user.get_highest_grab_state_on(target) == GRAB_AGGRESSIVE)
+		return TRUE //Battlefuck buff
 	return TRUE
 
 /// Checks if this action should be automatically subtle due to location
@@ -132,6 +138,9 @@
 	if(!bodypart)
 		return FALSE
 
+	if(user.get_highest_grab_state_on(target) == GRAB_AGGRESSIVE)
+		return TRUE //Battlefuck buff
+
 	if(src.check_same_tile && (user != target || self_target))
 		var/same_tile = (get_turf(user) == get_turf(target))
 		var/grab_bypass = (src.aggro_grab_instead_same_tile && user.get_highest_grab_state_on(target) == GRAB_AGGRESSIVE)
@@ -169,6 +178,14 @@
 	if(!penis)
 		return FALSE
 	return penis.sheath_type == SHEATH_TYPE_SLIT
+
+/datum/sex_action/proc/has_sensitive_ears(mob/living/carbon/human/target)
+	if(!target)
+		return FALSE
+	var/obj/item/organ/ears/ears = target.getorganslot(ORGAN_SLOT_EARS)
+	if(!ears)
+		return FALSE
+	return ears.ear_sensitivity == EARS_SENSITIVE
 
 /datum/sex_action/proc/find_original_owner_by_ckey(target_ckey)
 	if(!target_ckey)
