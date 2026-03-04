@@ -1,7 +1,7 @@
 // WOE: SPELLBLADE DODGE EXPERT POLEARM BUILD UPON YE.
 /datum/advclass/wretch/pariah
 	name = "Crestguard's Pariah"
-	tutorial = "Carrying extreme beliefs not even befit of the Black Oaks, you have decided to secede yourself from the group and everyone else. This land was once great...and now, wave after wave of monsters and outsiders trample your home. Your people were the ones that settled these lands, and the foreign-backed Crown, deceitful and arrogant, has denied your people the rewards they deserve! Your extensive training in the Black Oaks has given you skill in both blades and magycks. A bounty from the crown follows you, as you had already done enough to be officially condemned by the group that was not committed to the cause due to the lure of coin."
+	tutorial = "Carrying extreme beliefs not even befit of the Crestguards, you have decided to secede yourself from the group and everyone else. This land was once great...and now, wave after wave of monsters and outsiders trample your home. Your people were the ones that settled these lands, and the foreign-backed Crown, deceitful and arrogant, has denied your people the rewards they deserve! Your extensive training in the Crestguards has given you skill in both blades and magycks. A bounty from the crown follows you, as you had already done enough to be officially condemned by the group that was not committed to the cause due to the lure of coin."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		/datum/species/human/halfelf,
@@ -126,7 +126,7 @@
 	switch(subclass_selected)
 		if("blade")
 			var/weapons = list("Elvish Longsword", "Elvish Saber", "Elvish Curveblade", "Steel Dagger")
-			var/weapon_choice = input(H, "Choose your weapon.", "FOR THE OAKS AND THE PEAKS") as anything in weapons
+			var/weapon_choice = input(H, "Choose your weapon.", "FOR THE CRESTS") as anything in weapons
 			switch(weapon_choice)
 				if("Elvish Longsword")
 					r_hand = /obj/item/rogueweapon/sword/long/elvish
@@ -153,7 +153,7 @@
 		if("macebearer")
 			backr = /obj/item/rogueweapon/shield/wood
 			var/mace_weapons = list("Steel Mace", "Steel Warhammer")
-			var/mace_choice = input(H, "Choose your weapon.", "FOR THE OAKS AND THE PEAKS") as anything in mace_weapons
+			var/mace_choice = input(H, "Choose your weapon.", "FOR THE CRESTS") as anything in mace_weapons
 			switch(mace_choice)
 				if("Steel Mace")
 					r_hand = /obj/item/rogueweapon/mace/steel
